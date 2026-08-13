@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Articly Alignment Lab — Stufe 0–2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ground:#EFF5F4;
+  --paper:#FFFFFF;
+  --ink:#1B282D;
+  --ink-soft:#5F7075;
+  --ink-faint:#93A5A8;
+  --rule:#D9E5E3;
+  --rule-strong:#BFD1CE;
+  --lime:#D3FF01;
+  --lime-deep:#8FAF00;
+  --rel-direkt:#1B282D;
+  --rel-aggregiert:#2E7D74;
+  --rel-inferiert:#B07A08;
+  --rel-keine:#A8B7B9;
+  --conflict:#C0392B;
+  --conflict-bg:#FBE9E7;
+  --pin1:#2E7D74;
+  --pin2:#B07A08;
+  --pin3:#8E6FB0;
+  --pin4:#C4703A;
+  --sans:'Barlow',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --cond:'Barlow Condensed','Barlow',sans-serif;
+  --serif:'Iowan Old Style','Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;background:var(--ground);color:var(--ink);
+  font-family:var(--sans);font-size:15px;line-height:1.5;
+  display:flex;flex-direction:column;overflow:hidden;
+}
+button{font:inherit;color:inherit;cursor:pointer}
+
+/* ---------------------------------------------------------- Kopfzeile */
+.topbar{
+  flex:0 0 auto;background:var(--paper);border-bottom:1px solid var(--rule-strong);
+  padding:10px 18px;display:flex;align-items:center;gap:18px;flex-wrap:wrap;
+}
+.brandmark{display:flex;align-items:baseline;gap:9px;margin-right:2px}
+.brandmark b{font-family:var(--cond);font-weight:700;font-size:19px;letter-spacing:.055em;text-transform:uppercase}
+.brandmark span{font-family:var(--cond);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint)}
+
+.ctrl{display:flex;align-items:center;gap:0;border:1px solid var(--rule-strong);border-radius:2px;overflow:hidden}
+.ctrl button{
+  background:var(--paper);border:0;padding:5px 11px;font-family:var(--cond);
+  font-size:13px;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-soft);
+  border-right:1px solid var(--rule);transition:background .12s,color .12s;
+}
+.ctrl button:last-child{border-right:0}
+.ctrl button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.ctrl button:hover:not([aria-pressed="true"]){background:var(--ground)}
+.ctrl-label{font-family:var(--cond);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint);margin-right:7px}
+.ctrl-group{display:flex;align-items:center}
+
+.findings{display:flex;gap:6px;margin-left:auto;flex-wrap:wrap}
+.chip{
+  border:1px solid var(--rule-strong);background:var(--paper);border-radius:2px;
+  padding:4px 9px;font-family:var(--cond);font-size:12.5px;letter-spacing:.06em;
+  text-transform:uppercase;display:flex;align-items:center;gap:7px;
+}
+.chip:hover{border-color:var(--ink)}
+.chip .n{font-family:var(--sans);font-weight:700;font-size:13px;letter-spacing:0}
+.chip.is-alert{border-color:var(--conflict);color:var(--conflict);background:var(--conflict-bg)}
+.chip.is-off{opacity:.45}
+
+/* -------------------------------------------------------------- Layout */
+.stage{flex:1 1 auto;display:flex;min-height:0;position:relative}
+.pane{flex:1 1 0;min-width:0;display:flex;flex-direction:column;background:var(--paper)}
+.pane--left{border-right:0}
+.pane--right{border-left:1px solid var(--rule-strong)}
+.gutter{
+  flex:0 0 78px;background:var(--ground);position:relative;
+  border-left:1px solid var(--rule);border-right:1px solid var(--rule);
+}
+#wires{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible}
+
+.pane-head{
+  flex:0 0 auto;padding:9px 22px 8px;border-bottom:1px solid var(--rule);
+  display:flex;align-items:baseline;gap:10px;background:var(--paper);
+}
+.pane-head h2{
+  margin:0;font-family:var(--cond);font-size:13px;font-weight:600;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--ink);
+}
+.pane-head em{font-style:normal;font-family:var(--cond);font-size:12px;letter-spacing:.08em;color:var(--ink-faint);text-transform:uppercase}
+
+.scroller{flex:1 1 auto;overflow-y:auto;overscroll-behavior:contain;position:relative}
+.doc{padding:26px 30px 46vh;white-space:pre-wrap;word-wrap:break-word}
+.doc--article{font-family:var(--serif);font-size:16.5px;line-height:1.66;padding-left:46px}
+.doc--transcript{font-size:16px;line-height:1.72}
+
+/* ------------------------------------------------------- Coverage-Rail */
+.rail{position:absolute;left:16px;top:0;width:14px;pointer-events:none}
+.rail i{
+  position:absolute;left:0;width:3px;border-radius:2px;
+  background:var(--rule-strong);transition:background .15s,width .15s,left .15s;
+}
+.rail i.used{background:var(--ink-faint)}
+.rail i.hot{background:var(--lime-deep);width:5px;left:-1px}
+
+/* ---------------------------------------------------------- Textspannen */
+.seg{transition:background-color .12s,box-shadow .12s}
+.seg[data-block="headline"]{font-size:23px;line-height:1.25;font-weight:700;letter-spacing:-.01em}
+
+/* Transkript: Relation über die Unterstreichung kodiert */
+.seg.claim{cursor:pointer;border-bottom:2px solid var(--rel-direkt);padding-bottom:1px}
+.seg.claim.rel-aggregiert{border-bottom-color:var(--rel-aggregiert);border-bottom-style:double;border-bottom-width:4px}
+.seg.claim.rel-inferiert{border-bottom-color:var(--rel-inferiert);border-bottom-style:dashed}
+.seg.claim.rel-keine_quelle{border-bottom-color:var(--rel-keine);border-bottom-style:dotted;color:var(--ink-faint)}
+.seg.claim.has-conflict{border-bottom-color:var(--conflict);background:var(--conflict-bg)}
+.seg.claim.nested{box-shadow:inset 0 -6px 0 -4px var(--rule-strong)}
+
+.seg.claim.on{background:var(--lime);color:var(--ink)}
+.seg.claim.on.has-conflict{background:var(--conflict);color:#fff;border-bottom-color:var(--conflict)}
+
+/* Artikel: Satzebene + Teilspanne */
+.seg.sent-on{background:rgba(211,255,1,.34)}
+.seg.src-on{background:var(--lime);box-shadow:0 1px 0 var(--lime-deep)}
+.seg.src-on.conflict{background:var(--conflict);color:#fff;box-shadow:none}
+.seg.sent-on.conflict{background:var(--conflict-bg)}
+body[data-spanmode="teil"] .seg.sent-on:not(.src-on){background:transparent}
+body[data-coverage="1"] .doc--article .seg:not(.is-source){opacity:.34}
+
+.seg.rev-on{background:rgba(46,125,116,.18);cursor:default}
+.doc--article .seg.is-source{cursor:pointer}
+
+/* Pins */
+.seg.pin1,.seg.pin1.sent-on{background:rgba(46,125,116,.22)}
+.seg.pin2,.seg.pin2.sent-on{background:rgba(176,122,8,.22)}
+.seg.pin3,.seg.pin3.sent-on{background:rgba(142,111,176,.22)}
+.seg.pin4,.seg.pin4.sent-on{background:rgba(196,112,58,.22)}
+.seg.claim.pinned{box-shadow:inset 0 0 0 1px var(--ink)}
+
+.seg:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+
+/* ------------------------------------------------------------ Inspector */
+.inspector{
+  flex:0 0 auto;background:var(--ink);color:#E8EFEE;
+  padding:0 18px;max-height:0;overflow:hidden;transition:max-height .18s ease;
+}
+.inspector.open{max-height:230px;padding:13px 18px 15px}
+.insp-grid{display:flex;gap:26px;align-items:flex-start;flex-wrap:wrap}
+.insp-col{min-width:0}
+.insp-k{font-family:var(--cond);font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:#7F9A9C;margin-bottom:4px}
+.insp-v{font-size:14px;line-height:1.45}
+.insp-v.quote{font-family:var(--serif);color:#fff;max-width:44ch}
+.badge{
+  display:inline-block;font-family:var(--cond);font-size:12px;letter-spacing:.09em;
+  text-transform:uppercase;padding:2px 8px;border:1px solid #4A5F63;border-radius:2px;
+}
+.badge.alert{background:var(--conflict);border-color:var(--conflict);color:#fff}
+.badge.lime{background:var(--lime);border-color:var(--lime);color:var(--ink)}
+.meter{width:132px}
+.meter .bar{height:5px;background:#33474C;border-radius:3px;overflow:hidden;margin-top:5px}
+.meter .bar span{display:block;height:100%;background:var(--lime)}
+.meter .bar span.low{background:var(--conflict)}
+.meter .num{font-family:var(--cond);font-size:15px;letter-spacing:.04em}
+.ent{display:flex;gap:8px;align-items:baseline;font-size:13.5px;margin-bottom:2px}
+.ent code{font-family:var(--cond);font-size:13px;letter-spacing:.05em;color:#B9CCCE}
+.ent .ok{color:var(--lime)}
+.ent .bad{color:#FF8A7A;font-weight:600}
+.insp-note{font-size:13.5px;color:#B9CCCE;max-width:52ch;line-height:1.45}
+
+/* -------------------------------------------------------------- Legende */
+.legend{
+  flex:0 0 auto;background:var(--paper);border-top:1px solid var(--rule-strong);
+  padding:7px 18px;display:flex;gap:20px;align-items:center;flex-wrap:wrap;
+  font-family:var(--cond);font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);
+}
+.legend i{display:inline-block;width:24px;height:0;vertical-align:middle;margin-right:7px}
+.lg{display:flex;align-items:center}
+.legend .kbd{
+  font-family:var(--cond);border:1px solid var(--rule-strong);border-radius:2px;
+  padding:1px 6px;margin:0 2px;color:var(--ink);
+}
+.legend .right{margin-left:auto;display:flex;gap:10px;align-items:center}
+.legend .right button{
+  background:none;border:1px solid var(--rule-strong);border-radius:2px;padding:3px 10px;
+  font-family:var(--cond);font-size:12.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-soft);
+}
+.legend .right button:hover{border-color:var(--ink);color:var(--ink)}
+
+/* ---------------------------------------------------------------- Dialog */
+dialog{
+  border:1px solid var(--ink);border-radius:2px;padding:0;max-width:760px;width:92vw;
+  background:var(--paper);color:var(--ink);
+}
+dialog::backdrop{background:rgba(27,40,45,.42)}
+.dlg-head{padding:14px 20px;border-bottom:1px solid var(--rule);display:flex;align-items:baseline;gap:12px}
+.dlg-head h3{margin:0;font-family:var(--cond);font-size:15px;letter-spacing:.13em;text-transform:uppercase}
+.dlg-head p{margin:0;font-size:13px;color:var(--ink-soft)}
+.dlg-body{padding:16px 20px}
+.dlg-body textarea{
+  width:100%;height:300px;font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:12px;
+  border:1px solid var(--rule-strong);border-radius:2px;padding:10px;resize:vertical;background:var(--ground);color:var(--ink);
+}
+.dlg-foot{padding:12px 20px;border-top:1px solid var(--rule);display:flex;gap:10px;justify-content:flex-end;align-items:center}
+.dlg-foot .err{margin-right:auto;color:var(--conflict);font-size:13px}
+.btn{border:1px solid var(--rule-strong);background:var(--paper);border-radius:2px;padding:6px 14px;font-family:var(--cond);font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+.btn:hover{border-color:var(--ink)}
+.btn--primary{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.btn--primary:hover{background:#000}
+
+@media (max-width:900px){
+  body{overflow:auto}
+  .stage{flex-direction:column}
+  .gutter{display:none}
+  .pane--right{border-left:0;border-top:1px solid var(--rule-strong)}
+  .scroller{max-height:none;overflow:visible}
+  .doc{padding-bottom:24px}
+  .findings{margin-left:0;width:100%}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+<style>
+/* ------------------------------------------------------------ Eingabe */
+.intake{flex:0 0 auto;background:var(--ground);border-bottom:1px solid var(--rule-strong);
+  padding:13px 18px 12px}
+.intake[hidden]{display:none}
+.intake-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.intake-field{display:flex;flex-direction:column;gap:6px;min-width:0}
+.intake-k{font-family:var(--cond);font-size:12px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink-faint)}
+.ta{width:100%;min-height:168px;resize:vertical;border:1px solid var(--rule-strong);
+  border-radius:2px;background:var(--paper);color:var(--ink);padding:11px 13px;
+  font-family:var(--sans);font-size:14px;line-height:1.55}
+.ta--serif{font-family:var(--serif);font-size:15px}
+.ta:focus,.sel:focus,.key:focus{outline:2px solid var(--ink);outline-offset:-1px}
+.intake-row{display:flex;align-items:center;gap:10px;margin-top:11px;flex-wrap:wrap}
+.sel,.key{border:1px solid var(--rule-strong);border-radius:2px;background:var(--paper);
+  color:var(--ink);padding:7px 10px;font-family:var(--cond);font-size:13.5px;
+  letter-spacing:.04em}
+.key{flex:0 1 250px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px}
+.intake-status{font-family:var(--cond);font-size:12.5px;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--ink-faint);margin-left:auto}
+.intake-status.err{color:var(--conflict);text-transform:none;letter-spacing:.02em}
+.intake-status.busy{color:var(--ink-soft)}
+.ent .warn{color:#B98A1F;font-weight:600}
+.insp-scores{font-family:var(--cond);font-size:13px;letter-spacing:.05em;
+  color:var(--ink-soft);white-space:nowrap}
+/* ------------------------------------------------------------ Kontingent */
+.quota-wrap{position:relative;display:inline-flex}
+.quota-panel{position:absolute;top:calc(100% + 8px);left:0;z-index:40;
+  width:290px;background:var(--paper);border:1px solid var(--rule-strong);
+  border-radius:2px;box-shadow:0 8px 24px rgba(27,40,45,.14);padding:12px 13px}
+.quota-head{display:flex;align-items:center;justify-content:space-between;
+  font-family:var(--cond);font-size:12px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--ink-faint);margin-bottom:9px}
+.quota-refresh{border:1px solid var(--rule-strong);background:var(--ground);
+  color:var(--ink);border-radius:2px;width:22px;height:22px;line-height:1;
+  cursor:pointer;font-size:13px}
+.quota-refresh:hover{background:var(--lime)}
+.quota-refresh:disabled{opacity:.4;cursor:default}
+.quota-row{display:flex;align-items:center;gap:8px;margin-bottom:7px}
+.quota-row:last-child{margin-bottom:0}
+.quota-k{font-family:var(--cond);font-size:12.5px;letter-spacing:.04em;
+  color:var(--ink-soft);width:52px;flex:0 0 auto}
+.quota-bar{flex:1 1 auto;height:6px;background:var(--rule);border-radius:3px;overflow:hidden}
+.quota-bar > i{display:block;height:100%;background:var(--lime);border-radius:3px}
+.quota-bar.low > i{background:var(--conflict)}
+.quota-num{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11.5px;
+  color:var(--ink-soft);width:88px;flex:0 0 auto;text-align:right}
+.quota-empty,.quota-err{color:var(--ink-faint);font-size:13px}
+.quota-err{color:var(--conflict)}
+.quota-foot{margin-top:8px;font-family:var(--cond);font-size:11px;letter-spacing:.04em;
+  color:var(--ink-faint)}
+@media (max-width:900px){
+  .intake-grid{grid-template-columns:1fr}
+  .intake-status{margin-left:0;flex-basis:100%}
+  .quota-panel{left:auto;right:0;width:260px}
+}
+</style>
+</head>
+<body data-spanmode="satz" data-coverage="0">
+
+<header class="topbar">
+  <div class="brandmark"><b>Articly</b><span>Alignment Lab · Stufe 0–2</span></div>
+
+  <div class="ctrl-group">
+    <span class="ctrl-label">Analyse</span>
+    <div class="ctrl"><button id="btn-intake" aria-pressed="true">Eingabe</button></div>
+    <div class="quota-wrap">
+      <div class="ctrl"><button id="btn-quota" aria-pressed="false">Kontingent</button></div>
+      <div class="quota-panel" id="quota-panel" hidden>
+        <div class="quota-head">
+          <span>SAIA-Kontingent</span>
+          <button class="quota-refresh" id="quota-refresh" title="Jetzt prüfen">↻</button>
+        </div>
+        <div class="quota-body" id="quota-body">
+          <div class="quota-empty">Noch nicht geprüft.</div>
+        </div>
+        <div class="quota-foot" id="quota-foot"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ctrl-group">
+    <span class="ctrl-label">Markieren</span>
+    <div class="ctrl" id="spanmode">
+      <button data-v="satz" aria-pressed="true">Satz</button>
+      <button data-v="teil" aria-pressed="false">Teilspanne</button>
+    </div>
+  </div>
+
+  <div class="ctrl-group">
+    <span class="ctrl-label">Ansicht</span>
+    <div class="ctrl">
+      <button id="btn-coverage" aria-pressed="false">Abdeckung</button>
+      <button id="btn-wires" aria-pressed="true">Linien</button>
+    </div>
+  </div>
+
+  <div class="findings" id="findings"></div>
+</header>
+
+<section class="intake" id="intake">
+  <div class="intake-grid">
+    <label class="intake-field">
+      <span class="intake-k">Originalartikel</span>
+      <textarea id="in-article" class="ta ta--serif" spellcheck="false"
+        placeholder="Artikeltext einfügen. Erster Absatz = Überschrift, zweiter = Vorspann, Leerzeilen trennen Absätze."></textarea>
+    </label>
+    <label class="intake-field">
+      <span class="intake-k">Transkript</span>
+      <textarea id="in-transcript" class="ta" spellcheck="false"
+        placeholder="Transkripttext einfügen. Jeder Satz wird ein Claim."></textarea>
+    </label>
+  </div>
+  <div class="intake-row">
+    <span class="ctrl-label">Embeddings</span>
+    <select id="model" class="sel">
+      <optgroup label="SAIA · Academic Cloud (API-Key)">
+        <option value="multilingual-e5-large-instruct">multilingual-e5-large-instruct</option>
+        <option value="qwen3-embedding-4b">qwen3-embedding-4b</option>
+        <option value="e5-mistral-7b-instruct">e5-mistral-7b-instruct</option>
+      </optgroup>
+      <optgroup label="Lokal · CPU (kein Key)">
+        <option value="local-multilingual-e5-large-instruct">local · multilingual-e5-large-instruct</option>
+        <option value="local-multilingual-e5-base">local · multilingual-e5-base (klein)</option>
+        <option value="local-bge-m3">local · bge-m3</option>
+      </optgroup>
+      <option value="">ohne — nur Stufe 0+1 (offline)</option>
+    </select>
+    <input id="apikey" class="key" type="password" autocomplete="off"
+      placeholder="SAIA-API-Key (bleibt lokal)">
+    <button class="btn btn--primary" id="run">Analysieren</button>
+    <button class="btn" id="load-demo">Beispiel laden</button>
+    <button class="btn" id="clear-all">Leeren</button>
+    <span class="intake-status" id="status">Strg+Enter startet die Analyse</span>
+  </div>
+</section>
+
+<div class="stage" id="stage">
+  <section class="pane pane--left">
+    <div class="pane-head"><h2>Originalartikel</h2><em id="meta-left"></em></div>
+    <div class="scroller" id="scroll-left">
+      <div class="rail" id="rail"></div>
+      <div class="doc doc--article" id="doc-article"></div>
+    </div>
+  </section>
+
+  <div class="gutter"><svg id="wires" aria-hidden="true"></svg></div>
+
+  <section class="pane pane--right">
+    <div class="pane-head"><h2>Transkript</h2><em id="meta-right"></em></div>
+    <div class="scroller" id="scroll-right">
+      <div class="doc doc--transcript" id="doc-transcript"></div>
+    </div>
+  </section>
+</div>
+
+<div class="inspector" id="inspector"></div>
+
+<footer class="legend">
+  <span class="lg"><i style="border-bottom:2px solid var(--rel-direkt)"></i>direkt</span>
+  <span class="lg"><i style="border-bottom:4px double var(--rel-aggregiert)"></i>aggregiert</span>
+  <span class="lg"><i style="border-bottom:2px dashed var(--rel-inferiert)"></i>inferiert</span>
+  <span class="lg"><i style="border-bottom:2px dotted var(--rel-keine)"></i>ohne Quelle</span>
+  <span class="lg" style="color:var(--conflict)"><i style="border-bottom:2px solid var(--conflict)"></i>Zahlkonflikt</span>
+  <span style="color:var(--ink-faint)">Klicken pinnt · <span class="kbd">j</span><span class="kbd">k</span> springt · <span class="kbd">Esc</span> löst</span>
+  <span class="right">
+    <button id="btn-load">JSON laden</button>
+    <button id="btn-export">Export</button>
+  </span>
+</footer>
+
+<dialog id="dlg">
+  <div class="dlg-head">
+    <h3>JSON laden</h3>
+    <p>Eigenes Artikel-Transkript-Paar einsetzen. Schema siehe Export.</p>
+  </div>
+  <div class="dlg-body"><textarea id="dlg-text" spellcheck="false"></textarea></div>
+  <div class="dlg-foot">
+    <span class="err" id="dlg-err"></span>
+    <button class="btn" id="dlg-cancel">Abbrechen</button>
+    <button class="btn btn--primary" id="dlg-ok">Übernehmen</button>
+  </div>
+</dialog>
+
+<script>
+const DEMO_ARTICLE = "Stadtrat beschließt Rekordinvestitionen in Schulen und Verkehr\n\nDie Stadt Heidenheim investiert im kommenden Jahr 5,3 Millionen Euro in die Sanierung ihrer Schulen. Der Gemeinderat stimmte dem Haushaltsentwurf am Donnerstagabend mit 28 zu 11 Stimmen zu.\n\nEs ist die höchste Summe, die der Bildungsbereich seit 2019 erhalten hat. Rund 3,1 Millionen Euro fließen allein in die Generalsanierung der Grundschule am Brenzpark, die seit Jahren als dringendster Fall gilt. Weitere 2,2 Millionen Euro verteilen sich auf kleinere Maßnahmen an vier weiteren Standorten.\n\nOberbürgermeisterin Sabine Kraft sprach von einem „Kraftakt für die Zukunft“. Die Sanierungsstaus der vergangenen Jahre ließen sich nicht in einer Legislaturperiode auflösen, sagte sie. Kritik kam von der Opposition: Fraktionschef Martin Ehrle nannte den Haushalt „eine Verschiebung von Lasten auf die kommenden Generationen“, da die Stadt dafür neue Kredite in Höhe von 4,8 Millionen Euro aufnehmen müsse.\n\nNeben den Schulen ist auch der Verkehrsbereich betroffen. Für den Neubau der Brücke über die Brenz sind 1,9 Millionen Euro vorgesehen. Die Arbeiten sollen im Frühjahr 2027 beginnen und rund 18 Monate dauern. Während der Bauzeit wird der Verkehr über die Ostumgehung geführt.\n\nDie Verwaltung rechnet für das laufende Jahr mit Gewerbesteuereinnahmen von 41 Millionen Euro. Das sind etwa drei Prozent weniger als im Vorjahr. Kämmerer Thomas Reindl warnte, dass ein weiterer Rückgang die Investitionsplanung gefährden könnte. Mit der Zustimmung vom Donnerstagabend gilt der Haushalt als beschlossen.";
+const DEMO_TRANSCRIPT = "Willkommen bei den Nachrichten aus Heidenheim.\n\nDie Stadt investiert im kommenden Jahr fünf Komma drei Millionen Euro in ihre Schulen und eins Komma neun Millionen Euro in eine neue Brücke über die Brenz.\n\nDer Gemeinderat stimmte dem Haushalt am Donnerstagabend mit achtundzwanzig zu elf Stimmen zu, es ist die höchste Bildungsinvestition seit zweitausendneunzehn.\n\nDen größten Anteil erhält die Grundschule am Brenzpark mit drei Komma eins Millionen Euro.\n\nOberbürgermeisterin Sabine Kraft sprach von einem Kraftakt für die Zukunft, während die Opposition eine Verschiebung von Lasten auf kommende Generationen kritisierte.\n\nFinanziert wird das Paket unter anderem über neue Kredite in Höhe von sechs Komma acht Millionen Euro.\n\nDie Bauarbeiten an der Brücke sollen im Frühjahr zwanzigsiebenundzwanzig beginnen.\n\nTrotz der Rekordinvestitionen bleibt die Haushaltslage angespannt, weil die Gewerbesteuereinnahmen um rund drei Prozent sinken.\n\nDas waren die Nachrichten aus Heidenheim.";
+const DATA = {"meta":{"titel":"","quelle":"","modell":""},"article":{"text":"","sentences":[]},"transcript":{"text":"","claims":[]}};
+</script>
+<script>
+/* =====================================================================
+   Zustand
+   ===================================================================== */
+const REL_ORDER = ['direkt','aggregiert','inferiert','keine_quelle'];
+const PIN_COLORS = ['pin1','pin2','pin3','pin4'];
+
+let data = DATA;
+let claimById = new Map();
+let sentById  = new Map();
+let hoverClaim = null;
+let revSentence = null;
+let pins = new Map();          // claimId -> Klassenname
+let showWires = true;
+
+const $ = s => document.querySelector(s);
+const docA = $('#doc-article'), docT = $('#doc-transcript');
+const scrollA = $('#scroll-left'), scrollT = $('#scroll-right');
+
+/* =====================================================================
+   Segmentierung: überlappende Spannen -> disjunkte Segmente
+   Grenzen einsammeln, sortieren, jedes Teilstück den deckenden Spannen
+   zuordnen. Trägt Überlappung und Verschachtelung ohne Sonderfälle.
+   ===================================================================== */
+function segment(len, spans){
+  const bounds = new Set([0, len]);
+  for (const s of spans){ bounds.add(s.start); bounds.add(s.end); }
+  const b = [...bounds].filter(x => x >= 0 && x <= len).sort((x,y) => x - y);
+  const out = [];
+  for (let i = 0; i < b.length - 1; i++){
+    const start = b[i], end = b[i+1];
+    if (end <= start) continue;
+    out.push({ start, end, ids: spans.filter(s => s.start <= start && s.end >= end) });
+  }
+  return out;
+}
+
+function esc(t){
+  return t.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+/* =====================================================================
+   Aufbau
+   ===================================================================== */
+function build(){
+  claimById = new Map(data.transcript.claims.map(c => [c.id, c]));
+  sentById  = new Map(data.article.sentences.map(s => [s.id, s]));
+
+  /* --- Artikel: Sätze + Quellspannen als Spannen-Liste --- */
+  const aSpans = [];
+  for (const s of data.article.sentences)
+    aSpans.push({ kind:'sent', key:s.id, start:s.start, end:s.end, block:s.block });
+  for (const c of data.transcript.claims)
+    c.sources.forEach((src, i) => {
+      // Eine Quelle kann aus mehreren Belegregionen bestehen. Alle teilen
+      // sich denselben Schlüssel — Linie und Inspector behandeln sie
+      // dadurch als eine Fundstelle.
+      const spans = src.spans && src.spans.length
+        ? src.spans : [[src.start, src.end]];
+      for (const [a, b] of spans) aSpans.push({
+        kind:'src', key:`${c.id}#${i}`, claim:c.id, role:src.role,
+        start:a, end:b
+      });
+    });
+
+  docA.innerHTML = segment(data.article.text.length, aSpans).map(seg => {
+    const sent = seg.ids.find(x => x.kind === 'sent');
+    const srcs = seg.ids.filter(x => x.kind === 'src');
+    const cls = ['seg'];
+    if (srcs.length) cls.push('is-source');
+    const attrs = [
+      `class="${cls.join(' ')}"`,
+      sent ? `data-sent="${sent.key}"` : '',
+      sent ? `data-block="${sent.block}"` : '',
+      srcs.length ? `data-src="${srcs.map(s=>s.key).join(',')}"` : '',
+      srcs.length ? `data-claims="${[...new Set(srcs.map(s=>s.claim))].join(',')}"` : '',
+    ].filter(Boolean).join(' ');
+    return `<span ${attrs}>${esc(data.article.text.slice(seg.start, seg.end))}</span>`;
+  }).join('');
+
+  /* --- Transkript: Claims als Spannen-Liste --- */
+  const tSpans = data.transcript.claims.map(c => ({ key:c.id, start:c.start, end:c.end }));
+
+  docT.innerHTML = segment(data.transcript.text.length, tSpans).map(seg => {
+    if (!seg.ids.length)
+      return `<span class="seg">${esc(data.transcript.text.slice(seg.start, seg.end))}</span>`;
+    // Bei Überlappung ist der kleinste Claim der spezifischste -> Hover-Ziel
+    const ids = seg.ids.map(x => claimById.get(x.key))
+                       .sort((a,b) => (a.end-a.start) - (b.end-b.start));
+    const lead = ids[0];
+    const cls = ['seg','claim',`rel-${lead.relation}`];
+    if ((lead.flags||[]).includes('zahlkonflikt')) cls.push('has-conflict');
+    if (ids.length > 1) cls.push('nested');
+    return `<span class="${cls.join(' ')}" tabindex="0" role="button"
+              data-claim="${lead.id}"
+              data-all="${ids.map(c=>c.id).join(',')}"
+            >${esc(data.transcript.text.slice(seg.start, seg.end))}</span>`;
+  }).join('');
+
+  $('#meta-left').textContent  = `${data.article.sentences.length} Sätze`;
+  $('#meta-right').textContent = `${data.transcript.claims.length} Claims`;
+
+  buildRail();
+  buildFindings();
+  apply();
+}
+
+/* --- Abdeckungsleiste: ein Strich pro Artikelsatz --- */
+function buildRail(){
+  const rail = $('#rail');
+  rail.innerHTML = '';
+  const used = new Set();
+  for (const c of data.transcript.claims)
+    for (const s of c.sources) used.add(s.sentence);
+  requestAnimationFrame(() => {
+    const base = docA.getBoundingClientRect().top;
+    for (const s of data.article.sentences){
+      const el = docA.querySelector(`[data-sent="${s.id}"]`);
+      if (!el) continue;
+      const rects = [...el.parentElement.querySelectorAll(`[data-sent="${s.id}"]`)]
+        .map(n => n.getBoundingClientRect());
+      const top = Math.min(...rects.map(r => r.top)) - base;
+      const bot = Math.max(...rects.map(r => r.bottom)) - base;
+      const i = document.createElement('i');
+      i.style.top = top + 'px';
+      i.style.height = Math.max(bot - top - 2, 4) + 'px';
+      i.dataset.sent = s.id;
+      if (used.has(s.id)) i.classList.add('used');
+      rail.appendChild(i);
+    }
+  });
+}
+
+/* --- QC-Befunde --- */
+function findings(){
+  const cs = data.transcript.claims;
+  return [
+    { key:'konflikt', label:'Zahlkonflikt', alert:true,
+      ids: cs.filter(c => (c.flags||[]).includes('zahlkonflikt')).map(c=>c.id) },
+    { key:'unbelegt', label:'Zahl unbelegt',
+      ids: cs.filter(c => (c.flags||[]).includes('zahl_unbelegt')).map(c=>c.id) },
+    { key:'uneinig', label:'Signale uneinig',
+      ids: cs.filter(c => (c.flags||[]).includes('signale_uneinig')).map(c=>c.id) },
+    { key:'ohnequelle', label:'ohne Quelle',
+      ids: cs.filter(c => c.relation === 'keine_quelle').map(c=>c.id) },
+    { key:'inferiert', label:'inferiert',
+      ids: cs.filter(c => c.relation === 'inferiert').map(c=>c.id) },
+    { key:'margin', label:'Margin < 0,10',
+      ids: cs.filter(c => c.margin < 0.10 && c.sources.length).map(c=>c.id) },
+    { key:'unused', label:'Artikel ungenutzt',
+      ids: [], count: data.article.sentences.length -
+        new Set(cs.flatMap(c => c.sources.map(s => s.sentence))).size },
+  ];
+}
+
+function buildFindings(){
+  const wrap = $('#findings');
+  wrap.innerHTML = '';
+  for (const f of findings()){
+    const n = f.count !== undefined ? f.count : f.ids.length;
+    const b = document.createElement('button');
+    b.className = 'chip' + (f.alert && n ? ' is-alert' : '') + (n ? '' : ' is-off');
+    b.innerHTML = `${f.label}<span class="n">${n}</span>`;
+    if (f.ids.length){
+      let i = 0;
+      b.onclick = () => { focusClaim(f.ids[i % f.ids.length]); i++; };
+    } else if (f.key === 'unused'){
+      b.onclick = () => $('#btn-coverage').click();
+    }
+    wrap.appendChild(b);
+  }
+}
+
+/* =====================================================================
+   Hervorhebung — vollständig aus dem Zustand neu berechnet
+   ===================================================================== */
+function activeClaims(){
+  const set = new Map();                        // claimId -> Klasse
+  for (const [id, cls] of pins) set.set(id, cls);
+  if (hoverClaim) set.set(hoverClaim, 'on');
+  if (revSentence)
+    for (const c of data.transcript.claims)
+      if (c.sources.some(s => s.sentence === revSentence) && !set.has(c.id))
+        set.set(c.id, 'rev');
+  return set;
+}
+
+function apply(){
+  const act = activeClaims();
+  const hot = new Set();
+
+  for (const el of docT.querySelectorAll('.seg.claim')){
+    const all = el.dataset.all.split(',');
+    el.classList.remove('on','pinned','rev-on');
+    const hit = all.find(id => act.has(id));
+    if (!hit) continue;
+    const cls = act.get(hit);
+    if (cls === 'on') el.classList.add('on');
+    else if (cls === 'rev') el.classList.add('rev-on');
+    else el.classList.add('on','pinned');
+  }
+
+  for (const el of docA.querySelectorAll('.seg')){
+    el.classList.remove('sent-on','src-on','conflict','rev-on', ...PIN_COLORS);
+    const claims = (el.dataset.claims || '').split(',').filter(Boolean);
+    const hit = claims.find(id => act.has(id));
+    if (hit){
+      const c = claimById.get(hit);
+      const conflict = (c.flags||[]).includes('zahlkonflikt');
+      const cls = act.get(hit);
+      el.classList.add('src-on');
+      if (cls !== 'on' && cls !== 'rev') el.classList.add(cls);
+      if (conflict) el.classList.add('conflict');
+      if (el.dataset.sent) hot.add(el.dataset.sent);
+    }
+    if (revSentence && el.dataset.sent === revSentence) el.classList.add('rev-on');
+  }
+
+  // Satzebene: alle Segmente der getroffenen Sätze mitmarkieren
+  for (const sid of hot){
+    for (const el of docA.querySelectorAll(`[data-sent="${sid}"]`)){
+      if (!el.classList.contains('src-on')) el.classList.add('sent-on');
+    }
+  }
+
+  for (const i of $('#rail').children)
+    i.classList.toggle('hot', hot.has(i.dataset.sent));
+
+  renderInspector([...act.keys()], hot);
+  drawWires(act);
+}
+
+/* =====================================================================
+   Inspector
+   ===================================================================== */
+function renderInspector(ids, hotSents){
+  const box = $('#inspector');
+  const id = hoverClaim || ids[ids.length-1];
+  if (!id){ box.classList.remove('open'); box.innerHTML=''; return; }
+  const c = claimById.get(id);
+  const conflict = (c.flags||[]).includes('zahlkonflikt');
+
+  const meter = (label, v, bad) => `
+    <div class="insp-col meter">
+      <div class="insp-k">${label}</div>
+      <div class="num">${v.toFixed(2).replace('.',',')}</div>
+      <div class="bar"><span class="${bad?'low':''}" style="width:${Math.round(v*100)}%"></span></div>
+    </div>`;
+
+  const ents = (c.entities||[]).map(e => {
+    if (e.status === 'konflikt')
+      return `<div class="ent"><span class="bad">≠</span><span>${e.surface} <code>→ ${e.norm}</code></span>
+       <span class="bad">Artikel: ${e.quelle_surface} <code>→ ${e.quelle_norm}</code></span></div>`;
+    if (e.status === 'unbelegt')
+      return `<div class="ent"><span class="warn">?</span><span>${e.surface} <code>→ ${e.norm}</code></span>
+       <span class="warn">nicht im Artikel gefunden</span></div>`;
+    return `<div class="ent"><span class="ok">=</span><span>${e.surface} <code>→ ${e.norm}</code></span></div>`;
+  }).join('') || '<div class="ent" style="color:#7F9A9C">keine</div>';
+
+  const srcList = c.sources.length
+    ? c.sources.map(s => {
+        return `<div style="margin-bottom:3px">
+          <span class="badge">${s.sentence}${s.role==='redundant'?' · redundant':''}</span>
+          <span style="color:#B9CCCE"> ${(s.spans && s.spans.length ? s.spans : [[s.start, s.end]])
+            .map(([a,b]) => esc(data.article.text.slice(a,b))).join(' · ').slice(0,72)}</span>
+        </div>`;
+      }).join('')
+    : '<span style="color:#7F9A9C">keine Fundstelle im Artikel</span>';
+
+  box.innerHTML = `
+    <div class="insp-grid">
+      <div class="insp-col" style="flex:1 1 300px">
+        <div class="insp-k">${c.id} · ${c.relation.replace('_',' ')}
+          ${conflict ? '<span class="badge alert" style="margin-left:6px">Zahlkonflikt</span>' : ''}</div>
+        <div class="insp-v quote">„${esc(c.text)}“</div>
+      </div>
+      ${meter('Confidence', c.confidence, c.confidence < .7)}
+      ${meter('Margin zu Top-2', c.margin, c.margin < .10)}
+      ${c.scores ? (f => `<div class="insp-col">
+        <div class="insp-k">Scores</div>
+        <div class="insp-scores">top ${f(c.scores.top)} · lex ${f(c.scores.lex)} · emb ${f(c.scores.emb)} · anker ${f(c.scores.anchor)}</div>
+      </div>`)(v => v == null ? '—' : v.toFixed(2).replace('.', ',')) : ''}
+      <div class="insp-col" style="flex:1 1 260px">
+        <div class="insp-k">Entitäten (normalisiert)</div>${ents}
+      </div>
+      <div class="insp-col" style="flex:1 1 260px">
+        <div class="insp-k">Fundstellen</div>${srcList}
+      </div>
+      ${c.note ? `<div class="insp-col" style="flex:1 1 100%">
+        <div class="insp-k">Notiz</div><div class="insp-note">${esc(c.note)}</div></div>` : ''}
+    </div>`;
+  box.classList.add('open');
+}
+
+function srcEls(claimId, i){
+  const key = `${claimId}#${i}`;
+  return [...docA.querySelectorAll('[data-src]')]
+    .filter(e => e.dataset.src.split(',').includes(key));
+}
+
+/* =====================================================================
+   Verbindungslinien im Zwischenraum
+   ===================================================================== */
+const svg = $('#wires');
+function drawWires(act){
+  svg.innerHTML = '';
+  if (!showWires || window.innerWidth < 900) return;
+  const g = $('.gutter').getBoundingClientRect();
+  const aBox = scrollA.getBoundingClientRect(), tBox = scrollT.getBoundingClientRect();
+  const W = g.width;
+
+  for (const [id, cls] of act){
+    if (cls === 'rev') continue;
+    const c = claimById.get(id);
+    if (!c.sources.length) continue;
+    const tEls = [...docT.querySelectorAll(`.seg.claim`)]
+      .filter(e => e.dataset.all.split(',').includes(id));
+    if (!tEls.length) continue;
+    const tr = tEls.map(e => e.getBoundingClientRect());
+    const ty = (Math.min(...tr.map(r=>r.top)) + Math.max(...tr.map(r=>r.bottom))) / 2 - g.top;
+    const tVis = ty > tBox.top - g.top && ty < tBox.bottom - g.top;
+
+    c.sources.forEach((src, i) => {
+      const els = srcEls(id, i);
+      if (!els.length) return;
+      const rs = els.map(e => e.getBoundingClientRect());
+      const ay = (Math.min(...rs.map(r=>r.top)) + Math.max(...rs.map(r=>r.bottom))) / 2 - g.top;
+      const aVis = ay > aBox.top - g.top && ay < aBox.bottom - g.top;
+
+      const y1 = Math.max(4, Math.min(g.height - 4, ay));
+      const y2 = Math.max(4, Math.min(g.height - 4, ty));
+      const stroke = (c.flags||[]).includes('zahlkonflikt') ? 'var(--conflict)'
+                    : cls === 'on' ? 'var(--lime-deep)' : `var(--${cls})`;
+      const p = document.createElementNS('http://www.w3.org/2000/svg','path');
+      p.setAttribute('d', `M0,${y1} C${W*.45},${y1} ${W*.55},${y2} ${W},${y2}`);
+      p.setAttribute('fill','none');
+      p.setAttribute('stroke', stroke);
+      p.setAttribute('stroke-width', src.role === 'redundant' ? 1.2 : 2);
+      if (src.role === 'redundant' || !aVis || !tVis) p.setAttribute('stroke-dasharray','3 3');
+      p.setAttribute('opacity', (aVis && tVis) ? .95 : .35);
+      svg.appendChild(p);
+
+      for (const [x,y,vis] of [[0,y1,aVis],[W,y2,tVis]]){
+        const d = document.createElementNS('http://www.w3.org/2000/svg','circle');
+        d.setAttribute('cx',x); d.setAttribute('cy',y); d.setAttribute('r',2.6);
+        d.setAttribute('fill', stroke); d.setAttribute('opacity', vis ? 1 : .3);
+        svg.appendChild(d);
+      }
+    });
+  }
+}
+
+/* =====================================================================
+   Interaktion
+   ===================================================================== */
+function scrollSourcesIntoView(id){
+  const c = claimById.get(id);
+  if (!c || !c.sources.length) return;
+  const el = srcEls(id, 0)[0];
+  if (!el) return;
+  const box = scrollA.getBoundingClientRect(), r = el.getBoundingClientRect();
+  if (r.top < box.top + 40 || r.bottom > box.bottom - 40){
+    scrollA.scrollTo({
+      top: scrollA.scrollTop + (r.top - box.top) - box.height/2 + r.height/2,
+      behavior: matchMedia('(prefers-reduced-motion:reduce)').matches ? 'auto' : 'smooth'
+    });
+  }
+}
+
+docT.addEventListener('mouseover', e => {
+  const el = e.target.closest('.seg.claim'); if (!el) return;
+  hoverClaim = el.dataset.claim; apply(); scrollSourcesIntoView(hoverClaim);
+});
+docT.addEventListener('mouseleave', () => { hoverClaim = null; apply(); });
+docT.addEventListener('focusin', e => {
+  const el = e.target.closest('.seg.claim'); if (!el) return;
+  hoverClaim = el.dataset.claim; apply(); scrollSourcesIntoView(hoverClaim);
+});
+
+docT.addEventListener('click', e => {
+  const el = e.target.closest('.seg.claim'); if (!el) return;
+  const all = el.dataset.all.split(',');
+  // Bei verschachtelten Claims durch die Kandidaten rotieren
+  const id = all.find(x => !pins.has(x)) || all[0];
+  if (pins.has(id)) pins.delete(id);
+  else if (pins.size < 4){
+    const taken = new Set(pins.values());
+    pins.set(id, PIN_COLORS.find(c => !taken.has(c)));
+  }
+  apply();
+});
+
+/* Rückrichtung: Artikelsatz -> abhängige Claims */
+docA.addEventListener('mouseover', e => {
+  const el = e.target.closest('[data-sent]'); if (!el) return;
+  revSentence = el.dataset.sent; apply();
+});
+docA.addEventListener('mouseleave', () => { revSentence = null; apply(); });
+
+document.addEventListener('keydown', e => {
+  if (/^(TEXTAREA|INPUT|SELECT)$/.test(e.target.tagName)) return;
+  if (e.key === 'Escape'){ pins.clear(); hoverClaim = null; apply(); return; }
+  if (e.key === 'j' || e.key === 'k'){
+    const ids = data.transcript.claims.map(c => c.id);
+    const cur = ids.indexOf(hoverClaim);
+    const next = e.key === 'j'
+      ? (cur + 1) % ids.length
+      : (cur <= 0 ? ids.length - 1 : cur - 1);
+    focusClaim(ids[next]);
+  }
+});
+
+function focusClaim(id){
+  hoverClaim = id;
+  const el = docT.querySelector(`[data-claim="${id}"]`);
+  if (el){
+    const box = scrollT.getBoundingClientRect(), r = el.getBoundingClientRect();
+    if (r.top < box.top + 40 || r.bottom > box.bottom - 40)
+      scrollT.scrollTo({ top: scrollT.scrollTop + (r.top - box.top) - box.height/2, behavior:'smooth' });
+  }
+  apply(); scrollSourcesIntoView(id);
+}
+
+/* Bedienelemente */
+$('#spanmode').addEventListener('click', e => {
+  const b = e.target.closest('button'); if (!b) return;
+  for (const x of $('#spanmode').children) x.setAttribute('aria-pressed', String(x === b));
+  document.body.dataset.spanmode = b.dataset.v;
+});
+$('#btn-coverage').addEventListener('click', e => {
+  const on = e.target.getAttribute('aria-pressed') === 'true';
+  e.target.setAttribute('aria-pressed', String(!on));
+  document.body.dataset.coverage = on ? '0' : '1';
+});
+$('#btn-wires').addEventListener('click', e => {
+  showWires = e.target.getAttribute('aria-pressed') !== 'true';
+  e.target.setAttribute('aria-pressed', String(showWires));
+  apply();
+});
+
+let raf = null;
+const redraw = () => { if (raf) return; raf = requestAnimationFrame(() => { raf = null; drawWires(activeClaims()); }); };
+scrollA.addEventListener('scroll', redraw, {passive:true});
+scrollT.addEventListener('scroll', redraw, {passive:true});
+window.addEventListener('resize', () => { buildRail(); redraw(); });
+
+/* JSON laden / exportieren */
+const dlg = $('#dlg');
+$('#btn-load').onclick = () => { $('#dlg-text').value = JSON.stringify(data, null, 2); $('#dlg-err').textContent=''; dlg.showModal(); };
+$('#dlg-cancel').onclick = () => dlg.close();
+$('#dlg-ok').onclick = () => {
+  try{
+    const next = JSON.parse($('#dlg-text').value);
+    if (!next.article?.text || !next.transcript?.text) throw new Error('article.text und transcript.text fehlen');
+    data = next; pins.clear(); hoverClaim = null; revSentence = null;
+    build(); dlg.close();
+  }catch(err){ $('#dlg-err').textContent = 'Ungültig: ' + err.message; }
+};
+$('#btn-export').onclick = () => {
+  const blob = new Blob([JSON.stringify(data, null, 2)], {type:'application/json'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob); a.download = 'alignment.json'; a.click();
+  URL.revokeObjectURL(a.href);
+};
+
+/* ------------------------------------------------------------ Kontingent */
+const quotaPanel = $('#quota-panel'), quotaBody = $('#quota-body'),
+      quotaFoot = $('#quota-foot'), btnQuota = $('#btn-quota'),
+      quotaRefresh = $('#quota-refresh');
+
+const QUOTA_WINDOWS = [
+  ['minute', 'Minute'], ['hour', 'Stunde'], ['day', 'Tag'],
+];
+
+function fmtAgo(ts){
+  const s = Math.max(0, Math.round(Date.now()/1000 - ts));
+  if (s < 5) return 'gerade eben';
+  if (s < 60) return `vor ${s}s`;
+  if (s < 3600) return `vor ${Math.round(s/60)} min`;
+  return `vor ${Math.round(s/3600)} h`;
+}
+
+function renderQuota(rl, errText){
+  if (errText){
+    quotaBody.innerHTML = `<div class="quota-err">${errText}</div>`;
+    quotaFoot.textContent = '';
+    return;
+  }
+  if (!rl){
+    quotaBody.innerHTML = '<div class="quota-empty">Noch nicht geprüft.</div>';
+    quotaFoot.textContent = '';
+    return;
+  }
+  const rows = QUOTA_WINDOWS.map(([win, label]) => {
+    const lim = rl[`x-ratelimit-limit-${win}`], rem = rl[`x-ratelimit-remaining-${win}`];
+    if (lim == null || rem == null) return '';
+    const l = parseInt(lim, 10), r = parseInt(rem, 10);
+    const pctLeft = l > 0 ? r / l : 1;
+    const low = pctLeft < 0.15;
+    return `<div class="quota-row">
+      <span class="quota-k">${label}</span>
+      <span class="quota-bar${low ? ' low' : ''}"><i style="width:${Math.max(0,Math.min(100,pctLeft*100))}%"></i></span>
+      <span class="quota-num">${r.toLocaleString('de-DE')} / ${l.toLocaleString('de-DE')}</span>
+    </div>`;
+  }).join('');
+  quotaBody.innerHTML = rows || '<div class="quota-empty">Server liefert keine Kontingent-Header.</div>';
+  quotaFoot.textContent = `${rl.model || ''} · ${fmtAgo(rl.checked_at)}`.trim();
+}
+
+function setQuota(open){
+  quotaPanel.hidden = !open;
+  btnQuota.setAttribute('aria-pressed', String(open));
+}
+btnQuota.addEventListener('click', e => {
+  e.stopPropagation();
+  const willOpen = quotaPanel.hidden;
+  setQuota(willOpen);
+  if (willOpen) checkQuota();
+});
+document.addEventListener('click', e => {
+  if (!quotaPanel.hidden && !quotaPanel.contains(e.target) && e.target !== btnQuota)
+    setQuota(false);
+});
+
+async function checkQuota(){
+  const model = $('#model').value;
+  if (!model || model.startsWith('local-')){
+    renderQuota(null, 'Kein SAIA-Modell gewählt — lokale Modelle haben kein Kontingent.');
+    return;
+  }
+  quotaRefresh.disabled = true;
+  quotaBody.innerHTML = '<div class="quota-empty">Prüfe …</div>';
+  try{
+    const r = await fetch('/api/ratelimit', {
+      method: 'POST', headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({model, api_key: $('#apikey').value}),
+    });
+    const j = await r.json();
+    if (!r.ok) throw new Error(j.error || ('HTTP ' + r.status));
+    renderQuota(j.ratelimit, null);
+  }catch(err){
+    renderQuota(null, String(err.message || err));
+  }finally{
+    quotaRefresh.disabled = false;
+  }
+}
+quotaRefresh.addEventListener('click', e => { e.stopPropagation(); checkQuota(); });
+
+/* =====================================================================
+   Eingabe & Analyse (Stufe 0–2 über /api/align)
+   ===================================================================== */
+const intake = $('#intake'), stat = $('#status'), btnIntake = $('#btn-intake');
+const LS = 'articly-alignment-lab';
+
+(function restore(){
+  let s = {};
+  try{ s = JSON.parse(localStorage.getItem(LS) || '{}'); }catch(_){}
+  $('#in-article').value    = s.article    ?? '';
+  $('#in-transcript').value = s.transcript ?? '';
+  if (s.model !== undefined) $('#model').value = s.model;
+  if (s.key) $('#apikey').value = s.key;
+})();
+
+function persist(){
+  localStorage.setItem(LS, JSON.stringify({
+    article: $('#in-article').value, transcript: $('#in-transcript').value,
+    model: $('#model').value, key: $('#apikey').value,
+  }));
+}
+
+function setIntake(open){
+  if (open) intake.removeAttribute('hidden'); else intake.setAttribute('hidden','');
+  btnIntake.setAttribute('aria-pressed', String(open));
+  buildRail(); redraw();
+}
+btnIntake.onclick = () => setIntake(intake.hasAttribute('hidden'));
+
+$('#load-demo').onclick = () => {
+  $('#in-article').value = DEMO_ARTICLE;
+  $('#in-transcript').value = DEMO_TRANSCRIPT;
+  persist();
+  stat.className = 'intake-status';
+  stat.textContent = 'Beispiel ersetzt beide Felder — Analysieren starten';
+};
+
+$('#clear-all').onclick = () => {
+  $('#in-article').value = '';
+  $('#in-transcript').value = '';
+  persist();
+  $('#in-article').focus();
+  stat.className = 'intake-status';
+  stat.textContent = 'Felder geleert';
+};
+
+function syncKeyField(){
+  const m = $('#model').value;
+  const local = !m || m.startsWith('local-');
+  $('#apikey').disabled = local;
+  $('#apikey').style.opacity = local ? .4 : 1;
+  $('#apikey').placeholder = local ? 'kein Key nötig' : 'SAIA-API-Key (bleibt lokal)';
+}
+$('#model').addEventListener('change', () => { syncKeyField(); persist(); });
+syncKeyField();
+
+async function run(){
+  const article = $('#in-article').value.trim();
+  const transcript = $('#in-transcript').value.trim();
+  if (!article || !transcript){
+    stat.className = 'intake-status err';
+    stat.textContent = 'Artikel und Transkript werden beide benötigt.';
+    return;
+  }
+  persist();
+  const model = $('#model').value;
+  stat.className = 'intake-status busy';
+  stat.textContent = !model ? 'Analysiere · Stufe 0+1 offline …'
+    : model.startsWith('local-')
+      ? `Analysiere · ${model.slice(6)} auf der CPU … (erster Lauf lädt das Modell)`
+      : `Analysiere · ${model} …`;
+  $('#run').disabled = true;
+  try{
+    const r = await fetch('/api/align', {
+      method: 'POST', headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({article, transcript, model, api_key: $('#apikey').value}),
+    });
+    const j = await r.json();
+    if (!r.ok) throw new Error(j.error || ('HTTP ' + r.status));
+    data = j; pins.clear(); hoverClaim = null; revSentence = null;
+    build();
+    const st = (j.meta && j.meta.statistik) || {};
+    stat.className = 'intake-status';
+    stat.textContent = `${st.saetze} Sätze · ${st.claims} Claims` +
+      (st.embeddings ? ` · ${st.embeddings} Embeddings` : ' · offline') +
+      ` · ${st.dauer_s} s`;
+    if (j.meta && j.meta.ratelimit) renderQuota(j.meta.ratelimit, null);
+    setIntake(false);
+  }catch(err){
+    stat.className = 'intake-status err';
+    stat.textContent = String(err.message || err);
+  }finally{
+    $('#run').disabled = false;
+  }
+}
+$('#run').onclick = run;
+for (const el of [$('#in-article'), $('#in-transcript')])
+  el.addEventListener('keydown', e => {
+    if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') run();
+  });
+
+build();
+if (document.fonts && document.fonts.ready)
+  document.fonts.ready.then(() => { buildRail(); redraw(); });
+</script>
+</body>
+</html>
