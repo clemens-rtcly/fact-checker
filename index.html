@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Articly Alignment Lab — Stufe 0–2</title>
+<title>Articly Alignment Lab — Stufe 0–3</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
@@ -21,6 +21,7 @@
   --rel-direkt:#1B282D;
   --rel-aggregiert:#2E7D74;
   --rel-inferiert:#B07A08;
+  --rel-verschoben:#8E6FB0;
   --rel-keine:#A8B7B9;
   --conflict:#C0392B;
   --conflict-bg:#FBE9E7;
@@ -117,6 +118,9 @@ button{font:inherit;color:inherit;cursor:pointer}
 .seg.claim.rel-aggregiert{border-bottom-color:var(--rel-aggregiert);border-bottom-style:double;border-bottom-width:4px}
 .seg.claim.rel-inferiert{border-bottom-color:var(--rel-inferiert);border-bottom-style:dashed}
 .seg.claim.rel-keine_quelle{border-bottom-color:var(--rel-keine);border-bottom-style:dotted;color:var(--ink-faint)}
+.seg.claim.rel-bedeutung_verschoben{border-bottom:0;
+  text-decoration:underline wavy var(--rel-verschoben);
+  text-decoration-thickness:2px;text-underline-offset:4px;padding-bottom:2px}
 .seg.claim.has-conflict{border-bottom-color:var(--conflict);background:var(--conflict-bg)}
 .seg.claim.nested{box-shadow:inset 0 -6px 0 -4px var(--rule-strong)}
 
@@ -130,6 +134,10 @@ button{font:inherit;color:inherit;cursor:pointer}
 .seg.sent-on.conflict{background:var(--conflict-bg)}
 body[data-spanmode="teil"] .seg.sent-on:not(.src-on){background:transparent}
 body[data-coverage="1"] .doc--article .seg:not(.is-source){opacity:.34}
+/* Modaltaste (Alt gedrückt halten): alle belegten Artikelstellen auf einmal.
+   Momentan statt dauerhaft — permanent sichtbar wäre der Artikel voller
+   Farbe und nicht mehr lesbar (Backlink-Empfehlung der CHI-Studien). */
+body[data-allsrc="1"] .doc--article .seg.is-source{background:rgba(211,255,1,.38)}
 
 .seg.rev-on{background:rgba(46,125,116,.18);cursor:default}
 .doc--article .seg.is-source{cursor:pointer}
@@ -284,7 +292,7 @@ dialog::backdrop{background:rgba(27,40,45,.42)}
 <body data-spanmode="satz" data-coverage="0">
 
 <header class="topbar">
-  <div class="brandmark"><b>Articly</b><span>Alignment Lab · Stufe 0–2</span></div>
+  <div class="brandmark"><b>Articly</b><span>Alignment Lab · Stufe 0–3</span></div>
 
   <div class="ctrl-group">
     <span class="ctrl-label">Analyse</span>
@@ -353,6 +361,13 @@ dialog::backdrop{background:rgba(27,40,45,.42)}
     </select>
     <input id="apikey" class="key" type="password" autocomplete="off"
       placeholder="SAIA-API-Key (bleibt lokal)">
+    <span class="ctrl-label" title="Entailment-Prüfung Claim gegen Fundstellen — erkennt „Bedeutung verschoben“ und Widersprüche">NLI · Stufe 3</span>
+    <select id="nli" class="sel">
+      <option value="">ohne</option>
+      <option value="nli-mdeberta-2mil7">local · mDeBERTa-v3 2mil7 (Standard)</option>
+      <option value="nli-gbert-large">local · GBERT-large (deutsch)</option>
+      <option value="nli-minilm-l6">local · MiniLMv2-L6 (schnell)</option>
+    </select>
     <button class="btn btn--primary" id="run">Analysieren</button>
     <button class="btn" id="load-demo">Beispiel laden</button>
     <button class="btn" id="clear-all">Leeren</button>
@@ -385,9 +400,10 @@ dialog::backdrop{background:rgba(27,40,45,.42)}
   <span class="lg"><i style="border-bottom:2px solid var(--rel-direkt)"></i>direkt</span>
   <span class="lg"><i style="border-bottom:4px double var(--rel-aggregiert)"></i>aggregiert</span>
   <span class="lg"><i style="border-bottom:2px dashed var(--rel-inferiert)"></i>inferiert</span>
+  <span class="lg"><svg width="24" height="8" viewBox="0 0 24 8" style="vertical-align:middle;margin-right:7px"><path d="M0,4 Q3,0 6,4 T12,4 T18,4 T24,4" fill="none" stroke="var(--rel-verschoben)" stroke-width="2"/></svg>Bedeutung verschoben</span>
   <span class="lg"><i style="border-bottom:2px dotted var(--rel-keine)"></i>ohne Quelle</span>
   <span class="lg" style="color:var(--conflict)"><i style="border-bottom:2px solid var(--conflict)"></i>Zahlkonflikt</span>
-  <span style="color:var(--ink-faint)">Klicken pinnt · <span class="kbd">j</span><span class="kbd">k</span> springt · <span class="kbd">Esc</span> löst</span>
+  <span style="color:var(--ink-faint)">Klicken pinnt · <span class="kbd">j</span><span class="kbd">k</span> springt · <span class="kbd">Alt</span> zeigt alle Belege · <span class="kbd">Esc</span> löst</span>
   <span class="right">
     <button id="btn-load">JSON laden</button>
     <button id="btn-export">Export</button>
@@ -416,7 +432,7 @@ const DATA = {"meta":{"titel":"","quelle":"","modell":""},"article":{"text":"","
 /* =====================================================================
    Zustand
    ===================================================================== */
-const REL_ORDER = ['direkt','aggregiert','inferiert','keine_quelle'];
+const REL_ORDER = ['direkt','aggregiert','inferiert','bedeutung_verschoben','keine_quelle'];
 const PIN_COLORS = ['pin1','pin2','pin3','pin4'];
 
 let data = DATA;
@@ -555,6 +571,10 @@ function findings(){
       ids: cs.filter(c => (c.flags||[]).includes('zahl_unbelegt')).map(c=>c.id) },
     { key:'uneinig', label:'Signale uneinig',
       ids: cs.filter(c => (c.flags||[]).includes('signale_uneinig')).map(c=>c.id) },
+    { key:'verschoben', label:'Bedeutung verschoben',
+      ids: cs.filter(c => c.relation === 'bedeutung_verschoben').map(c=>c.id) },
+    { key:'nliwiderspruch', label:'NLI-Widerspruch', alert:true,
+      ids: cs.filter(c => (c.flags||[]).includes('nli_widerspruch')).map(c=>c.id) },
     { key:'ohnequelle', label:'ohne Quelle',
       ids: cs.filter(c => c.relation === 'keine_quelle').map(c=>c.id) },
     { key:'inferiert', label:'inferiert',
@@ -647,12 +667,27 @@ function apply(){
 /* =====================================================================
    Inspector
    ===================================================================== */
+/* Attributionsform aus lex/emb ableiten (Design-Space der CHI-Studien zu
+   „traceable text": exact quote / paraphrase). Reine Anzeigelogik, die
+   Werte tragen die Unterscheidung ohnehin schon — hoher lex heißt
+   wörtliche Übernahme, niedriger lex bei hohem emb heißt Paraphrase.
+   Die Schwellen sind Heuristik, kein Urteil. */
+function attributionsform(c){
+  if (!c.sources || !c.sources.length || !c.scores) return null;
+  if (c.scores.lex >= 0.55) return 'wörtlich';
+  if (c.scores.emb != null && c.scores.lex < 0.35 && c.scores.emb >= 0.60)
+    return 'Paraphrase';
+  return null;
+}
+
 function renderInspector(ids, hotSents){
   const box = $('#inspector');
   const id = hoverClaim || ids[ids.length-1];
   if (!id){ box.classList.remove('open'); box.innerHTML=''; return; }
   const c = claimById.get(id);
   const conflict = (c.flags||[]).includes('zahlkonflikt');
+  const nliW = (c.flags||[]).includes('nli_widerspruch');
+  const attr = attributionsform(c);
 
   const meter = (label, v, bad) => `
     <div class="insp-col meter">
@@ -684,15 +719,22 @@ function renderInspector(ids, hotSents){
   box.innerHTML = `
     <div class="insp-grid">
       <div class="insp-col" style="flex:1 1 300px">
-        <div class="insp-k">${c.id} · ${c.relation.replace('_',' ')}
-          ${conflict ? '<span class="badge alert" style="margin-left:6px">Zahlkonflikt</span>' : ''}</div>
+        <div class="insp-k">${c.id} · ${c.relation.replace(/_/g,' ')}
+          ${attr ? `<span class="badge" style="margin-left:6px">${attr}</span>` : ''}
+          ${conflict ? '<span class="badge alert" style="margin-left:6px">Zahlkonflikt</span>' : ''}
+          ${nliW ? '<span class="badge alert" style="margin-left:6px">NLI-Widerspruch</span>' : ''}</div>
         <div class="insp-v quote">„${esc(c.text)}“</div>
       </div>
-      ${meter('Confidence', c.confidence, c.confidence < .7)}
-      ${meter('Margin zu Top-2', c.margin, c.margin < .10)}
+      ${c.relation === 'keine_quelle'
+        ? meter('Sicherheit · ohne Quelle', c.confidence, c.confidence < .7)
+          + meter('Abstand zur Schwelle',
+                  Math.max(0, Math.min(1, ((c.scores && c.scores.top) || 0) / .44)),
+                  ((c.scores && c.scores.top) || 0) >= .40)
+        : meter('Confidence', c.confidence, c.confidence < .7)
+          + meter('Margin', c.margin, c.margin < .10)}
       ${c.scores ? (f => `<div class="insp-col">
         <div class="insp-k">Scores</div>
-        <div class="insp-scores">top ${f(c.scores.top)} · lex ${f(c.scores.lex)} · emb ${f(c.scores.emb)} · anker ${f(c.scores.anchor)}</div>
+        <div class="insp-scores">top ${f(c.scores.top)} · lex ${f(c.scores.lex)} · emb ${f(c.scores.emb)} · anker ${f(c.scores.anchor)}${c.scores.nli != null ? ` · nli ${f(c.scores.nli)}` : ''}</div>
       </div>`)(v => v == null ? '—' : v.toFixed(2).replace('.', ',')) : ''}
       <div class="insp-col" style="flex:1 1 260px">
         <div class="insp-k">Entitäten (normalisiert)</div>${ents}
@@ -743,14 +785,20 @@ function drawWires(act){
 
       const y1 = Math.max(4, Math.min(g.height - 4, ay));
       const y2 = Math.max(4, Math.min(g.height - 4, ty));
+      const versch = c.relation === 'bedeutung_verschoben';
       const stroke = (c.flags||[]).includes('zahlkonflikt') ? 'var(--conflict)'
-                    : cls === 'on' ? 'var(--lime-deep)' : `var(--${cls})`;
+                    : cls === 'on' ? (versch ? 'var(--rel-verschoben)' : 'var(--lime-deep)')
+                    : `var(--${cls})`;
       const p = document.createElementNS('http://www.w3.org/2000/svg','path');
       p.setAttribute('d', `M0,${y1} C${W*.45},${y1} ${W*.55},${y2} ${W},${y2}`);
       p.setAttribute('fill','none');
       p.setAttribute('stroke', stroke);
       p.setAttribute('stroke-width', src.role === 'redundant' ? 1.2 : 2);
-      if (src.role === 'redundant' || !aVis || !tVis) p.setAttribute('stroke-dasharray','3 3');
+      if (versch){
+        p.setAttribute('stroke-dasharray','2 5');       // eigener Linienstil
+        p.setAttribute('stroke-linecap','round');
+      } else if (src.role === 'redundant' || !aVis || !tVis)
+        p.setAttribute('stroke-dasharray','3 3');
       p.setAttribute('opacity', (aVis && tVis) ? .95 : .35);
       svg.appendChild(p);
 
@@ -810,6 +858,19 @@ docA.addEventListener('mouseover', e => {
   revSentence = el.dataset.sent; apply();
 });
 docA.addEventListener('mouseleave', () => { revSentence = null; apply(); });
+
+/* Modaltaste: Alt gedrückt halten -> alle belegten Artikelstellen leuchten,
+   loslassen -> wieder weg. Die Artikelspannen tragen data-claims bereits,
+   der Zustand lebt allein im body-Attribut. */
+document.addEventListener('keydown', e => {
+  if (e.key === 'Alt' && !/^(TEXTAREA|INPUT|SELECT)$/.test(e.target.tagName)){
+    document.body.dataset.allsrc = '1'; e.preventDefault();
+  }
+});
+document.addEventListener('keyup', e => {
+  if (e.key === 'Alt') document.body.dataset.allsrc = '0';
+});
+window.addEventListener('blur', () => { document.body.dataset.allsrc = '0'; });
 
 document.addEventListener('keydown', e => {
   if (/^(TEXTAREA|INPUT|SELECT)$/.test(e.target.tagName)) return;
@@ -972,13 +1033,14 @@ const LS = 'articly-alignment-lab';
   $('#in-article').value    = s.article    ?? '';
   $('#in-transcript').value = s.transcript ?? '';
   if (s.model !== undefined) $('#model').value = s.model;
+  if (s.nli !== undefined) $('#nli').value = s.nli;
   if (s.key) $('#apikey').value = s.key;
 })();
 
 function persist(){
   localStorage.setItem(LS, JSON.stringify({
     article: $('#in-article').value, transcript: $('#in-transcript').value,
-    model: $('#model').value, key: $('#apikey').value,
+    model: $('#model').value, nli: $('#nli').value, key: $('#apikey').value,
   }));
 }
 
@@ -1014,6 +1076,7 @@ function syncKeyField(){
   $('#apikey').placeholder = local ? 'kein Key nötig' : 'SAIA-API-Key (bleibt lokal)';
 }
 $('#model').addEventListener('change', () => { syncKeyField(); persist(); });
+$('#nli').addEventListener('change', persist);
 syncKeyField();
 
 async function run(){
@@ -1026,16 +1089,19 @@ async function run(){
   }
   persist();
   const model = $('#model').value;
+  const nliModel = $('#nli').value;
   stat.className = 'intake-status busy';
-  stat.textContent = !model ? 'Analysiere · Stufe 0+1 offline …'
+  stat.textContent = (!model ? 'Analysiere · Stufe 0+1 offline …'
     : model.startsWith('local-')
       ? `Analysiere · ${model.slice(6)} auf der CPU … (erster Lauf lädt das Modell)`
-      : `Analysiere · ${model} …`;
+      : `Analysiere · ${model} …`)
+    + (nliModel ? ` + NLI ${nliModel.slice(4)} (erster Lauf lädt das Modell)` : '');
   $('#run').disabled = true;
   try{
     const r = await fetch('/api/align', {
       method: 'POST', headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({article, transcript, model, api_key: $('#apikey').value}),
+      body: JSON.stringify({article, transcript, model, nli: nliModel,
+                            api_key: $('#apikey').value}),
     });
     const j = await r.json();
     if (!r.ok) throw new Error(j.error || ('HTTP ' + r.status));
@@ -1045,6 +1111,7 @@ async function run(){
     stat.className = 'intake-status';
     stat.textContent = `${st.saetze} Sätze · ${st.claims} Claims` +
       (st.embeddings ? ` · ${st.embeddings} Embeddings` : ' · offline') +
+      (st.nli_paare ? ` · ${st.nli_paare} NLI-Paare` : '') +
       ` · ${st.dauer_s} s`;
     if (j.meta && j.meta.ratelimit) renderQuota(j.meta.ratelimit, null);
     setIntake(false);

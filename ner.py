@@ -138,6 +138,36 @@ def persons(text: str) -> list[tuple[str, int, int]]:
     return out
 
 
+def entities(text: str,
+             labels: tuple[str, ...] = ("PER", "ORG")
+             ) -> list[tuple[str, int, int, str]]:
+    """Benannte Entitäten als (surface, start, end, label).
+
+    Wie `persons()`, aber nicht auf Personen beschränkt. Für die
+    Sprecherzuordnung in Zitatblöcken werden auch Organisationen
+    gebraucht: „so eine Sprecherin" verweist auf das City-Hotel
+    Geilenkirchen, nicht auf eine Person.
+
+    Im Regex-Rückfall lassen sich Personen und Organisationen nicht
+    trennen; alle Treffer tragen dann das Label '?'. Für die
+    Sprecherzuordnung genügt das — dort zählt nur, ob überhaupt ein
+    Eigenname vorliegt.
+    """
+    _ensure()
+    if _nlp_state == "spacy":
+        out = []
+        for ent in _nlp(text).ents:
+            if ent.label_ not in labels:
+                continue
+            surface = ent.text.strip()
+            if not surface:
+                continue
+            start = ent.start_char + (len(ent.text) - len(ent.text.lstrip()))
+            out.append((surface, start, start + len(surface), ent.label_))
+        return out
+    return [(s, a, b, "?") for s, a, b in persons(text)]
+
+
 def name_tokens(surface: str) -> set[str]:
     """Vergleichbare Namensbestandteile: kleingeschrieben, ohne Titel."""
     toks = _strip_titles(re.split(r"[-\s]+", surface.strip()))

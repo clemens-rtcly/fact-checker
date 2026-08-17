@@ -16,6 +16,7 @@ import time
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
+import nli
 import saia
 from pipeline import align
 
@@ -100,6 +101,7 @@ class Handler(BaseHTTPRequestHandler):
         article = (body.get("article") or "").strip()
         transcript = (body.get("transcript") or "").strip()
         model = (body.get("model") or "").strip()
+        nli_model = (body.get("nli") or "").strip()
         api_key = (body.get("api_key") or "").strip()
 
         if not article or not transcript:
@@ -109,7 +111,11 @@ class Handler(BaseHTTPRequestHandler):
             self._json(400, {"error": "Eingabe zu groß (max. 200k Zeichen)"})
             return
 
-        counter = {"n": 0}
+        if nli_model and nli_model not in nli.NLI_MODELS:
+            self._json(400, {"error": f"Unbekanntes NLI-Modell: {nli_model}"})
+            return
+
+        counter = {"n": 0, "nli": 0}
         embed_fn = None
         if model:
             def embed_fn(texts, is_query):
@@ -117,13 +123,26 @@ class Handler(BaseHTTPRequestHandler):
                 return saia.embed(texts, model=model, api_key=api_key,
                                   is_query=is_query)
 
+        nli_fn = None
+        if nli_model:
+            def nli_fn(pairs):
+                counter["nli"] += len(pairs)
+                return nli.classify(pairs, model=nli_model)
+
+        label = model or "ohne Embeddings"
+        if nli_model:
+            label += f" + {nli_model}"
+
         t0 = time.time()
         try:
             result = align(article, transcript, embed_fn=embed_fn,
-                           model_label=model or "ohne Embeddings")
+                           model_label=label, nli_fn=nli_fn)
         except saia.EmbedError as e:
             prefix = "Lokales Modell: " if model in saia.LOCAL_MODELS else ""
             self._json(502, {"error": f"{prefix}{e}"})
+            return
+        except nli.NliError as e:
+            self._json(502, {"error": f"NLI: {e}"})
             return
         except Exception as e:  # Pipelinefehler sichtbar machen
             self._json(500, {"error": f"Pipeline-Fehler: {e!r}"})
@@ -133,6 +152,7 @@ class Handler(BaseHTTPRequestHandler):
             "saetze": len(result["article"]["sentences"]),
             "claims": len(result["transcript"]["claims"]),
             "embeddings": counter["n"],
+            "nli_paare": counter["nli"],
             "dauer_s": round(time.time() - t0, 1),
         }
         if model and model not in saia.LOCAL_MODELS:

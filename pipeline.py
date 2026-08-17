@@ -8,6 +8,9 @@ Alignment-Pipeline, Stufen 0–2.
   Stufe 1.2  Teilaussagen: Sätze an Konnektoren zerlegen (claims.py)
   Stufe 1.5  Restabdeckung: weitere Quellen nach ihrem Zusatzbeitrag
   Stufe 2    Embeddings (SAIA oder lokal, optional) + Score-Fusion
+  Stufe 3    NLI (lokal, optional): Entailment-Prüfung Claim gegen
+             Fundstellen -> Relation `bedeutung_verschoben`, Flag
+             `nli_widerspruch`
 
 Ausgabe: JSON exakt im Schema des Split-View-Prototyps
 (article.sentences, transcript.claims mit relation/sources/confidence/
@@ -25,6 +28,7 @@ from html import unescape
 
 import claims
 import ner
+import zitate
 from german_numbers import Entity, extract_entities, normalize_numbers
 
 # ------------------------------------------------------------- Konfiguration
@@ -42,6 +46,9 @@ CFG = {
     # Confidence: Potenzmittel über Abdeckung und Embedding
     "conf_power": 3.0,    # 1 = Mittelwert, ∞ = Maximum
     "conf_margin_ref": 0.15,
+    # Ab dieser gemeinsamen Abdeckung gilt eine Verdichtung als tragfähig,
+    # auch wenn kein Einzelsatz die Direkt-Schwelle erreicht hat.
+    "agg_cov_ok": 0.60,
     "dissens_delta": 0.45,  # ab hier gelten die Signale als uneinig
     # Anker-Boni (additiv, gedeckelt)
     "anchor_unique": 0.30,   # numerischer Anker, eindeutig im Artikel
@@ -54,10 +61,17 @@ CFG = {
     # eine sehr dünne Datenbasis, besonders auf der Negativseite.
     "t_direct": 0.60,
     "t_none": 0.44,
+    # Ab diesem Anteil von t_none gilt ein gescheiterter Kandidat als
+    # knapp und wird in der Notiz genannt.
+    "knapp_faktor": 0.60,
     # Aggregation über Restabdeckung (Stufe 1.5):
     # Ein weiterer Satz wird aufgenommen, wenn er einen Anteil des Claims
     # erklärt, den die bisherigen Fundstellen NICHT erklären.
-    "residual_min": 0.13,        # Mindest-Zusatzbeitrag am Claim-Gewicht
+    # Restabdeckung: nötiger Zusatzbeitrag, abhängig vom Abstand zur
+    # nächsten schon gewählten Fundstelle (siehe `schwelle` in align)
+    "residual_nah_abstand": 2,   # bis hierhin gilt ein Satz als benachbart
+    "residual_min_nah": 0.10,    # Nachbarschaft: niedrigere Hürde
+    "residual_min_fern": 0.22,   # Ferne: höhere Hürde gegen Scheinbelege
     "residual_max_sources": 3,   # Obergrenze der Fundstellen je Claim
     "residual_min_carriers": 2,  # so viele Inhaltswörter müssen den
                                  # Zusatzbeitrag tragen (gegen Scheinbelege)
@@ -68,6 +82,24 @@ CFG = {
     "split_claims": True,
     "split_min_lex": 0.16,   # darunter gilt ein Teil als "findet nichts";
                              # zurückgeführt wird er nur mit Rückverweis
+    # NLI (Stufe 3): Entscheidung auf den Softmax-Wahrscheinlichkeiten.
+    # Vorläufige Setzung — wie t_direct/t_none erst mit einem Gold-Set
+    # seriös kalibrierbar. Herabgestuft zu `bedeutung_verschoben` wird nur,
+    # wenn Entailment unter der Schwelle liegt UND Neutral die dominante
+    # Klasse ist (Definition des dritten Link-Status: widerspricht nicht,
+    # stützt aber auch nicht).
+    # Fragesätze belegen nichts — Abschlag statt Ausschluss (siehe align)
+    "frage_faktor": 0.55,
+    "nli_entail_min": 0.60,   # darunter gilt der Claim als nicht gestützt
+    "nli_contra_min": 0.55,   # darüber Flag `nli_widerspruch` …
+    "nli_contra_margin": 0.25,  # … aber nur mit diesem Abstand zu
+                                # entailment; sonst ist das Modell
+                                # unentschieden und der Chip zu laut
+    "nli_contra_support_max": 0.75,  # … und oberhalb dieser Stützung durch
+                                # lex/emb nur noch bei Negationsasymmetrie:
+                                # ein Claim mit sehr hoher Übereinstimmung,
+                                # in dem nichts verneint wird, ist eher
+                                # korrekt verdichtet als widersprüchlich
 }
 
 
@@ -91,6 +123,7 @@ class Sent:
     text: str
     paragraph: int
     block: str
+    part: bool = False   # True = Teilaussage aus Stufe 1.2 (kein ganzer Satz)
 
 
 def _split_sentences_in(text: str, p_start: int, p_end: int) -> list[tuple[int, int]]:
@@ -454,7 +487,7 @@ def _covered_weight(claim_vec: dict[str, float], grams: set[str],
 
 
 def _coverage_score(claim_cvec, claim_cgrams, sent_cvec, sent_cgrams,
-                    coloc: float) -> float:
+                    coloc: float, sent_cgrams_a: set[str] | None = None) -> float:
     """Asymmetrischer Abdeckungsscore für ein Paar.
 
     Drei Bestandteile, die unterschiedliche Fehler abfangen:
@@ -475,9 +508,18 @@ def _coverage_score(claim_cvec, claim_cgrams, sent_cvec, sent_cgrams,
     daran scheiterte ein Fall, in dem „diese … sind" eine Verdichtung mit
     einem inhaltlich unbeteiligten Satz auslöste (13,7 % Restbeitrag; nach
     der Filterung 1,3 %).
+
+    `sent_cgrams_a` erlaubt für A eine ERWEITERTE Wortmenge, während B und
+    der Vektor beim rohen Satz bleiben (Sprecherkontext, siehe zitate.py).
+    Beides muss getrennt bleiben: Würde der geerbte Kontext auch in B
+    einfließen, machte er den Satz künstlich länger und der Dämpfer würde
+    genau die Sätze bestrafen, denen der Kontext helfen soll — gemessen
+    fiel die Abdeckung dadurch von 0,479 auf 0,461, obwohl mehr Evidenz
+    vorlag.
     """
     total = sum(claim_cvec.values()) or 1.0
-    a = sum(w for g, w in claim_cvec.items() if g in sent_cgrams) / total
+    grams_a = sent_cgrams if sent_cgrams_a is None else sent_cgrams_a
+    a = sum(w for g, w in claim_cvec.items() if g in grams_a) / total
     tot_s = sum(sent_cvec.values()) or 1.0
     b = sum(w for g, w in sent_cvec.items() if g in claim_cgrams) / tot_s
 
@@ -571,16 +613,77 @@ def _choose_claims(transcript_text: str, art_sents: list[Sent]) -> list[Sent]:
             if orphan or len(set(besten)) < 2:
                 parts = [(s.text, s.start, s.end)]
         for t, a, b in parts:
-            final.append(Sent("", a, b, t, s.paragraph, s.block))
+            final.append(Sent("", a, b, t, s.paragraph, s.block,
+                              part=len(parts) > 1))
 
     for i, s in enumerate(final, 1):
         s.id = f"c{i}"
     return final
 
 
+_NEGATION = re.compile(
+    r"\b(nicht|nichts|kein\w*|nie|niemals|niemand|ohne|weder|kaum|"
+    r"nirgend\w*|aufgehoben|abgesagt|gestrichen)\b", re.I)
+
+
+def _negation_asymmetry(premise: str, hypothesis: str) -> bool:
+    """True, wenn Negation nur auf EINER Seite steht.
+
+    Der weitaus häufigste echte Widerspruch entsteht durch Negation:
+    „Der Turm wird verkleidet" gegen „Der Turm wird nicht verkleidet".
+    Solche Paare haben naturgemäß fast identischen Wortlaut — lex und emb
+    stützen also stark, obwohl der Inhalt kollidiert. Ohne diese Prüfung
+    würde die Stützungsregel unten ausgerechnet die Fälle unterdrücken,
+    für die der Widerspruchs-Chip existiert.
+
+    Bewusst grob: Es geht nicht um korrekte Skopusanalyse, sondern um die
+    Frage, ob es überhaupt einen Anhaltspunkt für eine Verneinung gibt,
+    der das NLI-Urteil unabhängig stützt.
+    """
+    return bool(_NEGATION.search(premise)) != bool(_NEGATION.search(hypothesis))
+
+
+def _nli_premise(primary: list[int], art_sents: list[Sent]) -> str:
+    """Prämisse für die NLI-Prüfung eines Claims.
+
+    Die Prämissenkonstruktion ist wichtiger als die Modellwahl: Der
+    Cross-Encoder kann nur auflösen, was in seiner Eingabe steht. Für
+    „St. Barbara" <-> „Die Kirche in Pannesheide" liegt die verbindende
+    Evidenz in der Überschrift, die Aussage aber im Fließtext. Deshalb
+    werden Überschrift und erster Vorspann-Satz vorangestellt — in
+    Nachrichtentexten führen sie fast immer die Hauptentität ein und sind
+    billig mitzugeben. Der volle Absatz bleibt draußen: Er verlängert die
+    Eingabe und könnte Entailment aus Sätzen liefern, auf die der Link
+    gar nicht zeigt.
+
+    Beide Seiten (auch die Hypothese, siehe Aufrufstelle) laufen durch
+    `normalize_numbers` — die TracSum-Fehleranalyse zeigt, dass NLI-Modelle
+    an unterschiedlichen Zahlschreibweisen scheitern („zwölf Millionen"
+    vs. „12 Millionen"); nach der Normalisierung sind übereinstimmende
+    Werte zeichengleich.
+    """
+    kopf: list[int] = []
+    for si, s in enumerate(art_sents):
+        if s.block == "headline" and not kopf:
+            kopf.append(si)
+        elif s.block == "lead":
+            kopf.append(si)
+            break
+    reihenfolge = sorted(set(kopf) | set(primary))
+    return " ".join(normalize_numbers(art_sents[si].text)
+                    for si in reihenfolge)
+
+
 def align(article_text: str, transcript_text: str,
-          embed_fn=None, model_label: str = "ohne Embeddings") -> dict:
-    """Hauptfunktion. embed_fn(texts, is_query) -> list[list[float]] | None."""
+          embed_fn=None, model_label: str = "ohne Embeddings",
+          nli_fn=None) -> dict:
+    """Hauptfunktion.
+
+    embed_fn(texts, is_query) -> list[list[float]] | None
+    nli_fn(pairs) -> list[{"entailment","neutral","contradiction": float}]
+        Optional (Stufe 3). Bekommt (Prämisse, Hypothese)-Paare und liefert
+        Wahrscheinlichkeiten in Eingabereihenfolge, siehe nli.classify.
+    """
     article_text = strip_html(article_text)
     transcript_text = strip_html(transcript_text)
     art_sents = segment(article_text, "article", "s")
@@ -617,9 +720,21 @@ def align(article_text: str, transcript_text: str,
     art_grams = [set(_ngrams(_prep(s.text)).keys()) for s in art_sents]
     claim_grams = [set(_ngrams(_prep(c.text)).keys()) for c in claims_raw]
 
+    # ---------------- Sprecherkontext (Zitatblöcke)
+    # Zwei Wortmengen je Artikelsatz. Die angereicherte bestimmt nur, WAS
+    # gefunden wird; berichtet und gespannt wird ausschließlich auf dem
+    # rohen Satz. Sonst stünde im Inspector „erklärt 80 %", während ein
+    # Teil davon aus einem Nachbarsatz stammt.
+    kontexte = zitate.sprecherkontexte(art_sents)
+
     art_ctoks = [_content_tokens(s.text) for s in art_sents]
     claim_ctoks = [_content_tokens(c.text) for c in claims_raw]
     art_cgrams = [_content_grams(t) for t in art_ctoks]
+    # A-Term darf den geerbten Kontext sehen, B-Term und Vektor nicht
+    art_cgrams_a = [
+        (art_cgrams[i] | _content_grams(_content_tokens(kontexte[i])))
+        if kontexte[i] else art_cgrams[i]
+        for i in range(len(art_sents))]
     claim_cgrams = [_content_grams(t) for t in claim_ctoks]
     art_cvecs = [{g: w for g, w in art_vecs[si].items() if g in art_cgrams[si]}
                  for si in range(n)]
@@ -636,14 +751,15 @@ def align(article_text: str, transcript_text: str,
         for si in range(n):
             # Ko-Lokalität nur rechnen, wo überhaupt Inhalt gemeinsam ist —
             # spart den teuren Tokenvergleich für die meisten Paare.
-            grob = (len(claim_cgrams[ci] & art_cgrams[si])
+            grob = (len(claim_cgrams[ci] & art_cgrams_a[si])
                     / max(len(claim_cgrams[ci]), 1))
             k = 0.0
             if grob >= 0.10:
                 k = _colocality(claim_tokgrams[ci], claim_tokpos[ci],
                                 art_tokgrams[si], art_tokpos[si])
             zeile.append(_coverage_score(claim_cvecs[ci], claim_cgrams[ci],
-                                         art_cvecs[si], art_cgrams[si], k))
+                                         art_cvecs[si], art_cgrams[si], k,
+                                         sent_cgrams_a=art_cgrams_a[si]))
         cov.append(zeile)
 
     # ---------------- Stufe 2: Embeddings (optional)
@@ -693,12 +809,24 @@ def align(article_text: str, transcript_text: str,
         w_l = CFG["w_lex"] / tot
         w_p = CFG["w_pos"] / tot
 
+    # Teaserfragen im Vorspann sind lexikalische Magnete: Sie enthalten das
+    # Themenvokabular des ganzen Textes („Hat das Großereignis Auswirkungen
+    # auf das Gastgewerbe im Kreis?"), behaupten aber nichts. Jeder
+    # zusammenfassende Claim dockt an ihnen an — gemessen an einem realen
+    # Paar gewannen sie zwei Claims mit deutlichem Abstand vor den Sätzen,
+    # die die Frage beantworten. Ein Fragesatz kann nie Beleg sein, weil er
+    # keine Aussage trifft; deshalb ein harter Abschlag statt Ausschluss —
+    # so bleibt er sichtbar, falls doch einmal nichts Besseres existiert.
+    ist_frage = [s.text.rstrip().endswith("?") for s in art_sents]
+
     def fused_at(ci: int, si: int) -> float:
         pos = 1.0 - abs(si / max(n - 1, 1) - ci / max(m - 1, 1))
         base = w_c * cov[ci][si] + w_l * lex[ci][si] + w_p * pos
         if emb is not None:
             base += w_e * emb[ci][si]
         base = min(base, 1.0)
+        if ist_frage[si]:
+            base *= CFG["frage_faktor"]
         # Anker werden in den verbleibenden Spielraum skaliert statt addiert.
         # Additiv überschritten Basis + Anker regelmäßig 1,0 und wurden
         # abgeschnitten — dann lagen Platz 1 und Platz 2 gleichauf und die
@@ -707,7 +835,8 @@ def align(article_text: str, transcript_text: str,
 
     fused = [[fused_at(ci, si) for si in range(n)] for ci in range(m)]
 
-    def residual_gain(ci: int, chosen: list[int], cand: int) -> float:
+    def residual_gain(ci: int, chosen: list[int], cand: int,
+                      min_traeger: int | None = None) -> float:
         """Anteil des Claims, den `cand` zusätzlich zu `chosen` erklärt.
 
         Dieselbe Rechnung wie das A aus `_coverage_score`, nur mit den
@@ -721,9 +850,19 @@ def align(article_text: str, transcript_text: str,
         durchs Raster: für die gibt es weiter unten den eigenen Pfad über
         `anchor_extra`.
         """
+        # Asymmetrisch, und zwar mit Absicht:
+        #   bereits erklärt  -> ANGEREICHERTE Sicht. Was der Sprecherkontext
+        #       einer Fundstelle abdeckt, gilt als erklärt; sonst holt ein
+        #       ferner Satz Punkte für einen Namen, den der Block ohnehin
+        #       trägt (gemessen: s39 rutschte so zu c11 hinein).
+        #   Zusatzbeitrag   -> ROHE Sicht. Ein geerbter Kontext ist per
+        #       Definition nichts Neues; er ist ja mit dem ganzen Block
+        #       geteilt. Zählte er als Beitrag, würde jeder weitere Satz
+        #       desselben Zitats als Verdichtung erscheinen (gemessen:
+        #       s34 und s36 drängten sich so zu c19).
         covered: set[str] = set()
         for si in chosen:
-            covered |= art_cgrams[si]
+            covered |= art_cgrams_a[si]
         rest = {g: w for g, w in claim_cvecs[ci].items()
                 if g not in covered and g in art_cgrams[cand]}
         if not rest:
@@ -736,12 +875,15 @@ def align(article_text: str, transcript_text: str,
             wg = set(_ngrams(_prep(w)))
             if wg and sum(v for g, v in rest.items() if g in wg) / total > 0.01:
                 traeger += 1
-                if traeger >= CFG["residual_min_carriers"]:
+                if traeger >= (CFG["residual_min_carriers"]
+                               if min_traeger is None else min_traeger):
                     return gewinn
         return 0.0
 
     # ---------------- Entscheidungen pro Claim
     claims_json = []
+    # (Index, Prämisse, Hypothese, Downgrade-Schutz, Quelltext)
+    nli_jobs: list[tuple[int, str, str, bool, str]] = []
     for ci, c in enumerate(claims_raw):
         row = fused[ci]
         order = sorted(range(n), key=lambda si: -row[si])
@@ -750,6 +892,7 @@ def align(article_text: str, transcript_text: str,
         margin = round(max(s1 - s2, 0.0), 2)
         note_parts = list(anchor_notes[ci])
         flags: list[str] = []
+        unter_schwelle = False
 
         # ---------------- Primärzuordnung
         redundant: list[int] = []
@@ -766,12 +909,32 @@ def align(article_text: str, transcript_text: str,
             relation = "direkt"
             srcs = [si1]
             conf = 0.0          # wird unten aus der Abdeckung gesetzt
-            note_parts.append("Unter der Direkt-Schwelle — zur Prüfung empfohlen.")
+            unter_schwelle = True
         else:
             relation = "keine_quelle"
             srcs = []
+            # Der Wert misst hier etwas ANDERES als bei belegten Claims:
+            # nicht „so gut ist der Beleg", sondern „so sicher gibt es
+            # keinen". Je weiter der beste Kandidat unter `t_none` liegt,
+            # desto höher. Beides in derselben Leiste anzuzeigen ist
+            # irreführend — die Oberfläche beschriftet das Feld deshalb
+            # abhängig von der Relation um.
             conf = round(min(0.97, 0.55 + (CFG["t_none"] - s1) * 2.2), 2)
-            note_parts.append("Keine ausreichend ähnliche Stelle im Artikel.")
+            # Der knapp gescheiterte Kandidat gehört genannt. Ein Claim mit
+            # top 0,44 bei einer Schwelle von 0,44 ist etwas völlig anderes
+            # als einer mit 0,20 — im ersten Fall lohnt der Blick auf den
+            # Satz, im zweiten nicht. Ohne diese Angabe steht in beiden
+            # Fällen nur „keine ausreichend ähnliche Stelle".
+            if s1 >= CFG["t_none"] * CFG["knapp_faktor"]:
+                note_parts.append(
+                    "Keine ausreichend ähnliche Stelle im Artikel — "
+                    f"nächster Kandidat {art_sents[si1].id} mit "
+                    + f"{s1:.2f}".replace(".", ",")
+                    + " (Schwelle " + f"{CFG['t_none']:.2f}".replace(".", ",")
+                    + ").")
+            else:
+                note_parts.append(
+                    "Keine ausreichend ähnliche Stelle im Artikel.")
 
         # ---------------- Stufe 1.5: Restabdeckung (gierig)
         # Nicht „ähnelt Satz X dem Claim?", sondern „erklärt Satz X etwas,
@@ -780,14 +943,53 @@ def align(article_text: str, transcript_text: str,
         # Ähnlichkeitsschwelle gegen den ganzen Claim gescheitert.
         gains: list[tuple[int, float]] = []
         if relation != "keine_quelle" and len(c.text) >= CFG["agg_min_claim_len"]:
+            def schwelle(si: int) -> float:
+                """Nötiger Restbeitrag, abhängig vom Abstand zur nächsten
+                bereits gewählten Fundstelle.
+
+                Gemessen an einem realen Paar (21 Claims): Die fehlenden
+                zweiten Quellen lagen im Abstand 1 bis 2, die fälschlich
+                aufgenommenen im Abstand 8 bis 20. Verdichtung führt in
+                Nachrichtentexten fast immer benachbarte Sätze zusammen —
+                ein Zitat und seine Fortsetzung, eine Aussage und ihre
+                Einordnung. Ein Satz aus einem ganz anderen Abschnitt
+                erklärt selten wirklich etwas; meist teilt er nur ein
+                Allerweltswort („verzeichnen", „besonders", „Kreis").
+
+                Der Abstand ist also ein Prior auf die Wahrscheinlichkeit,
+                dass es sich um eine echte Verdichtung handelt — deshalb
+                niedrigere Hürde in der Nachbarschaft, höhere in der Ferne.
+                """
+                d = min((abs(si - s) for s in srcs), default=99)
+                if d <= CFG["residual_nah_abstand"]:
+                    return CFG["residual_min_nah"]
+                return CFG["residual_min_fern"]
+
             while len(srcs) < CFG["residual_max_sources"]:
-                cands = [(si, residual_gain(ci, srcs, si)) for si in range(n)
-                         if si not in srcs and si not in redundant]
+                # In der Nachbarschaft genügt ein einziges Trägerwort: Die
+                # Fortsetzung eines Zitats steuert oft genau einen Begriff
+                # bei („… sie blieben konstant" -> „Die sind bei uns
+                # konstant"). In der Ferne bleibt es bei der strengeren
+                # Regel, die Scheinbelege an Allerweltswörtern abfängt.
+                #
+                # Fragesätze auch hier aussortieren. Der Abschlag in
+                # `fused_at` hält sie von Platz 1 fern, die Restabdeckung
+                # sah sie aber weiter — und weil eine Teaserfrage das
+                # Themenvokabular des ganzen Textes trägt, erklärt sie
+                # scheinbar immer noch etwas. Ein Fragesatz kann nie Beleg
+                # sein, weder als erste noch als zweite Quelle.
+                cands = [(si, residual_gain(
+                              ci, srcs, si,
+                              min_traeger=1 if min(
+                                  (abs(si - s) for s in srcs), default=99)
+                                  <= CFG["residual_nah_abstand"] else None))
+                         for si in range(n)
+                         if si not in srcs and si not in redundant
+                         and not ist_frage[si]]
+                cands = [(si, g) for si, g in cands if g >= schwelle(si)]
                 if not cands:
                     break
                 best_si, best_gain = max(cands, key=lambda t: t[1])
-                if best_gain < CFG["residual_min"]:
-                    break
                 srcs.append(best_si)
                 gains.append((best_si, best_gain))
 
@@ -825,6 +1027,19 @@ def align(article_text: str, transcript_text: str,
 
         srcs = srcs + [si for si in redundant if si not in srcs]
 
+        # ---------------- Margin NACH der Aggregation neu bestimmen
+        # Vorher wurde Platz 1 gegen Platz 2 der Einzelsatz-Rangliste
+        # gemessen. Bei einer Verdichtung ist Platz 2 aber regelmäßig die
+        # zweite Quelle selbst — die Margin fiel also genau dann auf ~0,
+        # wenn die Aggregation gut funktionierte, und dämpfte über
+        # `conf_margin_ref` zusätzlich die Confidence. Mehr Belege zu
+        # finden machte das System unsicherer. Gemeint war immer: Wie klar
+        # hebt sich das Gewählte vom Nichtgewählten ab?
+        if relation != "keine_quelle":
+            uebrig = [row[si] for si in range(n) if si not in srcs]
+            margin = round(max(max(row[si] for si in srcs)
+                               - (max(uebrig) if uebrig else 0.0), 0.0), 2)
+
         # ---------------- Confidence aus zwei unabhängigen Signalen
         # Nicht der Mittelwert (ein starkes Signal würde heruntergezogen)
         # und kein logisches Oder (zwei mittelmäßige lägen fälschlich im
@@ -835,13 +1050,25 @@ def align(article_text: str, transcript_text: str,
             for si in srcs:
                 union |= art_cgrams[si]
             cov_total = _covered_weight(claim_cvecs[ci], union)
-            emb_sig = emb[ci][si1] if emb is not None else None
+            # Embedding-Signal über alle Fundstellen, nicht nur den besten
+            # Einzelsatz: Bei einer Verdichtung ähnelt definitionsgemäß
+            # kein einzelner Satz dem ganzen Claim, und das schlechteste
+            # Glied zog die Confidence nach unten.
+            emb_sig = (max(emb[ci][si] for si in srcs)
+                       if emb is not None else None)
             core = _pmean([cov_total, emb_sig], CFG["conf_power"])
             core *= 0.85 + 0.15 * min(1.0, margin / CFG["conf_margin_ref"])
             conf = round(min(0.98, max(0.05, core)), 2)
             note_parts.append(
                 f"Fundstellen erklären {cov_total:.0%}".replace("%", " %")
                 + " des Claims.")
+            # Der Prüfhinweis gilt dem Ergebnis, nicht dem Zwischenstand:
+            # Wenn die Verdichtung den Claim am Ende gut erklärt, war der
+            # schwache Einzeltreffer kein Mangel, sondern der Normalfall
+            # einer Zusammenfassung.
+            if unter_schwelle and cov_total < CFG["agg_cov_ok"]:
+                note_parts.append(
+                    "Unter der Direkt-Schwelle — zur Prüfung empfohlen.")
             if emb_sig is not None and abs(cov_total - emb_sig) > CFG["dissens_delta"]:
                 flags.append("signale_uneinig")
                 traeger = "der Wortlaut" if cov_total > emb_sig else "die Bedeutung"
@@ -920,6 +1147,40 @@ def align(article_text: str, transcript_text: str,
                                  "start": spans[0][0], "end": spans[-1][1],
                                  "spans": spans, "role": role})
 
+        # ---------------- Stufe 3: NLI-Auftrag einsammeln (Lauf erst nach
+        # der Schleife, damit alle Paare in EINEM Batch durchs Modell gehen)
+        if nli_fn is not None and relation in ("direkt", "aggregiert"):
+            primary = [si for si in srcs if si not in redundant]
+            # Downgrade-Schutz nur für Teilaussagen mit Rückverweis: Einem
+            # Fragment wie „deshalb müsse es ohne sie gehen" fehlt der Bezug
+            # in der Prämisse, Neutral wäre dort ein Artefakt. Auf ganze
+            # Sätze angewandt würde derselbe Schutz aber fast alles blocken
+            # — has_anaphor kennt auch „es", und „Es kam zu einer
+            # Geruchsbelästigung" ist genau der Fall, den die Stufe finden
+            # soll (expletives „es", kein Rückverweis).
+            geschuetzt = c.part and claims.has_anaphor(c.text)
+            # Für die Negationsprüfung nur die tragenden Fundstellen, nicht
+            # die ganze Prämisse: Überschrift und Vorspann bringen häufig
+            # sachfremde Verneinungen mit („finden keine Auszubildenden"),
+            # die eine Asymmetrie vortäuschen würden, die mit dem Claim
+            # nichts zu tun hat.
+            quelltext = " ".join(art_sents[si].text for si in sorted(set(srcs)))
+            # Redundante Fundstellen gehören in die Prämisse. Sie sind
+            # „redundant" nur im Sinne der Anzeige — inhaltlich sind es
+            # Sätze, die fast so gut passen wie der Primärtreffer, und
+            # nicht selten stehen genau dort die tragenden Worte. Gemessen
+            # an einem realen Paar: Zweimal war der wörtliche Beleg
+            # („Wir sind komplett ausgebucht", „Das ist bei uns immer so")
+            # als redundant eingestuft und fehlte damit in der Prämisse —
+            # das NLI meldete folgerichtig neutral, und der Claim wurde als
+            # „Bedeutung verschoben" markiert, obwohl der Beleg im Artikel
+            # steht und sogar verlinkt war.
+            nli_quellen = sorted(set(srcs))
+            nli_jobs.append((len(claims_json),
+                             _nli_premise(nli_quellen, art_sents),
+                             normalize_numbers(c.text), geschuetzt,
+                             quelltext))
+
         claims_json.append({
             "id": c.id, "start": c.start, "end": c.end, "text": c.text,
             "relation": relation, "sources": sources_json,
@@ -929,8 +1190,86 @@ def align(article_text: str, transcript_text: str,
             "scores": {"top": round(s1, 3),
                        "lex": round(lex[ci][si1], 3),
                        "emb": (round(emb[ci][si1], 3) if emb else None),
-                       "anchor": round(anchor[ci][si1], 3)},
+                       "anchor": round(anchor[ci][si1], 3),
+                       "nli": None},
         })
+
+    # ---------------- Stufe 3: NLI-Nachentscheidung
+    # Prämisse = Überschrift + Vorspann + tragende Fundstellen; Hypothese =
+    # Claim. Drei Ausgänge:
+    #   contradiction dominant  -> Flag `nli_widerspruch` (Relation bleibt —
+    #                              der Link ist richtig, der Inhalt kollidiert;
+    #                              gleiche Semantik wie beim Zahlkonflikt)
+    #   neutral dominant und    -> Relation `bedeutung_verschoben`: richtige
+    #   Entailment unter der       Stelle, Aussage leicht verschoben („es
+    #   Schwelle                   könnte" -> „es kam"). Penn-Studie: 18 von
+    #                              159 Links — gut jeder zehnte.
+    #   sonst                   -> nur Score, keine Änderung
+    # Nicht herabgestuft wird bei Teilaussagen mit offenem Rückverweis
+    # (`geschuetzt`, siehe Einsammelstelle) und bei bereits gemeldetem
+    # Zahlkonflikt — das harte Signal hat Vorrang, ein zweiter Status auf
+    # demselben Befund wäre Doppelmeldung.
+    if nli_fn is not None and nli_jobs:
+        probs = nli_fn([(p, h) for _idx, p, h, _g, _q in nli_jobs])
+        for (idx, _p, _h, geschuetzt, quelltext), pr in zip(nli_jobs, probs):
+            cj = claims_json[idx]
+            ent, neu, con = (pr["entailment"], pr["neutral"],
+                             pr["contradiction"])
+            cj["scores"]["nli"] = round(ent, 3)
+            zusatz: list[str] = []
+            # Neben der Schwelle ein echter Abstand zu entailment. Ein
+            # bloßes `con > ent` wäre wirkungslos: Bei con ≥ 0,55 ist ent
+            # zwangsläufig ≤ 0,45, die Bedingung also immer erfüllt.
+            if (con >= CFG["nli_contra_min"]
+                    and con - ent >= CFG["nli_contra_margin"]):
+                # Zweite Meinung verlangen. Gemessener Fehlermodus: Wechselt
+                # ein BILDHAFTER Ausdruck die grammatische Form (Kopulasatz
+                # <-> Prädikatsnomen, „das ist ein wunder Punkt" ->
+                # „spricht von einem wunden Punkt"), meldet das Modell mit
+                # ~0,95 Sicherheit einen Widerspruch, wo eine korrekte
+                # Verdichtung steht. Sachliche Nominalisierungen sind davon
+                # nicht betroffen (gemessen: 0 von 8).
+                #
+                # Deshalb wird der rote Chip nur vergeben, wenn das Urteil
+                # unabhängig gestützt ist — durch eine Negationsasymmetrie
+                # oder dadurch, dass lex/emb den Claim ohnehin nicht klar
+                # tragen. Ein Claim mit sehr hoher Wortlaut- UND
+                # Bedeutungsübereinstimmung, in dem nichts verneint wird,
+                # ist mit hoher Wahrscheinlichkeit korrekt verdichtet.
+                if (_negation_asymmetry(quelltext, _h)
+                        or cj["scores"]["top"] < CFG["nli_contra_support_max"]):
+                    cj["flags"].append("nli_widerspruch")
+                    zusatz.append("NLI: Fundstelle widerspricht dem Claim "
+                                  f"(contradiction {con:.2f}).")
+                else:
+                    # Nicht verschweigen, aber auch nicht als Widerspruch
+                    # ausrufen: Der Befund landet bei den uneinigen Signalen.
+                    if "signale_uneinig" not in cj["flags"]:
+                        cj["flags"].append("signale_uneinig")
+                    zusatz.append(
+                        f"NLI meldet Widerspruch (contradiction {con:.2f}), "
+                        "Wortlaut und Bedeutung stützen den Claim aber "
+                        "stark und es wird nichts verneint — nicht als "
+                        "Widerspruch gemeldet, siehe Signale uneinig.")
+            elif ent < CFG["nli_entail_min"] and neu >= ent and neu >= con:
+                if "zahlkonflikt" in cj["flags"]:
+                    pass                        # hartes Signal hat Vorrang
+                elif geschuetzt:
+                    zusatz.append(
+                        "NLI unter der Entailment-Schwelle "
+                        f"({ent:.2f}), aber Teilaussage mit Rückverweis — "
+                        "nicht herabgestuft.")
+                else:
+                    cj["relation"] = "bedeutung_verschoben"
+                    cj["flags"].append("bedeutung_verschoben")
+                    zusatz.append(
+                        "Bedeutung verschoben — die Fundstelle widerspricht "
+                        "dem Claim nicht, stützt ihn aber auch nicht "
+                        f"vollständig (entailment {ent:.2f}, "
+                        f"neutral {neu:.2f}).")
+            if zusatz:
+                cj["note"] = " · ".join(
+                    ([cj["note"]] if cj["note"] else []) + zusatz)
 
     return _assemble(article_text, transcript_text, art_sents, claims_json,
                      model_label)

@@ -1,7 +1,7 @@
 # Alignment Lab — Funktionsreferenz
 
-Stand: Stufen 0, 0.5, 1, 1.5 und 2. Diese Datei erklärt, was im Code
-passiert und wie die Anzeigen im Split-View zu lesen sind.
+Stand: Stufen 0, 0.5, 1, 1.2, 1.5, 2 und 3. Diese Datei erklärt, was im
+Code passiert und wie die Anzeigen im Split-View zu lesen sind.
 
 ---
 
@@ -68,8 +68,16 @@ Zahlenprüfung benutzt.
 |---|---|---|
 | `direkt` | Claim geht auf **eine** Artikelstelle zurück | Top-Score ≥ `t_direct`, keine weitere Quelle nötig |
 | `aggregiert` | Claim verdichtet **mehrere** Artikelstellen | mehr als eine tragende Fundstelle nach Stufe 1.5 |
+| `bedeutung_verschoben` | richtige Stelle gefunden, Aussage aber **leicht verschoben** („es *könnte*" → „es *kam*"; „Rhinopharyngitis" → „Halsschmerzen und Husten") — der Link bleibt erhalten | nur mit NLI (Stufe 3): Neutral dominiert und Entailment < `nli_entail_min`; Wellenlinie im Viewer |
 | `keine_quelle` | keine ausreichend ähnliche Stelle gefunden | Top-Score < `t_none` |
-| `inferiert` | im Schema vorgesehen, **wird derzeit nie vergeben** | bräuchte NLI (Stufe 3) |
+| `inferiert` | im Schema vorgesehen, **wird weiterhin nie vergeben** | Definition (entailt bei niedriger lexikalischer Überlappung) steht, braucht aber kalibrierte Schwellen aus einem Gold-Set |
+
+Zur Einordnung von `bedeutung_verschoben`: In der Penn-Studie
+(Kambhamettu et al.) hatten 18 von 159 Links „semantische Probleme" —
+weder Treffer noch Fehler. Vorher landete so etwas hier als `direkt` mit
+etwas niedrigerer Confidence und fiel niemandem auf. Die Fundstellen
+bleiben absichtlich erhalten: verschoben heißt „richtig verlinkt, nicht
+sauber belegt", nicht „falsch verlinkt".
 
 ### Rollen einer Fundstelle
 
@@ -86,12 +94,21 @@ als s3, beide erklären verschiedene Teile.
 
 | Anzeige | Bedeutung | Faustregel |
 |---|---|---|
+| **Sicherheit · ohne Quelle** | Bei `keine_quelle` misst das Feld etwas ANDERES: nicht die Güte eines Belegs, sondern die Sicherheit, dass keiner existiert (`0,55 + (t_none − top) × 2,2`). Je weiter der beste Kandidat unter der Schwelle liegt, desto höher. Die Oberfläche beschriftet es deshalb um und zeigt daneben den Abstand zur Schwelle statt der bedeutungslosen Margin | hoch = klarer Fehlschlag; **niedrig = knapp gescheitert und einen Blick wert** |
 | **Confidence** | Potenzmittel aus Gesamtabdeckung und Embedding, gedämpft durch die Margin | < 0,50 = ansehen |
-| **Margin zu Top-2** | Abstand zwischen bestem und zweitbestem Artikelsatz | < 0,10 = die Zuordnung war knapp, Verwechslungsgefahr |
+| **Margin** | Abstand der besten Fundstelle zum besten NICHT gewählten Satz — nach der Aggregation gemessen | klein = es gab gleichwertige Alternativen außerhalb der Auswahl |
+| **Margin zu Top-2 (alt)** | Abstand zwischen bestem und zweitbestem Artikelsatz | < 0,10 = die Zuordnung war knapp, Verwechslungsgefahr |
 | **Scores → top** | fusionierter Gesamtscore des besten Satzes | Basis aller Schwellen |
 | **Scores → lex** | rein lexikalische Ähnlichkeit (Stufe 1) | hoch bei wörtlicher Übernahme |
 | **Scores → emb** | Embedding-Ähnlichkeit (Stufe 2), `—` im Offline-Modus | hoch bei Umformulierung |
 | **Scores → anker** | Bonus aus Zahlen- und Namenstreffern (Stufe 0/0.5) | > 0 = harte Evidenz vorhanden |
+| **Scores → nli** | Entailment-Wahrscheinlichkeit der Fundstellen für den Claim (Stufe 3), fehlt ohne NLI | < `nli_entail_min` (0,60) = Stützung fraglich |
+
+Zusätzlich zeigt der Inspector neben der Relation die **Attributionsform**
+(aus dem Design-Space der CHI-Studien zu „traceable text"): `wörtlich`
+bei hohem lex, `Paraphrase` bei niedrigem lex und hohem emb. Reine
+Anzeigelogik ohne Einfluss auf die Entscheidung — die Scores tragen die
+Unterscheidung ohnehin, sie war nur nirgends sichtbar.
 
 Die Kombination ist aussagekräftiger als jeder Einzelwert: **lex niedrig,
 emb hoch** heißt „stark umformuliert, inhaltlich getroffen" — genau der
@@ -104,7 +121,9 @@ Zahlen ist dagegen ein Warnsignal.
 |---|---|
 | Zahlkonflikt | Zahl im Transkript weicht von der Zahl im Artikel ab (`flags: zahlkonflikt`) |
 | Zahl unbelegt | Zahl im Transkript kommt im Artikel gar nicht vor (`flags: zahl_unbelegt`) |
-| Signale uneinig | Abdeckung und Embedding weichen um mehr als `dissens_delta` ab (`flags: signale_uneinig`) — entweder Paraphrase ohne Wortlaut oder Wortlaut ohne Bedeutung |
+| Signale uneinig | Abdeckung und Embedding weichen um mehr als `dissens_delta` ab (`flags: signale_uneinig`) — entweder Paraphrase ohne Wortlaut oder Wortlaut ohne Bedeutung. Hier landen zusätzlich die **nicht gestützten NLI-Widersprüche** (siehe Stufe 3) |
+| Bedeutung verschoben | Relation `bedeutung_verschoben` — NLI: Fundstelle widerspricht nicht, stützt aber auch nicht vollständig |
+| NLI-Widerspruch | `flags: nli_widerspruch` — contradiction über der Schwelle **und** unabhängig gestützt; semantischer Widerspruch jenseits der Zahlkonflikte („der Turm wird *nicht* verkleidet") |
 | ohne Quelle | Relation `keine_quelle` |
 | inferiert | derzeit immer 0 |
 | Margin < 0,10 | knappe Entscheidung, Verwechslungsgefahr |
@@ -112,6 +131,16 @@ Zahlen ist dagegen ein Warnsignal.
 
 „Artikel ungenutzt" ist kein Fehler — Zusammenfassungen lassen naturgemäß
 weg. Auffällig wird es, wenn ein Satz mit harten Fakten ungenutzt bleibt.
+
+### Rückrichtung und Modaltaste
+
+Hover auf einen Artikelsatz hebt die Claims hervor, die ihn benutzen
+(Backlink). **Alt gedrückt halten** zeigt zusätzlich alle belegten
+Artikelstellen auf einmal; loslassen blendet sie wieder aus. Momentan
+statt dauerhaft, weil der Artikel sonst voller Farbe und nicht mehr
+lesbar wäre — die Empfehlung aus den CHI-Studien: fünf von 21
+Teilnehmern lasen quellenfirst, der Chip „Artikel ungenutzt" ist die
+Zahl dazu, die Modaltaste das Bild.
 
 ### Entitäten-Status
 
@@ -142,6 +171,8 @@ Artikeltext + Transkripttext
         ├─ Stufe 1.5  residual_gain()      weitere tragende Quellen
         ├─ Zahlen-Anker           eindeutige Zahlen außerhalb der Quellen
         ├─ Entity-Verifikation    match / konflikt / unbelegt
+        ├─ Stufe 3    nli.classify()     Entailment Claim <- Fundstellen
+        │                                ↓ bedeutung_verschoben / nli_widerspruch
         └─ _assemble()            JSON im Viewer-Schema
 ```
 
@@ -151,11 +182,12 @@ Artikeltext + Transkripttext
 
 ### `pipeline.py` — Steuerung und Entscheidungen
 
-**`align(article_text, transcript_text, embed_fn=None, model_label=...)`**
+**`align(article_text, transcript_text, embed_fn=None, model_label=..., nli_fn=None)`**
 Die einzige Funktion, die von außen aufgerufen wird. Führt alle Stufen
 aus und liefert das fertige JSON. `embed_fn` ist optional — fehlt sie,
 läuft alles ohne Embeddings, und die Fusionsgewichte werden automatisch
-neu normalisiert.
+neu normalisiert. `nli_fn` ist ebenfalls optional (Stufe 3) — fehlt sie,
+bleibt `scores.nli` leer und `bedeutung_verschoben` wird nie vergeben.
 
 **`segment(text, kind, id_prefix)`**
 Zerlegt in Absätze (Leerzeile) und Sätze. Kennt eine Abkürzungsliste
@@ -278,6 +310,84 @@ Der Grund für diese Konstruktion: Die naheliegende Frage „ähnelt Satz X
 dem Claim?" ist für Verdichtungen die falsche. Ein Member trägt
 definitionsgemäß nur einen Teil bei und fällt an jeder Ähnlichkeitsschwelle
 gegen den *ganzen* Claim durch.
+
+**`_nli_premise(primary, art_sents)`** — Stufe 3, Prämissenbau
+Prämisse = Überschrift + erster Vorspann-Satz + tragende Fundstellen, in
+Artikelreihenfolge und dedupliziert; beide Seiten (auch die Hypothese an
+der Aufrufstelle) zahlnormalisiert.
+
+Die Prämissenkonstruktion ist wichtiger als die Modellwahl: Der
+Cross-Encoder kann nur auflösen, was in seiner Eingabe steht. Für
+„St. Barbara" ↔ „Die Kirche in Pannesheide" liegt die verbindende
+Evidenz in der Überschrift, die Aussage aber im Fließtext — Überschrift
+und Vorspann führen in Nachrichtentexten fast immer die Hauptentität ein
+und sind billig mitzugeben. Der volle Absatz bleibt bewusst draußen: Er
+könnte Entailment aus Sätzen liefern, auf die der Link gar nicht zeigt —
+dann wäre der Claim „belegt", ohne dass die *angezeigte* Fundstelle ihn
+trägt.
+
+Die Zahlnormalisierung beider Seiten folgt der TracSum-Fehleranalyse:
+NLI-Modelle scheitern an unterschiedlichen Zahlschreibweisen („zwölf
+Millionen" vs. „12 Millionen"); nach `normalize_numbers` sind
+übereinstimmende Werte zeichengleich.
+
+**Die NLI-Nachentscheidung** (Ende von `align`)
+Alle Paare gehen in **einem** Batch durchs Modell (ein Paar je belegtem
+Claim). Drei Ausgänge auf den Softmax-Wahrscheinlichkeiten:
+
+| Befund | Wirkung |
+|---|---|
+| contradiction ≥ `nli_contra_min`, ≥ entailment + `nli_contra_margin` **und** unabhängig gestützt (siehe unten) | Flag `nli_widerspruch`, Relation bleibt — der Link ist richtig, der Inhalt kollidiert (gleiche Semantik wie beim Zahlkonflikt) |
+| dasselbe, aber **nicht** unabhängig gestützt | kein roter Chip; Flag `signale_uneinig` und eine erklärende Notiz |
+| Neutral dominiert und entailment < `nli_entail_min` | Relation → `bedeutung_verschoben`, Fundstellen bleiben erhalten |
+| sonst | nur `scores.nli`, keine Änderung |
+
+**Der Widerspruch braucht eine zweite Meinung.** Gemessener Fehlermodus
+des Modells (Ablationsreihe `nli_ablation.py` → `nli_form_check.py` →
+`nli_minimalpaare.py` → `nli_nominalphrase.py`): Wechselt ein
+**bildhafter** Ausdruck die grammatische Form — Kopulasatz gegen
+Prädikatsnomen, „das *ist* ein wunder Punkt" gegen „spricht von *einem
+wunden Punkt*" —, meldet das Modell mit ~0,95 Sicherheit einen
+Widerspruch, wo eine korrekte Verdichtung steht. Entscheidend ist die
+Kombination: sachliche Nominalisierungen sind nicht betroffen (gemessen
+0 von 8), gleiche Form bei bildhaftem Inhalt ebenfalls nicht (0 von 2),
+nur die Kreuzung kippt (2 von 2). Das Alltagsmuster im Radiotext („Die
+Lage ist angespannt" → „spricht von einer angespannten Lage") ist also
+sicher.
+
+Der rote Chip wird deshalb nur vergeben, wenn das NLI-Urteil unabhängig
+gestützt ist:
+
+* **Negationsasymmetrie** (`_negation_asymmetry`) zwischen den tragenden
+  Fundstellen und dem Claim — der weitaus häufigste echte Widerspruch
+  entsteht durch Verneinung, und solche Paare haben fast identischen
+  Wortlaut. Ohne diese Prüfung würde die Stützungsregel ausgerechnet die
+  Fälle unterdrücken, für die der Chip existiert. Geprüft wird bewusst
+  nur gegen die Fundstellen, nicht gegen die ganze Prämisse: Überschrift
+  und Vorspann bringen häufig sachfremde Verneinungen mit („finden keine
+  Auszubildenden").
+* **oder** schwache Stützung durch lex/emb (`scores.top` <
+  `nli_contra_support_max`). Ein Claim mit sehr hoher Wortlaut- und
+  Bedeutungsübereinstimmung, in dem nichts verneint wird, ist eher
+  korrekt verdichtet als widersprüchlich.
+
+Fällt beides aus, wird der Befund nicht verschwiegen, sondern als
+`signale_uneinig` geführt — mit einer Notiz, die den Contradiction-Wert
+nennt. Bewusste Einschränkung: Antonym-Widersprüche ohne Negationswort
+bei sehr hohem Wortlaut („Die Zahl stieg" / „Die Zahl sank") rutschen
+damit in die schwächere Kategorie. Das ist der Preis dafür, dass der
+rote Chip verlässlich bleibt.
+
+Zwei Schutzregeln gegen falsche Herabstufungen: Bei bereits gemeldetem
+**Zahlkonflikt** passiert nichts — das harte Signal hat Vorrang, ein
+zweiter Status auf demselben Befund wäre Doppelmeldung. Und
+**Teilaussagen mit Rückverweis** („deshalb müsse es ohne sie gehen",
+`Sent.part` + `claims.has_anaphor`) werden nie herabgestuft: Der
+Prämisse fehlt der Bezug, Neutral wäre dort ein Artefakt. Wichtig ist
+die Einschränkung auf Teilaussagen — `has_anaphor` kennt auch „es", und
+auf ganze Sätze angewandt würde der Schutz ausgerechnet das Paradebeispiel
+blocken („**Es** kam zu einer Geruchsbelästigung": expletives „es", kein
+Rückverweis).
 
 **`_normalize_matrix(rows)`**
 Spreizt die Embedding-Kosinuswerte von P10 bis zum Maximum, global über
@@ -484,14 +594,131 @@ und macht beide Backends untereinander vergleichbar.
 Lädt ein lokales Modell einmalig und hält es im Prozessspeicher — jede
 weitere Analyse startet ohne Ladezeit.
 
+### `nli.py` — Stufe 3, NLI
+
+**`classify(pairs, model)`**
+Einzige Schnittstelle nach außen. Bekommt (Prämisse, Hypothese)-Paare
+und liefert je Paar `{"entailment", "neutral", "contradiction"}` als
+Softmax-Wahrscheinlichkeiten, gebatcht (8 Paare je Vorwärtsdurchlauf).
+Gekürzt wird nur die Prämisse (`truncation="only_first"`) — die
+Hypothese ist der Claim und muss vollständig im Fenster bleiben, sonst
+beurteilt das Modell einen anderen Satz als den, der geprüft werden
+soll.
+
+**`load_nli(model)`**
+Lädt das Modell einmalig und hält es im Prozessspeicher. Drei Modelle
+in `NLI_MODELS` (Rechercheergebnis: kein eindeutiger Sieger):
+`nli-mdeberta-2mil7` (Standard; XNLI-de 82,4 %, als einziges auf
+Fever-NLI-/ANLI-Übersetzungen trainiert), `nli-gbert-large` (rein
+deutsch, XNLI-de 85,6 %, aber nur übersetztes (M)NLI) und
+`nli-minilm-l6` (Schnellstufe für Massendurchläufe).
+
+**`_label_order(model, tokenizer)`**
+Die Label-Reihenfolge im Logit-Vektor variiert je Checkpoint
+(roberta-large-mnli: contradiction/neutral/entailment, mDeBERTa:
+entailment/neutral/contradiction) — und manche Checkpoints tragen eine
+*falsche* `id2label`. Deshalb wird **immer** empirisch geprobt
+(`_order_from_probe`: Identitätspaar → Entailment-Dimension,
+Negationspaar → Contradiction-Dimension; zwei Vorwärtsdurchläufe,
+einmalig beim Laden) und das Ergebnis gegen `_order_from_config`
+gehalten. Bei Abweichung gewinnt die Probe — eine Messung schlägt eine
+Behauptung — und es erscheint eine laute Warnung.
+
+Der Config allein zu vertrauen wäre fahrlässig: Sind die Label
+vertauscht, kommt **jeder klar gestützte Claim als Widerspruch heraus**,
+und zwar lautlos, weil das Ergebnis wie ein inhaltliches Urteil
+aussieht. Erkennungsmerkmal im Viewer: `nli` nahe 0,00 bei gleichzeitig
+hoher Abdeckung und hohem emb.
+
+**`selftest(model)` / `debug_pair(model, premise, hypothesis)`**
+Diagnose von der Kommandozeile:
+
+```bash
+python nli.py nli-mdeberta-2mil7                    # vier Testfälle + Labelcheck
+python nli.py nli-gbert-large --debug "Prämisse" "Hypothese"   # Rohwerte
+```
+
+Der Selbsttest prüft entailment, neutral, contradiction und einen
+schweren Fall (Redewiedergabe mit Personenwechsel) und meldet, ob die
+Zuordnung plausibel ist; Exitcode 1 bei Verdacht. `debug_pair` zeigt
+Logits, Wahrscheinlichkeiten je Index und die Tokenanzahl — Letzteres
+deckt auf, ob die Prämisse am 512-Token-Limit gekürzt wurde.
+
+### `zitate.py` — Zitatblöcke und Sprecherkontext
+
+**`bloecke(sents)`** gruppiert Sätze, die durch Anführungszeichen
+zusammengehalten werden, je Absatz. Absatzgrenzen beenden einen Block,
+Eigennamen ausdrücklich **nicht**: „Anders sei das beim Pink-Pop-Festival
+in Landgraaf" steht mitten in der Rede einer Hotelsprecherin — würde der
+Name den Block beenden, erbte der Folgesatz den falschen Sprecher.
+
+**Attribution ohne Verbliste.** Der Sprecher wird strukturell bestimmt:
+Trennzeichen, ein bis zwei Wörter, Eigenname. Was dazwischen steht, muss
+nicht bekannt sein — geprüft wird nur, dass dort kein Funktionswort steht
+(`_NICHT_VERB`). Eine Positivliste von Redeverben wäre prinzipiell
+unvollständig („fügt hinzu", „räumt ein", „zufolge") und müsste jede
+Flexionsform führen; Funktionswörter sind dagegen eine geschlossene
+Klasse, und ein finites Verb gehört nie dazu. Das Deutsche invertiert
+nach einem Zitat, deshalb trägt die Struktur.
+
+**Eigennamen kommen aus `ner.py`**, nicht aus der Großschreibung — dem
+Modul, das die Personenerkennung der Stufe 0.5 leistet und die Heuristik
+„zwei großgeschriebene Wörter" schon einmal abgelöst hat. `ner.entities()`
+liefert dafür auch Organisationen, weil „so eine Sprecherin" auf das
+City-Hotel verweist und nicht auf eine Person.
+
+**`sprecherkontexte(sents)`** liefert je Satz den geerbten Kontextstring.
+Zwei Bestandteile, die nachweislich unterschiedlich wirken: der
+Sprechername (half c11 mit +0,175, bei c5 wirkungslos) und die
+Gruppenwörter aus Possessivphrasen der 1. Person — „meine Kollegen aus
+dem Kreis", „unsere Buchungen" (halfen c5 mit +0,29 und c7 mit +0,13).
+Angereichert wird nur, wo der Satz zu einem Block gehört, ein Pronomen
+der 1. Person oder ein Zitat trägt **und** seinen Bezug nicht selbst
+nennt.
+
+Pronomen werden bewusst **nicht** aufgelöst. „wir" wird nicht durch
+„Wolfgang Wahl und die Betriebe im Kreis" ersetzt — das wäre
+Koreferenzanalyse, im Deutschen unzuverlässig, und ein Fehler wirkte
+still. Gesammelt werden nur Wörter, die im Block ohnehin stehen.
+
+Sprechernamen werden auf die **reichste im Text belegte Form** normiert:
+„sagt Mandele" wird zu „Hoteldirektor Eugene Mandele", weil die volle
+Form die Wörter mitbringt, die eine Zusammenfassung aufgreift.
+
+Bekannte Grenzen: verschachtelte und absatzübergreifende Zitate; im
+Regex-Rückfall von `ner.py` einwortige Namen („sagt Mandele" ohne
+Vornamen) — mit spaCy kein Problem; und `GRUPPEN_UEBER_BLOECKE` — die Verteilung der Gruppenwörter
+über Blockgrenzen hinweg ist gemessen leicht schlechter (F1 0,84 statt
+0,86) und deshalb aus.
+
+### Zwei Wortmengen je Artikelsatz
+
+Der Kontext darf nur beeinflussen, **was gefunden wird**, nie **was
+berichtet wird**:
+
+| | Sicht | wofür |
+|---|---|---|
+| `art_cgrams_a` | angereichert | A-Term der Abdeckung, Kandidatensuche, „bereits erklärt" in der Restabdeckung |
+| `art_cgrams` | roh | B-Dämpfer, Zusatzbeitrag eines Kandidaten, `cov_total`, Confidence, Belegspannen |
+
+Die Trennung ist an drei Stellen nötig, jede aus einem gemessenen
+Fehler: Liefe der Kontext in den **B-Dämpfer**, machte er den Satz
+künstlich lang und bestrafte genau die Sätze, denen er helfen soll
+(0,479 fiel auf 0,461). Zählte er als **Zusatzbeitrag**, erschiene jeder
+weitere Satz desselben Zitats als Verdichtung (s34 und s36 drängten sich
+so zu c19). Fehlte er beim **bereits Erklärten**, holte ein ferner Satz
+Punkte für einen Namen, den der Block ohnehin trägt (s39 zu c11).
+
 ### `app.py` — Server
 
-**`POST /api/align`** mit `{article, transcript, model, api_key}` liefert
-das Ergebnis-JSON plus `meta.statistik` (Sätze, Claims, Embedding-Anzahl,
-Dauer). Leerer `model` = Offline-Modus.
+**`POST /api/align`** mit `{article, transcript, model, nli, api_key}`
+liefert das Ergebnis-JSON plus `meta.statistik` (Sätze, Claims,
+Embedding-Anzahl, NLI-Paare, Dauer). Leerer `model` = Offline-Modus,
+leeres `nli` = ohne Stufe 3.
 
-Statuscodes: `400` fehlerhafte Eingabe, `502` Embedding-Backend (Präfix
-sagt, welches), `500` Pipelinefehler.
+Statuscodes: `400` fehlerhafte Eingabe oder unbekanntes NLI-Modell,
+`502` Embedding- oder NLI-Backend (Präfix sagt, welches), `500`
+Pipelinefehler.
 
 ---
 
@@ -506,7 +733,10 @@ sagt, welches), `500` Pipelinefehler.
 | `dissens_delta` | 0,45 | ab hier gelten Abdeckung und Embedding als uneinig |
 | `t_direct` | 0,60 | ab hier gilt eine Zuordnung als sicher |
 | `t_none` | 0,44 | darunter `keine_quelle`; dazwischen `direkt` mit niedriger Confidence und Prüfhinweis |
-| **`residual_min`** | **0,13** | **wichtigster Regler für Aggregation** — kleiner = mehr Mehrfachquellen |
+| **`residual_min_nah`** | **0,10** | Restbeitrag, den ein **benachbarter** Satz (Abstand ≤ `residual_nah_abstand`) beisteuern muss |
+| **`residual_min_fern`** | **0,22** | dasselbe für **entfernte** Sätze — höhere Hürde gegen Scheinbelege |
+| `residual_nah_abstand` | 2 | bis zu diesem Satzabstand gilt ein Kandidat als benachbart |
+| `frage_faktor` | 0,55 | Abschlag für Fragesätze — sie behaupten nichts, ziehen aber Themenvokabular an |
 | `residual_max_sources` | 3 | Obergrenze der tragenden Fundstellen je Claim |
 | `residual_min_carriers` | 2 | so viele Inhaltswörter müssen den Zusatzbeitrag tragen |
 | `agg_min_claim_len` | 55 | sehr kurze Claims werden nicht aggregiert |
@@ -517,6 +747,16 @@ sagt, welches), `500` Pipelinefehler.
 | `redundant_delta` | 0,07 | wie nah ein Satz am Top-Score liegen muss, um als `redundant` mitzulaufen |
 | `split_claims` | True | Stufe 1.2 an/aus — auf `False` verhält sich alles wie vorher |
 | `split_min_lex` | 0,16 | darunter gilt ein Teil als „findet nichts" (nur mit Rückverweis wird zurückgeführt) |
+| `nli_entail_min` | 0,60 | darunter gilt der Claim als nicht gestützt — zusammen mit dominantem Neutral wird `bedeutung_verschoben` vergeben |
+| `nli_contra_min` | 0,55 | darüber Flag `nli_widerspruch` … |
+| `nli_contra_support_max` | 0,75 | oberhalb dieser lex/emb-Stützung wird ein Widerspruch nur noch bei Negationsasymmetrie als solcher gemeldet |
+| `nli_contra_margin` | 0,25 | … aber nur mit diesem Abstand zu entailment. Ein bloßes „contradiction > entailment" wäre wirkungslos: Bei c ≥ 0,55 ist e zwangsläufig ≤ 0,45. Gemeint ist der Fall e = 0,44 / c = 0,55 — dort ist das Modell praktisch unentschieden |
+
+Die beiden NLI-Schwellen sind vorläufig gesetzt und — wie
+`t_direct`/`t_none` — erst mit einem Gold-Set seriös kalibrierbar.
+Richtung beim Nachziehen: `nli_entail_min` höher = mehr Herabstufungen
+(mehr Recall auf verschobene Bedeutungen, mehr Fehlalarme bei lockeren
+Paraphrasen).
 
 Nicht in `CFG`: `MIN_PART_LEN` (25), `MIN_PART_LEN_DASH` (35),
 `MAX_PARTS` (3) in `claims.py`; `_COLOC_W` (8), `_COLOC_MIN` (5),
@@ -530,8 +770,16 @@ Paaren ist die Voraussetzung für sinnvolles Tuning.
 
 ## 6. Bekannte Grenzen
 
-- **`inferiert` wird nie vergeben.** Der Unterschied zwischen „steht so da"
-  und „folgt daraus" braucht ein NLI-Modell (Stufe 3).
+- **`inferiert` wird weiterhin nie vergeben.** Das Entailment-Signal
+  existiert jetzt, aber die saubere Definition (entailt bei niedriger
+  lexikalischer Überlappung = Interpretation) braucht erst kalibrierte
+  Schwellen aus einem Gold-Set — sonst wäre jede lockere Paraphrase eine
+  „Interpretation".
+- **NLI ist ein Hilfssignal, kein Orakel.** ~80–85 % XNLI-Genauigkeit
+  heißt: `bedeutung_verschoben` ist eine Prüfempfehlung. Deshalb bleiben
+  die Fundstellen erhalten, die Confidence unangetastet und die
+  Herabstufung konservativ (Neutral muss dominieren, Zahlkonflikt und
+  geschützte Teilaussagen sind ausgenommen).
 - **Die Zerlegung ist rein oberflächlich.** Sie kennt Konnektoren, aber
   keine Syntax — Sätze ohne Konnektor bleiben ungeteilt, auch wenn sie
   zwei Behauptungen enthalten.

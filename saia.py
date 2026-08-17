@@ -2,6 +2,7 @@
 Embeddings für das Alignment Lab — zwei Backends, eine Schnittstelle.
 
   remote  SAIA-API (GWDG / Academic Cloud / KISSKI), OpenAI-kompatibel
+  5acdf6d44a2a79890a0022195fa744db
           POST https://chat-ai.academiccloud.de/v1/embeddings
           Modelle: multilingual-e5-large-instruct, qwen3-embedding-4b,
                    e5-mistral-7b-instruct
