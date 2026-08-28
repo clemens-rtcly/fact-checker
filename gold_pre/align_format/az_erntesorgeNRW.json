@@ -1,0 +1,1600 @@
+{
+  "meta": {
+    "titel": "Düsseldorf Die Landwirte in NRW blicken angesichts der Hitzewelle Ende Juni und der anhaltenden Trockenheit mit Sorge auf die Ernte.",
+    "quelle": "Eigenes Paar",
+    "modell": "stufe0-2 · multilingual-e5-large-instruct + nli-mdeberta-2mil7",
+    "statistik": {
+      "saetze": 35,
+      "claims": 29,
+      "embeddings": 64,
+      "nli_paare": 26,
+      "dauer_s": 25.5
+    },
+    "ratelimit": {
+      "model": "multilingual-e5-large-instruct",
+      "checked_at": 1787353423.5694475,
+      "x-ratelimit-limit-minute": "15",
+      "x-ratelimit-remaining-minute": "13",
+      "x-ratelimit-limit-hour": "900",
+      "x-ratelimit-remaining-hour": "897",
+      "x-ratelimit-limit-day": "2000",
+      "x-ratelimit-remaining-day": "1994",
+      "x-ratelimit-limit-second": "2",
+      "x-ratelimit-remaining-second": "1",
+      "ratelimit-reset": "1",
+      "ratelimit-limit": "2",
+      "ratelimit-remaining": "1"
+    }
+  },
+  "article": {
+    "text": "Düsseldorf Die Landwirte in NRW blicken angesichts der Hitzewelle Ende Juni und der anhaltenden Trockenheit mit Sorge auf die Ernte. „Die aktuelle Situation auf den Feldern in NRW ist durchaus angespannt“, erklärte die Landwirtschaftskammer NRW mit. „Regen wird aktuell dringend benötigt. Die Verdunstung mit den Hitzerekorden und zusätzlich viel Wind hat die Böden enorm austrocknen lassen“, sagte ein Sprecher. „Die bislang insgesamt guten Prognosen müssen für die anstehende Weizen- und Rapsernte infrage gestellt werden.“ An sandigeren Standorten mit geringerem Wasservorrat seien bereits Ertragseinbußen abzusehen.\n\nDa es im Mai viel geregnet habe, sei von einer „landesweit akuten Dürresituation in der Landwirtschaft“ derzeit nicht auszugehen, teilte das Landwirtschaftsministerium NRW mit. Dennoch beobachte man die Situation aufmerksam.\n\nDer vergangene Monat war Meteorologen zufolge der heißeste Juni in Westeuropa seit Beginn der Wetteraufzeichnungen. In der zweiten Monatshälfte legte sich eine mehrtägige Hitzewelle über Deutschland, in der Spitze wurden in Sachsen-Anhalt 41,8 Grad gemessen – ein neuer Rekordwert bundesweit. Auch in NRW kletterten die Temperaturen auf mehr als 40 Grad.\n\nDie Hitze ging an den Feldern der Landwirte nicht spurlos vorbei. Die Situation sei je nach Region und Kultur unterschiedlich, berichtete der Rheinische Landwirtschafts-Verband (RLV). Aufgrund der hohen Temperaturen sei die Getreideernte in diesem Jahr bereits ungewöhnlich früh angelaufen und die Wintergerstenernte bereits vollständig eingefahren worden. Derzeit liefe die Weizenernte auf Hochtouren. „Im Getreide hat die extreme Hitze zeitweise zu einer beschleunigten Abreife beziehungsweise Notreife der Bestände geführt“, erklärte der Verband. Notreife bedeutet, dass die Körner kleiner bleiben als unter normalen Bedingungen, was zu Qualitätseinbußen führen kann. Für die Erntearbeiten seien die trockenen Bedingungen zwar günstig. „Gleichzeitig fehlen jedoch vielerorts dringend benötigte Niederschläge für Kulturen wie Kartoffeln, Mais und Zuckerrübe“, so der RLV.\n\nInsbesondere Kartoffeln reagieren empfindlich auf längere Hitzephasen und Trockenheit. Unter Wassermangel stellen die Pflanzen ihr Wachstum teilweise ein, die Blätter welken oder vertrocknen. „Dadurch werden die Knollen nicht mehr ausreichend versorgt, was zu geringeren Erträgen und Qualitätseinbußen führen kann.“ Die genauen Auswirkungen ließen sich aber noch nicht abschließend beurteilen. „Entscheidend wird sein, ob in den kommenden Wochen ausreichend Niederschlag fällt“, so der RLV.\n\nAuch der Obstanbau hat unter den hohen Temperaturen gelitten. „Die Hitze im Juni hat in den Obstkulturen zu Sonnenbrandschäden geführt, wenn die Pflanzen nicht durch Hagelnetze oder Überdachungen vor direkter Sonneneinstrahlung geschützt sind“, teilte der Provinzialverband Rheinischer Obst- und Gemüsebauer mit. Derzeit ließen sich aber zu den erwartenden Erträgen noch keine Schätzungen abgeben. Außergewöhnlich schwer betroffene Kulturen seien zugleich nicht auszumachen; vielmehr treffe es alle Kulturen sowie Regionen gleichermaßen.\n\nObst und Gemüse teurer\n\nDie geringeren Erträge machen sich auch beim Verkauf bemerkbar: „Die heißen Temperaturen und die Trockenheit der vergangenen Wochen führen dazu, dass es bei Obst und Gemüse mitunter zu Qualitätseinbußen kam und Erntemengen zurückgingen, was mitunter die Preise steigen ließ“, erklärte Claudio Gläßer, Marktanalyst bei der Agrarmarkt Informations-Gesellschaft (AMI). „Den Preissteigerungen stehen allerdings deutlich gestiegene Kosten entgegen“, so Gläßer. „Aufgrund der Trockenheit haben Landwirte zum Beispiel viel höhere Kosten durch Bewässerungen. Hinzu kommen mitunter geringere Erntemengen.“\n\nEinbußen nach den heißen Wochen seien beispielsweise bei Strauchbeeren wie Himbeeren oder Brombeeren zu verzeichnen, so die Landwirtschaftskammer. Auf Gemüse- und Obstarten, die länger eingelagert werden, etwa Zwiebeln, wirke sich die Witterung kurzfristig hingegen nicht stark aus. > Wirtschaft",
+    "sentences": [
+      {
+        "id": "s1",
+        "start": 0,
+        "end": 132,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Düsseldorf Die Landwirte in NRW blicken angesichts der Hitzewelle Ende Juni und der anhaltenden Trockenheit mit Sorge auf die Ernte."
+      },
+      {
+        "id": "s2",
+        "start": 133,
+        "end": 249,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "„Die aktuelle Situation auf den Feldern in NRW ist durchaus angespannt“, erklärte die Landwirtschaftskammer NRW mit."
+      },
+      {
+        "id": "s3",
+        "start": 250,
+        "end": 288,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "„Regen wird aktuell dringend benötigt."
+      },
+      {
+        "id": "s4",
+        "start": 289,
+        "end": 412,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Die Verdunstung mit den Hitzerekorden und zusätzlich viel Wind hat die Böden enorm austrocknen lassen“, sagte ein Sprecher."
+      },
+      {
+        "id": "s5",
+        "start": 413,
+        "end": 525,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "„Die bislang insgesamt guten Prognosen müssen für die anstehende Weizen- und Rapsernte infrage gestellt werden.“"
+      },
+      {
+        "id": "s6",
+        "start": 526,
+        "end": 619,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "An sandigeren Standorten mit geringerem Wasservorrat seien bereits Ertragseinbußen abzusehen."
+      },
+      {
+        "id": "s7",
+        "start": 621,
+        "end": 797,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Da es im Mai viel geregnet habe, sei von einer „landesweit akuten Dürresituation in der Landwirtschaft“ derzeit nicht auszugehen, teilte das Landwirtschaftsministerium NRW mit."
+      },
+      {
+        "id": "s8",
+        "start": 798,
+        "end": 845,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Dennoch beobachte man die Situation aufmerksam."
+      },
+      {
+        "id": "s9",
+        "start": 847,
+        "end": 962,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Der vergangene Monat war Meteorologen zufolge der heißeste Juni in Westeuropa seit Beginn der Wetteraufzeichnungen."
+      },
+      {
+        "id": "s10",
+        "start": 963,
+        "end": 1139,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "In der zweiten Monatshälfte legte sich eine mehrtägige Hitzewelle über Deutschland, in der Spitze wurden in Sachsen-Anhalt 41,8 Grad gemessen – ein neuer Rekordwert bundesweit."
+      },
+      {
+        "id": "s11",
+        "start": 1140,
+        "end": 1201,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Auch in NRW kletterten die Temperaturen auf mehr als 40 Grad."
+      },
+      {
+        "id": "s12",
+        "start": 1203,
+        "end": 1268,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "Die Hitze ging an den Feldern der Landwirte nicht spurlos vorbei."
+      },
+      {
+        "id": "s13",
+        "start": 1269,
+        "end": 1386,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "Die Situation sei je nach Region und Kultur unterschiedlich, berichtete der Rheinische Landwirtschafts-Verband (RLV)."
+      },
+      {
+        "id": "s14",
+        "start": 1387,
+        "end": 1559,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "Aufgrund der hohen Temperaturen sei die Getreideernte in diesem Jahr bereits ungewöhnlich früh angelaufen und die Wintergerstenernte bereits vollständig eingefahren worden."
+      },
+      {
+        "id": "s15",
+        "start": 1560,
+        "end": 1605,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "Derzeit liefe die Weizenernte auf Hochtouren."
+      },
+      {
+        "id": "s16",
+        "start": 1606,
+        "end": 1752,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "„Im Getreide hat die extreme Hitze zeitweise zu einer beschleunigten Abreife beziehungsweise Notreife der Bestände geführt“, erklärte der Verband."
+      },
+      {
+        "id": "s17",
+        "start": 1753,
+        "end": 1873,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "Notreife bedeutet, dass die Körner kleiner bleiben als unter normalen Bedingungen, was zu Qualitätseinbußen führen kann."
+      },
+      {
+        "id": "s18",
+        "start": 1874,
+        "end": 1941,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "Für die Erntearbeiten seien die trockenen Bedingungen zwar günstig."
+      },
+      {
+        "id": "s19",
+        "start": 1942,
+        "end": 2076,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "„Gleichzeitig fehlen jedoch vielerorts dringend benötigte Niederschläge für Kulturen wie Kartoffeln, Mais und Zuckerrübe“, so der RLV."
+      },
+      {
+        "id": "s20",
+        "start": 2078,
+        "end": 2164,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Insbesondere Kartoffeln reagieren empfindlich auf längere Hitzephasen und Trockenheit."
+      },
+      {
+        "id": "s21",
+        "start": 2165,
+        "end": 2269,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Unter Wassermangel stellen die Pflanzen ihr Wachstum teilweise ein, die Blätter welken oder vertrocknen."
+      },
+      {
+        "id": "s22",
+        "start": 2270,
+        "end": 2393,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "„Dadurch werden die Knollen nicht mehr ausreichend versorgt, was zu geringeren Erträgen und Qualitätseinbußen führen kann.“"
+      },
+      {
+        "id": "s23",
+        "start": 2394,
+        "end": 2471,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Die genauen Auswirkungen ließen sich aber noch nicht abschließend beurteilen."
+      },
+      {
+        "id": "s24",
+        "start": 2472,
+        "end": 2568,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "„Entscheidend wird sein, ob in den kommenden Wochen ausreichend Niederschlag fällt“, so der RLV."
+      },
+      {
+        "id": "s25",
+        "start": 2570,
+        "end": 2631,
+        "block": "body",
+        "level": 0,
+        "paragraph": 5,
+        "text": "Auch der Obstanbau hat unter den hohen Temperaturen gelitten."
+      },
+      {
+        "id": "s26",
+        "start": 2632,
+        "end": 2882,
+        "block": "body",
+        "level": 0,
+        "paragraph": 5,
+        "text": "„Die Hitze im Juni hat in den Obstkulturen zu Sonnenbrandschäden geführt, wenn die Pflanzen nicht durch Hagelnetze oder Überdachungen vor direkter Sonneneinstrahlung geschützt sind“, teilte der Provinzialverband Rheinischer Obst- und Gemüsebauer mit."
+      },
+      {
+        "id": "s27",
+        "start": 2883,
+        "end": 2967,
+        "block": "body",
+        "level": 0,
+        "paragraph": 5,
+        "text": "Derzeit ließen sich aber zu den erwartenden Erträgen noch keine Schätzungen abgeben."
+      },
+      {
+        "id": "s28",
+        "start": 2968,
+        "end": 3107,
+        "block": "body",
+        "level": 0,
+        "paragraph": 5,
+        "text": "Außergewöhnlich schwer betroffene Kulturen seien zugleich nicht auszumachen; vielmehr treffe es alle Kulturen sowie Regionen gleichermaßen."
+      },
+      {
+        "id": "s29",
+        "start": 3109,
+        "end": 3131,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "Obst und Gemüse teurer"
+      },
+      {
+        "id": "s30",
+        "start": 3133,
+        "end": 3498,
+        "block": "body",
+        "level": 0,
+        "paragraph": 7,
+        "text": "Die geringeren Erträge machen sich auch beim Verkauf bemerkbar: „Die heißen Temperaturen und die Trockenheit der vergangenen Wochen führen dazu, dass es bei Obst und Gemüse mitunter zu Qualitätseinbußen kam und Erntemengen zurückgingen, was mitunter die Preise steigen ließ“, erklärte Claudio Gläßer, Marktanalyst bei der Agrarmarkt Informations-Gesellschaft (AMI)."
+      },
+      {
+        "id": "s31",
+        "start": 3499,
+        "end": 3588,
+        "block": "body",
+        "level": 0,
+        "paragraph": 7,
+        "text": "„Den Preissteigerungen stehen allerdings deutlich gestiegene Kosten entgegen“, so Gläßer."
+      },
+      {
+        "id": "s32",
+        "start": 3589,
+        "end": 3683,
+        "block": "body",
+        "level": 0,
+        "paragraph": 7,
+        "text": "„Aufgrund der Trockenheit haben Landwirte zum Beispiel viel höhere Kosten durch Bewässerungen."
+      },
+      {
+        "id": "s33",
+        "start": 3684,
+        "end": 3729,
+        "block": "body",
+        "level": 0,
+        "paragraph": 7,
+        "text": "Hinzu kommen mitunter geringere Erntemengen.“"
+      },
+      {
+        "id": "s34",
+        "start": 3731,
+        "end": 3877,
+        "block": "body",
+        "level": 0,
+        "paragraph": 8,
+        "text": "Einbußen nach den heißen Wochen seien beispielsweise bei Strauchbeeren wie Himbeeren oder Brombeeren zu verzeichnen, so die Landwirtschaftskammer."
+      },
+      {
+        "id": "s35",
+        "start": 3878,
+        "end": 4026,
+        "block": "body",
+        "level": 0,
+        "paragraph": 8,
+        "text": "Auf Gemüse- und Obstarten, die länger eingelagert werden, etwa Zwiebeln, wirke sich die Witterung kurzfristig hingegen nicht stark aus. > Wirtschaft"
+      }
+    ]
+  },
+  "transcript": {
+    "text": "Die Landwirte in Nordrhein-Westfalen blicken wegen der Hitzewelle und der anhaltenden Trockenheit besorgt auf die Ernte. Der vergangene Juni war laut Meteorologen der heißeste in Westeuropa seit Beginn der Wetteraufzeichnungen. In Sachsen-Anhalt wurden dabei 41,8 Grad gemessen – ein neuer bundesweiter Rekord. Auch in Nordrhein-Westfalen stiegen die Temperaturen auf über 40 Grad.\n\nDie Landwirtschaftskammer Nordrhein-Westfalen in Düsseldorf teilte mit, die Lage auf den Feldern sei angespannt. Regen werde dringend benötigt. Hitze und starker Wind hätten die Böden stark ausgetrocknet. Die bislang guten Prognosen für die Weizen- und Rapsernte seien deshalb infrage gestellt. Besonders auf sandigen Böden mit wenig Wasservorrat zeichneten sich bereits Ertragseinbußen ab.\n\nDas Landwirtschaftsministerium Nordrhein-Westfalen sieht wegen der regenreichen Wochen im Mai derzeit keine landesweit akute Dürresituation. Die Entwicklung werde aber aufmerksam beobachtet.\n\nWegen der hohen Temperaturen hat die Getreideernte in diesem Jahr ungewöhnlich früh begonnen. Nach Angaben des Rheinischen Landwirtschafts-Verbands, kurz RLV, ist die Wintergerste bereits vollständig eingefahren, die Weizenernte laufe derzeit auf Hochtouren. Die extreme Hitze habe das Getreide teilweise zu einer sogenannten Notreife gezwungen. Dabei bleiben die Körner kleiner, was die Qualität mindern kann. Für die Erntearbeiten seien trockene Felder zwar von Vorteil. Kulturen wie Kartoffeln, Mais und Zuckerrüben benötigten jedoch dringend Niederschlag.\n\nKartoffeln reagieren besonders empfindlich auf Hitze und Wassermangel. Stellen die Pflanzen ihr Wachstum ein und welken die Blätter, werden die Knollen schlechter versorgt. Das kann Ertrag und Qualität verringern. Wie stark sich das auf die Ernte auswirkt, ist laut RLV noch offen. Entscheidend sei, ob in den kommenden Wochen genug Regen fällt.\n\nAuch der Obstanbau hat gelitten. Der Provinzialverband Rheinischer Obst- und Gemüsebauer erklärte, die Junihitze habe bei ungeschützten Pflanzen zu Sonnenbrandschäden geführt, etwa wenn Hagelnetze oder Überdachungen fehlten.\n\nDie Folgen sind teilweise bereits beim Verkauf spürbar. Claudio Gläßer, Marktanalyst bei der Agrarmarkt Informations-Gesellschaft, kurz AMI, berichtete von geringeren Erntemengen und Qualitätseinbußen bei Obst und Gemüse. Das habe die Preise mancherorts steigen lassen. Zugleich belasteten deutlich höhere Kosten für die Bewässerung die Landwirte. Besonders betroffen seien laut Landwirtschaftskammer unter anderem Himbeeren und Brombeeren.",
+    "claims": [
+      {
+        "id": "c1",
+        "start": 0,
+        "end": 120,
+        "text": "Die Landwirte in Nordrhein-Westfalen blicken wegen der Hitzewelle und der anhaltenden Trockenheit besorgt auf die Ernte.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s1",
+            "start": 15,
+            "end": 132,
+            "spans": [
+              [
+                15,
+                39
+              ],
+              [
+                55,
+                65
+              ],
+              [
+                84,
+                107
+              ],
+              [
+                126,
+                132
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.79,
+        "margin": 0.42,
+        "entities": [
+          {
+            "type": "ort",
+            "surface": "Nordrhein",
+            "norm": "nordrhein",
+            "status": "unbelegt"
+          },
+          {
+            "type": "ort",
+            "surface": "Westfalen",
+            "norm": "westfalen",
+            "status": "unbelegt"
+          }
+        ],
+        "flags": [
+          "ident_unbelegt"
+        ],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 62 % des Claims. · „Nordrhein“ im Artikel nicht auffindbar. · „Westfalen“ im Artikel nicht auffindbar.",
+        "scores": {
+          "top": 0.84,
+          "lex": 0.585,
+          "emb": 0.906,
+          "anchor": 0,
+          "nli": 0.992
+        }
+      },
+      {
+        "id": "c2",
+        "start": 121,
+        "end": 227,
+        "text": "Der vergangene Juni war laut Meteorologen der heißeste in Westeuropa seit Beginn der Wetteraufzeichnungen.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s9",
+            "start": 847,
+            "end": 962,
+            "spans": [
+              [
+                847,
+                861
+              ],
+              [
+                872,
+                884
+              ],
+              [
+                897,
+                962
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.97,
+        "margin": 0.64,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 93 % des Claims.",
+        "scores": {
+          "top": 0.939,
+          "lex": 0.816,
+          "emb": 1,
+          "anchor": 0,
+          "nli": 0.987
+        }
+      },
+      {
+        "id": "c3",
+        "start": 228,
+        "end": 310,
+        "text": "In Sachsen-Anhalt wurden dabei 41,8 Grad gemessen – ein neuer bundesweiter Rekord.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s10",
+            "start": 1071,
+            "end": 1139,
+            "spans": [
+              [
+                1071,
+                1116
+              ],
+              [
+                1128,
+                1139
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.87,
+        "margin": 0.57,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "41,8",
+            "norm": "41.8",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Anker 41.8 eindeutig in s10 · Fundstellen erklären 93 % des Claims.",
+        "scores": {
+          "top": 0.871,
+          "lex": 0.559,
+          "emb": 0.817,
+          "anchor": 0.3,
+          "nli": 0.99
+        }
+      },
+      {
+        "id": "c4",
+        "start": 311,
+        "end": 381,
+        "text": "Auch in Nordrhein-Westfalen stiegen die Temperaturen auf über 40 Grad.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s11",
+            "start": 1167,
+            "end": 1201,
+            "spans": [
+              [
+                1167,
+                1201
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.77,
+        "margin": 0.47,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "40",
+            "norm": "40",
+            "status": "match"
+          },
+          {
+            "type": "ort",
+            "surface": "Nordrhein",
+            "norm": "nordrhein",
+            "status": "unbelegt"
+          },
+          {
+            "type": "ort",
+            "surface": "Westfalen",
+            "norm": "westfalen",
+            "status": "unbelegt"
+          }
+        ],
+        "flags": [
+          "signale_uneinig",
+          "ident_unbelegt"
+        ],
+        "wortlaut": null,
+        "note": "Anker 40 eindeutig in s11 · Fundstellen erklären 42 % des Claims. · Signale uneinig — nur die Bedeutung stützt die Zuordnung. · „Nordrhein“ im Artikel nicht auffindbar. · „Westfalen“ im Artikel nicht auffindbar.",
+        "scores": {
+          "top": 0.814,
+          "lex": 0.473,
+          "emb": 0.937,
+          "anchor": 0.3,
+          "nli": 0.997
+        }
+      },
+      {
+        "id": "c5",
+        "start": 383,
+        "end": 495,
+        "text": "Die Landwirtschaftskammer Nordrhein-Westfalen in Düsseldorf teilte mit, die Lage auf den Feldern sei angespannt.",
+        "relation": "bedeutung_verschoben",
+        "sources": [
+          {
+            "sentence": "s2",
+            "start": 165,
+            "end": 249,
+            "spans": [
+              [
+                165,
+                203
+              ],
+              [
+                219,
+                249
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s1",
+            "start": 0,
+            "end": 24,
+            "spans": [
+              [
+                0,
+                24
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.79,
+        "margin": 0.31,
+        "entities": [
+          {
+            "type": "ort",
+            "surface": "Nordrhein",
+            "norm": "nordrhein",
+            "status": "unbelegt"
+          },
+          {
+            "type": "ort",
+            "surface": "Westfalen",
+            "norm": "westfalen",
+            "status": "unbelegt"
+          }
+        ],
+        "flags": [
+          "ident_unbelegt",
+          "bedeutung_verschoben"
+        ],
+        "wortlaut": null,
+        "note": "Verdichtet aus s2 + s1 (s1 erklärt zusätzlich 16 %). · Fundstellen erklären 64 % des Claims. · „Nordrhein“ im Artikel nicht auffindbar. · „Westfalen“ im Artikel nicht auffindbar. · Bedeutung verschoben — die Fundstelle widerspricht dem Claim nicht, stützt ihn aber auch nicht vollständig (entailment 0.26, neutral 0.71).",
+        "scores": {
+          "top": 0.739,
+          "lex": 0.442,
+          "emb": 0.896,
+          "anchor": 0,
+          "nli": 0.261
+        }
+      },
+      {
+        "id": "c6",
+        "start": 496,
+        "end": 526,
+        "text": "Regen werde dringend benötigt.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s3",
+            "start": 250,
+            "end": 288,
+            "spans": [
+              [
+                250,
+                288
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.95,
+        "margin": 0.35,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 100 % des Claims.",
+        "scores": {
+          "top": 0.861,
+          "lex": 0.601,
+          "emb": 0.888,
+          "anchor": 0,
+          "nli": 0.956
+        }
+      },
+      {
+        "id": "c7",
+        "start": 527,
+        "end": 587,
+        "text": "Hitze und starker Wind hätten die Böden stark ausgetrocknet.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s4",
+            "start": 347,
+            "end": 383,
+            "spans": [
+              [
+                347,
+                365
+              ],
+              [
+                372,
+                383
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.7,
+        "margin": 0.3,
+        "entities": [
+          {
+            "type": "person",
+            "surface": "Hitze",
+            "norm": "hitze",
+            "status": "match"
+          }
+        ],
+        "flags": [
+          "signale_uneinig"
+        ],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 36 % des Claims. · Signale uneinig — nur die Bedeutung stützt die Zuordnung.",
+        "scores": {
+          "top": 0.622,
+          "lex": 0.23,
+          "emb": 0.863,
+          "anchor": 0,
+          "nli": 0.998
+        }
+      },
+      {
+        "id": "c8",
+        "start": 588,
+        "end": 677,
+        "text": "Die bislang guten Prognosen für die Weizen- und Rapsernte seien deshalb infrage gestellt.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s5",
+            "start": 413,
+            "end": 525,
+            "spans": [
+              [
+                413,
+                451
+              ],
+              [
+                478,
+                525
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.89,
+        "margin": 0.6,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 85 % des Claims.",
+        "scores": {
+          "top": 0.892,
+          "lex": 0.683,
+          "emb": 0.928,
+          "anchor": 0,
+          "nli": 0.99
+        }
+      },
+      {
+        "id": "c9",
+        "start": 678,
+        "end": 773,
+        "text": "Besonders auf sandigen Böden mit wenig Wasservorrat zeichneten sich bereits Ertragseinbußen ab.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s6",
+            "start": 526,
+            "end": 608,
+            "spans": [
+              [
+                526,
+                539
+              ],
+              [
+                566,
+                608
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.74,
+        "margin": 0.42,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 50 % des Claims.",
+        "scores": {
+          "top": 0.744,
+          "lex": 0.501,
+          "emb": 0.877,
+          "anchor": 0,
+          "nli": 0.988
+        }
+      },
+      {
+        "id": "c10",
+        "start": 775,
+        "end": 915,
+        "text": "Das Landwirtschaftsministerium Nordrhein-Westfalen sieht wegen der regenreichen Wochen im Mai derzeit keine landesweit akute Dürresituation.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s7",
+            "start": 669,
+            "end": 797,
+            "spans": [
+              [
+                669,
+                723
+              ],
+              [
+                762,
+                797
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.78,
+        "margin": 0.42,
+        "entities": [
+          {
+            "type": "ort",
+            "surface": "Nordrhein",
+            "norm": "nordrhein",
+            "status": "unbelegt"
+          },
+          {
+            "type": "ort",
+            "surface": "Westfalen",
+            "norm": "westfalen",
+            "status": "unbelegt"
+          }
+        ],
+        "flags": [
+          "ident_unbelegt"
+        ],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 55 % des Claims. · „Nordrhein“ im Artikel nicht auffindbar. · „Westfalen“ im Artikel nicht auffindbar.",
+        "scores": {
+          "top": 0.801,
+          "lex": 0.525,
+          "emb": 0.918,
+          "anchor": 0,
+          "nli": 0.995
+        }
+      },
+      {
+        "id": "c11",
+        "start": 916,
+        "end": 965,
+        "text": "Die Entwicklung werde aber aufmerksam beobachtet.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s8",
+            "start": 806,
+            "end": 845,
+            "spans": [
+              [
+                806,
+                815
+              ],
+              [
+                834,
+                845
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.65,
+        "margin": 0.39,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 46 % des Claims.",
+        "scores": {
+          "top": 0.652,
+          "lex": 0.409,
+          "emb": 0.762,
+          "anchor": 0,
+          "nli": 0.998
+        }
+      },
+      {
+        "id": "c12",
+        "start": 967,
+        "end": 1060,
+        "text": "Wegen der hohen Temperaturen hat die Getreideernte in diesem Jahr ungewöhnlich früh begonnen.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s14",
+            "start": 1400,
+            "end": 1481,
+            "spans": [
+              [
+                1400,
+                1481
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.82,
+        "margin": 0.44,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 81 % des Claims.",
+        "scores": {
+          "top": 0.84,
+          "lex": 0.555,
+          "emb": 0.825,
+          "anchor": 0,
+          "nli": 0.996
+        }
+      },
+      {
+        "id": "c13",
+        "start": 1061,
+        "end": 1225,
+        "text": "Nach Angaben des Rheinischen Landwirtschafts-Verbands, kurz RLV, ist die Wintergerste bereits vollständig eingefahren, die Weizenernte laufe derzeit auf Hochtouren.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s14",
+            "start": 1501,
+            "end": 1551,
+            "spans": [
+              [
+                1501,
+                1551
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s13",
+            "start": 1345,
+            "end": 1386,
+            "spans": [
+              [
+                1345,
+                1386
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s15",
+            "start": 1578,
+            "end": 1605,
+            "spans": [
+              [
+                1578,
+                1605
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.75,
+        "margin": 0.28,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s14 + s13 + s15 (s13 erklärt zusätzlich 28 %, s15 erklärt zusätzlich 12 %). · Fundstellen erklären 82 % des Claims.",
+        "scores": {
+          "top": 0.631,
+          "lex": 0.426,
+          "emb": 0.658,
+          "anchor": 0,
+          "nli": 0.919
+        }
+      },
+      {
+        "id": "c14",
+        "start": 1226,
+        "end": 1312,
+        "text": "Die extreme Hitze habe das Getreide teilweise zu einer sogenannten Notreife gezwungen.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s16",
+            "start": 1606,
+            "end": 1707,
+            "spans": [
+              [
+                1606,
+                1640
+              ],
+              [
+                1699,
+                1707
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.69,
+        "margin": 0.35,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 55 % des Claims.",
+        "scores": {
+          "top": 0.726,
+          "lex": 0.437,
+          "emb": 0.782,
+          "anchor": 0,
+          "nli": 0.998
+        }
+      },
+      {
+        "id": "c15",
+        "start": 1313,
+        "end": 1377,
+        "text": "Dabei bleiben die Körner kleiner, was die Qualität mindern kann.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s17",
+            "start": 1781,
+            "end": 1803,
+            "spans": [
+              [
+                1781,
+                1803
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.72,
+        "margin": 0.32,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 72 % des Claims.",
+        "scores": {
+          "top": 0.762,
+          "lex": 0.46,
+          "emb": 0.715,
+          "anchor": 0,
+          "nli": 0.998
+        }
+      },
+      {
+        "id": "c16",
+        "start": 1378,
+        "end": 1439,
+        "text": "Für die Erntearbeiten seien trockene Felder zwar von Vorteil.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s18",
+            "start": 1874,
+            "end": 1915,
+            "spans": [
+              [
+                1874,
+                1915
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.69,
+        "margin": 0.39,
+        "entities": [],
+        "flags": [
+          "nli_widerspruch"
+        ],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 54 % des Claims. · NLI: Fundstelle widerspricht dem Claim (contradiction 0.66).",
+        "scores": {
+          "top": 0.721,
+          "lex": 0.522,
+          "emb": 0.79,
+          "anchor": 0,
+          "nli": 0.228
+        }
+      },
+      {
+        "id": "c17",
+        "start": 1440,
+        "end": 1526,
+        "text": "Kulturen wie Kartoffeln, Mais und Zuckerrüben benötigten jedoch dringend Niederschlag.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s19",
+            "start": 1963,
+            "end": 2076,
+            "spans": [
+              [
+                1963,
+                1969
+              ],
+              [
+                1981,
+                2076
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.83,
+        "margin": 0.48,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 85 % des Claims.",
+        "scores": {
+          "top": 0.848,
+          "lex": 0.665,
+          "emb": 0.8,
+          "anchor": 0,
+          "nli": 0.997
+        }
+      },
+      {
+        "id": "c18",
+        "start": 1528,
+        "end": 1598,
+        "text": "Kartoffeln reagieren besonders empfindlich auf Hitze und Wassermangel.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s20",
+            "start": 2091,
+            "end": 2123,
+            "spans": [
+              [
+                2091,
+                2123
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s21",
+            "start": 2165,
+            "end": 2183,
+            "spans": [
+              [
+                2165,
+                2183
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.87,
+        "margin": 0.44,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s20 + s21 (s21 erklärt zusätzlich 19 %). · Fundstellen erklären 88 % des Claims.",
+        "scores": {
+          "top": 0.819,
+          "lex": 0.567,
+          "emb": 0.87,
+          "anchor": 0,
+          "nli": 0.998
+        }
+      },
+      {
+        "id": "c19",
+        "start": 1599,
+        "end": 1700,
+        "text": "Stellen die Pflanzen ihr Wachstum ein und welken die Blätter, werden die Knollen schlechter versorgt.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s21",
+            "start": 2184,
+            "end": 2251,
+            "spans": [
+              [
+                2184,
+                2217
+              ],
+              [
+                2237,
+                2251
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s22",
+            "start": 2290,
+            "end": 2329,
+            "spans": [
+              [
+                2290,
+                2297
+              ],
+              [
+                2321,
+                2329
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.75,
+        "margin": 0.43,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s21 + s22 (s22 erklärt zusätzlich 20 %). · Fundstellen erklären 81 % des Claims.",
+        "scores": {
+          "top": 0.729,
+          "lex": 0.594,
+          "emb": 0.626,
+          "anchor": 0,
+          "nli": 0.998
+        }
+      },
+      {
+        "id": "c20",
+        "start": 1701,
+        "end": 1741,
+        "text": "Das kann Ertrag und Qualität verringern.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s22",
+            "start": 2270,
+            "end": 2393,
+            "spans": [
+              [
+                2270,
+                2393
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.59,
+        "margin": 0.17,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 51 % des Claims. · Unter der Direkt-Schwelle — zur Prüfung empfohlen.",
+        "scores": {
+          "top": 0.556,
+          "lex": 0.281,
+          "emb": 0.655,
+          "anchor": 0,
+          "nli": 0.999
+        }
+      },
+      {
+        "id": "c21",
+        "start": 1742,
+        "end": 1809,
+        "text": "Wie stark sich das auf die Ernte auswirkt, ist laut RLV noch offen.",
+        "relation": "keine_quelle",
+        "sources": [],
+        "confidence": 0.57,
+        "margin": 0.05,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Keine ausreichend ähnliche Stelle im Artikel — nächster Kandidat s24 mit 0,43 (Schwelle 0,44).",
+        "scores": {
+          "top": 0.43,
+          "lex": 0.059,
+          "emb": 0.661,
+          "anchor": 0,
+          "nli": null
+        }
+      },
+      {
+        "id": "c22",
+        "start": 1810,
+        "end": 1873,
+        "text": "Entscheidend sei, ob in den kommenden Wochen genug Regen fällt.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s24",
+            "start": 2472,
+            "end": 2568,
+            "spans": [
+              [
+                2472,
+                2523
+              ],
+              [
+                2549,
+                2568
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.75,
+        "margin": 0.49,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 69 % des Claims.",
+        "scores": {
+          "top": 0.811,
+          "lex": 0.577,
+          "emb": 0.81,
+          "anchor": 0,
+          "nli": 0.977
+        }
+      },
+      {
+        "id": "c23",
+        "start": 1875,
+        "end": 1907,
+        "text": "Auch der Obstanbau hat gelitten.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s25",
+            "start": 2570,
+            "end": 2631,
+            "spans": [
+              [
+                2570,
+                2588
+              ],
+              [
+                2622,
+                2631
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.87,
+        "margin": 0.47,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 100 % des Claims.",
+        "scores": {
+          "top": 0.804,
+          "lex": 0.705,
+          "emb": 0.682,
+          "anchor": 0,
+          "nli": 0.999
+        }
+      },
+      {
+        "id": "c24",
+        "start": 1908,
+        "end": 2099,
+        "text": "Der Provinzialverband Rheinischer Obst- und Gemüsebauer erklärte, die Junihitze habe bei ungeschützten Pflanzen zu Sonnenbrandschäden geführt, etwa wenn Hagelnetze oder Überdachungen fehlten.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s26",
+            "start": 2632,
+            "end": 2882,
+            "spans": [
+              [
+                2632,
+                2650
+              ],
+              [
+                2678,
+                2723
+              ],
+              [
+                2736,
+                2765
+              ],
+              [
+                2798,
+                2807
+              ],
+              [
+                2826,
+                2882
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.9,
+        "margin": 0.53,
+        "entities": [
+          {
+            "type": "person",
+            "surface": "Rheinischer",
+            "norm": "rheinischer",
+            "status": "match"
+          },
+          {
+            "type": "ort",
+            "surface": "Junihitze",
+            "norm": "junihitze",
+            "status": "unbelegt"
+          }
+        ],
+        "flags": [
+          "ident_unbelegt"
+        ],
+        "wortlaut": null,
+        "note": "Name „Rheinischer“ eindeutig in s26 · Fundstellen erklären 82 % des Claims. · „Junihitze“ im Artikel nicht auffindbar.",
+        "scores": {
+          "top": 0.926,
+          "lex": 0.661,
+          "emb": 0.973,
+          "anchor": 0.2,
+          "nli": 0.987
+        }
+      },
+      {
+        "id": "c25",
+        "start": 2101,
+        "end": 2156,
+        "text": "Die Folgen sind teilweise bereits beim Verkauf spürbar.",
+        "relation": "keine_quelle",
+        "sources": [],
+        "confidence": 0.76,
+        "margin": 0.08,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Keine ausreichend ähnliche Stelle im Artikel — nächster Kandidat s30 mit 0,35 (Schwelle 0,44).",
+        "scores": {
+          "top": 0.345,
+          "lex": 0.17,
+          "emb": 0.262,
+          "anchor": 0,
+          "nli": null
+        }
+      },
+      {
+        "id": "c26",
+        "start": 2157,
+        "end": 2322,
+        "text": "Claudio Gläßer, Marktanalyst bei der Agrarmarkt Informations-Gesellschaft, kurz AMI, berichtete von geringeren Erntemengen und Qualitätseinbußen bei Obst und Gemüse.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s30",
+            "start": 3133,
+            "end": 3498,
+            "spans": [
+              [
+                3133,
+                3147
+              ],
+              [
+                3290,
+                3305
+              ],
+              [
+                3318,
+                3355
+              ],
+              [
+                3418,
+                3498
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.82,
+        "margin": 0.33,
+        "entities": [
+          {
+            "type": "person",
+            "surface": "Claudio Gläßer",
+            "norm": "claudio gläßer",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Name „Claudio Gläßer“ eindeutig in s30 · Fundstellen erklären 86 % des Claims.",
+        "scores": {
+          "top": 0.855,
+          "lex": 0.58,
+          "emb": 0.769,
+          "anchor": 0.2,
+          "nli": 0.987
+        }
+      },
+      {
+        "id": "c27",
+        "start": 2323,
+        "end": 2370,
+        "text": "Das habe die Preise mancherorts steigen lassen.",
+        "relation": "keine_quelle",
+        "sources": [],
+        "confidence": 0.66,
+        "margin": 0.02,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Keine ausreichend ähnliche Stelle im Artikel — nächster Kandidat s31 mit 0,39 (Schwelle 0,44).",
+        "scores": {
+          "top": 0.389,
+          "lex": 0.137,
+          "emb": 0.454,
+          "anchor": 0,
+          "nli": null
+        }
+      },
+      {
+        "id": "c28",
+        "start": 2371,
+        "end": 2448,
+        "text": "Zugleich belasteten deutlich höhere Kosten für die Bewässerung die Landwirte.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s32",
+            "start": 3621,
+            "end": 3683,
+            "spans": [
+              [
+                3621,
+                3630
+              ],
+              [
+                3649,
+                3683
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s31",
+            "start": 3540,
+            "end": 3566,
+            "spans": [
+              [
+                3540,
+                3548
+              ],
+              [
+                3560,
+                3566
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.73,
+        "margin": 0.46,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s32 + s31 (s31 erklärt zusätzlich 15 %). · Fundstellen erklären 67 % des Claims.",
+        "scores": {
+          "top": 0.717,
+          "lex": 0.397,
+          "emb": 0.779,
+          "anchor": 0,
+          "nli": 0.998
+        }
+      },
+      {
+        "id": "c29",
+        "start": 2449,
+        "end": 2541,
+        "text": "Besonders betroffen seien laut Landwirtschaftskammer unter anderem Himbeeren und Brombeeren.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s34",
+            "start": 3806,
+            "end": 3877,
+            "spans": [
+              [
+                3806,
+                3831
+              ],
+              [
+                3855,
+                3877
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.69,
+        "margin": 0.39,
+        "entities": [
+          {
+            "type": "person",
+            "surface": "Landwirtschaftskammer",
+            "norm": "landwirtschaftskammer",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 54 % des Claims.",
+        "scores": {
+          "top": 0.717,
+          "lex": 0.422,
+          "emb": 0.787,
+          "anchor": 0,
+          "nli": 0.988
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,1242 @@
+{
+  "meta": {
+    "titel": "Stolberg Als in dem österreichisch-italienischen Grenzgebiet zwischen Gailtal und den Dolomiten bestialisch verstümmelte Tierkadaver gefunden werden, ist es für den Kärntner Polizisten Eddy Zett wie eine Reise in die Vergangenheit.",
+    "quelle": "Eigenes Paar",
+    "modell": "stufe0-2 · multilingual-e5-large-instruct + nli-mdeberta-2mil7",
+    "statistik": {
+      "saetze": 40,
+      "claims": 17,
+      "embeddings": 57,
+      "nli_paare": 16,
+      "dauer_s": 9.8
+    },
+    "ratelimit": {
+      "model": "multilingual-e5-large-instruct",
+      "checked_at": 1787357946.2891512,
+      "x-ratelimit-limit-minute": "15",
+      "x-ratelimit-remaining-minute": "13",
+      "x-ratelimit-limit-hour": "900",
+      "x-ratelimit-remaining-hour": "881",
+      "x-ratelimit-limit-day": "2000",
+      "x-ratelimit-remaining-day": "1981",
+      "x-ratelimit-limit-second": "2",
+      "x-ratelimit-remaining-second": "1",
+      "ratelimit-reset": "1",
+      "ratelimit-limit": "2",
+      "ratelimit-remaining": "1"
+    }
+  },
+  "article": {
+    "text": "Stolberg Als in dem österreichisch-italienischen Grenzgebiet zwischen Gailtal und den Dolomiten bestialisch verstümmelte Tierkadaver gefunden werden, ist es für den Kärntner Polizisten Eddy Zett wie eine Reise in die Vergangenheit. Denn auf diese Weise getötete und geschändete Tiere gab es vor 20 Jahren schon einmal. Damals hat Eddy Zett den Wilderer in flagranti gestellt – und in Notwehr erschossen, was ihn in seiner Heimat zur lebenden Legende machte. Jetzt hat der Alpinpolizist eine dunkle Vorahnung.\n\nWeil die getöteten Tiere größer werden. Gams, Hirschkuh und dann eine Kuh. Der Täter steigert sich in seinen Wahn hinein, bis er schließlich eine Sennerin ermordet. Für Eddy Zett und seinen italienischen Freund und Carabiniere Fredo beginnt die Jagd nach dem Dolomitenmörder. Zwischen alpinen Steilwänden, schroffen Gipfeln und tiefen Abgründen entwickeln sich Thriller, Krimi und Drama gleichermaßen, wobei auch in die Abgründe der menschlichen Psyche geblickt wird.\n\nSpätestens als klar wird, dass Eddy Zett selbst zum Plan des mordenden Psychopathen gehört, sind auch die Lesenden geliefert und bleiben an dem hoch spannungsgeladenen Buch förmlich kleben. Mit „Der Dolomitenmörder“ legt der Stolberger Bestsellerautor Lutz Kreutzer seinen zehnten Roman vor. Und wie für den Protagonisten Eddy Zett ist es auch für Kreutzer eine Reise in die Vergangenheit. Nicht nur, weil der Thriller vor mehr als zehn Jahren bereits erschienen ist.\n\n„Damals hat der Bergverlag Rother einen alpinen Krimi quasi bei mir bestellt. Dann ist die Geschichte unter dem Titel ,Der Grenzgänger‘ erschienen und war recht erfolgreich. Anschließend hat der Verlag aber sein Portfolio modifiziert, sodass es keine zweite Auflage des Romans gab“, beschreibt Lutz Kreutzer, der inzwischen beim Gmeiner Verlag publiziert. „Dessen Cheflektorin hat das Buch in die Hände bekommen, was zur Entscheidung führte, eine neu überarbeitete Version mit dem Titel ,Der Dolomitenmörder‘ zu veröffentlichen.“ Doch die Reise in die Vergangenheit geht für Kreutzer noch weiter zurück.\n\nDer aus Gressenich stammende Autor ist auch promovierter Naturwissenschaftler – und Bergsteiger. „Das Klettern habe ich als junger Bursche in Nideggen erlernt.“ An Steilwänden und Überhängen ist Lutz Kreutzer daraufhin geklettert. Etwa an der Großen Mauer des Heiligkreuzkofels in den Dolomiten. „Die galt lange als unbezwingbar, bis Reinhold Messner sie 1969 erstbegangen hat. Unsere Seilschaft hat die Große Mauer 1988 durchstiegen, und 19 Jahre nach Messner war es dennoch erst die siebte Begehung“, führt Kreutzer aus, der auch Paraglider ist. Was ihn in Kombination beruflich auch in die Alpen geführt hat.\n\nStark vereinfacht dargestellt war das so: Lutz Kreutzer hat höchste Schwierigkeitsgrade geklettert und dabei dort Gesteinsproben entnommen, wo andere Wissenschaftler gar nicht hinkamen. Vom Gipfel aus stieg Kreutzer wieder ab oder segelte mit dem Gleitschirm ins Tal, um in der Folge als Diplom-Geologe die entnommenen Gesteinsproben zu analysieren und dann seine Doktorarbeit über die Karnischen Alpen zu verfassen. Seine Kenntnisse über das Bergsteigen und die Gegend um Lesachtal und Porzescharte fließen detailliert in die kriminell spannende Handlung von „Der Dolomitenmörder“ ein.\n\nVor seinem aktuellen Roman hatte Lutz Kreutzer noch literarische Reisen zu seinen Wurzeln in der Heimat Gressenich, Stolberg und Umgebung unternommen. Mit den beiden Krimis „Die Akte Hürtgenwald“ und „Römerfluch“ ließ der Bestsellerautor noch Kommissar Straubinger ermitteln – in unserer Region und vor dem Hintergrund ihrer Geschichte. „Das dritte Straubinger-Buch ist in Arbeit, und der Krimi wird wieder an lokalen Schauplätzen spielen. Dann ist es nicht das Grenzgebiet zwischen Österreich und Italien, sondern von Gressenich ausgehend die Euregio mit Deutschland, den Niederlanden und Belgien“, erzählt Kreutzer.\n\n„Schaurige Orte in...”\n\nDoch bevor der nächste Straubinger-Krimi Spannung verspricht, wird Lutz Kreutzer einmal mehr als Herausgeber tätig. Gemeinsam mit renommierten Autorinnen und Autoren verfasst der Stolberger Kurzgeschichten, die er in der Reihe „Schaurige Orte in ...“ herausgibt.\n\nNordsee und Ostsee waren bereits ebenso Schauplätze der schaurigen Orte wie Bodensee, Bayern, Schweiz und Hamburg. Mit den schaurigen Orten am Niederrhein und in Köln hat Lutz Kreutzer sich als Herausgeber und Autor auch unserer Region genähert. Und wird im September noch näher kommen. „Dann erscheint ,Schaurige Orte in Eifel und Ardennen‘“, verspricht Kreutzer.\n\nDer aktuelle Roman „Der Dolomitenmörder“ von Lutz Kreutzer ist als Taschenbuch im Gmeiner Verlag erschienen: 344 Seiten, broschiert, ISBN: 978-3-8392-8115-4.",
+    "sentences": [
+      {
+        "id": "s1",
+        "start": 0,
+        "end": 231,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Stolberg Als in dem österreichisch-italienischen Grenzgebiet zwischen Gailtal und den Dolomiten bestialisch verstümmelte Tierkadaver gefunden werden, ist es für den Kärntner Polizisten Eddy Zett wie eine Reise in die Vergangenheit."
+      },
+      {
+        "id": "s2",
+        "start": 232,
+        "end": 318,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Denn auf diese Weise getötete und geschändete Tiere gab es vor 20 Jahren schon einmal."
+      },
+      {
+        "id": "s3",
+        "start": 319,
+        "end": 457,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Damals hat Eddy Zett den Wilderer in flagranti gestellt – und in Notwehr erschossen, was ihn in seiner Heimat zur lebenden Legende machte."
+      },
+      {
+        "id": "s4",
+        "start": 458,
+        "end": 508,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Jetzt hat der Alpinpolizist eine dunkle Vorahnung."
+      },
+      {
+        "id": "s5",
+        "start": 510,
+        "end": 549,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Weil die getöteten Tiere größer werden."
+      },
+      {
+        "id": "s6",
+        "start": 550,
+        "end": 584,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Gams, Hirschkuh und dann eine Kuh."
+      },
+      {
+        "id": "s7",
+        "start": 585,
+        "end": 674,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Der Täter steigert sich in seinen Wahn hinein, bis er schließlich eine Sennerin ermordet."
+      },
+      {
+        "id": "s8",
+        "start": 675,
+        "end": 785,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Für Eddy Zett und seinen italienischen Freund und Carabiniere Fredo beginnt die Jagd nach dem Dolomitenmörder."
+      },
+      {
+        "id": "s9",
+        "start": 786,
+        "end": 977,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Zwischen alpinen Steilwänden, schroffen Gipfeln und tiefen Abgründen entwickeln sich Thriller, Krimi und Drama gleichermaßen, wobei auch in die Abgründe der menschlichen Psyche geblickt wird."
+      },
+      {
+        "id": "s10",
+        "start": 979,
+        "end": 1168,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Spätestens als klar wird, dass Eddy Zett selbst zum Plan des mordenden Psychopathen gehört, sind auch die Lesenden geliefert und bleiben an dem hoch spannungsgeladenen Buch förmlich kleben."
+      },
+      {
+        "id": "s11",
+        "start": 1169,
+        "end": 1270,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Mit „Der Dolomitenmörder“ legt der Stolberger Bestsellerautor Lutz Kreutzer seinen zehnten Roman vor."
+      },
+      {
+        "id": "s12",
+        "start": 1271,
+        "end": 1368,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Und wie für den Protagonisten Eddy Zett ist es auch für Kreutzer eine Reise in die Vergangenheit."
+      },
+      {
+        "id": "s13",
+        "start": 1369,
+        "end": 1446,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Nicht nur, weil der Thriller vor mehr als zehn Jahren bereits erschienen ist."
+      },
+      {
+        "id": "s14",
+        "start": 1448,
+        "end": 1525,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "„Damals hat der Bergverlag Rother einen alpinen Krimi quasi bei mir bestellt."
+      },
+      {
+        "id": "s15",
+        "start": 1526,
+        "end": 1621,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "Dann ist die Geschichte unter dem Titel ,Der Grenzgänger‘ erschienen und war recht erfolgreich."
+      },
+      {
+        "id": "s16",
+        "start": 1622,
+        "end": 1803,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "Anschließend hat der Verlag aber sein Portfolio modifiziert, sodass es keine zweite Auflage des Romans gab“, beschreibt Lutz Kreutzer, der inzwischen beim Gmeiner Verlag publiziert."
+      },
+      {
+        "id": "s17",
+        "start": 1804,
+        "end": 1977,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "„Dessen Cheflektorin hat das Buch in die Hände bekommen, was zur Entscheidung führte, eine neu überarbeitete Version mit dem Titel ,Der Dolomitenmörder‘ zu veröffentlichen.“"
+      },
+      {
+        "id": "s18",
+        "start": 1978,
+        "end": 2051,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "Doch die Reise in die Vergangenheit geht für Kreutzer noch weiter zurück."
+      },
+      {
+        "id": "s19",
+        "start": 2053,
+        "end": 2149,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Der aus Gressenich stammende Autor ist auch promovierter Naturwissenschaftler – und Bergsteiger."
+      },
+      {
+        "id": "s20",
+        "start": 2150,
+        "end": 2213,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "„Das Klettern habe ich als junger Bursche in Nideggen erlernt.“"
+      },
+      {
+        "id": "s21",
+        "start": 2214,
+        "end": 2283,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "An Steilwänden und Überhängen ist Lutz Kreutzer daraufhin geklettert."
+      },
+      {
+        "id": "s22",
+        "start": 2284,
+        "end": 2348,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Etwa an der Großen Mauer des Heiligkreuzkofels in den Dolomiten."
+      },
+      {
+        "id": "s23",
+        "start": 2349,
+        "end": 2430,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "„Die galt lange als unbezwingbar, bis Reinhold Messner sie 1969 erstbegangen hat."
+      },
+      {
+        "id": "s24",
+        "start": 2431,
+        "end": 2600,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Unsere Seilschaft hat die Große Mauer 1988 durchstiegen, und 19 Jahre nach Messner war es dennoch erst die siebte Begehung“, führt Kreutzer aus, der auch Paraglider ist."
+      },
+      {
+        "id": "s25",
+        "start": 2601,
+        "end": 2664,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Was ihn in Kombination beruflich auch in die Alpen geführt hat."
+      },
+      {
+        "id": "s26",
+        "start": 2666,
+        "end": 2851,
+        "block": "body",
+        "level": 0,
+        "paragraph": 5,
+        "text": "Stark vereinfacht dargestellt war das so: Lutz Kreutzer hat höchste Schwierigkeitsgrade geklettert und dabei dort Gesteinsproben entnommen, wo andere Wissenschaftler gar nicht hinkamen."
+      },
+      {
+        "id": "s27",
+        "start": 2852,
+        "end": 3082,
+        "block": "body",
+        "level": 0,
+        "paragraph": 5,
+        "text": "Vom Gipfel aus stieg Kreutzer wieder ab oder segelte mit dem Gleitschirm ins Tal, um in der Folge als Diplom-Geologe die entnommenen Gesteinsproben zu analysieren und dann seine Doktorarbeit über die Karnischen Alpen zu verfassen."
+      },
+      {
+        "id": "s28",
+        "start": 3083,
+        "end": 3252,
+        "block": "body",
+        "level": 0,
+        "paragraph": 5,
+        "text": "Seine Kenntnisse über das Bergsteigen und die Gegend um Lesachtal und Porzescharte fließen detailliert in die kriminell spannende Handlung von „Der Dolomitenmörder“ ein."
+      },
+      {
+        "id": "s29",
+        "start": 3254,
+        "end": 3404,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "Vor seinem aktuellen Roman hatte Lutz Kreutzer noch literarische Reisen zu seinen Wurzeln in der Heimat Gressenich, Stolberg und Umgebung unternommen."
+      },
+      {
+        "id": "s30",
+        "start": 3405,
+        "end": 3590,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "Mit den beiden Krimis „Die Akte Hürtgenwald“ und „Römerfluch“ ließ der Bestsellerautor noch Kommissar Straubinger ermitteln – in unserer Region und vor dem Hintergrund ihrer Geschichte."
+      },
+      {
+        "id": "s31",
+        "start": 3591,
+        "end": 3693,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "„Das dritte Straubinger-Buch ist in Arbeit, und der Krimi wird wieder an lokalen Schauplätzen spielen."
+      },
+      {
+        "id": "s32",
+        "start": 3694,
+        "end": 3871,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "Dann ist es nicht das Grenzgebiet zwischen Österreich und Italien, sondern von Gressenich ausgehend die Euregio mit Deutschland, den Niederlanden und Belgien“, erzählt Kreutzer."
+      },
+      {
+        "id": "s33",
+        "start": 3873,
+        "end": 3895,
+        "block": "body",
+        "level": 0,
+        "paragraph": 7,
+        "text": "„Schaurige Orte in...”"
+      },
+      {
+        "id": "s34",
+        "start": 3897,
+        "end": 4012,
+        "block": "body",
+        "level": 0,
+        "paragraph": 8,
+        "text": "Doch bevor der nächste Straubinger-Krimi Spannung verspricht, wird Lutz Kreutzer einmal mehr als Herausgeber tätig."
+      },
+      {
+        "id": "s35",
+        "start": 4013,
+        "end": 4159,
+        "block": "body",
+        "level": 0,
+        "paragraph": 8,
+        "text": "Gemeinsam mit renommierten Autorinnen und Autoren verfasst der Stolberger Kurzgeschichten, die er in der Reihe „Schaurige Orte in ...“ herausgibt."
+      },
+      {
+        "id": "s36",
+        "start": 4161,
+        "end": 4275,
+        "block": "body",
+        "level": 0,
+        "paragraph": 9,
+        "text": "Nordsee und Ostsee waren bereits ebenso Schauplätze der schaurigen Orte wie Bodensee, Bayern, Schweiz und Hamburg."
+      },
+      {
+        "id": "s37",
+        "start": 4276,
+        "end": 4406,
+        "block": "body",
+        "level": 0,
+        "paragraph": 9,
+        "text": "Mit den schaurigen Orten am Niederrhein und in Köln hat Lutz Kreutzer sich als Herausgeber und Autor auch unserer Region genähert."
+      },
+      {
+        "id": "s38",
+        "start": 4407,
+        "end": 4447,
+        "block": "body",
+        "level": 0,
+        "paragraph": 9,
+        "text": "Und wird im September noch näher kommen."
+      },
+      {
+        "id": "s39",
+        "start": 4448,
+        "end": 4525,
+        "block": "body",
+        "level": 0,
+        "paragraph": 9,
+        "text": "„Dann erscheint ,Schaurige Orte in Eifel und Ardennen‘“, verspricht Kreutzer."
+      },
+      {
+        "id": "s40",
+        "start": 4527,
+        "end": 4684,
+        "block": "body",
+        "level": 0,
+        "paragraph": 10,
+        "text": "Der aktuelle Roman „Der Dolomitenmörder“ von Lutz Kreutzer ist als Taschenbuch im Gmeiner Verlag erschienen: 344 Seiten, broschiert, ISBN: 978-3-8392-8115-4."
+      }
+    ]
+  },
+  "transcript": {
+    "text": "Der Stolberger Bestsellerautor Lutz Kreutzer hat mit „Der Dolomitenmörder“ seinen zehnten Roman veröffentlicht. Der Thriller spielt im österreichisch-italienischen Grenzgebiet zwischen Gailtal und den Dolomiten. Dort werden grausam verstümmelte Tierkadaver entdeckt. Für den Kärntner Alpinpolizisten Eddy Zett weckt das Erinnerungen an einen Fall vor 20 Jahren: Damals erschoss er einen Wilderer in Notwehr und wurde in seiner Heimat zur Legende.\n\nDie neue Mordserie eskaliert. Auf eine Gams und eine Hirschkuh folgt eine Kuh, schließlich wird eine Sennerin getötet. Gemeinsam mit seinem italienischen Freund, dem Carabiniere Fredo, nimmt Eddy Zett die Verfolgung des Täters auf. Die Suche führt durch die raue Bergwelt mit Steilwänden, Gipfeln und Abgründen. Als Zett selbst Teil des Plans des Psychopathen wird, verdichtet sich die Handlung zu einem Thriller über Verbrechen und menschliche Abgründe.\n\nDer Roman war bereits vor mehr als zehn Jahren unter dem Titel „Der Grenzgänger“ erschienen. Damals hatte der Bergverlag Rother den alpinen Krimi bei Kreutzer bestellt. Nach einer Änderung im Verlagsprogramm gab es keine zweite Auflage. Die Cheflektorin des Gmeiner Verlags entdeckte das Buch später und entschied sich für eine überarbeitete Neuveröffentlichung.\n\nKreutzer stammt aus Gressenich, ist promovierter Naturwissenschaftler, Bergsteiger und Paraglider. Seine Erfahrungen in den Dolomiten und seine wissenschaftliche Arbeit über die Karnischen Alpen prägen den Roman. Der dritte Krimi um Kommissar Straubinger ist bereits in Arbeit und soll in der Euregio spielen. Im September erscheint zudem der Band „Schaurige Orte in Eifel und Ardennen“.",
+    "claims": [
+      {
+        "id": "c1",
+        "start": 0,
+        "end": 111,
+        "text": "Der Stolberger Bestsellerautor Lutz Kreutzer hat mit „Der Dolomitenmörder“ seinen zehnten Roman veröffentlicht.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s11",
+            "start": 1169,
+            "end": 1270,
+            "spans": [
+              [
+                1169,
+                1193
+              ],
+              [
+                1204,
+                1270
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.91,
+        "margin": 0.42,
+        "entities": [
+          {
+            "type": "person",
+            "surface": "Lutz Kreutzer",
+            "norm": "lutz kreutzer",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 80 % des Claims.",
+        "scores": {
+          "top": 0.933,
+          "lex": 0.821,
+          "emb": 1,
+          "anchor": 0,
+          "nli": 0.994
+        }
+      },
+      {
+        "id": "c2",
+        "start": 112,
+        "end": 211,
+        "text": "Der Thriller spielt im österreichisch-italienischen Grenzgebiet zwischen Gailtal und den Dolomiten.",
+        "relation": "bedeutung_verschoben",
+        "sources": [
+          {
+            "sentence": "s1",
+            "start": 20,
+            "end": 95,
+            "spans": [
+              [
+                20,
+                95
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.73,
+        "margin": 0.28,
+        "entities": [],
+        "flags": [
+          "bedeutung_verschoben"
+        ],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 81 % des Claims. · Bedeutung verschoben — die Fundstelle widerspricht dem Claim nicht, stützt ihn aber auch nicht vollständig (entailment 0.16, neutral 0.58).",
+        "scores": {
+          "top": 0.746,
+          "lex": 0.508,
+          "emb": 0.631,
+          "anchor": 0,
+          "nli": 0.159
+        }
+      },
+      {
+        "id": "c3",
+        "start": 212,
+        "end": 266,
+        "text": "Dort werden grausam verstümmelte Tierkadaver entdeckt.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s1",
+            "start": 108,
+            "end": 132,
+            "spans": [
+              [
+                108,
+                132
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.54,
+        "margin": 0.29,
+        "entities": [
+          {
+            "type": "person",
+            "surface": "Tierkadaver",
+            "norm": "tierkadaver",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Name „Tierkadaver“ eindeutig in s1 · Fundstellen erklären 58 % des Claims.",
+        "scores": {
+          "top": 0.635,
+          "lex": 0.31,
+          "emb": 0.503,
+          "anchor": 0.2,
+          "nli": 0.998
+        }
+      },
+      {
+        "id": "c4",
+        "start": 267,
+        "end": 446,
+        "text": "Für den Kärntner Alpinpolizisten Eddy Zett weckt das Erinnerungen an einen Fall vor 20 Jahren: Damals erschoss er einen Wilderer in Notwehr und wurde in seiner Heimat zur Legende.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s3",
+            "start": 319,
+            "end": 449,
+            "spans": [
+              [
+                319,
+                352
+              ],
+              [
+                384,
+                428
+              ],
+              [
+                442,
+                449
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s1",
+            "start": 165,
+            "end": 194,
+            "spans": [
+              [
+                165,
+                194
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s2",
+            "start": 295,
+            "end": 304,
+            "spans": [
+              [
+                295,
+                304
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.76,
+        "margin": 0.29,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "20 Jahren",
+            "norm": "20 Jahre",
+            "status": "match"
+          },
+          {
+            "type": "person",
+            "surface": "Eddy Zett",
+            "norm": "eddy zett",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Anker 20 Jahre eindeutig in s2 · Verdichtet aus s3 + s1 + s2 (s1 erklärt zusätzlich 15 %; Zahlen-Anker in s2). · Fundstellen erklären 72 % des Claims.",
+        "scores": {
+          "top": 0.71,
+          "lex": 0.458,
+          "emb": 0.802,
+          "anchor": 0,
+          "nli": 0.944
+        }
+      },
+      {
+        "id": "c5",
+        "start": 448,
+        "end": 477,
+        "text": "Die neue Mordserie eskaliert.",
+        "relation": "keine_quelle",
+        "sources": [],
+        "confidence": 0.75,
+        "margin": 0.03,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Keine ausreichend ähnliche Stelle im Artikel — nächster Kandidat s7 mit 0,35 (Schwelle 0,44).",
+        "scores": {
+          "top": 0.35,
+          "lex": 0.066,
+          "emb": 0.501,
+          "anchor": 0,
+          "nli": null
+        }
+      },
+      {
+        "id": "c6",
+        "start": 478,
+        "end": 566,
+        "text": "Auf eine Gams und eine Hirschkuh folgt eine Kuh, schließlich wird eine Sennerin getötet.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s6",
+            "start": 550,
+            "end": 584,
+            "spans": [
+              [
+                550,
+                584
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s7",
+            "start": 656,
+            "end": 664,
+            "spans": [
+              [
+                656,
+                664
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s5",
+            "start": 519,
+            "end": 528,
+            "spans": [
+              [
+                519,
+                528
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.71,
+        "margin": 0.32,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s6 + s7 + s5 (s7 erklärt zusätzlich 19 %, s5 erklärt zusätzlich 15 %). · Fundstellen erklären 74 % des Claims.",
+        "scores": {
+          "top": 0.625,
+          "lex": 0.465,
+          "emb": 0.681,
+          "anchor": 0,
+          "nli": 0.843
+        }
+      },
+      {
+        "id": "c7",
+        "start": 567,
+        "end": 679,
+        "text": "Gemeinsam mit seinem italienischen Freund, dem Carabiniere Fredo, nimmt Eddy Zett die Verfolgung des Täters auf.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s8",
+            "start": 675,
+            "end": 742,
+            "spans": [
+              [
+                675,
+                742
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.7,
+        "margin": 0.35,
+        "entities": [
+          {
+            "type": "person",
+            "surface": "Eddy Zett",
+            "norm": "eddy zett",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 54 % des Claims.",
+        "scores": {
+          "top": 0.749,
+          "lex": 0.458,
+          "emb": 0.812,
+          "anchor": 0,
+          "nli": 0.983
+        }
+      },
+      {
+        "id": "c8",
+        "start": 680,
+        "end": 759,
+        "text": "Die Suche führt durch die raue Bergwelt mit Steilwänden, Gipfeln und Abgründen.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s9",
+            "start": 803,
+            "end": 938,
+            "spans": [
+              [
+                803,
+                814
+              ],
+              [
+                826,
+                833
+              ],
+              [
+                845,
+                854
+              ],
+              [
+                930,
+                938
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.52,
+        "margin": 0.19,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 52 % des Claims. · Unter der Direkt-Schwelle — zur Prüfung empfohlen.",
+        "scores": {
+          "top": 0.535,
+          "lex": 0.303,
+          "emb": 0.525,
+          "anchor": 0,
+          "nli": 0.996
+        }
+      },
+      {
+        "id": "c9",
+        "start": 760,
+        "end": 902,
+        "text": "Als Zett selbst Teil des Plans des Psychopathen wird, verdichtet sich die Handlung zu einem Thriller über Verbrechen und menschliche Abgründe.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s10",
+            "start": 1015,
+            "end": 1062,
+            "spans": [
+              [
+                1015,
+                1035
+              ],
+              [
+                1050,
+                1062
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s9",
+            "start": 845,
+            "end": 962,
+            "spans": [
+              [
+                845,
+                854
+              ],
+              [
+                871,
+                879
+              ],
+              [
+                930,
+                962
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.6,
+        "margin": 0.19,
+        "entities": [
+          {
+            "type": "person",
+            "surface": "Zett",
+            "norm": "zett",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s10 + s9 (s9 erklärt zusätzlich 30 %). · Fundstellen erklären 57 % des Claims. · Unter der Direkt-Schwelle — zur Prüfung empfohlen.",
+        "scores": {
+          "top": 0.508,
+          "lex": 0.242,
+          "emb": 0.637,
+          "anchor": 0,
+          "nli": 0.996
+        }
+      },
+      {
+        "id": "c10",
+        "start": 904,
+        "end": 996,
+        "text": "Der Roman war bereits vor mehr als zehn Jahren unter dem Titel „Der Grenzgänger“ erschienen.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s13",
+            "start": 1411,
+            "end": 1446,
+            "spans": [
+              [
+                1411,
+                1446
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s11",
+            "start": 1260,
+            "end": 1270,
+            "spans": [
+              [
+                1260,
+                1270
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s15",
+            "start": 1560,
+            "end": 1594,
+            "spans": [
+              [
+                1560,
+                1594
+              ]
+            ],
+            "role": "redundant"
+          }
+        ],
+        "confidence": 0.86,
+        "margin": 0.4,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "zehn Jahren",
+            "norm": "10 Jahre",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Anker 10 Jahre eindeutig in s13 · Verdichtet aus s13 + s11 (s11 erklärt zusätzlich 14 %). · Fundstellen erklären 100 % des Claims.",
+        "scores": {
+          "top": 0.734,
+          "lex": 0.477,
+          "emb": 0.649,
+          "anchor": 0.3,
+          "nli": 0.683
+        }
+      },
+      {
+        "id": "c11",
+        "start": 997,
+        "end": 1072,
+        "text": "Damals hatte der Bergverlag Rother den alpinen Krimi bei Kreutzer bestellt.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s14",
+            "start": 1448,
+            "end": 1525,
+            "spans": [
+              [
+                1448,
+                1501
+              ],
+              [
+                1516,
+                1525
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.86,
+        "margin": 0.46,
+        "entities": [
+          {
+            "type": "person",
+            "surface": "Rother",
+            "norm": "rother",
+            "status": "match"
+          }
+        ],
+        "flags": [
+          "signale_uneinig"
+        ],
+        "wortlaut": null,
+        "note": "Name „Rother“ eindeutig in s14 · Fundstellen erklären 87 % des Claims. · NLI meldet Widerspruch (contradiction 0.95), Wortlaut und Bedeutung stützen den Claim aber stark und es wird nichts verneint — nicht als Widerspruch gemeldet, siehe Signale uneinig.",
+        "scores": {
+          "top": 0.882,
+          "lex": 0.735,
+          "emb": 0.85,
+          "anchor": 0.2,
+          "nli": 0.006
+        }
+      },
+      {
+        "id": "c12",
+        "start": 1073,
+        "end": 1140,
+        "text": "Nach einer Änderung im Verlagsprogramm gab es keine zweite Auflage.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s16",
+            "start": 1643,
+            "end": 1791,
+            "spans": [
+              [
+                1643,
+                1649
+              ],
+              [
+                1693,
+                1713
+              ],
+              [
+                1785,
+                1791
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.57,
+        "margin": 0.33,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 55 % des Claims. · Unter der Direkt-Schwelle — zur Prüfung empfohlen.",
+        "scores": {
+          "top": 0.573,
+          "lex": 0.294,
+          "emb": 0.597,
+          "anchor": 0,
+          "nli": 0.999
+        }
+      },
+      {
+        "id": "c13",
+        "start": 1141,
+        "end": 1266,
+        "text": "Die Cheflektorin des Gmeiner Verlags entdeckte das Buch später und entschied sich für eine überarbeitete Neuveröffentlichung.",
+        "relation": "bedeutung_verschoben",
+        "sources": [
+          {
+            "sentence": "s17",
+            "start": 1804,
+            "end": 1977,
+            "spans": [
+              [
+                1804,
+                1837
+              ],
+              [
+                1899,
+                1912
+              ],
+              [
+                1960,
+                1977
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.63,
+        "margin": 0.27,
+        "entities": [],
+        "flags": [
+          "bedeutung_verschoben"
+        ],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 58 % des Claims. · Bedeutung verschoben — die Fundstelle widerspricht dem Claim nicht, stützt ihn aber auch nicht vollständig (entailment 0.04, neutral 0.88).",
+        "scores": {
+          "top": 0.629,
+          "lex": 0.411,
+          "emb": 0.673,
+          "anchor": 0,
+          "nli": 0.043
+        }
+      },
+      {
+        "id": "c14",
+        "start": 1268,
+        "end": 1366,
+        "text": "Kreutzer stammt aus Gressenich, ist promovierter Naturwissenschaftler, Bergsteiger und Paraglider.",
+        "relation": "bedeutung_verschoben",
+        "sources": [
+          {
+            "sentence": "s19",
+            "start": 2053,
+            "end": 2149,
+            "spans": [
+              [
+                2053,
+                2071
+              ],
+              [
+                2097,
+                2149
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.75,
+        "margin": 0.39,
+        "entities": [
+          {
+            "type": "person",
+            "surface": "Kreutzer",
+            "norm": "kreutzer",
+            "status": "match"
+          }
+        ],
+        "flags": [
+          "bedeutung_verschoben"
+        ],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 75 % des Claims. · Bedeutung verschoben — die Fundstelle widerspricht dem Claim nicht, stützt ihn aber auch nicht vollständig (entailment 0.00, neutral 0.99).",
+        "scores": {
+          "top": 0.802,
+          "lex": 0.724,
+          "emb": 0.754,
+          "anchor": 0,
+          "nli": 0.003
+        }
+      },
+      {
+        "id": "c15",
+        "start": 1367,
+        "end": 1480,
+        "text": "Seine Erfahrungen in den Dolomiten und seine wissenschaftliche Arbeit über die Karnischen Alpen prägen den Roman.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s27",
+            "start": 3024,
+            "end": 3068,
+            "spans": [
+              [
+                3024,
+                3029
+              ],
+              [
+                3052,
+                3068
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s26",
+            "start": 2816,
+            "end": 2831,
+            "spans": [
+              [
+                2816,
+                2831
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s28",
+            "start": 3083,
+            "end": 3088,
+            "spans": [
+              [
+                3083,
+                3088
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.57,
+        "margin": 0.13,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s27 + s26 + s28 (s26 erklärt zusätzlich 13 %, s28 erklärt zusätzlich 10 %). · Fundstellen erklären 61 % des Claims.",
+        "scores": {
+          "top": 0.461,
+          "lex": 0.254,
+          "emb": 0.424,
+          "anchor": 0,
+          "nli": 0.982
+        }
+      },
+      {
+        "id": "c16",
+        "start": 1481,
+        "end": 1577,
+        "text": "Der dritte Krimi um Kommissar Straubinger ist bereits in Arbeit und soll in der Euregio spielen.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s31",
+            "start": 3591,
+            "end": 3693,
+            "spans": [
+              [
+                3591,
+                3614
+              ],
+              [
+                3627,
+                3648
+              ],
+              [
+                3685,
+                3693
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s30",
+            "start": 3420,
+            "end": 3518,
+            "spans": [
+              [
+                3420,
+                3426
+              ],
+              [
+                3497,
+                3518
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.8,
+        "margin": 0.3,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s31 + s30 (s30 erklärt zusätzlich 20 %). · Fundstellen erklären 84 % des Claims.",
+        "scores": {
+          "top": 0.737,
+          "lex": 0.409,
+          "emb": 0.758,
+          "anchor": 0,
+          "nli": 0.765
+        }
+      },
+      {
+        "id": "c17",
+        "start": 1578,
+        "end": 1655,
+        "text": "Im September erscheint zudem der Band „Schaurige Orte in Eifel und Ardennen“.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s39",
+            "start": 4448,
+            "end": 4501,
+            "spans": [
+              [
+                4448,
+                4501
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s38",
+            "start": 4407,
+            "end": 4428,
+            "spans": [
+              [
+                4407,
+                4428
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.78,
+        "margin": 0.36,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s39 + s38 (s38 erklärt zusätzlich 19 %). · Fundstellen erklären 85 % des Claims.",
+        "scores": {
+          "top": 0.782,
+          "lex": 0.569,
+          "emb": 0.705,
+          "anchor": 0,
+          "nli": 0.829
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,613 @@
+{
+  "paar": "az_tafelStolberg",
+  "split": "test",
+  "anleitung": [
+    "Arbeitsanweisung (diese Zeilen bleiben in der Datei stehen):",
+    "1. Jede Zeile mit \"geprueft\": false durchgehen und auf true setzen.",
+    "2. notwendig = Sätze, ohne die ein Teil der Aussage unbelegt bliebe.",
+    "   zulaessig = stützt ebenfalls, ist aber entbehrlich (Dubletten).",
+    "3. relation prüfen: direkt | aggregiert | bedeutung_verschoben |",
+    "   inferiert | keine_quelle.",
+    "4. flags_erwartet: nur Befunde, die WIRKLICH zutreffen sollten",
+    "   (zahlkonflikt, ort_konflikt, kuerzel_konflikt, wortlaut_abweichung,",
+    "   ident_unbelegt, zahl_unbelegt). Leere Liste heißt: kein Befund.",
+    "5. Zum Schluss EINMAL umgekehrt: den Artikel lesen und fragen, welcher",
+    "   Transkriptsatz diese Stelle nutzt. Das fängt die Quellen, die die",
+    "   Pipeline gar nicht erst vorgeschlagen hat — der Bias des Entwurfs.",
+    "6. Artikel- und Transkripttext danach NICHT mehr ändern, auch keine",
+    "   Tippfehler: Die Zeichen-Offsets sind Teil der Annotation."
+  ],
+  "artikel_hash": "e8f6096b72b196ea",
+  "transkript_hash": "7407f13654641eb7",
+  "artikel_saetze": [
+    {
+      "id": "s1",
+      "text": "Stolberg Der Schock sitzt nicht mehr so tief wie noch an Weihnachten."
+    },
+    {
+      "id": "s2",
+      "text": "Etwas mehr als sechs Monate später, nachdem Unbekannte in die Räume der Stolberger Tafel eingebrochen waren, ist der Alltag zurückgekehrt."
+    },
+    {
+      "id": "s3",
+      "text": "Die Schäden sind beseitigt, die gestohlenen Gegenstände ersetzt."
+    },
+    {
+      "id": "s4",
+      "text": "Die Täter wurden allerdings nicht gefunden."
+    },
+    {
+      "id": "s5",
+      "text": "Das Ermittlungsverfahren wurde inzwischen eingestellt."
+    },
+    {
+      "id": "s6",
+      "text": "„An sich ist das Thema für uns erledigt“, sagt Alfred Baldes, stellvertretender Vorsitzender der Stolberger Tafel."
+    },
+    {
+      "id": "s7",
+      "text": "Nach den turbulenten Wochen nach dem Einbruch sei inzwischen wieder Normalität eingekehrt."
+    },
+    {
+      "id": "s8",
+      "text": "„Durch die tägliche Arbeit vergisst man das irgendwann.“"
+    },
+    {
+      "id": "s9",
+      "text": "In der Nacht vom ersten auf den zweiten Weihnachtstag hatten sich Unbekannte gewaltsam Zutritt zu den Räumen der Stolberger Tafel verschafft."
+    },
+    {
+      "id": "s10",
+      "text": "Sie brachen die Eingangstür auf, traten die Tür zum Vorstandsbüro ein und beschädigten mehrere Metallschränke."
+    },
+    {
+      "id": "s11",
+      "text": "Gestohlen wurden unter anderem ein Tresor, drei Laptops und ein Kartenscanner."
+    },
+    {
+      "id": "s12",
+      "text": "Bargeld befand sich nicht mehr im Tresor – Kassierer Rolf Wieczarkowiecz hatte die Einnahmen vorsorglich vor den Feiertagen mit nach Hause genommen."
+    },
+    {
+      "id": "s13",
+      "text": "Inzwischen sind die materiellen Schäden nahezu vollständig beseitigt."
+    },
+    {
+      "id": "s14",
+      "text": "Eine neue Eingangstür wurde eingebaut, neue Laptops organisiert."
+    },
+    {
+      "id": "s15",
+      "text": "Die beschädigten Metallschränke konnten teilweise repariert und weiter genutzt werden."
+    },
+    {
+      "id": "s16",
+      "text": "Doch manches brauchte Zeit."
+    },
+    {
+      "id": "s17",
+      "text": "Der neue Tresor zum Beispiel ist erst in der vergangenen Woche geliefert und eingebaut worden."
+    },
+    {
+      "id": "s18",
+      "text": "Was den Ehrenamtlern jedoch weitaus mehr in Erinnerung geblieben ist als der Einbruch selbst, ist die große Welle der Hilfsbereitschaft nach der Tat."
+    },
+    {
+      "id": "s19",
+      "text": "Zahlreiche Privatpersonen hatten Geld gespendet oder Hilfe angeboten."
+    },
+    {
+      "id": "s20",
+      "text": "Auch einige regionale Unternehmen unterstützten die Tafel – und tun dies laut Baldes bis heute."
+    },
+    {
+      "id": "s21",
+      "text": "80 Ehrenamtliche"
+    },
+    {
+      "id": "s22",
+      "text": "Auch die Zusammenarbeit mit anderen Tafeln habe sowohl damals nach dem Vorfall als auch heute hervorragend funktioniert."
+    },
+    {
+      "id": "s23",
+      "text": "„Wir tauschen regelmäßig Lebensmittel und Waren untereinander aus“, sagt Baldes."
+    },
+    {
+      "id": "s24",
+      "text": "„Haben wir von einer Sache zu viel, fragen wir etwa in Aachen oder Würselen nach, ob sie etwas gebrauchen können.“"
+    },
+    {
+      "id": "s25",
+      "text": "Umgekehrt erhalte die Stolberger Tafel auch Unterstützung, wenn andernorts Waren übrig seien."
+    },
+    {
+      "id": "s26",
+      "text": "Mit rund 80 Ehrenamtlichen kann die Stolberger Tafel ihren Betrieb derzeit zuverlässig aufrechterhalten."
+    },
+    {
+      "id": "s27",
+      "text": "Täglich werden mehrere Fahrer benötigt, um Lebensmittel bei den Supermärkten und Betrieben abzuholen oder auch Hauslieferungen zu übernehmen."
+    },
+    {
+      "id": "s28",
+      "text": "Im Laden kümmern sich weitere ehrenamtliche Helfer um die Ausgabe der Waren an die Kunden."
+    },
+    {
+      "id": "s29",
+      "text": "„So sind jeden Tag um die 15 Ehrenamtler im Einsatz“, sagt Baldes."
+    },
+    {
+      "id": "s30",
+      "text": "Trotz dieser stabilen Mannschaft sieht Baldes eine große Herausforderung für die kommenden Jahre: den Nachwuchs."
+    },
+    {
+      "id": "s31",
+      "text": "Die meisten Ehrenamtler seien bereits im Rentenalter, auch im Vorstand sei es schwierig, Nachfolger zu finden."
+    },
+    {
+      "id": "s32",
+      "text": "Schon vor Jahren wollten Alfred Baldes und seine Mitstreiterin Gisela Becker-Bonaventura den Vorsitz abgeben."
+    },
+    {
+      "id": "s33",
+      "text": "Doch niemand habe die Verantwortung übernehmen wollen."
+    },
+    {
+      "id": "s34",
+      "text": "„Und woran das Herz hängt, das gibt man nicht auf“, sagt Baldes und tippt auf seine linke Brustseite."
+    },
+    {
+      "id": "s35",
+      "text": "Seit 23 Jahren engagiert sich der 79-Jährige bei der Stolberger Tafel."
+    },
+    {
+      "id": "s36",
+      "text": "Ein weiteres Thema beschäftigt die Stolberger Tafel derzeit besonders: das in die Jahre gekommene Kühlfahrzeug."
+    },
+    {
+      "id": "s37",
+      "text": "Immer häufiger fällt es wegen Reparaturen aus."
+    },
+    {
+      "id": "s38",
+      "text": "Zwar helfen Leihfahrzeuge übergangsweise aus, doch das sei keine Dauerlösung."
+    },
+    {
+      "id": "s39",
+      "text": "„Die Kühlkette darf ja nicht unterbrochen werden“, sagt Baldes."
+    },
+    {
+      "id": "s40",
+      "text": "Die Tafel sucht deshalb nach einem geeigneten Ersatzfahrzeug."
+    },
+    {
+      "id": "s41",
+      "text": "Baldes bleibt aber optimistisch, dass noch in diesem Jahr ein neues Kühlfahrzeug angeschafft werden kann."
+    },
+    {
+      "id": "s42",
+      "text": "Die Stolberger Tafel freut sich jederzeit über neue ehrenamtliche Helfer."
+    },
+    {
+      "id": "s43",
+      "text": "Ob bei der Ausgabe der Lebensmittel, als Fahrer für Abholungen oder Hauslieferungen oder bei organisatorischen Aufgaben – jede helfende Hand wird gebraucht."
+    },
+    {
+      "id": "s44",
+      "text": "Wer Interesse hat, kann sich direkt bei der Stolberger Tafel, Eschweilerstraße 12, melden (02402/860421, stolbergertafel@netcologne.de)."
+    }
+  ],
+  "eintraege": [
+    {
+      "satz": "t1",
+      "text": "Nach dem Einbruch in die Räume der Stolberger Tafel ist in Stolberg wieder Normalität eingekehrt.",
+      "start": 0,
+      "end": 97,
+      "geprueft": false,
+      "notwendig": [
+        "s7",
+        "s9"
+      ],
+      "zulaessig": [
+        "s2"
+      ],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c1"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t2",
+      "text": "Die Schäden sind weitgehend beseitigt, gestohlene Gegenstände wurden ersetzt.",
+      "start": 98,
+      "end": 175,
+      "geprueft": false,
+      "notwendig": [
+        "s3"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c2"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t3",
+      "text": "Die Täter konnten jedoch nicht ermittelt werden.",
+      "start": 176,
+      "end": 224,
+      "geprueft": false,
+      "notwendig": [
+        "s4"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c3"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t4",
+      "text": "Das Verfahren ist eingestellt.",
+      "start": 225,
+      "end": 255,
+      "geprueft": false,
+      "notwendig": [
+        "s5"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c4"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t5",
+      "text": "In der Nacht vom ersten auf den zweiten Weihnachtstag waren Unbekannte gewaltsam in die Räume eingebrochen.",
+      "start": 257,
+      "end": 364,
+      "geprueft": false,
+      "notwendig": [
+        "s9"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c5"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t6",
+      "text": "Sie beschädigten Türen und Metallschränke und stahlen einen Tresor, drei Laptops sowie einen Kartenscanner.",
+      "start": 365,
+      "end": 472,
+      "geprueft": false,
+      "notwendig": [
+        "s10",
+        "s11"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c6"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t7",
+      "text": "Bargeld war nicht im Tresor, weil Kassierer Rolf Wieczarkowiecz die Einnahmen vor den Feiertagen vorsorglich mit nach Hause genommen hatte.",
+      "start": 473,
+      "end": 612,
+      "geprueft": false,
+      "notwendig": [
+        "s12"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c7"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t8",
+      "text": "Alfred Baldes, stellvertretender Vorsitzender der Stolberger Tafel, sagt, das Thema sei für die Helfer inzwischen abgeschlossen.",
+      "start": 614,
+      "end": 742,
+      "geprueft": false,
+      "notwendig": [
+        "s6"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c8"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t9",
+      "text": "Besonders in Erinnerung geblieben sei die große Hilfsbereitschaft nach dem Einbruch.",
+      "start": 743,
+      "end": 827,
+      "geprueft": false,
+      "notwendig": [
+        "s18"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c9"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t10",
+      "text": "Privatpersonen spendeten Geld oder boten Unterstützung an.",
+      "start": 828,
+      "end": 886,
+      "geprueft": false,
+      "notwendig": [
+        "s19",
+        "s20"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c10"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t11",
+      "text": "Auch regionale Unternehmen helfen der Tafel weiterhin.",
+      "start": 887,
+      "end": 941,
+      "geprueft": false,
+      "notwendig": [
+        "s20"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c11"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t12",
+      "text": "Zudem funktioniere der Austausch mit den Tafeln in Aachen und Würselen gut: Lebensmittel und Waren würden gegenseitig weitergegeben, wenn sie an einem Ort übrig seien.",
+      "start": 942,
+      "end": 1109,
+      "geprueft": false,
+      "notwendig": [
+        "s22",
+        "s23",
+        "s24"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c12"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t13",
+      "text": "Rund 80 Ehrenamtliche halten den Betrieb der Stolberger Tafel derzeit aufrecht.",
+      "start": 1111,
+      "end": 1190,
+      "geprueft": false,
+      "notwendig": [
+        "s26"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c13"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t14",
+      "text": "Täglich sind etwa 15 Helfer im Einsatz.",
+      "start": 1191,
+      "end": 1230,
+      "geprueft": false,
+      "notwendig": [
+        "s29"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c14"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t15",
+      "text": "Sie holen Lebensmittel bei Supermärkten und Betrieben ab, übernehmen Hauslieferungen und geben Waren im Laden aus.",
+      "start": 1231,
+      "end": 1345,
+      "geprueft": false,
+      "notwendig": [
+        "s27"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c15"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t16",
+      "text": "Sorgen bereitet dem Verein vor allem die Suche nach Nachwuchs.",
+      "start": 1347,
+      "end": 1409,
+      "geprueft": false,
+      "notwendig": [],
+      "zulaessig": [],
+      "relation": "keine_quelle",
+      "flags_erwartet": [
+        "ident_unbelegt"
+      ],
+      "claims_im_lauf": [
+        "c16"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t17",
+      "text": "Viele Ehrenamtliche sind im Rentenalter, auch für den Vorstand fehlen Nachfolger.",
+      "start": 1410,
+      "end": 1491,
+      "geprueft": false,
+      "notwendig": [
+        "s31"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c17"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t18",
+      "text": "Alfred Baldes engagiert sich seit 23 Jahren bei der Tafel.",
+      "start": 1492,
+      "end": 1550,
+      "geprueft": false,
+      "notwendig": [
+        "s6",
+        "s35"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c18"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t19",
+      "text": "Dringend gebraucht wird außerdem ein Ersatz für das alte Kühlfahrzeug, das immer häufiger repariert werden muss.",
+      "start": 1552,
+      "end": 1664,
+      "geprueft": false,
+      "notwendig": [
+        "s36",
+        "s37"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c19"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t20",
+      "text": "Die Kühlkette dürfe nicht unterbrochen werden, betont Baldes.",
+      "start": 1665,
+      "end": 1726,
+      "geprueft": false,
+      "notwendig": [
+        "s39"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c20"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t21",
+      "text": "Er hofft, noch in diesem Jahr ein neues Fahrzeug anschaffen zu können.",
+      "start": 1727,
+      "end": 1797,
+      "geprueft": false,
+      "notwendig": [
+        "s41"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c21"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t22",
+      "text": "Die Tafel sucht weiterhin ehrenamtliche Helfer.",
+      "start": 1798,
+      "end": 1845,
+      "geprueft": false,
+      "notwendig": [
+        "s42"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c22"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    }
+  ]
+}

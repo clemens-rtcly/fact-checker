@@ -1,0 +1,236 @@
+{
+  "paar": "ee_Solarpark",
+  "split": "test",
+  "anleitung": [
+    "Arbeitsanweisung (diese Zeilen bleiben in der Datei stehen):",
+    "1. Jede Zeile mit \"geprueft\": false durchgehen und auf true setzen.",
+    "2. notwendig = Sätze, ohne die ein Teil der Aussage unbelegt bliebe.",
+    "   zulaessig = stützt ebenfalls, ist aber entbehrlich (Dubletten).",
+    "3. relation prüfen: direkt | aggregiert | bedeutung_verschoben |",
+    "   inferiert | keine_quelle.",
+    "4. flags_erwartet: nur Befunde, die WIRKLICH zutreffen sollten",
+    "   (zahlkonflikt, ort_konflikt, kuerzel_konflikt, wortlaut_abweichung,",
+    "   ident_unbelegt, zahl_unbelegt). Leere Liste heißt: kein Befund.",
+    "5. Zum Schluss EINMAL umgekehrt: den Artikel lesen und fragen, welcher",
+    "   Transkriptsatz diese Stelle nutzt. Das fängt die Quellen, die die",
+    "   Pipeline gar nicht erst vorgeschlagen hat — der Bias des Entwurfs.",
+    "6. Artikel- und Transkripttext danach NICHT mehr ändern, auch keine",
+    "   Tippfehler: Die Zeichen-Offsets sind Teil der Annotation."
+  ],
+  "artikel_hash": "4aa4f491a864f154",
+  "transkript_hash": "bbfbb275de156a02",
+  "artikel_saetze": [
+    {
+      "id": "s1",
+      "text": "Der Dresdener Projektentwickler VSB baut auf dem Werksgelände der Thyssenkrupp Rasselstein in Andernach einen Solarpark mit einer Leistung von acht Megawatt."
+    },
+    {
+      "id": "s2",
+      "text": "Die Anlage entsteht auf zwei bisher unbebauten Flächen mit insgesamt 5,2 Hektar."
+    },
+    {
+      "id": "s3",
+      "text": "Dort werden die Handwerker von VSB Integrated Energy Solutions, der auf Energielösungen für Gewerbe und Industrie spezialisierten Tochtergesellschaft der VSB Gruppe, rund 12.000 Solarmodule montieren."
+    },
+    {
+      "id": "s4",
+      "text": "Die Unterkonstruktion wird aus CO2‑reduziertem Bluemint‑Stahl von Thyssenkrupp zum Einsatz kommen."
+    },
+    {
+      "id": "s5",
+      "text": "Stromliefervertrag abgeschlossen\nNach der Fertigstellung Mitte 2027 wird der Generator voraussichtlich jedes Jahr rund acht Gigawattstunden sauberen Solarstrom liefern."
+    },
+    {
+      "id": "s6",
+      "text": "Den Strom nutzt Thyssenkrupp Rasselstein komplett direkt vor Ort für die Produktion von Weißblech und Feinstblech."
+    },
+    {
+      "id": "s7",
+      "text": "Doch der Stahlkonzern wird nicht selbst in die Sonnenstromproduktion investieren."
+    },
+    {
+      "id": "s8",
+      "text": "Vielmehr wird VSB die Anlage nicht nur bauen und finanzieren, sondern nach Inbetriebnahme auch betreiben."
+    },
+    {
+      "id": "s9",
+      "text": "Für die Nutzung des Stroms vor Ort hat VSB mit Thyssenkrupp Rasselstein einen Stromliefervertrag (Power Purchase Agreement – PPA) abgeschlossen."
+    },
+    {
+      "id": "s10",
+      "text": "Dieser sogenannte Onsite-PPA läuft zunächst über 20 Jahre."
+    },
+    {
+      "id": "s11",
+      "text": "So kann einerseits die VSB die Anlage refinanzieren und andererseits Thyssenkrupp Rasselstein mit stabilen Stromkosten kalkulieren."
+    },
+    {
+      "id": "s12",
+      "text": "Exklusiv für Abonnenten:\nSolarstrom ist in der Industrie wirtschaftlich\nDenn dadurch spart der Blechhersteller einen Großteil des Strombezugs aus dem Netz."
+    },
+    {
+      "id": "s13",
+      "text": "Zugleich unterstützt das Projekt die Grünstrom- und Dekarbonisierungsstrategie von Thyssenkrupp Steel."
+    },
+    {
+      "id": "s14",
+      "text": "„Unser Ziel war es, einen Teil unseres Grünstrombedarfs lokal zu decken“, erklärt Thorsten Krenke, Chief Technology Officer (CTO) und Mitglied des Vorstands von Thyssenkrupp Rasselstein."
+    },
+    {
+      "id": "s15",
+      "text": "„Das Ergebnis ist der Bau einer Onsite-Photovoltaikanlage, die zeigt, dass dies auch in einem gewachsenen industriellen Umfeld möglich ist.“"
+    },
+    {
+      "id": "s16",
+      "text": "Frederic Wagner, Geschäftsführer von VSB Integrated Energy Solutions, ergänzt: „Mit dem Projekt in Andernach zeigt Thyssenkrupp Rasselstein, welches Potenzial erneuerbare Energien direkt am Industriestandort bieten."
+    },
+    {
+      "id": "s17",
+      "text": "Als Umsetzungspartner schaffen wir eine verlässliche Lösung mit langfristiger Planungssicherheit.“"
+    },
+    {
+      "id": "s18",
+      "text": "Weitere Einsparungen sind möglich\nSchließlich ermöglicht das Modell des Onsite-PPA Unternehmen, erneuerbaren Strom direkt am Standort zu beziehen, ohne eigenes Kapital für die Anlage zu binden – bei langfristig kalkulierbaren Konditionen."
+    },
+    {
+      "id": "s19",
+      "text": "Je nach Ausgestaltung können zudem Netzentgelte, Abgaben und weitere Kostenbestandteile sinken."
+    },
+    {
+      "id": "s20",
+      "text": "Für VSB ist es nicht das erste Projekt dieser Art. Der Projektierer hat schon ähnliche Anlagen für gewerbliche Kunden wie Carrefour, Hutchinson, Lhyfe, Mercedes-Benz, Metro und Seales Air gebaut."
+    }
+  ],
+  "eintraege": [
+    {
+      "satz": "t1",
+      "text": "In Andernach entsteht auf dem Thyssenkrupp Rasselstein Werksgelände ein neuer Solarpark, den der Dresdener Projektentwickler VSB errichtet.",
+      "start": 0,
+      "end": 139,
+      "geprueft": true,
+      "notwendig": [
+        "s1"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c1"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t2",
+      "text": "Die Anlage wird auf zwei ungenutzten Flächen mit 5,2 Hektar gebaut und besteht aus zwölftausend Solarmodulen.",
+      "start": 140,
+      "end": 249,
+      "geprueft": true,
+      "notwendig": [
+        "s2",
+        "s3"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c2"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t3",
+      "text": "Diese liefern nach Fertigstellung Mitte zweitausendsiebenundzwanzig jährlich rund acht Gigawattstunden sauberen Solarstrom.",
+      "start": 250,
+      "end": 373,
+      "geprueft": true,
+      "notwendig": [
+        "s5"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c3"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t4",
+      "text": "Thyssenkrupp Rasselstein nutzt diesen Strom direkt vor Ort für die Produktion.",
+      "start": 374,
+      "end": 452,
+      "geprueft": true,
+      "notwendig": [
+        "s6"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c4"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t5",
+      "text": "Das Besondere: VSB baut, finanziert und betreibt die Anlage und hat mit Thyssenkrupp einen zwanzigjährigen Stromliefervertrag abgeschlossen.",
+      "start": 453,
+      "end": 593,
+      "geprueft": true,
+      "notwendig": [
+        "s8",
+        "s9",
+        "s10"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c5"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t6",
+      "text": "CTO Thorsten Krenke von Thyssenkrupp lobt die lokale Grünstromproduktion in einem industriellen Umfeld.",
+      "start": 594,
+      "end": 697,
+      "geprueft": true,
+      "notwendig": [
+        "s14",
+        "s15"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c6"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t7",
+      "text": "Für VSB ist das Projekt ein weiteres Beispiel ihrer Erfahrung im Bau von Solaranlagen für Industrieunternehmen.",
+      "start": 698,
+      "end": 809,
+      "geprueft": true,
+      "notwendig": [],
+      "zulaessig": [
+        "s20"
+      ],
+      "relation": "keine_quelle",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c7"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    }
+  ]
+}

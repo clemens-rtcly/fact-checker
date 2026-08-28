@@ -1,0 +1,1037 @@
+{
+  "meta": {
+    "titel": "Monschau Noch verdecken Zäune, Planen, Bauwagen und das übliche Baustellenklo die freie Sicht auf den Rohbau.",
+    "quelle": "Eigenes Paar",
+    "modell": "stufe0-2 · multilingual-e5-large-instruct + nli-mdeberta-2mil7",
+    "statistik": {
+      "saetze": 17,
+      "claims": 20,
+      "embeddings": 37,
+      "nli_paare": 20,
+      "dauer_s": 8.7
+    },
+    "ratelimit": {
+      "model": "multilingual-e5-large-instruct",
+      "checked_at": 1787353635.235088,
+      "x-ratelimit-limit-minute": "15",
+      "x-ratelimit-remaining-minute": "13",
+      "x-ratelimit-limit-hour": "900",
+      "x-ratelimit-remaining-hour": "893",
+      "x-ratelimit-limit-day": "2000",
+      "x-ratelimit-remaining-day": "1990",
+      "x-ratelimit-limit-second": "2",
+      "x-ratelimit-remaining-second": "1",
+      "ratelimit-reset": "1",
+      "ratelimit-limit": "2",
+      "ratelimit-remaining": "1"
+    }
+  },
+  "article": {
+    "text": "Monschau Noch verdecken Zäune, Planen, Bauwagen und das übliche Baustellenklo die freie Sicht auf den Rohbau. Zu ahnen ist aber schon, wie Rohrens künftiges neues Feuerwehrgerätehaus an der Straße „Am Pöhlchen“ einmal aussehen wird. Die Fenster fehlen zwar noch, aber fertige Wände und Dachflächen lassen schon die Form des Zweckbaus erkennen. Statt eines Tores wie der gegenüberliegende Altbau hat die Fahrzeughalle künftig zwei davon.\n\nWährend auf der Freifläche vor dem Gebäude die Bagger und Bauarbeiter am Werk sind, gehen im Monschauer Rathaus die Vorbereitungen für den Bau der Innen- und Außenanlagen weiter. Der Bau- und Planungsausschuss der Stadt hat jetzt grünes Licht dafür gegeben, dass die Arbeiten an den Außenanlagen anlaufen und die Tischler und Fliesenleger anrücken können.\n\nMit dem Pflaster soll im September begonnen werden. Die Steinflächen vor der Halle und dem Sozialtrakt werden durch Kiesstreifen, Grünanlagen sowie durch Grünflächen rechts und hinter dem Gebäude ergänzt. Wärmepumpe und Lüftung werden an der Rückseite aufgebaut. Die Fliesenleger wiederum sollen im Oktober oder November anrücken. Im Februar kommenden Jahres beginnt der Innenausbau. Ungewohnt großzügig dürften Besuchern die Türen vorkommen: „Im Bereich der Alarmierungswege betragen die Türhöhen aufgrund des Tragens von Feuerwehrhelmen 2,26 Meter“, erklärte die Stadtverwaltung in der Beschlussvorlage für die Ratsmitglieder. Aus der Idee der Feuerwehr, die Türen einen schmucken Anstrich in Rot zu verpassen, wird nichts werden: Das wäre deutlich teurer geworden als das übliche Weiß. Alle Handwerkerarbeiten werden nun im Vergabeportal der Städteregion öffentlich ausgeschrieben.\n\n„Es freut mich sehr, dass das Projekt in großen Zügen weitergeht“, sagte der CDU-Ratsherr und Rohrener Ortsvorsteher Maik Gabbert im Ausschuss. Er dankte der Verwaltung ausdrücklich dafür, dass sie die Kosten im Blick behalte. Rund 1,5 Millionen Euro sind im Haushalt des laufenden Jahres für den Neubau eingeplant, im nächsten Jahr noch einmal 700.000. Da sich die Preise im Baubereich derzeit schon einmal unverhofft nach oben bewegen können, weist die Stadtverwaltung denn auch ausdrücklich darauf hin, dass die Berechnungen womöglich später noch angepasst werden müssen.",
+    "sentences": [
+      {
+        "id": "s1",
+        "start": 0,
+        "end": 109,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Monschau Noch verdecken Zäune, Planen, Bauwagen und das übliche Baustellenklo die freie Sicht auf den Rohbau."
+      },
+      {
+        "id": "s2",
+        "start": 110,
+        "end": 232,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Zu ahnen ist aber schon, wie Rohrens künftiges neues Feuerwehrgerätehaus an der Straße „Am Pöhlchen“ einmal aussehen wird."
+      },
+      {
+        "id": "s3",
+        "start": 233,
+        "end": 343,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Die Fenster fehlen zwar noch, aber fertige Wände und Dachflächen lassen schon die Form des Zweckbaus erkennen."
+      },
+      {
+        "id": "s4",
+        "start": 344,
+        "end": 436,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Statt eines Tores wie der gegenüberliegende Altbau hat die Fahrzeughalle künftig zwei davon."
+      },
+      {
+        "id": "s5",
+        "start": 438,
+        "end": 616,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Während auf der Freifläche vor dem Gebäude die Bagger und Bauarbeiter am Werk sind, gehen im Monschauer Rathaus die Vorbereitungen für den Bau der Innen- und Außenanlagen weiter."
+      },
+      {
+        "id": "s6",
+        "start": 617,
+        "end": 793,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Der Bau- und Planungsausschuss der Stadt hat jetzt grünes Licht dafür gegeben, dass die Arbeiten an den Außenanlagen anlaufen und die Tischler und Fliesenleger anrücken können."
+      },
+      {
+        "id": "s7",
+        "start": 795,
+        "end": 846,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Mit dem Pflaster soll im September begonnen werden."
+      },
+      {
+        "id": "s8",
+        "start": 847,
+        "end": 999,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Die Steinflächen vor der Halle und dem Sozialtrakt werden durch Kiesstreifen, Grünanlagen sowie durch Grünflächen rechts und hinter dem Gebäude ergänzt."
+      },
+      {
+        "id": "s9",
+        "start": 1000,
+        "end": 1057,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Wärmepumpe und Lüftung werden an der Rückseite aufgebaut."
+      },
+      {
+        "id": "s10",
+        "start": 1058,
+        "end": 1125,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Die Fliesenleger wiederum sollen im Oktober oder November anrücken."
+      },
+      {
+        "id": "s11",
+        "start": 1126,
+        "end": 1178,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Im Februar kommenden Jahres beginnt der Innenausbau."
+      },
+      {
+        "id": "s12",
+        "start": 1179,
+        "end": 1423,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Ungewohnt großzügig dürften Besuchern die Türen vorkommen: „Im Bereich der Alarmierungswege betragen die Türhöhen aufgrund des Tragens von Feuerwehrhelmen 2,26 Meter“, erklärte die Stadtverwaltung in der Beschlussvorlage für die Ratsmitglieder."
+      },
+      {
+        "id": "s13",
+        "start": 1424,
+        "end": 1583,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Aus der Idee der Feuerwehr, die Türen einen schmucken Anstrich in Rot zu verpassen, wird nichts werden: Das wäre deutlich teurer geworden als das übliche Weiß."
+      },
+      {
+        "id": "s14",
+        "start": 1584,
+        "end": 1679,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Alle Handwerkerarbeiten werden nun im Vergabeportal der Städteregion öffentlich ausgeschrieben."
+      },
+      {
+        "id": "s15",
+        "start": 1681,
+        "end": 1824,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "„Es freut mich sehr, dass das Projekt in großen Zügen weitergeht“, sagte der CDU-Ratsherr und Rohrener Ortsvorsteher Maik Gabbert im Ausschuss."
+      },
+      {
+        "id": "s16",
+        "start": 1825,
+        "end": 1907,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "Er dankte der Verwaltung ausdrücklich dafür, dass sie die Kosten im Blick behalte."
+      },
+      {
+        "id": "s17",
+        "start": 1908,
+        "end": 2255,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "Rund 1,5 Millionen Euro sind im Haushalt des laufenden Jahres für den Neubau eingeplant, im nächsten Jahr noch einmal 700.000. Da sich die Preise im Baubereich derzeit schon einmal unverhofft nach oben bewegen können, weist die Stadtverwaltung denn auch ausdrücklich darauf hin, dass die Berechnungen womöglich später noch angepasst werden müssen."
+      }
+    ]
+  },
+  "transcript": {
+    "text": "In Rohren, einem Ortsteil von Monschau, nimmt das neue Feuerwehrgerätehaus an der Straße Am Pöhlchen immer deutlichere Formen an. Zwar versperren Zäune, Planen und Bauwagen noch den freien Blick auf den Rohbau. Doch Wände und Dachflächen stehen bereits, und die Form der künftigen Fahrzeughalle ist erkennbar. Sie erhält zwei Tore statt eines wie beim gegenüberliegenden alten Gebäude.\n\nDer Bau- und Planungsausschuss der Stadt Monschau hat nun grünes Licht gegeben, damit die Arbeiten an den Außenanlagen anlaufen können und Tischler sowie Fliesenleger anrücken können. Im September sollen die Pflasterarbeiten beginnen. Vor der Fahrzeughalle und dem Sozialtrakt sind Steinflächen vorgesehen, ergänzt durch Kiesstreifen, Grünanlagen und weitere Grünflächen rechts und hinter dem Gebäude. Wärmepumpe und Lüftungsanlage werden an der Rückseite installiert.\n\nDie Fliesenleger sollen im Oktober oder November starten. Der Innenausbau beginnt im Februar kommenden Jahres. Auffällig werden die Türen entlang der Alarmierungswege: Sie sollen 2,26 Meter hoch sein, damit Feuerwehrleute sie auch mit Helm problemlos passieren können. Der Wunsch der Feuerwehr nach roten Türen wird allerdings nicht umgesetzt. Ein roter Anstrich wäre deutlich teurer als die vorgesehene weiße Ausführung.\n\nSämtliche Handwerkerleistungen werden öffentlich über das Vergabeportal der Städteregion ausgeschrieben. Der CDU-Ratsherr und Rohrener Ortsvorsteher Maik Gabbert begrüßte im Ausschuss, dass das Projekt weiter vorankomme. Zugleich dankte er der Verwaltung dafür, die Kosten im Blick zu behalten.\n\nFür den Neubau sind im laufenden Jahr rund 1,5 Millionen Euro eingeplant. Im nächsten Jahr sollen weitere 700.000 Euro bereitstehen. Die Stadtverwaltung weist darauf hin, dass die Kalkulation wegen möglicher Preissteigerungen im Baugewerbe später noch angepasst werden muss.",
+    "claims": [
+      {
+        "id": "c1",
+        "start": 0,
+        "end": 129,
+        "text": "In Rohren, einem Ortsteil von Monschau, nimmt das neue Feuerwehrgerätehaus an der Straße Am Pöhlchen immer deutlichere Formen an.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s2",
+            "start": 139,
+            "end": 209,
+            "spans": [
+              [
+                139,
+                146
+              ],
+              [
+                163,
+                209
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.67,
+        "margin": 0.35,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 44 % des Claims.",
+        "scores": {
+          "top": 0.713,
+          "lex": 0.437,
+          "emb": 0.807,
+          "anchor": 0,
+          "nli": 0.869
+        }
+      },
+      {
+        "id": "c2",
+        "start": 130,
+        "end": 210,
+        "text": "Zwar versperren Zäune, Planen und Bauwagen noch den freien Blick auf den Rohbau.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s1",
+            "start": 24,
+            "end": 109,
+            "spans": [
+              [
+                24,
+                47
+              ],
+              [
+                82,
+                87
+              ],
+              [
+                102,
+                109
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.69,
+        "margin": 0.42,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 66 % des Claims.",
+        "scores": {
+          "top": 0.754,
+          "lex": 0.488,
+          "emb": 0.71,
+          "anchor": 0,
+          "nli": 0.998
+        }
+      },
+      {
+        "id": "c3",
+        "start": 211,
+        "end": 252,
+        "text": "Doch Wände und Dachflächen stehen bereits",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s3",
+            "start": 276,
+            "end": 297,
+            "spans": [
+              [
+                276,
+                297
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.74,
+        "margin": 0.33,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 77 % des Claims.",
+        "scores": {
+          "top": 0.697,
+          "lex": 0.321,
+          "emb": 0.706,
+          "anchor": 0,
+          "nli": 0.989
+        }
+      },
+      {
+        "id": "c4",
+        "start": 254,
+        "end": 309,
+        "text": "und die Form der künftigen Fahrzeughalle ist erkennbar.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s4",
+            "start": 403,
+            "end": 424,
+            "spans": [
+              [
+                403,
+                424
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s3",
+            "start": 315,
+            "end": 343,
+            "spans": [
+              [
+                315,
+                319
+              ],
+              [
+                334,
+                343
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.7,
+        "margin": 0.22,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s4 + s3 (s3 erklärt zusätzlich 30 %). · Fundstellen erklären 81 % des Claims.",
+        "scores": {
+          "top": 0.561,
+          "lex": 0.302,
+          "emb": 0.515,
+          "anchor": 0,
+          "nli": 0.862
+        }
+      },
+      {
+        "id": "c5",
+        "start": 310,
+        "end": 385,
+        "text": "Sie erhält zwei Tore statt eines wie beim gegenüberliegenden alten Gebäude.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s4",
+            "start": 344,
+            "end": 429,
+            "spans": [
+              [
+                344,
+                387
+              ],
+              [
+                425,
+                429
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s5",
+            "start": 473,
+            "end": 480,
+            "spans": [
+              [
+                473,
+                480
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.72,
+        "margin": 0.45,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "zwei",
+            "norm": "2",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s4 + s5 (s5 erklärt zusätzlich 13 %). · Fundstellen erklären 63 % des Claims.",
+        "scores": {
+          "top": 0.694,
+          "lex": 0.437,
+          "emb": 0.791,
+          "anchor": 0,
+          "nli": 0.791
+        }
+      },
+      {
+        "id": "c6",
+        "start": 387,
+        "end": 570,
+        "text": "Der Bau- und Planungsausschuss der Stadt Monschau hat nun grünes Licht gegeben, damit die Arbeiten an den Außenanlagen anlaufen können und Tischler sowie Fliesenleger anrücken können.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s6",
+            "start": 617,
+            "end": 793,
+            "spans": [
+              [
+                617,
+                657
+              ],
+              [
+                668,
+                680
+              ],
+              [
+                687,
+                793
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.86,
+        "margin": 0.39,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 81 % des Claims.",
+        "scores": {
+          "top": 0.912,
+          "lex": 0.789,
+          "emb": 0.901,
+          "anchor": 0,
+          "nli": 0.969
+        }
+      },
+      {
+        "id": "c7",
+        "start": 571,
+        "end": 621,
+        "text": "Im September sollen die Pflasterarbeiten beginnen.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s7",
+            "start": 795,
+            "end": 829,
+            "spans": [
+              [
+                795,
+                829
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.8,
+        "margin": 0.47,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 59 % des Claims.",
+        "scores": {
+          "top": 0.792,
+          "lex": 0.538,
+          "emb": 0.93,
+          "anchor": 0,
+          "nli": 0.998
+        }
+      },
+      {
+        "id": "c8",
+        "start": 622,
+        "end": 788,
+        "text": "Vor der Fahrzeughalle und dem Sozialtrakt sind Steinflächen vorgesehen, ergänzt durch Kiesstreifen, Grünanlagen und weitere Grünflächen rechts und hinter dem Gebäude.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s8",
+            "start": 847,
+            "end": 999,
+            "spans": [
+              [
+                847,
+                936
+              ],
+              [
+                949,
+                999
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.84,
+        "margin": 0.54,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 75 % des Claims.",
+        "scores": {
+          "top": 0.904,
+          "lex": 0.798,
+          "emb": 0.908,
+          "anchor": 0,
+          "nli": 0.957
+        }
+      },
+      {
+        "id": "c9",
+        "start": 789,
+        "end": 855,
+        "text": "Wärmepumpe und Lüftungsanlage werden an der Rückseite installiert.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s9",
+            "start": 1000,
+            "end": 1046,
+            "spans": [
+              [
+                1000,
+                1046
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.79,
+        "margin": 0.56,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 54 % des Claims.",
+        "scores": {
+          "top": 0.819,
+          "lex": 0.658,
+          "emb": 0.942,
+          "anchor": 0,
+          "nli": 0.998
+        }
+      },
+      {
+        "id": "c10",
+        "start": 857,
+        "end": 914,
+        "text": "Die Fliesenleger sollen im Oktober oder November starten.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s10",
+            "start": 1058,
+            "end": 1115,
+            "spans": [
+              [
+                1058,
+                1115
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.87,
+        "margin": 0.52,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 77 % des Claims.",
+        "scores": {
+          "top": 0.899,
+          "lex": 0.731,
+          "emb": 0.941,
+          "anchor": 0,
+          "nli": 0.997
+        }
+      },
+      {
+        "id": "c11",
+        "start": 915,
+        "end": 967,
+        "text": "Der Innenausbau beginnt im Februar kommenden Jahres.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s11",
+            "start": 1126,
+            "end": 1178,
+            "spans": [
+              [
+                1126,
+                1178
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.98,
+        "margin": 0.68,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 96 % des Claims.",
+        "scores": {
+          "top": 0.971,
+          "lex": 0.916,
+          "emb": 1,
+          "anchor": 0,
+          "nli": 0.997
+        }
+      },
+      {
+        "id": "c12",
+        "start": 968,
+        "end": 1125,
+        "text": "Auffällig werden die Türen entlang der Alarmierungswege: Sie sollen 2,26 Meter hoch sein, damit Feuerwehrleute sie auch mit Helm problemlos passieren können.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s12",
+            "start": 1221,
+            "end": 1344,
+            "spans": [
+              [
+                1221,
+                1226
+              ],
+              [
+                1254,
+                1270
+              ],
+              [
+                1318,
+                1344
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.73,
+        "margin": 0.38,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "2,26",
+            "norm": "2.26",
+            "status": "match"
+          },
+          {
+            "type": "person",
+            "surface": "Helm",
+            "norm": "helm",
+            "status": "unbelegt"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 44 % des Claims. · Name „Helm“ nicht im Artikel belegt.",
+        "scores": {
+          "top": 0.664,
+          "lex": 0.278,
+          "emb": 0.878,
+          "anchor": 0,
+          "nli": 0.571
+        }
+      },
+      {
+        "id": "c13",
+        "start": 1126,
+        "end": 1200,
+        "text": "Der Wunsch der Feuerwehr nach roten Türen wird allerdings nicht umgesetzt.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s13",
+            "start": 1441,
+            "end": 1519,
+            "spans": [
+              [
+                1441,
+                1461
+              ],
+              [
+                1513,
+                1519
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.55,
+        "margin": 0.21,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 43 % des Claims. · Unter der Direkt-Schwelle — zur Prüfung empfohlen.",
+        "scores": {
+          "top": 0.559,
+          "lex": 0.221,
+          "emb": 0.634,
+          "anchor": 0,
+          "nli": 0.92
+        }
+      },
+      {
+        "id": "c14",
+        "start": 1201,
+        "end": 1278,
+        "text": "Ein roter Anstrich wäre deutlich teurer als die vorgesehene weiße Ausführung.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s13",
+            "start": 1478,
+            "end": 1583,
+            "spans": [
+              [
+                1478,
+                1486
+              ],
+              [
+                1537,
+                1552
+              ],
+              [
+                1578,
+                1583
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.6,
+        "margin": 0.39,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 47 % des Claims.",
+        "scores": {
+          "top": 0.637,
+          "lex": 0.38,
+          "emb": 0.691,
+          "anchor": 0,
+          "nli": 0.979
+        }
+      },
+      {
+        "id": "c15",
+        "start": 1280,
+        "end": 1384,
+        "text": "Sämtliche Handwerkerleistungen werden öffentlich über das Vergabeportal der Städteregion ausgeschrieben.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s14",
+            "start": 1622,
+            "end": 1679,
+            "spans": [
+              [
+                1622,
+                1679
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.86,
+        "margin": 0.67,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 75 % des Claims.",
+        "scores": {
+          "top": 0.911,
+          "lex": 0.715,
+          "emb": 0.952,
+          "anchor": 0,
+          "nli": 0.99
+        }
+      },
+      {
+        "id": "c16",
+        "start": 1385,
+        "end": 1500,
+        "text": "Der CDU-Ratsherr und Rohrener Ortsvorsteher Maik Gabbert begrüßte im Ausschuss, dass das Projekt weiter vorankomme.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s15",
+            "start": 1711,
+            "end": 1824,
+            "spans": [
+              [
+                1711,
+                1718
+              ],
+              [
+                1762,
+                1824
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.83,
+        "margin": 0.69,
+        "entities": [
+          {
+            "type": "person",
+            "surface": "Maik Gabbert",
+            "norm": "maik gabbert",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Name „Maik Gabbert“ eindeutig in s15 · Fundstellen erklären 73 % des Claims.",
+        "scores": {
+          "top": 0.904,
+          "lex": 0.66,
+          "emb": 0.911,
+          "anchor": 0.2,
+          "nli": 0.999
+        }
+      },
+      {
+        "id": "c17",
+        "start": 1501,
+        "end": 1574,
+        "text": "Zugleich dankte er der Verwaltung dafür, die Kosten im Blick zu behalten.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s16",
+            "start": 1825,
+            "end": 1907,
+            "spans": [
+              [
+                1825,
+                1849
+              ],
+              [
+                1863,
+                1907
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.86,
+        "margin": 0.58,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 78 % des Claims.",
+        "scores": {
+          "top": 0.887,
+          "lex": 0.653,
+          "emb": 0.92,
+          "anchor": 0,
+          "nli": 0.995
+        }
+      },
+      {
+        "id": "c18",
+        "start": 1576,
+        "end": 1649,
+        "text": "Für den Neubau sind im laufenden Jahr rund 1,5 Millionen Euro eingeplant.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s17",
+            "start": 1913,
+            "end": 2013,
+            "spans": [
+              [
+                1913,
+                1931
+              ],
+              [
+                1953,
+                1962
+              ],
+              [
+                1978,
+                1995
+              ],
+              [
+                2009,
+                2013
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.86,
+        "margin": 0.55,
+        "entities": [
+          {
+            "type": "geld",
+            "surface": "1,5 Millionen Euro",
+            "norm": "1500000 EUR",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Anker 1500000 EUR eindeutig in s17 · Fundstellen erklären 98 % des Claims.",
+        "scores": {
+          "top": 0.819,
+          "lex": 0.419,
+          "emb": 0.676,
+          "anchor": 0.3,
+          "nli": 0.998
+        }
+      },
+      {
+        "id": "c19",
+        "start": 1650,
+        "end": 1708,
+        "text": "Im nächsten Jahr sollen weitere 700.000 Euro bereitstehen.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s17",
+            "start": 2000,
+            "end": 2033,
+            "spans": [
+              [
+                2000,
+                2013
+              ],
+              [
+                2026,
+                2033
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s15",
+            "start": 1681,
+            "end": 1824,
+            "spans": [
+              [
+                1681,
+                1824
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.66,
+        "margin": 0.49,
+        "entities": [
+          {
+            "type": "geld",
+            "surface": "700.000 Euro",
+            "norm": "700000 EUR",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Anker 700000 EUR eindeutig in s17 · Verdichtet aus s17 + s15 (s15 erklärt zusätzlich 10 %). · Fundstellen erklären 76 % des Claims.",
+        "scores": {
+          "top": 0.699,
+          "lex": 0.283,
+          "emb": 0.505,
+          "anchor": 0.3,
+          "nli": 0.998
+        }
+      },
+      {
+        "id": "c20",
+        "start": 1709,
+        "end": 1850,
+        "text": "Die Stadtverwaltung weist darauf hin, dass die Kalkulation wegen möglicher Preissteigerungen im Baugewerbe später noch angepasst werden muss.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s17",
+            "start": 2047,
+            "end": 2255,
+            "spans": [
+              [
+                2047,
+                2053
+              ],
+              [
+                2110,
+                2151
+              ],
+              [
+                2175,
+                2181
+              ],
+              [
+                2219,
+                2255
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.59,
+        "margin": 0.37,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 52 % des Claims.",
+        "scores": {
+          "top": 0.651,
+          "lex": 0.393,
+          "emb": 0.645,
+          "anchor": 0,
+          "nli": 0.999
+        }
+      }
+    ]
+  }
+}

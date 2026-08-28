@@ -1,0 +1,351 @@
+{
+  "paar": "az_palantir",
+  "split": "test",
+  "anleitung": [
+    "Arbeitsanweisung (diese Zeilen bleiben in der Datei stehen):",
+    "1. Jede Zeile mit \"geprueft\": false durchgehen und auf true setzen.",
+    "2. notwendig = Sätze, ohne die ein Teil der Aussage unbelegt bliebe.",
+    "   zulaessig = stützt ebenfalls, ist aber entbehrlich (Dubletten).",
+    "3. relation prüfen: direkt | aggregiert | bedeutung_verschoben |",
+    "   inferiert | keine_quelle.",
+    "4. flags_erwartet: nur Befunde, die WIRKLICH zutreffen sollten",
+    "   (zahlkonflikt, ort_konflikt, kuerzel_konflikt, wortlaut_abweichung,",
+    "   ident_unbelegt, zahl_unbelegt). Leere Liste heißt: kein Befund.",
+    "5. Zum Schluss EINMAL umgekehrt: den Artikel lesen und fragen, welcher",
+    "   Transkriptsatz diese Stelle nutzt. Das fängt die Quellen, die die",
+    "   Pipeline gar nicht erst vorgeschlagen hat — der Bias des Entwurfs.",
+    "6. Artikel- und Transkripttext danach NICHT mehr ändern, auch keine",
+    "   Tippfehler: Die Zeichen-Offsets sind Teil der Annotation."
+  ],
+  "artikel_hash": "f6dd29a0c7f49ca5",
+  "transkript_hash": "4f9e58f271288016",
+  "artikel_saetze": [
+    {
+      "id": "s1",
+      "text": "Düsseldorf In Nordrhein-Westfalen wird die Polizei die Analyse-Software Palantir vorerst weiter nutzen."
+    },
+    {
+      "id": "s2",
+      "text": "Obwohl der aktuelle Vertrag mit dem US-Unternehmen eigentlich im Oktober 2026 endet, soll die Software mindestens ein weiteres Jahr im Einsatz bleiben."
+    },
+    {
+      "id": "s3",
+      "text": "Hintergrund ist eine noch laufende Ausschreibung für eine neue Datenanalyse-Lösung, deren Abschluss bislang nicht absehbar ist."
+    },
+    {
+      "id": "s4",
+      "text": "Das zuständige Landesamt für Zentrale Polizeiliche Dienste Nordrhein-Westfalen (LZPD) hat deshalb einen Überbrückungsvertrag mit einer Grundlaufzeit von einem Jahr geschlossen."
+    },
+    {
+      "id": "s5",
+      "text": "„Damit ist sichergestellt, dass die Ermittlerinnen und Ermittler der Polizei Nordrhein-Westfalen bis zur Einführung einer möglichen Folgelösung Zugriff auf eine leistungsfähige Datenanalyse haben“, teilte das NRW-Innenministerium mit."
+    },
+    {
+      "id": "s6",
+      "text": "Arbeit an neuer Lösung"
+    },
+    {
+      "id": "s7",
+      "text": "NRW-Innenminister Herbert Reul (CDU) betonte, die Polizei müsse Daten schnell und sicher analysieren können – ohne Unterbrechung."
+    },
+    {
+      "id": "s8",
+      "text": "Er habe immer deutlich gemacht, dass den Ermittlerinnen und Ermittlern diese Technik nicht wieder genommen werde."
+    },
+    {
+      "id": "s9",
+      "text": "Die vorhandenen Werkzeuge müssten weiter genutzt werden, um schwere Straftaten zu verhindern."
+    },
+    {
+      "id": "s10",
+      "text": "Zugleich verwies Reul darauf, dass derzeit an einer möglichen neuen Lösung gearbeitet werde."
+    },
+    {
+      "id": "s11",
+      "text": "Bis dahin könne die Polizei mit dem bestehenden System weiterarbeiten."
+    },
+    {
+      "id": "s12",
+      "text": "Palantir ermöglicht es, große Mengen unterschiedlicher Daten zusammenzuführen und auszuwerten."
+    },
+    {
+      "id": "s13",
+      "text": "Kritiker warnen jedoch seit Langem, dass dadurch tiefgreifende Personenprofile entstehen könnten."
+    },
+    {
+      "id": "s14",
+      "text": "Zudem sehen sie die Gefahr, dass die Grenze zwischen gezielter Ermittlungsarbeit und massenhafter Datenanalyse verschwimmt."
+    }
+  ],
+  "eintraege": [
+    {
+      "satz": "t1",
+      "text": "Düsseldorf: Die Polizei in Nordrhein-Westfalen wird die Analyse-Software des US-Unternehmens Palantir vorerst weiter nutzen.",
+      "start": 0,
+      "end": 124,
+      "geprueft": false,
+      "notwendig": [
+        "s1",
+        "s2"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c1"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t2",
+      "text": "Der aktuelle Vertrag läuft eigentlich im Oktober 2026 aus.",
+      "start": 125,
+      "end": 183,
+      "geprueft": false,
+      "notwendig": [
+        "s2"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c2"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t3",
+      "text": "Die Software soll aber mindestens ein weiteres Jahr im Einsatz bleiben.",
+      "start": 184,
+      "end": 255,
+      "geprueft": false,
+      "notwendig": [
+        "s2"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c3"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t4",
+      "text": "Grund ist eine noch laufende Ausschreibung für eine neue Datenanalyse-Lösung.",
+      "start": 257,
+      "end": 334,
+      "geprueft": false,
+      "notwendig": [
+        "s3"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c4"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t5",
+      "text": "Wann dieses Verfahren abgeschlossen sein wird, ist bislang offen.",
+      "start": 335,
+      "end": 400,
+      "geprueft": false,
+      "notwendig": [],
+      "zulaessig": [],
+      "relation": "keine_quelle",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c5"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t6",
+      "text": "Das Landesamt für Zentrale Polizeiliche Dienste Nordrhein-Westfalen, kurz LZPD, hat deshalb einen Überbrückungsvertrag mit einer Grundlaufzeit von einem Jahr geschlossen.",
+      "start": 401,
+      "end": 571,
+      "geprueft": false,
+      "notwendig": [
+        "s4"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c6"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t7",
+      "text": "Nach Angaben des nordrhein-westfälischen Innenministeriums soll damit sichergestellt werden, dass die Ermittlerinnen und Ermittler der Polizei bis zur Einführung einer möglichen Folgelösung Zugriff auf eine leistungsfähige Datenanalyse haben.",
+      "start": 573,
+      "end": 815,
+      "geprueft": false,
+      "notwendig": [
+        "s5"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c7"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t8",
+      "text": "Innenminister Herbert Reul von der CDU betonte, die Polizei müsse Daten schnell und sicher analysieren können – ohne Unterbrechung.",
+      "start": 817,
+      "end": 948,
+      "geprueft": false,
+      "notwendig": [
+        "s7"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c8"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t9",
+      "text": "Er habe immer deutlich gemacht, dass den Ermittlerinnen und Ermittlern diese Technik nicht wieder genommen werde.",
+      "start": 949,
+      "end": 1062,
+      "geprueft": false,
+      "notwendig": [
+        "s8"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c9"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t10",
+      "text": "Die vorhandenen Werkzeuge müssten weiter genutzt werden, um schwere Straftaten zu verhindern.",
+      "start": 1063,
+      "end": 1156,
+      "geprueft": false,
+      "notwendig": [
+        "s9"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c10"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t11",
+      "text": "Zugleich verwies Reul darauf, dass derzeit an einer möglichen neuen Lösung gearbeitet werde.",
+      "start": 1157,
+      "end": 1249,
+      "geprueft": false,
+      "notwendig": [
+        "s10"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c11"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t12",
+      "text": "Bis dahin könne die Polizei mit dem bestehenden System weiterarbeiten.",
+      "start": 1250,
+      "end": 1320,
+      "geprueft": false,
+      "notwendig": [
+        "s11"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c12"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t13",
+      "text": "Palantir ermöglicht es, große Mengen unterschiedlicher Daten zusammenzuführen und auszuwerten.",
+      "start": 1322,
+      "end": 1416,
+      "geprueft": false,
+      "notwendig": [
+        "s12"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c13"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t14",
+      "text": "Kritiker warnen seit Langem, dass dadurch tiefgreifende Personenprofile entstehen könnten.",
+      "start": 1417,
+      "end": 1507,
+      "geprueft": false,
+      "notwendig": [
+        "s13"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c14"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t15",
+      "text": "Zudem sehen sie die Gefahr, dass die Grenze zwischen gezielter Ermittlungsarbeit und massenhafter Datenanalyse verschwimmt.",
+      "start": 1508,
+      "end": 1631,
+      "geprueft": false,
+      "notwendig": [
+        "s14"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c15"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    }
+  ]
+}

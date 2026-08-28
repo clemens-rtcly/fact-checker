@@ -1,0 +1,443 @@
+{
+  "paar": "az_verkehrHerzogenrath",
+  "split": "test",
+  "anleitung": [
+    "Arbeitsanweisung (diese Zeilen bleiben in der Datei stehen):",
+    "1. Jede Zeile mit \"geprueft\": false durchgehen und auf true setzen.",
+    "2. notwendig = Sätze, ohne die ein Teil der Aussage unbelegt bliebe.",
+    "   zulaessig = stützt ebenfalls, ist aber entbehrlich (Dubletten).",
+    "3. relation prüfen: direkt | aggregiert | bedeutung_verschoben |",
+    "   inferiert | keine_quelle.",
+    "4. flags_erwartet: nur Befunde, die WIRKLICH zutreffen sollten",
+    "   (zahlkonflikt, ort_konflikt, kuerzel_konflikt, wortlaut_abweichung,",
+    "   ident_unbelegt, zahl_unbelegt). Leere Liste heißt: kein Befund.",
+    "5. Zum Schluss EINMAL umgekehrt: den Artikel lesen und fragen, welcher",
+    "   Transkriptsatz diese Stelle nutzt. Das fängt die Quellen, die die",
+    "   Pipeline gar nicht erst vorgeschlagen hat — der Bias des Entwurfs.",
+    "6. Artikel- und Transkripttext danach NICHT mehr ändern, auch keine",
+    "   Tippfehler: Die Zeichen-Offsets sind Teil der Annotation."
+  ],
+  "artikel_hash": "6647da707227e6df",
+  "transkript_hash": "fd17da2ac6a5af71",
+  "artikel_saetze": [
+    {
+      "id": "s1",
+      "text": "Herzogenrath Auf Autofahrer kommen in Merkstein Verkehrsbehinderungen zu."
+    },
+    {
+      "id": "s2",
+      "text": "Straßen.NRW startet am 20. Juli mit der Sanierung der L232/Geilenkirchener Straße."
+    },
+    {
+      "id": "s3",
+      "text": "Die Arbeiten erstrecken sich über rund 1,7 Kilometern vom August-Schmidt-Platz bis zum Kreisverkehr an der Stadtgrenze zu Übach-Palenberg."
+    },
+    {
+      "id": "s4",
+      "text": "Zunächst wird bis Ende der Sommerferien der Abschnitt zwischen August-Schmidt-Platz und Adolfstraße in mehreren Teilstücken erneuert."
+    },
+    {
+      "id": "s5",
+      "text": "Die Arbeiten erfolgen unter Vollsperrung der betroffenen Abschnitte, heißt es."
+    },
+    {
+      "id": "s6",
+      "text": "Nach den Ferien folgen Bauabschnitte bis zur Comeniusstraße, zur Straße Am Boscheler Berg sowie bis zum Kreisverkehr an der Stadtgrenze."
+    },
+    {
+      "id": "s7",
+      "text": "Die Maßnahme soll laut Straßen.NRW voraussichtlich bis Dezember 2026 dauern; Kosten: 1,8 Millionen Euro."
+    },
+    {
+      "id": "s8",
+      "text": "Der Kreisverkehr selbst soll entweder in den Herbstferien oder zum Abschluss der Arbeiten an einem Wochenende ebenfalls unter Vollsperrung saniert werden."
+    },
+    {
+      "id": "s9",
+      "text": "Für Fußgänger und Radfahrer bleiben die Geh- und Radwege grundsätzlich nutzbar."
+    },
+    {
+      "id": "s10",
+      "text": "Je nach Baufortschritt kann es jedoch zu Einschränkungen kommen."
+    },
+    {
+      "id": "s11",
+      "text": "Im ÖPNV entfallen die Haltestellen Goethestraße und Stadion vorübergehend für die Buslinien 21, 54, 430 und HZ 3. Über Änderungen informiert die Aseag."
+    },
+    {
+      "id": "s12",
+      "text": "Der Verkehr zwischen Herzogenrath und Übach-Palenberg wird über die B57, die L47 sowie die K5 umgeleitet."
+    },
+    {
+      "id": "s13",
+      "text": "Innerhalb Merksteins wird der Verkehr über Nebenstraßen geführt."
+    },
+    {
+      "id": "s14",
+      "text": "Die Zufahrt zu den Grundstücken soll weitgehend möglich bleiben."
+    },
+    {
+      "id": "s15",
+      "text": "Auch das Gewerbegebiet Boscheler Berg bleibt erreichbar, allerdings jeweils nur aus einer Fahrtrichtung.(red)"
+    }
+  ],
+  "eintraege": [
+    {
+      "satz": "t1",
+      "text": "In Merkstein müssen sich Autofahrer auf längere Verkehrsbehinderungen einstellen.",
+      "start": 0,
+      "end": 81,
+      "geprueft": false,
+      "notwendig": [
+        "s1"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c1"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t2",
+      "text": "Straßen.NRW beginnt am 20. Juli in Herzogenrath mit der Sanierung der Landesstraße 232, der Geilenkirchener Straße.",
+      "start": 82,
+      "end": 197,
+      "geprueft": false,
+      "notwendig": [
+        "s1",
+        "s2"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [
+        "zahlkonflikt"
+      ],
+      "claims_im_lauf": [
+        "c2"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t3",
+      "text": "Betroffen ist eine rund 1,7 Kilometer lange Strecke vom August-Schmidt-Platz bis zum Kreisverkehr an der Stadtgrenze zu Übach-Palenberg.",
+      "start": 198,
+      "end": 334,
+      "geprueft": false,
+      "notwendig": [
+        "s3"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c3"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t4",
+      "text": "Zunächst wird der Abschnitt zwischen dem August-Schmidt-Platz und der Adolfstraße erneuert.",
+      "start": 336,
+      "end": 427,
+      "geprueft": false,
+      "notwendig": [
+        "s4"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c4"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t5",
+      "text": "Diese Arbeiten sollen bis zum Ende der Sommerferien dauern.",
+      "start": 428,
+      "end": 487,
+      "geprueft": false,
+      "notwendig": [
+        "s3",
+        "s4"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c5"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t6",
+      "text": "Gebaut wird in mehreren Teilabschnitten, die jeweils vollständig gesperrt werden.",
+      "start": 488,
+      "end": 569,
+      "geprueft": false,
+      "notwendig": [
+        "s4",
+        "s5"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c6"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t7",
+      "text": "Anschließend folgen weitere Bauabschnitte bis zur Comeniusstraße, zur Straße Am Boscheler Berg und schließlich bis zum Kreisverkehr an der Stadtgrenze.",
+      "start": 571,
+      "end": 722,
+      "geprueft": false,
+      "notwendig": [
+        "s6"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c7"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t8",
+      "text": "Die gesamte Maßnahme soll voraussichtlich bis Dezember 2026 abgeschlossen sein.",
+      "start": 723,
+      "end": 802,
+      "geprueft": false,
+      "notwendig": [
+        "s7"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c8"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t9",
+      "text": "Straßen.NRW rechnet mit Kosten von rund 1,8 Millionen Euro.",
+      "start": 803,
+      "end": 862,
+      "geprueft": false,
+      "notwendig": [
+        "s7"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c9"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t10",
+      "text": "Auch der Kreisverkehr selbst wird saniert.",
+      "start": 864,
+      "end": 906,
+      "geprueft": false,
+      "notwendig": [
+        "s8"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c10"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t11",
+      "text": "Dafür ist entweder eine Vollsperrung während der Herbstferien oder ein gesperrtes Wochenende zum Abschluss der Arbeiten vorgesehen.",
+      "start": 907,
+      "end": 1038,
+      "geprueft": false,
+      "notwendig": [
+        "s8"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c11"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t12",
+      "text": "Geh- und Radwege bleiben grundsätzlich nutzbar.",
+      "start": 1040,
+      "end": 1087,
+      "geprueft": false,
+      "notwendig": [
+        "s9"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c12"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t13",
+      "text": "Je nach Fortschritt der Arbeiten kann es aber Einschränkungen geben.",
+      "start": 1088,
+      "end": 1156,
+      "geprueft": false,
+      "notwendig": [
+        "s8",
+        "s10"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c13"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t14",
+      "text": "Im öffentlichen Personennahverkehr entfallen vorübergehend die Haltestellen Goethestraße und Stadion.",
+      "start": 1157,
+      "end": 1258,
+      "geprueft": false,
+      "notwendig": [
+        "s11"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c14"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t15",
+      "text": "Das betrifft die Buslinien 21, 54, 430 und HZ 3. Über Änderungen informiert die Aseag.",
+      "start": 1259,
+      "end": 1345,
+      "geprueft": false,
+      "notwendig": [
+        "s11"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c15"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t16",
+      "text": "Der Verkehr zwischen Herzogenrath und Übach-Palenberg wird über die Bundesstraße 57, die Landesstraße 47 und die Kreisstraße 5 umgeleitet.",
+      "start": 1347,
+      "end": 1485,
+      "geprueft": false,
+      "notwendig": [
+        "s12"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [
+        "ident_unbelegt",
+        "zahlkonflikt"
+      ],
+      "claims_im_lauf": [
+        "c16"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t17",
+      "text": "Innerhalb Merksteins führen Umleitungen über Nebenstraßen.",
+      "start": 1486,
+      "end": 1544,
+      "geprueft": false,
+      "notwendig": [
+        "s13"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c17"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t18",
+      "text": "Grundstücke sollen überwiegend erreichbar bleiben.",
+      "start": 1545,
+      "end": 1595,
+      "geprueft": false,
+      "notwendig": [
+        "s14"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c18"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t19",
+      "text": "Das Gewerbegebiet Boscheler Berg ist ebenfalls erreichbar, allerdings jeweils nur aus einer Fahrtrichtung.",
+      "start": 1596,
+      "end": 1702,
+      "geprueft": false,
+      "notwendig": [
+        "s15"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c19"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    }
+  ]
+}

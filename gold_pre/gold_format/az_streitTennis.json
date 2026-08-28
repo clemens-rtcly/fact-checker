@@ -1,0 +1,700 @@
+{
+  "paar": "az_streitTennis",
+  "split": "dev",
+  "anleitung": [
+    "Arbeitsanweisung (diese Zeilen bleiben in der Datei stehen):",
+    "1. Jede Zeile mit \"geprueft\": false durchgehen und auf true setzen.",
+    "2. notwendig = Sätze, ohne die ein Teil der Aussage unbelegt bliebe.",
+    "   zulaessig = stützt ebenfalls, ist aber entbehrlich (Dubletten).",
+    "3. relation prüfen: direkt | aggregiert | bedeutung_verschoben |",
+    "   inferiert | keine_quelle.",
+    "4. flags_erwartet: nur Befunde, die WIRKLICH zutreffen sollten",
+    "   (zahlkonflikt, ort_konflikt, kuerzel_konflikt, wortlaut_abweichung,",
+    "   ident_unbelegt, zahl_unbelegt). Leere Liste heißt: kein Befund.",
+    "5. Zum Schluss EINMAL umgekehrt: den Artikel lesen und fragen, welcher",
+    "   Transkriptsatz diese Stelle nutzt. Das fängt die Quellen, die die",
+    "   Pipeline gar nicht erst vorgeschlagen hat — der Bias des Entwurfs.",
+    "6. Artikel- und Transkripttext danach NICHT mehr ändern, auch keine",
+    "   Tippfehler: Die Zeichen-Offsets sind Teil der Annotation."
+  ],
+  "artikel_hash": "92f3771e8782a4cf",
+  "transkript_hash": "560e3da651ee1b63",
+  "artikel_saetze": [
+    {
+      "id": "s1",
+      "text": "Aachen Das Tischtuch ist zerschnitten, aber das Match noch nicht entschieden."
+    },
+    {
+      "id": "s2",
+      "text": "Zwischen Gastronomie und Sport tobt Streit."
+    },
+    {
+      "id": "s3",
+      "text": "Die Auseinandersetzung zwischen den Mitgliedern des Aachen-Laurensberger Tennisclubs (ALTC) – vertreten durch ihren Vorstand – und den Pächtern des Restaurants Gut Schlottfeld mit Clubanbindung ist eskaliert."
+    },
+    {
+      "id": "s4",
+      "text": "Gastronom Julian Guse und seine Partnerin Eva-Maria Béky, beide 28 Jahre alt, haben das traditionsreiche Restaurant jetzt – zumindest vorübergehend – aus technischen Gründen dichtgemacht."
+    },
+    {
+      "id": "s5",
+      "text": "Beide Seiten machen sich schwere Vorwürfe."
+    },
+    {
+      "id": "s6",
+      "text": "Es geht um fehlende Reparaturen, um unvollständige Pachtzahlungen, gebrochene Versprechen und eine fristlose Kündigung."
+    },
+    {
+      "id": "s7",
+      "text": "Trotzdem stellt der Vereinsvorstand eine Lösung in Aussicht."
+    },
+    {
+      "id": "s8",
+      "text": "Mitgliederversammlung"
+    },
+    {
+      "id": "s9",
+      "text": "„Das unbeschwerte Club-Gefühl ist derzeit stark getrübt."
+    },
+    {
+      "id": "s10",
+      "text": "Das ist unglaublich schade."
+    },
+    {
+      "id": "s11",
+      "text": "Wir möchten diese bittere Angelegenheit zu einem für alle Beteiligten verkraftbaren Ende führen, damit wir dann neu durchstarten können“, teilt der Vereinsvorstand auf Anfrage mit."
+    },
+    {
+      "id": "s12",
+      "text": "Der Disput mit der Gastronomie auf dem Vereinsgelände ist kein Geheimnis mehr."
+    },
+    {
+      "id": "s13",
+      "text": "Mitglieder des ALTC forderten eine Infoveranstaltung zur aktuellen Situation; 800 Vereinsmitglieder wurden daraufhin per E-Mail vom Vorstand zu einer außerordentlichen Mitgliederversammlung geladen."
+    },
+    {
+      "id": "s14",
+      "text": "Thema: das Vereinsrestaurant Gut Schlottfeld."
+    },
+    {
+      "id": "s15",
+      "text": "Das urige Restaurant wurde kurz nach dem Umbau des früheren Bauernhofs mit Stall eröffnet."
+    },
+    {
+      "id": "s16",
+      "text": "1978 wurde der Verein gegründet; 1980 entstanden die ersten Tennisplätze in der grünen Idylle an der Schlottfelder Straße."
+    },
+    {
+      "id": "s17",
+      "text": "In Erinnerung ist den Gästen auf Gut Schlottfeld vor allem die Ära des Spitzenkochs Axel Hobbach, der auch die Küche auf Schloss Schönau in Richterich zur Blüte führte."
+    },
+    {
+      "id": "s18",
+      "text": "Bei Hobbach lernte der jetzige Pächter, Julian Guse, sein Metier."
+    },
+    {
+      "id": "s19",
+      "text": "Er übernahm das Geschäft im Sommer 2024."
+    },
+    {
+      "id": "s20",
+      "text": "Auf der Karte landen Gerichte wie Currywurst/Pommes für 9,90 Euro, Wiener Schnitzel für 26,90 Euro, veganes Gemüsecurry und diverse Salate."
+    },
+    {
+      "id": "s21",
+      "text": "Natürlich gibt es auch Suppen und Pasta, teils auch exquisitere Teller wie Carpaccio Trüffel für 18,90 Euro."
+    },
+    {
+      "id": "s22",
+      "text": "Guse und Béky sind mit dem Geschäft zufrieden."
+    },
+    {
+      "id": "s23",
+      "text": "An Wochenenden begrüßen sie nach eigener Aussage bis zu 50 Gäste."
+    },
+    {
+      "id": "s24",
+      "text": "Laut Vereinsführung wünschen sich die Tennissportler eine größere Auswahl an preiswerten Snacks."
+    },
+    {
+      "id": "s25",
+      "text": "Die Vorstände des ALTC verweisen hier auf den Pachtvertrag, aus dem hervorgeht, dass zur Sommersaison die Gastronomie „bevorzugt als Clubgastronomie zu führen“ sei."
+    },
+    {
+      "id": "s26",
+      "text": "Guse und Béky unterstreichen, dass man eine eigene, preiswerte Tenniskarte entwickelt habe: mit Cheeseburgern, Schweineschnitzel und Flammkuchen."
+    },
+    {
+      "id": "s27",
+      "text": "Zum typischen Vereinsleben zählen im Sommer entsprechend lange Öffnungszeiten: etwa von 10 bis 22 Uhr, die ebenfalls Teil des Pachtvertrages sein sollen."
+    },
+    {
+      "id": "s28",
+      "text": "Das ist personalintensiv, verspricht aber vor allem vormittags eher geringere Umsätze."
+    },
+    {
+      "id": "s29",
+      "text": "„Wir haben versucht, da für Sommer wie Winter Übereinkünfte zu erzielen; das ist aber mit der Vereinsführung nicht gelungen“, sagt Guse."
+    },
+    {
+      "id": "s30",
+      "text": "Der Verein wünscht sich andere Zeiten."
+    },
+    {
+      "id": "s31",
+      "text": "Dies trübte die Stimmung schon vor Jahresfrist."
+    },
+    {
+      "id": "s32",
+      "text": "Noch problematischer: Diverse Reparaturen und Wartungsaufträge wurden weder zur Zufriedenheit der Pächter noch der Vereinsspitze bewältigt."
+    },
+    {
+      "id": "s33",
+      "text": "Es geht um Kühlanlagen, die defekte Kühltheke, die Gasbrenner des Hauptküchenherds, die Entlüftungsanlage."
+    },
+    {
+      "id": "s34",
+      "text": "Man ist uneinig, wer für welche Maßnahme zuständig ist, wer Reparaturen wofür genau beauftragen und bezahlen muss."
+    },
+    {
+      "id": "s35",
+      "text": "„Am Ende ist die Küche jetzt aber nicht nutzbar, der Herd ist nicht komplett funktionstüchtig und die Abluftanlage ebenso wenig“, sagt Koch und Inhaber Julian Guse."
+    },
+    {
+      "id": "s36",
+      "text": "Er zeigt sich enttäuscht, fühlt sich bedroht, gegängelt und angefeindet."
+    },
+    {
+      "id": "s37",
+      "text": "Der Verein indes bekräftigt, dass beispielsweise die Kühlzelle für 3000 Euro repariert und die Gasbrenner für 2400 Euro gewartet und gereinigt wurden."
+    },
+    {
+      "id": "s38",
+      "text": "Guse beklagt seit der derzeitigen Restaurantschließung wegen des Lüftungsdefekts Umsatzausfälle und frühere Warenverluste im damals defekten Kühlhaus."
+    },
+    {
+      "id": "s39",
+      "text": "Der Vereinsvorstand, umgekehrt, macht für die Misere den Pächter verantwortlich."
+    },
+    {
+      "id": "s40",
+      "text": "Die Gastronomen bemängeln zudem, dass Nebenkostenabrechnungen – 60 Prozent für den Club – nicht nachvollziehbar seien."
+    },
+    {
+      "id": "s41",
+      "text": "Auch hier widerspricht der Verein."
+    },
+    {
+      "id": "s42",
+      "text": "Verspätete Pachtzahlungen"
+    },
+    {
+      "id": "s43",
+      "text": "Nicht nur bei den Reparaturen geht es um Geld."
+    },
+    {
+      "id": "s44",
+      "text": "„Vom Start weg sind in 15 Monaten kein einziges Mal die Pachtleistungen pünktlich bezahlt worden“, teilt der Verein mit."
+    },
+    {
+      "id": "s45",
+      "text": "So sind Pachtrückstände aufgelaufen, die erst spät ausgeglichen wurden."
+    },
+    {
+      "id": "s46",
+      "text": "Guse begründet dies – unter anderem – mit „vom Verein vernachlässigten Reparaturen“."
+    },
+    {
+      "id": "s47",
+      "text": "Der Verein widerspricht, man habe – ganz im Gegenteil – Rücksicht genommen."
+    },
+    {
+      "id": "s48",
+      "text": "Zu jenem Zeitpunkt vor einigen Monaten war bereits ein Anwalt eingeschaltet, inzwischen sind es mehrere."
+    },
+    {
+      "id": "s49",
+      "text": "Die Fronten verhärtet, die Atmosphäre im Club-Leben vergiftet."
+    },
+    {
+      "id": "s50",
+      "text": "„Wir sahen uns letztlich zur fristlosen Kündigung gezwungen."
+    },
+    {
+      "id": "s51",
+      "text": "Wir müssen einen Schlussstrich ziehen."
+    },
+    {
+      "id": "s52",
+      "text": "Dabei soll weder das Ansehen unserer Pächter noch das Ansehen unseres Clubs beschädigt werden“, erklärt der ALTC-Vorstand."
+    },
+    {
+      "id": "s53",
+      "text": "Der Pachtvertrag läuft laut Gastronom Guse bis 2030."
+    },
+    {
+      "id": "s54",
+      "text": "Der Verein widerspricht auch hier."
+    },
+    {
+      "id": "s55",
+      "text": "Die Kündigung sei zum 30. Juni 2026 ausgesprochen worden."
+    },
+    {
+      "id": "s56",
+      "text": "Was rechtlich bindend ist, loten Juristen gerade aus."
+    },
+    {
+      "id": "s57",
+      "text": "Anfang Juli 2026 gab es die außerordentliche Mitgliederversammlung."
+    },
+    {
+      "id": "s58",
+      "text": "Es folgte laut Vorstand ein klarer Auftrag: das Vertragsverhältnis mit der Gastronomie aufzulösen."
+    },
+    {
+      "id": "s59",
+      "text": "Guse und Béky wünschen sich nach eigener Aussage, dass der Streit schnellstmöglich endet."
+    },
+    {
+      "id": "s60",
+      "text": "Am liebsten würden sie, so unterstreichen beide im Gespräch mit unserer Zeitung, in einem funktionstüchtigen und gepflegten Restaurant Gut Schlottfeld unter den urigen Giebelbalken wieder ihre Gastgeberrolle übernehmen."
+    },
+    {
+      "id": "s61",
+      "text": "Ohne Zwist, ohne böse Worte, im Einklang mit den Clubmitgliedern."
+    },
+    {
+      "id": "s62",
+      "text": "Man würde das Restaurant laut Guse auch gerne für Feiern und Feste, für Beerdigungscafés, Geburtstage, Hochzeiten und auch Events wie Krimidinner öffnen."
+    },
+    {
+      "id": "s63",
+      "text": "Der ALTC-Vorstand verweist indes darauf, dass man mehrfach neue Probe- und Bewährungszeiten eingeräumt habe."
+    },
+    {
+      "id": "s64",
+      "text": "„Wir möchten den Vertrag jetzt lösen; lieber heute als morgen“, erklärt der Vorstand."
+    },
+    {
+      "id": "s65",
+      "text": "Guse sucht das Gespräch: „Aber es herrscht Funkstille; keine Antwort“, sagt er."
+    },
+    {
+      "id": "s66",
+      "text": "Wegen dieses Umstands und ausstehender Reparaturen habe man zuletzt Mietkürzungen angezeigt."
+    },
+    {
+      "id": "s67",
+      "text": "Fraglich ist nun, ob und in welcher Höhe gegebenenfalls eine Ablösesumme, eine Art Abfindung, gezahlt werden müsste."
+    },
+    {
+      "id": "s68",
+      "text": "Gastronom Guse sagt: „Wir haben den Ball gespielt, warten nun auf Antworten.“"
+    },
+    {
+      "id": "s69",
+      "text": "Die Sorge ist, dass dieses Match zwischen Verein und Gastronomie am Ende nur Verlierer kennt."
+    },
+    {
+      "id": "s70",
+      "text": "Man muss irgendwie noch einmal an einen Tisch."
+    },
+    {
+      "id": "s71",
+      "text": "Der finanzielle Spielraum ist laut Club klein."
+    },
+    {
+      "id": "s72",
+      "text": "Guse möchte so früh wie möglich wieder öffnen."
+    }
+  ],
+  "eintraege": [
+    {
+      "satz": "t1",
+      "text": "Im Aachen-Laurensberger Tennisclub, kurz ALTC, ist der Streit mit den Pächtern des Vereinsrestaurants Gut Schlottfeld eskaliert.",
+      "start": 0,
+      "end": 128,
+      "geprueft": false,
+      "notwendig": [
+        "s3"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c1"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t2",
+      "text": "Das Restaurant an der Schlottfelder Straße in Aachen bleibt vorübergehend geschlossen.",
+      "start": 129,
+      "end": 215,
+      "geprueft": false,
+      "notwendig": [
+        "s4",
+        "s16"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c2"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t3",
+      "text": "Gastronom und Pächter Julian Guse sowie seine Partnerin Eva-Maria Béky begründen dies mit technischen Problemen in der Küche.",
+      "start": 216,
+      "end": 341,
+      "geprueft": false,
+      "notwendig": [
+        "s4"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c3"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t4",
+      "text": "Beide Seiten erheben schwere Vorwürfe.",
+      "start": 343,
+      "end": 381,
+      "geprueft": false,
+      "notwendig": [
+        "s5"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c4"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t5",
+      "text": "Guse sagt, Herd und Abluftanlage seien nicht vollständig funktionstüchtig.",
+      "start": 382,
+      "end": 456,
+      "geprueft": false,
+      "notwendig": [
+        "s35"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c5"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t6",
+      "text": "Zudem habe es Probleme mit Kühlanlagen gegeben, die zu Warenverlusten geführt hätten.",
+      "start": 457,
+      "end": 542,
+      "geprueft": false,
+      "notwendig": [],
+      "zulaessig": [],
+      "relation": "keine_quelle",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c6"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t7",
+      "text": "Der Gastronom beklagt auch Umsatzausfälle durch die Schließung und kritisiert aus seiner Sicht nicht nachvollziehbare Nebenkostenabrechnungen.",
+      "start": 543,
+      "end": 685,
+      "geprueft": false,
+      "notwendig": [
+        "s38",
+        "s40"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c7"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t8",
+      "text": "Der Verein widerspricht diesen Darstellungen.",
+      "start": 686,
+      "end": 731,
+      "geprueft": false,
+      "notwendig": [
+        "s41"
+      ],
+      "zulaessig": [
+        "s47",
+        "s54"
+      ],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c8"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t9",
+      "text": "Der ALTC-Vorstand verweist unter anderem auf eine Reparatur der Kühlzelle für 3000 Euro sowie die Wartung und Reinigung von Gasbrennern für 2400 Euro.",
+      "start": 732,
+      "end": 882,
+      "geprueft": false,
+      "notwendig": [
+        "s37"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c9"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t10",
+      "text": "Auch über die Ausrichtung und Öffnungszeiten der Gastronomie gibt es Differenzen.",
+      "start": 884,
+      "end": 965,
+      "geprueft": false,
+      "notwendig": [],
+      "zulaessig": [],
+      "relation": "keine_quelle",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c10"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t11",
+      "text": "Der Verein wünscht sich eine stärker auf Tennisspieler zugeschnittene Clubgastronomie mit preiswerten Snacks und langen Öffnungszeiten im Sommer.",
+      "start": 966,
+      "end": 1111,
+      "geprueft": false,
+      "notwendig": [
+        "s24",
+        "s25",
+        "s27"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c11"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t12",
+      "text": "Guse und Béky betonen, sie hätten bereits eine günstige Tenniskarte angeboten.",
+      "start": 1112,
+      "end": 1190,
+      "geprueft": false,
+      "notwendig": [
+        "s26"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [
+        "nli_widerspruch"
+      ],
+      "claims_im_lauf": [
+        "c12"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t13",
+      "text": "Hinzu kommt Streit über die Pacht.",
+      "start": 1192,
+      "end": 1226,
+      "geprueft": false,
+      "notwendig": [],
+      "zulaessig": [],
+      "relation": "keine_quelle",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c13"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t14",
+      "text": "Nach Angaben des Vorstands seien die Zahlungen in 15 Monaten nie pünktlich eingegangen.",
+      "start": 1227,
+      "end": 1314,
+      "geprueft": false,
+      "notwendig": [
+        "s44"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c14"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t15",
+      "text": "Rückstände seien erst verspätet ausgeglichen worden.",
+      "start": 1315,
+      "end": 1367,
+      "geprueft": false,
+      "notwendig": [
+        "s45"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c15"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t16",
+      "text": "Guse führt dies auch auf aus seiner Sicht vernachlässigte Reparaturen zurück.",
+      "start": 1368,
+      "end": 1445,
+      "geprueft": false,
+      "notwendig": [
+        "s46"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c16"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t17",
+      "text": "Der Vorstand hat das Pachtverhältnis fristlos gekündigt und will den Vertrag möglichst rasch beenden.",
+      "start": 1447,
+      "end": 1548,
+      "geprueft": false,
+      "notwendig": [
+        "s58"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c17"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t18",
+      "text": "Guse sagt dagegen, der Vertrag laufe bis 2030.",
+      "start": 1549,
+      "end": 1595,
+      "geprueft": false,
+      "notwendig": [
+        "s53"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c18"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t19",
+      "text": "Juristen prüfen nun, welche Vereinbarung rechtlich gilt.",
+      "start": 1596,
+      "end": 1652,
+      "geprueft": false,
+      "notwendig": [
+        "s56"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c19"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t20",
+      "text": "Eine außerordentliche Mitgliederversammlung des ALTC hatte den Vorstand beauftragt, das Vertragsverhältnis aufzulösen.",
+      "start": 1653,
+      "end": 1771,
+      "geprueft": false,
+      "notwendig": [
+        "s13",
+        "s58"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c20"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t21",
+      "text": "Guse und Béky hoffen dennoch auf eine Einigung und wollen Gut Schlottfeld möglichst bald wieder öffnen.",
+      "start": 1772,
+      "end": 1875,
+      "geprueft": false,
+      "notwendig": [
+        "s72"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c21"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    }
+  ]
+}

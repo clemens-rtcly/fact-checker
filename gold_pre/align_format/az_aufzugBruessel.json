@@ -1,0 +1,1518 @@
+{
+  "meta": {
+    "titel": "Brüssel Es ist ein Horrorfund, den Brüsseler Feuerwehrleute am Dienstagmittag machen: Mehrere Menschen liegen leblos in einem abgestürzten Aufzug.",
+    "quelle": "Eigenes Paar",
+    "modell": "stufe0-2 · local-multilingual-e5-large-instruct + nli-mdeberta-2mil7",
+    "statistik": {
+      "saetze": 43,
+      "claims": 25,
+      "embeddings": 68,
+      "nli_paare": 24,
+      "dauer_s": 84.2
+    }
+  },
+  "article": {
+    "text": "Brüssel Es ist ein Horrorfund, den Brüsseler Feuerwehrleute am Dienstagmittag machen: Mehrere Menschen liegen leblos in einem abgestürzten Aufzug. Das Gebäude mitten in der Innenstadt der belgischen Hauptstadt wird gerade umgebaut. Stundenlang können die Einsatzkräfte nicht zu ihnen vordringen. Am Abend dann ist klar: Sechs Menschen sind gestorben. Bei ihnen handelt es sich nach Angaben der Staatsanwaltschaft um belgische oder rumänische Staatsangehörige\n\nZunächst nur kleines Feuer\n\nWie genau es dazu kam, ist unklar, wie eine Mitarbeiterin der Staatsanwaltschaft vor Ort sagt. Es habe ein Feuer gegeben, und zwei Aufzüge seien mehrere Stockwerke nach unten gestürzt. Dazu werde nun ermittelt. Zudem müssten die Toten identifiziert werden. Eine Obduktion soll Hinweise geben, wie genau sie ums Leben kam. Erst nach Stunden können Einsatzkräfte den zweiten Aufzug öffnen und Gewissheit bekommen: Es gibt keine weiteren Opfer.\n\nDer Einsatz hatte harmlos begonnen. Die Feuerwehr wird am Morgen zu einem vermeintlich kleinen Feuer auf der zweiten Etage des Komplexes gerufen. Sie rückt aus, löscht das Feuer – und macht im Anschluss einen Kontrollrundgang durch die riesige Baustelle, erzählt ein Staatsanwalt. „Viele Orte waren extrem schwer zugänglich“, berichtet er weiter.\n\nZeitgleich wird bekannt, dass sechs der rund 250 Arbeiter auf der Baustelle vermisst werden. Schließlich können sich die Einsatzkräfte zu einem Fahrstuhl vorkämpfen – und entdecken in der Kabine mehrere Leichen.\n\nZwei Arbeiter kommen zudem ins Krankenhaus, ebenso ein Feuerwehrmann, der im Einsatz einen Hitzschlag erleidet, wie ein Feuerwehrsprecher berichtet. Am Nachmittag sind vor dem Gebäudekomplex abgekämpfte Feuerwehrkräfte zu beobachten, die verschwitzt zur Wasserflasche greifen. Mehr als 200 Arbeiter verschiedener Unternehmen seien von der Baustelle evakuiert worden, sagt eine Mitarbeiterin der Staatsanwaltschaft.\n\nWährend mit der Bergung der ersten Leichen begonnen wird, trifft neben Belgiens König Philippe auch Regierungschef Bart De Wever vor dem großflächig abgesperrten Gebäude ein. Sie danken Rettungskräften. Öffentlich äußern sie sich nicht. Auch einige Schaulustige sind vor Ort.\n\nBrüssels Bürgermeister Philippe Close spricht von einem Drama, das tief berühre. Sechs Menschen seien zur Arbeit gekommen und gestorben. Er verspricht Unterstützung für alle Betroffenen und dankt den Rettungskräften für ihren Einsatz. Sie seien sehr schnell vor Ort gewesen und hätten das Feuer schnell unter Kontrolle gebracht.\n\nMan habe mit den Angehörigen sprechen können, sagt er am Abend. „Es ist eine äußerst schwierige Situation, denn sie sind hier und haben keine Nachrichten zu ihren Angehörigen.“ Mithilfe eines Opferhilfe-Teams seien nun DNA-Proben entnommen werden, um Gewissheit zu erlangen. Noch sei die nicht da.\n\nBelgiens Innenminister Bernard Quintin äußert sich auf X geschockt. Deutschlands Botschafter in Belgien, Martin Kotthaus, spricht auf der Plattform ebenfalls sein Mitgefühl aus.\n\nDas Oxy-Gebäude in einer Fußgängerzone inmitten der Brüsseler Innenstadt wird derzeit umgebaut. Früher diente es als ein Sitz der Verwaltung der belgischen Hauptstadt, jetzt soll es in ein multifunktionales Gebäude mit Büros, Restaurants, Hotelzimmern und Wohnungen umgewandelt werden. Das Projekt soll nach früheren Umgaben bis Ende 2026 abgeschlossen werden.\n\nHinter dem Projekt stehen die Firmen Whitewood und Immobel. Immobel teilt mit, man habe mit tiefer Bestürzung von den Opfern des Feuers auf der Baustelle erfahren. „Unsere Gedanken sind zuallererst bei den Betroffenen, ihren Familien und ihren Kollegen. Für uns alle ist dies vor allem eine menschliche Tragödie.“ Immobel unterstütze die Rettungs- und Sicherheitskräfte sowie die Behörden und stehe in engem Austausch mit allen Beteiligten.",
+    "sentences": [
+      {
+        "id": "s1",
+        "start": 0,
+        "end": 146,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Brüssel Es ist ein Horrorfund, den Brüsseler Feuerwehrleute am Dienstagmittag machen: Mehrere Menschen liegen leblos in einem abgestürzten Aufzug."
+      },
+      {
+        "id": "s2",
+        "start": 147,
+        "end": 231,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Das Gebäude mitten in der Innenstadt der belgischen Hauptstadt wird gerade umgebaut."
+      },
+      {
+        "id": "s3",
+        "start": 232,
+        "end": 295,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Stundenlang können die Einsatzkräfte nicht zu ihnen vordringen."
+      },
+      {
+        "id": "s4",
+        "start": 296,
+        "end": 350,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Am Abend dann ist klar: Sechs Menschen sind gestorben."
+      },
+      {
+        "id": "s5",
+        "start": 351,
+        "end": 458,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Bei ihnen handelt es sich nach Angaben der Staatsanwaltschaft um belgische oder rumänische Staatsangehörige"
+      },
+      {
+        "id": "s6",
+        "start": 460,
+        "end": 486,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Zunächst nur kleines Feuer"
+      },
+      {
+        "id": "s7",
+        "start": 488,
+        "end": 582,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Wie genau es dazu kam, ist unklar, wie eine Mitarbeiterin der Staatsanwaltschaft vor Ort sagt."
+      },
+      {
+        "id": "s8",
+        "start": 583,
+        "end": 672,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Es habe ein Feuer gegeben, und zwei Aufzüge seien mehrere Stockwerke nach unten gestürzt."
+      },
+      {
+        "id": "s9",
+        "start": 673,
+        "end": 698,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Dazu werde nun ermittelt."
+      },
+      {
+        "id": "s10",
+        "start": 699,
+        "end": 744,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Zudem müssten die Toten identifiziert werden."
+      },
+      {
+        "id": "s11",
+        "start": 745,
+        "end": 809,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Eine Obduktion soll Hinweise geben, wie genau sie ums Leben kam."
+      },
+      {
+        "id": "s12",
+        "start": 810,
+        "end": 929,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Erst nach Stunden können Einsatzkräfte den zweiten Aufzug öffnen und Gewissheit bekommen: Es gibt keine weiteren Opfer."
+      },
+      {
+        "id": "s13",
+        "start": 931,
+        "end": 966,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "Der Einsatz hatte harmlos begonnen."
+      },
+      {
+        "id": "s14",
+        "start": 967,
+        "end": 1076,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "Die Feuerwehr wird am Morgen zu einem vermeintlich kleinen Feuer auf der zweiten Etage des Komplexes gerufen."
+      },
+      {
+        "id": "s15",
+        "start": 1077,
+        "end": 1211,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "Sie rückt aus, löscht das Feuer – und macht im Anschluss einen Kontrollrundgang durch die riesige Baustelle, erzählt ein Staatsanwalt."
+      },
+      {
+        "id": "s16",
+        "start": 1212,
+        "end": 1277,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "„Viele Orte waren extrem schwer zugänglich“, berichtet er weiter."
+      },
+      {
+        "id": "s17",
+        "start": 1279,
+        "end": 1371,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Zeitgleich wird bekannt, dass sechs der rund 250 Arbeiter auf der Baustelle vermisst werden."
+      },
+      {
+        "id": "s18",
+        "start": 1372,
+        "end": 1490,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Schließlich können sich die Einsatzkräfte zu einem Fahrstuhl vorkämpfen – und entdecken in der Kabine mehrere Leichen."
+      },
+      {
+        "id": "s19",
+        "start": 1492,
+        "end": 1640,
+        "block": "body",
+        "level": 0,
+        "paragraph": 5,
+        "text": "Zwei Arbeiter kommen zudem ins Krankenhaus, ebenso ein Feuerwehrmann, der im Einsatz einen Hitzschlag erleidet, wie ein Feuerwehrsprecher berichtet."
+      },
+      {
+        "id": "s20",
+        "start": 1641,
+        "end": 1768,
+        "block": "body",
+        "level": 0,
+        "paragraph": 5,
+        "text": "Am Nachmittag sind vor dem Gebäudekomplex abgekämpfte Feuerwehrkräfte zu beobachten, die verschwitzt zur Wasserflasche greifen."
+      },
+      {
+        "id": "s21",
+        "start": 1769,
+        "end": 1906,
+        "block": "body",
+        "level": 0,
+        "paragraph": 5,
+        "text": "Mehr als 200 Arbeiter verschiedener Unternehmen seien von der Baustelle evakuiert worden, sagt eine Mitarbeiterin der Staatsanwaltschaft."
+      },
+      {
+        "id": "s22",
+        "start": 1908,
+        "end": 2082,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "Während mit der Bergung der ersten Leichen begonnen wird, trifft neben Belgiens König Philippe auch Regierungschef Bart De Wever vor dem großflächig abgesperrten Gebäude ein."
+      },
+      {
+        "id": "s23",
+        "start": 2083,
+        "end": 2110,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "Sie danken Rettungskräften."
+      },
+      {
+        "id": "s24",
+        "start": 2111,
+        "end": 2144,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "Öffentlich äußern sie sich nicht."
+      },
+      {
+        "id": "s25",
+        "start": 2145,
+        "end": 2183,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "Auch einige Schaulustige sind vor Ort."
+      },
+      {
+        "id": "s26",
+        "start": 2185,
+        "end": 2265,
+        "block": "body",
+        "level": 0,
+        "paragraph": 7,
+        "text": "Brüssels Bürgermeister Philippe Close spricht von einem Drama, das tief berühre."
+      },
+      {
+        "id": "s27",
+        "start": 2266,
+        "end": 2321,
+        "block": "body",
+        "level": 0,
+        "paragraph": 7,
+        "text": "Sechs Menschen seien zur Arbeit gekommen und gestorben."
+      },
+      {
+        "id": "s28",
+        "start": 2322,
+        "end": 2419,
+        "block": "body",
+        "level": 0,
+        "paragraph": 7,
+        "text": "Er verspricht Unterstützung für alle Betroffenen und dankt den Rettungskräften für ihren Einsatz."
+      },
+      {
+        "id": "s29",
+        "start": 2420,
+        "end": 2513,
+        "block": "body",
+        "level": 0,
+        "paragraph": 7,
+        "text": "Sie seien sehr schnell vor Ort gewesen und hätten das Feuer schnell unter Kontrolle gebracht."
+      },
+      {
+        "id": "s30",
+        "start": 2515,
+        "end": 2578,
+        "block": "body",
+        "level": 0,
+        "paragraph": 8,
+        "text": "Man habe mit den Angehörigen sprechen können, sagt er am Abend."
+      },
+      {
+        "id": "s31",
+        "start": 2579,
+        "end": 2691,
+        "block": "body",
+        "level": 0,
+        "paragraph": 8,
+        "text": "„Es ist eine äußerst schwierige Situation, denn sie sind hier und haben keine Nachrichten zu ihren Angehörigen.“"
+      },
+      {
+        "id": "s32",
+        "start": 2692,
+        "end": 2789,
+        "block": "body",
+        "level": 0,
+        "paragraph": 8,
+        "text": "Mithilfe eines Opferhilfe-Teams seien nun DNA-Proben entnommen werden, um Gewissheit zu erlangen."
+      },
+      {
+        "id": "s33",
+        "start": 2790,
+        "end": 2812,
+        "block": "body",
+        "level": 0,
+        "paragraph": 8,
+        "text": "Noch sei die nicht da."
+      },
+      {
+        "id": "s34",
+        "start": 2814,
+        "end": 2881,
+        "block": "body",
+        "level": 0,
+        "paragraph": 9,
+        "text": "Belgiens Innenminister Bernard Quintin äußert sich auf X geschockt."
+      },
+      {
+        "id": "s35",
+        "start": 2882,
+        "end": 2991,
+        "block": "body",
+        "level": 0,
+        "paragraph": 9,
+        "text": "Deutschlands Botschafter in Belgien, Martin Kotthaus, spricht auf der Plattform ebenfalls sein Mitgefühl aus."
+      },
+      {
+        "id": "s36",
+        "start": 2993,
+        "end": 3088,
+        "block": "body",
+        "level": 0,
+        "paragraph": 10,
+        "text": "Das Oxy-Gebäude in einer Fußgängerzone inmitten der Brüsseler Innenstadt wird derzeit umgebaut."
+      },
+      {
+        "id": "s37",
+        "start": 3089,
+        "end": 3278,
+        "block": "body",
+        "level": 0,
+        "paragraph": 10,
+        "text": "Früher diente es als ein Sitz der Verwaltung der belgischen Hauptstadt, jetzt soll es in ein multifunktionales Gebäude mit Büros, Restaurants, Hotelzimmern und Wohnungen umgewandelt werden."
+      },
+      {
+        "id": "s38",
+        "start": 3279,
+        "end": 3353,
+        "block": "body",
+        "level": 0,
+        "paragraph": 10,
+        "text": "Das Projekt soll nach früheren Umgaben bis Ende 2026 abgeschlossen werden."
+      },
+      {
+        "id": "s39",
+        "start": 3355,
+        "end": 3414,
+        "block": "body",
+        "level": 0,
+        "paragraph": 11,
+        "text": "Hinter dem Projekt stehen die Firmen Whitewood und Immobel."
+      },
+      {
+        "id": "s40",
+        "start": 3415,
+        "end": 3518,
+        "block": "body",
+        "level": 0,
+        "paragraph": 11,
+        "text": "Immobel teilt mit, man habe mit tiefer Bestürzung von den Opfern des Feuers auf der Baustelle erfahren."
+      },
+      {
+        "id": "s41",
+        "start": 3519,
+        "end": 3608,
+        "block": "body",
+        "level": 0,
+        "paragraph": 11,
+        "text": "„Unsere Gedanken sind zuallererst bei den Betroffenen, ihren Familien und ihren Kollegen."
+      },
+      {
+        "id": "s42",
+        "start": 3609,
+        "end": 3668,
+        "block": "body",
+        "level": 0,
+        "paragraph": 11,
+        "text": "Für uns alle ist dies vor allem eine menschliche Tragödie.“"
+      },
+      {
+        "id": "s43",
+        "start": 3669,
+        "end": 3795,
+        "block": "body",
+        "level": 0,
+        "paragraph": 11,
+        "text": "Immobel unterstütze die Rettungs- und Sicherheitskräfte sowie die Behörden und stehe in engem Austausch mit allen Beteiligten."
+      }
+    ]
+  },
+  "transcript": {
+    "text": "Bei einem Feuer in einem im Umbau befindlichen Gebäude in Brüssel sind sechs Menschen ums Leben gekommen. Die Opfer wurden in einem abgestürzten Aufzug des Oxy-Gebäudes in der Innenstadt der belgischen Hauptstadt gefunden. Nach Angaben der Staatsanwaltschaft handelt es sich um belgische oder rumänische Staatsangehörige.\n\nDie Feuerwehr war zunächst wegen eines vermeintlich kleinen Brandes im zweiten Stockwerk alarmiert worden. Die Einsatzkräfte löschten das Feuer und kontrollierten anschließend die weitläufige Baustelle. Viele Bereiche seien dabei nur schwer zugänglich gewesen, berichtete ein Staatsanwalt. Zur gleichen Zeit wurde bekannt, dass sechs der rund 250 Arbeiter auf der Baustelle vermisst wurden.\n\nBei der Suche kämpften sich die Rettungskräfte zu einem Fahrstuhl vor und fanden dort mehrere Leichen. Nach bisherigen Erkenntnissen hatte es ein Feuer gegeben, danach stürzten zwei Aufzüge mehrere Stockwerke in die Tiefe. Wie genau es dazu kam, wird nun ermittelt. Erst nach Stunden konnten die Einsatzkräfte auch den zweiten Aufzug öffnen. Dort fanden sie keine weiteren Opfer.\n\nZwei Arbeiter kamen ins Krankenhaus, ebenso ein Feuerwehrmann, der bei dem Einsatz einen Hitzschlag erlitt. Mehr als 200 Arbeiter verschiedener Unternehmen wurden von der Baustelle evakuiert.\n\nBrüssels Bürgermeister Philippe Close sprach von einem Drama, das tief berühre. Sechs Menschen seien zur Arbeit gekommen und gestorben, sagte er und dankte den Rettungskräften für ihren schnellen Einsatz. Am Abend sagte Close, man habe mit den Angehörigen sprechen können. Diese warteten noch auf Gewissheit über das Schicksal ihrer Familienmitglieder. Ein Opferhilfe-Team nahm DNA-Proben, um die Toten zu identifizieren. Obduktionen sollen zudem klären, woran die Menschen genau starben.\n\nBelgiens König Philippe und Regierungschef Bart De Wever trafen vor dem abgesperrten Gebäude ein und dankten den Rettungskräften. Öffentlich äußerten sie sich nicht.\n\nDas Oxy-Gebäude diente früher als Verwaltungssitz der Stadt Brüssel. Es wird derzeit umgebaut und soll künftig Büros, Restaurants, Hotelzimmer und Wohnungen beherbergen. Nach bisherigen Angaben soll das Projekt bis Ende 2026 abgeschlossen werden.",
+    "claims": [
+      {
+        "id": "c1",
+        "start": 0,
+        "end": 105,
+        "text": "Bei einem Feuer in einem im Umbau befindlichen Gebäude in Brüssel sind sechs Menschen ums Leben gekommen.",
+        "relation": "bedeutung_verschoben",
+        "sources": [
+          {
+            "sentence": "s1",
+            "start": 0,
+            "end": 102,
+            "spans": [
+              [
+                0,
+                7
+              ],
+              [
+                35,
+                44
+              ],
+              [
+                94,
+                102
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s2",
+            "start": 147,
+            "end": 158,
+            "spans": [
+              [
+                147,
+                158
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.45,
+        "margin": 0.07,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "sechs",
+            "norm": "6",
+            "status": "match"
+          }
+        ],
+        "flags": [
+          "bedeutung_verschoben"
+        ],
+        "wortlaut": null,
+        "note": "Verdichtet aus s1 + s2 (s2 erklärt zusätzlich 12 %). · Fundstellen erklären 41 % des Claims. · Unter der Direkt-Schwelle — zur Prüfung empfohlen. · Bedeutung verschoben — die Fundstelle widerspricht dem Claim nicht, stützt ihn aber auch nicht vollständig (entailment 0.00, neutral 1.00).",
+        "scores": {
+          "top": 0.491,
+          "lex": 0.224,
+          "emb": 0.544,
+          "anchor": 0,
+          "nli": 0
+        }
+      },
+      {
+        "id": "c2",
+        "start": 106,
+        "end": 222,
+        "text": "Die Opfer wurden in einem abgestürzten Aufzug des Oxy-Gebäudes in der Innenstadt der belgischen Hauptstadt gefunden.",
+        "relation": "bedeutung_verschoben",
+        "sources": [
+          {
+            "sentence": "s2",
+            "start": 147,
+            "end": 209,
+            "spans": [
+              [
+                147,
+                158
+              ],
+              [
+                173,
+                209
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s1",
+            "start": 126,
+            "end": 146,
+            "spans": [
+              [
+                126,
+                146
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.7,
+        "margin": 0.2,
+        "entities": [],
+        "flags": [
+          "bedeutung_verschoben"
+        ],
+        "wortlaut": null,
+        "note": "Verdichtet aus s2 + s1 (s1 erklärt zusätzlich 26 %). · Fundstellen erklären 74 % des Claims. · Bedeutung verschoben — die Fundstelle widerspricht dem Claim nicht, stützt ihn aber auch nicht vollständig (entailment 0.05, neutral 0.93).",
+        "scores": {
+          "top": 0.628,
+          "lex": 0.489,
+          "emb": 0.525,
+          "anchor": 0,
+          "nli": 0.055
+        }
+      },
+      {
+        "id": "c3",
+        "start": 223,
+        "end": 321,
+        "text": "Nach Angaben der Staatsanwaltschaft handelt es sich um belgische oder rumänische Staatsangehörige.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s5",
+            "start": 361,
+            "end": 458,
+            "spans": [
+              [
+                361,
+                458
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.96,
+        "margin": 0.51,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 97 % des Claims.",
+        "scores": {
+          "top": 0.962,
+          "lex": 0.908,
+          "emb": 0.955,
+          "anchor": 0,
+          "nli": 0.986
+        }
+      },
+      {
+        "id": "c4",
+        "start": 323,
+        "end": 429,
+        "text": "Die Feuerwehr war zunächst wegen eines vermeintlich kleinen Brandes im zweiten Stockwerk alarmiert worden.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s14",
+            "start": 967,
+            "end": 1047,
+            "spans": [
+              [
+                967,
+                980
+              ],
+              [
+                1005,
+                1047
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.62,
+        "margin": 0.23,
+        "entities": [],
+        "flags": [
+          "nli_widerspruch"
+        ],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 44 % des Claims. · NLI: Fundstelle widerspricht dem Claim (contradiction 0.90).",
+        "scores": {
+          "top": 0.669,
+          "lex": 0.358,
+          "emb": 0.732,
+          "anchor": 0,
+          "nli": 0.054
+        }
+      },
+      {
+        "id": "c5",
+        "start": 430,
+        "end": 525,
+        "text": "Die Einsatzkräfte löschten das Feuer und kontrollierten anschließend die weitläufige Baustelle.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s15",
+            "start": 1092,
+            "end": 1184,
+            "spans": [
+              [
+                1092,
+                1108
+              ],
+              [
+                1175,
+                1184
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.49,
+        "margin": 0.09,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 42 % des Claims. · Unter der Direkt-Schwelle — zur Prüfung empfohlen.",
+        "scores": {
+          "top": 0.534,
+          "lex": 0.328,
+          "emb": 0.588,
+          "anchor": 0,
+          "nli": 0.999
+        }
+      },
+      {
+        "id": "c6",
+        "start": 526,
+        "end": 612,
+        "text": "Viele Bereiche seien dabei nur schwer zugänglich gewesen, berichtete ein Staatsanwalt.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s16",
+            "start": 1212,
+            "end": 1266,
+            "spans": [
+              [
+                1212,
+                1218
+              ],
+              [
+                1237,
+                1266
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s15",
+            "start": 1198,
+            "end": 1211,
+            "spans": [
+              [
+                1198,
+                1211
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.7,
+        "margin": 0.26,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s16 + s15 (s15 erklärt zusätzlich 19 %). · Fundstellen erklären 68 % des Claims.",
+        "scores": {
+          "top": 0.678,
+          "lex": 0.407,
+          "emb": 0.725,
+          "anchor": 0,
+          "nli": 0.998
+        }
+      },
+      {
+        "id": "c7",
+        "start": 613,
+        "end": 713,
+        "text": "Zur gleichen Zeit wurde bekannt, dass sechs der rund 250 Arbeiter auf der Baustelle vermisst wurden.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s17",
+            "start": 1279,
+            "end": 1371,
+            "spans": [
+              [
+                1279,
+                1371
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.93,
+        "margin": 0.49,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "sechs",
+            "norm": "6",
+            "status": "match"
+          },
+          {
+            "type": "zahl",
+            "surface": "250",
+            "norm": "250",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Anker 250 eindeutig in s17 · Fundstellen erklären 88 % des Claims.",
+        "scores": {
+          "top": 0.948,
+          "lex": 0.762,
+          "emb": 0.971,
+          "anchor": 0.3,
+          "nli": 0.967
+        }
+      },
+      {
+        "id": "c8",
+        "start": 715,
+        "end": 817,
+        "text": "Bei der Suche kämpften sich die Rettungskräfte zu einem Fahrstuhl vor und fanden dort mehrere Leichen.",
+        "relation": "bedeutung_verschoben",
+        "sources": [
+          {
+            "sentence": "s18",
+            "start": 1423,
+            "end": 1490,
+            "spans": [
+              [
+                1423,
+                1432
+              ],
+              [
+                1474,
+                1490
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.69,
+        "margin": 0.36,
+        "entities": [],
+        "flags": [
+          "bedeutung_verschoben"
+        ],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 56 % des Claims. · Bedeutung verschoben — die Fundstelle widerspricht dem Claim nicht, stützt ihn aber auch nicht vollständig (entailment 0.45, neutral 0.55).",
+        "scores": {
+          "top": 0.725,
+          "lex": 0.484,
+          "emb": 0.785,
+          "anchor": 0,
+          "nli": 0.45
+        }
+      },
+      {
+        "id": "c9",
+        "start": 818,
+        "end": 937,
+        "text": "Nach bisherigen Erkenntnissen hatte es ein Feuer gegeben, danach stürzten zwei Aufzüge mehrere Stockwerke in die Tiefe.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s8",
+            "start": 583,
+            "end": 651,
+            "spans": [
+              [
+                583,
+                651
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.74,
+        "margin": 0.43,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "zwei",
+            "norm": "2",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 53 % des Claims.",
+        "scores": {
+          "top": 0.785,
+          "lex": 0.532,
+          "emb": 0.866,
+          "anchor": 0,
+          "nli": 0.886
+        }
+      },
+      {
+        "id": "c10",
+        "start": 938,
+        "end": 980,
+        "text": "Wie genau es dazu kam, wird nun ermittelt.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s9",
+            "start": 673,
+            "end": 698,
+            "spans": [
+              [
+                673,
+                698
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.73,
+        "margin": 0.18,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 65 % des Claims.",
+        "scores": {
+          "top": 0.749,
+          "lex": 0.507,
+          "emb": 0.793,
+          "anchor": 0,
+          "nli": 0.797
+        }
+      },
+      {
+        "id": "c11",
+        "start": 981,
+        "end": 1056,
+        "text": "Erst nach Stunden konnten die Einsatzkräfte auch den zweiten Aufzug öffnen.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s12",
+            "start": 810,
+            "end": 874,
+            "spans": [
+              [
+                810,
+                874
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.82,
+        "margin": 0.38,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 85 % des Claims.",
+        "scores": {
+          "top": 0.815,
+          "lex": 0.574,
+          "emb": 0.798,
+          "anchor": 0,
+          "nli": 0.57
+        }
+      },
+      {
+        "id": "c12",
+        "start": 1057,
+        "end": 1094,
+        "text": "Dort fanden sie keine weiteren Opfer.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s12",
+            "start": 908,
+            "end": 929,
+            "spans": [
+              [
+                908,
+                929
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.72,
+        "margin": 0.36,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 85 % des Claims.",
+        "scores": {
+          "top": 0.643,
+          "lex": 0.325,
+          "emb": 0.503,
+          "anchor": 0,
+          "nli": 0.987
+        }
+      },
+      {
+        "id": "c13",
+        "start": 1096,
+        "end": 1203,
+        "text": "Zwei Arbeiter kamen ins Krankenhaus, ebenso ein Feuerwehrmann, der bei dem Einsatz einen Hitzschlag erlitt.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s19",
+            "start": 1492,
+            "end": 1593,
+            "spans": [
+              [
+                1492,
+                1505
+              ],
+              [
+                1523,
+                1593
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.9,
+        "margin": 0.57,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "Zwei",
+            "norm": "2",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 87 % des Claims.",
+        "scores": {
+          "top": 0.91,
+          "lex": 0.726,
+          "emb": 0.933,
+          "anchor": 0,
+          "nli": 0.986
+        }
+      },
+      {
+        "id": "c14",
+        "start": 1204,
+        "end": 1287,
+        "text": "Mehr als 200 Arbeiter verschiedener Unternehmen wurden von der Baustelle evakuiert.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s21",
+            "start": 1769,
+            "end": 1850,
+            "spans": [
+              [
+                1769,
+                1850
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.94,
+        "margin": 0.48,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "200",
+            "norm": "200",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Anker 200 eindeutig in s21 · Fundstellen erklären 100 % des Claims.",
+        "scores": {
+          "top": 0.923,
+          "lex": 0.766,
+          "emb": 0.862,
+          "anchor": 0.3,
+          "nli": 0.995
+        }
+      },
+      {
+        "id": "c15",
+        "start": 1289,
+        "end": 1368,
+        "text": "Brüssels Bürgermeister Philippe Close sprach von einem Drama, das tief berühre.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s26",
+            "start": 2185,
+            "end": 2265,
+            "spans": [
+              [
+                2185,
+                2222
+              ],
+              [
+                2241,
+                2265
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.97,
+        "margin": 0.65,
+        "entities": [
+          {
+            "type": "person",
+            "surface": "Brüssels",
+            "norm": "brüssels",
+            "status": "match"
+          },
+          {
+            "type": "person",
+            "surface": "Philippe Close",
+            "norm": "philippe close",
+            "status": "match"
+          }
+        ],
+        "flags": [
+          "wortlaut_abweichung"
+        ],
+        "wortlaut": {
+          "quelle": "s26",
+          "aenderungen": [
+            {
+              "claim": "sprach",
+              "quelle": "spricht",
+              "nah": true,
+              "aehnlichkeit": 0.77
+            }
+          ]
+        },
+        "note": "Name „Brüssels“ eindeutig in s26 · Name „Philippe Close“ eindeutig in s26 · Fundstellen erklären 93 % des Claims. · Fast wörtlich übernommen, aber abweichend: „spricht“ → „sprach“.",
+        "scores": {
+          "top": 0.989,
+          "lex": 0.916,
+          "emb": 1,
+          "anchor": 0.38,
+          "nli": 0.995
+        }
+      },
+      {
+        "id": "c16",
+        "start": 1369,
+        "end": 1493,
+        "text": "Sechs Menschen seien zur Arbeit gekommen und gestorben, sagte er und dankte den Rettungskräften für ihren schnellen Einsatz.",
+        "relation": "bedeutung_verschoben",
+        "sources": [
+          {
+            "sentence": "s27",
+            "start": 2266,
+            "end": 2321,
+            "spans": [
+              [
+                2266,
+                2321
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s28",
+            "start": 2375,
+            "end": 2419,
+            "spans": [
+              [
+                2375,
+                2419
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.77,
+        "margin": 0.3,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "Sechs",
+            "norm": "6",
+            "status": "match"
+          }
+        ],
+        "flags": [
+          "bedeutung_verschoben"
+        ],
+        "wortlaut": null,
+        "note": "Verdichtet aus s27 + s28 (s28 erklärt zusätzlich 36 %). · Fundstellen erklären 75 % des Claims. · Bedeutung verschoben — die Fundstelle widerspricht dem Claim nicht, stützt ihn aber auch nicht vollständig (entailment 0.03, neutral 0.97).",
+        "scores": {
+          "top": 0.756,
+          "lex": 0.651,
+          "emb": 0.782,
+          "anchor": 0,
+          "nli": 0.026
+        }
+      },
+      {
+        "id": "c17",
+        "start": 1494,
+        "end": 1561,
+        "text": "Am Abend sagte Close, man habe mit den Angehörigen sprechen können.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s30",
+            "start": 2515,
+            "end": 2578,
+            "spans": [
+              [
+                2515,
+                2578
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.8,
+        "margin": 0.43,
+        "entities": [
+          {
+            "type": "person",
+            "surface": "Close",
+            "norm": "close",
+            "status": "match"
+          }
+        ],
+        "flags": [
+          "signale_uneinig"
+        ],
+        "wortlaut": null,
+        "note": "Name „Close“ eindeutig in s26 · Fundstellen erklären 70 % des Claims. · NLI meldet Widerspruch (contradiction 0.65), Wortlaut und Bedeutung stützen den Claim aber stark und es wird nichts verneint — nicht als Widerspruch gemeldet, siehe Signale uneinig.",
+        "scores": {
+          "top": 0.894,
+          "lex": 0.819,
+          "emb": 0.876,
+          "anchor": 0,
+          "nli": 0.262
+        }
+      },
+      {
+        "id": "c18",
+        "start": 1562,
+        "end": 1641,
+        "text": "Diese warteten noch auf Gewissheit über das Schicksal ihrer Familienmitglieder.",
+        "relation": "keine_quelle",
+        "sources": [],
+        "confidence": 0.71,
+        "margin": 0.02,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Keine ausreichend ähnliche Stelle im Artikel — nächster Kandidat s41 mit 0,37 (Schwelle 0,44).",
+        "scores": {
+          "top": 0.366,
+          "lex": 0.139,
+          "emb": 0.491,
+          "anchor": 0,
+          "nli": null
+        }
+      },
+      {
+        "id": "c19",
+        "start": 1642,
+        "end": 1710,
+        "text": "Ein Opferhilfe-Team nahm DNA-Proben, um die Toten zu identifizieren.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s32",
+            "start": 2707,
+            "end": 2744,
+            "spans": [
+              [
+                2707,
+                2717
+              ],
+              [
+                2738,
+                2744
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s10",
+            "start": 717,
+            "end": 744,
+            "spans": [
+              [
+                717,
+                744
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.82,
+        "margin": 0.48,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s32 + s10 (s10 erklärt zusätzlich 29 %). · Fundstellen erklären 78 % des Claims.",
+        "scores": {
+          "top": 0.732,
+          "lex": 0.403,
+          "emb": 0.864,
+          "anchor": 0,
+          "nli": 0.905
+        }
+      },
+      {
+        "id": "c20",
+        "start": 1711,
+        "end": 1777,
+        "text": "Obduktionen sollen zudem klären, woran die Menschen genau starben.",
+        "relation": "bedeutung_verschoben",
+        "sources": [
+          {
+            "sentence": "s11",
+            "start": 745,
+            "end": 790,
+            "spans": [
+              [
+                745,
+                759
+              ],
+              [
+                785,
+                790
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.6,
+        "margin": 0.2,
+        "entities": [],
+        "flags": [
+          "bedeutung_verschoben"
+        ],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 37 % des Claims. · Unter der Direkt-Schwelle — zur Prüfung empfohlen. · Bedeutung verschoben — die Fundstelle widerspricht dem Claim nicht, stützt ihn aber auch nicht vollständig (entailment 0.06, neutral 0.91).",
+        "scores": {
+          "top": 0.541,
+          "lex": 0.316,
+          "emb": 0.72,
+          "anchor": 0,
+          "nli": 0.064
+        }
+      },
+      {
+        "id": "c21",
+        "start": 1779,
+        "end": 1908,
+        "text": "Belgiens König Philippe und Regierungschef Bart De Wever trafen vor dem abgesperrten Gebäude ein und dankten den Rettungskräften.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s22",
+            "start": 1979,
+            "end": 2082,
+            "spans": [
+              [
+                1979,
+                2036
+              ],
+              [
+                2057,
+                2082
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s23",
+            "start": 2094,
+            "end": 2110,
+            "spans": [
+              [
+                2094,
+                2110
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.87,
+        "margin": 0.48,
+        "entities": [
+          {
+            "type": "person",
+            "surface": "Belgiens König Philippe",
+            "norm": "belgiens könig philippe",
+            "status": "match"
+          },
+          {
+            "type": "person",
+            "surface": "Bart De Wever",
+            "norm": "bart de wever",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Name „Bart De Wever“ eindeutig in s22 · Verdichtet aus s22 + s23 (s23 erklärt zusätzlich 15 %). · Fundstellen erklären 89 % des Claims.",
+        "scores": {
+          "top": 0.866,
+          "lex": 0.554,
+          "emb": 0.846,
+          "anchor": 0.3,
+          "nli": 0.986
+        }
+      },
+      {
+        "id": "c22",
+        "start": 1909,
+        "end": 1944,
+        "text": "Öffentlich äußerten sie sich nicht.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s24",
+            "start": 2111,
+            "end": 2144,
+            "spans": [
+              [
+                2111,
+                2144
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.87,
+        "margin": 0.57,
+        "entities": [],
+        "flags": [
+          "wortlaut_abweichung"
+        ],
+        "wortlaut": {
+          "quelle": "s24",
+          "aenderungen": [
+            {
+              "claim": "äußerten",
+              "quelle": "äußern",
+              "nah": true,
+              "aehnlichkeit": 0.86
+            }
+          ]
+        },
+        "note": "Fundstellen erklären 85 % des Claims. · Fast wörtlich übernommen, aber abweichend: „äußern“ → „äußerten“.",
+        "scores": {
+          "top": 0.895,
+          "lex": 0.887,
+          "emb": 0.893,
+          "anchor": 0,
+          "nli": 0.992
+        }
+      },
+      {
+        "id": "c23",
+        "start": 1946,
+        "end": 2014,
+        "text": "Das Oxy-Gebäude diente früher als Verwaltungssitz der Stadt Brüssel.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s37",
+            "start": 3089,
+            "end": 3207,
+            "spans": [
+              [
+                3089,
+                3133
+              ],
+              [
+                3200,
+                3207
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s36",
+            "start": 2993,
+            "end": 3054,
+            "spans": [
+              [
+                2993,
+                3008
+              ],
+              [
+                3045,
+                3054
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.73,
+        "margin": 0.37,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s37 + s36 (s36 erklärt zusätzlich 20 %). · Fundstellen erklären 79 % des Claims.",
+        "scores": {
+          "top": 0.644,
+          "lex": 0.319,
+          "emb": 0.652,
+          "anchor": 0,
+          "nli": 0.999
+        }
+      },
+      {
+        "id": "c24",
+        "start": 2015,
+        "end": 2115,
+        "text": "Es wird derzeit umgebaut und soll künftig Büros, Restaurants, Hotelzimmer und Wohnungen beherbergen.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s37",
+            "start": 3212,
+            "end": 3258,
+            "spans": [
+              [
+                3212,
+                3258
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.68,
+        "margin": 0.36,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 63 % des Claims.",
+        "scores": {
+          "top": 0.719,
+          "lex": 0.393,
+          "emb": 0.721,
+          "anchor": 0,
+          "nli": 0.977
+        }
+      },
+      {
+        "id": "c25",
+        "start": 2116,
+        "end": 2192,
+        "text": "Nach bisherigen Angaben soll das Projekt bis Ende 2026 abgeschlossen werden.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s38",
+            "start": 3279,
+            "end": 3353,
+            "spans": [
+              [
+                3279,
+                3290
+              ],
+              [
+                3322,
+                3353
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.84,
+        "margin": 0.64,
+        "entities": [
+          {
+            "type": "datum",
+            "surface": "2026",
+            "norm": "2026",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Anker 2026 eindeutig in s38 · Fundstellen erklären 75 % des Claims.",
+        "scores": {
+          "top": 0.929,
+          "lex": 0.729,
+          "emb": 0.919,
+          "anchor": 0.3,
+          "nli": 0.996
+        }
+      }
+    ]
+  }
+}

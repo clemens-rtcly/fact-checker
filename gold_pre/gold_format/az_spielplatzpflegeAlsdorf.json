@@ -1,0 +1,676 @@
+{
+  "paar": "az_spielplatzpflegeAlsdorf",
+  "split": "test",
+  "anleitung": [
+    "Arbeitsanweisung (diese Zeilen bleiben in der Datei stehen):",
+    "1. Jede Zeile mit \"geprueft\": false durchgehen und auf true setzen.",
+    "2. notwendig = Sätze, ohne die ein Teil der Aussage unbelegt bliebe.",
+    "   zulaessig = stützt ebenfalls, ist aber entbehrlich (Dubletten).",
+    "3. relation prüfen: direkt | aggregiert | bedeutung_verschoben |",
+    "   inferiert | keine_quelle.",
+    "4. flags_erwartet: nur Befunde, die WIRKLICH zutreffen sollten",
+    "   (zahlkonflikt, ort_konflikt, kuerzel_konflikt, wortlaut_abweichung,",
+    "   ident_unbelegt, zahl_unbelegt). Leere Liste heißt: kein Befund.",
+    "5. Zum Schluss EINMAL umgekehrt: den Artikel lesen und fragen, welcher",
+    "   Transkriptsatz diese Stelle nutzt. Das fängt die Quellen, die die",
+    "   Pipeline gar nicht erst vorgeschlagen hat — der Bias des Entwurfs.",
+    "6. Artikel- und Transkripttext danach NICHT mehr ändern, auch keine",
+    "   Tippfehler: Die Zeichen-Offsets sind Teil der Annotation."
+  ],
+  "artikel_hash": "fc3a52941eeb634b",
+  "transkript_hash": "b9739760d4f14202",
+  "artikel_saetze": [
+    {
+      "id": "s1",
+      "text": "Alsdorf In Alsdorf gibt es 42 Spielplätze."
+    },
+    {
+      "id": "s2",
+      "text": "Dass Kinder dort einen sicheren und sauberen Ort finden, um zu toben und zu spielen, lässt die Stadt sich etwas kosten."
+    },
+    {
+      "id": "s3",
+      "text": "Es ist nicht selbstverständlich, dass Mitarbeiter der Stadtentwicklung Alsdorf (SEA) jeden Spielplatz mindestens einmal in der Woche anfahren, ihn pflegen, reinigen und auf Sicherheitsmängel inspizieren."
+    },
+    {
+      "id": "s4",
+      "text": "Man sollte meinen, dass die Bevölkerung diesen Einsatz wertschätzt."
+    },
+    {
+      "id": "s5",
+      "text": "In den meisten Fällen tut sie das wahrscheinlich auch, stillschweigend."
+    },
+    {
+      "id": "s6",
+      "text": "Doch gar nicht so selten müssen die Männer der SEA sich beschimpfen, auslachen oder sogar bewerfen lassen."
+    },
+    {
+      "id": "s7",
+      "text": "Vor zwei Wochen hat das Spielplatzteam rund um eine Rutsche rasiermesserscharfe Scherben aufgesammelt."
+    },
+    {
+      "id": "s8",
+      "text": "Sie lagen dort so verteilt, „als ob jemand wollte, dass da Kinder reinfallen und sich verletzten“, erzählt Julian Ohnesorg."
+    },
+    {
+      "id": "s9",
+      "text": "Der 35-Jährige ist seit fünf Jahren bei der SEA."
+    },
+    {
+      "id": "s10",
+      "text": "„Nägel haben wir auch schon gehabt“, fügt Sven Klaber (37), stellvertretender Vorarbeiter, hinzu."
+    },
+    {
+      "id": "s11",
+      "text": "Das Team filtert alles aus dem Sand, was für Kinder gefährlich werden kann."
+    },
+    {
+      "id": "s12",
+      "text": "Pro Woche holen die Männer darüber hinaus fast 200 Müllsäcke voller Abfall von den Plätzen."
+    },
+    {
+      "id": "s13",
+      "text": "Die drei Müllcontainer auf dem Betriebshof müssen in kurzen Abständen geleert werden."
+    },
+    {
+      "id": "s14",
+      "text": "„Das kostet alles richtig Geld“, sagt Vorarbeiter Sascha Koch (49)."
+    },
+    {
+      "id": "s15",
+      "text": "Seit zehn Jahren arbeitet er für die Stadtentwicklung."
+    },
+    {
+      "id": "s16",
+      "text": "Daniel Mannheims (35) vervollständigt das Spielplatzteam."
+    },
+    {
+      "id": "s17",
+      "text": "Insgesamt arbeiten in der Halle der SEA an der Carl-Zeiss-Straße 15 Mitarbeiter."
+    },
+    {
+      "id": "s18",
+      "text": "Was besonders viel Spaß macht am Job?"
+    },
+    {
+      "id": "s19",
+      "text": "„Etwas für die Allgemeinheit zu tun“, sagt Mannheims, „für das gesamte Stadtbild.“"
+    },
+    {
+      "id": "s20",
+      "text": "Die Arbeit sei abwechslungsreich, man sei viel an der frischen Luft."
+    },
+    {
+      "id": "s21",
+      "text": "Der Großteil ist ordentlich"
+    },
+    {
+      "id": "s22",
+      "text": "Der Einsatz der vier Männer, ihrer Kollegen, von Mitteln und Material ist deutlich zu sehen."
+    },
+    {
+      "id": "s23",
+      "text": "Egal welcher Spielplatz an diesem Freitag angefahren wird: Nirgends wuchert Rasen, der Großteil sieht ordentlich aus."
+    },
+    {
+      "id": "s24",
+      "text": "Doch obwohl etliche der Flächen am Tag zuvor gereinigt und gepflegt wurden, sind wenig sorgsame Mitmenschen schon wieder am Werk gewesen."
+    },
+    {
+      "id": "s25",
+      "text": "Einen Tag später steht unter dem Abfalleimer auf einem Spielplatz nahe des Oidtweilerwegs bereits eine große Tüte, randvoll mit Abfall."
+    },
+    {
+      "id": "s26",
+      "text": "Von irgendjemanden dort abgestellt, weil ja die Männer von der SEA kommen und nichts einfach stehenlassen."
+    },
+    {
+      "id": "s27",
+      "text": "Das ist bekannt."
+    },
+    {
+      "id": "s28",
+      "text": "Unweit der Tüte stinkt ein großer Hundehaufen mitten auf der Spielwiese vor sich hin."
+    },
+    {
+      "id": "s29",
+      "text": "In den vergangenen Jahren sei der sorglose Umgang mit öffentlichem Eigentum schlimmer geworden, sagt Klaber."
+    },
+    {
+      "id": "s30",
+      "text": "Die Spielplätze in Mitte seien vom Zustand, was Vermüllung und Beschädigungen angeht, besonders auffällig."
+    },
+    {
+      "id": "s31",
+      "text": "Hoengen und Mariadorf folgten knapp dahinter."
+    },
+    {
+      "id": "s32",
+      "text": "Und es gibt die Spielplätze in weniger frequentierten Randlagen und mit anderem Publikum."
+    },
+    {
+      "id": "s33",
+      "text": "„In Zopp zum Beispiel ist nie was“, sagt Klaber."
+    },
+    {
+      "id": "s34",
+      "text": "„In der Begau der Spielplatz ist auch immer in Ordnung, weil da die Siedlergemeinschaft ein Auge drauf hat und sich kümmert.“"
+    },
+    {
+      "id": "s35",
+      "text": "Koch ergänzt: „Bettendorf kannst du auch ausgrenzen.“"
+    },
+    {
+      "id": "s36",
+      "text": "Dort finden sich kaum Vandalismusschäden, wenig Hundekot, fast kein Müll."
+    },
+    {
+      "id": "s37",
+      "text": "Auf dem Spielplatz im Annapark hingegen könne man dann und wann auch mal über einen ausgemusterten Kühlschrank stolpern, Lachgasflaschen, Messer oder abgelegte Tierkadaver."
+    },
+    {
+      "id": "s38",
+      "text": "Apropos Hundekot, ein nicht zu unterschätzendes Problem für die Arbeit der Männer: Viele Halter entsorgen das, was ihre Tiere ausscheiden, offenbar lieber in öffentlichen Anlagen statt im privaten Abfalleimer."
+    },
+    {
+      "id": "s39",
+      "text": "Montags, mittwochs und freitags wird eine Müllrunde im Burgpark gedreht, mehr als 20 Mülleimer geleert."
+    },
+    {
+      "id": "s40",
+      "text": "„Die sind randvoll mit Hundescheiße“, sagt Klaber."
+    },
+    {
+      "id": "s41",
+      "text": "„Da kommen Leute extra auf den Spielplatz, um ihre Hundekacke zu entsorgen.“"
+    },
+    {
+      "id": "s42",
+      "text": "Koch ergänzt: „Und dann bist du mit der Runde gerade fertig, drehst dich um: Steht plötzlich eine Couch da.“"
+    },
+    {
+      "id": "s43",
+      "text": "Jemand hat also die Männer bei ihrer Arbeit beobachtet, gedacht, da bekommt er seinen Sperrmüll bequem los und sich sogleich ans Werk gemacht."
+    },
+    {
+      "id": "s44",
+      "text": "Während die Männer Hecken schneiden, Müll aufsammeln und Geräte kontrollieren, berichten sie aus einem scheinbar unerschöpflichen Erfahrungsschatz an Unverschämtem, Ekelhaftem und Illegalem."
+    },
+    {
+      "id": "s45",
+      "text": "Verständnis für ihre Arbeit bringen Anwohner manchmal nur auf, solange sie in ihrer Bequemlichkeit nicht gestört werden."
+    },
+    {
+      "id": "s46",
+      "text": "„Mit Elektrogeräten kannst du so viele Flächen nicht pflegen“, sagt Klaber."
+    },
+    {
+      "id": "s47",
+      "text": "Das muss schon starkes, oft benzinbetriebenes Gerät sein."
+    },
+    {
+      "id": "s48",
+      "text": "Das ist gut zu hören."
+    },
+    {
+      "id": "s49",
+      "text": "Gepflegte Anlagen haben Anwohner gerne, aber bitte ohne den Schlaf wegen eines Aufsitzmähers um 7 Uhr morgens unterbrechen zu müssen."
+    },
+    {
+      "id": "s50",
+      "text": "Oft fliegen den Männern dann mindestens böse Worte um die Ohren, wenn nicht sogar Essensreste – auch schon vorgekommen."
+    },
+    {
+      "id": "s51",
+      "text": "„Am Oidtweilerweg fährst du mit dem Rasermäher und denkst: Oh, was fliegt denn da?"
+    },
+    {
+      "id": "s52",
+      "text": "Da wollte mir tatsächlich jemand einen Hähnchenschenkel auf den Kopf schmeißen“, erzählt Klaber."
+    },
+    {
+      "id": "s53",
+      "text": "Auch Fernseher seien dort schon aus dem Fenster auf den Spielplatz geflogen."
+    },
+    {
+      "id": "s54",
+      "text": "„Da musst du eigentlich mit Kettenhemd drauf“, sagt Vorarbeiter Sascha Koch über den Platz zwischen Wichernstraße und Im Brühl, und man weiß nicht, ob er eher resigniert ist oder einen Scherz macht."
+    },
+    {
+      "id": "s55",
+      "text": "Es ist ein Hinweis auf einen Vorfall, der sich an diesem Ort vor drei Jahren ereignet hatte."
+    },
+    {
+      "id": "s56",
+      "text": "Der Bewohner eines Mehrfamilienhauses hatte seinerzeit mit einer Armbrust aus seiner Wohnung auf eine Gruppe junger Menschen geschossen, die sich zuvor auf dem Spielplatz aufgehalten hatte und dem Mann zu laut war."
+    },
+    {
+      "id": "s57",
+      "text": "Dabei hatte er eine junge Frau in den Rücken getroffen und schwer verletzt."
+    },
+    {
+      "id": "s58",
+      "text": "Der Schütze war im Prozess zu einer Freiheitsstrafe von viereinhalb Jahren verurteilt worden."
+    },
+    {
+      "id": "s59",
+      "text": "Viel zu verdauen"
+    },
+    {
+      "id": "s60",
+      "text": "Das alles ist viel zu verdauen."
+    },
+    {
+      "id": "s61",
+      "text": "Ohne die Kameradschaft im Team könnte es manchmal schwer zu ertragen sein und nachhaltig für Frust sorgen."
+    },
+    {
+      "id": "s62",
+      "text": "Dazu aber lassen es die Kollegen untereinander erst gar nicht kommen."
+    },
+    {
+      "id": "s63",
+      "text": "Der Zusammenhalt und die Stimmung im Team der SEA seien etwas Besonderes, unter den Mitarbeitern stimme es einfach, sagt Koch."
+    },
+    {
+      "id": "s64",
+      "text": "Selbst, wenn einer von ihnen im Urlaub ist oder krank, „dann kommt der uns hier in der Halle besuchen – einfach, um während der Pause ein bisschen Spaß zu haben und die Kollegen zu sehen."
+    },
+    {
+      "id": "s65",
+      "text": "So gerne sind wir hier“."
+    },
+    {
+      "id": "s66",
+      "text": "Und bevor nun ein falscher Eindruck von den Alsdorferinnen und Alsdorfern entsteht: Es gibt auch die schönen Momente: „Es gibt auch Menschen, die sich bedanken“, sagt Klaber."
+    },
+    {
+      "id": "s67",
+      "text": "„An der Straßburger Straße wohnt einer, wenn der Müll auf dem Spielplatz dort sieht, geht er hin und hebt ihn auf – und bedankt sich trotzdem bei uns.“"
+    },
+    {
+      "id": "s68",
+      "text": "Koch: „Wenn Muttis und Väter kommen und sich bedanken, weil alles top gepflegt ist, dann hast du auch ein Grinsen im Gesicht und vielleicht mal feuchte Augen.“"
+    },
+    {
+      "id": "s69",
+      "text": "Koch, Klaber, Ohnesorg und Mannheims sind alle selbst Väter."
+    },
+    {
+      "id": "s70",
+      "text": "Wenn man die Kinder sehe, wie sie begeistert spielen, und man wisse, dass sie das ohne Sorge tun können – „dann fährst du mit einem ruhigen Gewissen nach Hause“."
+    }
+  ],
+  "eintraege": [
+    {
+      "satz": "t1",
+      "text": "In Alsdorf sorgen vier Mitarbeiter der Stadtentwicklung Alsdorf, kurz SEA, dafür, dass Kinder auf 42 Spielplätzen sicher spielen können.",
+      "start": 0,
+      "end": 136,
+      "geprueft": false,
+      "notwendig": [
+        "s1",
+        "s2"
+      ],
+      "zulaessig": [
+        "s3"
+      ],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c1"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t2",
+      "text": "Sie reinigen und kontrollieren jede Anlage mindestens einmal pro Woche.",
+      "start": 137,
+      "end": 208,
+      "geprueft": false,
+      "notwendig": [
+        "s3"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c2"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t3",
+      "text": "Doch ihre Arbeit wird nicht immer respektiert.",
+      "start": 209,
+      "end": 255,
+      "geprueft": false,
+      "notwendig": [],
+      "zulaessig": [],
+      "relation": "keine_quelle",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c3"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t4",
+      "text": "Vor zwei Wochen fand das Team rasiermesserscharfe Scherben rund um eine Rutsche.",
+      "start": 257,
+      "end": 337,
+      "geprueft": false,
+      "notwendig": [
+        "s7"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c4"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t5",
+      "text": "Julian Ohnesorg, Mitarbeiter der SEA, berichtet, die Scherben seien so verteilt gewesen, als solle sich jemand daran verletzen.",
+      "start": 338,
+      "end": 465,
+      "geprueft": false,
+      "notwendig": [
+        "s8"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c5"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t6",
+      "text": "Auch Nägel habe das Team schon aus dem Sand gefiltert, sagt Sven Klaber, stellvertretender Vorarbeiter.",
+      "start": 466,
+      "end": 569,
+      "geprueft": false,
+      "notwendig": [
+        "s10",
+        "s11"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c6"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t7",
+      "text": "Jede Woche sammeln die Männer fast 200 Müllsäcke ein.",
+      "start": 570,
+      "end": 623,
+      "geprueft": false,
+      "notwendig": [
+        "s12"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c7"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t8",
+      "text": "Vorarbeiter Sascha Koch erklärt, dass Entsorgung, Pflege und Material viel Geld kosteten.",
+      "start": 624,
+      "end": 713,
+      "geprueft": false,
+      "notwendig": [
+        "s14"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c8"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t9",
+      "text": "Besonders betroffen von Müll und Schäden seien Spielplätze in Alsdorf-Mitte, Hoengen und Mariadorf.",
+      "start": 715,
+      "end": 814,
+      "geprueft": false,
+      "notwendig": [
+        "s30",
+        "s31"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c9"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t10",
+      "text": "In Zopp, Begau und Bettendorf seien die Anlagen dagegen meist sauberer.",
+      "start": 815,
+      "end": 886,
+      "geprueft": false,
+      "notwendig": [],
+      "zulaessig": [],
+      "relation": "keine_quelle",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c10"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t11",
+      "text": "Im Annapark finde das Team immer wieder Sperrmüll, Lachgasflaschen, Messer oder sogar Tierkadaver.",
+      "start": 887,
+      "end": 985,
+      "geprueft": false,
+      "notwendig": [
+        "s37"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c11"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t12",
+      "text": "Auch Hundekot ist ein großes Problem.",
+      "start": 987,
+      "end": 1024,
+      "geprueft": false,
+      "notwendig": [
+        "s38"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c12"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t13",
+      "text": "Im Burgpark leeren die Mitarbeiter regelmäßig mehr als 20 Mülleimer, die laut Klaber oft voller Hundekot seien.",
+      "start": 1025,
+      "end": 1136,
+      "geprueft": false,
+      "notwendig": [
+        "s38",
+        "s39"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c13"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t14",
+      "text": "Manche Menschen stellten zudem Sperrmüll ab, kurz nachdem die Reinigungskräfte ihre Runde beendet hätten.",
+      "start": 1137,
+      "end": 1242,
+      "geprueft": false,
+      "notwendig": [],
+      "zulaessig": [],
+      "relation": "keine_quelle",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c14"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t15",
+      "text": "Die Mitarbeiter erleben aber auch Beschimpfungen und Übergriffe.",
+      "start": 1244,
+      "end": 1308,
+      "geprueft": false,
+      "notwendig": [],
+      "zulaessig": [],
+      "relation": "keine_quelle",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c15"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t16",
+      "text": "Klaber berichtet von einem Hähnchenschenkel, der nach ihm geworfen worden sei.",
+      "start": 1309,
+      "end": 1387,
+      "geprueft": false,
+      "notwendig": [
+        "s52"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c16"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t17",
+      "text": "An einem Spielplatz zwischen Wichernstraße und Im Brühl hatte ein Bewohner vor drei Jahren mit einer Armbrust auf junge Menschen geschossen und eine Frau schwer verletzt.",
+      "start": 1388,
+      "end": 1558,
+      "geprueft": false,
+      "notwendig": [
+        "s54",
+        "s56",
+        "s57"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c17"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t18",
+      "text": "Trotzdem schätzt das Team seine Arbeit und den Zusammenhalt.",
+      "start": 1560,
+      "end": 1620,
+      "geprueft": false,
+      "notwendig": [
+        "s63"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c18"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t19",
+      "text": "Daniel Mannheims, Mitarbeiter der SEA, sagt, es mache Freude, etwas für die Allgemeinheit und das Stadtbild zu tun.",
+      "start": 1621,
+      "end": 1736,
+      "geprueft": false,
+      "notwendig": [
+        "s19"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c19"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t20",
+      "text": "Besonders motivierend seien Eltern und Anwohner, die sich für gepflegte Spielplätze bedanken.",
+      "start": 1737,
+      "end": 1830,
+      "geprueft": false,
+      "notwendig": [],
+      "zulaessig": [],
+      "relation": "keine_quelle",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c20"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    }
+  ]
+}

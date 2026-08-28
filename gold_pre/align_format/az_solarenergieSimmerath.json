@@ -1,0 +1,1299 @@
+{
+  "meta": {
+    "titel": "Simmerath Während die Windkraft seit Jahren das Aushängeschild der Energiewende in der Nordeifel ist, setzt die Gemeinde Simmerath nun verstärkt auch auf Sonnenenergie.",
+    "quelle": "Eigenes Paar",
+    "modell": "stufe0-2 · multilingual-e5-large-instruct + nli-mdeberta-2mil7",
+    "statistik": {
+      "saetze": 23,
+      "claims": 19,
+      "embeddings": 42,
+      "nli_paare": 19,
+      "dauer_s": 9.2
+    },
+    "ratelimit": {
+      "model": "multilingual-e5-large-instruct",
+      "checked_at": 1787355155.7717142,
+      "x-ratelimit-limit-minute": "15",
+      "x-ratelimit-remaining-minute": "13",
+      "x-ratelimit-limit-hour": "900",
+      "x-ratelimit-remaining-hour": "874",
+      "x-ratelimit-limit-day": "2000",
+      "x-ratelimit-remaining-day": "1971",
+      "x-ratelimit-limit-second": "2",
+      "x-ratelimit-remaining-second": "1",
+      "ratelimit-reset": "1",
+      "ratelimit-limit": "2",
+      "ratelimit-remaining": "1"
+    }
+  },
+  "article": {
+    "text": "Simmerath Während die Windkraft seit Jahren das Aushängeschild der Energiewende in der Nordeifel ist, setzt die Gemeinde Simmerath nun verstärkt auch auf Sonnenenergie. Auf vier gemeindeeigenen Gebäuden sollen in den kommenden Monaten Photovoltaikanlagen mit Batteriespeichern installiert werden. Die Maßnahmen werden über den Gigawattpakt des Rheinischen Reviers gefördert.\n\nGeplant sind Anlagen auf dem Feuerwehrgerätehaus in Lammersdorf, der Grundschule Steckenborn, einer Flüchtlingsunterkunft sowie der Sekundarschule am Standort Simmerath. Die beiden Schulstandorte erhalten dabei die leistungsstärksten Anlagen mit jeweils 15,48 Kilowattpeak (kWp). Ergänzt werden sie durch Batteriespeicher mit Kapazitäten von 24,5 beziehungsweise 28 Kilowattstunden. Auf dem Feuerwehrgerätehaus und der Flüchtlingsunterkunft sind jeweils Anlagen mit 5,59 Kilowattpeak und Batteriespeichern von sieben Kilowattstunden vorgesehen.\n\nIn einem Jahr betriebsbereit\n\nDie Gemeinde hat jetzt ein Interessenbekundungsverfahren gestartet, um geeignete Fachfirmen für Planung, Lieferung und Montage der Anlagen zu finden. Aufgrund der Förderbedingungen müssen sämtliche Anlagen spätestens bis zum 30. Juni 2027 betriebsbereit sein.\n\nMit dem Ausbau der Photovoltaik setzt Simmerath seinen Weg als eine der energiestärksten Kommunen Nordrhein-Westfalens konsequent fort. Bereits heute produziert die Gemeinde mehr Strom aus erneuerbaren Energien, als sie selbst verbraucht. Nach Angaben der Gemeinde wurden schon 2022 rund 187 Prozent des eigenen Strombedarfs regenerativ erzeugt. Simmerath war damit schon damals Stromexporteur.\n\nBesondere Stellung\n\nAuch die Zahlen für 2023 belegen die besondere Stellung der Gemeinde; es wurden auf Simmerather Gemeindegebiet rund 131 Gigawattstunden Strom aus erneuerbaren Energien erzeugt. Davon entfielen 111 Gigawattstunden auf Windkraft, 13 Gigawattstunden auf Photovoltaik, sechs Gigawattstunden auf Biomasse und eine Gigawattstunde auf Wasserkraft. Dem stand ein örtlicher Stromverbrauch von lediglich 115 Gigawattstunden gegenüber.\n\nDer Löwenanteil stammt weiterhin aus den Windparks rund um Lammersdorf. Durch die Erweiterung des Windparks Simmerath im Jahr 2024 dürfte die regenerative Stromerzeugung inzwischen sogar noch höher liegen. Offizielle Gesamtzahlen für 2024 und 2025 liegen bislang zwar noch nicht vor, doch Simmerath gehört schon heute zu den wenigen Kommunen in Nordrhein-Westfalen, die ihren Strombedarf rechnerisch vollständig aus erneuerbaren Energien decken können.\n\nMit den geplanten Solaranlagen auf kommunalen Gebäuden wird die Energiewende nun auch auf den Dächern von Schulen, Feuerwehr und öffentlichen Einrichtungen sichtbar. Für die Gemeinde bedeutet dies nicht nur einen Beitrag zum Klimaschutz, sondern langfristig auch geringere Energiekosten und eine größere Unabhängigkeit von steigenden Strompreisen.(hes)",
+    "sentences": [
+      {
+        "id": "s1",
+        "start": 0,
+        "end": 168,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Simmerath Während die Windkraft seit Jahren das Aushängeschild der Energiewende in der Nordeifel ist, setzt die Gemeinde Simmerath nun verstärkt auch auf Sonnenenergie."
+      },
+      {
+        "id": "s2",
+        "start": 169,
+        "end": 296,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Auf vier gemeindeeigenen Gebäuden sollen in den kommenden Monaten Photovoltaikanlagen mit Batteriespeichern installiert werden."
+      },
+      {
+        "id": "s3",
+        "start": 297,
+        "end": 374,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Die Maßnahmen werden über den Gigawattpakt des Rheinischen Reviers gefördert."
+      },
+      {
+        "id": "s4",
+        "start": 376,
+        "end": 545,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Geplant sind Anlagen auf dem Feuerwehrgerätehaus in Lammersdorf, der Grundschule Steckenborn, einer Flüchtlingsunterkunft sowie der Sekundarschule am Standort Simmerath."
+      },
+      {
+        "id": "s5",
+        "start": 546,
+        "end": 655,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Die beiden Schulstandorte erhalten dabei die leistungsstärksten Anlagen mit jeweils 15,48 Kilowattpeak (kWp)."
+      },
+      {
+        "id": "s6",
+        "start": 656,
+        "end": 758,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Ergänzt werden sie durch Batteriespeicher mit Kapazitäten von 24,5 beziehungsweise 28 Kilowattstunden."
+      },
+      {
+        "id": "s7",
+        "start": 759,
+        "end": 920,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Auf dem Feuerwehrgerätehaus und der Flüchtlingsunterkunft sind jeweils Anlagen mit 5,59 Kilowattpeak und Batteriespeichern von sieben Kilowattstunden vorgesehen."
+      },
+      {
+        "id": "s8",
+        "start": 922,
+        "end": 950,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "In einem Jahr betriebsbereit"
+      },
+      {
+        "id": "s9",
+        "start": 952,
+        "end": 1101,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "Die Gemeinde hat jetzt ein Interessenbekundungsverfahren gestartet, um geeignete Fachfirmen für Planung, Lieferung und Montage der Anlagen zu finden."
+      },
+      {
+        "id": "s10",
+        "start": 1102,
+        "end": 1211,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "Aufgrund der Förderbedingungen müssen sämtliche Anlagen spätestens bis zum 30. Juni 2027 betriebsbereit sein."
+      },
+      {
+        "id": "s11",
+        "start": 1213,
+        "end": 1348,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Mit dem Ausbau der Photovoltaik setzt Simmerath seinen Weg als eine der energiestärksten Kommunen Nordrhein-Westfalens konsequent fort."
+      },
+      {
+        "id": "s12",
+        "start": 1349,
+        "end": 1451,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Bereits heute produziert die Gemeinde mehr Strom aus erneuerbaren Energien, als sie selbst verbraucht."
+      },
+      {
+        "id": "s13",
+        "start": 1452,
+        "end": 1558,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Nach Angaben der Gemeinde wurden schon 2022 rund 187 Prozent des eigenen Strombedarfs regenerativ erzeugt."
+      },
+      {
+        "id": "s14",
+        "start": 1559,
+        "end": 1607,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Simmerath war damit schon damals Stromexporteur."
+      },
+      {
+        "id": "s15",
+        "start": 1609,
+        "end": 1627,
+        "block": "body",
+        "level": 0,
+        "paragraph": 5,
+        "text": "Besondere Stellung"
+      },
+      {
+        "id": "s16",
+        "start": 1629,
+        "end": 1805,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "Auch die Zahlen für 2023 belegen die besondere Stellung der Gemeinde; es wurden auf Simmerather Gemeindegebiet rund 131 Gigawattstunden Strom aus erneuerbaren Energien erzeugt."
+      },
+      {
+        "id": "s17",
+        "start": 1806,
+        "end": 1969,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "Davon entfielen 111 Gigawattstunden auf Windkraft, 13 Gigawattstunden auf Photovoltaik, sechs Gigawattstunden auf Biomasse und eine Gigawattstunde auf Wasserkraft."
+      },
+      {
+        "id": "s18",
+        "start": 1970,
+        "end": 2053,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "Dem stand ein örtlicher Stromverbrauch von lediglich 115 Gigawattstunden gegenüber."
+      },
+      {
+        "id": "s19",
+        "start": 2055,
+        "end": 2126,
+        "block": "body",
+        "level": 0,
+        "paragraph": 7,
+        "text": "Der Löwenanteil stammt weiterhin aus den Windparks rund um Lammersdorf."
+      },
+      {
+        "id": "s20",
+        "start": 2127,
+        "end": 2260,
+        "block": "body",
+        "level": 0,
+        "paragraph": 7,
+        "text": "Durch die Erweiterung des Windparks Simmerath im Jahr 2024 dürfte die regenerative Stromerzeugung inzwischen sogar noch höher liegen."
+      },
+      {
+        "id": "s21",
+        "start": 2261,
+        "end": 2507,
+        "block": "body",
+        "level": 0,
+        "paragraph": 7,
+        "text": "Offizielle Gesamtzahlen für 2024 und 2025 liegen bislang zwar noch nicht vor, doch Simmerath gehört schon heute zu den wenigen Kommunen in Nordrhein-Westfalen, die ihren Strombedarf rechnerisch vollständig aus erneuerbaren Energien decken können."
+      },
+      {
+        "id": "s22",
+        "start": 2509,
+        "end": 2674,
+        "block": "body",
+        "level": 0,
+        "paragraph": 8,
+        "text": "Mit den geplanten Solaranlagen auf kommunalen Gebäuden wird die Energiewende nun auch auf den Dächern von Schulen, Feuerwehr und öffentlichen Einrichtungen sichtbar."
+      },
+      {
+        "id": "s23",
+        "start": 2675,
+        "end": 2861,
+        "block": "body",
+        "level": 0,
+        "paragraph": 8,
+        "text": "Für die Gemeinde bedeutet dies nicht nur einen Beitrag zum Klimaschutz, sondern langfristig auch geringere Energiekosten und eine größere Unabhängigkeit von steigenden Strompreisen.(hes)"
+      }
+    ]
+  },
+  "transcript": {
+    "text": "Die Gemeinde Simmerath ist seit Jahren vor allem für ihre Windkraft bekannt. Jetzt setzt sie verstärkt auch auf Sonnenenergie und plant Photovoltaikanlagen auf vier eigenen Gebäuden. In den kommenden Monaten sollen auf dem Feuerwehrgerätehaus in Lammersdorf, der Grundschule Steckenborn, einer Flüchtlingsunterkunft und der Sekundarschule am Standort Simmerath Solaranlagen mit Batteriespeichern installiert werden. Gefördert wird das Vorhaben über den Gigawattpakt des Rheinischen Reviers.\n\nDie leistungsstärksten Anlagen sind für die beiden Schulen vorgesehen. Sie sollen jeweils 15,48 Kilowattpeak leisten und Batteriespeicher mit 24,5 beziehungsweise 28 Kilowattstunden erhalten. Auf dem Feuerwehrgerätehaus und der Flüchtlingsunterkunft sind jeweils Anlagen mit 5,59 Kilowattpeak und Speicher mit sieben Kilowattstunden geplant.\n\nUm Fachfirmen für Planung, Lieferung und Montage zu finden, hat die Gemeinde ein Interessenbekundungsverfahren gestartet. Wegen der Förderbedingungen müssen alle Anlagen spätestens bis zum 30. Juni 2027 betriebsbereit sein.\n\nSimmerath zählt bereits zu den energiestärksten Kommunen in Nordrhein-Westfalen. Schon 2022 erzeugte die Gemeinde nach eigenen Angaben rund 187 Prozent ihres Strombedarfs aus erneuerbaren Quellen und war damit Stromexporteur. Im Jahr 2023 entstanden auf dem Gemeindegebiet rund 131 Gigawattstunden Ökostrom. Der größte Anteil, 111 Gigawattstunden, kam aus Windkraft. Photovoltaik lieferte 13 Gigawattstunden, Biomasse sechs und Wasserkraft eine Gigawattstunde. Dem stand ein örtlicher Verbrauch von 115 Gigawattstunden gegenüber.\n\nDer Löwenanteil des Ökostroms stammt weiterhin aus den Windparks rund um Lammersdorf. Durch die Erweiterung des Windparks Simmerath im Jahr 2024 dürfte die Stromerzeugung inzwischen sogar noch höher liegen. Offizielle Gesamtzahlen für 2024 und 2025 gibt es zwar noch nicht, doch Simmerath gehört schon heute zu den wenigen Kommunen in Nordrhein-Westfalen, die ihren Strombedarf rechnerisch vollständig aus erneuerbaren Energien decken können. Mit den neuen Solaranlagen will die Gemeinde Klimaschutz, niedrigere Energiekosten und mehr Unabhängigkeit von steigenden Strompreisen verbinden.",
+    "claims": [
+      {
+        "id": "c1",
+        "start": 0,
+        "end": 76,
+        "text": "Die Gemeinde Simmerath ist seit Jahren vor allem für ihre Windkraft bekannt.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s1",
+            "start": 0,
+            "end": 130,
+            "spans": [
+              [
+                0,
+                9
+              ],
+              [
+                22,
+                43
+              ],
+              [
+                112,
+                130
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.6,
+        "margin": 0.29,
+        "entities": [],
+        "flags": [
+          "nli_widerspruch"
+        ],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 56 % des Claims. · NLI: Fundstelle widerspricht dem Claim (contradiction 0.92).",
+        "scores": {
+          "top": 0.638,
+          "lex": 0.36,
+          "emb": 0.632,
+          "anchor": 0,
+          "nli": 0.001
+        }
+      },
+      {
+        "id": "c2",
+        "start": 77,
+        "end": 182,
+        "text": "Jetzt setzt sie verstärkt auch auf Sonnenenergie und plant Photovoltaikanlagen auf vier eigenen Gebäuden.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s2",
+            "start": 169,
+            "end": 254,
+            "spans": [
+              [
+                169,
+                177
+              ],
+              [
+                194,
+                202
+              ],
+              [
+                235,
+                254
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s1",
+            "start": 102,
+            "end": 168,
+            "spans": [
+              [
+                102,
+                107
+              ],
+              [
+                135,
+                168
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.74,
+        "margin": 0.22,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "vier",
+            "norm": "4",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s2 + s1 (s1 erklärt zusätzlich 36 %). · Fundstellen erklären 81 % des Claims.",
+        "scores": {
+          "top": 0.624,
+          "lex": 0.325,
+          "emb": 0.664,
+          "anchor": 0,
+          "nli": 0.939
+        }
+      },
+      {
+        "id": "c3",
+        "start": 183,
+        "end": 415,
+        "text": "In den kommenden Monaten sollen auf dem Feuerwehrgerätehaus in Lammersdorf, der Grundschule Steckenborn, einer Flüchtlingsunterkunft und der Sekundarschule am Standort Simmerath Solaranlagen mit Batteriespeichern installiert werden.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s4",
+            "start": 389,
+            "end": 545,
+            "spans": [
+              [
+                389,
+                497
+              ],
+              [
+                508,
+                545
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s2",
+            "start": 217,
+            "end": 296,
+            "spans": [
+              [
+                217,
+                234
+              ],
+              [
+                259,
+                296
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.87,
+        "margin": 0.25,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s4 + s2 (s2 erklärt zusätzlich 27 %). · Fundstellen erklären 95 % des Claims.",
+        "scores": {
+          "top": 0.84,
+          "lex": 0.751,
+          "emb": 0.782,
+          "anchor": 0,
+          "nli": 0.996
+        }
+      },
+      {
+        "id": "c4",
+        "start": 416,
+        "end": 490,
+        "text": "Gefördert wird das Vorhaben über den Gigawattpakt des Rheinischen Reviers.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s3",
+            "start": 327,
+            "end": 374,
+            "spans": [
+              [
+                327,
+                374
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.87,
+        "margin": 0.66,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 83 % des Claims.",
+        "scores": {
+          "top": 0.89,
+          "lex": 0.693,
+          "emb": 0.901,
+          "anchor": 0,
+          "nli": 0.972
+        }
+      },
+      {
+        "id": "c5",
+        "start": 492,
+        "end": 562,
+        "text": "Die leistungsstärksten Anlagen sind für die beiden Schulen vorgesehen.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s5",
+            "start": 546,
+            "end": 617,
+            "spans": [
+              [
+                546,
+                556
+              ],
+              [
+                591,
+                617
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s7",
+            "start": 830,
+            "end": 920,
+            "spans": [
+              [
+                830,
+                837
+              ],
+              [
+                909,
+                920
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.83,
+        "margin": 0.39,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s5 + s7 (s7 erklärt zusätzlich 25 %). · Fundstellen erklären 95 % des Claims.",
+        "scores": {
+          "top": 0.712,
+          "lex": 0.455,
+          "emb": 0.65,
+          "anchor": 0,
+          "nli": 0.961
+        }
+      },
+      {
+        "id": "c6",
+        "start": 563,
+        "end": 683,
+        "text": "Sie sollen jeweils 15,48 Kilowattpeak leisten und Batteriespeicher mit 24,5 beziehungsweise 28 Kilowattstunden erhalten.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s6",
+            "start": 681,
+            "end": 758,
+            "spans": [
+              [
+                681,
+                697
+              ],
+              [
+                718,
+                758
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s5",
+            "start": 572,
+            "end": 655,
+            "spans": [
+              [
+                572,
+                580
+              ],
+              [
+                630,
+                655
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.88,
+        "margin": 0.26,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "15,48",
+            "norm": "15.48",
+            "status": "match"
+          },
+          {
+            "type": "zahl",
+            "surface": "24,5",
+            "norm": "24.5",
+            "status": "match"
+          },
+          {
+            "type": "zahl",
+            "surface": "28",
+            "norm": "28",
+            "status": "match"
+          },
+          {
+            "type": "person",
+            "surface": "Batteriespeicher",
+            "norm": "batteriespeicher",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Anker 15.48 eindeutig in s5 · Anker 24.5 eindeutig in s6 · Anker 28 eindeutig in s6 · Name „Batteriespeicher“ eindeutig in s6 · Verdichtet aus s6 + s5 (s5 erklärt zusätzlich 25 %). · Fundstellen erklären 95 % des Claims.",
+        "scores": {
+          "top": 0.888,
+          "lex": 0.548,
+          "emb": 0.792,
+          "anchor": 0.38,
+          "nli": 0.99
+        }
+      },
+      {
+        "id": "c7",
+        "start": 684,
+        "end": 833,
+        "text": "Auf dem Feuerwehrgerätehaus und der Flüchtlingsunterkunft sind jeweils Anlagen mit 5,59 Kilowattpeak und Speicher mit sieben Kilowattstunden geplant.",
+        "relation": "bedeutung_verschoben",
+        "sources": [
+          {
+            "sentence": "s7",
+            "start": 759,
+            "end": 908,
+            "spans": [
+              [
+                759,
+                859
+              ],
+              [
+                886,
+                908
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.93,
+        "margin": 0.36,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "5,59",
+            "norm": "5.59",
+            "status": "match"
+          },
+          {
+            "type": "zahl",
+            "surface": "sieben",
+            "norm": "7",
+            "status": "match"
+          }
+        ],
+        "flags": [
+          "bedeutung_verschoben"
+        ],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 89 % des Claims. · Bedeutung verschoben — die Fundstelle widerspricht dem Claim nicht, stützt ihn aber auch nicht vollständig (entailment 0.20, neutral 0.79).",
+        "scores": {
+          "top": 0.947,
+          "lex": 0.83,
+          "emb": 0.971,
+          "anchor": 0,
+          "nli": 0.204
+        }
+      },
+      {
+        "id": "c8",
+        "start": 835,
+        "end": 956,
+        "text": "Um Fachfirmen für Planung, Lieferung und Montage zu finden, hat die Gemeinde ein Interessenbekundungsverfahren gestartet.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s9",
+            "start": 952,
+            "end": 1101,
+            "spans": [
+              [
+                952,
+                964
+              ],
+              [
+                979,
+                1018
+              ],
+              [
+                1033,
+                1078
+              ],
+              [
+                1094,
+                1101
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.96,
+        "margin": 0.72,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 100 % des Claims.",
+        "scores": {
+          "top": 0.931,
+          "lex": 0.816,
+          "emb": 0.927,
+          "anchor": 0,
+          "nli": 0.928
+        }
+      },
+      {
+        "id": "c9",
+        "start": 957,
+        "end": 1058,
+        "text": "Wegen der Förderbedingungen müssen alle Anlagen spätestens bis zum 30. Juni 2027 betriebsbereit sein.",
+        "relation": "bedeutung_verschoben",
+        "sources": [
+          {
+            "sentence": "s10",
+            "start": 1115,
+            "end": 1211,
+            "spans": [
+              [
+                1115,
+                1132
+              ],
+              [
+                1150,
+                1211
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.95,
+        "margin": 0.69,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "30",
+            "norm": "30",
+            "status": "match"
+          },
+          {
+            "type": "datum",
+            "surface": "2027",
+            "norm": "2027",
+            "status": "match"
+          }
+        ],
+        "flags": [
+          "bedeutung_verschoben"
+        ],
+        "wortlaut": {
+          "quelle": "s10",
+          "aenderungen": [
+            {
+              "claim": "Wegen",
+              "quelle": "Aufgrund",
+              "nah": false,
+              "aehnlichkeit": 0.31
+            },
+            {
+              "claim": "alle",
+              "quelle": "sämtliche",
+              "nah": false,
+              "aehnlichkeit": 0.31
+            }
+          ]
+        },
+        "note": "Anker 30 eindeutig in s10 · Anker 2027 eindeutig in s10 · Fundstellen erklären 89 % des Claims. · Bedeutung verschoben — die Fundstelle widerspricht dem Claim nicht, stützt ihn aber auch nicht vollständig (entailment 0.24, neutral 0.75).",
+        "scores": {
+          "top": 0.979,
+          "lex": 0.852,
+          "emb": 1,
+          "anchor": 0.38,
+          "nli": 0.239
+        }
+      },
+      {
+        "id": "c10",
+        "start": 1060,
+        "end": 1140,
+        "text": "Simmerath zählt bereits zu den energiestärksten Kommunen in Nordrhein-Westfalen.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s11",
+            "start": 1251,
+            "end": 1331,
+            "spans": [
+              [
+                1251,
+                1260
+              ],
+              [
+                1285,
+                1331
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.81,
+        "margin": 0.18,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 84 % des Claims.",
+        "scores": {
+          "top": 0.797,
+          "lex": 0.442,
+          "emb": 0.786,
+          "anchor": 0,
+          "nli": 0.595
+        }
+      },
+      {
+        "id": "c11",
+        "start": 1141,
+        "end": 1285,
+        "text": "Schon 2022 erzeugte die Gemeinde nach eigenen Angaben rund 187 Prozent ihres Strombedarfs aus erneuerbaren Quellen und war damit Stromexporteur.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s13",
+            "start": 1452,
+            "end": 1558,
+            "spans": [
+              [
+                1452,
+                1512
+              ],
+              [
+                1517,
+                1537
+              ],
+              [
+                1550,
+                1558
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s14",
+            "start": 1592,
+            "end": 1607,
+            "spans": [
+              [
+                1592,
+                1607
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s16",
+            "start": 1689,
+            "end": 1805,
+            "spans": [
+              [
+                1689,
+                1697
+              ],
+              [
+                1765,
+                1787
+              ],
+              [
+                1797,
+                1805
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.8,
+        "margin": 0.36,
+        "entities": [
+          {
+            "type": "datum",
+            "surface": "2022",
+            "norm": "2022",
+            "status": "match"
+          },
+          {
+            "type": "prozent",
+            "surface": "187 Prozent",
+            "norm": "187 %",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Anker 2022 eindeutig in s13 · Anker 187 % eindeutig in s13 · Verdichtet aus s13 + s14 + s16 (s14 erklärt zusätzlich 14 %, s16 erklärt zusätzlich 12 %). · Fundstellen erklären 75 % des Claims.",
+        "scores": {
+          "top": 0.849,
+          "lex": 0.487,
+          "emb": 0.85,
+          "anchor": 0.38,
+          "nli": 0.992
+        }
+      },
+      {
+        "id": "c12",
+        "start": 1286,
+        "end": 1367,
+        "text": "Im Jahr 2023 entstanden auf dem Gemeindegebiet rund 131 Gigawattstunden Ökostrom.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s16",
+            "start": 1649,
+            "end": 1770,
+            "spans": [
+              [
+                1649,
+                1653
+              ],
+              [
+                1689,
+                1697
+              ],
+              [
+                1725,
+                1770
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.7,
+        "margin": 0.34,
+        "entities": [
+          {
+            "type": "datum",
+            "surface": "2023",
+            "norm": "2023",
+            "status": "match"
+          },
+          {
+            "type": "zahl",
+            "surface": "131",
+            "norm": "131",
+            "status": "match"
+          },
+          {
+            "type": "ort",
+            "surface": "Ökostrom",
+            "norm": "ökostrom",
+            "status": "unbelegt"
+          }
+        ],
+        "flags": [
+          "ident_unbelegt"
+        ],
+        "wortlaut": null,
+        "note": "Anker 2023 eindeutig in s16 · Anker 131 eindeutig in s16 · Fundstellen erklären 64 % des Claims. · „Ökostrom“ im Artikel nicht auffindbar.",
+        "scores": {
+          "top": 0.832,
+          "lex": 0.412,
+          "emb": 0.753,
+          "anchor": 0.38,
+          "nli": 0.903
+        }
+      },
+      {
+        "id": "c13",
+        "start": 1368,
+        "end": 1426,
+        "text": "Der größte Anteil, 111 Gigawattstunden, kam aus Windkraft.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s17",
+            "start": 1822,
+            "end": 1952,
+            "spans": [
+              [
+                1822,
+                1855
+              ],
+              [
+                1860,
+                1875
+              ],
+              [
+                1900,
+                1915
+              ],
+              [
+                1938,
+                1952
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s19",
+            "start": 2055,
+            "end": 2126,
+            "spans": [
+              [
+                2055,
+                2126
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.66,
+        "margin": 0.36,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "111",
+            "norm": "111",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Anker 111 eindeutig in s17 · Verdichtet aus s17 + s19 (s19 erklärt zusätzlich 10 %). · Fundstellen erklären 63 % des Claims.",
+        "scores": {
+          "top": 0.764,
+          "lex": 0.36,
+          "emb": 0.689,
+          "anchor": 0.3,
+          "nli": 0.997
+        }
+      },
+      {
+        "id": "c14",
+        "start": 1427,
+        "end": 1520,
+        "text": "Photovoltaik lieferte 13 Gigawattstunden, Biomasse sechs und Wasserkraft eine Gigawattstunde.",
+        "relation": "bedeutung_verschoben",
+        "sources": [
+          {
+            "sentence": "s17",
+            "start": 1826,
+            "end": 1969,
+            "spans": [
+              [
+                1826,
+                1841
+              ],
+              [
+                1857,
+                1969
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.81,
+        "margin": 0.51,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "13",
+            "norm": "13",
+            "status": "match"
+          },
+          {
+            "type": "zahl",
+            "surface": "sechs",
+            "norm": "6",
+            "status": "match"
+          },
+          {
+            "type": "person",
+            "surface": "Photovoltaik",
+            "norm": "photovoltaik",
+            "status": "match"
+          }
+        ],
+        "flags": [
+          "bedeutung_verschoben"
+        ],
+        "wortlaut": null,
+        "note": "Anker 13 eindeutig in s17 · Fundstellen erklären 80 % des Claims. · Bedeutung verschoben — die Fundstelle widerspricht dem Claim nicht, stützt ihn aber auch nicht vollständig (entailment 0.08, neutral 0.91).",
+        "scores": {
+          "top": 0.9,
+          "lex": 0.632,
+          "emb": 0.827,
+          "anchor": 0.3,
+          "nli": 0.084
+        }
+      },
+      {
+        "id": "c15",
+        "start": 1521,
+        "end": 1589,
+        "text": "Dem stand ein örtlicher Verbrauch von 115 Gigawattstunden gegenüber.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s18",
+            "start": 1970,
+            "end": 2053,
+            "spans": [
+              [
+                1970,
+                1993
+              ],
+              [
+                2023,
+                2053
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.89,
+        "margin": 0.44,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "115",
+            "norm": "115",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Anker 115 eindeutig in s18 · Fundstellen erklären 94 % des Claims.",
+        "scores": {
+          "top": 0.924,
+          "lex": 0.789,
+          "emb": 0.837,
+          "anchor": 0.3,
+          "nli": 0.785
+        }
+      },
+      {
+        "id": "c16",
+        "start": 1591,
+        "end": 1676,
+        "text": "Der Löwenanteil des Ökostroms stammt weiterhin aus den Windparks rund um Lammersdorf.",
+        "relation": "bedeutung_verschoben",
+        "sources": [
+          {
+            "sentence": "s19",
+            "start": 2055,
+            "end": 2126,
+            "spans": [
+              [
+                2055,
+                2126
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.81,
+        "margin": 0.52,
+        "entities": [],
+        "flags": [
+          "bedeutung_verschoben"
+        ],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 77 % des Claims. · Bedeutung verschoben — die Fundstelle widerspricht dem Claim nicht, stützt ihn aber auch nicht vollständig (entailment 0.07, neutral 0.93).",
+        "scores": {
+          "top": 0.907,
+          "lex": 0.867,
+          "emb": 0.839,
+          "anchor": 0,
+          "nli": 0.069
+        }
+      },
+      {
+        "id": "c17",
+        "start": 1677,
+        "end": 1797,
+        "text": "Durch die Erweiterung des Windparks Simmerath im Jahr 2024 dürfte die Stromerzeugung inzwischen sogar noch höher liegen.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s20",
+            "start": 2127,
+            "end": 2260,
+            "spans": [
+              [
+                2127,
+                2192
+              ],
+              [
+                2210,
+                2260
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.98,
+        "margin": 0.48,
+        "entities": [
+          {
+            "type": "datum",
+            "surface": "2024",
+            "norm": "2024",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 100 % des Claims.",
+        "scores": {
+          "top": 0.972,
+          "lex": 0.938,
+          "emb": 0.958,
+          "anchor": 0.12,
+          "nli": 0.854
+        }
+      },
+      {
+        "id": "c18",
+        "start": 1798,
+        "end": 2033,
+        "text": "Offizielle Gesamtzahlen für 2024 und 2025 gibt es zwar noch nicht, doch Simmerath gehört schon heute zu den wenigen Kommunen in Nordrhein-Westfalen, die ihren Strombedarf rechnerisch vollständig aus erneuerbaren Energien decken können.",
+        "relation": "bedeutung_verschoben",
+        "sources": [
+          {
+            "sentence": "s21",
+            "start": 2261,
+            "end": 2507,
+            "spans": [
+              [
+                2261,
+                2302
+              ],
+              [
+                2328,
+                2507
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.97,
+        "margin": 0.48,
+        "entities": [
+          {
+            "type": "datum",
+            "surface": "2024",
+            "norm": "2024",
+            "status": "match"
+          },
+          {
+            "type": "datum",
+            "surface": "2025",
+            "norm": "2025",
+            "status": "match"
+          },
+          {
+            "type": "person",
+            "surface": "Offizielle Gesamtzahlen",
+            "norm": "offizielle gesamtzahlen",
+            "status": "match"
+          }
+        ],
+        "flags": [
+          "bedeutung_verschoben"
+        ],
+        "wortlaut": {
+          "quelle": "s21",
+          "aenderungen": [
+            {
+              "claim": "gibt es",
+              "quelle": "liegen bislang",
+              "nah": false,
+              "aehnlichkeit": 0.29
+            }
+          ]
+        },
+        "note": "Anker 2025 eindeutig in s21 · Name „Offizielle Gesamtzahlen“ eindeutig in s21 · Fundstellen erklären 96 % des Claims. · Bedeutung verschoben — die Fundstelle widerspricht dem Claim nicht, stützt ihn aber auch nicht vollständig (entailment 0.02, neutral 0.98).",
+        "scores": {
+          "top": 0.98,
+          "lex": 0.91,
+          "emb": 0.973,
+          "anchor": 0.38,
+          "nli": 0.02
+        }
+      },
+      {
+        "id": "c19",
+        "start": 2034,
+        "end": 2179,
+        "text": "Mit den neuen Solaranlagen will die Gemeinde Klimaschutz, niedrigere Energiekosten und mehr Unabhängigkeit von steigenden Strompreisen verbinden.",
+        "relation": "bedeutung_verschoben",
+        "sources": [
+          {
+            "sentence": "s23",
+            "start": 2675,
+            "end": 2861,
+            "spans": [
+              [
+                2675,
+                2691
+              ],
+              [
+                2734,
+                2745
+              ],
+              [
+                2782,
+                2795
+              ],
+              [
+                2813,
+                2861
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.7,
+        "margin": 0.33,
+        "entities": [],
+        "flags": [
+          "bedeutung_verschoben"
+        ],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 63 % des Claims. · Bedeutung verschoben — die Fundstelle widerspricht dem Claim nicht, stützt ihn aber auch nicht vollständig (entailment 0.03, neutral 0.97).",
+        "scores": {
+          "top": 0.741,
+          "lex": 0.477,
+          "emb": 0.752,
+          "anchor": 0,
+          "nli": 0.032
+        }
+      }
+    ]
+  }
+}

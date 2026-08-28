@@ -111,7 +111,18 @@ button{font:inherit;color:inherit;cursor:pointer}
 
 /* ---------------------------------------------------------- Textspannen */
 .seg{transition:background-color .12s,box-shadow .12s}
-.seg[data-block="headline"]{font-size:23px;line-height:1.25;font-weight:700;letter-spacing:-.01em}
+/* Überschriften nach ausgezeichneter Ebene, nicht nach Absatzposition. */
+.seg[data-block="heading"]{
+  display:block;margin:16px 0 7px;font-weight:700;letter-spacing:-.01em;line-height:1.25}
+.seg[data-block="heading"]:first-child{margin-top:0}
+.seg[data-level="1"]{font-size:23px}
+.seg[data-level="2"]{font-size:19px}
+.seg[data-level="3"]{font-size:17px}
+.seg[data-level="4"],.seg[data-level="5"],.seg[data-level="6"]{
+  font-size:15px;letter-spacing:.02em}
+/* Die Auszeichnung selbst („# ", „<h2>", „===") liegt außerhalb jeder
+   Satzspanne und würde sonst als Rohtext stehen bleiben. */
+.seg.markup{display:none}
 
 /* Transkript: Relation über die Unterstreichung kodiert */
 .seg.claim{cursor:pointer;border-bottom:2px solid var(--rel-direkt);padding-bottom:1px}
@@ -151,12 +162,21 @@ body[data-allsrc="1"] .doc--article .seg.is-source{background:rgba(211,255,1,.38
 
 .seg:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
 
-/* ------------------------------------------------------------ Inspector */
+/* ------------------------------------------------------------ Inspector
+   Der Inspector schwebt ÜBER dem Text und schiebt nichts weg. Vorher lag
+   er als eigenes Flex-Kind zwischen Text und Legende: Beim Öffnen wuchs
+   die Spalte über die Fensterhöhe hinaus, und weil beide Leisten
+   `flex:0 0 auto` sind, rutschte die Legende aus dem sichtbaren Bereich.
+   Jetzt sitzt er absolut über der Legende — die bleibt immer sichtbar,
+   und das Layout bewegt sich beim Hovern nicht mehr. */
+.bottombar{position:relative;flex:0 0 auto;z-index:40}
 .inspector{
-  flex:0 0 auto;background:var(--ink);color:#E8EFEE;
+  position:absolute;bottom:100%;left:0;right:0;
+  background:var(--ink);color:#E8EFEE;
   padding:0 18px;max-height:0;overflow:hidden;transition:max-height .18s ease;
+  box-shadow:0 -10px 24px rgba(11,32,33,.22);
 }
-.inspector.open{max-height:230px;padding:13px 18px 15px}
+.inspector.open{max-height:min(230px, 42vh);padding:13px 18px 15px;overflow:auto}
 .insp-grid{display:flex;gap:26px;align-items:flex-start;flex-wrap:wrap}
 .insp-col{min-width:0}
 .insp-k{font-family:var(--cond);font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:#7F9A9C;margin-bottom:4px}
@@ -256,6 +276,15 @@ dialog::backdrop{background:rgba(27,40,45,.42)}
 .ent .warn{color:#B98A1F;font-weight:600}
 .insp-scores{font-family:var(--cond);font-size:13px;letter-spacing:.05em;
   color:var(--ink-soft);white-space:nowrap}
+/* Wortlaut-Diff: Quelle -> Claim, nahe Ersetzungen hervorgehoben */
+.diff{font-size:13px;line-height:1.5;margin-bottom:2px}
+.diff code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px}
+.diff .was{color:#B9CCCE}
+.diff .ist{color:#fff}
+.diff .arr{color:#7F9A9C;margin:0 5px}
+.diff.is-nah .ist{color:var(--conflict);font-weight:600}
+.diff.is-nah .was{text-decoration:line-through;text-decoration-thickness:1px}
+.diff .sim{color:#7F9A9C;margin-left:6px;font-family:var(--cond);font-size:11.5px}
 /* ------------------------------------------------------------ Kontingent */
 .quota-wrap{position:relative;display:inline-flex}
 .quota-panel{position:absolute;top:calc(100% + 8px);left:0;z-index:40;
@@ -394,6 +423,7 @@ dialog::backdrop{background:rgba(27,40,45,.42)}
   </section>
 </div>
 
+<div class="bottombar">
 <div class="inspector" id="inspector"></div>
 
 <footer class="legend">
@@ -409,6 +439,7 @@ dialog::backdrop{background:rgba(27,40,45,.42)}
     <button id="btn-export">Export</button>
   </span>
 </footer>
+</div>
 
 <dialog id="dlg">
   <div class="dlg-head">
@@ -479,7 +510,8 @@ function build(){
   /* --- Artikel: Sätze + Quellspannen als Spannen-Liste --- */
   const aSpans = [];
   for (const s of data.article.sentences)
-    aSpans.push({ kind:'sent', key:s.id, start:s.start, end:s.end, block:s.block });
+    aSpans.push({ kind:'sent', key:s.id, start:s.start, end:s.end,
+                  block:s.block, level:s.level || 0 });
   for (const c of data.transcript.claims)
     c.sources.forEach((src, i) => {
       // Eine Quelle kann aus mehreren Belegregionen bestehen. Alle teilen
@@ -498,10 +530,16 @@ function build(){
     const srcs = seg.ids.filter(x => x.kind === 'src');
     const cls = ['seg'];
     if (srcs.length) cls.push('is-source');
+    // Lücken, die nur aus Überschriften-Auszeichnung bestehen, ausblenden
+    if (!sent && !srcs.length &&
+        /^\s*(?:#{1,6}|={2,}|-{2,}|<\/?h[1-6][^>]*>)\s*$/i
+          .test(data.article.text.slice(seg.start, seg.end)))
+      cls.push('markup');
     const attrs = [
       `class="${cls.join(' ')}"`,
       sent ? `data-sent="${sent.key}"` : '',
       sent ? `data-block="${sent.block}"` : '',
+      sent && sent.level ? `data-level="${sent.level}"` : '',
       srcs.length ? `data-src="${srcs.map(s=>s.key).join(',')}"` : '',
       srcs.length ? `data-claims="${[...new Set(srcs.map(s=>s.claim))].join(',')}"` : '',
     ].filter(Boolean).join(' ');
@@ -519,7 +557,7 @@ function build(){
                        .sort((a,b) => (a.end-a.start) - (b.end-b.start));
     const lead = ids[0];
     const cls = ['seg','claim',`rel-${lead.relation}`];
-    if ((lead.flags||[]).includes('zahlkonflikt')) cls.push('has-conflict');
+    if (hatKonflikt(lead)) cls.push('has-conflict');
     if (ids.length > 1) cls.push('nested');
     return `<span class="${cls.join(' ')}" tabindex="0" role="button"
               data-claim="${lead.id}"
@@ -561,6 +599,15 @@ function buildRail(){
   });
 }
 
+/* Harte Befunde, die den Claim rot färben. Zahlkonflikt war der erste;
+   Identifier- und Wortlautabweichung sind dieselbe Klasse — eine konkret
+   benennbare Kollision zwischen Claim und Fundstelle. */
+const KONFLIKT_FLAGS = ['zahlkonflikt','ort_konflikt','kuerzel_konflikt',
+                        'wortlaut_abweichung','widerspruch_wortgleich'];
+function hatKonflikt(c){
+  return (c.flags||[]).some(f => KONFLIKT_FLAGS.includes(f));
+}
+
 /* --- QC-Befunde --- */
 function findings(){
   const cs = data.transcript.claims;
@@ -569,6 +616,15 @@ function findings(){
       ids: cs.filter(c => (c.flags||[]).includes('zahlkonflikt')).map(c=>c.id) },
     { key:'unbelegt', label:'Zahl unbelegt',
       ids: cs.filter(c => (c.flags||[]).includes('zahl_unbelegt')).map(c=>c.id) },
+    { key:'identkonflikt', label:'Name/Kürzel abweichend', alert:true,
+      ids: cs.filter(c => (c.flags||[]).includes('ort_konflikt')
+                       || (c.flags||[]).includes('kuerzel_konflikt')).map(c=>c.id) },
+    { key:'identunbelegt', label:'Name/Kürzel unbelegt',
+      ids: cs.filter(c => (c.flags||[]).includes('ident_unbelegt')).map(c=>c.id) },
+    { key:'wortlaut', label:'Wortlaut abweichend', alert:true,
+      ids: cs.filter(c => (c.flags||[]).includes('wortlaut_abweichung')).map(c=>c.id) },
+    { key:'wortgleich', label:'Widerspruch bei Wortgleichheit', alert:true,
+      ids: cs.filter(c => (c.flags||[]).includes('widerspruch_wortgleich')).map(c=>c.id) },
     { key:'uneinig', label:'Signale uneinig',
       ids: cs.filter(c => (c.flags||[]).includes('signale_uneinig')).map(c=>c.id) },
     { key:'verschoben', label:'Bedeutung verschoben',
@@ -640,7 +696,7 @@ function apply(){
     const hit = claims.find(id => act.has(id));
     if (hit){
       const c = claimById.get(hit);
-      const conflict = (c.flags||[]).includes('zahlkonflikt');
+      const conflict = hatKonflikt(c);
       const cls = act.get(hit);
       el.classList.add('src-on');
       if (cls !== 'on' && cls !== 'rev') el.classList.add(cls);
@@ -685,8 +741,12 @@ function renderInspector(ids, hotSents){
   const id = hoverClaim || ids[ids.length-1];
   if (!id){ box.classList.remove('open'); box.innerHTML=''; return; }
   const c = claimById.get(id);
-  const conflict = (c.flags||[]).includes('zahlkonflikt');
+  const conflict = hatKonflikt(c);
   const nliW = (c.flags||[]).includes('nli_widerspruch');
+  const identK = (c.flags||[]).includes('ort_konflikt')
+              || (c.flags||[]).includes('kuerzel_konflikt');
+  const wortK = (c.flags||[]).includes('wortlaut_abweichung');
+  const wglK = (c.flags||[]).includes('widerspruch_wortgleich');
   const attr = attributionsform(c);
 
   const meter = (label, v, bad) => `
@@ -697,6 +757,16 @@ function renderInspector(ids, hotSents){
     </div>`;
 
   const ents = (c.entities||[]).map(e => {
+    // Identifier tragen keine Normform, die von der Oberfläche abweicht —
+    // „→ langenharm" neben „Langenharm" wäre nur Rauschen.
+    if ((e.type === 'ort' || e.type === 'kuerzel')) {
+      const mark = e.status === 'konflikt' ? 'bad' : 'warn';
+      const sym  = e.status === 'konflikt' ? '≠' : '?';
+      const rest = e.status === 'konflikt'
+        ? `<span class="bad">Artikel: ${e.quelle_surface}</span>`
+        : '<span class="warn">nicht im Artikel gefunden</span>';
+      return `<div class="ent"><span class="${mark}">${sym}</span><span>${e.surface}</span> ${rest}</div>`;
+    }
     if (e.status === 'konflikt')
       return `<div class="ent"><span class="bad">≠</span><span>${e.surface} <code>→ ${e.norm}</code></span>
        <span class="bad">Artikel: ${e.quelle_surface} <code>→ ${e.quelle_norm}</code></span></div>`;
@@ -705,6 +775,15 @@ function renderInspector(ids, hotSents){
        <span class="warn">nicht im Artikel gefunden</span></div>`;
     return `<div class="ent"><span class="ok">=</span><span>${e.surface} <code>→ ${e.norm}</code></span></div>`;
   }).join('') || '<div class="ent" style="color:#7F9A9C">keine</div>';
+
+  // Wortlaut-Diff: nur Ersetzungen, „nah" heißt fast identisch und damit
+  // eher Vertauschung als Umformulierung.
+  const diffList = (c.wortlaut && c.wortlaut.aenderungen || [])
+    .map(a => `<div class="diff${a.nah ? ' is-nah' : ''}">
+        <span class="was"><code>${esc(a.quelle)}</code></span><span class="arr">→</span
+        ><span class="ist"><code>${esc(a.claim)}</code></span
+        ><span class="sim">${a.aehnlichkeit.toFixed(2).replace('.',',')}</span></div>`)
+    .join('');
 
   const srcList = c.sources.length
     ? c.sources.map(s => {
@@ -722,7 +801,10 @@ function renderInspector(ids, hotSents){
         <div class="insp-k">${c.id} · ${c.relation.replace(/_/g,' ')}
           ${attr ? `<span class="badge" style="margin-left:6px">${attr}</span>` : ''}
           ${conflict ? '<span class="badge alert" style="margin-left:6px">Zahlkonflikt</span>' : ''}
-          ${nliW ? '<span class="badge alert" style="margin-left:6px">NLI-Widerspruch</span>' : ''}</div>
+          ${nliW ? '<span class="badge alert" style="margin-left:6px">NLI-Widerspruch</span>' : ''}
+          ${identK ? '<span class="badge alert" style="margin-left:6px">Name/Kürzel abweichend</span>' : ''}
+          ${wortK ? '<span class="badge alert" style="margin-left:6px">Wortlaut abweichend</span>' : ''}
+          ${wglK ? '<span class="badge alert" style="margin-left:6px">Widerspruch bei Wortgleichheit</span>' : ''}</div>
         <div class="insp-v quote">„${esc(c.text)}“</div>
       </div>
       ${c.relation === 'keine_quelle'
@@ -742,6 +824,9 @@ function renderInspector(ids, hotSents){
       <div class="insp-col" style="flex:1 1 260px">
         <div class="insp-k">Fundstellen</div>${srcList}
       </div>
+      ${diffList ? `<div class="insp-col" style="flex:1 1 300px">
+        <div class="insp-k">Wortlaut gegen ${c.wortlaut.quelle}</div>${diffList}
+      </div>` : ''}
       ${c.note ? `<div class="insp-col" style="flex:1 1 100%">
         <div class="insp-k">Notiz</div><div class="insp-note">${esc(c.note)}</div></div>` : ''}
     </div>`;
@@ -786,7 +871,7 @@ function drawWires(act){
       const y1 = Math.max(4, Math.min(g.height - 4, ay));
       const y2 = Math.max(4, Math.min(g.height - 4, ty));
       const versch = c.relation === 'bedeutung_verschoben';
-      const stroke = (c.flags||[]).includes('zahlkonflikt') ? 'var(--conflict)'
+      const stroke = hatKonflikt(c) ? 'var(--conflict)'
                     : cls === 'on' ? (versch ? 'var(--rel-verschoben)' : 'var(--lime-deep)')
                     : `var(--${cls})`;
       const p = document.createElementNS('http://www.w3.org/2000/svg','path');
@@ -1127,6 +1212,21 @@ for (const el of [$('#in-article'), $('#in-transcript')])
   el.addEventListener('keydown', e => {
     if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') run();
   });
+
+for (const el of [$('#in-article'), $('#in-transcript')]) {
+  el.addEventListener('dragover', e => { e.preventDefault(); e.dataTransfer.dropEffect = 'copy'; });
+  el.addEventListener('drop', e => {
+    const f = e.dataTransfer.files && e.dataTransfer.files[0];
+    if (!f || !/\.txt$/i.test(f.name)) return;
+    e.preventDefault();
+    f.text().then(t => {
+      el.value = t;
+      persist();
+      stat.className = 'intake-status';
+      stat.textContent = f.name + ' geladen';
+    });
+  });
+}
 
 build();
 if (document.fonts && document.fonts.ready)

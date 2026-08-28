@@ -16,8 +16,8 @@ import time
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
-import nli
-import saia
+from stufe3 import nli
+from stufe2 import saia
 from pipeline import align
 
 ROOT = Path(__file__).resolve().parent
@@ -115,25 +115,56 @@ class Handler(BaseHTTPRequestHandler):
             self._json(400, {"error": f"Unbekanntes NLI-Modell: {nli_model}"})
             return
 
+        t0 = time.time()
         counter = {"n": 0, "nli": 0}
         embed_fn = None
         if model:
+            # 'api' oder 'lokal' — beides läuft durch dieselbe Funktion,
+            # und die Dauer bedeutet je nach Weg etwas ganz anderes.
+            woher = saia.backend(model)
+
             def embed_fn(texts, is_query):
                 counter["n"] += len(texts)
-                return saia.embed(texts, model=model, api_key=api_key,
-                                  is_query=is_query)
+                # Das lokale Modell wird beim ersten `embed` nachgeladen.
+                # Vorher anstossen, damit die Ladezeit (gut 30s) nicht in
+                # die gemessene Rechenzeit rutscht — sonst sieht der erste
+                # Aufruf um Groessenordnungen langsamer aus als er ist und
+                # der Vergleich mit der API wird wertlos. Der Aufruf ist
+                # gecacht und damit ab dem zweiten Mal kostenlos.
+                if woher == "lokal":
+                    saia.load_local(model)
+                t_start = time.time()
+                vecs = saia.embed(texts, model=model, api_key=api_key, is_query=is_query)
+                dauer = time.time() - t_start
+                art = "Claims" if is_query else "Artikelsätze"
+                print(f"    [{woher}] {model}: {len(texts)} {art} in "
+                      f"{dauer:.1f}s "
+                      f"({dauer / max(len(texts), 1) * 1000:.0f} ms/Stück)",
+                      flush=True)
+                return vecs
 
         nli_fn = None
         if nli_model:
             def nli_fn(pairs):
                 counter["nli"] += len(pairs)
-                return nli.classify(pairs, model=nli_model)
+                # Startzeile bleibt: der Cross-Encoder ist der längste
+                # Einzelschritt, und der Viewer soll nicht stumm hängen.
+                print(f"    [lokal] {nli_model}: {len(pairs)} Paare …",
+                      flush=True)
+                nli.load_nli(nli_model)      # Ladezeit aus der Messung halten
+                t_start = time.time()
+                probs = nli.classify(pairs, model=nli_model)
+                dauer = time.time() - t_start
+                print(f"    [lokal] {nli_model}: {len(pairs)} Paare in "
+                      f"{dauer:.1f}s "
+                      f"({dauer / max(len(pairs), 1) * 1000:.0f} ms/Paar)",
+                      flush=True)
+                return probs
 
         label = model or "ohne Embeddings"
         if nli_model:
             label += f" + {nli_model}"
 
-        t0 = time.time()
         try:
             result = align(article, transcript, embed_fn=embed_fn,
                            model_label=label, nli_fn=nli_fn)

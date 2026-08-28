@@ -1,0 +1,1278 @@
+{
+  "meta": {
+    "titel": "Aachen Jeder Euro wird umgedreht: In Zeiten der städtischen Haushaltssperre steht die Kultur, eine kostenintensive Angelegenheit, besonders unter Druck.",
+    "quelle": "Eigenes Paar",
+    "modell": "stufe0-2 · multilingual-e5-large-instruct + nli-mdeberta-2mil7",
+    "statistik": {
+      "saetze": 22,
+      "claims": 20,
+      "embeddings": 42,
+      "nli_paare": 20,
+      "dauer_s": 19
+    },
+    "ratelimit": {
+      "model": "multilingual-e5-large-instruct",
+      "checked_at": 1787357556.3286767,
+      "x-ratelimit-limit-minute": "15",
+      "x-ratelimit-remaining-minute": "13",
+      "x-ratelimit-limit-hour": "900",
+      "x-ratelimit-remaining-hour": "887",
+      "x-ratelimit-limit-day": "2000",
+      "x-ratelimit-remaining-day": "1987",
+      "x-ratelimit-limit-second": "2",
+      "x-ratelimit-remaining-second": "1",
+      "ratelimit-reset": "1",
+      "ratelimit-limit": "2",
+      "ratelimit-remaining": "1"
+    }
+  },
+  "article": {
+    "text": "Aachen Jeder Euro wird umgedreht: In Zeiten der städtischen Haushaltssperre steht die Kultur, eine kostenintensive Angelegenheit, besonders unter Druck. Im städtischen Kulturausschuss haben nun der Kulturbetrieb, das Theater Aachen und die Volkshochschule konkrete Sparmaßnahmen und Sparziele vorgelegt. Zudem wird es moderate Erhöhungen der Eintrittsgelder im Theater – etwa 1 bis 2 Euro pro Karte, bei den Abos zwischen 5 und 10 Euro – geben. Auch die Kursentgelte für die mehr als 1000 Angebote der Volkshochschule werden erstmals nach vielen Jahren steigen. Mit großer Mehrheit hat die Politik die Preiserhöhungen abgesegnet. Lediglich Robert Stoddon von der Linken stimmte mit Blick auf die Teilhabe von Menschen mit niedrigen Einkommen dagegen.\n\nAuslastung gestiegen\n\nIm Dschungel der roten Zahlen gibt es eine positive Nachricht: Das Theater Aachen hat sowohl die Auslastung als auch die Besucherzahlen gesteigert. Die Auslastung stieg von 67,4 auf 72,4 Prozent, die Zahl der Besucherinnen und Besucher von 55.738 auf 63.076. Stichtag war jeweils der 30. April für die Zählung. Allerdings stieg zugleich die Zahl der Vorstellungen von 180 auf 220. Die höheren Besucherzahlen sind daher wohl auch auf das erweiterte Angebot zurückzuführen.\n\nNichtsdestotrotz zeigten sich die Politiker erfreut, allen voran die Grünen-Politikerin Karin Schmitt-Promny: „Es sind nicht nur quantitativ mehr Menschen ins Theater gegangen, sondern ich meine, dass sich das Publikum verjüngt hat“, schilderte sie ihre Einschätzung, die die Verwaltungsdirektorin des Theaters, Miriam Sasserath, bestätigte. Auch die Vorsitzende des Kulturausschusses Margrete Schmeer (CDU) gab zu, dass die Zahlen „etwas in die Waagschale werfen, das uns in die Hände spielt.“\n\nInsgesamt sei die Kultur in Zeiten der Haushaltssperre jedoch „ein Ritt auf der Rasierklinge, auf der man möglichst unverletzt entlangreiten will“, sagte Schmeer. Ganz unbeschädigt wird das nicht vonstattengehen: Der Kulturbetrieb der Stadt Aachen muss im laufenden Jahr insgesamt 200.000 Euro einsparen, darunter sind allein 32.100 Euro aus den Mitteln für die freie Kulturszene, der sogenannten Kaste, zu bewältigen, wie die neue Leiterin des Kulturbetriebs, Lena tom Dieck, mitteilte. Vor allen Dingen Hermann-Josef Pilgram (Grüne) wollte diese Kürzungen für die freie Szene nicht hinnehmen, stimmte als einziger gegen den Antrag und verwies dabei auf die unverhältnismäßige Belastung von Künstlerinnen und Künstlern, die nicht institutionell abgesichert seien.\n\nBei den Institutionen gibt es über die Personalkosten mehr Einsparpotential: Die Verwaltungsleiterin der Volkshochschule, Christiane Gielsdorf, kündigte an, dass ihr Haus vor allem über die Verzögerung von Nachbesetzungen für Langzeiterkrankte oder Kräfte, die in Rente gehen, 68.000 Euro einsparen werde. Das Theater Aachen will ebenfalls über die Personalkosten (spätere oder weniger Nachbesetzungen, Aussetzen von Volontariaten), aber auch über die bereits erhöhten Eintrittsgelder und geringere Sachkosten rund 150.000 Euro einsparen.\n\nInsgesamt, darin ließen die Beratungen im Kulturausschuss keinen Zweifel, ist das erst der Anfang einer Konsolidierungsphase, in der jeder Kostenpunkt in der Kultur genau unter die Lupe genommen werden wird. Kulturdezernent Heinrich Brötz war im Zuge dieser Kleinteiligkeit schon froh darüber, dass er im Vorhinein „in langen Verhandlungsrunden“ mit der Kämmerei pauschale Sparziele vereinbaren konnte: „Bisher mussten selbst kleinere Ausgaben, und das geht runter bis auf 500 Euro, einzeln vorgelegt und begründet werden“, sagte Brötz.\n\nSpendensammlungen\n\nWie stark die Kultur unter Druck steht, macht auch ein Antrag deutlich, der einstimmig beschlossen wurde: Bei den städtischen Kulturveranstaltungen, die gratis angeboten werden, sollen demnächst Spenden gesammelt werden. Dafür soll der Kulturbetrieb nun ein Konzept aufzusetzen, damit man die Stadt nicht nur den Klingelbeutel rumgehen lässt, sondern auch eine Möglichkeit findet, auf digitalem Weg im Stile von Fundraising Geld einzusammeln.",
+    "sentences": [
+      {
+        "id": "s1",
+        "start": 0,
+        "end": 152,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Aachen Jeder Euro wird umgedreht: In Zeiten der städtischen Haushaltssperre steht die Kultur, eine kostenintensive Angelegenheit, besonders unter Druck."
+      },
+      {
+        "id": "s2",
+        "start": 153,
+        "end": 303,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Im städtischen Kulturausschuss haben nun der Kulturbetrieb, das Theater Aachen und die Volkshochschule konkrete Sparmaßnahmen und Sparziele vorgelegt."
+      },
+      {
+        "id": "s3",
+        "start": 304,
+        "end": 444,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Zudem wird es moderate Erhöhungen der Eintrittsgelder im Theater – etwa 1 bis 2 Euro pro Karte, bei den Abos zwischen 5 und 10 Euro – geben."
+      },
+      {
+        "id": "s4",
+        "start": 445,
+        "end": 561,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Auch die Kursentgelte für die mehr als 1000 Angebote der Volkshochschule werden erstmals nach vielen Jahren steigen."
+      },
+      {
+        "id": "s5",
+        "start": 562,
+        "end": 629,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Mit großer Mehrheit hat die Politik die Preiserhöhungen abgesegnet."
+      },
+      {
+        "id": "s6",
+        "start": 630,
+        "end": 750,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Lediglich Robert Stoddon von der Linken stimmte mit Blick auf die Teilhabe von Menschen mit niedrigen Einkommen dagegen."
+      },
+      {
+        "id": "s7",
+        "start": 752,
+        "end": 772,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Auslastung gestiegen"
+      },
+      {
+        "id": "s8",
+        "start": 774,
+        "end": 921,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Im Dschungel der roten Zahlen gibt es eine positive Nachricht: Das Theater Aachen hat sowohl die Auslastung als auch die Besucherzahlen gesteigert."
+      },
+      {
+        "id": "s9",
+        "start": 922,
+        "end": 1084,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Die Auslastung stieg von 67,4 auf 72,4 Prozent, die Zahl der Besucherinnen und Besucher von 55.738 auf 63.076. Stichtag war jeweils der 30. April für die Zählung."
+      },
+      {
+        "id": "s10",
+        "start": 1085,
+        "end": 1245,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Allerdings stieg zugleich die Zahl der Vorstellungen von 180 auf 220. Die höheren Besucherzahlen sind daher wohl auch auf das erweiterte Angebot zurückzuführen."
+      },
+      {
+        "id": "s11",
+        "start": 1247,
+        "end": 1588,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "Nichtsdestotrotz zeigten sich die Politiker erfreut, allen voran die Grünen-Politikerin Karin Schmitt-Promny: „Es sind nicht nur quantitativ mehr Menschen ins Theater gegangen, sondern ich meine, dass sich das Publikum verjüngt hat“, schilderte sie ihre Einschätzung, die die Verwaltungsdirektorin des Theaters, Miriam Sasserath, bestätigte."
+      },
+      {
+        "id": "s12",
+        "start": 1589,
+        "end": 1741,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "Auch die Vorsitzende des Kulturausschusses Margrete Schmeer (CDU) gab zu, dass die Zahlen „etwas in die Waagschale werfen, das uns in die Hände spielt.“"
+      },
+      {
+        "id": "s13",
+        "start": 1743,
+        "end": 1905,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Insgesamt sei die Kultur in Zeiten der Haushaltssperre jedoch „ein Ritt auf der Rasierklinge, auf der man möglichst unverletzt entlangreiten will“, sagte Schmeer."
+      },
+      {
+        "id": "s14",
+        "start": 1906,
+        "end": 2230,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Ganz unbeschädigt wird das nicht vonstattengehen: Der Kulturbetrieb der Stadt Aachen muss im laufenden Jahr insgesamt 200.000 Euro einsparen, darunter sind allein 32.100 Euro aus den Mitteln für die freie Kulturszene, der sogenannten Kaste, zu bewältigen, wie die neue Leiterin des Kulturbetriebs, Lena tom Dieck, mitteilte."
+      },
+      {
+        "id": "s15",
+        "start": 2231,
+        "end": 2507,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Vor allen Dingen Hermann-Josef Pilgram (Grüne) wollte diese Kürzungen für die freie Szene nicht hinnehmen, stimmte als einziger gegen den Antrag und verwies dabei auf die unverhältnismäßige Belastung von Künstlerinnen und Künstlern, die nicht institutionell abgesichert seien."
+      },
+      {
+        "id": "s16",
+        "start": 2509,
+        "end": 2814,
+        "block": "body",
+        "level": 0,
+        "paragraph": 5,
+        "text": "Bei den Institutionen gibt es über die Personalkosten mehr Einsparpotential: Die Verwaltungsleiterin der Volkshochschule, Christiane Gielsdorf, kündigte an, dass ihr Haus vor allem über die Verzögerung von Nachbesetzungen für Langzeiterkrankte oder Kräfte, die in Rente gehen, 68.000 Euro einsparen werde."
+      },
+      {
+        "id": "s17",
+        "start": 2815,
+        "end": 3047,
+        "block": "body",
+        "level": 0,
+        "paragraph": 5,
+        "text": "Das Theater Aachen will ebenfalls über die Personalkosten (spätere oder weniger Nachbesetzungen, Aussetzen von Volontariaten), aber auch über die bereits erhöhten Eintrittsgelder und geringere Sachkosten rund 150.000 Euro einsparen."
+      },
+      {
+        "id": "s18",
+        "start": 3049,
+        "end": 3256,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "Insgesamt, darin ließen die Beratungen im Kulturausschuss keinen Zweifel, ist das erst der Anfang einer Konsolidierungsphase, in der jeder Kostenpunkt in der Kultur genau unter die Lupe genommen werden wird."
+      },
+      {
+        "id": "s19",
+        "start": 3257,
+        "end": 3585,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "Kulturdezernent Heinrich Brötz war im Zuge dieser Kleinteiligkeit schon froh darüber, dass er im Vorhinein „in langen Verhandlungsrunden“ mit der Kämmerei pauschale Sparziele vereinbaren konnte: „Bisher mussten selbst kleinere Ausgaben, und das geht runter bis auf 500 Euro, einzeln vorgelegt und begründet werden“, sagte Brötz."
+      },
+      {
+        "id": "s20",
+        "start": 3587,
+        "end": 3604,
+        "block": "body",
+        "level": 0,
+        "paragraph": 7,
+        "text": "Spendensammlungen"
+      },
+      {
+        "id": "s21",
+        "start": 3606,
+        "end": 3826,
+        "block": "body",
+        "level": 0,
+        "paragraph": 8,
+        "text": "Wie stark die Kultur unter Druck steht, macht auch ein Antrag deutlich, der einstimmig beschlossen wurde: Bei den städtischen Kulturveranstaltungen, die gratis angeboten werden, sollen demnächst Spenden gesammelt werden."
+      },
+      {
+        "id": "s22",
+        "start": 3827,
+        "end": 4048,
+        "block": "body",
+        "level": 0,
+        "paragraph": 8,
+        "text": "Dafür soll der Kulturbetrieb nun ein Konzept aufzusetzen, damit man die Stadt nicht nur den Klingelbeutel rumgehen lässt, sondern auch eine Möglichkeit findet, auf digitalem Weg im Stile von Fundraising Geld einzusammeln."
+      }
+    ]
+  },
+  "transcript": {
+    "text": "Die Kultur in Aachen gerät durch die städtische Haushaltssperre weiter unter Druck. Im Kulturausschuss haben der Kulturbetrieb, das Theater Aachen und die Volkshochschule Sparpläne vorgestellt. Zugleich beschloss die Politik mit großer Mehrheit höhere Eintritts- und Kursgebühren.\n\nIm Theater sollen Karten je nach Kategorie ein bis zwei Euro mehr kosten. Abonnements werden um fünf bis zehn Euro teurer. Auch die Volkshochschule erhöht nach vielen Jahren ihre Entgelte für mehr als 1000 Kursangebote. Robert Stoddon von der Partei Die Linke stimmte dagegen. Er verwies auf die Bedeutung kultureller Teilhabe für Menschen mit geringem Einkommen.\n\nDas Theater Aachen meldet unterdessen steigende Besucherzahlen. Die Auslastung erhöhte sich von 67,4 auf 72,4 Prozent. Bis zum 30. April wurden 63.076 Besucherinnen und Besucher gezählt, nach 55.738 im Vergleichszeitraum zuvor. Allerdings stieg auch die Zahl der Vorstellungen deutlich, von 180 auf 220. Karin Schmitt-Promny, Politikerin der Grünen, erklärte zudem, ihr Eindruck sei, dass sich das Publikum verjüngt habe. Miriam Sasserath, Verwaltungsdirektorin des Theaters Aachen, bestätigte diese Einschätzung.\n\nDer Kulturbetrieb der Stadt Aachen muss im laufenden Jahr 200.000 Euro einsparen. Davon entfallen 32.100 Euro auf die freie Kulturszene. Hermann-Josef Pilgram, Politiker der Grünen, lehnte diese Kürzung als Einziger ab. Er sah freischaffende Künstlerinnen und Künstler unverhältnismäßig belastet.\n\nDie Volkshochschule will 68.000 Euro vor allem durch verzögerte Nachbesetzungen sparen. Das Theater plant Einsparungen von rund 150.000 Euro durch Personalkosten, geringere Sachausgaben und höhere Eintrittsgelder. Zusätzlich sollen bei kostenlosen städtischen Kulturveranstaltungen künftig Spenden gesammelt werden, auch über digitale Fundraising-Angebote.",
+    "claims": [
+      {
+        "id": "c1",
+        "start": 0,
+        "end": 83,
+        "text": "Die Kultur in Aachen gerät durch die städtische Haushaltssperre weiter unter Druck.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s1",
+            "start": 0,
+            "end": 152,
+            "spans": [
+              [
+                0,
+                6
+              ],
+              [
+                48,
+                75
+              ],
+              [
+                86,
+                92
+              ],
+              [
+                146,
+                152
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.8,
+        "margin": 0.3,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 68 % des Claims.",
+        "scores": {
+          "top": 0.785,
+          "lex": 0.408,
+          "emb": 0.886,
+          "anchor": 0,
+          "nli": 0.98
+        }
+      },
+      {
+        "id": "c2",
+        "start": 84,
+        "end": 193,
+        "text": "Im Kulturausschuss haben der Kulturbetrieb, das Theater Aachen und die Volkshochschule Sparpläne vorgestellt.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s2",
+            "start": 168,
+            "end": 255,
+            "spans": [
+              [
+                168,
+                255
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.9,
+        "margin": 0.51,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 76 % des Claims.",
+        "scores": {
+          "top": 0.926,
+          "lex": 0.633,
+          "emb": 1,
+          "anchor": 0,
+          "nli": 0.996
+        }
+      },
+      {
+        "id": "c3",
+        "start": 194,
+        "end": 280,
+        "text": "Zugleich beschloss die Politik mit großer Mehrheit höhere Eintritts- und Kursgebühren.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s5",
+            "start": 562,
+            "end": 597,
+            "spans": [
+              [
+                562,
+                597
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s10",
+            "start": 1102,
+            "end": 1166,
+            "spans": [
+              [
+                1102,
+                1110
+              ],
+              [
+                1159,
+                1166
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s3",
+            "start": 304,
+            "end": 444,
+            "spans": [
+              [
+                304,
+                444
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.68,
+        "margin": 0.25,
+        "entities": [],
+        "flags": [
+          "nli_widerspruch"
+        ],
+        "wortlaut": null,
+        "note": "Verdichtet aus s5 + s10 + s3 (s10 erklärt zusätzlich 24 %, s3 erklärt zusätzlich 11 %). · Fundstellen erklären 67 % des Claims. · NLI: Fundstelle widerspricht dem Claim (contradiction 0.68).",
+        "scores": {
+          "top": 0.602,
+          "lex": 0.389,
+          "emb": 0.682,
+          "anchor": 0,
+          "nli": 0.239
+        }
+      },
+      {
+        "id": "c4",
+        "start": 282,
+        "end": 355,
+        "text": "Im Theater sollen Karten je nach Kategorie ein bis zwei Euro mehr kosten.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s3",
+            "start": 361,
+            "end": 398,
+            "spans": [
+              [
+                361,
+                368
+              ],
+              [
+                382,
+                388
+              ],
+              [
+                393,
+                398
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s1",
+            "start": 0,
+            "end": 152,
+            "spans": [
+              [
+                0,
+                152
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.73,
+        "margin": 0.42,
+        "entities": [
+          {
+            "type": "geld",
+            "surface": "zwei Euro",
+            "norm": "2 EUR",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Anker 2 EUR eindeutig in s3 · Verdichtet aus s3 + s1 (s1 erklärt zusätzlich 16 %). · Fundstellen erklären 67 % des Claims.",
+        "scores": {
+          "top": 0.765,
+          "lex": 0.226,
+          "emb": 0.771,
+          "anchor": 0.3,
+          "nli": 0.995
+        }
+      },
+      {
+        "id": "c5",
+        "start": 356,
+        "end": 404,
+        "text": "Abonnements werden um fünf bis zehn Euro teurer.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s3",
+            "start": 422,
+            "end": 435,
+            "spans": [
+              [
+                422,
+                435
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.5,
+        "margin": 0.33,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "fünf",
+            "norm": "5",
+            "status": "match"
+          },
+          {
+            "type": "geld",
+            "surface": "zehn Euro",
+            "norm": "10 EUR",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Anker 10 EUR eindeutig in s3 · Fundstellen erklären 32 % des Claims.",
+        "scores": {
+          "top": 0.643,
+          "lex": 0.134,
+          "emb": 0.593,
+          "anchor": 0.3,
+          "nli": 0.962
+        }
+      },
+      {
+        "id": "c6",
+        "start": 405,
+        "end": 501,
+        "text": "Auch die Volkshochschule erhöht nach vielen Jahren ihre Entgelte für mehr als 1000 Kursangebote.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s4",
+            "start": 445,
+            "end": 552,
+            "spans": [
+              [
+                445,
+                517
+              ],
+              [
+                539,
+                552
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.87,
+        "margin": 0.59,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "1000",
+            "norm": "1000",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Anker 1000 eindeutig in s4 · Fundstellen erklären 72 % des Claims.",
+        "scores": {
+          "top": 0.934,
+          "lex": 0.656,
+          "emb": 0.974,
+          "anchor": 0.3,
+          "nli": 0.994
+        }
+      },
+      {
+        "id": "c7",
+        "start": 502,
+        "end": 558,
+        "text": "Robert Stoddon von der Partei Die Linke stimmte dagegen.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s6",
+            "start": 630,
+            "end": 750,
+            "spans": [
+              [
+                630,
+                677
+              ],
+              [
+                742,
+                750
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.77,
+        "margin": 0.5,
+        "entities": [
+          {
+            "type": "person",
+            "surface": "Robert Stoddon",
+            "norm": "robert stoddon",
+            "status": "match"
+          },
+          {
+            "type": "ort",
+            "surface": "Partei",
+            "norm": "partei",
+            "status": "unbelegt"
+          }
+        ],
+        "flags": [
+          "ident_unbelegt"
+        ],
+        "wortlaut": null,
+        "note": "Name „Robert Stoddon“ eindeutig in s6 · Fundstellen erklären 76 % des Claims. · „Partei“ im Artikel nicht auffindbar.",
+        "scores": {
+          "top": 0.822,
+          "lex": 0.476,
+          "emb": 0.769,
+          "anchor": 0.2,
+          "nli": 0.996
+        }
+      },
+      {
+        "id": "c8",
+        "start": 559,
+        "end": 645,
+        "text": "Er verwies auf die Bedeutung kultureller Teilhabe für Menschen mit geringem Einkommen.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s6",
+            "start": 696,
+            "end": 741,
+            "spans": [
+              [
+                696,
+                717
+              ],
+              [
+                732,
+                741
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s15",
+            "start": 2380,
+            "end": 2387,
+            "spans": [
+              [
+                2380,
+                2387
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.52,
+        "margin": 0.22,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s6 + s15 (s15 erklärt zusätzlich 24 %). · Fundstellen erklären 60 % des Claims.",
+        "scores": {
+          "top": 0.471,
+          "lex": 0.3,
+          "emb": 0.384,
+          "anchor": 0,
+          "nli": 0.945
+        }
+      },
+      {
+        "id": "c9",
+        "start": 647,
+        "end": 710,
+        "text": "Das Theater Aachen meldet unterdessen steigende Besucherzahlen.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s8",
+            "start": 797,
+            "end": 909,
+            "spans": [
+              [
+                797,
+                803
+              ],
+              [
+                841,
+                855
+              ],
+              [
+                895,
+                909
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.67,
+        "margin": 0.25,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 50 % des Claims.",
+        "scores": {
+          "top": 0.673,
+          "lex": 0.322,
+          "emb": 0.784,
+          "anchor": 0,
+          "nli": 0.999
+        }
+      },
+      {
+        "id": "c10",
+        "start": 711,
+        "end": 765,
+        "text": "Die Auslastung erhöhte sich von 67,4 auf 72,4 Prozent.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s9",
+            "start": 922,
+            "end": 968,
+            "spans": [
+              [
+                922,
+                936
+              ],
+              [
+                947,
+                968
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.69,
+        "margin": 0.36,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "67,4",
+            "norm": "67.4",
+            "status": "match"
+          },
+          {
+            "type": "prozent",
+            "surface": "72,4 Prozent",
+            "norm": "72.4 %",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Anker 67.4 eindeutig in s9 · Anker 72.4 % eindeutig in s9 · Fundstellen erklären 67 % des Claims.",
+        "scores": {
+          "top": 0.828,
+          "lex": 0.372,
+          "emb": 0.703,
+          "anchor": 0.38,
+          "nli": 0.992
+        }
+      },
+      {
+        "id": "c11",
+        "start": 766,
+        "end": 874,
+        "text": "Bis zum 30. April wurden 63.076 Besucherinnen und Besucher gezählt, nach 55.738 im Vergleichszeitraum zuvor.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s9",
+            "start": 983,
+            "end": 1067,
+            "spans": [
+              [
+                983,
+                1009
+              ],
+              [
+                1014,
+                1020
+              ],
+              [
+                1025,
+                1031
+              ],
+              [
+                1058,
+                1067
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.68,
+        "margin": 0.43,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "30",
+            "norm": "30",
+            "status": "match"
+          },
+          {
+            "type": "zahl",
+            "surface": "63.076",
+            "norm": "63076",
+            "status": "match"
+          },
+          {
+            "type": "zahl",
+            "surface": "55.738",
+            "norm": "55738",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Anker 30 eindeutig in s9 · Anker 63076 eindeutig in s9 · Anker 55738 eindeutig in s9 · Fundstellen erklären 49 % des Claims.",
+        "scores": {
+          "top": 0.808,
+          "lex": 0.341,
+          "emb": 0.808,
+          "anchor": 0.38,
+          "nli": 0.775
+        }
+      },
+      {
+        "id": "c12",
+        "start": 875,
+        "end": 1068,
+        "text": "Allerdings stieg auch die Zahl der Vorstellungen deutlich, von 180 auf 220. Karin Schmitt-Promny, Politikerin der Grünen, erklärte zudem, ihr Eindruck sei, dass sich das Publikum verjüngt habe.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s11",
+            "start": 1281,
+            "end": 1474,
+            "spans": [
+              [
+                1281,
+                1290
+              ],
+              [
+                1300,
+                1305
+              ],
+              [
+                1316,
+                1355
+              ],
+              [
+                1457,
+                1474
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s10",
+            "start": 1085,
+            "end": 1153,
+            "spans": [
+              [
+                1085,
+                1101
+              ],
+              [
+                1115,
+                1153
+              ]
+            ],
+            "role": "redundant"
+          }
+        ],
+        "confidence": 0.81,
+        "margin": 0.44,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "180",
+            "norm": "180",
+            "status": "match"
+          },
+          {
+            "type": "zahl",
+            "surface": "220",
+            "norm": "220",
+            "status": "match"
+          },
+          {
+            "type": "person",
+            "surface": "Karin Schmitt-Promny",
+            "norm": "karin schmitt-promny",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Anker 180 eindeutig in s10 · Anker 220 eindeutig in s10 · Name „Karin Schmitt-Promny“ eindeutig in s11 · Verdichtet aus s11 + s10 (Zahlen-Anker in s10). · Fundstellen erklären 76 % des Claims.",
+        "scores": {
+          "top": 0.794,
+          "lex": 0.372,
+          "emb": 0.865,
+          "anchor": 0.2,
+          "nli": 0.527
+        }
+      },
+      {
+        "id": "c13",
+        "start": 1069,
+        "end": 1160,
+        "text": "Miriam Sasserath, Verwaltungsdirektorin des Theaters Aachen, bestätigte diese Einschätzung.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s11",
+            "start": 1406,
+            "end": 1588,
+            "spans": [
+              [
+                1406,
+                1413
+              ],
+              [
+                1501,
+                1588
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.78,
+        "margin": 0.38,
+        "entities": [
+          {
+            "type": "person",
+            "surface": "Miriam Sasserath",
+            "norm": "miriam sasserath",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Name „Miriam Sasserath“ eindeutig in s11 · Fundstellen erklären 90 % des Claims.",
+        "scores": {
+          "top": 0.769,
+          "lex": 0.457,
+          "emb": 0.595,
+          "anchor": 0.2,
+          "nli": 0.994
+        }
+      },
+      {
+        "id": "c14",
+        "start": 1162,
+        "end": 1243,
+        "text": "Der Kulturbetrieb der Stadt Aachen muss im laufenden Jahr 200.000 Euro einsparen.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s14",
+            "start": 1960,
+            "end": 2202,
+            "spans": [
+              [
+                1960,
+                2036
+              ],
+              [
+                2037,
+                2046
+              ],
+              [
+                2188,
+                2202
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.94,
+        "margin": 0.39,
+        "entities": [
+          {
+            "type": "geld",
+            "surface": "200.000 Euro",
+            "norm": "200000 EUR",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Anker 200000 EUR eindeutig in s14 · Fundstellen erklären 100 % des Claims.",
+        "scores": {
+          "top": 0.885,
+          "lex": 0.496,
+          "emb": 0.862,
+          "anchor": 0.3,
+          "nli": 0.9
+        }
+      },
+      {
+        "id": "c15",
+        "start": 1244,
+        "end": 1298,
+        "text": "Davon entfallen 32.100 Euro auf die freie Kulturszene.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s14",
+            "start": 2069,
+            "end": 2122,
+            "spans": [
+              [
+                2069,
+                2080
+              ],
+              [
+                2105,
+                2122
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.65,
+        "margin": 0.38,
+        "entities": [
+          {
+            "type": "geld",
+            "surface": "32.100 Euro",
+            "norm": "32100 EUR",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Anker 32100 EUR eindeutig in s14 · Fundstellen erklären 67 % des Claims.",
+        "scores": {
+          "top": 0.749,
+          "lex": 0.265,
+          "emb": 0.628,
+          "anchor": 0.3,
+          "nli": 0.996
+        }
+      },
+      {
+        "id": "c16",
+        "start": 1299,
+        "end": 1381,
+        "text": "Hermann-Josef Pilgram, Politiker der Grünen, lehnte diese Kürzung als Einziger ab.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s15",
+            "start": 2248,
+            "end": 2358,
+            "spans": [
+              [
+                2248,
+                2276
+              ],
+              [
+                2291,
+                2300
+              ],
+              [
+                2350,
+                2358
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.76,
+        "margin": 0.47,
+        "entities": [
+          {
+            "type": "person",
+            "surface": "Hermann-Josef Pilgram",
+            "norm": "hermann-josef pilgram",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Name „Hermann-Josef Pilgram“ eindeutig in s15 · Fundstellen erklären 68 % des Claims.",
+        "scores": {
+          "top": 0.801,
+          "lex": 0.368,
+          "emb": 0.821,
+          "anchor": 0.2,
+          "nli": 0.997
+        }
+      },
+      {
+        "id": "c17",
+        "start": 1382,
+        "end": 1458,
+        "text": "Er sah freischaffende Künstlerinnen und Künstler unverhältnismäßig belastet.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s15",
+            "start": 2402,
+            "end": 2462,
+            "spans": [
+              [
+                2402,
+                2420
+              ],
+              [
+                2435,
+                2462
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.59,
+        "margin": 0.33,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 62 % des Claims.",
+        "scores": {
+          "top": 0.614,
+          "lex": 0.374,
+          "emb": 0.562,
+          "anchor": 0,
+          "nli": 0.997
+        }
+      },
+      {
+        "id": "c18",
+        "start": 1460,
+        "end": 1547,
+        "text": "Die Volkshochschule will 68.000 Euro vor allem durch verzögerte Nachbesetzungen sparen.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s16",
+            "start": 2614,
+            "end": 2797,
+            "spans": [
+              [
+                2614,
+                2629
+              ],
+              [
+                2684,
+                2730
+              ],
+              [
+                2786,
+                2797
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.77,
+        "margin": 0.28,
+        "entities": [
+          {
+            "type": "geld",
+            "surface": "68.000 Euro",
+            "norm": "68000 EUR",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Anker 68000 EUR eindeutig in s16 · Fundstellen erklären 77 % des Claims.",
+        "scores": {
+          "top": 0.794,
+          "lex": 0.341,
+          "emb": 0.774,
+          "anchor": 0.3,
+          "nli": 0.996
+        }
+      },
+      {
+        "id": "c19",
+        "start": 1548,
+        "end": 1673,
+        "text": "Das Theater plant Einsparungen von rund 150.000 Euro durch Personalkosten, geringere Sachausgaben und höhere Eintrittsgelder.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s17",
+            "start": 2815,
+            "end": 3047,
+            "spans": [
+              [
+                2815,
+                2826
+              ],
+              [
+                2858,
+                2872
+              ],
+              [
+                2978,
+                3036
+              ],
+              [
+                3037,
+                3047
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s19",
+            "start": 3484,
+            "end": 3492,
+            "spans": [
+              [
+                3484,
+                3492
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.85,
+        "margin": 0.4,
+        "entities": [
+          {
+            "type": "geld",
+            "surface": "150.000 Euro",
+            "norm": "150000 EUR",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Anker 150000 EUR eindeutig in s17 · Verdichtet aus s17 + s19 (s19 erklärt zusätzlich 11 %). · Fundstellen erklären 79 % des Claims.",
+        "scores": {
+          "top": 0.849,
+          "lex": 0.464,
+          "emb": 0.892,
+          "anchor": 0.3,
+          "nli": 0.729
+        }
+      },
+      {
+        "id": "c20",
+        "start": 1674,
+        "end": 1816,
+        "text": "Zusätzlich sollen bei kostenlosen städtischen Kulturveranstaltungen künftig Spenden gesammelt werden, auch über digitale Fundraising-Angebote.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s21",
+            "start": 3620,
+            "end": 3826,
+            "spans": [
+              [
+                3620,
+                3626
+              ],
+              [
+                3720,
+                3753
+              ],
+              [
+                3766,
+                3775
+              ],
+              [
+                3801,
+                3826
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s22",
+            "start": 3991,
+            "end": 4029,
+            "spans": [
+              [
+                3991,
+                4000
+              ],
+              [
+                4018,
+                4029
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.75,
+        "margin": 0.39,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s21 + s22 (s22 erklärt zusätzlich 21 %). · Fundstellen erklären 73 % des Claims.",
+        "scores": {
+          "top": 0.684,
+          "lex": 0.422,
+          "emb": 0.723,
+          "anchor": 0,
+          "nli": 0.998
+        }
+      }
+    ]
+  }
+}

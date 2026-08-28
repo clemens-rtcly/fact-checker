@@ -17,6 +17,27 @@ Browser öffnen, Artikel + Transkript einfügen (oder „Beispiel laden"),
 Modell wählen, **Analysieren**. Strg+Enter in den Textfeldern startet
 ebenfalls.
 
+## Aufbau: ein Ordner je Stufe
+
+`pipeline.py` ist nur noch der Orchestrator — jede Rechnung liegt in
+ihrem Stufen-Ordner, Schwellen und Schalter in `konfig.py`:
+
+```
+pipeline.py         Orchestrator: nur die Reihenfolge der Stufen
+konfig.py           CFG (Schwellen), STUFEN (Schalter), VARIANTE (Aushänge)
+kern/               stufenübergreifend: text, segmentierung, lexik,
+                    fusion, entscheidung, ausgabe
+stufe0/             zahlen, anker, verifikation, personen (0.5),
+                    identifier (0.6), wortlaut (0.8)
+stufe1/             abdeckung, zitate, spannen, teilaussagen (1.2),
+                    restabdeckung (1.5)
+stufe2/             saia (Embedding-Backends), skalierung
+stufe3/             nli (Modelle), praemisse, nachentscheidung
+```
+
+Details je Modul in `REFERENZ.md` §4 (nach Stufen geordnet). Einzelne
+Stufen lassen sich je Lauf abschalten — siehe „Stufen abschalten" unten.
+
 ## Embeddings (Stufe 2)
 
 Zwei Backends, gleiche Schnittstelle und gleiche Präfix-Konvention — die
@@ -57,7 +78,7 @@ sofort. Auf einem i5 mit 16 GB braucht `e5-large-instruct` für ein
 typisches Paar (~20 Sätze) einige Sekunden. Schnelltest ohne UI:
 
 ```bash
-python3 saia.py local-multilingual-e5-large-instruct
+python3 stufe2/saia.py local-multilingual-e5-large-instruct
 ```
 
 ### SAIA-API (GWDG / Academic Cloud / KISSKI)
@@ -82,8 +103,8 @@ erstaunlich brauchbar.
 Claims werden mit Instruct-Präfix als Queries eingebettet, Artikelsätze
 roh als Dokumente (asymmetrische E5-/Qwen-Konvention; `e5-base` nutzt
 stattdessen `query:`/`passage:`, `bge-m3` gar kein Präfix). Die
-Kosinuswerte werden robust normalisiert (P10–P95), weil E5-Modelle auch
-für Unverwandtes hohe Rohwerte liefern.
+Kosinuswerte werden robust normalisiert (P10 bis zum Maximum, siehe
+REFERENZ.md), weil E5-Modelle auch für Unverwandtes hohe Rohwerte liefern.
 
 ## NLI (Stufe 3, optional, lokal)
 
@@ -125,8 +146,8 @@ XNLI-Genauigkeit heißt **Hilfssignal, kein Orakel** — die Schwellen
 mit einem Gold-Set seriös kalibrierbar. Schnelltest ohne UI:
 
 ```bash
-python3 nli.py nli-mdeberta-2mil7        # Selbsttest inkl. Labelprüfung
-python3 nli.py nli-gbert-large --debug "Prämisse" "Hypothese"
+python3 stufe3/nli.py nli-mdeberta-2mil7   # Selbsttest inkl. Labelprüfung
+python3 stufe3/nli.py nli-gbert-large --debug "Prämisse" "Hypothese"
 ```
 
 Der Selbsttest ist **kein Ritual, sondern Pflicht vor der ersten
@@ -161,11 +182,14 @@ Bezug, Neutral wäre ein Artefakt).
 | Stufe | Signal | Ergebnis |
 |---|---|---|
 | 0 | Deutsche Zahlwörter → Normform („sechs Komma acht Millionen Euro" → `6800000 EUR`), Geld/Prozent/Jahre/Verhältnisse | Anker-Boni, **Zahlkonflikt**- und **Zahl-unbelegt**-Flags |
-| 0.5 | Personen über NER (`ner.py`), tokenbasierter Namensabgleich | Namens-Anker, **Name-unbelegt**-Meldung |
+| 0.5 | Personen über NER (`stufe0/personen.py`), tokenbasierter Namensabgleich | Namens-Anker, **Name-unbelegt**-Meldung |
+| 0.6 | **Identifier** (`stufe0/identifier.py`): Orte/Organisationen (NER) und Kürzel (XXL, EGNF, B5) — exakter Abgleich, Fast-Identität gilt als Verdacht | **Name/Kürzel abweichend**, **Name/Kürzel unbelegt** |
+| 0.8 | **Wortlaut-Diff**: bei lex ≥ 0,85 Wort für Wort gegen die Primärfundstelle, nur Ersetzungen | **Wortlaut abweichend** |
 | 1 | Char-3/4-Gramm-TF-IDF auf zahlnormalisiertem Text + Positionsprior | Kandidatenranking, Margin |
+| 1.2 | **Teilaussagen** (`stufe1/teilaussagen.py`): Sätze an Konnektoren zerlegen, Rückverweise schützen | feinere Claims, erfundene Satzhälften werden sichtbar |
 | 1.5 | **Restabdeckung**: weitere Quellen nach ihrem Zusatzbeitrag am Claim | **aggregiert**-Erkennung, auch über Absatzgrenzen hinweg |
 | 2 | Embeddings (SAIA oder lokal) + Score-Fusion | robustere Zuordnung bei Umformulierungen |
-| 3 | NLI-Cross-Encoder (lokal, `nli.py`) gegen die Fundstellen | **Bedeutung verschoben**, **NLI-Widerspruch** |
+| 3 | NLI-Cross-Encoder (lokal, `stufe3/nli.py`) gegen die Fundstellen | **Bedeutung verschoben**, **NLI-Widerspruch** |
 
 ### Wie die Aggregation entschieden wird
 
@@ -190,11 +214,31 @@ Relationen: `direkt`, `aggregiert`, `keine_quelle` und — mit NLI —
 bleiben `direkt` mit niedriger Confidence und der Notiz „Unter der
 Direkt-Schwelle" — sichtbar über den Margin-Chip.
 
+### Warum Identifier und Wortlaut eigene Kanäle sind
+
+Die Stufen 1 und 2 messen Ähnlichkeit und lesen Ähnlichkeit als
+Belegtheit. Zeichen-3/4-Gramme sind absichtlich kompositionstolerant,
+damit „Gewerbesteuereinnahmen" auf „Gewerbesteuer" passt — dieselbe
+Toleranz macht „Langenharm" zu einem sehr guten Treffer für
+„Langenhorn". Gemessen an einem absichtlich verfälschten Satz
+(„XXL" → „XL", „Langenhorn" → „Langenharm"): **Abdeckung 1,00 bei
+lex 0,90** — die Verfälschung *erhöht* den Score und ist über keine
+Schwelle erreichbar.
+
+Stufe 0.6 und 0.8 drehen die Logik um: Dort ist **Fast-Identität
+verdächtig** statt bestätigend. Beide vergeben ausschließlich Flags und
+ändern keine Relation; CIP/CIR bleiben davon unberührt.
+
 ## Im Viewer
 
-- Chips oben: Zahlkonflikt · Zahl unbelegt · Signale uneinig · **Bedeutung
-  verschoben** · **NLI-Widerspruch** · ohne Quelle · Margin < 0,10 ·
-  Artikel ungenutzt
+- Chips oben: Zahlkonflikt · Zahl unbelegt · **Name/Kürzel abweichend** ·
+  **Name/Kürzel unbelegt** · **Wortlaut abweichend** · **Widerspruch bei
+  Wortgleichheit** · Signale uneinig · Bedeutung verschoben ·
+  NLI-Widerspruch · ohne Quelle · Margin < 0,10 · Artikel ungenutzt
+- Der Inspector zeigt bei fast wörtlicher Übernahme eine Spalte
+  **Wortlaut**: jede Ersetzung als `Quelle → Claim` mit ihrer
+  Zeichenähnlichkeit. Rot markiert sind die nahen Paare — „XXL" → „XL"
+  ist eine Vertauschung, „Gemeinde" → „Ort" eine Wortwahl
 - Inspector zeigt die Roh-Scores (top/lex/emb/anker/nli) je Claim — zum
   Schwellen-Tuning — sowie die **Attributionsform** („wörtlich" /
   „Paraphrase", aus lex/emb abgeleitet; Design-Space der CHI-Studien zu
@@ -209,17 +253,40 @@ Direkt-Schwelle" — sichtbar über den Margin-Chip.
   `bedeutung_verschoben`, das Flag `nli_widerspruch` und `scores.nli`
   erweitert — ältere Viewer zeigen solche Claims ohne eigenen Stil)
 
+## Stufen abschalten
+
+Jede Stufe außer Stufe 1 lässt sich je Lauf abschalten — zur Messung,
+was sie beiträgt, oder um Kosten zu sparen (`--ohne 0.5` spart z. B.
+alle spaCy-Aufrufe):
+
+```bash
+python3 batch.py laeufe/voll -o laeufe/ohne05 --ohne 0.5
+python3 batch.py laeufe/voll -o laeufe/kern --ohne 0,0.5,0.6,0.8,1.5
+```
+
+Kürzel sind Nummern oder Namen (`wortlaut`, `identifier`, …); `0`
+schaltet Anker **und** Zahlen-Verifikation. Bei Abweichung vom Standard
+steht die Schalterstellung als `meta.stufen` im Ergebnis — Läufe mit
+allen Stufen bleiben byte-identisch zu vorher. Alle Schalter und der
+Messworkflow: `REFERENZ.md` §5, Beispiele in `BEFEHLE.md`.
+
 ## Tuning
 
-Alle Schwellen und Gewichte in `pipeline.py` → `CFG` (Fusionsgewichte,
+Alle Schwellen und Gewichte in `konfig.py` → `CFG` (Fusionsgewichte,
 `t_direct`/`t_none`, `residual_min_nah`/`residual_min_fern`, `frage_faktor`, Anker-Boni,
-`nli_entail_min`/`nli_contra_min`). Die Restabdeckung ist der
+`nli_entail_min`/`nli_contra_min`, `diff_lex_min`/`diff_nah_min`,
+`nli_wortgleich_contra`/`nli_wortgleich_lex`). Die Restabdeckung ist der
 wichtigste Regler für die Aggregation: kleiner = mehr Mehrfachquellen. Sinnvoller
 Workflow: 30–50 Paare durchschieben, Fälle mit Margin < 0,10 ansehen,
 Schwellen nachziehen.
 
 ## Grenzen (bewusst)
 
+- `inferiert` wird weiterhin nicht vergeben. Vor einer Entscheidung
+  misst `inferiert_ablation.py`, ob die Richtungsasymmetrie
+  (Quelle→Claim gegen Claim→Quelle) bei diesem Modell überhaupt
+  Signal trägt: `python3 inferiert_ablation.py --kontrolle` bzw.
+  mit exportierten Läufen als Argument.
 - `inferiert` wird weiterhin nicht vergeben. Das NLI liefert zwar das
   nötige Entailment-Signal, aber die saubere Definition (entailt bei
   niedriger lexikalischer Überlappung = Interpretation) braucht erst
@@ -232,21 +299,66 @@ Schwellen nachziehen.
 - Claims = Transkriptsätze; feineres Claim-Splitting kommt später.
 - Teilspannen nur über Zahlen-Anker, kein Token-Alignment.
 - Personenprüfung ist heuristisch (kapitalisierte Namensfolgen).
+- Die Identifier-Prüfung (0.6) braucht für Orte und Organisationen spaCy.
+  Im Regex-Rückfall sind PER/LOC/ORG nicht trennbar; dann läuft nur die
+  Kürzelprüfung, die kein Modell braucht.
+- Die Endungsliste in `identifier.py` ist eine geschlossene Klasse. Was
+  dort fehlt, erzeugt einen Fehlalarm; was zu viel darin steht, macht die
+  Prüfung blind. Gemessen an einem Paar (10 Claims): 0 Fehlalarme, beide
+  eingebauten Verfälschungen gefunden — eine Validierung ist das nicht.
+- Der Wortlaut-Diff meldet **nur Ersetzungen**. Auslassungen sind beim
+  Zusammenfassen der Normalfall; sie mitzumelden würde die Spalte
+  unbrauchbar machen. Ein weggelassener Nebensatz fällt also nicht auf.
+- Unterhalb von `diff_lex_min` gibt es keinen Diff. Eine Verfälschung in
+  einem stark umformulierten Claim bleibt damit unsichtbar — dafür ist NLI
+  das einzige Instrument.
 
 ## Dateien
 
 ```
 app.py              Server (nur Standardbibliothek), /api/align
-pipeline.py         Stufen 0–2: Segmentierung, Fusion, Entscheidung
-german_numbers.py   Zahlwort-Parser + numerische Entities
-ner.py              Personenerkennung (spaCy o. Rückfall) + Namensabgleich
-saia.py             Embeddings: SAIA-API + lokales CPU-Backend
-nli.py              NLI (Stufe 3): lokaler Cross-Encoder, 3 Modelle
-zitate.py           Zitatblöcke + Sprecherkontext für die Suche
-nli_ablation.py     Diagnose: welcher Umbau kippt ein NLI-Urteil?
-nli_form_check.py   Gegenprobe: prüft Inhalt oder nur Sprachform?
-index.html          Split-View-Frontend mit Eingabe-Panel (wird direkt
-                    gepflegt; build_frontend.py ist der historische
-                    Generator aus dem Original-Prototyp)
-build_frontend.py   erzeugt index.html aus dem Original-Prototyp
+pipeline.py         Orchestrator — ruft die Stufen in fester Reihenfolge
+konfig.py           CFG (Schwellen), STUFEN (Schalter), VARIANTE (Aushänge)
+
+kern/text.py        HTML/Markdown → Klartext, Absatzgrenzen
+kern/segmentierung.py  Absätze → Sätze mit exakten Offsets, Überschriften
+kern/lexik.py       TF-IDF (Hook erzeuge_tfidf), Abdeckung, Ko-Lokalität
+kern/fusion.py      Signalfusion zu einem Score je Claim×Satz
+kern/entscheidung.py   Primärzuordnung, Margin, Confidence
+kern/ausgabe.py     Ergebnis-JSON (Vertrag mit Viewer und eval)
+
+stufe0/zahlen.py    Zahlwort-Parser + numerische Entities (ehem. german_numbers)
+stufe0/anker.py     Anker-Boni + komplementäre Zahlen-Anker
+stufe0/verifikation.py  Zahlen/Personen/Identifier gegen den Artikel
+stufe0/personen.py  Personenerkennung (spaCy o. Rückfall; ehem. ner.py)
+stufe0/identifier.py   Stufe 0.6: Orte/Organisationen/Kürzel, exakter Abgleich
+stufe0/wortlaut.py  Stufe 0.8: Wort-für-Wort-Diff bei Fast-Wörtlichkeit
+
+stufe1/abdeckung.py    lexikalische Matrizen des Laufs (ein Bündel)
+stufe1/zitate.py    Zitatblöcke + Sprecherkontext für die Suche
+stufe1/spannen.py   Belegspannen für die Viewer-Markierung
+stufe1/teilaussagen.py Stufe 1.2: Konnektoren-Zerlegung (ehem. claims.py)
+stufe1/restabdeckung.py Stufe 1.5: weitere Quellen nach Zusatzbeitrag
+
+stufe2/saia.py      Embeddings: SAIA-API + lokales CPU-Backend
+stufe2/skalierung.py   Kosinusmatrix spreizen (P10 → Maximum)
+
+stufe3/nli.py       NLI-Modelle, Labelordnung empirisch geprobt
+stufe3/praemisse.py Prämissenbau + Auftragssammlung je Claim
+stufe3/nachentscheidung.py  Urteil anwenden (bedeutung_verschoben, Flags)
+
+varianten.py        rechnet benannte Experimentvarianten in eigene Ordner —
+                    patcht CFG/STUFEN/Aushänge in konfig.py nur für die
+                    Dauer eines Laufs (`--liste` zeigt alle)
+batch.py            rechnet alle Paare neu durch — ohne Frontend, mit
+                    Ratelimit-Drosselung, `--ohne` schaltet Stufen ab
+gold_entwurf.py     erzeugt aus Läufen Entwurfs-Annotationen (Satzebene,
+                    Stapelbetrieb, stabile dev/test-Zuteilung)
+annotate.html       Annotationsoberfläche: Gold-Datei hineinziehen,
+                    anklicken, herunterladen (kein Server nötig)
+eval.py             stellt Gold gegen Läufe: CIP/CIR/F1, Unbelegt,
+                    Relationen, Flags
+inferiert_ablation.py  Messskript: trägt die NLI-Rückrichtung Signal für
+                    `inferiert`? (`--kontrolle` / `--reichweite`)
+index.html          Split-View-Frontend mit Eingabe-Panel
 ```

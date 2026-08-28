@@ -1,0 +1,1450 @@
+{
+  "meta": {
+    "titel": "Stolberg Der Schock sitzt nicht mehr so tief wie noch an Weihnachten.",
+    "quelle": "Eigenes Paar",
+    "modell": "stufe0-2 · multilingual-e5-large-instruct + nli-mdeberta-2mil7",
+    "statistik": {
+      "saetze": 44,
+      "claims": 22,
+      "embeddings": 66,
+      "nli_paare": 21,
+      "dauer_s": 10.5
+    },
+    "ratelimit": {
+      "model": "multilingual-e5-large-instruct",
+      "checked_at": 1787356438.1412346,
+      "x-ratelimit-limit-minute": "15",
+      "x-ratelimit-remaining-minute": "13",
+      "x-ratelimit-limit-hour": "900",
+      "x-ratelimit-remaining-hour": "865",
+      "x-ratelimit-limit-day": "2000",
+      "x-ratelimit-remaining-day": "1962",
+      "x-ratelimit-limit-second": "2",
+      "x-ratelimit-remaining-second": "1",
+      "ratelimit-reset": "1",
+      "ratelimit-limit": "2",
+      "ratelimit-remaining": "1"
+    }
+  },
+  "article": {
+    "text": "Stolberg Der Schock sitzt nicht mehr so tief wie noch an Weihnachten. Etwas mehr als sechs Monate später, nachdem Unbekannte in die Räume der Stolberger Tafel eingebrochen waren, ist der Alltag zurückgekehrt. Die Schäden sind beseitigt, die gestohlenen Gegenstände ersetzt. Die Täter wurden allerdings nicht gefunden. Das Ermittlungsverfahren wurde inzwischen eingestellt.\n\n„An sich ist das Thema für uns erledigt“, sagt Alfred Baldes, stellvertretender Vorsitzender der Stolberger Tafel. Nach den turbulenten Wochen nach dem Einbruch sei inzwischen wieder Normalität eingekehrt. „Durch die tägliche Arbeit vergisst man das irgendwann.“\n\nIn der Nacht vom ersten auf den zweiten Weihnachtstag hatten sich Unbekannte gewaltsam Zutritt zu den Räumen der Stolberger Tafel verschafft. Sie brachen die Eingangstür auf, traten die Tür zum Vorstandsbüro ein und beschädigten mehrere Metallschränke. Gestohlen wurden unter anderem ein Tresor, drei Laptops und ein Kartenscanner. Bargeld befand sich nicht mehr im Tresor – Kassierer Rolf Wieczarkowiecz hatte die Einnahmen vorsorglich vor den Feiertagen mit nach Hause genommen.\n\nInzwischen sind die materiellen Schäden nahezu vollständig beseitigt. Eine neue Eingangstür wurde eingebaut, neue Laptops organisiert. Die beschädigten Metallschränke konnten teilweise repariert und weiter genutzt werden. Doch manches brauchte Zeit. Der neue Tresor zum Beispiel ist erst in der vergangenen Woche geliefert und eingebaut worden. Was den Ehrenamtlern jedoch weitaus mehr in Erinnerung geblieben ist als der Einbruch selbst, ist die große Welle der Hilfsbereitschaft nach der Tat. Zahlreiche Privatpersonen hatten Geld gespendet oder Hilfe angeboten. Auch einige regionale Unternehmen unterstützten die Tafel – und tun dies laut Baldes bis heute.\n\n80 Ehrenamtliche\n\nAuch die Zusammenarbeit mit anderen Tafeln habe sowohl damals nach dem Vorfall als auch heute hervorragend funktioniert. „Wir tauschen regelmäßig Lebensmittel und Waren untereinander aus“, sagt Baldes. „Haben wir von einer Sache zu viel, fragen wir etwa in Aachen oder Würselen nach, ob sie etwas gebrauchen können.“ Umgekehrt erhalte die Stolberger Tafel auch Unterstützung, wenn andernorts Waren übrig seien.\n\nMit rund 80 Ehrenamtlichen kann die Stolberger Tafel ihren Betrieb derzeit zuverlässig aufrechterhalten. Täglich werden mehrere Fahrer benötigt, um Lebensmittel bei den Supermärkten und Betrieben abzuholen oder auch Hauslieferungen zu übernehmen. Im Laden kümmern sich weitere ehrenamtliche Helfer um die Ausgabe der Waren an die Kunden. „So sind jeden Tag um die 15 Ehrenamtler im Einsatz“, sagt Baldes.\n\nTrotz dieser stabilen Mannschaft sieht Baldes eine große Herausforderung für die kommenden Jahre: den Nachwuchs. Die meisten Ehrenamtler seien bereits im Rentenalter, auch im Vorstand sei es schwierig, Nachfolger zu finden. Schon vor Jahren wollten Alfred Baldes und seine Mitstreiterin Gisela Becker-Bonaventura den Vorsitz abgeben. Doch niemand habe die Verantwortung übernehmen wollen. „Und woran das Herz hängt, das gibt man nicht auf“, sagt Baldes und tippt auf seine linke Brustseite. Seit 23 Jahren engagiert sich der 79-Jährige bei der Stolberger Tafel.\n\nEin weiteres Thema beschäftigt die Stolberger Tafel derzeit besonders: das in die Jahre gekommene Kühlfahrzeug. Immer häufiger fällt es wegen Reparaturen aus. Zwar helfen Leihfahrzeuge übergangsweise aus, doch das sei keine Dauerlösung. „Die Kühlkette darf ja nicht unterbrochen werden“, sagt Baldes. Die Tafel sucht deshalb nach einem geeigneten Ersatzfahrzeug. Baldes bleibt aber optimistisch, dass noch in diesem Jahr ein neues Kühlfahrzeug angeschafft werden kann.\n\nDie Stolberger Tafel freut sich jederzeit über neue ehrenamtliche Helfer. Ob bei der Ausgabe der Lebensmittel, als Fahrer für Abholungen oder Hauslieferungen oder bei organisatorischen Aufgaben – jede helfende Hand wird gebraucht. Wer Interesse hat, kann sich direkt bei der Stolberger Tafel, Eschweilerstraße 12, melden (02402/860421, stolbergertafel@netcologne.de).",
+    "sentences": [
+      {
+        "id": "s1",
+        "start": 0,
+        "end": 69,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Stolberg Der Schock sitzt nicht mehr so tief wie noch an Weihnachten."
+      },
+      {
+        "id": "s2",
+        "start": 70,
+        "end": 208,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Etwas mehr als sechs Monate später, nachdem Unbekannte in die Räume der Stolberger Tafel eingebrochen waren, ist der Alltag zurückgekehrt."
+      },
+      {
+        "id": "s3",
+        "start": 209,
+        "end": 273,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Die Schäden sind beseitigt, die gestohlenen Gegenstände ersetzt."
+      },
+      {
+        "id": "s4",
+        "start": 274,
+        "end": 317,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Die Täter wurden allerdings nicht gefunden."
+      },
+      {
+        "id": "s5",
+        "start": 318,
+        "end": 372,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Das Ermittlungsverfahren wurde inzwischen eingestellt."
+      },
+      {
+        "id": "s6",
+        "start": 374,
+        "end": 488,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "„An sich ist das Thema für uns erledigt“, sagt Alfred Baldes, stellvertretender Vorsitzender der Stolberger Tafel."
+      },
+      {
+        "id": "s7",
+        "start": 489,
+        "end": 579,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Nach den turbulenten Wochen nach dem Einbruch sei inzwischen wieder Normalität eingekehrt."
+      },
+      {
+        "id": "s8",
+        "start": 580,
+        "end": 636,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "„Durch die tägliche Arbeit vergisst man das irgendwann.“"
+      },
+      {
+        "id": "s9",
+        "start": 638,
+        "end": 779,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "In der Nacht vom ersten auf den zweiten Weihnachtstag hatten sich Unbekannte gewaltsam Zutritt zu den Räumen der Stolberger Tafel verschafft."
+      },
+      {
+        "id": "s10",
+        "start": 780,
+        "end": 890,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Sie brachen die Eingangstür auf, traten die Tür zum Vorstandsbüro ein und beschädigten mehrere Metallschränke."
+      },
+      {
+        "id": "s11",
+        "start": 891,
+        "end": 969,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Gestohlen wurden unter anderem ein Tresor, drei Laptops und ein Kartenscanner."
+      },
+      {
+        "id": "s12",
+        "start": 970,
+        "end": 1118,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Bargeld befand sich nicht mehr im Tresor – Kassierer Rolf Wieczarkowiecz hatte die Einnahmen vorsorglich vor den Feiertagen mit nach Hause genommen."
+      },
+      {
+        "id": "s13",
+        "start": 1120,
+        "end": 1189,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "Inzwischen sind die materiellen Schäden nahezu vollständig beseitigt."
+      },
+      {
+        "id": "s14",
+        "start": 1190,
+        "end": 1254,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "Eine neue Eingangstür wurde eingebaut, neue Laptops organisiert."
+      },
+      {
+        "id": "s15",
+        "start": 1255,
+        "end": 1341,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "Die beschädigten Metallschränke konnten teilweise repariert und weiter genutzt werden."
+      },
+      {
+        "id": "s16",
+        "start": 1342,
+        "end": 1369,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "Doch manches brauchte Zeit."
+      },
+      {
+        "id": "s17",
+        "start": 1370,
+        "end": 1464,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "Der neue Tresor zum Beispiel ist erst in der vergangenen Woche geliefert und eingebaut worden."
+      },
+      {
+        "id": "s18",
+        "start": 1465,
+        "end": 1614,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "Was den Ehrenamtlern jedoch weitaus mehr in Erinnerung geblieben ist als der Einbruch selbst, ist die große Welle der Hilfsbereitschaft nach der Tat."
+      },
+      {
+        "id": "s19",
+        "start": 1615,
+        "end": 1684,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "Zahlreiche Privatpersonen hatten Geld gespendet oder Hilfe angeboten."
+      },
+      {
+        "id": "s20",
+        "start": 1685,
+        "end": 1780,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "Auch einige regionale Unternehmen unterstützten die Tafel – und tun dies laut Baldes bis heute."
+      },
+      {
+        "id": "s21",
+        "start": 1782,
+        "end": 1798,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "80 Ehrenamtliche"
+      },
+      {
+        "id": "s22",
+        "start": 1800,
+        "end": 1920,
+        "block": "body",
+        "level": 0,
+        "paragraph": 5,
+        "text": "Auch die Zusammenarbeit mit anderen Tafeln habe sowohl damals nach dem Vorfall als auch heute hervorragend funktioniert."
+      },
+      {
+        "id": "s23",
+        "start": 1921,
+        "end": 2001,
+        "block": "body",
+        "level": 0,
+        "paragraph": 5,
+        "text": "„Wir tauschen regelmäßig Lebensmittel und Waren untereinander aus“, sagt Baldes."
+      },
+      {
+        "id": "s24",
+        "start": 2002,
+        "end": 2116,
+        "block": "body",
+        "level": 0,
+        "paragraph": 5,
+        "text": "„Haben wir von einer Sache zu viel, fragen wir etwa in Aachen oder Würselen nach, ob sie etwas gebrauchen können.“"
+      },
+      {
+        "id": "s25",
+        "start": 2117,
+        "end": 2210,
+        "block": "body",
+        "level": 0,
+        "paragraph": 5,
+        "text": "Umgekehrt erhalte die Stolberger Tafel auch Unterstützung, wenn andernorts Waren übrig seien."
+      },
+      {
+        "id": "s26",
+        "start": 2212,
+        "end": 2316,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "Mit rund 80 Ehrenamtlichen kann die Stolberger Tafel ihren Betrieb derzeit zuverlässig aufrechterhalten."
+      },
+      {
+        "id": "s27",
+        "start": 2317,
+        "end": 2458,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "Täglich werden mehrere Fahrer benötigt, um Lebensmittel bei den Supermärkten und Betrieben abzuholen oder auch Hauslieferungen zu übernehmen."
+      },
+      {
+        "id": "s28",
+        "start": 2459,
+        "end": 2549,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "Im Laden kümmern sich weitere ehrenamtliche Helfer um die Ausgabe der Waren an die Kunden."
+      },
+      {
+        "id": "s29",
+        "start": 2550,
+        "end": 2616,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "„So sind jeden Tag um die 15 Ehrenamtler im Einsatz“, sagt Baldes."
+      },
+      {
+        "id": "s30",
+        "start": 2618,
+        "end": 2730,
+        "block": "body",
+        "level": 0,
+        "paragraph": 7,
+        "text": "Trotz dieser stabilen Mannschaft sieht Baldes eine große Herausforderung für die kommenden Jahre: den Nachwuchs."
+      },
+      {
+        "id": "s31",
+        "start": 2731,
+        "end": 2841,
+        "block": "body",
+        "level": 0,
+        "paragraph": 7,
+        "text": "Die meisten Ehrenamtler seien bereits im Rentenalter, auch im Vorstand sei es schwierig, Nachfolger zu finden."
+      },
+      {
+        "id": "s32",
+        "start": 2842,
+        "end": 2951,
+        "block": "body",
+        "level": 0,
+        "paragraph": 7,
+        "text": "Schon vor Jahren wollten Alfred Baldes und seine Mitstreiterin Gisela Becker-Bonaventura den Vorsitz abgeben."
+      },
+      {
+        "id": "s33",
+        "start": 2952,
+        "end": 3006,
+        "block": "body",
+        "level": 0,
+        "paragraph": 7,
+        "text": "Doch niemand habe die Verantwortung übernehmen wollen."
+      },
+      {
+        "id": "s34",
+        "start": 3007,
+        "end": 3108,
+        "block": "body",
+        "level": 0,
+        "paragraph": 7,
+        "text": "„Und woran das Herz hängt, das gibt man nicht auf“, sagt Baldes und tippt auf seine linke Brustseite."
+      },
+      {
+        "id": "s35",
+        "start": 3109,
+        "end": 3179,
+        "block": "body",
+        "level": 0,
+        "paragraph": 7,
+        "text": "Seit 23 Jahren engagiert sich der 79-Jährige bei der Stolberger Tafel."
+      },
+      {
+        "id": "s36",
+        "start": 3181,
+        "end": 3292,
+        "block": "body",
+        "level": 0,
+        "paragraph": 8,
+        "text": "Ein weiteres Thema beschäftigt die Stolberger Tafel derzeit besonders: das in die Jahre gekommene Kühlfahrzeug."
+      },
+      {
+        "id": "s37",
+        "start": 3293,
+        "end": 3339,
+        "block": "body",
+        "level": 0,
+        "paragraph": 8,
+        "text": "Immer häufiger fällt es wegen Reparaturen aus."
+      },
+      {
+        "id": "s38",
+        "start": 3340,
+        "end": 3417,
+        "block": "body",
+        "level": 0,
+        "paragraph": 8,
+        "text": "Zwar helfen Leihfahrzeuge übergangsweise aus, doch das sei keine Dauerlösung."
+      },
+      {
+        "id": "s39",
+        "start": 3418,
+        "end": 3481,
+        "block": "body",
+        "level": 0,
+        "paragraph": 8,
+        "text": "„Die Kühlkette darf ja nicht unterbrochen werden“, sagt Baldes."
+      },
+      {
+        "id": "s40",
+        "start": 3482,
+        "end": 3543,
+        "block": "body",
+        "level": 0,
+        "paragraph": 8,
+        "text": "Die Tafel sucht deshalb nach einem geeigneten Ersatzfahrzeug."
+      },
+      {
+        "id": "s41",
+        "start": 3544,
+        "end": 3649,
+        "block": "body",
+        "level": 0,
+        "paragraph": 8,
+        "text": "Baldes bleibt aber optimistisch, dass noch in diesem Jahr ein neues Kühlfahrzeug angeschafft werden kann."
+      },
+      {
+        "id": "s42",
+        "start": 3651,
+        "end": 3724,
+        "block": "body",
+        "level": 0,
+        "paragraph": 9,
+        "text": "Die Stolberger Tafel freut sich jederzeit über neue ehrenamtliche Helfer."
+      },
+      {
+        "id": "s43",
+        "start": 3725,
+        "end": 3881,
+        "block": "body",
+        "level": 0,
+        "paragraph": 9,
+        "text": "Ob bei der Ausgabe der Lebensmittel, als Fahrer für Abholungen oder Hauslieferungen oder bei organisatorischen Aufgaben – jede helfende Hand wird gebraucht."
+      },
+      {
+        "id": "s44",
+        "start": 3882,
+        "end": 4018,
+        "block": "body",
+        "level": 0,
+        "paragraph": 9,
+        "text": "Wer Interesse hat, kann sich direkt bei der Stolberger Tafel, Eschweilerstraße 12, melden (02402/860421, stolbergertafel@netcologne.de)."
+      }
+    ]
+  },
+  "transcript": {
+    "text": "Nach dem Einbruch in die Räume der Stolberger Tafel ist in Stolberg wieder Normalität eingekehrt. Die Schäden sind weitgehend beseitigt, gestohlene Gegenstände wurden ersetzt. Die Täter konnten jedoch nicht ermittelt werden. Das Verfahren ist eingestellt.\n\nIn der Nacht vom ersten auf den zweiten Weihnachtstag waren Unbekannte gewaltsam in die Räume eingebrochen. Sie beschädigten Türen und Metallschränke und stahlen einen Tresor, drei Laptops sowie einen Kartenscanner. Bargeld war nicht im Tresor, weil Kassierer Rolf Wieczarkowiecz die Einnahmen vor den Feiertagen vorsorglich mit nach Hause genommen hatte.\n\nAlfred Baldes, stellvertretender Vorsitzender der Stolberger Tafel, sagt, das Thema sei für die Helfer inzwischen abgeschlossen. Besonders in Erinnerung geblieben sei die große Hilfsbereitschaft nach dem Einbruch. Privatpersonen spendeten Geld oder boten Unterstützung an. Auch regionale Unternehmen helfen der Tafel weiterhin. Zudem funktioniere der Austausch mit den Tafeln in Aachen und Würselen gut: Lebensmittel und Waren würden gegenseitig weitergegeben, wenn sie an einem Ort übrig seien.\n\nRund 80 Ehrenamtliche halten den Betrieb der Stolberger Tafel derzeit aufrecht. Täglich sind etwa 15 Helfer im Einsatz. Sie holen Lebensmittel bei Supermärkten und Betrieben ab, übernehmen Hauslieferungen und geben Waren im Laden aus.\n\nSorgen bereitet dem Verein vor allem die Suche nach Nachwuchs. Viele Ehrenamtliche sind im Rentenalter, auch für den Vorstand fehlen Nachfolger. Alfred Baldes engagiert sich seit 23 Jahren bei der Tafel.\n\nDringend gebraucht wird außerdem ein Ersatz für das alte Kühlfahrzeug, das immer häufiger repariert werden muss. Die Kühlkette dürfe nicht unterbrochen werden, betont Baldes. Er hofft, noch in diesem Jahr ein neues Fahrzeug anschaffen zu können. Die Tafel sucht weiterhin ehrenamtliche Helfer.",
+    "claims": [
+      {
+        "id": "c1",
+        "start": 0,
+        "end": 97,
+        "text": "Nach dem Einbruch in die Räume der Stolberger Tafel ist in Stolberg wieder Normalität eingekehrt.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s7",
+            "start": 526,
+            "end": 579,
+            "spans": [
+              [
+                526,
+                534
+              ],
+              [
+                550,
+                579
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s9",
+            "start": 740,
+            "end": 767,
+            "spans": [
+              [
+                740,
+                767
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s2",
+            "start": 106,
+            "end": 158,
+            "spans": [
+              [
+                106,
+                113
+              ],
+              [
+                132,
+                158
+              ]
+            ],
+            "role": "redundant"
+          }
+        ],
+        "confidence": 0.88,
+        "margin": 0.27,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s7 + s9 (s9 erklärt zusätzlich 31 %). · Fundstellen erklären 95 % des Claims.",
+        "scores": {
+          "top": 0.718,
+          "lex": 0.525,
+          "emb": 0.674,
+          "anchor": 0,
+          "nli": 0.999
+        }
+      },
+      {
+        "id": "c2",
+        "start": 98,
+        "end": 175,
+        "text": "Die Schäden sind weitgehend beseitigt, gestohlene Gegenstände wurden ersetzt.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s3",
+            "start": 209,
+            "end": 273,
+            "spans": [
+              [
+                209,
+                273
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.85,
+        "margin": 0.36,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 75 % des Claims.",
+        "scores": {
+          "top": 0.92,
+          "lex": 0.761,
+          "emb": 0.921,
+          "anchor": 0,
+          "nli": 0.814
+        }
+      },
+      {
+        "id": "c3",
+        "start": 176,
+        "end": 224,
+        "text": "Die Täter konnten jedoch nicht ermittelt werden.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s4",
+            "start": 274,
+            "end": 307,
+            "spans": [
+              [
+                274,
+                307
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.71,
+        "margin": 0.3,
+        "entities": [],
+        "flags": [
+          "signale_uneinig"
+        ],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 23 % des Claims. · Signale uneinig — nur die Bedeutung stützt die Zuordnung.",
+        "scores": {
+          "top": 0.619,
+          "lex": 0.252,
+          "emb": 0.883,
+          "anchor": 0,
+          "nli": 0.994
+        }
+      },
+      {
+        "id": "c4",
+        "start": 225,
+        "end": 255,
+        "text": "Das Verfahren ist eingestellt.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s5",
+            "start": 360,
+            "end": 372,
+            "spans": [
+              [
+                360,
+                372
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.87,
+        "margin": 0.46,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 94 % des Claims.",
+        "scores": {
+          "top": 0.781,
+          "lex": 0.458,
+          "emb": 0.778,
+          "anchor": 0,
+          "nli": 0.948
+        }
+      },
+      {
+        "id": "c5",
+        "start": 257,
+        "end": 364,
+        "text": "In der Nacht vom ersten auf den zweiten Weihnachtstag waren Unbekannte gewaltsam in die Räume eingebrochen.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s9",
+            "start": 638,
+            "end": 746,
+            "spans": [
+              [
+                638,
+                691
+              ],
+              [
+                704,
+                724
+              ],
+              [
+                740,
+                746
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.84,
+        "margin": 0.35,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 81 % des Claims.",
+        "scores": {
+          "top": 0.879,
+          "lex": 0.663,
+          "emb": 0.866,
+          "anchor": 0,
+          "nli": 0.993
+        }
+      },
+      {
+        "id": "c6",
+        "start": 365,
+        "end": 472,
+        "text": "Sie beschädigten Türen und Metallschränke und stahlen einen Tresor, drei Laptops sowie einen Kartenscanner.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s11",
+            "start": 926,
+            "end": 969,
+            "spans": [
+              [
+                926,
+                969
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s10",
+            "start": 854,
+            "end": 890,
+            "spans": [
+              [
+                854,
+                866
+              ],
+              [
+                875,
+                890
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.84,
+        "margin": 0.31,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "drei",
+            "norm": "3",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s11 + s10 (s10 erklärt zusätzlich 38 %). · Fundstellen erklären 81 % des Claims.",
+        "scores": {
+          "top": 0.75,
+          "lex": 0.474,
+          "emb": 0.871,
+          "anchor": 0,
+          "nli": 0.976
+        }
+      },
+      {
+        "id": "c7",
+        "start": 473,
+        "end": 612,
+        "text": "Bargeld war nicht im Tresor, weil Kassierer Rolf Wieczarkowiecz die Einnahmen vor den Feiertagen vorsorglich mit nach Hause genommen hatte.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s12",
+            "start": 970,
+            "end": 1118,
+            "spans": [
+              [
+                970,
+                977
+              ],
+              [
+                990,
+                1118
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.95,
+        "margin": 0.68,
+        "entities": [
+          {
+            "type": "person",
+            "surface": "Bargeld",
+            "norm": "bargeld",
+            "status": "match"
+          },
+          {
+            "type": "person",
+            "surface": "Rolf Wieczarkowiecz",
+            "norm": "rolf wieczarkowiecz",
+            "status": "match"
+          },
+          {
+            "type": "person",
+            "surface": "Hause",
+            "norm": "hause",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Name „Bargeld“ eindeutig in s12 · Name „Rolf Wieczarkowiecz“ eindeutig in s12 · Name „Hause“ eindeutig in s12 · Fundstellen erklären 89 % des Claims.",
+        "scores": {
+          "top": 0.975,
+          "lex": 0.818,
+          "emb": 1,
+          "anchor": 0.38,
+          "nli": 0.857
+        }
+      },
+      {
+        "id": "c8",
+        "start": 614,
+        "end": 742,
+        "text": "Alfred Baldes, stellvertretender Vorsitzender der Stolberger Tafel, sagt, das Thema sei für die Helfer inzwischen abgeschlossen.",
+        "relation": "bedeutung_verschoben",
+        "sources": [
+          {
+            "sentence": "s6",
+            "start": 374,
+            "end": 488,
+            "spans": [
+              [
+                374,
+                396
+              ],
+              [
+                416,
+                488
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.8,
+        "margin": 0.44,
+        "entities": [
+          {
+            "type": "person",
+            "surface": "Alfred Baldes",
+            "norm": "alfred baldes",
+            "status": "match"
+          },
+          {
+            "type": "person",
+            "surface": "Tafel",
+            "norm": "tafel",
+            "status": "match"
+          }
+        ],
+        "flags": [
+          "bedeutung_verschoben"
+        ],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 66 % des Claims. · Bedeutung verschoben — die Fundstelle widerspricht dem Claim nicht, stützt ihn aber auch nicht vollständig (entailment 0.01, neutral 0.98).",
+        "scores": {
+          "top": 0.848,
+          "lex": 0.637,
+          "emb": 0.912,
+          "anchor": 0,
+          "nli": 0.014
+        }
+      },
+      {
+        "id": "c9",
+        "start": 743,
+        "end": 827,
+        "text": "Besonders in Erinnerung geblieben sei die große Hilfsbereitschaft nach dem Einbruch.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s18",
+            "start": 1509,
+            "end": 1614,
+            "spans": [
+              [
+                1509,
+                1572
+              ],
+              [
+                1583,
+                1614
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.81,
+        "margin": 0.49,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 85 % des Claims.",
+        "scores": {
+          "top": 0.818,
+          "lex": 0.55,
+          "emb": 0.773,
+          "anchor": 0,
+          "nli": 0.675
+        }
+      },
+      {
+        "id": "c10",
+        "start": 828,
+        "end": 886,
+        "text": "Privatpersonen spendeten Geld oder boten Unterstützung an.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s19",
+            "start": 1626,
+            "end": 1652,
+            "spans": [
+              [
+                1626,
+                1640
+              ],
+              [
+                1648,
+                1652
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s20",
+            "start": 1719,
+            "end": 1732,
+            "spans": [
+              [
+                1719,
+                1732
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.88,
+        "margin": 0.44,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s19 + s20 (s20 erklärt zusätzlich 18 %). · Fundstellen erklären 79 % des Claims.",
+        "scores": {
+          "top": 0.8,
+          "lex": 0.492,
+          "emb": 0.948,
+          "anchor": 0,
+          "nli": 0.999
+        }
+      },
+      {
+        "id": "c11",
+        "start": 887,
+        "end": 941,
+        "text": "Auch regionale Unternehmen helfen der Tafel weiterhin.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s20",
+            "start": 1697,
+            "end": 1742,
+            "spans": [
+              [
+                1697,
+                1718
+              ],
+              [
+                1737,
+                1742
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.82,
+        "margin": 0.39,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 80 % des Claims.",
+        "scores": {
+          "top": 0.808,
+          "lex": 0.421,
+          "emb": 0.832,
+          "anchor": 0,
+          "nli": 0.997
+        }
+      },
+      {
+        "id": "c12",
+        "start": 942,
+        "end": 1109,
+        "text": "Zudem funktioniere der Austausch mit den Tafeln in Aachen und Würselen gut: Lebensmittel und Waren würden gegenseitig weitergegeben, wenn sie an einem Ort übrig seien.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s24",
+            "start": 2057,
+            "end": 2077,
+            "spans": [
+              [
+                2057,
+                2077
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s23",
+            "start": 1921,
+            "end": 1958,
+            "spans": [
+              [
+                1921,
+                1934
+              ],
+              [
+                1946,
+                1958
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s22",
+            "start": 1836,
+            "end": 1920,
+            "spans": [
+              [
+                1836,
+                1842
+              ],
+              [
+                1907,
+                1920
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.47,
+        "margin": 0.04,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s24 + s23 + s22 (s23 erklärt zusätzlich 19 %, s22 erklärt zusätzlich 17 %). · Fundstellen erklären 53 % des Claims. · Unter der Direkt-Schwelle — zur Prüfung empfohlen.",
+        "scores": {
+          "top": 0.45,
+          "lex": 0.184,
+          "emb": 0.529,
+          "anchor": 0,
+          "nli": 0.992
+        }
+      },
+      {
+        "id": "c13",
+        "start": 1111,
+        "end": 1190,
+        "text": "Rund 80 Ehrenamtliche halten den Betrieb der Stolberger Tafel derzeit aufrecht.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s26",
+            "start": 2212,
+            "end": 2316,
+            "spans": [
+              [
+                2212,
+                2264
+              ],
+              [
+                2271,
+                2278
+              ],
+              [
+                2299,
+                2316
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.94,
+        "margin": 0.36,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "80",
+            "norm": "80",
+            "status": "match"
+          },
+          {
+            "type": "person",
+            "surface": "Tafel",
+            "norm": "tafel",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 91 % des Claims.",
+        "scores": {
+          "top": 0.927,
+          "lex": 0.661,
+          "emb": 0.964,
+          "anchor": 0.12,
+          "nli": 0.996
+        }
+      },
+      {
+        "id": "c14",
+        "start": 1191,
+        "end": 1230,
+        "text": "Täglich sind etwa 15 Helfer im Einsatz.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s29",
+            "start": 2576,
+            "end": 2601,
+            "spans": [
+              [
+                2576,
+                2578
+              ],
+              [
+                2594,
+                2601
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.66,
+        "margin": 0.41,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "15",
+            "norm": "15",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Anker 15 eindeutig in s29 · Fundstellen erklären 40 % des Claims.",
+        "scores": {
+          "top": 0.747,
+          "lex": 0.324,
+          "emb": 0.796,
+          "anchor": 0.3,
+          "nli": 0.988
+        }
+      },
+      {
+        "id": "c15",
+        "start": 1231,
+        "end": 1345,
+        "text": "Sie holen Lebensmittel bei Supermärkten und Betrieben ab, übernehmen Hauslieferungen und geben Waren im Laden aus.",
+        "relation": "bedeutung_verschoben",
+        "sources": [
+          {
+            "sentence": "s27",
+            "start": 2360,
+            "end": 2458,
+            "spans": [
+              [
+                2360,
+                2407
+              ],
+              [
+                2428,
+                2458
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.79,
+        "margin": 0.26,
+        "entities": [],
+        "flags": [
+          "bedeutung_verschoben"
+        ],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 87 % des Claims. · Bedeutung verschoben — die Fundstelle widerspricht dem Claim nicht, stützt ihn aber auch nicht vollständig (entailment 0.00, neutral 1.00).",
+        "scores": {
+          "top": 0.789,
+          "lex": 0.585,
+          "emb": 0.699,
+          "anchor": 0,
+          "nli": 0.003
+        }
+      },
+      {
+        "id": "c16",
+        "start": 1347,
+        "end": 1409,
+        "text": "Sorgen bereitet dem Verein vor allem die Suche nach Nachwuchs.",
+        "relation": "keine_quelle",
+        "sources": [],
+        "confidence": 0.62,
+        "margin": 0.04,
+        "entities": [
+          {
+            "type": "ort",
+            "surface": "Sorgen",
+            "norm": "sorgen",
+            "status": "unbelegt"
+          }
+        ],
+        "flags": [
+          "ident_unbelegt"
+        ],
+        "wortlaut": null,
+        "note": "Keine ausreichend ähnliche Stelle im Artikel — nächster Kandidat s30 mit 0,41 (Schwelle 0,44). · „Sorgen“ im Artikel nicht auffindbar.",
+        "scores": {
+          "top": 0.406,
+          "lex": 0.132,
+          "emb": 0.492,
+          "anchor": 0,
+          "nli": null
+        }
+      },
+      {
+        "id": "c17",
+        "start": 1410,
+        "end": 1491,
+        "text": "Viele Ehrenamtliche sind im Rentenalter, auch für den Vorstand fehlen Nachfolger.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s31",
+            "start": 2743,
+            "end": 2830,
+            "spans": [
+              [
+                2743,
+                2801
+              ],
+              [
+                2820,
+                2830
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.82,
+        "margin": 0.49,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 62 % des Claims.",
+        "scores": {
+          "top": 0.819,
+          "lex": 0.435,
+          "emb": 0.949,
+          "anchor": 0,
+          "nli": 0.944
+        }
+      },
+      {
+        "id": "c18",
+        "start": 1492,
+        "end": 1550,
+        "text": "Alfred Baldes engagiert sich seit 23 Jahren bei der Tafel.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s35",
+            "start": 3109,
+            "end": 3179,
+            "spans": [
+              [
+                3109,
+                3133
+              ],
+              [
+                3173,
+                3179
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s6",
+            "start": 421,
+            "end": 488,
+            "spans": [
+              [
+                421,
+                434
+              ],
+              [
+                482,
+                488
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.85,
+        "margin": 0.36,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "23 Jahren",
+            "norm": "23 Jahre",
+            "status": "match"
+          },
+          {
+            "type": "person",
+            "surface": "Alfred Baldes",
+            "norm": "alfred baldes",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Anker 23 Jahre eindeutig in s35 · Verdichtet aus s35 + s6 (s6 erklärt zusätzlich 35 %). · Fundstellen erklären 93 % des Claims.",
+        "scores": {
+          "top": 0.849,
+          "lex": 0.697,
+          "emb": 0.743,
+          "anchor": 0.3,
+          "nli": 0.285
+        }
+      },
+      {
+        "id": "c19",
+        "start": 1552,
+        "end": 1664,
+        "text": "Dringend gebraucht wird außerdem ein Ersatz für das alte Kühlfahrzeug, das immer häufiger repariert werden muss.",
+        "relation": "bedeutung_verschoben",
+        "sources": [
+          {
+            "sentence": "s37",
+            "start": 3293,
+            "end": 3307,
+            "spans": [
+              [
+                3293,
+                3307
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s36",
+            "start": 3279,
+            "end": 3292,
+            "spans": [
+              [
+                3279,
+                3292
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.51,
+        "margin": 0.06,
+        "entities": [],
+        "flags": [
+          "bedeutung_verschoben"
+        ],
+        "wortlaut": null,
+        "note": "Verdichtet aus s37 + s36 (s36 erklärt zusätzlich 20 %). · Fundstellen erklären 49 % des Claims. · Unter der Direkt-Schwelle — zur Prüfung empfohlen. · Bedeutung verschoben — die Fundstelle widerspricht dem Claim nicht, stützt ihn aber auch nicht vollständig (entailment 0.02, neutral 0.98).",
+        "scores": {
+          "top": 0.467,
+          "lex": 0.253,
+          "emb": 0.46,
+          "anchor": 0,
+          "nli": 0.021
+        }
+      },
+      {
+        "id": "c20",
+        "start": 1665,
+        "end": 1726,
+        "text": "Die Kühlkette dürfe nicht unterbrochen werden, betont Baldes.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s39",
+            "start": 3418,
+            "end": 3481,
+            "spans": [
+              [
+                3418,
+                3432
+              ],
+              [
+                3441,
+                3459
+              ],
+              [
+                3474,
+                3481
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.82,
+        "margin": 0.48,
+        "entities": [
+          {
+            "type": "person",
+            "surface": "Baldes",
+            "norm": "baldes",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 64 % des Claims.",
+        "scores": {
+          "top": 0.867,
+          "lex": 0.638,
+          "emb": 0.939,
+          "anchor": 0,
+          "nli": 0.992
+        }
+      },
+      {
+        "id": "c21",
+        "start": 1727,
+        "end": 1797,
+        "text": "Er hofft, noch in diesem Jahr ein neues Fahrzeug anschaffen zu können.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s41",
+            "start": 3590,
+            "end": 3611,
+            "spans": [
+              [
+                3590,
+                3611
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.66,
+        "margin": 0.36,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 67 % des Claims.",
+        "scores": {
+          "top": 0.707,
+          "lex": 0.445,
+          "emb": 0.654,
+          "anchor": 0,
+          "nli": 0.991
+        }
+      },
+      {
+        "id": "c22",
+        "start": 1798,
+        "end": 1845,
+        "text": "Die Tafel sucht weiterhin ehrenamtliche Helfer.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s42",
+            "start": 3666,
+            "end": 3724,
+            "spans": [
+              [
+                3666,
+                3671
+              ],
+              [
+                3703,
+                3724
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.73,
+        "margin": 0.19,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 76 % des Claims.",
+        "scores": {
+          "top": 0.724,
+          "lex": 0.36,
+          "emb": 0.683,
+          "anchor": 0,
+          "nli": 0.734
+        }
+      }
+    ]
+  }
+}

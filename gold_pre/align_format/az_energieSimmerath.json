@@ -1,0 +1,1580 @@
+{
+  "meta": {
+    "titel": "Simmerath Die Gemeinde Simmerath macht sich auf den Weg in eine digital gesteuerte Energiezukunft.",
+    "quelle": "Eigenes Paar",
+    "modell": "stufe0-2 · multilingual-e5-large-instruct + nli-mdeberta-2mil7",
+    "statistik": {
+      "saetze": 36,
+      "claims": 26,
+      "embeddings": 62,
+      "nli_paare": 26,
+      "dauer_s": 9.3
+    },
+    "ratelimit": {
+      "model": "multilingual-e5-large-instruct",
+      "checked_at": 1787353150.8908389,
+      "x-ratelimit-limit-minute": "15",
+      "x-ratelimit-remaining-minute": "13",
+      "x-ratelimit-limit-hour": "900",
+      "x-ratelimit-remaining-hour": "897",
+      "x-ratelimit-limit-day": "2000",
+      "x-ratelimit-remaining-day": "1997",
+      "x-ratelimit-limit-second": "2",
+      "x-ratelimit-remaining-second": "0",
+      "ratelimit-reset": "1",
+      "ratelimit-limit": "2",
+      "ratelimit-remaining": "0"
+    }
+  },
+  "article": {
+    "text": "Simmerath Die Gemeinde Simmerath macht sich auf den Weg in eine digital gesteuerte Energiezukunft. Der Struktur- und Hochbauausschuss hat sich jetzt mit dem Start eines Energiemanagementsystems für die kommunalen Gebäude beschäftigt. Ziel ist es, den Energieverbrauch von Schulen, Feuerwehrgerätehäusern und anderen gemeindeeigenen Gebäuden künftig zentral zu erfassen, auszuwerten und gezielt zu senken.\n\nDie Grundlage dafür hatte der Rat bereits Ende 2023 geschaffen. Nach längeren Verzögerungen aufgrund der Haushaltslage des Bundes erhielt die Gemeinde Ende 2025 schließlich die Förderzusage. Der Bund übernimmt 90 Prozent der Kosten für das auf drei Jahre angelegte Projekt. Damit kann Simmerath ein System aufbauen, das in Zukunft ohnehin für viele Kommunen verpflichtend werden dürfte.\n\nMithilfe einer speziellen Software sollen künftig sämtliche Energieverbräuche zusammenlaufen. So sollen unnötige Mehrverbräuche, fehlerhafte Einstellungen oder technische Defekte schneller erkannt werden. Nach Angaben der Verwaltung verspricht man sich davon langfristig niedrigere Energie- und Betriebskosten sowie einen geringeren CO₂-Ausstoß.\n\nBefristete Stelle geschaffen\n\nFür die Umsetzung wurde eigens eine befristete Stelle geschaffen. Unterstützt wird die Gemeinde von einem Aachener Beratungsunternehmen, das die Einführung des Systems begleitet. Derzeit werden die Verbrauchsdaten der kommunalen Gebäude erfasst und ausgewertet. Parallel läuft die Auswahl einer geeigneten Software, die noch in diesem Jahr eingeführt werden soll.\n\nGrundsätzliche Kritik am Vorhaben gab es im Ausschuss nicht. CDU-Fraktionssprecher Christoph Poschen sprach von einer „sinnvollen Beschaffung“ und signalisierte die Unterstützung seiner Fraktion.\n\nEtwas kritischer blickte die SPD auf einen Begriff in der Beschlussvorlage. Fraktionssprecher Gregor Harzheim störte sich an der Formulierung einer „dauerhaften“ Implementierung. Angesichts der angespannten Finanzlage vieler Kommunen könne man Dauerhaftigkeit nur dann erwarten, wenn auch die Finanzierung dauerhaft gesichert sei. „Für die SPD-Fraktion ist dieses ,dauerhaft‘ nur mit einer dauerhaften Förderung verbunden“, machte Harzheim deutlich. Inhaltlich unterstütze seine Fraktion die Maßnahme jedoch ausdrücklich. Praktische Fragen stellte UWG-Sprecher Reinhold Köller. Ihn interessierte vor allem, ob neben der Software noch weitere Kosten auf die Gemeinde zukommen. Die Verwaltung bestätigte, dass für einige Gebäude zusätzliche digitale Messstellen erforderlich sein werden, um die Verbrauchsdaten automatisch erfassen zu können. Diese Investitionen seien jedoch ebenfalls förderfähig und würden während der Projektlaufzeit mit 90 Prozent bezuschusst.\n\nKöller wollte zudem wissen, wer künftig auf mögliche Fehlermeldungen aus dem System reagiert. Hintergrund ist die angekündigte Möglichkeit, technische Probleme frühzeitig zu erkennen. Die Verwaltung erläuterte, dass genau dies einer der großen Vorteile des Energiemanagements sei: Defekte oder auffällige Verbrauchswerte könnten künftig schneller identifiziert und bearbeitet werden als bisher.\n\n10.000 Euro im ersten Jahr\n\nDie Kosten für die Software werden sich nach derzeitigen Schätzungen auf rund 10.000 Euro im ersten Jahr sowie anschließend auf etwa 4.500 Euro jährlich belaufen. Auch diese Ausgaben werden zunächst weitgehend gefördert. Am Ende bestand im Ausschuss weitgehend Einigkeit darüber, dass die Gemeinde die hohe Förderquote nutzen sollte. Schließlich geht es nicht nur um Klimaschutz, sondern auch um bares Geld. Denn jede Kilowattstunde, die künftig eingespart wird, entlastet langfristig auch den Gemeindehaushalt. Simmerath hofft deshalb, dass sich das neue System nach dem Aufbau nicht nur ökologisch, sondern auch wirtschaftlich auszahlen wird.",
+    "sentences": [
+      {
+        "id": "s1",
+        "start": 0,
+        "end": 98,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Simmerath Die Gemeinde Simmerath macht sich auf den Weg in eine digital gesteuerte Energiezukunft."
+      },
+      {
+        "id": "s2",
+        "start": 99,
+        "end": 233,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Der Struktur- und Hochbauausschuss hat sich jetzt mit dem Start eines Energiemanagementsystems für die kommunalen Gebäude beschäftigt."
+      },
+      {
+        "id": "s3",
+        "start": 234,
+        "end": 404,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Ziel ist es, den Energieverbrauch von Schulen, Feuerwehrgerätehäusern und anderen gemeindeeigenen Gebäuden künftig zentral zu erfassen, auszuwerten und gezielt zu senken."
+      },
+      {
+        "id": "s4",
+        "start": 406,
+        "end": 469,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Die Grundlage dafür hatte der Rat bereits Ende 2023 geschaffen."
+      },
+      {
+        "id": "s5",
+        "start": 470,
+        "end": 596,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Nach längeren Verzögerungen aufgrund der Haushaltslage des Bundes erhielt die Gemeinde Ende 2025 schließlich die Förderzusage."
+      },
+      {
+        "id": "s6",
+        "start": 597,
+        "end": 679,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Der Bund übernimmt 90 Prozent der Kosten für das auf drei Jahre angelegte Projekt."
+      },
+      {
+        "id": "s7",
+        "start": 680,
+        "end": 792,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Damit kann Simmerath ein System aufbauen, das in Zukunft ohnehin für viele Kommunen verpflichtend werden dürfte."
+      },
+      {
+        "id": "s8",
+        "start": 794,
+        "end": 887,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Mithilfe einer speziellen Software sollen künftig sämtliche Energieverbräuche zusammenlaufen."
+      },
+      {
+        "id": "s9",
+        "start": 888,
+        "end": 998,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "So sollen unnötige Mehrverbräuche, fehlerhafte Einstellungen oder technische Defekte schneller erkannt werden."
+      },
+      {
+        "id": "s10",
+        "start": 999,
+        "end": 1139,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Nach Angaben der Verwaltung verspricht man sich davon langfristig niedrigere Energie- und Betriebskosten sowie einen geringeren CO₂-Ausstoß."
+      },
+      {
+        "id": "s11",
+        "start": 1141,
+        "end": 1169,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "Befristete Stelle geschaffen"
+      },
+      {
+        "id": "s12",
+        "start": 1171,
+        "end": 1236,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Für die Umsetzung wurde eigens eine befristete Stelle geschaffen."
+      },
+      {
+        "id": "s13",
+        "start": 1237,
+        "end": 1349,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Unterstützt wird die Gemeinde von einem Aachener Beratungsunternehmen, das die Einführung des Systems begleitet."
+      },
+      {
+        "id": "s14",
+        "start": 1350,
+        "end": 1432,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Derzeit werden die Verbrauchsdaten der kommunalen Gebäude erfasst und ausgewertet."
+      },
+      {
+        "id": "s15",
+        "start": 1433,
+        "end": 1534,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Parallel läuft die Auswahl einer geeigneten Software, die noch in diesem Jahr eingeführt werden soll."
+      },
+      {
+        "id": "s16",
+        "start": 1536,
+        "end": 1596,
+        "block": "body",
+        "level": 0,
+        "paragraph": 5,
+        "text": "Grundsätzliche Kritik am Vorhaben gab es im Ausschuss nicht."
+      },
+      {
+        "id": "s17",
+        "start": 1597,
+        "end": 1731,
+        "block": "body",
+        "level": 0,
+        "paragraph": 5,
+        "text": "CDU-Fraktionssprecher Christoph Poschen sprach von einer „sinnvollen Beschaffung“ und signalisierte die Unterstützung seiner Fraktion."
+      },
+      {
+        "id": "s18",
+        "start": 1733,
+        "end": 1808,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "Etwas kritischer blickte die SPD auf einen Begriff in der Beschlussvorlage."
+      },
+      {
+        "id": "s19",
+        "start": 1809,
+        "end": 1911,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "Fraktionssprecher Gregor Harzheim störte sich an der Formulierung einer „dauerhaften“ Implementierung."
+      },
+      {
+        "id": "s20",
+        "start": 1912,
+        "end": 2063,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "Angesichts der angespannten Finanzlage vieler Kommunen könne man Dauerhaftigkeit nur dann erwarten, wenn auch die Finanzierung dauerhaft gesichert sei."
+      },
+      {
+        "id": "s21",
+        "start": 2064,
+        "end": 2182,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "„Für die SPD-Fraktion ist dieses ,dauerhaft‘ nur mit einer dauerhaften Förderung verbunden“, machte Harzheim deutlich."
+      },
+      {
+        "id": "s22",
+        "start": 2183,
+        "end": 2254,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "Inhaltlich unterstütze seine Fraktion die Maßnahme jedoch ausdrücklich."
+      },
+      {
+        "id": "s23",
+        "start": 2255,
+        "end": 2310,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "Praktische Fragen stellte UWG-Sprecher Reinhold Köller."
+      },
+      {
+        "id": "s24",
+        "start": 2311,
+        "end": 2408,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "Ihn interessierte vor allem, ob neben der Software noch weitere Kosten auf die Gemeinde zukommen."
+      },
+      {
+        "id": "s25",
+        "start": 2409,
+        "end": 2573,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "Die Verwaltung bestätigte, dass für einige Gebäude zusätzliche digitale Messstellen erforderlich sein werden, um die Verbrauchsdaten automatisch erfassen zu können."
+      },
+      {
+        "id": "s26",
+        "start": 2574,
+        "end": 2695,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "Diese Investitionen seien jedoch ebenfalls förderfähig und würden während der Projektlaufzeit mit 90 Prozent bezuschusst."
+      },
+      {
+        "id": "s27",
+        "start": 2697,
+        "end": 2790,
+        "block": "body",
+        "level": 0,
+        "paragraph": 7,
+        "text": "Köller wollte zudem wissen, wer künftig auf mögliche Fehlermeldungen aus dem System reagiert."
+      },
+      {
+        "id": "s28",
+        "start": 2791,
+        "end": 2880,
+        "block": "body",
+        "level": 0,
+        "paragraph": 7,
+        "text": "Hintergrund ist die angekündigte Möglichkeit, technische Probleme frühzeitig zu erkennen."
+      },
+      {
+        "id": "s29",
+        "start": 2881,
+        "end": 3091,
+        "block": "body",
+        "level": 0,
+        "paragraph": 7,
+        "text": "Die Verwaltung erläuterte, dass genau dies einer der großen Vorteile des Energiemanagements sei: Defekte oder auffällige Verbrauchswerte könnten künftig schneller identifiziert und bearbeitet werden als bisher."
+      },
+      {
+        "id": "s30",
+        "start": 3093,
+        "end": 3119,
+        "block": "body",
+        "level": 0,
+        "paragraph": 8,
+        "text": "10.000 Euro im ersten Jahr"
+      },
+      {
+        "id": "s31",
+        "start": 3121,
+        "end": 3283,
+        "block": "body",
+        "level": 0,
+        "paragraph": 9,
+        "text": "Die Kosten für die Software werden sich nach derzeitigen Schätzungen auf rund 10.000 Euro im ersten Jahr sowie anschließend auf etwa 4.500 Euro jährlich belaufen."
+      },
+      {
+        "id": "s32",
+        "start": 3284,
+        "end": 3341,
+        "block": "body",
+        "level": 0,
+        "paragraph": 9,
+        "text": "Auch diese Ausgaben werden zunächst weitgehend gefördert."
+      },
+      {
+        "id": "s33",
+        "start": 3342,
+        "end": 3454,
+        "block": "body",
+        "level": 0,
+        "paragraph": 9,
+        "text": "Am Ende bestand im Ausschuss weitgehend Einigkeit darüber, dass die Gemeinde die hohe Förderquote nutzen sollte."
+      },
+      {
+        "id": "s34",
+        "start": 3455,
+        "end": 3528,
+        "block": "body",
+        "level": 0,
+        "paragraph": 9,
+        "text": "Schließlich geht es nicht nur um Klimaschutz, sondern auch um bares Geld."
+      },
+      {
+        "id": "s35",
+        "start": 3529,
+        "end": 3632,
+        "block": "body",
+        "level": 0,
+        "paragraph": 9,
+        "text": "Denn jede Kilowattstunde, die künftig eingespart wird, entlastet langfristig auch den Gemeindehaushalt."
+      },
+      {
+        "id": "s36",
+        "start": 3633,
+        "end": 3765,
+        "block": "body",
+        "level": 0,
+        "paragraph": 9,
+        "text": "Simmerath hofft deshalb, dass sich das neue System nach dem Aufbau nicht nur ökologisch, sondern auch wirtschaftlich auszahlen wird."
+      }
+    ]
+  },
+  "transcript": {
+    "text": "Simmerath setzt auf ein digitales Energiemanagement für seine kommunalen Gebäude. Der Struktur- und Hochbauausschuss der Gemeinde hat den Start des Projekts beraten. Künftig sollen die Energieverbräuche von Schulen, Feuerwehrgerätehäusern und weiteren gemeindeeigenen Gebäuden zentral erfasst, ausgewertet und gezielt gesenkt werden.\n\nDie Grundlage dafür hatte der Rat Ende 2023 geschaffen. Nach Verzögerungen wegen der Haushaltslage des Bundes erhielt Simmerath Ende 2025 die Förderzusage. Der Bund übernimmt 90 Prozent der Kosten für das auf drei Jahre angelegte Vorhaben.\n\nEine Software soll sämtliche Verbrauchsdaten bündeln. Dadurch könnten unnötig hohe Verbräuche, falsche Einstellungen und technische Defekte schneller auffallen. Die Verwaltung erwartet langfristig niedrigere Energie- und Betriebskosten sowie einen geringeren CO2-Ausstoß.\n\nFür die Einführung wurde eine befristete Stelle geschaffen. Außerdem begleitet ein Aachener Beratungsunternehmen das Projekt. Derzeit erfasst und prüft die Gemeinde die Verbrauchsdaten ihrer Gebäude. Parallel wird eine passende Software ausgewählt, die noch in diesem Jahr eingeführt werden soll.\n\nCDU-Fraktionssprecher Christoph Poschen bezeichnete das Vorhaben als sinnvolle Beschaffung. SPD-Fraktionssprecher Gregor Harzheim kritisierte die Formulierung einer dauerhaften Umsetzung. Aus seiner Sicht sei das nur realistisch, wenn auch die Finanzierung dauerhaft gesichert werde. Inhaltlich unterstütze seine Fraktion die Maßnahme aber ausdrücklich.\n\nUWG-Sprecher Reinhold Köller fragte, ob neben der Software weitere Kosten auf die Gemeinde zukommen. Die Verwaltung erklärte, für einige Gebäude seien zusätzliche digitale Messstellen nötig, um die Verbrauchsdaten automatisch erfassen zu können. Auch diese Investitionen würden mit 90 Prozent gefördert. Köller wollte zudem wissen, wer künftig auf Fehlermeldungen aus dem System reagiert. Die Verwaltung erklärte, genau das sei einer der großen Vorteile des Systems: Defekte und auffällige Verbrauchswerte könnten künftig schneller erkannt und behoben werden als bisher.\n\nDie Software kostet voraussichtlich rund 10.000 Euro im ersten Jahr und danach etwa 4.500 Euro jährlich. Am Ende war sich der Ausschuss weitgehend einig, die hohe Förderung zu nutzen. Denn jede eingesparte Kilowattstunde entlastet langfristig auch den Gemeindehaushalt. Simmerath hofft deshalb, dass sich das neue System nicht nur ökologisch, sondern auch wirtschaftlich auszahlt.",
+    "claims": [
+      {
+        "id": "c1",
+        "start": 0,
+        "end": 81,
+        "text": "Simmerath setzt auf ein digitales Energiemanagement für seine kommunalen Gebäude.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s1",
+            "start": 0,
+            "end": 71,
+            "spans": [
+              [
+                0,
+                9
+              ],
+              [
+                23,
+                32
+              ],
+              [
+                64,
+                71
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s2",
+            "start": 169,
+            "end": 220,
+            "spans": [
+              [
+                169,
+                220
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.8,
+        "margin": 0.18,
+        "entities": [
+          {
+            "type": "person",
+            "surface": "Simmerath",
+            "norm": "simmerath",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s1 + s2 (s2 erklärt zusätzlich 45 %). · Fundstellen erklären 77 % des Claims.",
+        "scores": {
+          "top": 0.637,
+          "lex": 0.304,
+          "emb": 0.832,
+          "anchor": 0,
+          "nli": 0.905
+        }
+      },
+      {
+        "id": "c2",
+        "start": 82,
+        "end": 165,
+        "text": "Der Struktur- und Hochbauausschuss der Gemeinde hat den Start des Projekts beraten.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s2",
+            "start": 99,
+            "end": 162,
+            "spans": [
+              [
+                99,
+                133
+              ],
+              [
+                157,
+                162
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.59,
+        "margin": 0.35,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 63 % des Claims.",
+        "scores": {
+          "top": 0.649,
+          "lex": 0.454,
+          "emb": 0.533,
+          "anchor": 0,
+          "nli": 0.999
+        }
+      },
+      {
+        "id": "c3",
+        "start": 166,
+        "end": 333,
+        "text": "Künftig sollen die Energieverbräuche von Schulen, Feuerwehrgerätehäusern und weiteren gemeindeeigenen Gebäuden zentral erfasst, ausgewertet und gezielt gesenkt werden.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s3",
+            "start": 251,
+            "end": 393,
+            "spans": [
+              [
+                251,
+                303
+              ],
+              [
+                316,
+                368
+              ],
+              [
+                386,
+                393
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.88,
+        "margin": 0.44,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 76 % des Claims.",
+        "scores": {
+          "top": 0.916,
+          "lex": 0.657,
+          "emb": 0.968,
+          "anchor": 0,
+          "nli": 0.998
+        }
+      },
+      {
+        "id": "c4",
+        "start": 335,
+        "end": 390,
+        "text": "Die Grundlage dafür hatte der Rat Ende 2023 geschaffen.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s4",
+            "start": 406,
+            "end": 469,
+            "spans": [
+              [
+                406,
+                469
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.98,
+        "margin": 0.57,
+        "entities": [
+          {
+            "type": "datum",
+            "surface": "2023",
+            "norm": "2023",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Anker 2023 eindeutig in s4 · Fundstellen erklären 100 % des Claims.",
+        "scores": {
+          "top": 0.965,
+          "lex": 0.867,
+          "emb": 0.951,
+          "anchor": 0.3,
+          "nli": 0.937
+        }
+      },
+      {
+        "id": "c5",
+        "start": 391,
+        "end": 490,
+        "text": "Nach Verzögerungen wegen der Haushaltslage des Bundes erhielt Simmerath Ende 2025 die Förderzusage.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s5",
+            "start": 484,
+            "end": 596,
+            "spans": [
+              [
+                484,
+                497
+              ],
+              [
+                511,
+                543
+              ],
+              [
+                557,
+                596
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s7",
+            "start": 680,
+            "end": 700,
+            "spans": [
+              [
+                680,
+                700
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.88,
+        "margin": 0.58,
+        "entities": [
+          {
+            "type": "datum",
+            "surface": "2025",
+            "norm": "2025",
+            "status": "match"
+          },
+          {
+            "type": "person",
+            "surface": "Simmerath",
+            "norm": "simmerath",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Anker 2025 eindeutig in s5 · Verdichtet aus s5 + s7 (s7 erklärt zusätzlich 10 %). · Fundstellen erklären 89 % des Claims.",
+        "scores": {
+          "top": 0.916,
+          "lex": 0.697,
+          "emb": 0.865,
+          "anchor": 0.3,
+          "nli": 0.978
+        }
+      },
+      {
+        "id": "c6",
+        "start": 491,
+        "end": 574,
+        "text": "Der Bund übernimmt 90 Prozent der Kosten für das auf drei Jahre angelegte Vorhaben.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s6",
+            "start": 597,
+            "end": 670,
+            "spans": [
+              [
+                597,
+                626
+              ],
+              [
+                631,
+                670
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.92,
+        "margin": 0.59,
+        "entities": [
+          {
+            "type": "prozent",
+            "surface": "90 Prozent",
+            "norm": "90 %",
+            "status": "match"
+          },
+          {
+            "type": "zahl",
+            "surface": "drei Jahre",
+            "norm": "3 Jahre",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": {
+          "quelle": "s6",
+          "aenderungen": [
+            {
+              "claim": "Vorhaben",
+              "quelle": "Projekt",
+              "nah": false,
+              "aehnlichkeit": 0.27
+            }
+          ]
+        },
+        "note": "Fundstellen erklären 82 % des Claims.",
+        "scores": {
+          "top": 0.971,
+          "lex": 0.87,
+          "emb": 1,
+          "anchor": 0.12,
+          "nli": 0.987
+        }
+      },
+      {
+        "id": "c7",
+        "start": 576,
+        "end": 629,
+        "text": "Eine Software soll sämtliche Verbrauchsdaten bündeln.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s8",
+            "start": 820,
+            "end": 853,
+            "spans": [
+              [
+                820,
+                828
+              ],
+              [
+                844,
+                853
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.68,
+        "margin": 0.26,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 45 % des Claims.",
+        "scores": {
+          "top": 0.655,
+          "lex": 0.31,
+          "emb": 0.811,
+          "anchor": 0,
+          "nli": 0.998
+        }
+      },
+      {
+        "id": "c8",
+        "start": 630,
+        "end": 736,
+        "text": "Dadurch könnten unnötig hohe Verbräuche, falsche Einstellungen und technische Defekte schneller auffallen.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s9",
+            "start": 888,
+            "end": 982,
+            "spans": [
+              [
+                888,
+                921
+              ],
+              [
+                935,
+                982
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.68,
+        "margin": 0.36,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 57 % des Claims.",
+        "scores": {
+          "top": 0.772,
+          "lex": 0.535,
+          "emb": 0.772,
+          "anchor": 0,
+          "nli": 0.998
+        }
+      },
+      {
+        "id": "c9",
+        "start": 737,
+        "end": 847,
+        "text": "Die Verwaltung erwartet langfristig niedrigere Energie- und Betriebskosten sowie einen geringeren CO2-Ausstoß.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s10",
+            "start": 1016,
+            "end": 1139,
+            "spans": [
+              [
+                1016,
+                1026
+              ],
+              [
+                1053,
+                1139
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.89,
+        "margin": 0.58,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 85 % des Claims.",
+        "scores": {
+          "top": 0.909,
+          "lex": 0.721,
+          "emb": 0.932,
+          "anchor": 0,
+          "nli": 0.987
+        }
+      },
+      {
+        "id": "c10",
+        "start": 849,
+        "end": 908,
+        "text": "Für die Einführung wurde eine befristete Stelle geschaffen.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s12",
+            "start": 1207,
+            "end": 1236,
+            "spans": [
+              [
+                1207,
+                1236
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s13",
+            "start": 1316,
+            "end": 1326,
+            "spans": [
+              [
+                1316,
+                1326
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.88,
+        "margin": 0.11,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s12 + s13 (s13 erklärt zusätzlich 24 %). · Fundstellen erklären 100 % des Claims.",
+        "scores": {
+          "top": 0.85,
+          "lex": 0.732,
+          "emb": 0.816,
+          "anchor": 0,
+          "nli": 0.999
+        }
+      },
+      {
+        "id": "c11",
+        "start": 909,
+        "end": 974,
+        "text": "Außerdem begleitet ein Aachener Beratungsunternehmen das Projekt.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s13",
+            "start": 1277,
+            "end": 1349,
+            "spans": [
+              [
+                1277,
+                1306
+              ],
+              [
+                1339,
+                1349
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.83,
+        "margin": 0.59,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 85 % des Claims.",
+        "scores": {
+          "top": 0.827,
+          "lex": 0.524,
+          "emb": 0.823,
+          "anchor": 0,
+          "nli": 0.996
+        }
+      },
+      {
+        "id": "c12",
+        "start": 975,
+        "end": 1048,
+        "text": "Derzeit erfasst und prüft die Gemeinde die Verbrauchsdaten ihrer Gebäude.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s14",
+            "start": 1350,
+            "end": 1415,
+            "spans": [
+              [
+                1350,
+                1384
+              ],
+              [
+                1400,
+                1415
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s13",
+            "start": 1258,
+            "end": 1266,
+            "spans": [
+              [
+                1258,
+                1266
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.78,
+        "margin": 0.29,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s14 + s13 (s13 erklärt zusätzlich 11 %). · Fundstellen erklären 66 % des Claims.",
+        "scores": {
+          "top": 0.767,
+          "lex": 0.506,
+          "emb": 0.875,
+          "anchor": 0,
+          "nli": 0.932
+        }
+      },
+      {
+        "id": "c13",
+        "start": 1049,
+        "end": 1145,
+        "text": "Parallel wird eine passende Software ausgewählt, die noch in diesem Jahr eingeführt werden soll.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s15",
+            "start": 1433,
+            "end": 1534,
+            "spans": [
+              [
+                1433,
+                1441
+              ],
+              [
+                1477,
+                1534
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.84,
+        "margin": 0.57,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 65 % des Claims.",
+        "scores": {
+          "top": 0.89,
+          "lex": 0.627,
+          "emb": 0.973,
+          "anchor": 0,
+          "nli": 0.984
+        }
+      },
+      {
+        "id": "c14",
+        "start": 1147,
+        "end": 1238,
+        "text": "CDU-Fraktionssprecher Christoph Poschen bezeichnete das Vorhaben als sinnvolle Beschaffung.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s17",
+            "start": 1597,
+            "end": 1731,
+            "spans": [
+              [
+                1597,
+                1636
+              ],
+              [
+                1655,
+                1677
+              ],
+              [
+                1722,
+                1731
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.81,
+        "margin": 0.54,
+        "entities": [
+          {
+            "type": "person",
+            "surface": "CDU-Fraktionssprecher Christoph Poschen",
+            "norm": "cdu-fraktionssprecher christoph poschen",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Name „CDU-Fraktionssprecher Christoph Poschen“ eindeutig in s17 · Fundstellen erklären 74 % des Claims.",
+        "scores": {
+          "top": 0.882,
+          "lex": 0.589,
+          "emb": 0.868,
+          "anchor": 0.2,
+          "nli": 0.999
+        }
+      },
+      {
+        "id": "c15",
+        "start": 1239,
+        "end": 1334,
+        "text": "SPD-Fraktionssprecher Gregor Harzheim kritisierte die Formulierung einer dauerhaften Umsetzung.",
+        "relation": "bedeutung_verschoben",
+        "sources": [
+          {
+            "sentence": "s19",
+            "start": 1809,
+            "end": 1893,
+            "spans": [
+              [
+                1809,
+                1842
+              ],
+              [
+                1862,
+                1893
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.8,
+        "margin": 0.25,
+        "entities": [
+          {
+            "type": "person",
+            "surface": "Gregor Harzheim",
+            "norm": "gregor harzheim",
+            "status": "match"
+          }
+        ],
+        "flags": [
+          "bedeutung_verschoben"
+        ],
+        "wortlaut": null,
+        "note": "Name „Gregor Harzheim“ eindeutig in s19 · Fundstellen erklären 69 % des Claims. · Bedeutung verschoben — die Fundstelle widerspricht dem Claim nicht, stützt ihn aber auch nicht vollständig (entailment 0.02, neutral 0.98).",
+        "scores": {
+          "top": 0.896,
+          "lex": 0.648,
+          "emb": 0.891,
+          "anchor": 0.2,
+          "nli": 0.019
+        }
+      },
+      {
+        "id": "c16",
+        "start": 1335,
+        "end": 1430,
+        "text": "Aus seiner Sicht sei das nur realistisch, wenn auch die Finanzierung dauerhaft gesichert werde.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s20",
+            "start": 2026,
+            "end": 2063,
+            "spans": [
+              [
+                2026,
+                2063
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.64,
+        "margin": 0.24,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 63 % des Claims.",
+        "scores": {
+          "top": 0.705,
+          "lex": 0.509,
+          "emb": 0.655,
+          "anchor": 0,
+          "nli": 0.997
+        }
+      },
+      {
+        "id": "c17",
+        "start": 1431,
+        "end": 1500,
+        "text": "Inhaltlich unterstütze seine Fraktion die Maßnahme aber ausdrücklich.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s22",
+            "start": 2183,
+            "end": 2254,
+            "spans": [
+              [
+                2183,
+                2233
+              ],
+              [
+                2241,
+                2254
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.94,
+        "margin": 0.51,
+        "entities": [],
+        "flags": [],
+        "wortlaut": {
+          "quelle": "s22",
+          "aenderungen": [
+            {
+              "claim": "aber",
+              "quelle": "jedoch",
+              "nah": false,
+              "aehnlichkeit": 0.2
+            }
+          ]
+        },
+        "note": "Fundstellen erklären 88 % des Claims.",
+        "scores": {
+          "top": 0.964,
+          "lex": 0.869,
+          "emb": 0.988,
+          "anchor": 0,
+          "nli": 0.854
+        }
+      },
+      {
+        "id": "c18",
+        "start": 1502,
+        "end": 1602,
+        "text": "UWG-Sprecher Reinhold Köller fragte, ob neben der Software weitere Kosten auf die Gemeinde zukommen.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s24",
+            "start": 2343,
+            "end": 2408,
+            "spans": [
+              [
+                2343,
+                2408
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s23",
+            "start": 2285,
+            "end": 2310,
+            "spans": [
+              [
+                2285,
+                2310
+              ]
+            ],
+            "role": "redundant"
+          }
+        ],
+        "confidence": 0.86,
+        "margin": 0.33,
+        "entities": [
+          {
+            "type": "person",
+            "surface": "Reinhold Köller",
+            "norm": "reinhold köller",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 94 % des Claims.",
+        "scores": {
+          "top": 0.753,
+          "lex": 0.535,
+          "emb": 0.757,
+          "anchor": 0,
+          "nli": 0.997
+        }
+      },
+      {
+        "id": "c19",
+        "start": 1603,
+        "end": 1747,
+        "text": "Die Verwaltung erklärte, für einige Gebäude seien zusätzliche digitale Messstellen nötig, um die Verbrauchsdaten automatisch erfassen zu können.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s25",
+            "start": 2409,
+            "end": 2573,
+            "spans": [
+              [
+                2409,
+                2423
+              ],
+              [
+                2445,
+                2492
+              ],
+              [
+                2526,
+                2573
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.92,
+        "margin": 0.48,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 85 % des Claims.",
+        "scores": {
+          "top": 0.936,
+          "lex": 0.749,
+          "emb": 0.977,
+          "anchor": 0,
+          "nli": 0.924
+        }
+      },
+      {
+        "id": "c20",
+        "start": 1748,
+        "end": 1805,
+        "text": "Auch diese Investitionen würden mit 90 Prozent gefördert.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s26",
+            "start": 2574,
+            "end": 2682,
+            "spans": [
+              [
+                2574,
+                2593
+              ],
+              [
+                2633,
+                2639
+              ],
+              [
+                2672,
+                2682
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.78,
+        "margin": 0.33,
+        "entities": [
+          {
+            "type": "prozent",
+            "surface": "90 Prozent",
+            "norm": "90 %",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 75 % des Claims.",
+        "scores": {
+          "top": 0.797,
+          "lex": 0.436,
+          "emb": 0.809,
+          "anchor": 0.12,
+          "nli": 0.998
+        }
+      },
+      {
+        "id": "c21",
+        "start": 1806,
+        "end": 1890,
+        "text": "Köller wollte zudem wissen, wer künftig auf Fehlermeldungen aus dem System reagiert.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s27",
+            "start": 2697,
+            "end": 2790,
+            "spans": [
+              [
+                2697,
+                2736
+              ],
+              [
+                2750,
+                2790
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.98,
+        "margin": 0.55,
+        "entities": [
+          {
+            "type": "person",
+            "surface": "Köller",
+            "norm": "köller",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 100 % des Claims.",
+        "scores": {
+          "top": 0.978,
+          "lex": 0.919,
+          "emb": 0.998,
+          "anchor": 0.1,
+          "nli": 0.987
+        }
+      },
+      {
+        "id": "c22",
+        "start": 1891,
+        "end": 2072,
+        "text": "Die Verwaltung erklärte, genau das sei einer der großen Vorteile des Systems: Defekte und auffällige Verbrauchswerte könnten künftig schneller erkannt und behoben werden als bisher.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s29",
+            "start": 2881,
+            "end": 3091,
+            "spans": [
+              [
+                2881,
+                2895
+              ],
+              [
+                2913,
+                2918
+              ],
+              [
+                2934,
+                2949
+              ],
+              [
+                2978,
+                3043
+              ],
+              [
+                3084,
+                3091
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.82,
+        "margin": 0.42,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 77 % des Claims.",
+        "scores": {
+          "top": 0.871,
+          "lex": 0.653,
+          "emb": 0.863,
+          "anchor": 0,
+          "nli": 0.801
+        }
+      },
+      {
+        "id": "c23",
+        "start": 2074,
+        "end": 2178,
+        "text": "Die Software kostet voraussichtlich rund 10.000 Euro im ersten Jahr und danach etwa 4.500 Euro jährlich.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s31",
+            "start": 3121,
+            "end": 3273,
+            "spans": [
+              [
+                3121,
+                3148
+              ],
+              [
+                3199,
+                3210
+              ],
+              [
+                3214,
+                3225
+              ],
+              [
+                3254,
+                3264
+              ],
+              [
+                3265,
+                3273
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.9,
+        "margin": 0.3,
+        "entities": [
+          {
+            "type": "geld",
+            "surface": "10.000 Euro",
+            "norm": "10000 EUR",
+            "status": "match"
+          },
+          {
+            "type": "geld",
+            "surface": "4.500 Euro",
+            "norm": "4500 EUR",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Anker 4500 EUR eindeutig in s31 · Fundstellen erklären 85 % des Claims.",
+        "scores": {
+          "top": 0.934,
+          "lex": 0.584,
+          "emb": 0.95,
+          "anchor": 0.38,
+          "nli": 0.99
+        }
+      },
+      {
+        "id": "c24",
+        "start": 2179,
+        "end": 2257,
+        "text": "Am Ende war sich der Ausschuss weitgehend einig, die hohe Förderung zu nutzen.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s33",
+            "start": 3342,
+            "end": 3454,
+            "spans": [
+              [
+                3342,
+                3349
+              ],
+              [
+                3361,
+                3381
+              ],
+              [
+                3423,
+                3427
+              ],
+              [
+                3440,
+                3454
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.86,
+        "margin": 0.4,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 90 % des Claims.",
+        "scores": {
+          "top": 0.829,
+          "lex": 0.536,
+          "emb": 0.806,
+          "anchor": 0,
+          "nli": 0.991
+        }
+      },
+      {
+        "id": "c25",
+        "start": 2258,
+        "end": 2343,
+        "text": "Denn jede eingesparte Kilowattstunde entlastet langfristig auch den Gemeindehaushalt.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s35",
+            "start": 3529,
+            "end": 3632,
+            "spans": [
+              [
+                3529,
+                3553
+              ],
+              [
+                3567,
+                3632
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.95,
+        "margin": 0.62,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 93 % des Claims.",
+        "scores": {
+          "top": 0.962,
+          "lex": 0.87,
+          "emb": 0.975,
+          "anchor": 0,
+          "nli": 0.987
+        }
+      },
+      {
+        "id": "c26",
+        "start": 2344,
+        "end": 2454,
+        "text": "Simmerath hofft deshalb, dass sich das neue System nicht nur ökologisch, sondern auch wirtschaftlich auszahlt.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s36",
+            "start": 3633,
+            "end": 3765,
+            "spans": [
+              [
+                3633,
+                3683
+              ],
+              [
+                3700,
+                3765
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.95,
+        "margin": 0.57,
+        "entities": [
+          {
+            "type": "person",
+            "surface": "Simmerath",
+            "norm": "simmerath",
+            "status": "match"
+          }
+        ],
+        "flags": [
+          "wortlaut_abweichung"
+        ],
+        "wortlaut": {
+          "quelle": "s36",
+          "aenderungen": [
+            {
+              "claim": "auszahlt",
+              "quelle": "auszahlen wird",
+              "nah": true,
+              "aehnlichkeit": 0.64
+            }
+          ]
+        },
+        "note": "Fundstellen erklären 95 % des Claims. · Fast wörtlich übernommen, aber abweichend: „auszahlen wird“ → „auszahlt“.",
+        "scores": {
+          "top": 0.966,
+          "lex": 0.89,
+          "emb": 0.96,
+          "anchor": 0.1,
+          "nli": 0.995
+        }
+      }
+    ]
+  }
+} 

@@ -1,0 +1,462 @@
+{
+  "paar": "noz_Klimaschutz",
+  "split": "test",
+  "anleitung": [
+    "Arbeitsanweisung (diese Zeilen bleiben in der Datei stehen):",
+    "1. Jede Zeile mit \"geprueft\": false durchgehen und auf true setzen.",
+    "2. notwendig = Sätze, ohne die ein Teil der Aussage unbelegt bliebe.",
+    "   zulaessig = stützt ebenfalls, ist aber entbehrlich (Dubletten).",
+    "3. relation prüfen: direkt | aggregiert | bedeutung_verschoben |",
+    "   inferiert | keine_quelle.",
+    "4. flags_erwartet: nur Befunde, die WIRKLICH zutreffen sollten",
+    "   (zahlkonflikt, ort_konflikt, kuerzel_konflikt, wortlaut_abweichung,",
+    "   ident_unbelegt, zahl_unbelegt). Leere Liste heißt: kein Befund.",
+    "5. Zum Schluss EINMAL umgekehrt: den Artikel lesen und fragen, welcher",
+    "   Transkriptsatz diese Stelle nutzt. Das fängt die Quellen, die die",
+    "   Pipeline gar nicht erst vorgeschlagen hat — der Bias des Entwurfs.",
+    "6. Artikel- und Transkripttext danach NICHT mehr ändern, auch keine",
+    "   Tippfehler: Die Zeichen-Offsets sind Teil der Annotation."
+  ],
+  "artikel_hash": "1ae805e560234edb",
+  "transkript_hash": "919f53c6fe6ade75",
+  "artikel_saetze": [
+    {
+      "id": "s1",
+      "text": "\"Hitze, Starkregen, Sturmfluten: Klimaschutzstrategie des Landes lässt auf sich warten\nWie sollen sich die Bürger vor Extremwetterereignissen schützen?"
+    },
+    {
+      "id": "s2",
+      "text": "Das sollen ein Plan zur Klimaanpassung und ein Aktionsplan gegen Hitze und Dürre festlegen."
+    },
+    {
+      "id": "s3",
+      "text": "Doch die sind ein Jahr nach Beschluss noch immer nicht fertig."
+    },
+    {
+      "id": "s4",
+      "text": "Wie Umweltminister Tobias Goldschmidt (Grüne) das erklärt."
+    },
+    {
+      "id": "s5",
+      "text": "Sandra Redmann freut sich auf den Sommer."
+    },
+    {
+      "id": "s6",
+      "text": "Nur eines macht der SPD-Abgeordneten Sorgen: „Schleswig-Holstein geht erneut ohne klaren Plan zur Klimaanpassung in diese Zeit."
+    },
+    {
+      "id": "s7",
+      "text": "Der Umweltminister muss jetzt endlich liefern.“"
+    },
+    {
+      "id": "s8",
+      "text": "Bereits im Juli 2025 hat die SPD-Fraktion mit einem Antrag einen strategischen Aktionsplan gegen Hitze und Dürre für Schleswig-Holstein gefordert."
+    },
+    {
+      "id": "s9",
+      "text": "„Damals wurde verabredet, diesen Antrag erneut aufzurufen, sobald die Klimaanpassungsstrategie des Landes vorliegt."
+    },
+    {
+      "id": "s10",
+      "text": "Doch auf diese Strategie wartet das Parlament bis heute“, klagt Redmann."
+    },
+    {
+      "id": "s11",
+      "text": "Seit September liegt eine Klimawandelfolgen-Risikoanalyse im Umweltministerium."
+    },
+    {
+      "id": "s12",
+      "text": "Das hatte Redmann vor drei Monaten mitgeteilt, dass die vollständige Klimarisikoanalyse Ende März fertig sein soll."
+    },
+    {
+      "id": "s13",
+      "text": "Grund für die Verzögerung seien „Mehraufwände, die sich im Prozess insbesondere bei der Erweiterung des Klimafolgenmonitorings sowie bei der Abschätzung künftiger Klimawandelfolgen ergeben haben“."
+    },
+    {
+      "id": "s14",
+      "text": "Im schönsten Beamtendeutsch schreibt das Haus von Minister Tobias Goldschmidt (Grüne), dass „komplexe Arbeitsschritte wie die Ausarbeitung der Klimawirkungen, die datenbasierte Hinterlegung der einzelnen Risikokomponenten sowie die ressortübergreifende Abstimmung und Bewertung der Klimarisiken mit der erforderlichen Sorgfalt durchgeführt werden“ sollen."
+    },
+    {
+      "id": "s15",
+      "text": "Redmann will das nicht gelten lassen."
+    },
+    {
+      "id": "s16",
+      "text": "„Die Klimafolgen sind in Schleswig-Holstein längst Realität."
+    },
+    {
+      "id": "s17",
+      "text": "Hitzeperioden, Trockenphasen und Extremwetter nehmen zu – doch die Landesregierung kommt bei der Klimaanpassungsstrategie einfach nicht voran.“"
+    },
+    {
+      "id": "s18",
+      "text": "Der letzte derartige Fahrplan stammt aus dem Jahr 2017, als der zuständige Minister noch Robert Habeck hieß."
+    },
+    {
+      "id": "s19",
+      "text": "Auf Nachfrage erklärt Goldschmidts Sprecher Jonas Hippel, dass während der Erarbeitung der Strategie auf Bundesebene das Klimaanpassungsgesetz verabschiedet worden sei."
+    },
+    {
+      "id": "s20",
+      "text": "Dies beinhalte auch neue Vorgaben für die Länder."
+    },
+    {
+      "id": "s21",
+      "text": "Zu diesen zählten die Erarbeitung einer Klimarisikoanalyse, die Erhebung von Klimadaten sowie die Beteiligung von Gemeinden, Kreisen und der Öffentlichkeit."
+    },
+    {
+      "id": "s22",
+      "text": "„Um die Anforderungen des Bundes gewinnbringend erfüllen zu können, wurde der ursprüngliche Zeitplan zur Erarbeitung der schleswig-holsteinischen Strategie daher angepasst und ergänzt“, sagt Hippel."
+    },
+    {
+      "id": "s23",
+      "text": "Klima-Konzept soll im Sommer fertig sein\nDer Entwurf der Strategie sei nun in der finalen Abstimmung und soll dem Kabinett im Sommer vorgelegt werden."
+    },
+    {
+      "id": "s24",
+      "text": "Hippel: „Im Anschluss an die Verabschiedung ist eine zeitnahe Veröffentlichung der Strategie geplant.“"
+    },
+    {
+      "id": "s25",
+      "text": "Das geht Redmann nicht schnell genug."
+    },
+    {
+      "id": "s26",
+      "text": "„Seit Monaten warten wir auf die angekündigte Klimaanpassungsstrategie."
+    },
+    {
+      "id": "s27",
+      "text": "Das ist angesichts der zunehmenden Klimafolgen nicht nachvollziehbar.“"
+    },
+    {
+      "id": "s28",
+      "text": "Und der Sommer komme: „Schleswig-Holstein geht erneut ohne ressortübergreifenden Aktionsplan zur Bewältigung von Hitze, Dürre und Extremwetterlagen.“"
+    },
+    {
+      "id": "s29",
+      "text": "Im für den Hitzeschutz zuständigen, CDU-geführten Gesundheitsministerium sieht man das anders."
+    },
+    {
+      "id": "s30",
+      "text": "„In Zusammenarbeit zwischen verschiedenen Ministerien, Bund, Deutschem Wetterdienst und Kommunen wird der Hitzeschutz gestärkt, beispielsweise durch gezielte Warnmeldungen, umfangreiche Informationen für Bürgerinnen und Bürger, Maßnahmen für mehr Sonnenschutz insbesondere an Kitas und die fachliche Unterstützung beim Erstellen von regional angepassten Hitzeschutzplänen durch Kommunen“, sagt Sprecher Christian Kohl."
+    },
+    {
+      "id": "s31",
+      "text": "Kommunen, die für akute Maßnahmen zuständig sind, würden dabei durch den „Hitze-Service“ unterstützt, der Hilfestellungen und Anregungen für viele Bereiche beinhalte."
+    },
+    {
+      "id": "s32",
+      "text": "Informationen für Bürger sowie die Verlinkung zum Hitzeservice gibt es hier."
+    },
+    {
+      "id": "s33",
+      "text": "\""
+    }
+  ],
+  "eintraege": [
+    {
+      "satz": "t1",
+      "text": "Schleswig-Holstein geht in den Sommer – ohne fertige Klimaanpassungsstrategie.",
+      "start": 0,
+      "end": 78,
+      "geprueft": true,
+      "notwendig": [
+        "s6"
+      ],
+      "zulaessig": [
+        "s23"
+      ],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c1"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t2",
+      "text": "Dabei sollte der Plan, der die Bürger vor Hitze, Starkregen und Sturmfluten schützen soll, längst vorliegen.",
+      "start": 79,
+      "end": 187,
+      "geprueft": true,
+      "notwendig": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c2"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t3",
+      "text": "Die SPD-Abgeordnete Sandra Redmann kritisiert das scharf.",
+      "start": 189,
+      "end": 246,
+      "geprueft": true,
+      "notwendig": [
+        "s10"
+      ],
+      "zulaessig": [
+        "s6",
+        "s7"
+      ],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c3"
+      ],
+      "relationen_gemischt": false,
+      "notiz": "Nirgendwo ist die Rede von \"Scharfer Kritik\", das darf bei einer politischen Zusammenfassung so nicht durchrutschen.\n"
+    },
+    {
+      "satz": "t4",
+      "text": "Sie sagt, die Klimafolgen seien in Schleswig-Holstein längst Realität: Hitzeperioden, Trockenphasen und Extremwetter nähmen zu – doch die Landesregierung komme einfach nicht voran.",
+      "start": 247,
+      "end": 427,
+      "geprueft": true,
+      "notwendig": [
+        "s16",
+        "s17"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c4"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t5",
+      "text": "Der letzte vergleichbare Fahrplan stammt aus dem Jahr zweitausendsiebzehn, als der zuständige Minister noch Robert Habeck hieß.",
+      "start": 428,
+      "end": 555,
+      "geprueft": true,
+      "notwendig": [
+        "s18"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c5"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t6",
+      "text": "Bereits im Juli vergangenen Jahres hatte die SPD-Fraktion einen strategischen Aktionsplan gegen Hitze und Dürre gefordert.",
+      "start": 557,
+      "end": 679,
+      "geprueft": true,
+      "notwendig": [
+        "s8"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c6"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t7",
+      "text": "Damals sei verabredet worden, den Antrag erneut aufzurufen, sobald die Klimaanpassungsstrategie des Landes vorliege.",
+      "start": 680,
+      "end": 796,
+      "geprueft": true,
+      "notwendig": [
+        "s9"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c7"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t8",
+      "text": "Doch darauf warte das Parlament bis heute, klagt Redmann.",
+      "start": 797,
+      "end": 854,
+      "geprueft": true,
+      "notwendig": [
+        "s10"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c8"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t9",
+      "text": "Eine Risikoanalyse zu den Folgen des Klimawandels liegt seit September im Umweltministerium – fertig ist sie noch nicht.",
+      "start": 855,
+      "end": 975,
+      "geprueft": true,
+      "notwendig": [
+        "s11"
+      ],
+      "zulaessig": [
+        "s12"
+      ],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c9"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t10",
+      "text": "Der Sprecher von Umweltminister Tobias Goldschmidt von den Grünen, Jonas Hippel, erklärt die Verzögerung so: Während der Erarbeitung der Strategie habe der Bund ein Klimaanpassungsgesetz verabschiedet, das neue Vorgaben für die Länder enthalte.",
+      "start": 977,
+      "end": 1221,
+      "geprueft": true,
+      "notwendig": [
+        "s19",
+        "s20"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c10"
+      ],
+      "relationen_gemischt": false,
+      "notiz": "Eindeutig keine verschobene Bedeutung"
+    },
+    {
+      "satz": "t11",
+      "text": "Dazu gehörten eine eigene Risikoanalyse, die Erhebung von Klimadaten sowie die Beteiligung von Gemeinden, Kreisen und der Öffentlichkeit.",
+      "start": 1222,
+      "end": 1359,
+      "geprueft": true,
+      "notwendig": [
+        "s21"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c11"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t12",
+      "text": "Der ursprüngliche Zeitplan sei deshalb angepasst worden.",
+      "start": 1360,
+      "end": 1416,
+      "geprueft": true,
+      "notwendig": [
+        "s22"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c12"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t13",
+      "text": "Der Entwurf der Strategie befinde sich nun in der finalen Abstimmung und solle dem Kabinett im Sommer vorgelegt werden.",
+      "start": 1417,
+      "end": 1536,
+      "geprueft": true,
+      "notwendig": [
+        "s23"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c13"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t14",
+      "text": "Redmann geht das nicht schnell genug.",
+      "start": 1538,
+      "end": 1575,
+      "geprueft": true,
+      "notwendig": [
+        "s25"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c14"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t15",
+      "text": "Seit Monaten warte man auf die Strategie – das sei angesichts der zunehmenden Klimafolgen nicht nachvollziehbar.",
+      "start": 1576,
+      "end": 1688,
+      "geprueft": true,
+      "notwendig": [
+        "s26",
+        "s27"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c15",
+        "c16"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t16",
+      "text": "Das CDU-geführte Gesundheitsministerium, das für den Hitzeschutz zuständig ist, sieht das anders und verweist auf laufende Maßnahmen: gezielte Warnmeldungen, umfangreiche Informationen für die Bürgerinnen und Bürger, mehr Sonnenschutz vor allem an Kitas sowie Unterstützung für Kommunen beim Erstellen regionaler Hitzeschutzpläne.",
+      "start": 1690,
+      "end": 2020,
+      "geprueft": true,
+      "notwendig": [
+        "s29",
+        "s30"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c17"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    }
+  ]
+}

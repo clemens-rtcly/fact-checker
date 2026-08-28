@@ -1,0 +1,486 @@
+{
+  "paar": "az_kulturAachen",
+  "split": "dev",
+  "anleitung": [
+    "Arbeitsanweisung (diese Zeilen bleiben in der Datei stehen):",
+    "1. Jede Zeile mit \"geprueft\": false durchgehen und auf true setzen.",
+    "2. notwendig = Sätze, ohne die ein Teil der Aussage unbelegt bliebe.",
+    "   zulaessig = stützt ebenfalls, ist aber entbehrlich (Dubletten).",
+    "3. relation prüfen: direkt | aggregiert | bedeutung_verschoben |",
+    "   inferiert | keine_quelle.",
+    "4. flags_erwartet: nur Befunde, die WIRKLICH zutreffen sollten",
+    "   (zahlkonflikt, ort_konflikt, kuerzel_konflikt, wortlaut_abweichung,",
+    "   ident_unbelegt, zahl_unbelegt). Leere Liste heißt: kein Befund.",
+    "5. Zum Schluss EINMAL umgekehrt: den Artikel lesen und fragen, welcher",
+    "   Transkriptsatz diese Stelle nutzt. Das fängt die Quellen, die die",
+    "   Pipeline gar nicht erst vorgeschlagen hat — der Bias des Entwurfs.",
+    "6. Artikel- und Transkripttext danach NICHT mehr ändern, auch keine",
+    "   Tippfehler: Die Zeichen-Offsets sind Teil der Annotation."
+  ],
+  "artikel_hash": "2e2e7a0c9160c6b0",
+  "transkript_hash": "94f0ae3ca27e8258",
+  "artikel_saetze": [
+    {
+      "id": "s1",
+      "text": "Aachen Jeder Euro wird umgedreht: In Zeiten der städtischen Haushaltssperre steht die Kultur, eine kostenintensive Angelegenheit, besonders unter Druck."
+    },
+    {
+      "id": "s2",
+      "text": "Im städtischen Kulturausschuss haben nun der Kulturbetrieb, das Theater Aachen und die Volkshochschule konkrete Sparmaßnahmen und Sparziele vorgelegt."
+    },
+    {
+      "id": "s3",
+      "text": "Zudem wird es moderate Erhöhungen der Eintrittsgelder im Theater – etwa 1 bis 2 Euro pro Karte, bei den Abos zwischen 5 und 10 Euro – geben."
+    },
+    {
+      "id": "s4",
+      "text": "Auch die Kursentgelte für die mehr als 1000 Angebote der Volkshochschule werden erstmals nach vielen Jahren steigen."
+    },
+    {
+      "id": "s5",
+      "text": "Mit großer Mehrheit hat die Politik die Preiserhöhungen abgesegnet."
+    },
+    {
+      "id": "s6",
+      "text": "Lediglich Robert Stoddon von der Linken stimmte mit Blick auf die Teilhabe von Menschen mit niedrigen Einkommen dagegen."
+    },
+    {
+      "id": "s7",
+      "text": "Auslastung gestiegen"
+    },
+    {
+      "id": "s8",
+      "text": "Im Dschungel der roten Zahlen gibt es eine positive Nachricht: Das Theater Aachen hat sowohl die Auslastung als auch die Besucherzahlen gesteigert."
+    },
+    {
+      "id": "s9",
+      "text": "Die Auslastung stieg von 67,4 auf 72,4 Prozent, die Zahl der Besucherinnen und Besucher von 55.738 auf 63.076. Stichtag war jeweils der 30. April für die Zählung."
+    },
+    {
+      "id": "s10",
+      "text": "Allerdings stieg zugleich die Zahl der Vorstellungen von 180 auf 220. Die höheren Besucherzahlen sind daher wohl auch auf das erweiterte Angebot zurückzuführen."
+    },
+    {
+      "id": "s11",
+      "text": "Nichtsdestotrotz zeigten sich die Politiker erfreut, allen voran die Grünen-Politikerin Karin Schmitt-Promny: „Es sind nicht nur quantitativ mehr Menschen ins Theater gegangen, sondern ich meine, dass sich das Publikum verjüngt hat“, schilderte sie ihre Einschätzung, die die Verwaltungsdirektorin des Theaters, Miriam Sasserath, bestätigte."
+    },
+    {
+      "id": "s12",
+      "text": "Auch die Vorsitzende des Kulturausschusses Margrete Schmeer (CDU) gab zu, dass die Zahlen „etwas in die Waagschale werfen, das uns in die Hände spielt.“"
+    },
+    {
+      "id": "s13",
+      "text": "Insgesamt sei die Kultur in Zeiten der Haushaltssperre jedoch „ein Ritt auf der Rasierklinge, auf der man möglichst unverletzt entlangreiten will“, sagte Schmeer."
+    },
+    {
+      "id": "s14",
+      "text": "Ganz unbeschädigt wird das nicht vonstattengehen: Der Kulturbetrieb der Stadt Aachen muss im laufenden Jahr insgesamt 200.000 Euro einsparen, darunter sind allein 32.100 Euro aus den Mitteln für die freie Kulturszene, der sogenannten Kaste, zu bewältigen, wie die neue Leiterin des Kulturbetriebs, Lena tom Dieck, mitteilte."
+    },
+    {
+      "id": "s15",
+      "text": "Vor allen Dingen Hermann-Josef Pilgram (Grüne) wollte diese Kürzungen für die freie Szene nicht hinnehmen, stimmte als einziger gegen den Antrag und verwies dabei auf die unverhältnismäßige Belastung von Künstlerinnen und Künstlern, die nicht institutionell abgesichert seien."
+    },
+    {
+      "id": "s16",
+      "text": "Bei den Institutionen gibt es über die Personalkosten mehr Einsparpotential: Die Verwaltungsleiterin der Volkshochschule, Christiane Gielsdorf, kündigte an, dass ihr Haus vor allem über die Verzögerung von Nachbesetzungen für Langzeiterkrankte oder Kräfte, die in Rente gehen, 68.000 Euro einsparen werde."
+    },
+    {
+      "id": "s17",
+      "text": "Das Theater Aachen will ebenfalls über die Personalkosten (spätere oder weniger Nachbesetzungen, Aussetzen von Volontariaten), aber auch über die bereits erhöhten Eintrittsgelder und geringere Sachkosten rund 150.000 Euro einsparen."
+    },
+    {
+      "id": "s18",
+      "text": "Insgesamt, darin ließen die Beratungen im Kulturausschuss keinen Zweifel, ist das erst der Anfang einer Konsolidierungsphase, in der jeder Kostenpunkt in der Kultur genau unter die Lupe genommen werden wird."
+    },
+    {
+      "id": "s19",
+      "text": "Kulturdezernent Heinrich Brötz war im Zuge dieser Kleinteiligkeit schon froh darüber, dass er im Vorhinein „in langen Verhandlungsrunden“ mit der Kämmerei pauschale Sparziele vereinbaren konnte: „Bisher mussten selbst kleinere Ausgaben, und das geht runter bis auf 500 Euro, einzeln vorgelegt und begründet werden“, sagte Brötz."
+    },
+    {
+      "id": "s20",
+      "text": "Spendensammlungen"
+    },
+    {
+      "id": "s21",
+      "text": "Wie stark die Kultur unter Druck steht, macht auch ein Antrag deutlich, der einstimmig beschlossen wurde: Bei den städtischen Kulturveranstaltungen, die gratis angeboten werden, sollen demnächst Spenden gesammelt werden."
+    },
+    {
+      "id": "s22",
+      "text": "Dafür soll der Kulturbetrieb nun ein Konzept aufzusetzen, damit man die Stadt nicht nur den Klingelbeutel rumgehen lässt, sondern auch eine Möglichkeit findet, auf digitalem Weg im Stile von Fundraising Geld einzusammeln."
+    }
+  ],
+  "eintraege": [
+    {
+      "satz": "t1",
+      "text": "Die Kultur in Aachen gerät durch die städtische Haushaltssperre weiter unter Druck.",
+      "start": 0,
+      "end": 83,
+      "geprueft": false,
+      "notwendig": [
+        "s1"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c1"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t2",
+      "text": "Im Kulturausschuss haben der Kulturbetrieb, das Theater Aachen und die Volkshochschule Sparpläne vorgestellt.",
+      "start": 84,
+      "end": 193,
+      "geprueft": false,
+      "notwendig": [
+        "s2"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c2"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t3",
+      "text": "Zugleich beschloss die Politik mit großer Mehrheit höhere Eintritts- und Kursgebühren.",
+      "start": 194,
+      "end": 280,
+      "geprueft": false,
+      "notwendig": [
+        "s3",
+        "s5",
+        "s10"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [
+        "nli_widerspruch"
+      ],
+      "claims_im_lauf": [
+        "c3"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t4",
+      "text": "Im Theater sollen Karten je nach Kategorie ein bis zwei Euro mehr kosten.",
+      "start": 282,
+      "end": 355,
+      "geprueft": false,
+      "notwendig": [
+        "s1",
+        "s3"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c4"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t5",
+      "text": "Abonnements werden um fünf bis zehn Euro teurer.",
+      "start": 356,
+      "end": 404,
+      "geprueft": false,
+      "notwendig": [
+        "s3"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c5"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t6",
+      "text": "Auch die Volkshochschule erhöht nach vielen Jahren ihre Entgelte für mehr als 1000 Kursangebote.",
+      "start": 405,
+      "end": 501,
+      "geprueft": false,
+      "notwendig": [
+        "s4"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c6"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t7",
+      "text": "Robert Stoddon von der Partei Die Linke stimmte dagegen.",
+      "start": 502,
+      "end": 558,
+      "geprueft": false,
+      "notwendig": [
+        "s6"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [
+        "ident_unbelegt"
+      ],
+      "claims_im_lauf": [
+        "c7"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t8",
+      "text": "Er verwies auf die Bedeutung kultureller Teilhabe für Menschen mit geringem Einkommen.",
+      "start": 559,
+      "end": 645,
+      "geprueft": false,
+      "notwendig": [
+        "s6",
+        "s15"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c8"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t9",
+      "text": "Das Theater Aachen meldet unterdessen steigende Besucherzahlen.",
+      "start": 647,
+      "end": 710,
+      "geprueft": false,
+      "notwendig": [
+        "s8"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c9"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t10",
+      "text": "Die Auslastung erhöhte sich von 67,4 auf 72,4 Prozent.",
+      "start": 711,
+      "end": 765,
+      "geprueft": false,
+      "notwendig": [
+        "s9"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c10"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t11",
+      "text": "Bis zum 30. April wurden 63.076 Besucherinnen und Besucher gezählt, nach 55.738 im Vergleichszeitraum zuvor.",
+      "start": 766,
+      "end": 874,
+      "geprueft": false,
+      "notwendig": [
+        "s9"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c11"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t12",
+      "text": "Allerdings stieg auch die Zahl der Vorstellungen deutlich, von 180 auf 220. Karin Schmitt-Promny, Politikerin der Grünen, erklärte zudem, ihr Eindruck sei, dass sich das Publikum verjüngt habe.",
+      "start": 875,
+      "end": 1068,
+      "geprueft": false,
+      "notwendig": [
+        "s11"
+      ],
+      "zulaessig": [
+        "s10"
+      ],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c12"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t13",
+      "text": "Miriam Sasserath, Verwaltungsdirektorin des Theaters Aachen, bestätigte diese Einschätzung.",
+      "start": 1069,
+      "end": 1160,
+      "geprueft": false,
+      "notwendig": [
+        "s11"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c13"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t14",
+      "text": "Der Kulturbetrieb der Stadt Aachen muss im laufenden Jahr 200.000 Euro einsparen.",
+      "start": 1162,
+      "end": 1243,
+      "geprueft": false,
+      "notwendig": [
+        "s14"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c14"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t15",
+      "text": "Davon entfallen 32.100 Euro auf die freie Kulturszene.",
+      "start": 1244,
+      "end": 1298,
+      "geprueft": false,
+      "notwendig": [
+        "s14"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c15"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t16",
+      "text": "Hermann-Josef Pilgram, Politiker der Grünen, lehnte diese Kürzung als Einziger ab.",
+      "start": 1299,
+      "end": 1381,
+      "geprueft": false,
+      "notwendig": [
+        "s15"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c16"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t17",
+      "text": "Er sah freischaffende Künstlerinnen und Künstler unverhältnismäßig belastet.",
+      "start": 1382,
+      "end": 1458,
+      "geprueft": false,
+      "notwendig": [
+        "s15"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c17"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t18",
+      "text": "Die Volkshochschule will 68.000 Euro vor allem durch verzögerte Nachbesetzungen sparen.",
+      "start": 1460,
+      "end": 1547,
+      "geprueft": false,
+      "notwendig": [
+        "s16"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c18"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t19",
+      "text": "Das Theater plant Einsparungen von rund 150.000 Euro durch Personalkosten, geringere Sachausgaben und höhere Eintrittsgelder.",
+      "start": 1548,
+      "end": 1673,
+      "geprueft": false,
+      "notwendig": [
+        "s17",
+        "s19"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c19"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t20",
+      "text": "Zusätzlich sollen bei kostenlosen städtischen Kulturveranstaltungen künftig Spenden gesammelt werden, auch über digitale Fundraising-Angebote.",
+      "start": 1674,
+      "end": 1816,
+      "geprueft": false,
+      "notwendig": [
+        "s21",
+        "s22"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c20"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    }
+  ]
+}

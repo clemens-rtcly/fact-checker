@@ -1,0 +1,577 @@
+{
+  "paar": "noz_Fehmarn",
+  "split": "dev",
+  "anleitung": [
+    "Arbeitsanweisung (diese Zeilen bleiben in der Datei stehen):",
+    "1. Jede Zeile mit \"geprueft\": false durchgehen und auf true setzen.",
+    "2. notwendig = Sätze, ohne die ein Teil der Aussage unbelegt bliebe.",
+    "   zulaessig = stützt ebenfalls, ist aber entbehrlich (Dubletten).",
+    "3. relation prüfen: direkt | aggregiert | bedeutung_verschoben |",
+    "   inferiert | keine_quelle.",
+    "4. flags_erwartet: nur Befunde, die WIRKLICH zutreffen sollten",
+    "   (zahlkonflikt, ort_konflikt, kuerzel_konflikt, wortlaut_abweichung,",
+    "   ident_unbelegt, zahl_unbelegt). Leere Liste heißt: kein Befund.",
+    "5. Zum Schluss EINMAL umgekehrt: den Artikel lesen und fragen, welcher",
+    "   Transkriptsatz diese Stelle nutzt. Das fängt die Quellen, die die",
+    "   Pipeline gar nicht erst vorgeschlagen hat — der Bias des Entwurfs.",
+    "6. Artikel- und Transkripttext danach NICHT mehr ändern, auch keine",
+    "   Tippfehler: Die Zeichen-Offsets sind Teil der Annotation."
+  ],
+  "artikel_hash": "36b1f40507977d8a",
+  "transkript_hash": "9aaca777c027cf22",
+  "artikel_saetze": [
+    {
+      "id": "s1",
+      "text": "\"Fehmarns Bürgermeister Weber zum Russen-Schiff vor der Insel: „Das Drohgefühl hat sich intensiviert“\nDer russische Zerstörer „Severomorsk“ hat in Sichtweite vor der Insel Fehmarn Position bezogen."
+    },
+    {
+      "id": "s2",
+      "text": "Jörg Weber, Bürgermeister der Insel, ist seit mehr als zehn Jahren im Amt."
+    },
+    {
+      "id": "s3",
+      "text": "Diese Art der Bedrohung hat er noch nie erlebt, wie er der Redaktion erzählt."
+    },
+    {
+      "id": "s4",
+      "text": "„Es ist ein mulmiges Gefühl“, sagt Inselbürgermeister Jörg Weber (59) der Redaktion."
+    },
+    {
+      "id": "s5",
+      "text": "Er ist seit 2015 im Amt."
+    },
+    {
+      "id": "s6",
+      "text": "Dass die Ostseeinsel als strategisch wichtiger Marinestützpunkt es mit einer hohen Frequenz von Kriegsschiffen zu tun hat, ist die eine Sache."
+    },
+    {
+      "id": "s7",
+      "text": "Die andere Sache liegt nun vor der Küste – der russische Zerstörer „Severomorsk“."
+    },
+    {
+      "id": "s8",
+      "text": "160 Meter lang, 7400 Tonnen schwer, auf U-Boot-Zerstörung spezialisiert\n„Severomorsk“, so heißt das Kriegsschiff, das seit wenigen Tagen in Sichtweite vor der Insel Fehmarn liegt."
+    },
+    {
+      "id": "s9",
+      "text": "Es ist auf die Zerstörung von U-Booten spezialisiert."
+    },
+    {
+      "id": "s10",
+      "text": "160 Meter lang und 7400 Tonnen schwer."
+    },
+    {
+      "id": "s11",
+      "text": "Anfang Mai ist es aus dem russischen Hafen Baltijsk ausgelaufen und befindet sich seit dem vergangenen Wochenende zwischen Fehmarn und der Lübecker Bucht, mutmaßlich um Schiffe der russischen „Schattenflotte“ zu schützen."
+    },
+    {
+      "id": "s12",
+      "text": "Auf der Insel versuche man, Ruhe zu bewahren, so Weber."
+    },
+    {
+      "id": "s13",
+      "text": "Vereinzelt seien Bürger auf ihn zugekommen mit Sorgen vor dem Schiff und der Frage: „Was macht ihr dagegen?“"
+    },
+    {
+      "id": "s14",
+      "text": "Dass er darauf nicht konkret antworten kann, fällt ihm schwer."
+    },
+    {
+      "id": "s15",
+      "text": "Doch es geht um Sicherheitsfragen und Geheimnisse."
+    },
+    {
+      "id": "s16",
+      "text": "„Auch der Russe liest die Zeitung und guckt Fernsehen“, sagt er."
+    },
+    {
+      "id": "s17",
+      "text": "Was von der Bundeswehr konkret geplant ist, bleibt daher unter Verschluss."
+    },
+    {
+      "id": "s18",
+      "text": "Hätte man ihm vor Amtsantritt gesagt, was in seinen Jahren als Bürgermeister noch alles in der Welt passieren würde, hätte er zweimal über den Beruf nachgedacht, sagt er und lacht."
+    },
+    {
+      "id": "s19",
+      "text": "Die Verunsicherung durch Russland bestehe seit Jahren."
+    },
+    {
+      "id": "s20",
+      "text": "2024 wurde im russischen Staatsfernsehen die Fehmarnsundbrücke ausdrücklich als Ziel für Raketenangriffe genannt."
+    },
+    {
+      "id": "s21",
+      "text": "„Das Drohgefühl hat sich intensiviert“, sagt auch Weber."
+    },
+    {
+      "id": "s22",
+      "text": "Dennoch habe er großes Vertrauen in die deutschen Sicherheitsbehörden und die hohen Sicherheitsstandards."
+    },
+    {
+      "id": "s23",
+      "text": "„Ich gehe nicht jeden Abend mit Angst ins Bett.“"
+    },
+    {
+      "id": "s24",
+      "text": "Auf Fehmarn ist die Anwesenheit russischer Schiffe keine Neuheit."
+    },
+    {
+      "id": "s25",
+      "text": "Im Oktober 2025 war vor der Kieler Bucht bereits das Militärschiff „Aleksandr Shabalin“ stationiert."
+    },
+    {
+      "id": "s26",
+      "text": "Dennoch löst die „Severomorsk“ auf der Insel Besorgnis aus."
+    },
+    {
+      "id": "s27",
+      "text": "Laut Bundesverteidigungsministerium will Russland mit den Kriegsschiffen in der Ostsee seine „Schattenflotte“ überwachen."
+    },
+    {
+      "id": "s28",
+      "text": "Über diese versucht Moskau seit Jahren, einen von westlichen Unterstützern der Ukraine eingeführten Preisdeckel für russisches Öl zu umgehen."
+    },
+    {
+      "id": "s29",
+      "text": "Zudem steht die „Schattenflotte“ in Verdacht, für Sabotageaktionen gegen Unterwasserinfrastruktur genutzt zu werden."
+    },
+    {
+      "id": "s30",
+      "text": "Die Nato hat auf die „Severomorsk“ reagiert."
+    },
+    {
+      "id": "s31",
+      "text": "Die Bündnispartner würden die Bewegungen russischer Kriegsschiffe beobachten."
+    },
+    {
+      "id": "s32",
+      "text": "Demnach sind Schiffe des ständigen Nato-Marineverbandes 1 (SNMG 1) in der Ostsee unterwegs, um die Routen der Russen zu verfolgen."
+    },
+    {
+      "id": "s33",
+      "text": "Flaggschiff des Nato-Verbandes ist die deutsche Fregatte „Sachsen“."
+    },
+    {
+      "id": "s34",
+      "text": "Nach Angaben der „Kieler Nachrichten“ stieß aus Frankreich auch die Fregatte „Auvergne“ dazu, die bei Fehmarn den russischen Zerstörer „Severomorsk“ aus der Nähe beschattete."
+    },
+    {
+      "id": "s35",
+      "text": "\""
+    }
+  ],
+  "eintraege": [
+    {
+      "satz": "t1",
+      "text": "Der russische Zerstörer „Severomorsk\" liegt seit einigen Tagen in Sichtweite vor der Ostseeinsel Fehmarn – und das sorgt für ein mulmiges Gefühl.",
+      "start": 0,
+      "end": 145,
+      "geprueft": true,
+      "notwendig": [
+        "s4",
+        "s6",
+        "s8"
+      ],
+      "zulaessig": [
+        "s1",
+        "s7"
+      ],
+      "relation": "aggregiert",
+      "flags_erwartet": [
+        "wortlaut_abweichung"
+      ],
+      "claims_im_lauf": [
+        "c1"
+      ],
+      "relationen_gemischt": false,
+      "notiz": "Wenige vs. einige Tage"
+    },
+    {
+      "satz": "t2",
+      "text": "So beschreibt es Jörg Weber, der Bürgermeister der Insel, der seit zweitausendfünfzehn im Amt ist.",
+      "start": 146,
+      "end": 244,
+      "geprueft": true,
+      "notwendig": [
+        "s2",
+        "s5"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c2"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t3",
+      "text": "Eine solche Bedrohung habe er in all den Jahren noch nie erlebt.",
+      "start": 245,
+      "end": 309,
+      "geprueft": true,
+      "notwendig": [
+        "s3",
+        "s18"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c3"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t4",
+      "text": "Das Kriegsschiff ist hundertsechzig Meter lang, rund siebentausendvierhundert Tonnen schwer und auf die Zerstörung von U-Booten spezialisiert.",
+      "start": 311,
+      "end": 453,
+      "geprueft": true,
+      "notwendig": [
+        "s8"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c4"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t5",
+      "text": "Anfang Mai lief es aus dem russischen Hafen Baltijsk aus.",
+      "start": 454,
+      "end": 511,
+      "geprueft": true,
+      "notwendig": [
+        "s11"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c5"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t6",
+      "text": "Seitdem liegt es zwischen Fehmarn und der Lübecker Bucht – mutmaßlich, um Schiffe der russischen Schattenflotte zu schützen.",
+      "start": 512,
+      "end": 636,
+      "geprueft": true,
+      "notwendig": [
+        "s11"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c6"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t7",
+      "text": "Weber sagt, auf der Insel versuche man, Ruhe zu bewahren.",
+      "start": 638,
+      "end": 695,
+      "geprueft": true,
+      "notwendig": [
+        "s12"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c7"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t8",
+      "text": "Vereinzelt seien Bürger mit Sorgen auf ihn zugekommen und hätten gefragt, was man dagegen unternehme.",
+      "start": 696,
+      "end": 797,
+      "geprueft": true,
+      "notwendig": [
+        "s13"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c8"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t9",
+      "text": "Eine konkrete Antwort könne er nicht geben – es gehe um Sicherheitsfragen und Geheimnisse.",
+      "start": 798,
+      "end": 888,
+      "geprueft": true,
+      "notwendig": [
+        "s14",
+        "s15"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c9",
+        "c10"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t10",
+      "text": "Auch der Russe lese die Zeitung und schaue Fernsehen, sagt Weber.",
+      "start": 889,
+      "end": 954,
+      "geprueft": true,
+      "notwendig": [
+        "s16"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c11"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t11",
+      "text": "Was die Bundeswehr plane, bleibe daher unter Verschluss.",
+      "start": 955,
+      "end": 1011,
+      "geprueft": true,
+      "notwendig": [
+        "s17"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c12"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t12",
+      "text": "Die Verunsicherung durch Russland ist für Fehmarn nicht neu.",
+      "start": 1013,
+      "end": 1073,
+      "geprueft": true,
+      "notwendig": [
+        "s19"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c13"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t13",
+      "text": "Im Jahr zweitausendvierundzwanzig wurde die Fehmarnsundbrücke im russischen Staatsfernsehen ausdrücklich als Ziel für Raketenangriffe genannt.",
+      "start": 1074,
+      "end": 1216,
+      "geprueft": true,
+      "notwendig": [
+        "s20"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c14"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t14",
+      "text": "Und bereits im Oktober zweitausendfünfundzwanzig war vor der Kieler Bucht das russische Militärschiff „Aleksandr Shabalin\" stationiert.",
+      "start": 1217,
+      "end": 1352,
+      "geprueft": true,
+      "notwendig": [
+        "s25"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c15"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t15",
+      "text": "Das Drohgefühl habe sich intensiviert, sagt Weber.",
+      "start": 1353,
+      "end": 1403,
+      "geprueft": true,
+      "notwendig": [
+        "s21"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c16"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t16",
+      "text": "Dennoch habe er großes Vertrauen in die deutschen Sicherheitsbehörden und die hohen Sicherheitsstandards.",
+      "start": 1404,
+      "end": 1509,
+      "geprueft": true,
+      "notwendig": [
+        "s22"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c17"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t17",
+      "text": "Er gehe nicht jeden Abend mit Angst ins Bett.",
+      "start": 1510,
+      "end": 1555,
+      "geprueft": true,
+      "notwendig": [
+        "s23"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c18"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t18",
+      "text": "Laut Bundesverteidigungsministerium will Russland mit seinen Kriegsschiffen in der Ostsee die Schattenflotte überwachen.",
+      "start": 1557,
+      "end": 1677,
+      "geprueft": true,
+      "notwendig": [
+        "s27"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c19"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t19",
+      "text": "Über diese versucht Moskau seit Jahren, einen Preisdeckel zu umgehen, den westliche Unterstützer der Ukraine für russisches Öl eingeführt haben.",
+      "start": 1678,
+      "end": 1822,
+      "geprueft": true,
+      "notwendig": [
+        "s28"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c20"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t20",
+      "text": "Zudem steht die Schattenflotte im Verdacht, für Sabotageaktionen gegen Infrastruktur unter Wasser genutzt zu werden.",
+      "start": 1823,
+      "end": 1939,
+      "geprueft": true,
+      "notwendig": [
+        "s29"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c21"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t21",
+      "text": "Die Nato beobachtet die Bewegungen der „Severomorsk\".",
+      "start": 1940,
+      "end": 1993,
+      "geprueft": true,
+      "notwendig": [
+        "s30",
+        "s31"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c22"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t22",
+      "text": "Schiffe des ständigen Nato-Marineverbandes sind in der Ostsee unterwegs, um die Routen der russischen Schiffe zu verfolgen – darunter die deutsche Fregatte „Sachsen\" als Flaggschiff sowie die französische Fregatte „Auvergne\", die den russischen Zerstörer bei Fehmarn aus der Nähe beschattete.",
+      "start": 1994,
+      "end": 2286,
+      "geprueft": true,
+      "notwendig": [
+        "s32",
+        "s33",
+        "s34"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c23",
+        "c24"
+      ],
+      "relationen_gemischt": true,
+      "notiz": ""
+    }
+  ]
+}

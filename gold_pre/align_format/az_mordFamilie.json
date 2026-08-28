@@ -1,0 +1,1303 @@
+{
+  "meta": {
+    "titel": "Roetgen/Trier Nach dem gewaltsamen Tod einer Familie aus Roetgen auf den Kapverden soll der Prozess gegen den Tatverdächtigen im Herbst beginnen.",
+    "quelle": "Eigenes Paar",
+    "modell": "stufe0-2 · multilingual-e5-large-instruct + nli-mdeberta-2mil7",
+    "statistik": {
+      "saetze": 31,
+      "claims": 20,
+      "embeddings": 51,
+      "nli_paare": 20,
+      "dauer_s": 15.9
+    },
+    "ratelimit": {
+      "model": "multilingual-e5-large-instruct",
+      "checked_at": 1787357402.4522018,
+      "x-ratelimit-limit-minute": "15",
+      "x-ratelimit-remaining-minute": "14",
+      "x-ratelimit-limit-hour": "900",
+      "x-ratelimit-remaining-hour": "890",
+      "x-ratelimit-limit-day": "2000",
+      "x-ratelimit-remaining-day": "1990",
+      "x-ratelimit-limit-second": "2",
+      "x-ratelimit-remaining-second": "1",
+      "ratelimit-reset": "1",
+      "ratelimit-limit": "2",
+      "ratelimit-remaining": "1"
+    }
+  },
+  "article": {
+    "text": "Roetgen/Trier Nach dem gewaltsamen Tod einer Familie aus Roetgen auf den Kapverden soll der Prozess gegen den Tatverdächtigen im Herbst beginnen. Das zuständige Landgericht Trier hat die Anklage der Staatsanwaltschaft zugelassen und den Beginn der Hauptverhandlung auf Mittwoch, 21. Oktober, terminiert. Bis Anfang Dezember sind zunächst sieben Verhandlungstage angesetzt.\n\nDie Staatsanwaltschaft Trier wirft dem jungen Mann aus der Vulkaneifel Mord in einem Fall und Totschlag in zwei weiteren Fällen vor. Er soll am 23. Dezember 2025 während eines gemeinsamen Weihnachtsurlaubs auf der kapverdischen Insel São Vicente seinen Vater, dessen Lebensgefährtin und deren Tochter mit Messerstichen getötet haben. Die drei Opfer stammten aus Roetgen.\n\nNach Darstellung der Staatsanwaltschaft soll der zur Tatzeit 19-Jährige zunächst die Tochter der Lebensgefährtin seines Vaters in ihrem Zimmer angegriffen haben, nachdem diese sich zum Schlafen ins Bett begeben hatte. Sie starb an einer tödlichen Verletzung im Halsbereich. In diesem Fall geht die Staatsanwaltschaft von Mord aus, weil die junge Frau nach Einschätzung der Ermittler arglos war und keine Möglichkeit zur Gegenwehr gehabt haben dürfte. Anschließend soll der Angeklagte auch seinen Vater und dessen Lebensgefährtin mit dem Messer angegriffen haben. Dabei soll es zu einem Kampf gekommen sein. Beide starben ebenfalls an Stichverletzungen im Halsbereich. Was den Angriff auslöste und welches Motiv dahinterstehen könnte, ist weiter unklar.\n\nIn Lissabon festgenommen\n\nNoch während der Tat soll die Lebensgefährtin des Vaters mit ihrem Handy über Whatsapp eine Nachricht an eine Verwandte in Deutschland geschickt haben. Die Verwandte alarmierte daraufhin die deutsche Polizei, die wiederum die Behörden auf den Kapverden informierte. Nach der Tat soll der 19-Jährige mit einem Taxi zum Flughafen gefahren und noch am selben Tag nach Lissabon geflogen sein. Dort wurde er am 25. Dezember von der portugiesischen Polizei festgenommen. Am 14. Januar wurde er nach Deutschland ausgeliefert. Seitdem sitzt er in Untersuchungshaft in der Jugendstrafanstalt Wittlich. Zu den Vorwürfen hat er bislang geschwiegen. Hinweise darauf, dass er zur Tatzeit unter Alkohol- oder Drogeneinfluss stand, gebe es nicht, sagte der Leitende Trierer Oberstaatsanwalt Peter Fritzen der Zeitung „Trierischer Volksfreund“.\n\nDass der Fall in Trier verhandelt wird, liegt am letzten Wohnort des Angeklagten. Der 19-Jährige lebte zuletzt bei seiner leiblichen Mutter in der Vulkaneifel. Nach deutschem Recht können auch Taten im Ausland in Deutschland verfolgt werden, wenn der mutmaßliche Täter oder die Opfer Deutsche sind. Auf deutscher Seite übernahm deshalb die Staatsanwaltschaft Trier die Ermittlungen.\n\nWeil der Angeklagte zur Tatzeit 19 Jahre alt war, gilt er nach deutschem Recht als Heranwachsender. Deshalb wird vor der Jugendkammer des Landgerichts Trier verhandelt. Im Prozess wird auch zu klären sein, ob bei einer Verurteilung Jugendstrafrecht oder Erwachsenenstrafrecht angewendet würde. Bei Anwendung von Jugendstrafrecht liegt die Höchststrafe für Heranwachsende grundsätzlich bei zehn Jahren; bei Mord kann sie unter bestimmten Voraussetzungen auf bis zu 15 Jahre steigen. Wird Erwachsenenstrafrecht angewendet, sieht das Gesetz bei Mord grundsätzlich lebenslange Freiheitsstrafe vor.",
+    "sentences": [
+      {
+        "id": "s1",
+        "start": 0,
+        "end": 145,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Roetgen/Trier Nach dem gewaltsamen Tod einer Familie aus Roetgen auf den Kapverden soll der Prozess gegen den Tatverdächtigen im Herbst beginnen."
+      },
+      {
+        "id": "s2",
+        "start": 146,
+        "end": 303,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Das zuständige Landgericht Trier hat die Anklage der Staatsanwaltschaft zugelassen und den Beginn der Hauptverhandlung auf Mittwoch, 21. Oktober, terminiert."
+      },
+      {
+        "id": "s3",
+        "start": 304,
+        "end": 372,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Bis Anfang Dezember sind zunächst sieben Verhandlungstage angesetzt."
+      },
+      {
+        "id": "s4",
+        "start": 374,
+        "end": 506,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Die Staatsanwaltschaft Trier wirft dem jungen Mann aus der Vulkaneifel Mord in einem Fall und Totschlag in zwei weiteren Fällen vor."
+      },
+      {
+        "id": "s5",
+        "start": 507,
+        "end": 707,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Er soll am 23. Dezember 2025 während eines gemeinsamen Weihnachtsurlaubs auf der kapverdischen Insel São Vicente seinen Vater, dessen Lebensgefährtin und deren Tochter mit Messerstichen getötet haben."
+      },
+      {
+        "id": "s6",
+        "start": 708,
+        "end": 744,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Die drei Opfer stammten aus Roetgen."
+      },
+      {
+        "id": "s7",
+        "start": 746,
+        "end": 963,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Nach Darstellung der Staatsanwaltschaft soll der zur Tatzeit 19-Jährige zunächst die Tochter der Lebensgefährtin seines Vaters in ihrem Zimmer angegriffen haben, nachdem diese sich zum Schlafen ins Bett begeben hatte."
+      },
+      {
+        "id": "s8",
+        "start": 964,
+        "end": 1019,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Sie starb an einer tödlichen Verletzung im Halsbereich."
+      },
+      {
+        "id": "s9",
+        "start": 1020,
+        "end": 1196,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "In diesem Fall geht die Staatsanwaltschaft von Mord aus, weil die junge Frau nach Einschätzung der Ermittler arglos war und keine Möglichkeit zur Gegenwehr gehabt haben dürfte."
+      },
+      {
+        "id": "s10",
+        "start": 1197,
+        "end": 1308,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Anschließend soll der Angeklagte auch seinen Vater und dessen Lebensgefährtin mit dem Messer angegriffen haben."
+      },
+      {
+        "id": "s11",
+        "start": 1309,
+        "end": 1352,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Dabei soll es zu einem Kampf gekommen sein."
+      },
+      {
+        "id": "s12",
+        "start": 1353,
+        "end": 1413,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Beide starben ebenfalls an Stichverletzungen im Halsbereich."
+      },
+      {
+        "id": "s13",
+        "start": 1414,
+        "end": 1498,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Was den Angriff auslöste und welches Motiv dahinterstehen könnte, ist weiter unklar."
+      },
+      {
+        "id": "s14",
+        "start": 1500,
+        "end": 1524,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "In Lissabon festgenommen"
+      },
+      {
+        "id": "s15",
+        "start": 1526,
+        "end": 1677,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Noch während der Tat soll die Lebensgefährtin des Vaters mit ihrem Handy über Whatsapp eine Nachricht an eine Verwandte in Deutschland geschickt haben."
+      },
+      {
+        "id": "s16",
+        "start": 1678,
+        "end": 1791,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Die Verwandte alarmierte daraufhin die deutsche Polizei, die wiederum die Behörden auf den Kapverden informierte."
+      },
+      {
+        "id": "s17",
+        "start": 1792,
+        "end": 1914,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Nach der Tat soll der 19-Jährige mit einem Taxi zum Flughafen gefahren und noch am selben Tag nach Lissabon geflogen sein."
+      },
+      {
+        "id": "s18",
+        "start": 1915,
+        "end": 1990,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Dort wurde er am 25. Dezember von der portugiesischen Polizei festgenommen."
+      },
+      {
+        "id": "s19",
+        "start": 1991,
+        "end": 2044,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Am 14. Januar wurde er nach Deutschland ausgeliefert."
+      },
+      {
+        "id": "s20",
+        "start": 2045,
+        "end": 2118,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Seitdem sitzt er in Untersuchungshaft in der Jugendstrafanstalt Wittlich."
+      },
+      {
+        "id": "s21",
+        "start": 2119,
+        "end": 2163,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Zu den Vorwürfen hat er bislang geschwiegen."
+      },
+      {
+        "id": "s22",
+        "start": 2164,
+        "end": 2354,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Hinweise darauf, dass er zur Tatzeit unter Alkohol- oder Drogeneinfluss stand, gebe es nicht, sagte der Leitende Trierer Oberstaatsanwalt Peter Fritzen der Zeitung „Trierischer Volksfreund“."
+      },
+      {
+        "id": "s23",
+        "start": 2356,
+        "end": 2437,
+        "block": "body",
+        "level": 0,
+        "paragraph": 5,
+        "text": "Dass der Fall in Trier verhandelt wird, liegt am letzten Wohnort des Angeklagten."
+      },
+      {
+        "id": "s24",
+        "start": 2438,
+        "end": 2515,
+        "block": "body",
+        "level": 0,
+        "paragraph": 5,
+        "text": "Der 19-Jährige lebte zuletzt bei seiner leiblichen Mutter in der Vulkaneifel."
+      },
+      {
+        "id": "s25",
+        "start": 2516,
+        "end": 2654,
+        "block": "body",
+        "level": 0,
+        "paragraph": 5,
+        "text": "Nach deutschem Recht können auch Taten im Ausland in Deutschland verfolgt werden, wenn der mutmaßliche Täter oder die Opfer Deutsche sind."
+      },
+      {
+        "id": "s26",
+        "start": 2655,
+        "end": 2738,
+        "block": "body",
+        "level": 0,
+        "paragraph": 5,
+        "text": "Auf deutscher Seite übernahm deshalb die Staatsanwaltschaft Trier die Ermittlungen."
+      },
+      {
+        "id": "s27",
+        "start": 2740,
+        "end": 2839,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "Weil der Angeklagte zur Tatzeit 19 Jahre alt war, gilt er nach deutschem Recht als Heranwachsender."
+      },
+      {
+        "id": "s28",
+        "start": 2840,
+        "end": 2908,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "Deshalb wird vor der Jugendkammer des Landgerichts Trier verhandelt."
+      },
+      {
+        "id": "s29",
+        "start": 2909,
+        "end": 3033,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "Im Prozess wird auch zu klären sein, ob bei einer Verurteilung Jugendstrafrecht oder Erwachsenenstrafrecht angewendet würde."
+      },
+      {
+        "id": "s30",
+        "start": 3034,
+        "end": 3221,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "Bei Anwendung von Jugendstrafrecht liegt die Höchststrafe für Heranwachsende grundsätzlich bei zehn Jahren; bei Mord kann sie unter bestimmten Voraussetzungen auf bis zu 15 Jahre steigen."
+      },
+      {
+        "id": "s31",
+        "start": 3222,
+        "end": 3333,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "Wird Erwachsenenstrafrecht angewendet, sieht das Gesetz bei Mord grundsätzlich lebenslange Freiheitsstrafe vor."
+      }
+    ]
+  },
+  "transcript": {
+    "text": "Der Prozess nach dem gewaltsamen Tod von drei Menschen aus Roetgen auf den Kapverden soll vor dem Landgericht Trier beginnen. Das Gericht hat die Anklage der Staatsanwaltschaft Trier zugelassen und die Hauptverhandlung für Mittwoch, den 21. Oktober, angesetzt. Bis Anfang Dezember sind zunächst sieben Verhandlungstage geplant.\n\nDie Staatsanwaltschaft wirft einem jungen Mann aus der Vulkaneifel Mord und zwei Fälle von Totschlag vor. Er soll während eines Weihnachtsurlaubs auf der Insel São Vicente seinen Vater, dessen Lebensgefährtin und deren Tochter mit einem Messer getötet haben. Die Tat soll sich am 23. Dezember 2025 ereignet haben.\n\nNach Angaben der Ermittler griff der damals 19-Jährige zunächst die Tochter der Lebensgefährtin in ihrem Schlafzimmer an. Die junge Frau erlitt eine tödliche Verletzung am Hals. Die Staatsanwaltschaft wertet diesen Fall als Mord, weil das Opfer arglos gewesen sei und sich vermutlich nicht habe wehren können. Danach soll der Beschuldigte seinen Vater und dessen Lebensgefährtin angegriffen haben. Dabei sei es zu einem Kampf gekommen. Beide starben ebenfalls durch Stichverletzungen im Halsbereich. Das Motiv ist weiterhin unklar.\n\nDie Lebensgefährtin soll während der Tat per Whatsapp eine Verwandte in Deutschland alarmiert haben. Über die deutsche Polizei wurden die Behörden auf den Kapverden informiert. Der Verdächtige floh laut Ermittlungen noch am selben Tag nach Lissabon, wo ihn die portugiesische Polizei am 25. Dezember festnahm. Seit seiner Auslieferung nach Deutschland am 14. Januar sitzt er in der Jugendstrafanstalt Wittlich in Untersuchungshaft. Der Leitende Trierer Oberstaatsanwalt Peter Fritzen sagte, Hinweise auf Alkohol- oder Drogeneinfluss gebe es nicht.\n\nVerhandelt wird in Trier, weil der Angeklagte zuletzt in der Vulkaneifel lebte. Da er zur Tatzeit Heranwachsender war, entscheidet die Jugendkammer auch darüber, ob Jugend- oder Erwachsenenstrafrecht gilt.",
+    "claims": [
+      {
+        "id": "c1",
+        "start": 0,
+        "end": 125,
+        "text": "Der Prozess nach dem gewaltsamen Tod von drei Menschen aus Roetgen auf den Kapverden soll vor dem Landgericht Trier beginnen.",
+        "relation": "bedeutung_verschoben",
+        "sources": [
+          {
+            "sentence": "s1",
+            "start": 0,
+            "end": 145,
+            "spans": [
+              [
+                0,
+                34
+              ],
+              [
+                57,
+                99
+              ],
+              [
+                136,
+                145
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s2",
+            "start": 161,
+            "end": 243,
+            "spans": [
+              [
+                161,
+                178
+              ],
+              [
+                237,
+                243
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.87,
+        "margin": 0.42,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "drei",
+            "norm": "3",
+            "status": "match"
+          }
+        ],
+        "flags": [
+          "bedeutung_verschoben"
+        ],
+        "wortlaut": null,
+        "note": "Verdichtet aus s1 + s2 (s2 erklärt zusätzlich 16 %). · Fundstellen erklären 85 % des Claims. · Bedeutung verschoben — die Fundstelle widerspricht dem Claim nicht, stützt ihn aber auch nicht vollständig (entailment 0.02, neutral 0.94).",
+        "scores": {
+          "top": 0.838,
+          "lex": 0.602,
+          "emb": 0.892,
+          "anchor": 0,
+          "nli": 0.021
+        }
+      },
+      {
+        "id": "c2",
+        "start": 126,
+        "end": 260,
+        "text": "Das Gericht hat die Anklage der Staatsanwaltschaft Trier zugelassen und die Hauptverhandlung für Mittwoch, den 21. Oktober, angesetzt.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s2",
+            "start": 173,
+            "end": 290,
+            "spans": [
+              [
+                173,
+                228
+              ],
+              [
+                248,
+                290
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.94,
+        "margin": 0.51,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "21",
+            "norm": "21",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Anker 21 eindeutig in s2 · Fundstellen erklären 87 % des Claims.",
+        "scores": {
+          "top": 0.948,
+          "lex": 0.65,
+          "emb": 0.995,
+          "anchor": 0.3,
+          "nli": 0.956
+        }
+      },
+      {
+        "id": "c3",
+        "start": 261,
+        "end": 327,
+        "text": "Bis Anfang Dezember sind zunächst sieben Verhandlungstage geplant.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s3",
+            "start": 304,
+            "end": 361,
+            "spans": [
+              [
+                304,
+                361
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.9,
+        "margin": 0.7,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "sieben",
+            "norm": "7",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 78 % des Claims.",
+        "scores": {
+          "top": 0.961,
+          "lex": 0.826,
+          "emb": 1,
+          "anchor": 0,
+          "nli": 0.972
+        }
+      },
+      {
+        "id": "c4",
+        "start": 329,
+        "end": 434,
+        "text": "Die Staatsanwaltschaft wirft einem jungen Mann aus der Vulkaneifel Mord und zwei Fälle von Totschlag vor.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s4",
+            "start": 374,
+            "end": 506,
+            "spans": [
+              [
+                374,
+                396
+              ],
+              [
+                403,
+                449
+              ],
+              [
+                468,
+                485
+              ],
+              [
+                495,
+                506
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.93,
+        "margin": 0.43,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "zwei",
+            "norm": "2",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 90 % des Claims.",
+        "scores": {
+          "top": 0.911,
+          "lex": 0.692,
+          "emb": 0.95,
+          "anchor": 0,
+          "nli": 0.976
+        }
+      },
+      {
+        "id": "c5",
+        "start": 435,
+        "end": 587,
+        "text": "Er soll während eines Weihnachtsurlaubs auf der Insel São Vicente seinen Vater, dessen Lebensgefährtin und deren Tochter mit einem Messer getötet haben.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s5",
+            "start": 536,
+            "end": 707,
+            "spans": [
+              [
+                536,
+                543
+              ],
+              [
+                562,
+                579
+              ],
+              [
+                602,
+                674
+              ],
+              [
+                693,
+                707
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.94,
+        "margin": 0.31,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 97 % des Claims.",
+        "scores": {
+          "top": 0.906,
+          "lex": 0.755,
+          "emb": 0.912,
+          "anchor": 0,
+          "nli": 0.83
+        }
+      },
+      {
+        "id": "c6",
+        "start": 588,
+        "end": 642,
+        "text": "Die Tat soll sich am 23. Dezember 2025 ereignet haben.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s5",
+            "start": 507,
+            "end": 535,
+            "spans": [
+              [
+                507,
+                535
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.59,
+        "margin": 0.41,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "23",
+            "norm": "23",
+            "status": "match"
+          },
+          {
+            "type": "datum",
+            "surface": "2025",
+            "norm": "2025",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Anker 23 eindeutig in s5 · Anker 2025 eindeutig in s5 · Fundstellen erklären 57 % des Claims.",
+        "scores": {
+          "top": 0.744,
+          "lex": 0.273,
+          "emb": 0.606,
+          "anchor": 0.38,
+          "nli": 0.986
+        }
+      },
+      {
+        "id": "c7",
+        "start": 644,
+        "end": 765,
+        "text": "Nach Angaben der Ermittler griff der damals 19-Jährige zunächst die Tochter der Lebensgefährtin in ihrem Schlafzimmer an.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s7",
+            "start": 807,
+            "end": 939,
+            "spans": [
+              [
+                807,
+                817
+              ],
+              [
+                831,
+                858
+              ],
+              [
+                876,
+                888
+              ],
+              [
+                931,
+                939
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s9",
+            "start": 1119,
+            "end": 1128,
+            "spans": [
+              [
+                1119,
+                1128
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.83,
+        "margin": 0.36,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "19-Jährige",
+            "norm": "19 Jahre",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s7 + s9 (s9 erklärt zusätzlich 11 %). · Fundstellen erklären 71 % des Claims.",
+        "scores": {
+          "top": 0.794,
+          "lex": 0.467,
+          "emb": 0.921,
+          "anchor": 0,
+          "nli": 0.561
+        }
+      },
+      {
+        "id": "c8",
+        "start": 766,
+        "end": 821,
+        "text": "Die junge Frau erlitt eine tödliche Verletzung am Hals.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s8",
+            "start": 983,
+            "end": 1003,
+            "spans": [
+              [
+                983,
+                1003
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s9",
+            "start": 1086,
+            "end": 1096,
+            "spans": [
+              [
+                1086,
+                1096
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.79,
+        "margin": 0.23,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s8 + s9 (s9 erklärt zusätzlich 29 %). · Fundstellen erklären 75 % des Claims.",
+        "scores": {
+          "top": 0.667,
+          "lex": 0.366,
+          "emb": 0.819,
+          "anchor": 0,
+          "nli": 0.998
+        }
+      },
+      {
+        "id": "c9",
+        "start": 822,
+        "end": 953,
+        "text": "Die Staatsanwaltschaft wertet diesen Fall als Mord, weil das Opfer arglos gewesen sei und sich vermutlich nicht habe wehren können.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s9",
+            "start": 1020,
+            "end": 1135,
+            "spans": [
+              [
+                1020,
+                1034
+              ],
+              [
+                1044,
+                1081
+              ],
+              [
+                1129,
+                1135
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.75,
+        "margin": 0.33,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 51 % des Claims.",
+        "scores": {
+          "top": 0.727,
+          "lex": 0.284,
+          "emb": 0.898,
+          "anchor": 0,
+          "nli": 0.997
+        }
+      },
+      {
+        "id": "c10",
+        "start": 954,
+        "end": 1041,
+        "text": "Danach soll der Beschuldigte seinen Vater und dessen Lebensgefährtin angegriffen haben.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s10",
+            "start": 1235,
+            "end": 1308,
+            "spans": [
+              [
+                1235,
+                1274
+              ],
+              [
+                1290,
+                1308
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.77,
+        "margin": 0.17,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 64 % des Claims.",
+        "scores": {
+          "top": 0.809,
+          "lex": 0.58,
+          "emb": 0.866,
+          "anchor": 0,
+          "nli": 0.983
+        }
+      },
+      {
+        "id": "c11",
+        "start": 1042,
+        "end": 1079,
+        "text": "Dabei sei es zu einem Kampf gekommen.",
+        "relation": "bedeutung_verschoben",
+        "sources": [
+          {
+            "sentence": "s11",
+            "start": 1309,
+            "end": 1352,
+            "spans": [
+              [
+                1309,
+                1352
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.96,
+        "margin": 0.66,
+        "entities": [],
+        "flags": [
+          "bedeutung_verschoben"
+        ],
+        "wortlaut": {
+          "quelle": "s11",
+          "aenderungen": [
+            {
+              "claim": "sei",
+              "quelle": "soll",
+              "nah": false,
+              "aehnlichkeit": 0.29
+            }
+          ]
+        },
+        "note": "Fundstellen erklären 100 % des Claims. · Bedeutung verschoben — die Fundstelle widerspricht dem Claim nicht, stützt ihn aber auch nicht vollständig (entailment 0.05, neutral 0.94).",
+        "scores": {
+          "top": 0.911,
+          "lex": 0.854,
+          "emb": 0.909,
+          "anchor": 0,
+          "nli": 0.054
+        }
+      },
+      {
+        "id": "c12",
+        "start": 1080,
+        "end": 1143,
+        "text": "Beide starben ebenfalls durch Stichverletzungen im Halsbereich.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s12",
+            "start": 1353,
+            "end": 1413,
+            "spans": [
+              [
+                1353,
+                1413
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.98,
+        "margin": 0.3,
+        "entities": [],
+        "flags": [],
+        "wortlaut": {
+          "quelle": "s12",
+          "aenderungen": [
+            {
+              "claim": "durch",
+              "quelle": "an",
+              "nah": false,
+              "aehnlichkeit": 0
+            }
+          ]
+        },
+        "note": "Fundstellen erklären 100 % des Claims.",
+        "scores": {
+          "top": 0.942,
+          "lex": 0.865,
+          "emb": 0.987,
+          "anchor": 0,
+          "nli": 0.882
+        }
+      },
+      {
+        "id": "c13",
+        "start": 1144,
+        "end": 1175,
+        "text": "Das Motiv ist weiterhin unklar.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s13",
+            "start": 1451,
+            "end": 1498,
+            "spans": [
+              [
+                1451,
+                1456
+              ],
+              [
+                1484,
+                1498
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.9,
+        "margin": 0.5,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 100 % des Claims.",
+        "scores": {
+          "top": 0.763,
+          "lex": 0.403,
+          "emb": 0.776,
+          "anchor": 0,
+          "nli": 0.993
+        }
+      },
+      {
+        "id": "c14",
+        "start": 1177,
+        "end": 1277,
+        "text": "Die Lebensgefährtin soll während der Tat per Whatsapp eine Verwandte in Deutschland alarmiert haben.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s15",
+            "start": 1526,
+            "end": 1660,
+            "spans": [
+              [
+                1526,
+                1571
+              ],
+              [
+                1604,
+                1612
+              ],
+              [
+                1636,
+                1660
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s16",
+            "start": 1678,
+            "end": 1725,
+            "spans": [
+              [
+                1678,
+                1702
+              ],
+              [
+                1717,
+                1725
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.89,
+        "margin": 0.45,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s15 + s16 (s16 erklärt zusätzlich 13 %). · Fundstellen erklären 85 % des Claims.",
+        "scores": {
+          "top": 0.828,
+          "lex": 0.6,
+          "emb": 0.923,
+          "anchor": 0,
+          "nli": 0.846
+        }
+      },
+      {
+        "id": "c15",
+        "start": 1278,
+        "end": 1353,
+        "text": "Über die deutsche Polizei wurden die Behörden auf den Kapverden informiert.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s16",
+            "start": 1717,
+            "end": 1791,
+            "spans": [
+              [
+                1717,
+                1791
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.89,
+        "margin": 0.52,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 98 % des Claims.",
+        "scores": {
+          "top": 0.819,
+          "lex": 0.656,
+          "emb": 0.789,
+          "anchor": 0,
+          "nli": 0.978
+        }
+      },
+      {
+        "id": "c16",
+        "start": 1354,
+        "end": 1486,
+        "text": "Der Verdächtige floh laut Ermittlungen noch am selben Tag nach Lissabon, wo ihn die portugiesische Polizei am 25. Dezember festnahm.",
+        "relation": "bedeutung_verschoben",
+        "sources": [
+          {
+            "sentence": "s18",
+            "start": 1915,
+            "end": 1976,
+            "spans": [
+              [
+                1915,
+                1976
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s17",
+            "start": 1875,
+            "end": 1899,
+            "spans": [
+              [
+                1875,
+                1899
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.63,
+        "margin": 0.41,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "25",
+            "norm": "25",
+            "status": "match"
+          }
+        ],
+        "flags": [
+          "bedeutung_verschoben"
+        ],
+        "wortlaut": null,
+        "note": "Anker 25 eindeutig in s18 · Verdichtet aus s18 + s17 (s17 erklärt zusätzlich 20 %). · Fundstellen erklären 54 % des Claims. · Bedeutung verschoben — die Fundstelle widerspricht dem Claim nicht, stützt ihn aber auch nicht vollständig (entailment 0.07, neutral 0.92).",
+        "scores": {
+          "top": 0.73,
+          "lex": 0.389,
+          "emb": 0.697,
+          "anchor": 0.3,
+          "nli": 0.07
+        }
+      },
+      {
+        "id": "c17",
+        "start": 1487,
+        "end": 1608,
+        "text": "Seit seiner Auslieferung nach Deutschland am 14. Januar sitzt er in der Jugendstrafanstalt Wittlich in Untersuchungshaft.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s20",
+            "start": 2053,
+            "end": 2118,
+            "spans": [
+              [
+                2053,
+                2118
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s19",
+            "start": 1991,
+            "end": 2030,
+            "spans": [
+              [
+                1991,
+                2030
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.8,
+        "margin": 0.45,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "14",
+            "norm": "14",
+            "status": "match"
+          },
+          {
+            "type": "person",
+            "surface": "Wittlich",
+            "norm": "wittlich",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Anker 14 eindeutig in s19 · Verdichtet aus s20 + s19 (s19 erklärt zusätzlich 27 %). · Fundstellen erklären 85 % des Claims.",
+        "scores": {
+          "top": 0.761,
+          "lex": 0.68,
+          "emb": 0.753,
+          "anchor": 0,
+          "nli": 0.963
+        }
+      },
+      {
+        "id": "c18",
+        "start": 1609,
+        "end": 1724,
+        "text": "Der Leitende Trierer Oberstaatsanwalt Peter Fritzen sagte, Hinweise auf Alkohol- oder Drogeneinfluss gebe es nicht.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s22",
+            "start": 2164,
+            "end": 2315,
+            "spans": [
+              [
+                2164,
+                2172
+              ],
+              [
+                2207,
+                2235
+              ],
+              [
+                2243,
+                2315
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.94,
+        "margin": 0.57,
+        "entities": [
+          {
+            "type": "person",
+            "surface": "Peter Fritzen",
+            "norm": "peter fritzen",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Name „Peter Fritzen“ eindeutig in s22 · Fundstellen erklären 94 % des Claims.",
+        "scores": {
+          "top": 0.917,
+          "lex": 0.719,
+          "emb": 0.941,
+          "anchor": 0.2,
+          "nli": 0.997
+        }
+      },
+      {
+        "id": "c19",
+        "start": 1726,
+        "end": 1805,
+        "text": "Verhandelt wird in Trier, weil der Angeklagte zuletzt in der Vulkaneifel lebte.",
+        "relation": "bedeutung_verschoben",
+        "sources": [
+          {
+            "sentence": "s23",
+            "start": 2373,
+            "end": 2437,
+            "spans": [
+              [
+                2373,
+                2389
+              ],
+              [
+                2425,
+                2437
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s24",
+            "start": 2453,
+            "end": 2515,
+            "spans": [
+              [
+                2453,
+                2466
+              ],
+              [
+                2503,
+                2515
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.82,
+        "margin": 0.19,
+        "entities": [],
+        "flags": [
+          "bedeutung_verschoben"
+        ],
+        "wortlaut": null,
+        "note": "Verdichtet aus s23 + s24 (s24 erklärt zusätzlich 42 %). · Fundstellen erklären 85 % des Claims. · Bedeutung verschoben — die Fundstelle widerspricht dem Claim nicht, stützt ihn aber auch nicht vollständig (entailment 0.06, neutral 0.89).",
+        "scores": {
+          "top": 0.661,
+          "lex": 0.382,
+          "emb": 0.793,
+          "anchor": 0,
+          "nli": 0.059
+        }
+      },
+      {
+        "id": "c20",
+        "start": 1806,
+        "end": 1931,
+        "text": "Da er zur Tatzeit Heranwachsender war, entscheidet die Jugendkammer auch darüber, ob Jugend- oder Erwachsenenstrafrecht gilt.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s27",
+            "start": 2764,
+            "end": 2839,
+            "spans": [
+              [
+                2764,
+                2771
+              ],
+              [
+                2790,
+                2794
+              ],
+              [
+                2813,
+                2839
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s29",
+            "start": 2972,
+            "end": 3015,
+            "spans": [
+              [
+                2972,
+                3015
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.7,
+        "margin": 0.14,
+        "entities": [],
+        "flags": [
+          "nli_widerspruch"
+        ],
+        "wortlaut": null,
+        "note": "Verdichtet aus s27 + s29 (s29 erklärt zusätzlich 25 %). · Fundstellen erklären 67 % des Claims. · NLI: Fundstelle widerspricht dem Claim (contradiction 0.97).",
+        "scores": {
+          "top": 0.599,
+          "lex": 0.36,
+          "emb": 0.679,
+          "anchor": 0,
+          "nli": 0.011
+        }
+      }
+    ]
+  }
+}

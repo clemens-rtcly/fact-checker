@@ -1,0 +1,448 @@
+{
+  "paar": "noz_Munitionsbergung",
+  "split": "dev",
+  "anleitung": [
+    "Arbeitsanweisung (diese Zeilen bleiben in der Datei stehen):",
+    "1. Jede Zeile mit \"geprueft\": false durchgehen und auf true setzen.",
+    "2. notwendig = Sätze, ohne die ein Teil der Aussage unbelegt bliebe.",
+    "   zulaessig = stützt ebenfalls, ist aber entbehrlich (Dubletten).",
+    "3. relation prüfen: direkt | aggregiert | bedeutung_verschoben |",
+    "   inferiert | keine_quelle.",
+    "4. flags_erwartet: nur Befunde, die WIRKLICH zutreffen sollten",
+    "   (zahlkonflikt, ort_konflikt, kuerzel_konflikt, wortlaut_abweichung,",
+    "   ident_unbelegt, zahl_unbelegt). Leere Liste heißt: kein Befund.",
+    "5. Zum Schluss EINMAL umgekehrt: den Artikel lesen und fragen, welcher",
+    "   Transkriptsatz diese Stelle nutzt. Das fängt die Quellen, die die",
+    "   Pipeline gar nicht erst vorgeschlagen hat — der Bias des Entwurfs.",
+    "6. Artikel- und Transkripttext danach NICHT mehr ändern, auch keine",
+    "   Tippfehler: Die Zeichen-Offsets sind Teil der Annotation."
+  ],
+  "artikel_hash": "6e095688f527e99b",
+  "transkript_hash": "a7dcfe56854ed379",
+  "artikel_saetze": [
+    {
+      "id": "s1",
+      "text": "Durchbruch bei Munitionsbergung: Bund räumt Ostsee alleine auf – Länder müssen nichts bezahlen"
+    },
+    {
+      "id": "s2",
+      "text": "Die Bergung von alter Weltkriegsmunition aus der deutschen Ost- und Nordsee ist einen entscheidenden Schritt vorangekommen: Bundesumweltminister Carsten Schneider hat am Dienstag verkündet, dass der Bund nicht nur den Bau der geplanten schwimmenden Räumungsplattform bezahlen will, sondern auch den laufenden Betrieb."
+    },
+    {
+      "id": "s3",
+      "text": "Die Bundesländer müssen anders als bisher gefordert erst mal nichts beisteuern."
+    },
+    {
+      "id": "s4",
+      "text": "Wie SPD-Politiker Schneider in Berlin sagte, stelle der Bund neben 100 Millionen Euro für die Plattform weiteres Geld für die Bergungsarbeiten bereit."
+    },
+    {
+      "id": "s5",
+      "text": "„Hierfür stehen 50 Millionen Euro jährlich zur Verfügung“ – und zwar zunächst für die ersten sechs Betriebsjahre der Plattform."
+    },
+    {
+      "id": "s6",
+      "text": "Ende 2028 soll die Bergungsplattform fertig sein"
+    },
+    {
+      "id": "s7",
+      "text": "Die neue Plattform soll die alte Munition nicht nur bergen können, sondern auch gleich vor Ort verbrennen."
+    },
+    {
+      "id": "s8",
+      "text": "Eine solche Anlage gibt es weltweit noch nicht."
+    },
+    {
+      "id": "s9",
+      "text": "Den Auftrag zum Bau will Schneider „im September“ vergeben."
+    },
+    {
+      "id": "s10",
+      "text": "Noch bis 14. Juli läuft die Bewerbungsfrist für interessierte Unternehmen."
+    },
+    {
+      "id": "s11",
+      "text": "Fertig werden soll die Plattform laut Schneider „Ende 2028“ – das wäre ein halbes Jahr später als zuletzt geplant."
+    },
+    {
+      "id": "s12",
+      "text": "Insgesamt liegen nach Schätzungen von Fachleuten 1,6 Millionen Tonnen alter Bomben, Minen und Granaten in den deutschen Meeren."
+    },
+    {
+      "id": "s13",
+      "text": "Davon befinden sich 1,3 Millionen in der Nordsee – doch starten sollen die Bergungsarbeiten in der leichter zugänglichen Ostsee."
+    },
+    {
+      "id": "s14",
+      "text": "Dort gab es schon erste Proberäumungen."
+    },
+    {
+      "id": "s15",
+      "text": "„Wir wissen ganz genau, wo die Standorte sind“, sagte Schneider."
+    },
+    {
+      "id": "s16",
+      "text": "Und da die alte Munition durchroste und Spuren der Schadstoffe schon in der Nahrungskette gemessen worden seien, müsse man sie „jetzt hochholen“."
+    },
+    {
+      "id": "s17",
+      "text": "Tobias Goldschmidt: „Gordischer Knoten durchschlagen“"
+    },
+    {
+      "id": "s18",
+      "text": "Schleswig-Holsteins grüner Umweltminister Tobias Goldschmidt begrüßte die Entscheidung des Bundes."
+    },
+    {
+      "id": "s19",
+      "text": "„Heute wurde der gordische Knoten der Altlastenbergung durchschlagen“, sagte er."
+    },
+    {
+      "id": "s20",
+      "text": "Es sei „folgerichtig, dass der Bund jetzt in die Verantwortung geht“."
+    },
+    {
+      "id": "s21",
+      "text": "Gleichzeitig ermahnte er aber auch alle Bundesländer, sich für die Jahre danach „auf eine solidarische Lastenteilung“ vorzubereiten."
+    },
+    {
+      "id": "s22",
+      "text": "Schleswig-Holstein habe zu diesem Zweck bereits dieses Jahr knapp 1,2 Millionen Euro im Haushalt zurückgestellt."
+    },
+    {
+      "id": "s23",
+      "text": "„Die Bergung der Altlasten“, sagte Goldschmidt, „ist eine Generationenaufgabe, die unser Land und auch die Steuerzahler noch lange beschäftigen und fordern wird.“"
+    }
+  ],
+  "eintraege": [
+    {
+      "satz": "t1",
+      "text": "Jahrzehntelang lagen Hunderttausende Tonnen alter Weltkriegsmunition unberührt auf dem Grund der deutschen Meere.",
+      "start": 0,
+      "end": 113,
+      "geprueft": true,
+      "notwendig": [
+        "s2",
+        "s12"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c1"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t2",
+      "text": "Jetzt kommt Bewegung in die Bergung.",
+      "start": 114,
+      "end": 150,
+      "geprueft": true,
+      "notwendig": [
+        "s2"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c2"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t3",
+      "text": "Bundesumweltminister Carsten Schneider von der SPD hat angekündigt, dass der Bund die Kosten vollständig übernimmt – sowohl für den Bau einer schwimmenden Räumungsplattform als auch für den laufenden Betrieb.",
+      "start": 151,
+      "end": 359,
+      "geprueft": true,
+      "notwendig": [
+        "s2",
+        "s4"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c3"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t4",
+      "text": "Die Bundesländer müssen vorerst nichts beisteuern.",
+      "start": 360,
+      "end": 410,
+      "geprueft": true,
+      "notwendig": [
+        "s3"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c4"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t5",
+      "text": "Für den Bau der Plattform stellt der Bund einhundert Millionen Euro bereit.",
+      "start": 412,
+      "end": 487,
+      "geprueft": true,
+      "notwendig": [
+        "s4"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c5"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t6",
+      "text": "Den Betrieb finanziert er mit fünfzig Millionen Euro jährlich – zunächst für die ersten sechs Betriebsjahre.",
+      "start": 488,
+      "end": 596,
+      "geprueft": true,
+      "notwendig": [
+        "s5"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c6"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t7",
+      "text": "Den Bauauftrag will Schneider im September vergeben, Unternehmen können sich noch bis zum vierzehnten Juli bewerben.",
+      "start": 597,
+      "end": 713,
+      "geprueft": true,
+      "notwendig": [
+        "s9",
+        "s10"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c7"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t8",
+      "text": "Fertig werden soll die Plattform Ende zweitausendachtundzwanzig, ein halbes Jahr später als ursprünglich geplant.",
+      "start": 714,
+      "end": 827,
+      "geprueft": true,
+      "notwendig": [
+        "s11"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c8"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t9",
+      "text": "Die Anlage soll Munition nicht nur bergen, sondern sie direkt an Bord verbrennen können.",
+      "start": 829,
+      "end": 917,
+      "geprueft": true,
+      "notwendig": [
+        "s7"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c9"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t10",
+      "text": "Eine solche Kombination gibt es weltweit noch nicht.",
+      "start": 918,
+      "end": 970,
+      "geprueft": true,
+      "notwendig": [
+        "s8"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c10"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t11",
+      "text": "Insgesamt schätzen Fachleute, dass rund eins Komma sechs Millionen Tonnen alter Bomben, Minen und Granaten in Nord- und Ostsee liegen.",
+      "start": 971,
+      "end": 1105,
+      "geprueft": true,
+      "notwendig": [
+        "s12",
+        "s13"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c11"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t12",
+      "text": "Begonnen werden soll in der leichter zugänglichen Ostsee, wo es bereits erste Proberäumungen gab.",
+      "start": 1106,
+      "end": 1203,
+      "geprueft": true,
+      "notwendig": [
+        "s13",
+        "s14"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c12"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t13",
+      "text": "Schneider begründete den Zeitdruck damit, dass die alte Munition durchroste und Schadstoffe bereits in der Nahrungskette nachgewiesen worden seien.",
+      "start": 1204,
+      "end": 1351,
+      "geprueft": true,
+      "notwendig": [
+        "s16"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c13"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t14",
+      "text": "Schleswig-Holsteins Umweltminister Tobias Goldschmidt von den Grünen begrüßte die Entscheidung.",
+      "start": 1353,
+      "end": 1448,
+      "geprueft": true,
+      "notwendig": [
+        "s18"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c14"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t15",
+      "text": "Er sagte, heute sei „der gordische Knoten der Altlastenbergung durchschlagen\" worden, und es sei „folgerichtig, dass der Bund jetzt in die Verantwortung geht\".",
+      "start": 1449,
+      "end": 1608,
+      "geprueft": true,
+      "notwendig": [
+        "s19",
+        "s20"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c15"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t16",
+      "text": "Zugleich mahnte Goldschmidt alle Länder, sich für die Zeit danach auf eine solidarische Lastenteilung vorzubereiten.",
+      "start": 1609,
+      "end": 1725,
+      "geprueft": true,
+      "notwendig": [
+        "s21"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c16"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t17",
+      "text": "Schleswig-Holstein habe dafür bereits in diesem Jahr knapp eine Komma zwei Millionen Euro im Haushalt zurückgestellt.",
+      "start": 1726,
+      "end": 1843,
+      "geprueft": true,
+      "notwendig": [
+        "s22"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c17"
+      ],
+      "relationen_gemischt": false,
+      "notiz": "Grammatischer Fehler \"Eine\" anstelle von \"Eins\". Kein richtiger Zahlkonflikt.\n"
+    },
+    {
+      "satz": "t18",
+      "text": "Die Bergung, so Goldschmidt, sei „eine Generationenaufgabe, die unser Land und auch die Steuerzahler noch lange beschäftigen und fordern wird.\"",
+      "start": 1844,
+      "end": 1987,
+      "geprueft": true,
+      "notwendig": [
+        "s23"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c18"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    }
+  ]
+}

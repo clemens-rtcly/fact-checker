@@ -1,0 +1,521 @@
+{
+  "paar": "az_ReitWMHotels",
+  "split": "dev",
+  "anleitung": [
+    "Arbeitsanweisung (diese Zeilen bleiben in der Datei stehen):",
+    "1. Jede Zeile mit \"geprueft\": false durchgehen und auf true setzen.",
+    "2. notwendig = Sätze, ohne die ein Teil der Aussage unbelegt bliebe.",
+    "   zulaessig = stützt ebenfalls, ist aber entbehrlich (Dubletten).",
+    "3. relation prüfen: direkt | aggregiert | bedeutung_verschoben |",
+    "   inferiert | keine_quelle.",
+    "4. flags_erwartet: nur Befunde, die WIRKLICH zutreffen sollten",
+    "   (zahlkonflikt, ort_konflikt, kuerzel_konflikt, wortlaut_abweichung,",
+    "   ident_unbelegt, zahl_unbelegt). Leere Liste heißt: kein Befund.",
+    "5. Zum Schluss EINMAL umgekehrt: den Artikel lesen und fragen, welcher",
+    "   Transkriptsatz diese Stelle nutzt. Das fängt die Quellen, die die",
+    "   Pipeline gar nicht erst vorgeschlagen hat — der Bias des Entwurfs.",
+    "6. Artikel- und Transkripttext danach NICHT mehr ändern, auch keine",
+    "   Tippfehler: Die Zeichen-Offsets sind Teil der Annotation."
+  ],
+  "artikel_hash": "c0c62d0ecdadab9c",
+  "transkript_hash": "571e684dac53198c",
+  "artikel_saetze": [
+    {
+      "id": "s1",
+      "text": "Kreis Heinsberg In Aachen und der näheren Umgebung ist es momentan schwierig – oder zumindest recht teuer –, ein Hotel zu buchen."
+    },
+    {
+      "id": "s2",
+      "text": "Rund um die Reit-WM sind freie Zimmer Mangelware."
+    },
+    {
+      "id": "s3",
+      "text": "Und wer doch eines ergattern kann, muss tief in die Tasche greifen – das Gesetz von Angebot und Nachfrage."
+    },
+    {
+      "id": "s4",
+      "text": "Auch die umliegenden Orte verzeichnen in den kommenden zwei Wochen erhöhte Buchungszahlen."
+    },
+    {
+      "id": "s5",
+      "text": "Aber hat das sportliche Großereignis in Aachen auch Auswirkungen auf das Hotel- und Gastronomiegewerbe im Kreis Heinsberg?"
+    },
+    {
+      "id": "s6",
+      "text": "„Das ist ein wunder Punkt für mich und meine Kollegen aus dem Kreis“, sagt Wolfgang Wahl, Vorsitzender des Dehoga-Kreisverbands Heinsberg."
+    },
+    {
+      "id": "s7",
+      "text": "„Natürlich würden wir die Reit-WM auch gerne für uns als Gästebringer verzeichnen, aber tatsächlich sehen wir hier kaum einen Effekt auf unsere Buchungen.“"
+    },
+    {
+      "id": "s8",
+      "text": "Wolfgang Wahl selbst betreibt das Hotel am Weiher in Erkelenz."
+    },
+    {
+      "id": "s9",
+      "text": "„Erst gestern Abend habe ich mich mit einem anderen Hotelier aus Erkelenz unterhalten."
+    },
+    {
+      "id": "s10",
+      "text": "Er hat momentan zwei Gäste, die zur Reit-WM angereist sind, bei mir ist es nur ein Gast.“"
+    },
+    {
+      "id": "s11",
+      "text": "Ähnlich gehe es den meisten Hotel- und Gastronomiebetrieben im Kreis, weiß Wolfgang Wahl."
+    },
+    {
+      "id": "s12",
+      "text": "„Wir sind einfach zu weit von Aachen weg."
+    },
+    {
+      "id": "s13",
+      "text": "Aachen selbst hat schon große Kapazitäten, und wer das Umland vorzieht, findet auch in den umliegenden Orten oder in Richtung Eifel zahlreiche attraktive Möglichkeiten.“"
+    },
+    {
+      "id": "s14",
+      "text": "Dafür, dass Aachener Hotels rund um die WM ihre Preise aufschlagen, hat Wolfgang Wahl Verständnis."
+    },
+    {
+      "id": "s15",
+      "text": "„Das ist doch ganz logisch“, meint der Hotelier."
+    },
+    {
+      "id": "s16",
+      "text": "„Jeder würde das machen."
+    },
+    {
+      "id": "s17",
+      "text": "Auch wenn es natürlich für Unbeteiligte natürlich schon weh tut, wenn sie deutlich höhere Preise zahlen müssen als üblich."
+    },
+    {
+      "id": "s18",
+      "text": "Wir hier im Kreis machen im Kern aber keine fette Beute.“"
+    },
+    {
+      "id": "s19",
+      "text": "Je näher das Geschehen, desto spürbarer ist der Effekt."
+    },
+    {
+      "id": "s20",
+      "text": "Darum kann das City-Hotel Geilenkirchen, also im südlichen Kreis Heinsberg, doch einige Gäste vermelden, die sich ein Zimmer gebucht haben, um die Reit-WM zu besuchen."
+    },
+    {
+      "id": "s21",
+      "text": "„Aber das ist nicht wesentlich mehr als sonst in den Sommermonaten“, so eine Sprecherin."
+    },
+    {
+      "id": "s22",
+      "text": "„Wir sind generell ganz gut ausgelastet."
+    },
+    {
+      "id": "s23",
+      "text": "Darum sind die Auswirkungen des Reitturniers auch nicht sehr stark.“"
+    },
+    {
+      "id": "s24",
+      "text": "Anders sei das beim Pink-Pop-Festival im benachbarten Landgraaf."
+    },
+    {
+      "id": "s25",
+      "text": "„Das spüren wir bei uns sehr deutlich.“"
+    },
+    {
+      "id": "s26",
+      "text": "Ähnlich sieht es im „in 2 The Boardinghouse“ in Übach-Palenberg aus."
+    },
+    {
+      "id": "s27",
+      "text": "Die Zahl der Buchungen ist zwar insgesamt nicht wesentlich höher als sonst, jedoch haben auch hier einige Gäste das Haus gewählt, um von dort aus zum Turnier nach Aachen zu fahren."
+    },
+    {
+      "id": "s28",
+      "text": "Für den ganz extremen Andrang sei die Fahrtzeit zwischen 30 und 45 Minuten dann aber doch zu lang, so eine Sprecherin."
+    },
+    {
+      "id": "s29",
+      "text": "Das Mercator-Hotel in Gangelt hingegen hat derzeit zahlreiche Gäste, die Zimmer gebucht haben, um die Reit-WM zu besuchen."
+    },
+    {
+      "id": "s30",
+      "text": "„Wir sind komplett ausgebucht“, sagt Hoteldirektor Eugene Mandele."
+    },
+    {
+      "id": "s31",
+      "text": "„Das ist bei uns immer so, wenn Reitturnier in Aachen ist.“"
+    },
+    {
+      "id": "s32",
+      "text": "Es könne die günstige Lage zwischen den Niederlanden und Aachen sein, die gerade sein Hotel so beliebt macht, meint er."
+    },
+    {
+      "id": "s33",
+      "text": "„Die meisten Gäste kommen am Freitag und bleiben über das ganze Wochenende bei uns."
+    },
+    {
+      "id": "s34",
+      "text": "Wir haben aber auch Tagesgäste und Reitturnier-Besucher, die an mehreren Tagen nach Aachen fahren."
+    },
+    {
+      "id": "s35",
+      "text": "Die sind dann morgens schon früh weg und kommen erst am Abend wieder.“"
+    },
+    {
+      "id": "s36",
+      "text": "Die Preise hat das Hotel zur Reit-WM nicht angepasst."
+    },
+    {
+      "id": "s37",
+      "text": "„Die sind bei uns konstant“, sagt Mandele."
+    },
+    {
+      "id": "s38",
+      "text": "Auch bei der Niederrhein Tourismus GmbH mit Sitz in Viersen, auch zuständig für den Tourismus im Kreis Heinsberg, sind keine besonderen Angebote oder gastromonischen Aktionen im Kreis Heinsberg bekannt, die die Reit-WM in Aachen besonders flankieren würden – von den üblichen touristischen Angeboten für Reiterinnen und Reiter abgesehen."
+    }
+  ],
+  "eintraege": [
+    {
+      "satz": "t1",
+      "text": "Die Reit-WM in Aachen sorgt im Kreis Heinsberg insgesamt nur für begrenzte zusätzliche Buchungen in Hotels und Gastronomie.",
+      "start": 0,
+      "end": 123,
+      "geprueft": true,
+      "notwendig": [
+        "s5",
+        "s7"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c1"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t2",
+      "text": "Unterkünfte in Aachen und der näheren Umgebung sind knapp und teuer, doch viele Betriebe im Kreis profitieren kaum von dem sportlichen Großereignis.",
+      "start": 124,
+      "end": 272,
+      "geprueft": true,
+      "notwendig": [
+        "s1",
+        "s7"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c2",
+        "c3"
+      ],
+      "relationen_gemischt": true,
+      "notiz": ""
+    },
+    {
+      "satz": "t3",
+      "text": "Wolfgang Wahl, Vorsitzender des Dehoga-Kreisverbands Heinsberg und Betreiber des Hotels am Weiher in Erkelenz, spricht von einem wunden Punkt für sich und seine Kollegen im Kreis.",
+      "start": 274,
+      "end": 453,
+      "geprueft": true,
+      "notwendig": [
+        "s6",
+        "s8"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c4"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t4",
+      "text": "Er und viele Kollegen hätten gern mehr Gäste durch die Reit-WM gewonnen.",
+      "start": 454,
+      "end": 526,
+      "geprueft": true,
+      "notwendig": [
+        "s7"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c5"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t5",
+      "text": "In seinem Haus habe derzeit nur ein Besucher der Reit-WM übernachtet, bei einem anderen Hotelier in Erkelenz seien es zwei Gäste.",
+      "start": 527,
+      "end": 656,
+      "geprueft": true,
+      "notwendig": [
+        "s9",
+        "s10"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c6"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t6",
+      "text": "Der Kreis liege aus Sicht vieler Besucher offenbar zu weit von Aachen entfernt.",
+      "start": 657,
+      "end": 736,
+      "geprueft": true,
+      "notwendig": [
+        "s12"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c7"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t7",
+      "text": "Zudem habe Aachen selbst schon große Kapazitäten, und wer außerhalb der Stadt übernachten wolle, finde auch in näheren Orten oder in Richtung Eifel zahlreiche Angebote.",
+      "start": 737,
+      "end": 905,
+      "geprueft": true,
+      "notwendig": [
+        "s13"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c8"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t8",
+      "text": "Verständnis hat Wahl für die höheren Preise in Aachener Hotels.",
+      "start": 907,
+      "end": 970,
+      "geprueft": true,
+      "notwendig": [
+        "s14"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c9"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t9",
+      "text": "Bei großer Nachfrage und knappem Angebot sei das ganz logisch, das würde jeder so machen.",
+      "start": 971,
+      "end": 1060,
+      "geprueft": true,
+      "notwendig": [
+        "s3",
+        "s15",
+        "s16"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c10"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t10",
+      "text": "Im Kreis Heinsberg selbst verdienten die Betriebe dadurch aber im Kern nicht besonders viel zusätzlich.",
+      "start": 1061,
+      "end": 1164,
+      "geprueft": true,
+      "notwendig": [
+        "s18"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c11"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t11",
+      "text": "Je näher ein Hotel an Aachen liegt, desto eher ist ein Effekt spürbar.",
+      "start": 1166,
+      "end": 1236,
+      "geprueft": true,
+      "notwendig": [
+        "s19"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c12"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t12",
+      "text": "Das City-Hotel Geilenkirchen verzeichnet einige Gäste wegen der Reit-WM, aber nicht wesentlich mehr als sonst in den Sommermonaten.",
+      "start": 1237,
+      "end": 1368,
+      "geprueft": true,
+      "notwendig": [
+        "s20",
+        "s21"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c13",
+        "c14"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t13",
+      "text": "Deutlich stärker wirke sich dort das Pink-Pop-Festival im benachbarten Landgraaf aus.",
+      "start": 1369,
+      "end": 1454,
+      "geprueft": true,
+      "notwendig": [
+        "s24",
+        "s25"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c15"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t14",
+      "text": "Auch das „in two The Boardinghouse“ in Übach-Palenberg hat einzelne Turnierbesucher, doch für den ganz großen Andrang sei die Fahrtzeit von 30 bis 45 Minuten dann doch zu lang.",
+      "start": 1455,
+      "end": 1631,
+      "geprueft": true,
+      "notwendig": [
+        "s26",
+        "s27",
+        "s28"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c16",
+        "c17"
+      ],
+      "relationen_gemischt": true,
+      "notiz": ""
+    },
+    {
+      "satz": "t15",
+      "text": "Das Mercator-Hotel in Gangelt ist dagegen komplett ausgebucht.",
+      "start": 1633,
+      "end": 1695,
+      "geprueft": true,
+      "notwendig": [
+        "s29",
+        "s30"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c18"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t16",
+      "text": "Das sei nach Angaben von Hoteldirektor Eugene Mandele immer so, wenn in Aachen ein Reitturnier stattfindet.",
+      "start": 1696,
+      "end": 1803,
+      "geprueft": true,
+      "notwendig": [
+        "s31"
+      ],
+      "zulaessig": [
+        "s30"
+      ],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c19"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t17",
+      "text": "Als möglichen Grund vermutet er die günstige Lage seines Hotels zwischen den Niederlanden und Aachen.",
+      "start": 1804,
+      "end": 1905,
+      "geprueft": true,
+      "notwendig": [
+        "s32"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c20"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t18",
+      "text": "Die Preise habe das Hotel zur Reit-WM nicht angepasst, sie blieben konstant.",
+      "start": 1906,
+      "end": 1982,
+      "geprueft": true,
+      "notwendig": [
+        "s36",
+        "s37"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c21"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    }
+  ]
+}

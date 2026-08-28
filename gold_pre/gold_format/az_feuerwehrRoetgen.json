@@ -1,0 +1,440 @@
+{
+  "paar": "az_feuerwehrRoetgen",
+  "split": "test",
+  "anleitung": [
+    "Arbeitsanweisung (diese Zeilen bleiben in der Datei stehen):",
+    "1. Jede Zeile mit \"geprueft\": false durchgehen und auf true setzen.",
+    "2. notwendig = Sätze, ohne die ein Teil der Aussage unbelegt bliebe.",
+    "   zulaessig = stützt ebenfalls, ist aber entbehrlich (Dubletten).",
+    "3. relation prüfen: direkt | aggregiert | bedeutung_verschoben |",
+    "   inferiert | keine_quelle.",
+    "4. flags_erwartet: nur Befunde, die WIRKLICH zutreffen sollten",
+    "   (zahlkonflikt, ort_konflikt, kuerzel_konflikt, wortlaut_abweichung,",
+    "   ident_unbelegt, zahl_unbelegt). Leere Liste heißt: kein Befund.",
+    "5. Zum Schluss EINMAL umgekehrt: den Artikel lesen und fragen, welcher",
+    "   Transkriptsatz diese Stelle nutzt. Das fängt die Quellen, die die",
+    "   Pipeline gar nicht erst vorgeschlagen hat — der Bias des Entwurfs.",
+    "6. Artikel- und Transkripttext danach NICHT mehr ändern, auch keine",
+    "   Tippfehler: Die Zeichen-Offsets sind Teil der Annotation."
+  ],
+  "artikel_hash": "988229a1d1cbc273",
+  "transkript_hash": "2ad501819dccbdf4",
+  "artikel_saetze": [
+    {
+      "id": "s1",
+      "text": "Monschau Noch verdecken Zäune, Planen, Bauwagen und das übliche Baustellenklo die freie Sicht auf den Rohbau."
+    },
+    {
+      "id": "s2",
+      "text": "Zu ahnen ist aber schon, wie Rohrens künftiges neues Feuerwehrgerätehaus an der Straße „Am Pöhlchen“ einmal aussehen wird."
+    },
+    {
+      "id": "s3",
+      "text": "Die Fenster fehlen zwar noch, aber fertige Wände und Dachflächen lassen schon die Form des Zweckbaus erkennen."
+    },
+    {
+      "id": "s4",
+      "text": "Statt eines Tores wie der gegenüberliegende Altbau hat die Fahrzeughalle künftig zwei davon."
+    },
+    {
+      "id": "s5",
+      "text": "Während auf der Freifläche vor dem Gebäude die Bagger und Bauarbeiter am Werk sind, gehen im Monschauer Rathaus die Vorbereitungen für den Bau der Innen- und Außenanlagen weiter."
+    },
+    {
+      "id": "s6",
+      "text": "Der Bau- und Planungsausschuss der Stadt hat jetzt grünes Licht dafür gegeben, dass die Arbeiten an den Außenanlagen anlaufen und die Tischler und Fliesenleger anrücken können."
+    },
+    {
+      "id": "s7",
+      "text": "Mit dem Pflaster soll im September begonnen werden."
+    },
+    {
+      "id": "s8",
+      "text": "Die Steinflächen vor der Halle und dem Sozialtrakt werden durch Kiesstreifen, Grünanlagen sowie durch Grünflächen rechts und hinter dem Gebäude ergänzt."
+    },
+    {
+      "id": "s9",
+      "text": "Wärmepumpe und Lüftung werden an der Rückseite aufgebaut."
+    },
+    {
+      "id": "s10",
+      "text": "Die Fliesenleger wiederum sollen im Oktober oder November anrücken."
+    },
+    {
+      "id": "s11",
+      "text": "Im Februar kommenden Jahres beginnt der Innenausbau."
+    },
+    {
+      "id": "s12",
+      "text": "Ungewohnt großzügig dürften Besuchern die Türen vorkommen: „Im Bereich der Alarmierungswege betragen die Türhöhen aufgrund des Tragens von Feuerwehrhelmen 2,26 Meter“, erklärte die Stadtverwaltung in der Beschlussvorlage für die Ratsmitglieder."
+    },
+    {
+      "id": "s13",
+      "text": "Aus der Idee der Feuerwehr, die Türen einen schmucken Anstrich in Rot zu verpassen, wird nichts werden: Das wäre deutlich teurer geworden als das übliche Weiß."
+    },
+    {
+      "id": "s14",
+      "text": "Alle Handwerkerarbeiten werden nun im Vergabeportal der Städteregion öffentlich ausgeschrieben."
+    },
+    {
+      "id": "s15",
+      "text": "„Es freut mich sehr, dass das Projekt in großen Zügen weitergeht“, sagte der CDU-Ratsherr und Rohrener Ortsvorsteher Maik Gabbert im Ausschuss."
+    },
+    {
+      "id": "s16",
+      "text": "Er dankte der Verwaltung ausdrücklich dafür, dass sie die Kosten im Blick behalte."
+    },
+    {
+      "id": "s17",
+      "text": "Rund 1,5 Millionen Euro sind im Haushalt des laufenden Jahres für den Neubau eingeplant, im nächsten Jahr noch einmal 700.000. Da sich die Preise im Baubereich derzeit schon einmal unverhofft nach oben bewegen können, weist die Stadtverwaltung denn auch ausdrücklich darauf hin, dass die Berechnungen womöglich später noch angepasst werden müssen."
+    }
+  ],
+  "eintraege": [
+    {
+      "satz": "t1",
+      "text": "In Rohren, einem Ortsteil von Monschau, nimmt das neue Feuerwehrgerätehaus an der Straße Am Pöhlchen immer deutlichere Formen an.",
+      "start": 0,
+      "end": 129,
+      "geprueft": false,
+      "notwendig": [
+        "s2"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c1"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t2",
+      "text": "Zwar versperren Zäune, Planen und Bauwagen noch den freien Blick auf den Rohbau.",
+      "start": 130,
+      "end": 210,
+      "geprueft": false,
+      "notwendig": [
+        "s1"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c2"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t3",
+      "text": "Doch Wände und Dachflächen stehen bereits, und die Form der künftigen Fahrzeughalle ist erkennbar.",
+      "start": 211,
+      "end": 309,
+      "geprueft": false,
+      "notwendig": [
+        "s3",
+        "s4"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c3",
+        "c4"
+      ],
+      "relationen_gemischt": true,
+      "notiz": ""
+    },
+    {
+      "satz": "t4",
+      "text": "Sie erhält zwei Tore statt eines wie beim gegenüberliegenden alten Gebäude.",
+      "start": 310,
+      "end": 385,
+      "geprueft": false,
+      "notwendig": [
+        "s4",
+        "s5"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c5"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t5",
+      "text": "Der Bau- und Planungsausschuss der Stadt Monschau hat nun grünes Licht gegeben, damit die Arbeiten an den Außenanlagen anlaufen können und Tischler sowie Fliesenleger anrücken können.",
+      "start": 387,
+      "end": 570,
+      "geprueft": false,
+      "notwendig": [
+        "s6"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c6"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t6",
+      "text": "Im September sollen die Pflasterarbeiten beginnen.",
+      "start": 571,
+      "end": 621,
+      "geprueft": false,
+      "notwendig": [
+        "s7"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c7"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t7",
+      "text": "Vor der Fahrzeughalle und dem Sozialtrakt sind Steinflächen vorgesehen, ergänzt durch Kiesstreifen, Grünanlagen und weitere Grünflächen rechts und hinter dem Gebäude.",
+      "start": 622,
+      "end": 788,
+      "geprueft": false,
+      "notwendig": [
+        "s8"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c8"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t8",
+      "text": "Wärmepumpe und Lüftungsanlage werden an der Rückseite installiert.",
+      "start": 789,
+      "end": 855,
+      "geprueft": false,
+      "notwendig": [
+        "s9"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c9"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t9",
+      "text": "Die Fliesenleger sollen im Oktober oder November starten.",
+      "start": 857,
+      "end": 914,
+      "geprueft": false,
+      "notwendig": [
+        "s10"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c10"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t10",
+      "text": "Der Innenausbau beginnt im Februar kommenden Jahres.",
+      "start": 915,
+      "end": 967,
+      "geprueft": false,
+      "notwendig": [
+        "s11"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c11"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t11",
+      "text": "Auffällig werden die Türen entlang der Alarmierungswege: Sie sollen 2,26 Meter hoch sein, damit Feuerwehrleute sie auch mit Helm problemlos passieren können.",
+      "start": 968,
+      "end": 1125,
+      "geprueft": false,
+      "notwendig": [
+        "s12"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c12"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t12",
+      "text": "Der Wunsch der Feuerwehr nach roten Türen wird allerdings nicht umgesetzt.",
+      "start": 1126,
+      "end": 1200,
+      "geprueft": false,
+      "notwendig": [
+        "s13"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c13"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t13",
+      "text": "Ein roter Anstrich wäre deutlich teurer als die vorgesehene weiße Ausführung.",
+      "start": 1201,
+      "end": 1278,
+      "geprueft": false,
+      "notwendig": [
+        "s13"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c14"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t14",
+      "text": "Sämtliche Handwerkerleistungen werden öffentlich über das Vergabeportal der Städteregion ausgeschrieben.",
+      "start": 1280,
+      "end": 1384,
+      "geprueft": false,
+      "notwendig": [
+        "s14"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c15"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t15",
+      "text": "Der CDU-Ratsherr und Rohrener Ortsvorsteher Maik Gabbert begrüßte im Ausschuss, dass das Projekt weiter vorankomme.",
+      "start": 1385,
+      "end": 1500,
+      "geprueft": false,
+      "notwendig": [
+        "s15"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c16"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t16",
+      "text": "Zugleich dankte er der Verwaltung dafür, die Kosten im Blick zu behalten.",
+      "start": 1501,
+      "end": 1574,
+      "geprueft": false,
+      "notwendig": [
+        "s16"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c17"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t17",
+      "text": "Für den Neubau sind im laufenden Jahr rund 1,5 Millionen Euro eingeplant.",
+      "start": 1576,
+      "end": 1649,
+      "geprueft": false,
+      "notwendig": [
+        "s17"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c18"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t18",
+      "text": "Im nächsten Jahr sollen weitere 700.000 Euro bereitstehen.",
+      "start": 1650,
+      "end": 1708,
+      "geprueft": false,
+      "notwendig": [
+        "s15",
+        "s17"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c19"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t19",
+      "text": "Die Stadtverwaltung weist darauf hin, dass die Kalkulation wegen möglicher Preissteigerungen im Baugewerbe später noch angepasst werden muss.",
+      "start": 1709,
+      "end": 1850,
+      "geprueft": false,
+      "notwendig": [
+        "s17"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c20"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    }
+  ]
+}

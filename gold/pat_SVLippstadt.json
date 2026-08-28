@@ -1,0 +1,292 @@
+{
+  "paar": "pat_SVLippstadt",
+  "split": "dev",
+  "anleitung": [
+    "Arbeitsanweisung (diese Zeilen bleiben in der Datei stehen):",
+    "1. Jede Zeile mit \"geprueft\": false durchgehen und auf true setzen.",
+    "2. notwendig = Sätze, ohne die ein Teil der Aussage unbelegt bliebe.",
+    "   zulaessig = stützt ebenfalls, ist aber entbehrlich (Dubletten).",
+    "3. relation prüfen: direkt | aggregiert | bedeutung_verschoben |",
+    "   inferiert | keine_quelle.",
+    "4. flags_erwartet: nur Befunde, die WIRKLICH zutreffen sollten",
+    "   (zahlkonflikt, ort_konflikt, kuerzel_konflikt, wortlaut_abweichung,",
+    "   ident_unbelegt, zahl_unbelegt). Leere Liste heißt: kein Befund.",
+    "5. Zum Schluss EINMAL umgekehrt: den Artikel lesen und fragen, welcher",
+    "   Transkriptsatz diese Stelle nutzt. Das fängt die Quellen, die die",
+    "   Pipeline gar nicht erst vorgeschlagen hat — der Bias des Entwurfs.",
+    "6. Artikel- und Transkripttext danach NICHT mehr ändern, auch keine",
+    "   Tippfehler: Die Zeichen-Offsets sind Teil der Annotation."
+  ],
+  "artikel_hash": "0eced3b665843195",
+  "transkript_hash": "65dcd5dfd6a1334f",
+  "artikel_saetze": [
+    {
+      "id": "s1",
+      "text": "Title: Verdientes 0:0 des SV Lippstadt bei Preußen Münster Description: Lippstadt – Das wahre Gesicht war es vielleicht noch nicht ganz, aber der SV Lippstadt hat einen Schritt in die richtige Richtung gemacht."
+    },
+    {
+      "id": "s2",
+      "text": "Bei der hochgehandelten Reserve von Preußen Münster erreichten die Schwarz-Roten ein 0:0-Unentschieden – und dies absolut verdient."
+    },
+    {
+      "id": "s3",
+      "text": "Content:"
+    },
+    {
+      "id": "s4",
+      "text": "Oberliga Westfalen"
+    },
+    {
+      "id": "s5",
+      "text": "Preußen Münster II - SV Lippstadt 0:0"
+    },
+    {
+      "id": "s6",
+      "text": "Felix Bechtold gab nach dem Abpfiff in Münster zu, dass die 0:2-Pleite gegen Kinderhaus zum Auftakt die ganze Woche am Team genagt habe."
+    },
+    {
+      "id": "s7",
+      "text": "Entsprechend froh dürfte der Lippstädter Chefcoach gewesen sein, dass seine Mannschaft am Sonntag eine Reaktion zeigte und ganz anders zu Werke ging."
+    },
+    {
+      "id": "s8",
+      "text": "Die Gäste wirkten stabil und waren stark gegen den Ball."
+    },
+    {
+      "id": "s9",
+      "text": "Das torlose Remis entsprach am Ende komplett dem Spielverlauf."
+    },
+    {
+      "id": "s10",
+      "text": "Den ersten Punkt hat der Spielverein damit im Sack, auf das erste Saisontor muss die Bechtold-Elf auch nach 180 Minuten noch warten."
+    },
+    {
+      "id": "s11",
+      "text": "Aber dies war im Sportpark natürlich nicht das Hauptthema."
+    },
+    {
+      "id": "s12",
+      "text": "Die Gäste – mit Lukas Struck für den rotgesperrten Luca Beermann im Kasten – hatten im Vergleich zur Vorwoche nur einen Wechsel vorgenommen."
+    },
+    {
+      "id": "s13",
+      "text": "Für Louis Neugebauer stürmte Gerrit Kaiser, während Gentrit Muja wieder auf seine angestammte Position auf der rechten Seite rückte."
+    },
+    {
+      "id": "s14",
+      "text": "Münster erwischte den besseren Start: Bereits nach sieben Minuten hätte Gashi das 1:0 erzielen können, als er ziemlich frei im Strafraum auftauchte."
+    },
+    {
+      "id": "s15",
+      "text": "Dies war dann aber auch die einzige Unsicherheit in der SV-Abwehr, die sich anschließend den quirligen, technisch guten Preußen-Stürmern mit vollem Einsatz entgegenstellte."
+    },
+    {
+      "id": "s16",
+      "text": "Mit zunehmender Spielzeit gelang es den Gästen mehr und mehr, sich freizuspielen."
+    },
+    {
+      "id": "s17",
+      "text": "Fatih Ufuk versuchte es aus der Distanz (24.), dann hatte Maxi Franke nach schönem Solo das 1:0 (28.) auf dem Fuß, sein Schuss war jedoch zu harmlos."
+    },
+    {
+      "id": "s18",
+      "text": "Längst war die Begegnung ausgeglichen."
+    },
+    {
+      "id": "s19",
+      "text": "Erst unmittelbar vor dem Pausenpfiff wurden die Gastgeber bei zwei, drei Eckbällen noch mal gefährlich."
+    },
+    {
+      "id": "s20",
+      "text": "Aber Lippstadt hielt die Null."
+    },
+    {
+      "id": "s21",
+      "text": "Nach dem Wechsel änderte sich das Bild kaum."
+    },
+    {
+      "id": "s22",
+      "text": "Der SV Lippstadt ließ nichts anbrennen und hielt Preußen Münster weit weg vom eigenen Kasten."
+    },
+    {
+      "id": "s23",
+      "text": "Bei 26, 27 Grad bleib das Tempo überschaubar."
+    },
+    {
+      "id": "s24",
+      "text": "Über weite Strecken neutralisierten sich die beiden Mannschaften."
+    },
+    {
+      "id": "s25",
+      "text": "Was die Chancen betrifft, hatte Münster die erste durch einen Kopfball von Stuhlmacher (51.)."
+    },
+    {
+      "id": "s26",
+      "text": "Lippstadt antwortete mit einem Freistoß von Franke, der die Kugel allerdings über das Gehäuse drosch."
+    },
+    {
+      "id": "s27",
+      "text": "Dann die beste Gelegenheit für den SV Lippstadt: Nach einer erneuten Balleroberung in der gegnerischen Hälfte stürmten der eingewechselte Neugebauer und Ufuk Richtung Münster-Tor, doch Ufuk traf nur das Außennetz."
+    },
+    {
+      "id": "s28",
+      "text": "Da wäre deutlich mehr drin gewesen."
+    },
+    {
+      "id": "s29",
+      "text": "In der Schlussphase hatten die Preußen noch zwei Halbchancen durch Gashi (75.) und Anari (77.)."
+    },
+    {
+      "id": "s30",
+      "text": "Auf der anderen Seite prüfte Böll den manchmal unsicher wirkenden Keeper Busse mit einem Distanzschuss (83.)."
+    },
+    {
+      "id": "s31",
+      "text": "Das war’s: Es blieb beim 0:0. Ein Resultat, das absolut passte."
+    },
+    {
+      "id": "s32",
+      "text": "Am nächsten Sonntag, im Heimspiel gegen Victoria Clarholz, sollte es dann klappen mit dem ersten Tor und dem ersten Sieg."
+    }
+  ],
+  "eintraege": [
+    {
+      "satz": "t1",
+      "text": "Der SV Lippstadt hat sich in der Oberliga Westfalen gegen die Reserve von Preußen Münster ein verdientes null zu null erkämpft.",
+      "start": 0,
+      "end": 127,
+      "geprueft": true,
+      "notwendig": [
+        "s1",
+        "s4"
+      ],
+      "zulaessig": [
+        "s2"
+      ],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c1"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t2",
+      "text": "Nach der Auftaktpleite gegen Kinderhaus hatten die Lippstädter reichlich gutzumachen.",
+      "start": 128,
+      "end": 213,
+      "geprueft": true,
+      "notwendig": [
+        "s6"
+      ],
+      "zulaessig": [
+        "s7"
+      ],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c2"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t3",
+      "text": "Trainer Felix Bechtold zeigte sich nach dem Abpfiff zufrieden mit dieser Reaktion seiner Mannschaft.",
+      "start": 214,
+      "end": 314,
+      "geprueft": true,
+      "notwendig": [
+        "s7"
+      ],
+      "zulaessig": [
+        "s6"
+      ],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c3"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t4",
+      "text": "Die Gäste traten defensiv stabil auf und ließen kaum Chancen der technisch starken Münsteraner zu.",
+      "start": 315,
+      "end": 413,
+      "geprueft": true,
+      "notwendig": [
+        "s8"
+      ],
+      "zulaessig": [
+        "s15"
+      ],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c4"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t5",
+      "text": "Besonders in der Schlussphase bewahrte die SV-Abwehr kühlen Kopf.",
+      "start": 414,
+      "end": 479,
+      "geprueft": true,
+      "notwendig": [
+        "s29"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [
+        "nli_widerspruch"
+      ],
+      "claims_im_lauf": [
+        "c5"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t6",
+      "text": "Das Team wartet zwar noch auf das erste Saisontor, doch der erkämpfte Punkt bringt neuen Schwung.",
+      "start": 480,
+      "end": 577,
+      "geprueft": true,
+      "notwendig": [
+        "s10"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c6",
+        "c7"
+      ],
+      "relationen_gemischt": true,
+      "notiz": ""
+    },
+    {
+      "satz": "t7",
+      "text": "Am nächsten Sonntag geht's daheim gegen Victoria Clarholz weiter – dann soll der Knoten platzen.",
+      "start": 578,
+      "end": 674,
+      "geprueft": true,
+      "notwendig": [
+        "s32"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c8"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    }
+  ]
+}

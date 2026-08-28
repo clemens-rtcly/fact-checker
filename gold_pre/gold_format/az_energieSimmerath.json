@@ -1,0 +1,648 @@
+{
+  "paar": "az_energieSimmerath",
+  "split": "dev",
+  "anleitung": [
+    "Arbeitsanweisung (diese Zeilen bleiben in der Datei stehen):",
+    "1. Jede Zeile mit \"geprueft\": false durchgehen und auf true setzen.",
+    "2. notwendig = Sätze, ohne die ein Teil der Aussage unbelegt bliebe.",
+    "   zulaessig = stützt ebenfalls, ist aber entbehrlich (Dubletten).",
+    "3. relation prüfen: direkt | aggregiert | bedeutung_verschoben |",
+    "   inferiert | keine_quelle.",
+    "4. flags_erwartet: nur Befunde, die WIRKLICH zutreffen sollten",
+    "   (zahlkonflikt, ort_konflikt, kuerzel_konflikt, wortlaut_abweichung,",
+    "   ident_unbelegt, zahl_unbelegt). Leere Liste heißt: kein Befund.",
+    "5. Zum Schluss EINMAL umgekehrt: den Artikel lesen und fragen, welcher",
+    "   Transkriptsatz diese Stelle nutzt. Das fängt die Quellen, die die",
+    "   Pipeline gar nicht erst vorgeschlagen hat — der Bias des Entwurfs.",
+    "6. Artikel- und Transkripttext danach NICHT mehr ändern, auch keine",
+    "   Tippfehler: Die Zeichen-Offsets sind Teil der Annotation."
+  ],
+  "artikel_hash": "a4038eced766e4d7",
+  "transkript_hash": "f20b60980f4f078c",
+  "artikel_saetze": [
+    {
+      "id": "s1",
+      "text": "Simmerath Die Gemeinde Simmerath macht sich auf den Weg in eine digital gesteuerte Energiezukunft."
+    },
+    {
+      "id": "s2",
+      "text": "Der Struktur- und Hochbauausschuss hat sich jetzt mit dem Start eines Energiemanagementsystems für die kommunalen Gebäude beschäftigt."
+    },
+    {
+      "id": "s3",
+      "text": "Ziel ist es, den Energieverbrauch von Schulen, Feuerwehrgerätehäusern und anderen gemeindeeigenen Gebäuden künftig zentral zu erfassen, auszuwerten und gezielt zu senken."
+    },
+    {
+      "id": "s4",
+      "text": "Die Grundlage dafür hatte der Rat bereits Ende 2023 geschaffen."
+    },
+    {
+      "id": "s5",
+      "text": "Nach längeren Verzögerungen aufgrund der Haushaltslage des Bundes erhielt die Gemeinde Ende 2025 schließlich die Förderzusage."
+    },
+    {
+      "id": "s6",
+      "text": "Der Bund übernimmt 90 Prozent der Kosten für das auf drei Jahre angelegte Projekt."
+    },
+    {
+      "id": "s7",
+      "text": "Damit kann Simmerath ein System aufbauen, das in Zukunft ohnehin für viele Kommunen verpflichtend werden dürfte."
+    },
+    {
+      "id": "s8",
+      "text": "Mithilfe einer speziellen Software sollen künftig sämtliche Energieverbräuche zusammenlaufen."
+    },
+    {
+      "id": "s9",
+      "text": "So sollen unnötige Mehrverbräuche, fehlerhafte Einstellungen oder technische Defekte schneller erkannt werden."
+    },
+    {
+      "id": "s10",
+      "text": "Nach Angaben der Verwaltung verspricht man sich davon langfristig niedrigere Energie- und Betriebskosten sowie einen geringeren CO₂-Ausstoß."
+    },
+    {
+      "id": "s11",
+      "text": "Befristete Stelle geschaffen"
+    },
+    {
+      "id": "s12",
+      "text": "Für die Umsetzung wurde eigens eine befristete Stelle geschaffen."
+    },
+    {
+      "id": "s13",
+      "text": "Unterstützt wird die Gemeinde von einem Aachener Beratungsunternehmen, das die Einführung des Systems begleitet."
+    },
+    {
+      "id": "s14",
+      "text": "Derzeit werden die Verbrauchsdaten der kommunalen Gebäude erfasst und ausgewertet."
+    },
+    {
+      "id": "s15",
+      "text": "Parallel läuft die Auswahl einer geeigneten Software, die noch in diesem Jahr eingeführt werden soll."
+    },
+    {
+      "id": "s16",
+      "text": "Grundsätzliche Kritik am Vorhaben gab es im Ausschuss nicht."
+    },
+    {
+      "id": "s17",
+      "text": "CDU-Fraktionssprecher Christoph Poschen sprach von einer „sinnvollen Beschaffung“ und signalisierte die Unterstützung seiner Fraktion."
+    },
+    {
+      "id": "s18",
+      "text": "Etwas kritischer blickte die SPD auf einen Begriff in der Beschlussvorlage."
+    },
+    {
+      "id": "s19",
+      "text": "Fraktionssprecher Gregor Harzheim störte sich an der Formulierung einer „dauerhaften“ Implementierung."
+    },
+    {
+      "id": "s20",
+      "text": "Angesichts der angespannten Finanzlage vieler Kommunen könne man Dauerhaftigkeit nur dann erwarten, wenn auch die Finanzierung dauerhaft gesichert sei."
+    },
+    {
+      "id": "s21",
+      "text": "„Für die SPD-Fraktion ist dieses ,dauerhaft‘ nur mit einer dauerhaften Förderung verbunden“, machte Harzheim deutlich."
+    },
+    {
+      "id": "s22",
+      "text": "Inhaltlich unterstütze seine Fraktion die Maßnahme jedoch ausdrücklich."
+    },
+    {
+      "id": "s23",
+      "text": "Praktische Fragen stellte UWG-Sprecher Reinhold Köller."
+    },
+    {
+      "id": "s24",
+      "text": "Ihn interessierte vor allem, ob neben der Software noch weitere Kosten auf die Gemeinde zukommen."
+    },
+    {
+      "id": "s25",
+      "text": "Die Verwaltung bestätigte, dass für einige Gebäude zusätzliche digitale Messstellen erforderlich sein werden, um die Verbrauchsdaten automatisch erfassen zu können."
+    },
+    {
+      "id": "s26",
+      "text": "Diese Investitionen seien jedoch ebenfalls förderfähig und würden während der Projektlaufzeit mit 90 Prozent bezuschusst."
+    },
+    {
+      "id": "s27",
+      "text": "Köller wollte zudem wissen, wer künftig auf mögliche Fehlermeldungen aus dem System reagiert."
+    },
+    {
+      "id": "s28",
+      "text": "Hintergrund ist die angekündigte Möglichkeit, technische Probleme frühzeitig zu erkennen."
+    },
+    {
+      "id": "s29",
+      "text": "Die Verwaltung erläuterte, dass genau dies einer der großen Vorteile des Energiemanagements sei: Defekte oder auffällige Verbrauchswerte könnten künftig schneller identifiziert und bearbeitet werden als bisher."
+    },
+    {
+      "id": "s30",
+      "text": "10.000 Euro im ersten Jahr"
+    },
+    {
+      "id": "s31",
+      "text": "Die Kosten für die Software werden sich nach derzeitigen Schätzungen auf rund 10.000 Euro im ersten Jahr sowie anschließend auf etwa 4.500 Euro jährlich belaufen."
+    },
+    {
+      "id": "s32",
+      "text": "Auch diese Ausgaben werden zunächst weitgehend gefördert."
+    },
+    {
+      "id": "s33",
+      "text": "Am Ende bestand im Ausschuss weitgehend Einigkeit darüber, dass die Gemeinde die hohe Förderquote nutzen sollte."
+    },
+    {
+      "id": "s34",
+      "text": "Schließlich geht es nicht nur um Klimaschutz, sondern auch um bares Geld."
+    },
+    {
+      "id": "s35",
+      "text": "Denn jede Kilowattstunde, die künftig eingespart wird, entlastet langfristig auch den Gemeindehaushalt."
+    },
+    {
+      "id": "s36",
+      "text": "Simmerath hofft deshalb, dass sich das neue System nach dem Aufbau nicht nur ökologisch, sondern auch wirtschaftlich auszahlen wird."
+    }
+  ],
+  "eintraege": [
+    {
+      "satz": "t1",
+      "text": "Simmerath setzt auf ein digitales Energiemanagement für seine kommunalen Gebäude.",
+      "start": 0,
+      "end": 81,
+      "geprueft": false,
+      "notwendig": [
+        "s1",
+        "s2"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c1"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t2",
+      "text": "Der Struktur- und Hochbauausschuss der Gemeinde hat den Start des Projekts beraten.",
+      "start": 82,
+      "end": 165,
+      "geprueft": false,
+      "notwendig": [
+        "s2"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c2"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t3",
+      "text": "Künftig sollen die Energieverbräuche von Schulen, Feuerwehrgerätehäusern und weiteren gemeindeeigenen Gebäuden zentral erfasst, ausgewertet und gezielt gesenkt werden.",
+      "start": 166,
+      "end": 333,
+      "geprueft": false,
+      "notwendig": [
+        "s3"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c3"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t4",
+      "text": "Die Grundlage dafür hatte der Rat Ende 2023 geschaffen.",
+      "start": 335,
+      "end": 390,
+      "geprueft": false,
+      "notwendig": [
+        "s4"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c4"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t5",
+      "text": "Nach Verzögerungen wegen der Haushaltslage des Bundes erhielt Simmerath Ende 2025 die Förderzusage.",
+      "start": 391,
+      "end": 490,
+      "geprueft": false,
+      "notwendig": [
+        "s5",
+        "s7"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c5"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t6",
+      "text": "Der Bund übernimmt 90 Prozent der Kosten für das auf drei Jahre angelegte Vorhaben.",
+      "start": 491,
+      "end": 574,
+      "geprueft": false,
+      "notwendig": [
+        "s6"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c6"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t7",
+      "text": "Eine Software soll sämtliche Verbrauchsdaten bündeln.",
+      "start": 576,
+      "end": 629,
+      "geprueft": false,
+      "notwendig": [
+        "s8"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c7"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t8",
+      "text": "Dadurch könnten unnötig hohe Verbräuche, falsche Einstellungen und technische Defekte schneller auffallen.",
+      "start": 630,
+      "end": 736,
+      "geprueft": false,
+      "notwendig": [
+        "s9"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c8"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t9",
+      "text": "Die Verwaltung erwartet langfristig niedrigere Energie- und Betriebskosten sowie einen geringeren CO2-Ausstoß.",
+      "start": 737,
+      "end": 847,
+      "geprueft": false,
+      "notwendig": [
+        "s10"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c9"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t10",
+      "text": "Für die Einführung wurde eine befristete Stelle geschaffen.",
+      "start": 849,
+      "end": 908,
+      "geprueft": false,
+      "notwendig": [
+        "s12",
+        "s13"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c10"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t11",
+      "text": "Außerdem begleitet ein Aachener Beratungsunternehmen das Projekt.",
+      "start": 909,
+      "end": 974,
+      "geprueft": false,
+      "notwendig": [
+        "s13"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c11"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t12",
+      "text": "Derzeit erfasst und prüft die Gemeinde die Verbrauchsdaten ihrer Gebäude.",
+      "start": 975,
+      "end": 1048,
+      "geprueft": false,
+      "notwendig": [
+        "s13",
+        "s14"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c12"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t13",
+      "text": "Parallel wird eine passende Software ausgewählt, die noch in diesem Jahr eingeführt werden soll.",
+      "start": 1049,
+      "end": 1145,
+      "geprueft": false,
+      "notwendig": [
+        "s15"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c13"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t14",
+      "text": "CDU-Fraktionssprecher Christoph Poschen bezeichnete das Vorhaben als sinnvolle Beschaffung.",
+      "start": 1147,
+      "end": 1238,
+      "geprueft": false,
+      "notwendig": [
+        "s17"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c14"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t15",
+      "text": "SPD-Fraktionssprecher Gregor Harzheim kritisierte die Formulierung einer dauerhaften Umsetzung.",
+      "start": 1239,
+      "end": 1334,
+      "geprueft": false,
+      "notwendig": [
+        "s19"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c15"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t16",
+      "text": "Aus seiner Sicht sei das nur realistisch, wenn auch die Finanzierung dauerhaft gesichert werde.",
+      "start": 1335,
+      "end": 1430,
+      "geprueft": false,
+      "notwendig": [
+        "s20"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c16"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t17",
+      "text": "Inhaltlich unterstütze seine Fraktion die Maßnahme aber ausdrücklich.",
+      "start": 1431,
+      "end": 1500,
+      "geprueft": false,
+      "notwendig": [
+        "s22"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c17"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t18",
+      "text": "UWG-Sprecher Reinhold Köller fragte, ob neben der Software weitere Kosten auf die Gemeinde zukommen.",
+      "start": 1502,
+      "end": 1602,
+      "geprueft": false,
+      "notwendig": [
+        "s24"
+      ],
+      "zulaessig": [
+        "s23"
+      ],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c18"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t19",
+      "text": "Die Verwaltung erklärte, für einige Gebäude seien zusätzliche digitale Messstellen nötig, um die Verbrauchsdaten automatisch erfassen zu können.",
+      "start": 1603,
+      "end": 1747,
+      "geprueft": false,
+      "notwendig": [
+        "s25"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c19"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t20",
+      "text": "Auch diese Investitionen würden mit 90 Prozent gefördert.",
+      "start": 1748,
+      "end": 1805,
+      "geprueft": false,
+      "notwendig": [
+        "s26"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c20"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t21",
+      "text": "Köller wollte zudem wissen, wer künftig auf Fehlermeldungen aus dem System reagiert.",
+      "start": 1806,
+      "end": 1890,
+      "geprueft": false,
+      "notwendig": [
+        "s27"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c21"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t22",
+      "text": "Die Verwaltung erklärte, genau das sei einer der großen Vorteile des Systems: Defekte und auffällige Verbrauchswerte könnten künftig schneller erkannt und behoben werden als bisher.",
+      "start": 1891,
+      "end": 2072,
+      "geprueft": false,
+      "notwendig": [
+        "s29"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c22"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t23",
+      "text": "Die Software kostet voraussichtlich rund 10.000 Euro im ersten Jahr und danach etwa 4.500 Euro jährlich.",
+      "start": 2074,
+      "end": 2178,
+      "geprueft": false,
+      "notwendig": [
+        "s31"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c23"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t24",
+      "text": "Am Ende war sich der Ausschuss weitgehend einig, die hohe Förderung zu nutzen.",
+      "start": 2179,
+      "end": 2257,
+      "geprueft": false,
+      "notwendig": [
+        "s33"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c24"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t25",
+      "text": "Denn jede eingesparte Kilowattstunde entlastet langfristig auch den Gemeindehaushalt.",
+      "start": 2258,
+      "end": 2343,
+      "geprueft": false,
+      "notwendig": [
+        "s35"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c25"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t26",
+      "text": "Simmerath hofft deshalb, dass sich das neue System nicht nur ökologisch, sondern auch wirtschaftlich auszahlt.",
+      "start": 2344,
+      "end": 2454,
+      "geprueft": false,
+      "notwendig": [
+        "s36"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [
+        "wortlaut_abweichung"
+      ],
+      "claims_im_lauf": [
+        "c26"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    }
+  ]
+}

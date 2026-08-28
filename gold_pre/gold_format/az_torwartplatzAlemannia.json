@@ -1,0 +1,565 @@
+{
+  "paar": "az_torwartplatzAlemannia",
+  "split": "dev",
+  "anleitung": [
+    "Arbeitsanweisung (diese Zeilen bleiben in der Datei stehen):",
+    "1. Jede Zeile mit \"geprueft\": false durchgehen und auf true setzen.",
+    "2. notwendig = Sätze, ohne die ein Teil der Aussage unbelegt bliebe.",
+    "   zulaessig = stützt ebenfalls, ist aber entbehrlich (Dubletten).",
+    "3. relation prüfen: direkt | aggregiert | bedeutung_verschoben |",
+    "   inferiert | keine_quelle.",
+    "4. flags_erwartet: nur Befunde, die WIRKLICH zutreffen sollten",
+    "   (zahlkonflikt, ort_konflikt, kuerzel_konflikt, wortlaut_abweichung,",
+    "   ident_unbelegt, zahl_unbelegt). Leere Liste heißt: kein Befund.",
+    "5. Zum Schluss EINMAL umgekehrt: den Artikel lesen und fragen, welcher",
+    "   Transkriptsatz diese Stelle nutzt. Das fängt die Quellen, die die",
+    "   Pipeline gar nicht erst vorgeschlagen hat — der Bias des Entwurfs.",
+    "6. Artikel- und Transkripttext danach NICHT mehr ändern, auch keine",
+    "   Tippfehler: Die Zeichen-Offsets sind Teil der Annotation."
+  ],
+  "artikel_hash": "17837c4dd33ad42b",
+  "transkript_hash": "bf57fdbce330a088",
+  "artikel_saetze": [
+    {
+      "id": "s1",
+      "text": "Wageningen Als Manuel Riemann-Lorenzen im Winter zur Alemannia stieß, waren viele Fragen offen."
+    },
+    {
+      "id": "s2",
+      "text": "Wie groß ist nach einem halben Jahr ohne Club noch die Lust auf Profifußball?"
+    },
+    {
+      "id": "s3",
+      "text": "Wie geht es für den heute 37-Jährigen weiter?"
+    },
+    {
+      "id": "s4",
+      "text": "Entkommt die Alemannia dem Abstiegskampf, der heute so fern wirkt wie exotische Reiseberichte?"
+    },
+    {
+      "id": "s5",
+      "text": "Das Feuer war schnell wieder geweckt, nun stellt er sich wieder dem Konkurrenzkampf um den Platz im Tor."
+    },
+    {
+      "id": "s6",
+      "text": "Nach Fotios Pseftis, den er nach dessen Verletzung im Spiel gegen Verl vertrat, fordert er Neuzugang Stefan Bajic (24) heraus."
+    },
+    {
+      "id": "s7",
+      "text": "Der erfahrene Torhüter macht aus seinem Anspruch keinen Hehl: „Natürlich will ich spielen, und ich glaube daran, dass ich von der Qualität her ein Unterschiedsspieler bin“, sagt Alemannias ältester Spieler im Kader."
+    },
+    {
+      "id": "s8",
+      "text": "Seine Vita – mit 98 Erst-, 249 Zweit- und 126 Drittligapartien – spielt aus seiner Sicht aber keine Rolle, er will im Hier und Jetzt überzeugen."
+    },
+    {
+      "id": "s9",
+      "text": "„Natürlich versucht jeder Trainer, für die nächste Partie bestmöglich aufzustellen."
+    },
+    {
+      "id": "s10",
+      "text": "Dieser Qualitätsfrage beuge ich mich auch“, sagt Riemann-Lorenzen."
+    },
+    {
+      "id": "s11",
+      "text": "„Die Mannschaft lebt doch vom Konkurrenzkampf.“"
+    },
+    {
+      "id": "s12",
+      "text": "Indikatoren, wer dabei auf der Torwartposition die Nase vorn hat, gebe es bisher nicht."
+    },
+    {
+      "id": "s13",
+      "text": "Riemann-Lorenzen will mit vollem Einsatz überzeugen, aber auch seine Erfahrung an den 24-jährigen Bajic weitergeben, der zuletzt in der Saison 2022/2023 regelmäßig spielte (elf Spiele für Valenciennes in der zweiten französischen Liga)."
+    },
+    {
+      "id": "s14",
+      "text": "Entsprechend heiß erwartet Riemann-Lorenzen den Franzosen im Kampf um den Stammplatz, beide Torhüter bringen aus seiner Sicht Qualitäten mit, die dem Team weiterhelfen werden."
+    },
+    {
+      "id": "s15",
+      "text": "„Topaustausch“ mit dem Coach"
+    },
+    {
+      "id": "s16",
+      "text": "Riemann-Lorenzen lässt etwa gern den Libero aufleben und steht fast schon an der Mittellinie als Anspielstation bereit."
+    },
+    {
+      "id": "s17",
+      "text": "Von dort aus verteilt er die Bälle oftmals mit der Präzision eines geübten Feldspielers weiter."
+    },
+    {
+      "id": "s18",
+      "text": "Ob seine spielerischen Fähigkeiten am Ende den Ausschlag geben oder der junge Torhüter den Vorzug erhält, das überlässt er Trainer Mersad Selimbegovic, mit dem er einen „Topaustausch“ habe."
+    },
+    {
+      "id": "s19",
+      "text": "Beide haben durchaus eine deckungsgleiche Auffassung der geforderten Arbeitsmentalität, aber auch, wenn es um die Stimmung in der Mannschaft geht."
+    },
+    {
+      "id": "s20",
+      "text": "„Ich bin sicher der Letzte, der kein kollegiales Verhalten hat, das hat bisher immer gut funktioniert“, sagt Riemann-Lorenzen, der grundsätzlich alle Nebentöne ausblenden will."
+    },
+    {
+      "id": "s21",
+      "text": "„Sonst hätte ich in meiner Geschichte die Gedanken viel zu oft außerhalb des Platzes gehabt.“"
+    },
+    {
+      "id": "s22",
+      "text": "„Coole Kabine“"
+    },
+    {
+      "id": "s23",
+      "text": "Es sei der Mannschaft in der Rückrunde der vergangenen Saison enorm gut gelungen, sich auf die eigenen Fähigkeiten zu konzentrieren und damit die bemerkenswerte Siegesserie zu starten."
+    },
+    {
+      "id": "s24",
+      "text": "Weil auch die Spieler mit weniger Einsatzzeiten immer an ihr Limit gegangen seien, statt gefrustet vom Gaspedal zu gehen."
+    },
+    {
+      "id": "s25",
+      "text": "„Mersad legt viel Wert darauf, die Mannschaft weit zu pushen“, sagt Riemann-Lorenzen, der die 3. Liga schon erlebte, als die Eingleisigkeit noch ein frisches Projekt, die Alemannia Zweitligist war und er mit Wacker Burghausen auf seinen heutigen Trainer als Regensburger Spieler traf."
+    },
+    {
+      "id": "s26",
+      "text": "Zurück in der Zukunft teilen sich Trainer und Torhüter eine „coole Kabine“ am Tivoli."
+    },
+    {
+      "id": "s27",
+      "text": "„Du kannst über alles sprechen, das macht Spaß.“"
+    },
+    {
+      "id": "s28",
+      "text": "Das meint Riemann-Lorenzen ernst, denn sein Feedback kommt meist postwendend und lautstark."
+    },
+    {
+      "id": "s29",
+      "text": "Wer nicht bereit ist, an seine Leistungsgrenze zu gehen, bekommt sofort den Spiegel vorgehalten: „Mit 37 Jahren wäre das auch traurig, wenn es nicht so wäre.“"
+    },
+    {
+      "id": "s30",
+      "text": "Nicht nur in Spielen, sondern auch im Training lebt er seine Gewinnermentalität vor, die im Gespräch mit Sportgeschäftsführer Rachid Azzouzi und Coach Selimbegovic entscheidend war."
+    },
+    {
+      "id": "s31",
+      "text": "Und die auch die Fans deutlich bei seinen neun Einsätzen in der Rückrunde zu hören bekamen."
+    },
+    {
+      "id": "s32",
+      "text": "Ärger darüber nimmt er nicht wahr, die Mannschaft pflege einen sehr offenen Umgang."
+    },
+    {
+      "id": "s33",
+      "text": "„Wir sind sehr intakt und es ist nicht schwierig, hier reinzukommen“, empfindet er auch nach den ersten Trainingslagertagen."
+    },
+    {
+      "id": "s34",
+      "text": "Obwohl er bereits auch die Perspektive von der Seite einnehmen kann, muss der Wechsel in die Trainerrolle noch warten."
+    },
+    {
+      "id": "s35",
+      "text": "Zu groß ist der Reiz, weiter beim Projekt Alemannia direkt mitzuwirken."
+    },
+    {
+      "id": "s36",
+      "text": "Der Fokus liegt auf der anstehenden Spielzeit, erst dann sollen die Gedanken reifen, wie es weitergeht."
+    },
+    {
+      "id": "s37",
+      "text": "„Mit unserer Mentalität werden wir schwer zu schlagen sein“, sagt der Torhüter über den Verein, der aus seiner Sicht nach tristen Regionalligajahren den richtigen Weg eingeschlagen hat."
+    },
+    {
+      "id": "s38",
+      "text": "„Das hat sich extrem schnell entwickelt und man merkt, dass hier etwas entstehen kann."
+    },
+    {
+      "id": "s39",
+      "text": "Da tut das Stadion sein Übriges."
+    },
+    {
+      "id": "s40",
+      "text": "Und wir dürfen ambitioniert sein."
+    },
+    {
+      "id": "s41",
+      "text": "Das heißt aber in erster Linie, hart zu arbeiten“, gibt er in klassischer Selimbegovic-Tonalität vor."
+    },
+    {
+      "id": "s42",
+      "text": "Die Mannschaft müsse in einer Liga voller hochklassiger Mannschaften und ambitionierter Teams immer an das Maximum gehen."
+    },
+    {
+      "id": "s43",
+      "text": "„Wir müssen um jeden Ball und um jeden Meter kämpfen."
+    },
+    {
+      "id": "s44",
+      "text": "Dann ist die Wahrscheinlichkeit für eine Top-Sechs-Platzierung hoch.“"
+    },
+    {
+      "id": "s45",
+      "text": "Bestenfalls könne sich direkt mit dem Start wieder eine Eigendynamik wie zuletzt entwickeln, sagt Riemann-Lorenzen."
+    },
+    {
+      "id": "s46",
+      "text": "Ob man dabei zu Beginn gegen Verl oder Düsseldorf antritt, das spiele keine Rolle."
+    },
+    {
+      "id": "s47",
+      "text": "In der 3. Liga sind die Umbrüche traditionell groß."
+    },
+    {
+      "id": "s48",
+      "text": "Für ihn geht es darum, einen Plan zu haben, an den man glaubt und für den man alles gibt."
+    },
+    {
+      "id": "s49",
+      "text": "„Dann bin ich überzeugt, dass es hinten raus funktioniert.“"
+    },
+    {
+      "id": "s50",
+      "text": "Die Aachener Zeitung ist beim Trainingslager von Alemannia Aachen vor Ort."
+    },
+    {
+      "id": "s51",
+      "text": "Exklusive Bilder, Videos und Berichte finden Sie zuerst in unserem Liveblog auf aachener-zeitung.de."
+    },
+    {
+      "id": "s52",
+      "text": "Die neue Drittligasaison beginnt für die Alemannia am Sonntag, 9. August, um 19.30 Uhr am Tivoli gegen Verl."
+    },
+    {
+      "id": "s53",
+      "text": "Das erste Auswärtsspiel ist am Samstag, 15. August, um 14 Uhr bei Fortuna Köln."
+    }
+  ],
+  "eintraege": [
+    {
+      "satz": "t1",
+      "text": "Manuel Riemann-Lorenzen will bei Alemannia Aachen um den Stammplatz im Tor kämpfen.",
+      "start": 0,
+      "end": 83,
+      "geprueft": false,
+      "notwendig": [
+        "s1",
+        "s14"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [
+        "nli_widerspruch"
+      ],
+      "claims_im_lauf": [
+        "c1"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t2",
+      "text": "Im Trainingslager im niederländischen Wageningen trifft der 37-jährige Torhüter auf starke Konkurrenz: Neben Fotios Pseftis fordert ihn auch Neuzugang Stefan Bajic heraus.",
+      "start": 84,
+      "end": 255,
+      "geprueft": false,
+      "notwendig": [
+        "s6"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c2"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t3",
+      "text": "Riemann-Lorenzen war im Winter nach einem halben Jahr ohne Verein zur Alemannia gekommen und vertrat Pseftis nach dessen Verletzung gegen Verl.",
+      "start": 256,
+      "end": 399,
+      "geprueft": false,
+      "notwendig": [
+        "s1",
+        "s6"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c3"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t4",
+      "text": "Der erfahrenste Spieler im Aachener Kader betont, dass er spielen wolle und sich aufgrund seiner Qualität als Unterschiedsspieler sehe.",
+      "start": 401,
+      "end": 536,
+      "geprueft": false,
+      "notwendig": [
+        "s7"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c4"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t5",
+      "text": "Seine umfangreiche Erfahrung mit Partien in der ersten, zweiten und dritten Liga sei für ihn aber kein Freifahrtschein.",
+      "start": 537,
+      "end": 656,
+      "geprueft": false,
+      "notwendig": [
+        "s8",
+        "s13"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c5"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t6",
+      "text": "Entscheidend sei allein, wer den Trainer im Hier und Jetzt überzeuge.",
+      "start": 657,
+      "end": 726,
+      "geprueft": false,
+      "notwendig": [
+        "s8",
+        "s30"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [
+        "nli_widerspruch"
+      ],
+      "claims_im_lauf": [
+        "c6"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t7",
+      "text": "Konkurrenzkampf sei wichtig für die Mannschaft.",
+      "start": 727,
+      "end": 774,
+      "geprueft": false,
+      "notwendig": [
+        "s11"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c7"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t8",
+      "text": "Riemann-Lorenzen will sich mit vollem Einsatz empfehlen, zugleich aber seine Erfahrung an den 24-jährigen Franzosen Stefan Bajic weitergeben.",
+      "start": 776,
+      "end": 917,
+      "geprueft": false,
+      "notwendig": [
+        "s13"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c8"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t9",
+      "text": "Bajic stand zuletzt in der Saison 2022/2023 regelmäßig bei Valenciennes in der zweiten französischen Liga im Einsatz.",
+      "start": 918,
+      "end": 1035,
+      "geprueft": false,
+      "notwendig": [
+        "s13"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c9"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t10",
+      "text": "Wer künftig im Tor steht, entscheidet Trainer Mersad Selimbegovic.",
+      "start": 1036,
+      "end": 1102,
+      "geprueft": false,
+      "notwendig": [
+        "s18"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c10"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t11",
+      "text": "Mit dem Coach habe Riemann-Lorenzen einen sehr guten Austausch, insbesondere über Arbeitsmentalität und die Stimmung im Team.",
+      "start": 1103,
+      "end": 1228,
+      "geprueft": false,
+      "notwendig": [
+        "s19",
+        "s20"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c11"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t12",
+      "text": "Der Torhüter sieht eine intakte und offene Mannschaft am Tivoli.",
+      "start": 1230,
+      "end": 1294,
+      "geprueft": false,
+      "notwendig": [
+        "s26",
+        "s32",
+        "s33"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c12"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t13",
+      "text": "Auch Spieler mit wenig Einsatzzeit hätten in der Rückrunde ihren Beitrag zur Siegesserie geleistet.",
+      "start": 1295,
+      "end": 1394,
+      "geprueft": false,
+      "notwendig": [
+        "s23",
+        "s24"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c13"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t14",
+      "text": "Riemann-Lorenzen selbst gehe im Training lautstark voran und wolle die Gewinnermentalität vorleben.",
+      "start": 1395,
+      "end": 1494,
+      "geprueft": false,
+      "notwendig": [
+        "s28",
+        "s30"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c14"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t15",
+      "text": "An einen baldigen Wechsel ins Trainerfach denkt er trotz seiner Erfahrung noch nicht.",
+      "start": 1496,
+      "end": 1581,
+      "geprueft": false,
+      "notwendig": [
+        "s34"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c15"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t16",
+      "text": "Der Reiz sei zu groß, weiter aktiv am Projekt Alemannia mitzuwirken.",
+      "start": 1582,
+      "end": 1650,
+      "geprueft": false,
+      "notwendig": [
+        "s35"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c16"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t17",
+      "text": "Für die neue Drittligasaison hält er eine Top-Sechs-Platzierung für möglich – wenn die Mannschaft konsequent arbeite und um jeden Ball kämpfe.",
+      "start": 1651,
+      "end": 1793,
+      "geprueft": false,
+      "notwendig": [
+        "s19",
+        "s43",
+        "s44",
+        "s52"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c17",
+        "c18"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    }
+  ]
+}

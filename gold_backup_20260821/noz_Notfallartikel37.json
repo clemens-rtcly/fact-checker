@@ -1,0 +1,561 @@
+{
+  "paar": "noz_Notfallartikel37",
+  "split": "dev",
+  "anleitung": [
+    "Arbeitsanweisung (diese Zeilen bleiben in der Datei stehen):",
+    "1. Jede Zeile mit \"geprueft\": false durchgehen und auf true setzen.",
+    "2. notwendig = Sätze, ohne die ein Teil der Aussage unbelegt bliebe.",
+    "   zulaessig = stützt ebenfalls, ist aber entbehrlich (Dubletten).",
+    "3. relation prüfen: direkt | aggregiert | bedeutung_verschoben |",
+    "   inferiert | keine_quelle.",
+    "4. flags_erwartet: nur Befunde, die WIRKLICH zutreffen sollten",
+    "   (zahlkonflikt, ort_konflikt, kuerzel_konflikt, wortlaut_abweichung,",
+    "   ident_unbelegt, zahl_unbelegt). Leere Liste heißt: kein Befund.",
+    "5. Zum Schluss EINMAL umgekehrt: den Artikel lesen und fragen, welcher",
+    "   Transkriptsatz diese Stelle nutzt. Das fängt die Quellen, die die",
+    "   Pipeline gar nicht erst vorgeschlagen hat — der Bias des Entwurfs.",
+    "6. Artikel- und Transkripttext danach NICHT mehr ändern, auch keine",
+    "   Tippfehler: Die Zeichen-Offsets sind Teil der Annotation."
+  ],
+  "artikel_hash": "848121b308855561",
+  "transkript_hash": "9c138b3351c6ec1c",
+  "artikel_saetze": [
+    {
+      "id": "s1",
+      "text": "\"Notfall-Artikel 37 GG: Wie der Bund ein AfD-regiertes Land zähmen könnte"
+    },
+    {
+      "id": "s2",
+      "text": "Günter Krings ist sich der Sache sicher: „Die AfD mag in Sachsen-Anhalt große Töne spucken, eine Politik gegen die Rechtsordnung der Bundesrepublik wird sie sich dabei weder leisten noch wird sie sie durchsetzen können“, sagte der stellvertretende Vorsitzende der CDU/CSU-Fraktion im Bundestag unserer Redaktion."
+    },
+    {
+      "id": "s3",
+      "text": "Und wenn sie es doch versucht?"
+    },
+    {
+      "id": "s4",
+      "text": "Mit Blick auf die Landtagswahlen im Herbst bereitet sich die AfD in Sachsen-Anhalt und Mecklenburg-Vorpommern offen auf eine mögliche Regierungsübernahme vor – inklusive Plänen, den Staatsapparat politisch radikal umzubauen."
+    },
+    {
+      "id": "s5",
+      "text": "Damit stellt sich eine Frage, die lange theoretisch war: Wie wehrhaft ist der Staat, wenn demokratisch gewählte Kräfte noch weitergehen und damit beginnen, die freiheitlich-demokratische Grundordnung auszuhöhlen?"
+    },
+    {
+      "id": "s6",
+      "text": "Und gibt es die Möglichkeit, ein Land zur Raison zu bringen?"
+    },
+    {
+      "id": "s7",
+      "text": "AfD-Wahlsieg kein Freibrief für Verfassungsbruch"
+    },
+    {
+      "id": "s8",
+      "text": "Ein Blick ins Grundgesetz zeigt: Der Bund ist nicht machtlos."
+    },
+    {
+      "id": "s9",
+      "text": "Artikel 37 gibt der Bundesregierung mit dem Bundeszwang ein weitreichendes Instrument an die Hand, um Länder zur Einhaltung ihrer verfassungsrechtlichen Pflichten zu zwingen."
+    },
+    {
+      "id": "s10",
+      "text": "„Der Bundeszwang war in der Geschichte der Bundesrepublik bisher nur ein theoretisches Instrument, und dabei wird es nach meiner Einschätzung bleiben."
+    },
+    {
+      "id": "s11",
+      "text": "Aber es ist gut, dass es ihn als denkbare letzte Möglichkeit gibt“, sagt Rechtsexperte Krings."
+    },
+    {
+      "id": "s12",
+      "text": "Ähnlich sieht das Carmen Wegge, rechtspolitische Sprecherin der SPD."
+    },
+    {
+      "id": "s13",
+      "text": "Der Bundeszwang dürfe „nicht von vornherein tabuisiert“ werden, sagte sie unserer Redaktion: „Politisch ist der Bundeszwang ultima ratio."
+    },
+    {
+      "id": "s14",
+      "text": "Er ist Instrument einer wehrhaften Verfassungsordnung.“"
+    },
+    {
+      "id": "s15",
+      "text": "Ein Wahlsieg der AfD allein rechtfertigt freilich keinen Bundeszwang."
+    },
+    {
+      "id": "s16",
+      "text": "„Wahlen müssen Wirkung haben."
+    },
+    {
+      "id": "s17",
+      "text": "Ein Wahlsieg ist aber kein Freibrief, die freiheitlich-demokratische Grundordnung – also Demokratie, Rechtsstaat und Menschenwürde – zu beeinträchtigen."
+    },
+    {
+      "id": "s18",
+      "text": "Hier hat der Bund eine Garantiefunktion“, schreibt der Jurist Christian Rath in einer Analyse für das juristische Magazin „Legal Tribune Online“."
+    },
+    {
+      "id": "s19",
+      "text": "Mögliche Anwendungsfälle ergeben sich demnach:"
+    },
+    {
+      "id": "s20",
+      "text": "wenn sich ein Bundesland weigert, bestimmte Bundesgesetze umzusetzen, zum Beispiel die Unterbringung von Schutzsuchenden, die im Asylgesetz geregelt ist;"
+    },
+    {
+      "id": "s21",
+      "text": "wenn ein Bundesland Entscheidungen des Bundesverfassungsgerichts ignoriert, obwohl diese gemäß Paragraf 31 Bundesverfassungsgerichtsgesetz bindend sind;"
+    },
+    {
+      "id": "s22",
+      "text": "oder wenn ein Bundesland seine grundgesetzlichen Schutzpflichten verletzt, indem es beispielsweise tatenlos zusieht, wie rechtsextreme Gruppen Menschen mit Migrationshintergrund schikanieren und angreifen, um diese zu vertreiben."
+    },
+    {
+      "id": "s23",
+      "text": "Rechtlich setzt der Bundeszwang also voraus, dass ein Land „Bundespflichten“ verletzt."
+    },
+    {
+      "id": "s24",
+      "text": "Auch strukturelle Eingriffe in die Unabhängigkeit von Behörden oder Gerichten könnten einen Eingriff des Bundes rechtfertigen, wenn sie die verfassungsmäßige Ordnung untergraben."
+    },
+    {
+      "id": "s25",
+      "text": "Wie könnte ein Eingriff des Bundes aussehen?"
+    },
+    {
+      "id": "s26",
+      "text": "Die möglichen Maßnahmen sind bewusst weit gefasst."
+    },
+    {
+      "id": "s27",
+      "text": "Der Bund kann Weisungen erteilen, Landesbehörden an sich ziehen oder gar eine Art Staatskommissar einsetzen, der statthalterisch Regierungsfunktionen übernimmt."
+    },
+    {
+      "id": "s28",
+      "text": "Im Extremfall wäre es denkbar, dass der Bund selbst Verwaltungsakte erlässt oder Landesgesetze ersetzt."
+    },
+    {
+      "id": "s29",
+      "text": "Auch der Zugriff auf Polizeikräfte und der Einsatz der Bundespolizei seien denkbar, erläutert Rath in der Analyse."
+    },
+    {
+      "id": "s30",
+      "text": "Möglich seien auch „Boykottmaßnahmen, um den Widerstand des Landes zu brechen, etwa die Abriegelung der Grenzen des Landes oder die Unterbindung bestimmter Warenverkehre“."
+    },
+    {
+      "id": "s31",
+      "text": "Der Einsatz der Bundeswehr im Innern ist dagegen ausdrücklich ausgeschlossen."
+    },
+    {
+      "id": "s32",
+      "text": "Grundsätzlich gilt: Die Maßnahmen müssen notwendig und zielgerichtet sein, also ausschließlich darauf abzielen, rechtmäßige Zustände wiederherzustellen."
+    },
+    {
+      "id": "s33",
+      "text": "„Strafende Maßnahmen scheiden aus“, so SPD-Rechtsexpertin Wegge."
+    },
+    {
+      "id": "s34",
+      "text": "Eine dauerhafte Entmachtung einer Landesregierung oder gar die Auflösung eines Bundeslandes ist nicht möglich."
+    },
+    {
+      "id": "s35",
+      "text": "Zudem bleiben Gerichte grundsätzlich unangetastet – ein zentraler Pfeiler des Rechtsstaats."
+    },
+    {
+      "id": "s36",
+      "text": "Wie läuft das Verfahren für den Bundeszwang?"
+    },
+    {
+      "id": "s37",
+      "text": "Das Verfahren selbst hat hohe Hürden."
+    },
+    {
+      "id": "s38",
+      "text": "Die Bundesregierung kann den Bundeszwang nicht allein beschließen, sondern benötigt die Zustimmung des Bundesrates (mindestens 35 von 69 Stimmen)."
+    },
+    {
+      "id": "s39",
+      "text": "Damit haben die Länder ein entscheidendes Mitspracherecht."
+    },
+    {
+      "id": "s40",
+      "text": "Zusätzlich kann das betroffene Land vor das Bundesverfassungsgericht ziehen, das als letzte Instanz über die Rechtmäßigkeit der Maßnahmen entscheidet."
+    },
+    {
+      "id": "s41",
+      "text": "Da es bislang keine Rechtsprechung zu Artikel 37 gibt, hätte Karlsruhe hier nach Ansicht von Juristen erheblichen Gestaltungsspielraum."
+    },
+    {
+      "id": "s42",
+      "text": "In der Debatte über den Umgang mit der AfD und deren möglicher Regierungsübernahme in ostdeutschen Bundesländern gewinnt das Instrument des Bundeszwangs nunmehr an Bedeutung."
+    },
+    {
+      "id": "s43",
+      "text": "Während es bis dato nicht zu einem Verbot der AfD gekommen ist, verweist der Bundeszwang auf eine andere Option als die der Vorbeugung: nämlich im Ernstfall handlungsfähig zu bleiben."
+    },
+    {
+      "id": "s44",
+      "text": "Aber: „Ehe wir tief in die Truhe sehr spezieller Verfassungsnormen greifen, sollten wir auf die klassischen Mittel des Rechtsstaats setzen."
+    },
+    {
+      "id": "s45",
+      "text": "Landespolitiker, die gegen Recht und Gesetz verstoßen, sind zunächst einmal ein Fall für Justiz und Sicherheitsbehörden“, betont CDU-Rechtspolitiker Krings."
+    },
+    {
+      "id": "s46",
+      "text": "Im Übrigen sei Sachsen-Anhalt vom Länderfinanzausgleich abhängig und damit unmittelbar auf den Gesamtstaat angewiesen."
+    },
+    {
+      "id": "s47",
+      "text": "„Die EU macht hier vor, dass man die Teilnahme an solchen Finanzsystemen durchaus auch an klare Rechtsstaatskriterien binden könnte“, so Krings."
+    },
+    {
+      "id": "s48",
+      "text": "Noch relevanter sei aber, dass ein mit mehreren Milliarden Euro verschuldetes Land stets auf eine grundsätzlich wohlwollende Bewertung der Kapitalmärkte angewiesen ist: „Und diese Märkte werden auch auf den Umgang mit dem Rechtsstaat achten.“"
+    },
+    {
+      "id": "s49",
+      "text": "\""
+    }
+  ],
+  "eintraege": [
+    {
+      "satz": "t1",
+      "text": "\"Die AfD bereitet sich in Sachsen-Anhalt und Mecklenburg-Vorpommern offen auf eine mögliche Regierungsübernahme vor – inklusive Plänen, den Staatsapparat politisch radikal umzubauen.",
+      "start": 0,
+      "end": 182,
+      "geprueft": true,
+      "notwendig": [
+        "s4"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c1"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t2",
+      "text": "Das wirft eine Frage auf, die lange nur theoretisch war: Wie kann der Bund ein Bundesland zur Räson bringen, wenn es die freiheitlich-demokratische Grundordnung aushöhlt?",
+      "start": 183,
+      "end": 353,
+      "geprueft": true,
+      "notwendig": [
+        "s5"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c2"
+      ],
+      "relationen_gemischt": false,
+      "notiz": "S17 etwas passend, aber s5 eindeutig viel stärker"
+    },
+    {
+      "satz": "t3",
+      "text": "Das Grundgesetz gibt eine Antwort: Artikel siebenunddreißig ermöglicht den sogenannten Bundeszwang.",
+      "start": 355,
+      "end": 454,
+      "geprueft": true,
+      "notwendig": [
+        "s8",
+        "s9"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c3"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t4",
+      "text": "Damit kann die Bundesregierung ein Bundesland zwingen, seine verfassungsrechtlichen Pflichten zu erfüllen.",
+      "start": 455,
+      "end": 561,
+      "geprueft": true,
+      "notwendig": [
+        "s9"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c4"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t5",
+      "text": "Konkret käme das infrage, wenn ein Land Bundesgesetze nicht umsetzt, Entscheidungen des Bundesverfassungsgerichts ignoriert oder seine Schutzpflichten verletzt – etwa, indem es tatenlos zusieht, wie rechtsextreme Gruppen Menschen mit Migrationshintergrund angreifen.",
+      "start": 562,
+      "end": 828,
+      "geprueft": true,
+      "notwendig": [
+        "s20",
+        "s21",
+        "s22"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c5",
+        "c6"
+      ],
+      "relationen_gemischt": true,
+      "notiz": "S20 muss auf jeden Fall mit aufgenommen werden"
+    },
+    {
+      "satz": "t6",
+      "text": "Ein Wahlsieg der AfD allein reicht dafür nicht aus.",
+      "start": 830,
+      "end": 881,
+      "geprueft": true,
+      "notwendig": [
+        "s15"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c7"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t7",
+      "text": "Der Jurist Christian Rath schreibt im juristischen Magazin Legal Tribune Online, Wahlen müssten zwar Wirkung haben – ein Wahlsieg sei aber kein Freibrief, Demokratie, Rechtsstaat und Menschenwürde zu beeinträchtigen.",
+      "start": 882,
+      "end": 1098,
+      "geprueft": true,
+      "notwendig": [
+        "s16",
+        "s17",
+        "s18"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c8",
+        "c9"
+      ],
+      "relationen_gemischt": true,
+      "notiz": ""
+    },
+    {
+      "satz": "t8",
+      "text": "Die möglichen Maßnahmen sind weit gefasst: Der Bund könnte Weisungen erteilen, Landesbehörden an sich ziehen oder einen Staatskommissar einsetzen.",
+      "start": 1100,
+      "end": 1246,
+      "geprueft": true,
+      "notwendig": [
+        "s26",
+        "s27"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c10"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t9",
+      "text": "Auch der Einsatz der Bundespolizei wäre denkbar.",
+      "start": 1247,
+      "end": 1295,
+      "geprueft": true,
+      "notwendig": [
+        "s29"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c11"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t10",
+      "text": "Die Bundeswehr im Innern ist dagegen ausdrücklich ausgeschlossen.",
+      "start": 1296,
+      "end": 1361,
+      "geprueft": true,
+      "notwendig": [
+        "s31"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c12"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t11",
+      "text": "Alle Maßnahmen müssen darauf abzielen, rechtmäßige Zustände wiederherzustellen – eine dauerhafte Entmachtung einer Landesregierung ist nicht möglich, und die Gerichte bleiben grundsätzlich unangetastet.",
+      "start": 1362,
+      "end": 1564,
+      "geprueft": true,
+      "notwendig": [
+        "s32",
+        "s34",
+        "s35"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c13",
+        "c14",
+        "c15"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t12",
+      "text": "Das Verfahren hat hohe Hürden: Die Bundesregierung kann den Bundeszwang nicht allein beschließen, sondern braucht die Zustimmung des Bundesrates, mindestens fünfunddreißig von neunundsechzig Stimmen.",
+      "start": 1566,
+      "end": 1765,
+      "geprueft": true,
+      "notwendig": [
+        "s37",
+        "s38"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c16"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t13",
+      "text": "Das betroffene Land kann außerdem vor das Bundesverfassungsgericht ziehen, das als letzte Instanz über die Rechtmäßigkeit der Maßnahmen entscheidet.",
+      "start": 1766,
+      "end": 1914,
+      "geprueft": true,
+      "notwendig": [
+        "s40"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c17"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t14",
+      "text": "Günter Krings, stellvertretender Vorsitzender der CDU/CSU-Bundestagsfraktion, betont, man solle zunächst auf die klassischen Mittel des Rechtsstaats setzen.",
+      "start": 1916,
+      "end": 2072,
+      "geprueft": true,
+      "notwendig": [
+        "s2",
+        "s44"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c18"
+      ],
+      "relationen_gemischt": false,
+      "notiz": "Würde hier tatsächlich auffallen, käme das Zitat von einer anderen Person? Ich habe meine Zweifel"
+    },
+    {
+      "satz": "t15",
+      "text": "Landespolitiker, die gegen Recht und Gesetz verstoßen, seien zuerst ein Fall für Justiz und Sicherheitsbehörden.",
+      "start": 2073,
+      "end": 2185,
+      "geprueft": true,
+      "notwendig": [
+        "s45"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c19"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t16",
+      "text": "Zudem sei Sachsen-Anhalt vom Länderfinanzausgleich abhängig und damit auf den Gesamtstaat angewiesen.",
+      "start": 2186,
+      "end": 2287,
+      "geprueft": true,
+      "notwendig": [
+        "s46"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c20"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t17",
+      "text": "Ein hoch verschuldetes Land brauche zudem eine wohlwollende Bewertung der Kapitalmärkte – und auch die achteten auf den Umgang mit dem Rechtsstaat.",
+      "start": 2288,
+      "end": 2435,
+      "geprueft": true,
+      "notwendig": [
+        "s48"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c21"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t18",
+      "text": "Carmen Wegge, rechtspolitische Sprecherin der SPD, sieht den Bundeszwang als letztes Mittel: Er dürfe nicht von vornherein tabuisiert werden.\"",
+      "start": 2436,
+      "end": 2578,
+      "geprueft": true,
+      "notwendig": [
+        "s12",
+        "s13"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c22"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    }
+  ]
+}

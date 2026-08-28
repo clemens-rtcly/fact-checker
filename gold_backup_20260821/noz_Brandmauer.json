@@ -1,0 +1,710 @@
+{
+  "paar": "noz_Brandmauer",
+  "split": "dev",
+  "anleitung": [
+    "Arbeitsanweisung (diese Zeilen bleiben in der Datei stehen):",
+    "1. Jede Zeile mit \"geprueft\": false durchgehen und auf true setzen.",
+    "2. notwendig = Sätze, ohne die ein Teil der Aussage unbelegt bliebe.",
+    "   zulaessig = stützt ebenfalls, ist aber entbehrlich (Dubletten).",
+    "3. relation prüfen: direkt | aggregiert | bedeutung_verschoben |",
+    "   inferiert | keine_quelle.",
+    "4. flags_erwartet: nur Befunde, die WIRKLICH zutreffen sollten",
+    "   (zahlkonflikt, ort_konflikt, kuerzel_konflikt, wortlaut_abweichung,",
+    "   ident_unbelegt, zahl_unbelegt). Leere Liste heißt: kein Befund.",
+    "5. Zum Schluss EINMAL umgekehrt: den Artikel lesen und fragen, welcher",
+    "   Transkriptsatz diese Stelle nutzt. Das fängt die Quellen, die die",
+    "   Pipeline gar nicht erst vorgeschlagen hat — der Bias des Entwurfs.",
+    "6. Artikel- und Transkripttext danach NICHT mehr ändern, auch keine",
+    "   Tippfehler: Die Zeichen-Offsets sind Teil der Annotation."
+  ],
+  "artikel_hash": "6e88ea8e32de0f44",
+  "transkript_hash": "0da5ab6e810cecbe",
+  "artikel_saetze": [
+    {
+      "id": "s1",
+      "text": "\"Daniel Günther, Torsten Albig und die AfD – der eine will die Brandmauer, der andere nicht"
+    },
+    {
+      "id": "s2",
+      "text": "Zwei Ministerpräsidenten, ein jetziger, ein früherer."
+    },
+    {
+      "id": "s3",
+      "text": "Der eine Christdemokrat, der andere Sozialdemokrat, beide aus Schleswig-Holstein."
+    },
+    {
+      "id": "s4",
+      "text": "Der eine warnt seine CDU vor der AfD – und heißt Daniel Günther."
+    },
+    {
+      "id": "s5",
+      "text": "Der andere sagt: Wahrscheinlich wäre es das Beste, wenn seine SPD zuerst die Brandmauer zur AfD einreißt – und heißt Torsten Albig, Vorgänger von Günther."
+    },
+    {
+      "id": "s6",
+      "text": "Beide sorgen sich um die schwarz-rote Koalition in Berlin und die Wahlen im September in Sachsen-Anhalt und Mecklenburg-Vorpommern, wo die AfD stärkste Partei zu werden droht."
+    },
+    {
+      "id": "s7",
+      "text": "Günther ist daher diese Woche auf der Digitalmesse „Republica“ und im ARD-Talk mit Sandra Maischberger zu Gast."
+    },
+    {
+      "id": "s8",
+      "text": "Albig spricht mit unserer Redaktion in seinem Büro im 28. Stock eines Wolkenkratzers in Berlin."
+    },
+    {
+      "id": "s9",
+      "text": "Günthers Haltung zur AfD ist eindeutig: Ein Verbotsverfahren fände er „richtig“, sagt er."
+    },
+    {
+      "id": "s10",
+      "text": "Im Vergleich zur Linkspartei, von der die CDU auch nichts wissen will, sei die AfD „die deutlich größere Gefahr“."
+    },
+    {
+      "id": "s11",
+      "text": "Daher sei klar, dass es Regierungen „ohne die AfD geben muss“ – auch im Osten."
+    },
+    {
+      "id": "s12",
+      "text": "Günther: „Leuten ist scheißegal, wer was umgesetzt hat“"
+    },
+    {
+      "id": "s13",
+      "text": "Zudem kritisiert Günther Kanzler Friedrich Merz und dessen Koalition: „Wenn Politik nicht in der Lage ist, den Menschen in unsicheren Zeiten das Gefühl zu geben, dass an einem Strang gezogen wird, dann wenden sich eben Leute von etablierten Parteien ab – das müssen wir auch in der Bundespolitik viel stärker lernen.“"
+    },
+    {
+      "id": "s14",
+      "text": "Nicht zuletzt bemängelt Günther, dass die Koalitionspartner sich noch immer „mal eins auf die Glocke geben“."
+    },
+    {
+      "id": "s15",
+      "text": "Als es früher noch feste Parteibindungen gab, sei das bei der Wählerschaft gut angekommen."
+    },
+    {
+      "id": "s16",
+      "text": "„Aber heute ist die Wirkung eine dramatisch andere“, mahnt er."
+    },
+    {
+      "id": "s17",
+      "text": "Den Leuten sei es „scheißegal, wer welchen Punkt umgesetzt hat“."
+    },
+    {
+      "id": "s18",
+      "text": "Vielmehr möchten sie nur „sehen, dass ein Land in der Krise eine Möglichkeit hat, da rauszukommen“."
+    },
+    {
+      "id": "s19",
+      "text": "Albig war Ressortsprecher unter Schröder und Merkel"
+    },
+    {
+      "id": "s20",
+      "text": "Da pflichtet ihm SPD-Mann Albig bei."
+    },
+    {
+      "id": "s21",
+      "text": "Er ist nicht nur Günthers Vorgänger in Kiel, sondern hat als Pressesprecher im Bundesfinanzministerium auch die rot-grüne Regierung unter Gerhard Schröder und die große Koalition unter Angela Merkel hautnah miterlebt, unter anderem in der Finanzkrise 2008."
+    },
+    {
+      "id": "s22",
+      "text": "Damals hatte die Regierung ebenfalls große Probleme zu lösen – „aber sie bestand nicht aus zwei sich bekämpfenden Lagern“, stellt Albig fest."
+    },
+    {
+      "id": "s23",
+      "text": "Bei der heutigen Koalition habe er das Gefühl, „sie trauen sich keinen Millimeter über den Weg“."
+    },
+    {
+      "id": "s24",
+      "text": "Wäre das in der Finanzkrise genauso gewesen, hätten CDU-Kanzlerin Merkel und SPD-Minister Peer Steinbrück nicht den Menschen glaubhaft sagen können: Ihre Spareinlagen sind sicher."
+    },
+    {
+      "id": "s25",
+      "text": "„Das funktioniert nur, wenn es kein Gegeneinander gibt.“"
+    },
+    {
+      "id": "s26",
+      "text": "„Die Regierung macht zu viele einfache Stockfehler“"
+    },
+    {
+      "id": "s27",
+      "text": "Albig ist heute Lobbyist für den Tabakkonzern Philip Morris – aber noch so nah am politischen Geschehen dran, dass er nach dem jüngsten Koalitionsbeschluss für die 1000 Euro Entlastungsprämie den Finanzstaatssekretär anrief und fragte, ob man an einen Ausgleich der Steuerausfälle für die Länder gedacht habe."
+    },
+    {
+      "id": "s28",
+      "text": "Hatte man nicht – und prompt scheiterten die Pläne im Bundesrat."
+    },
+    {
+      "id": "s29",
+      "text": "„Die Regierung macht zu viele einfache Stockfehler“, stöhnt Albig."
+    },
+    {
+      "id": "s30",
+      "text": "Dabei sei es „im Kern eigentlich einfach“, wie er kürzlich mit CDU-Generalsekretär Carsten Linnemann erörtert habe: „Es müssten sich ein paar Vernünftige von uns und ein paar Vernünftige von euch einschließen."
+    },
+    {
+      "id": "s31",
+      "text": "Und dann müssten sie rauskommen – und ihr müsstet die Vermögenssteuer bei euren Leuten hochprügeln und wir das Renteneintrittsalter bei unseren."
+    },
+    {
+      "id": "s32",
+      "text": "Und dann darf darüber nicht negativ geredet werden."
+    },
+    {
+      "id": "s33",
+      "text": "Denn die Leute erwarten eine Linie, die sich nicht alle drei Tage ändert – sie erwarten Führung.“"
+    },
+    {
+      "id": "s34",
+      "text": "„Alte Genossen gehen ohne Umweg in die AfD“"
+    },
+    {
+      "id": "s35",
+      "text": "Ob man so auch die AfD kleinkriegen würde – da ist sich Albig nicht so sicher."
+    },
+    {
+      "id": "s36",
+      "text": "Zwar mag er die auch nicht, doch sagt er auch: „Wenn 30 Prozent diese Partei wählen, können wir nicht auf Dauer so tun, als wäre das die Ausgeburt der Hölle.“"
+    },
+    {
+      "id": "s37",
+      "text": "Im Ruhrgebiet etwa träten „alte Genossen eins zu eins ohne Umweg in die AfD“ ein."
+    },
+    {
+      "id": "s38",
+      "text": "„Und das sicher nicht, weil die alle Nazis geworden sind, sondern weil sie bei uns etwas vermissen.“"
+    },
+    {
+      "id": "s39",
+      "text": "Auch falls bei den Wahlen im Osten eine Regierungsbildung nur unter Tolerierung durch die AfD möglich ist, erwartet Albig von der Koalition in Berlin Pläne zum Weitermachen."
+    },
+    {
+      "id": "s40",
+      "text": "„Stand heute müsste darüber die Bundesregierung platzen, weil das ja ein Riesenaffront wäre im Miteinander“, sagt Albig."
+    },
+    {
+      "id": "s41",
+      "text": "„Aber das können wir nicht wollen.“"
+    },
+    {
+      "id": "s42",
+      "text": "Er fordert daher von Merz und SPD-Chef Lars Klingbeil, dass sie sich „auf Minderheitsregierungen in den Ländern einstellen – egal ob man die mag oder nicht“."
+    },
+    {
+      "id": "s43",
+      "text": "Torsten Albig plädiert für Minderheitsregierungen"
+    },
+    {
+      "id": "s44",
+      "text": "„Wahrscheinlich“, sagt Albig, „wäre es sogar einfacher, wenn wie in Dänemark Sozialdemokraten die Ersten wären, die auch mit den Rechtspopulisten bei bestimmten Themen zusammenarbeiten, die unsere Wähler heute in deren Arme treiben – wenn also nach der Wahl in Mecklenburg-Vorpommern beispielsweise Manuela Schwesig sagen würde: Ich suche mir meine Mehrheiten im Landtag je nach Thema.“"
+    },
+    {
+      "id": "s45",
+      "text": "Statt „immer absurdere“ Vielparteienbündnisse mit CDU, Linken, Grünen oder BSW anzustreben, die „nur noch frustrierte Wähler zurücklassen“.."
+    },
+    {
+      "id": "s46",
+      "text": "Das würde erstens „einen Spaltpilz in die AfD tragen“."
+    },
+    {
+      "id": "s47",
+      "text": "Zweitens würden solche eventuell notwendigen und woanders in Europa üblichen Minderheitsregierungen so erst „handlungsfähig“, erklärt Albig."
+    },
+    {
+      "id": "s48",
+      "text": "„Nicht weil wir das ideologische Gedankengut von Rechtspopulisten teilen."
+    },
+    {
+      "id": "s49",
+      "text": "Sondern weil wir unseren verloren gegangenen Wählern zeigen: Wir haben verstanden – kommt wieder nach Hause!“"
+    },
+    {
+      "id": "s50",
+      "text": "Für die SPD wäre das „natürlich sehr schwer“, räumt Albig ein."
+    },
+    {
+      "id": "s51",
+      "text": "„Aber immer, wenn es besonders schwierig war, hatte das linke Lager eine größere Aufgabe.“"
+    },
+    {
+      "id": "s52",
+      "text": "So weiterzumachen wie bisher, berge für die SPD die Gefahr, dass es die Sozialdemokratie in Deutschland bald nicht mehr gibt."
+    },
+    {
+      "id": "s53",
+      "text": "„In Frankreich, Italien und Holland“, sagt Albig, „ist sie quasi schon verschwunden.“"
+    },
+    {
+      "id": "s54",
+      "text": "\""
+    }
+  ],
+  "eintraege": [
+    {
+      "satz": "t1",
+      "text": "Zwei Ministerpräsidenten aus Schleswig-Holstein, einer im Amt, einer nicht mehr – und beide machen sich Sorgen um die schwarz-rote Koalition in Berlin und um die Landtagswahlen im September in Sachsen-Anhalt und Mecklenburg-Vorpommern, wo die AfD stärkste Partei zu werden droht.",
+      "start": 0,
+      "end": 279,
+      "geprueft": true,
+      "notwendig": [
+        "s2",
+        "s3",
+        "s6"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [
+        "wortlaut_abweichung"
+      ],
+      "claims_im_lauf": [
+        "c1",
+        "c2"
+      ],
+      "relationen_gemischt": true,
+      "notiz": ""
+    },
+    {
+      "satz": "t2",
+      "text": "Es geht um Daniel Günther, den amtierenden CDU-Ministerpräsidenten, und um seinen SPD-Vorgänger Torsten Albig.",
+      "start": 280,
+      "end": 390,
+      "geprueft": true,
+      "notwendig": [
+        "s2",
+        "s4",
+        "s5"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c3",
+        "c4"
+      ],
+      "relationen_gemischt": true,
+      "notiz": ""
+    },
+    {
+      "satz": "t3",
+      "text": "Günthers Haltung ist klar: Ein Verbotsverfahren gegen die AfD fände er richtig.",
+      "start": 392,
+      "end": 471,
+      "geprueft": true,
+      "notwendig": [
+        "s9"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c5"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t4",
+      "text": "Sie sei die deutlich größere Gefahr als die Linkspartei.",
+      "start": 472,
+      "end": 528,
+      "geprueft": true,
+      "notwendig": [
+        "s10"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c6"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t5",
+      "text": "Regierungen müssten deshalb auch im Osten ohne die AfD gebildet werden.",
+      "start": 529,
+      "end": 600,
+      "geprueft": true,
+      "notwendig": [
+        "s11"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c7"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t6",
+      "text": "Zugleich kritisiert Günther die Koalition von Kanzler Friedrich Merz: Wenn die Politik den Menschen in unsicheren Zeiten nicht das Gefühl gebe, dass an einem Strang gezogen werde, dann wendeten sich die Leute von den etablierten Parteien ab.",
+      "start": 601,
+      "end": 842,
+      "geprueft": true,
+      "notwendig": [
+        "s13"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c8"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t7",
+      "text": "Den Leuten sei es, so Günther wörtlich, scheißegal, wer welchen Punkt umgesetzt habe.",
+      "start": 843,
+      "end": 928,
+      "geprueft": true,
+      "notwendig": [
+        "s17"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c9"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t8",
+      "text": "Sie wollten nur sehen, dass ein Land in der Krise einen Weg herausfinde.",
+      "start": 929,
+      "end": 1001,
+      "geprueft": true,
+      "notwendig": [
+        "s18"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c10"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t9",
+      "text": "Albig pflichtet ihm bei.",
+      "start": 1003,
+      "end": 1027,
+      "geprueft": true,
+      "notwendig": [
+        "s20"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c11"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t10",
+      "text": "Er war Pressesprecher im Bundesfinanzministerium unter Gerhard Schröder und Angela Merkel und erlebte die Finanzkrise zweitausendacht hautnah.",
+      "start": 1028,
+      "end": 1170,
+      "geprueft": true,
+      "notwendig": [
+        "s21"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c12"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t11",
+      "text": "Damals habe die Regierung ebenfalls große Probleme zu lösen gehabt – aber sie habe nicht aus zwei sich bekämpfenden Lagern bestanden.",
+      "start": 1171,
+      "end": 1304,
+      "geprueft": true,
+      "notwendig": [
+        "s22"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c13"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t12",
+      "text": "Bei der heutigen Koalition habe er das Gefühl, sie trauten sich keinen Millimeter über den Weg.",
+      "start": 1305,
+      "end": 1400,
+      "geprueft": true,
+      "notwendig": [
+        "s23"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c14"
+      ],
+      "relationen_gemischt": false,
+      "notiz": "trauen --> trauten löst Wortlaut_Abweichung aus, obwohl es direkte zu indirekte Rede ist somit indikativ zu konjunktiv, ein noch fehlender Fall"
+    },
+    {
+      "satz": "t13",
+      "text": "Heute arbeitet Albig als Lobbyist für den Tabakkonzern Philip Morris.",
+      "start": 1401,
+      "end": 1470,
+      "geprueft": true,
+      "notwendig": [
+        "s27"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c15"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t14",
+      "text": "Dennoch ist er nah genug am politischen Geschehen: Nach dem Koalitionsbeschluss zur tausend Euro Entlastungsprämie rief er den Finanzstaatssekretär an und fragte, ob man an einen Ausgleich der Steuerausfälle für die Länder gedacht habe.",
+      "start": 1471,
+      "end": 1707,
+      "geprueft": true,
+      "notwendig": [
+        "s27"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c16"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t15",
+      "text": "Hatte man nicht – und prompt scheiterten die Pläne im Bundesrat.",
+      "start": 1708,
+      "end": 1772,
+      "geprueft": true,
+      "notwendig": [
+        "s28"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c17"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t16",
+      "text": "Die Regierung mache zu viele einfache Fehler, stöhnt Albig.",
+      "start": 1773,
+      "end": 1832,
+      "geprueft": true,
+      "notwendig": [
+        "s29"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [
+        "wortlaut_abweichung"
+      ],
+      "claims_im_lauf": [
+        "c18"
+      ],
+      "relationen_gemischt": false,
+      "notiz": "Stockfehler zu Fehler müsste doch eigentlich genauso wie bei Landtagswahlen zu Wahlen eine Wortlautabweichung auslösen?"
+    },
+    {
+      "satz": "t17",
+      "text": "Zur AfD hat Albig eine andere Haltung als Günther.",
+      "start": 1834,
+      "end": 1884,
+      "geprueft": true,
+      "notwendig": [
+        "s1"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c19"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t18",
+      "text": "Wenn dreißig Prozent diese Partei wählten, könne man nicht dauerhaft so tun, als sei sie die Ausgeburt der Hölle.",
+      "start": 1885,
+      "end": 1998,
+      "geprueft": true,
+      "notwendig": [
+        "s36"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c20"
+      ],
+      "relationen_gemischt": false,
+      "notiz": "Bedeutung verschoben zulässig wegen des Vorworts vor dem Zitat."
+    },
+    {
+      "satz": "t19",
+      "text": "Im Ruhrgebiet träten alte Genossen direkt in die AfD ein – nicht weil sie Nazis geworden seien, sondern weil sie bei der SPD etwas vermissten.",
+      "start": 1999,
+      "end": 2141,
+      "geprueft": true,
+      "notwendig": [
+        "s37",
+        "s38"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c21",
+        "c22"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t20",
+      "text": "Albig fordert deshalb von Merz und SPD-Chef Lars Klingbeil, sich auf Minderheitsregierungen in den Ländern einzustellen.",
+      "start": 2142,
+      "end": 2262,
+      "geprueft": true,
+      "notwendig": [
+        "s42"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c23"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t21",
+      "text": "Und er geht noch weiter: Wahrscheinlich wäre es sogar einfacher, wenn die Sozialdemokraten die Ersten wären, die bei bestimmten Themen auch mit Rechtspopulisten zusammenarbeiten – so wie in Dänemark.",
+      "start": 2263,
+      "end": 2462,
+      "geprueft": true,
+      "notwendig": [
+        "s44"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c24"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t22",
+      "text": "Wenn also etwa Manuela Schwesig nach der Wahl in Mecklenburg-Vorpommern sagen würde: Ich suche mir meine Mehrheiten im Landtag je nach Thema.",
+      "start": 2463,
+      "end": 2604,
+      "geprueft": true,
+      "notwendig": [
+        "s44"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c25"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t23",
+      "text": "Das würde einen Spaltpilz in die AfD tragen und verlorene Wähler zurückgewinnen.",
+      "start": 2605,
+      "end": 2685,
+      "geprueft": true,
+      "notwendig": [
+        "s46",
+        "s49"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c26"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t24",
+      "text": "Für die SPD sei das natürlich sehr schwer, räumt Albig ein.",
+      "start": 2686,
+      "end": 2745,
+      "geprueft": true,
+      "notwendig": [
+        "s50"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [
+        "wortlaut_abweichung"
+      ],
+      "claims_im_lauf": [
+        "c27"
+      ],
+      "relationen_gemischt": false,
+      "notiz": "Konjunktivverschieben von \"wäre\" zu \"sei\" dürfte nicht passieren."
+    },
+    {
+      "satz": "t25",
+      "text": "Aber so weiterzumachen wie bisher berge die Gefahr, dass die Sozialdemokratie in Deutschland bald verschwinde – in Frankreich, Italien und den Niederlanden sei sie quasi schon weg.",
+      "start": 2746,
+      "end": 2926,
+      "geprueft": true,
+      "notwendig": [
+        "s52",
+        "s53"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c28"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    }
+  ]
+}

@@ -1,0 +1,615 @@
+{
+  "paar": "az_CHIO",
+  "split": "dev",
+  "anleitung": [
+    "Arbeitsanweisung (diese Zeilen bleiben in der Datei stehen):",
+    "1. Jede Zeile mit \"geprueft\": false durchgehen und auf true setzen.",
+    "2. notwendig = Sätze, ohne die ein Teil der Aussage unbelegt bliebe.",
+    "   zulaessig = stützt ebenfalls, ist aber entbehrlich (Dubletten).",
+    "3. relation prüfen: direkt | aggregiert | bedeutung_verschoben |",
+    "   inferiert | keine_quelle.",
+    "4. flags_erwartet: nur Befunde, die WIRKLICH zutreffen sollten",
+    "   (zahlkonflikt, ort_konflikt, kuerzel_konflikt, wortlaut_abweichung,",
+    "   ident_unbelegt, zahl_unbelegt). Leere Liste heißt: kein Befund.",
+    "5. Zum Schluss EINMAL umgekehrt: den Artikel lesen und fragen, welcher",
+    "   Transkriptsatz diese Stelle nutzt. Das fängt die Quellen, die die",
+    "   Pipeline gar nicht erst vorgeschlagen hat — der Bias des Entwurfs.",
+    "6. Artikel- und Transkripttext danach NICHT mehr ändern, auch keine",
+    "   Tippfehler: Die Zeichen-Offsets sind Teil der Annotation."
+  ],
+  "artikel_hash": "a9af6b048bdbe199",
+  "transkript_hash": "7c6b1e9d1549aee9",
+  "artikel_saetze": [
+    {
+      "id": "s1",
+      "text": "Aachen\nIst Stall vier ein gutes Omen?"
+    },
+    {
+      "id": "s2",
+      "text": "Dort wo die deutschen Dressurpferde eine Woche lang ihr Zuhause in der Soers hatten, zogen nun die deutschen Springreiter ein."
+    },
+    {
+      "id": "s3",
+      "text": "Ihre Kollegen hatten Team-Gold gewonnen, dazu noch zweimal Einzel-Bronze."
+    },
+    {
+      "id": "s4",
+      "text": "Eine Team-Medaille, natürlich bevorzugt eine goldene, ist auch das ausgegebene Ziel der deutschen Springreiter um Otto Becker."
+    },
+    {
+      "id": "s5",
+      "text": "Die Chancen stehen nicht schlecht, der Bundestrainer bringt ein starkes Team bei der Weltmeisterschaft in Aachen an den Start, wenn er auch unterstreicht: „Aber es sind sicher acht bis zehn Teams in der Lage, eine Medaille zu holen, wenn es gut läuft.“"
+    },
+    {
+      "id": "s6",
+      "text": "So viele wie nie zuvor"
+    },
+    {
+      "id": "s7",
+      "text": "Rund 170 Reiter aus 55 Nationen, darunter alleine 31 Equipen, haben sich für die WM qualifiziert – so viele Reiter und Pferde wie nie zuvor."
+    },
+    {
+      "id": "s8",
+      "text": "„Das ufert definitiv aus, welcher Organisator soll das in Zukunft noch stemmen können?"
+    },
+    {
+      "id": "s9",
+      "text": "Auch für die Zuschauer ist das zu viel."
+    },
+    {
+      "id": "s10",
+      "text": "Aber das zeigt, wie global das Springreiten geworden ist“, sieht der Bundestrainer auch den positiven Aspekt."
+    },
+    {
+      "id": "s11",
+      "text": "Alle Reiter müssen im Zeitspringen und im ersten Umlauf der Team-Springens antreten."
+    },
+    {
+      "id": "s12",
+      "text": "Jedoch nur noch die besten zehn Teams sowie die Einzelreiter mit Finalaussichten sind am Freitagabend unter Flutlicht startberechtigt, wenn es um die Team-Medaillen geht."
+    },
+    {
+      "id": "s13",
+      "text": "Becker selbst bringt mit Daniel Deußer (Wolvertem/Belgien) auf Otello de Guldenboom, Marcus Ehning (Borken) auf Coolio, Sophie Hinners auf Iron Dames Singclair und Richard Vogel auf United Touch S (beide Dagobertshausen) ein starkes Team an den Start, in dem bereits alle Reiter Championatserfahrung haben."
+    },
+    {
+      "id": "s14",
+      "text": "Vogel, Hinners, Ehning sowie Christian Kukuk gehörten schon 2025 bei der EM zur deutschen Bronze-Equipe."
+    },
+    {
+      "id": "s15",
+      "text": "Erste Reserve sind die Olympia-Sieger Kukuk (Münster) und Checker, nachdem Ehning schon ins Team nachgerückt war."
+    },
+    {
+      "id": "s16",
+      "text": "Ursprünglich hatte André Thieme (Plau am See) dazugehört."
+    },
+    {
+      "id": "s17",
+      "text": "Doch schon beim „Tschio“ im Mai in Aachen hatte seine Stute Chakaria im großen Wassergraben eingefußt."
+    },
+    {
+      "id": "s18",
+      "text": "„Den Wassergraben hatte Thieme im Großen Preis nicht ganz günstig angeritten“, hatte sich laut Becker da noch kein Problem angedeutet."
+    },
+    {
+      "id": "s19",
+      "text": "„Bis dahin war Chakaria eine super Saison gesprungen."
+    },
+    {
+      "id": "s20",
+      "text": "Und auch im Großen Preis bis auf das Wasser sehr gut unterwegs gewesen.“"
+    },
+    {
+      "id": "s21",
+      "text": "Es blieb der einzige Fehler, und Thieme war Sechster geworden."
+    },
+    {
+      "id": "s22",
+      "text": "Doch im schwedischen Falsterbo unterlief Chakaria im Juli ein identischer Fehler."
+    },
+    {
+      "id": "s23",
+      "text": "Die Stute zeigte am Wasser auf einmal Unsicherheiten."
+    },
+    {
+      "id": "s24",
+      "text": "„Danach musste ich das Gespräch suchen."
+    },
+    {
+      "id": "s25",
+      "text": "Dass er verzichten musste, hat mir sehr leidgetan, André ist ein toller Kerl“, bedauerte Becker, den sonst so zuverlässigen Europameister von 2021 nicht in Aachen dabei zu haben."
+    },
+    {
+      "id": "s26",
+      "text": "„Aber Dublin hat bestätigt, dass sein Verzicht auf die WM richtig war.“"
+    },
+    {
+      "id": "s27",
+      "text": "Chakaria hatte dort Anfang August vier Abwürfe im Großen Preis."
+    },
+    {
+      "id": "s28",
+      "text": "Sie fußte zwar nicht im Wasser ein, aber „André hat sehr viel Druck gemacht, und man sah, dass die Stute am Wasser im Moment unsicher ist."
+    },
+    {
+      "id": "s29",
+      "text": "Es braucht Zeit, ihr Vertrauen wieder aufzubauen.“"
+    },
+    {
+      "id": "s30",
+      "text": "Für Thieme rückten Marcus Ehning und Coolio ins Team."
+    },
+    {
+      "id": "s31",
+      "text": "Schon 2006 hatte der heute 52-Jährige zum Team gehört, das damals Bronze gewann."
+    },
+    {
+      "id": "s32",
+      "text": "Erste Reserve ist nun Kukuk, der am Dienstag im Warm-up-Springen wie auch die vier Teamreiter starten darf, danach jedoch zuschauen muss, wenn kein Kollege ausfällt."
+    },
+    {
+      "id": "s33",
+      "text": "Doch seine Reservistenrolle hatte bei Kukuk zu einiger Verstimmung gesorgt, wie er auch mehrfach öffentlich kundtat."
+    },
+    {
+      "id": "s34",
+      "text": "Der Olympiasieger von Paris hatte sich im Team gesehen."
+    },
+    {
+      "id": "s35",
+      "text": "„Ich glaube nicht, dass jemand sagen kann, dass wir die falsche Equipe aufgestellt haben“, unterstreicht Becker."
+    },
+    {
+      "id": "s36",
+      "text": "„Wir hatten im Vorfeld sechs Reiter und Pferde, die mehr oder weniger alle auf dem gleichen Niveau sind.“"
+    },
+    {
+      "id": "s37",
+      "text": "Über den Winter und im Frühling hatten die Reiter unterschiedliche Wege genommen, waren wie Vogel und Kukuk in Amerika unterwegs oder auf den Weltcup-Turnieren in Europa."
+    },
+    {
+      "id": "s38",
+      "text": "„So ab Hamburg und Aachen hat die Nominierungsphase begonnen“, so Becker, der natürlich jedes Ergebnis seiner Schützlinge im Ausland verfolgte."
+    },
+    {
+      "id": "s39",
+      "text": "Der fünfte Mann"
+    },
+    {
+      "id": "s40",
+      "text": "„Alle sechs nominierten Reiter und Pferde sind gut genug, hatten Erfolge im Frühjahr vorzuweisen."
+    },
+    {
+      "id": "s41",
+      "text": "Aber wir mussten ja vier auswählen“, so Becker, der das gemeinsam mit dem Springausschuss entscheidet."
+    },
+    {
+      "id": "s42",
+      "text": "„Da kommen viele Kriterien zusammen, man überlegt in alle Richtungen und muss dann sportlich die hoffentlich richtige Entscheidung treffen."
+    },
+    {
+      "id": "s43",
+      "text": "Und alle Reiter wollten so früh wie möglich Planungssicherheit haben“, so Becker, der Kukuks Enttäuschung durchaus versteht."
+    },
+    {
+      "id": "s44",
+      "text": "„Ich war auch schon fünfter Mann, das ist für einen selbst nicht schön, aber für das Team trotzdem wichtig, dass es einen Backup bis zum Start des Championats hat.“"
+    },
+    {
+      "id": "s45",
+      "text": "Checker ist wie der Rest der Pferde in guter Form, gewann zuletzt den Großen Preis von London."
+    },
+    {
+      "id": "s46",
+      "text": "„Wo er sicher nicht geritten wäre, hätte er im Team gestanden“, unterstreicht Becker."
+    },
+    {
+      "id": "s47",
+      "text": "„Die WM-Reiter haben vorher meist ein kleines Turnier anvisiert, um ihre Pferde in Schwung zu halten.“"
+    },
+    {
+      "id": "s48",
+      "text": "So wie Ehning, der mit Coolio zwei ruhige, fehlerfreie Runden im niederländischen Valkenswaard absolviert hatte."
+    },
+    {
+      "id": "s49",
+      "text": "Am Dienstag geht es los mit dem Trainingsspringen, in dem alle Reiter die Pferde mit dem Parcours und der Arena vertraut machen können."
+    },
+    {
+      "id": "s50",
+      "text": "Für die Equipe- und Einzelreiter startet die WM am Mittwoch mit dem Zeitspringen, in dem sich oft schon die Spreu vom Weizen trennt."
+    },
+    {
+      "id": "s51",
+      "text": "„Ich beneide den Parcoursbauer nicht um seine Aufgabe“, zollt Becker Aachens langjährigem Kursdesigner Frank Rothenberger schon im Vorfeld Respekt."
+    },
+    {
+      "id": "s52",
+      "text": "Denn der hat die schwere Aufgabe, einen Parcours zu bauen, der einerseits die Elite fordert, andererseits die schwächeren Paare nicht vor unüberwindbare Aufgaben stellt."
+    },
+    {
+      "id": "s53",
+      "text": "Die Punkte, die sich aus der Zeitdifferenz zum Sieger ergeben, wobei Hindernisfehler ebenfalls in Sekunden umgerechnet werden, nehmen die Reiter mit in die nächste Runde – so erklären sich die Ergebnisse mit Zahlen hinter dem Komma."
+    },
+    {
+      "id": "s54",
+      "text": "Vogel hatte 2025 mit nur 0,01 Punkten EM-Gold geholt."
+    },
+    {
+      "id": "s55",
+      "text": "Im Zeitspringen war er knapp Zweiter geworden, hatte sich danach keinen Fehler mehr geleistet."
+    },
+    {
+      "id": "s56",
+      "text": "Der Topfavorit"
+    },
+    {
+      "id": "s57",
+      "text": "Das zeigt, wie wichtig das Zeitspringen ist."
+    },
+    {
+      "id": "s58",
+      "text": "„Es ist das vorweggenommene Stechen“, formuliert der deutsche Bundestrainer plakativ."
+    },
+    {
+      "id": "s59",
+      "text": "Wer in der ersten Wertung nicht schon richtig Gas gibt, hat normalerweise mit den Einzelmedaillen nichts mehr zu tun."
+    },
+    {
+      "id": "s60",
+      "text": "„Da muss man schon gleich zum Auftakt einiges riskieren“, haben die Reiter die schwierige Entscheidung zwischen Risiko und Sicherheit zu fällen."
+    },
+    {
+      "id": "s61",
+      "text": "„Ich traue meinen vier Reitern alle auch eine Einzelmedaille zu“, sagt Becker, der selbst unter anderem 1990 WM-Silber mit dem Team gewann."
+    },
+    {
+      "id": "s62",
+      "text": "Richard Vogel, Europameister 2025 und Sieger im „Großen Preis von Aachen“ 2026, wird als Topfavorit auf den Titel gehandelt."
+    },
+    {
+      "id": "s63",
+      "text": "Und auch Sophie Hinners hatte als Dritte im Mai in Aachen überzeugt."
+    },
+    {
+      "id": "s64",
+      "text": "Ebenso wie Deußer mit konstanten Leistungen und der erfahrene Ehning nicht zuletzt durch seinen Sieg auf Coolio im „Großen Preis von St. Gallen“."
+    },
+    {
+      "id": "s65",
+      "text": "Doch wie schnell Favoriten „fallen“ können, musste Ehning 2006 in Aachen erlebten."
+    },
+    {
+      "id": "s66",
+      "text": "Er kam als Weltranglistenerster, Sieger im „Großen Preis von Aachen“, Weltcup-Gewinner und somit favorit zur WM – und dann war es die Briefmarken-Mauer, an der auf Küchengirl alle Träume endgültig zerplatzten."
+    },
+    {
+      "id": "s67",
+      "text": "„Ach, die Mauer, daran erinnert ihr euch in Aachen immer noch."
+    },
+    {
+      "id": "s68",
+      "text": "Dabei hatte ich meine Chancen vorher schon verspielt“, kommentiert der 52-Jährige lachend."
+    },
+    {
+      "id": "s69",
+      "text": "„Ich war übermotiviert, wollte zu viel, habe zu viel Druck auf mich und mein Pferd gemacht."
+    },
+    {
+      "id": "s70",
+      "text": "Schon im Zeitspringen und im ersten Umlauf der Team-Entscheidung."
+    },
+    {
+      "id": "s71",
+      "text": "Und an der Mauer war es dann zu viel für die Stute, nachdem uns vorher schon ein Fehler unterlaufen war."
+    },
+    {
+      "id": "s72",
+      "text": "Aber: Ich war nicht das Streichergebnis, meine Ritte haben zur Medaille beigetragen.“"
+    },
+    {
+      "id": "s73",
+      "text": "Für das deutsche Team gab es auch dank Ehning Bronze hinter den Niederlanden und den USA – und nur 0,01 Punkte vor der Ukraine."
+    },
+    {
+      "id": "s74",
+      "text": "„Im Springen ist die Leistungsdichte inzwischen sehr eng."
+    },
+    {
+      "id": "s75",
+      "text": "Es ist auch eine Frage der Tagesform, wer vorne steht“, so Becker."
+    },
+    {
+      "id": "s76",
+      "text": "Mit Großbritannien, etablierten Nationen wie die Schweiz oder Frankreich, rechnet er, „und ich bin auf die USA gespannt“, sagt Becker."
+    },
+    {
+      "id": "s77",
+      "text": "Und ganz vielleicht überrascht ja auch wieder der ein oder andere vermeintliche Außenseiter oder Exot, so wie die mexikanischen Springreiter vor zwei Jahren im Aachener Nationenpreis."
+    }
+  ],
+  "eintraege": [
+    {
+      "satz": "t1",
+      "text": "Die deutschen Dressurreiter haben bei der Weltmeisterschaft in Aachen bereits Team-Gold und zweimal Einzel-Bronze gewonnen.",
+      "start": 0,
+      "end": 123,
+      "geprueft": true,
+      "notwendig": [
+        "s2",
+        "s3",
+        "s5"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c1"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t2",
+      "text": "Nun wollen die deutschen Springreiter nachziehen und ebenfalls eine Team-Medaille holen, am liebsten Gold.",
+      "start": 124,
+      "end": 230,
+      "geprueft": true,
+      "notwendig": [
+        "s4"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c2"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t3",
+      "text": "Bundestrainer Otto Becker schickt in Aachen ein starkes Team ins Rennen: Daniel Deußer auf Otello de Guldenboom, Marcus Ehning auf Coolio, Sophie Hinners auf Iron Dames Singclair und Richard Vogel auf United Touch S. Becker rechnet dennoch mit einem engen Wettbewerb: Seiner Einschätzung nach könnten acht bis zehn Teams eine Medaille gewinnen.",
+      "start": 231,
+      "end": 575,
+      "geprueft": true,
+      "notwendig": [
+        "s5",
+        "s13"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c3"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t4",
+      "text": "Für die Weltmeisterschaft haben sich rund 170 Reiter aus 55 Nationen und 31 Mannschaften qualifiziert – so viele wie nie zuvor.",
+      "start": 577,
+      "end": 704,
+      "geprueft": true,
+      "notwendig": [
+        "s7"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c4"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t5",
+      "text": "Alle starten im Zeitspringen und im ersten Umlauf der Teamwertung.",
+      "start": 705,
+      "end": 771,
+      "geprueft": true,
+      "notwendig": [
+        "s11"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c5"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t6",
+      "text": "Nur die zehn besten Teams sowie aussichtsreiche Einzelreiter erreichen am Freitagabend unter Flutlicht die Entscheidung um die Team-Medaillen.",
+      "start": 772,
+      "end": 914,
+      "geprueft": true,
+      "notwendig": [
+        "s12"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c6"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t7",
+      "text": "Marcus Ehning rückte für André Thieme ins Team nach.",
+      "start": 916,
+      "end": 968,
+      "geprueft": true,
+      "notwendig": [
+        "s30"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c7"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t8",
+      "text": "Dessen Stute Chakaria hatte zuletzt wiederholt Unsicherheiten am Wassergraben gezeigt.",
+      "start": 969,
+      "end": 1055,
+      "geprueft": true,
+      "notwendig": [
+        "s17",
+        "s23"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c8"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t9",
+      "text": "Becker erklärte, Thiemes Verzicht auf die WM sei richtig gewesen, damit die Stute wieder Vertrauen aufbauen könne.",
+      "start": 1056,
+      "end": 1170,
+      "geprueft": true,
+      "notwendig": [
+        "s26",
+        "s29"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c9"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t10",
+      "text": "Besondere Aufmerksamkeit gilt Richard Vogel.",
+      "start": 1172,
+      "end": 1216,
+      "geprueft": true,
+      "notwendig": [
+        "s62"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c10"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t11",
+      "text": "Der Europameister von 2025 und Sieger im Großen Preis von Aachen 2026 wird als Topfavorit auf den Einzeltitel gehandelt.",
+      "start": 1217,
+      "end": 1337,
+      "geprueft": true,
+      "notwendig": [
+        "s62"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c11"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t12",
+      "text": "Auch Sophie Hinners, die im Mai in Aachen Dritte wurde, sowie Deußer mit konstanten Leistungen und der erfahrene Ehning, der zuletzt den Großen Preis von St. Gallen gewann, trauen sich laut Becker eine Einzelmedaille zu.",
+      "start": 1338,
+      "end": 1558,
+      "geprueft": true,
+      "notwendig": [
+        "s61",
+        "s63",
+        "s64"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c12"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t13",
+      "text": "Entscheidend wird bereits das Zeitspringen am Mittwoch.",
+      "start": 1560,
+      "end": 1615,
+      "geprueft": true,
+      "notwendig": [
+        "s50"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c13"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t14",
+      "text": "Zeitrückstände und Hindernisfehler werden in Punkte umgerechnet und in die nächste Runde übernommen.",
+      "start": 1616,
+      "end": 1716,
+      "geprueft": true,
+      "notwendig": [
+        "s53"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c14"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t15",
+      "text": "Becker nennt diese Prüfung das vorweggenommene Stechen.",
+      "start": 1717,
+      "end": 1772,
+      "geprueft": true,
+      "notwendig": [
+        "s58"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c15"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    }
+  ]
+}

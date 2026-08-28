@@ -1,0 +1,324 @@
+{
+  "meta": {
+    "titel": "Aachen Die Eupener Straße in Aachen ist wieder frei.",
+    "quelle": "Eigenes Paar",
+    "modell": "stufe0-2 · multilingual-e5-large-instruct + nli-mdeberta-2mil7",
+    "statistik": {
+      "saetze": 4,
+      "claims": 7,
+      "embeddings": 11,
+      "nli_paare": 5,
+      "dauer_s": 2.7
+    },
+    "ratelimit": {
+      "model": "multilingual-e5-large-instruct",
+      "checked_at": 1787355014.906448,
+      "x-ratelimit-limit-minute": "15",
+      "x-ratelimit-remaining-minute": "13",
+      "x-ratelimit-limit-hour": "900",
+      "x-ratelimit-remaining-hour": "877",
+      "x-ratelimit-limit-day": "2000",
+      "x-ratelimit-remaining-day": "1974",
+      "x-ratelimit-limit-second": "2",
+      "x-ratelimit-remaining-second": "0",
+      "ratelimit-reset": "1",
+      "ratelimit-limit": "2",
+      "ratelimit-remaining": "0"
+    }
+  },
+  "article": {
+    "text": "Aachen Die Eupener Straße in Aachen ist wieder frei. Die Ende Juni begonnene Sanierung der Bundesstraße B57 zwischen der deutsch-belgischen Staatsgrenze und dem Ortseingang zur Stadt Aachen konnte planmäßig abgeschlossen werden, wie der Landesbetrieb Straßenbau mitteilt. Nachdem am Mittwoch die letzten Restarbeiten (Beschilderung und Markierung) vorgenommen wurden, kann die Eupener Straße seit Donnerstagmorgen wieder befahren werden. In den kommenden Wochen kommt es nach Angaben von Straßen.NRW durch den Bau eines Geh- und Radweges sowie einer Querungshilfe an der B57 aber noch zu Verkehrseinschränkungen.(red)",
+    "sentences": [
+      {
+        "id": "s1",
+        "start": 0,
+        "end": 52,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Aachen Die Eupener Straße in Aachen ist wieder frei."
+      },
+      {
+        "id": "s2",
+        "start": 53,
+        "end": 271,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Die Ende Juni begonnene Sanierung der Bundesstraße B57 zwischen der deutsch-belgischen Staatsgrenze und dem Ortseingang zur Stadt Aachen konnte planmäßig abgeschlossen werden, wie der Landesbetrieb Straßenbau mitteilt."
+      },
+      {
+        "id": "s3",
+        "start": 272,
+        "end": 437,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Nachdem am Mittwoch die letzten Restarbeiten (Beschilderung und Markierung) vorgenommen wurden, kann die Eupener Straße seit Donnerstagmorgen wieder befahren werden."
+      },
+      {
+        "id": "s4",
+        "start": 438,
+        "end": 617,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "In den kommenden Wochen kommt es nach Angaben von Straßen.NRW durch den Bau eines Geh- und Radweges sowie einer Querungshilfe an der B57 aber noch zu Verkehrseinschränkungen.(red)"
+      }
+    ]
+  },
+  "transcript": {
+    "text": "Die Eupener Straße in Aachen ist wieder frei befahrbar. Die Sanierung der Bundesstraße 57 zwischen der deutsch-belgischen Staatsgrenze und dem Ortseingang von Aachen ist planmäßig abgeschlossen, teilt der Landesbetrieb Straßenbau mit.\n\nDie Arbeiten hatten Ende Juni begonnen. Am Mittwoch wurden noch die letzten Restarbeiten erledigt: Beschilderung und Markierung. Seit Donnerstagmorgen kann die Eupener Straße wieder befahren werden.\n\nGanz ohne Einschränkungen bleibt es aber nicht. Nach Angaben von Straßen.NRW kommt es in den kommenden Wochen erneut zu Verkehrseinschränkungen auf der B57. Grund sind der Bau eines Geh- und Radwegs sowie einer Querungshilfe.",
+    "claims": [
+      {
+        "id": "c1",
+        "start": 0,
+        "end": 55,
+        "text": "Die Eupener Straße in Aachen ist wieder frei befahrbar.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s1",
+            "start": 0,
+            "end": 52,
+            "spans": [
+              [
+                0,
+                52
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s3",
+            "start": 377,
+            "end": 437,
+            "spans": [
+              [
+                377,
+                391
+              ],
+              [
+                414,
+                437
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.9,
+        "margin": 0.6,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s1 + s3 (s3 erklärt zusätzlich 12 %). · Fundstellen erklären 80 % des Claims.",
+        "scores": {
+          "top": 0.95,
+          "lex": 0.819,
+          "emb": 0.977,
+          "anchor": 0,
+          "nli": 0.994
+        }
+      },
+      {
+        "id": "c2",
+        "start": 56,
+        "end": 234,
+        "text": "Die Sanierung der Bundesstraße 57 zwischen der deutsch-belgischen Staatsgrenze und dem Ortseingang von Aachen ist planmäßig abgeschlossen, teilt der Landesbetrieb Straßenbau mit.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s2",
+            "start": 77,
+            "end": 271,
+            "spans": [
+              [
+                77,
+                172
+              ],
+              [
+                183,
+                189
+              ],
+              [
+                197,
+                271
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.98,
+        "margin": 0.62,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "57",
+            "norm": "57",
+            "status": "unbelegt"
+          }
+        ],
+        "flags": [
+          "zahl_unbelegt"
+        ],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 95 % des Claims. · 57 im Artikel nicht auffindbar.",
+        "scores": {
+          "top": 0.936,
+          "lex": 0.78,
+          "emb": 1,
+          "anchor": 0,
+          "nli": 0.969
+        }
+      },
+      {
+        "id": "c3",
+        "start": 236,
+        "end": 275,
+        "text": "Die Arbeiten hatten Ende Juni begonnen.",
+        "relation": "keine_quelle",
+        "sources": [],
+        "confidence": 0.55,
+        "margin": 0.23,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Keine ausreichend ähnliche Stelle im Artikel — nächster Kandidat s2 mit 0,44 (Schwelle 0,44).",
+        "scores": {
+          "top": 0.44,
+          "lex": 0.211,
+          "emb": 0.258,
+          "anchor": 0,
+          "nli": null
+        }
+      },
+      {
+        "id": "c4",
+        "start": 276,
+        "end": 364,
+        "text": "Am Mittwoch wurden noch die letzten Restarbeiten erledigt: Beschilderung und Markierung.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s3",
+            "start": 283,
+            "end": 346,
+            "spans": [
+              [
+                283,
+                346
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.73,
+        "margin": 0.5,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 80 % des Claims.",
+        "scores": {
+          "top": 0.75,
+          "lex": 0.58,
+          "emb": 0.636,
+          "anchor": 0,
+          "nli": 0.963
+        }
+      },
+      {
+        "id": "c5",
+        "start": 365,
+        "end": 434,
+        "text": "Seit Donnerstagmorgen kann die Eupener Straße wieder befahren werden.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s3",
+            "start": 377,
+            "end": 437,
+            "spans": [
+              [
+                377,
+                437
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.9,
+        "margin": 0.32,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 95 % des Claims.",
+        "scores": {
+          "top": 0.859,
+          "lex": 0.624,
+          "emb": 0.836,
+          "anchor": 0,
+          "nli": 0.997
+        }
+      },
+      {
+        "id": "c6",
+        "start": 436,
+        "end": 483,
+        "text": "Ganz ohne Einschränkungen bleibt es aber nicht.",
+        "relation": "keine_quelle",
+        "sources": [],
+        "confidence": 0.7,
+        "margin": 0.25,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Keine ausreichend ähnliche Stelle im Artikel — nächster Kandidat s4 mit 0,37 (Schwelle 0,44).",
+        "scores": {
+          "top": 0.373,
+          "lex": 0.224,
+          "emb": 0.272,
+          "anchor": 0,
+          "nli": null
+        }
+      },
+      {
+        "id": "c7",
+        "start": 484,
+        "end": 661,
+        "text": "Nach Angaben von Straßen.NRW kommt es in den kommenden Wochen erneut zu Verkehrseinschränkungen auf der B57. Grund sind der Bau eines Geh- und Radwegs sowie einer Querungshilfe.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s4",
+            "start": 438,
+            "end": 617,
+            "spans": [
+              [
+                438,
+                563
+              ],
+              [
+                588,
+                617
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.87,
+        "margin": 0.64,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 87 % des Claims.",
+        "scores": {
+          "top": 0.9,
+          "lex": 0.754,
+          "emb": 0.874,
+          "anchor": 0,
+          "nli": 0.949
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,641 @@
+{
+  "paar": "az_muellverbrennung",
+  "split": "test",
+  "anleitung": [
+    "Arbeitsanweisung (diese Zeilen bleiben in der Datei stehen):",
+    "1. Jede Zeile mit \"geprueft\": false durchgehen und auf true setzen.",
+    "2. notwendig = Sätze, ohne die ein Teil der Aussage unbelegt bliebe.",
+    "   zulaessig = stützt ebenfalls, ist aber entbehrlich (Dubletten).",
+    "3. relation prüfen: direkt | aggregiert | bedeutung_verschoben |",
+    "   inferiert | keine_quelle.",
+    "4. flags_erwartet: nur Befunde, die WIRKLICH zutreffen sollten",
+    "   (zahlkonflikt, ort_konflikt, kuerzel_konflikt, wortlaut_abweichung,",
+    "   ident_unbelegt, zahl_unbelegt). Leere Liste heißt: kein Befund.",
+    "5. Zum Schluss EINMAL umgekehrt: den Artikel lesen und fragen, welcher",
+    "   Transkriptsatz diese Stelle nutzt. Das fängt die Quellen, die die",
+    "   Pipeline gar nicht erst vorgeschlagen hat — der Bias des Entwurfs.",
+    "6. Artikel- und Transkripttext danach NICHT mehr ändern, auch keine",
+    "   Tippfehler: Die Zeichen-Offsets sind Teil der Annotation."
+  ],
+  "artikel_hash": "a4ce1531fe16b40c",
+  "transkript_hash": "78bb8ea6ec9739e9",
+  "artikel_saetze": [
+    {
+      "id": "s1",
+      "text": "Eschweiler Als Jonas Lenzen mit 16 Jahren Autos auf der Mülldeponie in Warden einwies, ahnte er wohl kaum, dass er eines Tages Teil der Geschäftsführung der Müllverbrennungsanlage (MVA) Weisweiler werden würde."
+    },
+    {
+      "id": "s2",
+      "text": "Auch Udo Martinett fing klein an."
+    },
+    {
+      "id": "s3",
+      "text": "Als studentische Hilfskraft bei der AWA Entsorgung GmbH sortierte und kopierte er Unterlagen für die Müllverbrennungsanlage."
+    },
+    {
+      "id": "s4",
+      "text": "Jahre später bilden die beiden jetzt die neue Geschäftsleitung der MVA."
+    },
+    {
+      "id": "s5",
+      "text": "Mit diesem Wechsel an der Spitze beginnt für das Unternehmen eine neue Phase."
+    },
+    {
+      "id": "s6",
+      "text": "Bis hierhin hatte kaum jemand die Müllverbrennungsanlage Weisweiler so geprägt wie Andreas Fries."
+    },
+    {
+      "id": "s7",
+      "text": "Bereits 1994 übernahm er die Geschäftsführung der damals noch in Planung befindlichen Anlage."
+    },
+    {
+      "id": "s8",
+      "text": "Jetzt ist er in den Ruhestand gegangen."
+    },
+    {
+      "id": "s9",
+      "text": "Auch das benachbarte Braunkohlekraftwerk verabschiedet sich bald – allerdings nicht in den Ruhestand, sondern 2029 endgültig vom Netz."
+    },
+    {
+      "id": "s10",
+      "text": "Dann muss sich die Müllverbrennungsanlage neu aufstellen."
+    },
+    {
+      "id": "s11",
+      "text": "Millioneninvestition"
+    },
+    {
+      "id": "s12",
+      "text": "Bisher liefert die MVA den Dampf aus der Müllverbrennung an RWE."
+    },
+    {
+      "id": "s13",
+      "text": "Dort wird daraus Strom und Fernwärme erzeugt."
+    },
+    {
+      "id": "s14",
+      "text": "Künftig soll das auf dem Gelände der MVA selbst passieren."
+    },
+    {
+      "id": "s15",
+      "text": "Dafür investiert das Unternehmen rund 85 Millionen Euro in eine neue Kraft-Wärme-Kopplungsanlage."
+    },
+    {
+      "id": "s16",
+      "text": "Für Udo Martinett und Jonas Lenzen ist das die erste große Aufgabe."
+    },
+    {
+      "id": "s17",
+      "text": "Martinett ist seit dem 1. Juli neuer technischer Geschäftsführer und Nachfolger von Fries."
+    },
+    {
+      "id": "s18",
+      "text": "Seine neue Position ist der nächste Schritt in einer langen Laufbahn bei der MVA."
+    },
+    {
+      "id": "s19",
+      "text": "Der gebürtige Eschweiler studierte Bauingenieurwesen mit den Schwerpunkten Abfallwirtschaft und Abwassertechnik an der Fachhochschule Aachen."
+    },
+    {
+      "id": "s20",
+      "text": "Schon während des Studiums arbeitete er bei der AWA Entsorgung, einer der Gesellschafterinnen der Müllverbrennungsanlage."
+    },
+    {
+      "id": "s21",
+      "text": "Bei der AWA arbeitete er später weiter als Ingenieur und Projektleiter für Deponien."
+    },
+    {
+      "id": "s22",
+      "text": "2003 wechselte er schließlich zur MVA."
+    },
+    {
+      "id": "s23",
+      "text": "Dort wurde er Leiter der Instandhaltung, später technischer Leiter und Prokurist."
+    },
+    {
+      "id": "s24",
+      "text": "Viele Jahre lang arbeitete er eng an der Seite von Andreas Fries, quasi als seine rechte Hand."
+    },
+    {
+      "id": "s25",
+      "text": "„Ich liebe Technik“, sagt der 57-Jährige."
+    },
+    {
+      "id": "s26",
+      "text": "„Mir kann hier keiner etwas vormachen."
+    },
+    {
+      "id": "s27",
+      "text": "Ich kenne jede Schraube der Anlage.“"
+    },
+    {
+      "id": "s28",
+      "text": "Mit genau diesem Detailwissen soll nun das größte Bauprojekt der Unternehmensgeschichte umgesetzt werden."
+    },
+    {
+      "id": "s29",
+      "text": "Respekt vor der neuen Aufgabe hat Martinett, Angst aber nicht."
+    },
+    {
+      "id": "s30",
+      "text": "„Ich habe alle Höhen und Tiefen der vergangenen zehn Jahre mitgemacht."
+    },
+    {
+      "id": "s31",
+      "text": "Mich erschreckt so schnell nichts mehr.“"
+    },
+    {
+      "id": "s32",
+      "text": "Er freue sich darauf, künftig noch mehr eigene Ideen einzubringen."
+    },
+    {
+      "id": "s33",
+      "text": "Ziel sei es, die kontinuierliche Weiterentwicklung der Anlage fortzusetzen."
+    },
+    {
+      "id": "s34",
+      "text": "Dass die MVA heute trotz ihres Alters von fast 30 Jahren als moderne Anlage gilt, sei kein Zufall."
+    },
+    {
+      "id": "s35",
+      "text": "Immer wieder seien Prozesse verbessert und Technik erneuert worden – von der modernisierten Rauchgasreinigung über den automatisierten Kranbetrieb bis hin zum KI-gestützten Müllbunkermanagement."
+    },
+    {
+      "id": "s36",
+      "text": "Während Martinett die Anlage seit Jahrzehnten kennt, bringt Jonas Lenzen viel Erfahrung von außen mit."
+    },
+    {
+      "id": "s37",
+      "text": "Der 31-Jährige ist in Hürtgenwald aufgewachsen und lebt bis heute dort, hat Wirtschaftsrecht in Köln studiert."
+    },
+    {
+      "id": "s38",
+      "text": "Nach Stationen beim Bundesverwaltungsamt wechselte er zu den Stadtwerken Köln."
+    },
+    {
+      "id": "s39",
+      "text": "Dort beschäftigte er sich intensiv mit gesellschaftsrechtlichen Themen, der Finanzierung großer Projekte und leitete zuletzt das Beteiligungscontrolling."
+    },
+    {
+      "id": "s40",
+      "text": "Seit Oktober vergangenen Jahres ist Lenzen nun kaufmännischer Geschäftsführer der MVA und Nachfolger von Herbert Küpper."
+    },
+    {
+      "id": "s41",
+      "text": "Seine wichtigste Aufgabe: die Finanzierung des 85-Millionen-Euro-Projekts."
+    },
+    {
+      "id": "s42",
+      "text": "Jahrzehntelang brauchte das Unternehmen keine größeren Kredite."
+    },
+    {
+      "id": "s43",
+      "text": "Jetzt mussten Banken gefunden und die Finanzierung auf die Beine gestellt werden."
+    },
+    {
+      "id": "s44",
+      "text": "„Das ist in den vergangenen Monaten meine Hauptaufgabe gewesen“, sagt Lenzen."
+    },
+    {
+      "id": "s45",
+      "text": "Für ihn ist die MVA ein Beispiel dafür, wie Strukturwandel gelingen kann."
+    },
+    {
+      "id": "s46",
+      "text": "Während auf dem Kraftwerksgelände Arbeitsplätze wegfallen, entstehen an der MVA neue."
+    },
+    {
+      "id": "s47",
+      "text": "Für die neue Kraft-Wärme-Kopplungsanlage werden zusätzliche Mitarbeiter gebraucht."
+    },
+    {
+      "id": "s48",
+      "text": "Dass das Projekt trotz seines Beitrags zur Energiewende kaum Fördermittel bekommt, kann Lenzen allerdings nicht nachvollziehen."
+    },
+    {
+      "id": "s49",
+      "text": "„Wir sind eigentlich genau das, wovon in der Politik immer gesprochen wird“, sagt er."
+    },
+    {
+      "id": "s50",
+      "text": "Trotz ihrer unterschiedlichen Lebensläufe – oder gerade auch deswegen – verstehen sich beide Geschäftsführer als Team."
+    },
+    {
+      "id": "s51",
+      "text": "Martinett kümmert sich um die Technik, Lenzen um die wirtschaftlichen Themen."
+    },
+    {
+      "id": "s52",
+      "text": "Beides gehöre zusammen, betonen sie."
+    },
+    {
+      "id": "s53",
+      "text": "„Technik funktioniert nur, wenn sie finanzierbar ist“, sagt Lenzen."
+    },
+    {
+      "id": "s54",
+      "text": "Und wirtschaftliche Entscheidungen könnten nur getroffen werden, wenn die technischen Zusammenhänge verstanden würden."
+    },
+    {
+      "id": "s55",
+      "text": "Dass sie heute auf einer gut aufgestellten Anlage aufbauen können, schreiben beide ihrem Vorgänger Andreas Fries zu."
+    },
+    {
+      "id": "s56",
+      "text": "Der langjährige technische Geschäftsführer hat die MVA entscheidend mitgeprägt."
+    },
+    {
+      "id": "s57",
+      "text": "Unter seiner Leitung wurde die Energieeffizienz verbessert."
+    },
+    {
+      "id": "s58",
+      "text": "Auch die Modernisierung der Rauchgasreinigung, die Automatisierung des Kranbetriebs und die Planungen für das heutige Kraft-Wärme-Kopplungsprojekt gehen auf seine Zeit zurück."
+    },
+    {
+      "id": "s59",
+      "text": "Fries selbst macht dafür vor allem seinem Team ein Kompliment."
+    },
+    {
+      "id": "s60",
+      "text": "„Alle Projekte konnten nur dank einer hochmotivierten Mannschaft aus Ingenieuren einerseits und der ebenso motivierten Betriebsmannschaft andererseits sehr erfolgreich umgesetzt werden“, sagt er."
+    },
+    {
+      "id": "s61",
+      "text": "Seinen Ruhestand möchte Fries jedoch gar nicht so ruhig angehen lassen."
+    },
+    {
+      "id": "s62",
+      "text": "Ab Oktober beginnt er ein Seniorenstudium der Umweltingenieurwissenschaften, möchte den Schwerpunkt auf das Thema Klimaschutz setzen."
+    },
+    {
+      "id": "s63",
+      "text": "Außerdem will er sich künftig noch stärker im Lions-Club Eschweiler-Stolberg engagieren."
+    },
+    {
+      "id": "s64",
+      "text": "„Ich bin der festen Überzeugung, dass ich mit vielen Lions in ganz Deutschland in unendlich vielen Bereichen wertvolle Hilfe leisten kann, darf und weiterhin werde“, sagt Fries."
+    },
+    {
+      "id": "s65",
+      "text": "Unterdessen wollen Martinett und Lenzen die MVA-Mannschaft in die nächste Phase führen."
+    },
+    {
+      "id": "s66",
+      "text": "Wenn das Kraftwerk 2029 endgültig vom Netz geht, soll die Müllverbrennungsanlage nicht nur wie bisher Strom für etwa 75.000 Haushalte erzeugen, sondern zusätzlich die Fernwärmeversorgung für rund 35.000 Haushalte sichern."
+    },
+    {
+      "id": "s67",
+      "text": "Für die neue Doppelspitze ist das auch eine Chance, die MVA vom bisherigen Dampflieferanten zu einem eigenständigen Energieunternehmen weiterzuentwickeln."
+    }
+  ],
+  "eintraege": [
+    {
+      "satz": "t1",
+      "text": "In Eschweiler hat die Müllverbrennungsanlage Weisweiler eine neue Führung.",
+      "start": 0,
+      "end": 74,
+      "geprueft": false,
+      "notwendig": [
+        "s1"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c1"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t2",
+      "text": "Udo Martinett ist seit dem 1. Juli technischer Geschäftsführer und folgt auf Andreas Fries.",
+      "start": 75,
+      "end": 166,
+      "geprueft": false,
+      "notwendig": [
+        "s17"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c2"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t3",
+      "text": "Jonas Lenzen ist bereits seit Oktober vergangenen Jahres kaufmännischer Geschäftsführer und Nachfolger von Herbert Küpper.",
+      "start": 167,
+      "end": 289,
+      "geprueft": false,
+      "notwendig": [
+        "s40"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c3"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t4",
+      "text": "Gemeinsam sollen sie das Unternehmen auf die Zeit nach dem Ende des benachbarten Braunkohlekraftwerks vorbereiten, das 2029 vom Netz geht.",
+      "start": 290,
+      "end": 428,
+      "geprueft": false,
+      "notwendig": [
+        "s9"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c4"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t5",
+      "text": "Die Müllverbrennungsanlage liefert bislang Dampf aus der Abfallverbrennung an das Kraftwerk.",
+      "start": 430,
+      "end": 522,
+      "geprueft": false,
+      "notwendig": [
+        "s12",
+        "s66"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c5"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t6",
+      "text": "Dort entstehen daraus Strom und Fernwärme.",
+      "start": 523,
+      "end": 565,
+      "geprueft": false,
+      "notwendig": [
+        "s13"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c6"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t7",
+      "text": "Künftig will die Anlage diese Energie selbst erzeugen.",
+      "start": 566,
+      "end": 620,
+      "geprueft": false,
+      "notwendig": [
+        "s14"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c7"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t8",
+      "text": "Dafür sind rund 85 Millionen Euro für eine neue Kraft-Wärme-Kopplungsanlage vorgesehen.",
+      "start": 621,
+      "end": 708,
+      "geprueft": false,
+      "notwendig": [
+        "s15"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c8"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t9",
+      "text": "Sie ist das größte Bauprojekt in der Geschichte des Unternehmens.",
+      "start": 709,
+      "end": 774,
+      "geprueft": false,
+      "notwendig": [
+        "s28"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c9"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t10",
+      "text": "Der 57-jährige Bauingenieur Udo Martinett arbeitet seit 2003 bei der Müllverbrennungsanlage.",
+      "start": 776,
+      "end": 868,
+      "geprueft": false,
+      "notwendig": [
+        "s19",
+        "s20",
+        "s22",
+        "s25"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c10"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t11",
+      "text": "Zuvor war er bei der AWA Entsorgung GmbH tätig, einer der Gesellschafterinnen der Anlage.",
+      "start": 869,
+      "end": 958,
+      "geprueft": false,
+      "notwendig": [
+        "s20"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c11"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t12",
+      "text": "Als langjähriger technischer Leiter kennt er die Technik nach eigener Aussage bis ins Detail und will die kontinuierliche Modernisierung fortsetzen.",
+      "start": 959,
+      "end": 1107,
+      "geprueft": false,
+      "notwendig": [
+        "s33",
+        "s35",
+        "s56"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c12"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t13",
+      "text": "Der 31-jährige Jonas Lenzen hat Wirtschaftsrecht studiert und bringt Erfahrung aus dem Bundesverwaltungsamt und den Stadtwerken Köln mit.",
+      "start": 1109,
+      "end": 1246,
+      "geprueft": false,
+      "notwendig": [
+        "s36",
+        "s37",
+        "s38"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c13"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t14",
+      "text": "Seine zentrale Aufgabe ist die Finanzierung des Großprojekts.",
+      "start": 1247,
+      "end": 1308,
+      "geprueft": false,
+      "notwendig": [
+        "s41"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c14"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t15",
+      "text": "Dafür musste die Anlage, die jahrzehntelang ohne größere Kredite ausgekommen war, erstmals Banken gewinnen und eine neue Finanzierung aufbauen.",
+      "start": 1309,
+      "end": 1452,
+      "geprueft": false,
+      "notwendig": [
+        "s42",
+        "s43"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c15"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t16",
+      "text": "Die beiden Geschäftsführer verstehen sich als Team: Martinett verantwortet die Technik, Lenzen die wirtschaftlichen Fragen.",
+      "start": 1454,
+      "end": 1577,
+      "geprueft": false,
+      "notwendig": [
+        "s50",
+        "s51"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c16"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t17",
+      "text": "Sie bauen auf der Arbeit ihres Vorgängers Andreas Fries auf, der die Anlage seit 1994 entscheidend geprägt hat und jetzt in den Ruhestand gegangen ist.",
+      "start": 1578,
+      "end": 1729,
+      "geprueft": false,
+      "notwendig": [
+        "s7",
+        "s8",
+        "s55",
+        "s56"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c17"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t18",
+      "text": "Nach dem Ende des Kraftwerks soll die Müllverbrennungsanlage weiterhin Strom für etwa 75.000 Haushalte liefern und zusätzlich die Fernwärmeversorgung von rund 35.000 Haushalten sichern.",
+      "start": 1731,
+      "end": 1916,
+      "geprueft": false,
+      "notwendig": [
+        "s66"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c18"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    }
+  ]
+}

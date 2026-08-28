@@ -1,0 +1,528 @@
+{
+  "paar": "az_mordFamilie",
+  "split": "test",
+  "anleitung": [
+    "Arbeitsanweisung (diese Zeilen bleiben in der Datei stehen):",
+    "1. Jede Zeile mit \"geprueft\": false durchgehen und auf true setzen.",
+    "2. notwendig = Sätze, ohne die ein Teil der Aussage unbelegt bliebe.",
+    "   zulaessig = stützt ebenfalls, ist aber entbehrlich (Dubletten).",
+    "3. relation prüfen: direkt | aggregiert | bedeutung_verschoben |",
+    "   inferiert | keine_quelle.",
+    "4. flags_erwartet: nur Befunde, die WIRKLICH zutreffen sollten",
+    "   (zahlkonflikt, ort_konflikt, kuerzel_konflikt, wortlaut_abweichung,",
+    "   ident_unbelegt, zahl_unbelegt). Leere Liste heißt: kein Befund.",
+    "5. Zum Schluss EINMAL umgekehrt: den Artikel lesen und fragen, welcher",
+    "   Transkriptsatz diese Stelle nutzt. Das fängt die Quellen, die die",
+    "   Pipeline gar nicht erst vorgeschlagen hat — der Bias des Entwurfs.",
+    "6. Artikel- und Transkripttext danach NICHT mehr ändern, auch keine",
+    "   Tippfehler: Die Zeichen-Offsets sind Teil der Annotation."
+  ],
+  "artikel_hash": "a7d558be05c892b5",
+  "transkript_hash": "00b3ef29122c790a",
+  "artikel_saetze": [
+    {
+      "id": "s1",
+      "text": "Roetgen/Trier Nach dem gewaltsamen Tod einer Familie aus Roetgen auf den Kapverden soll der Prozess gegen den Tatverdächtigen im Herbst beginnen."
+    },
+    {
+      "id": "s2",
+      "text": "Das zuständige Landgericht Trier hat die Anklage der Staatsanwaltschaft zugelassen und den Beginn der Hauptverhandlung auf Mittwoch, 21. Oktober, terminiert."
+    },
+    {
+      "id": "s3",
+      "text": "Bis Anfang Dezember sind zunächst sieben Verhandlungstage angesetzt."
+    },
+    {
+      "id": "s4",
+      "text": "Die Staatsanwaltschaft Trier wirft dem jungen Mann aus der Vulkaneifel Mord in einem Fall und Totschlag in zwei weiteren Fällen vor."
+    },
+    {
+      "id": "s5",
+      "text": "Er soll am 23. Dezember 2025 während eines gemeinsamen Weihnachtsurlaubs auf der kapverdischen Insel São Vicente seinen Vater, dessen Lebensgefährtin und deren Tochter mit Messerstichen getötet haben."
+    },
+    {
+      "id": "s6",
+      "text": "Die drei Opfer stammten aus Roetgen."
+    },
+    {
+      "id": "s7",
+      "text": "Nach Darstellung der Staatsanwaltschaft soll der zur Tatzeit 19-Jährige zunächst die Tochter der Lebensgefährtin seines Vaters in ihrem Zimmer angegriffen haben, nachdem diese sich zum Schlafen ins Bett begeben hatte."
+    },
+    {
+      "id": "s8",
+      "text": "Sie starb an einer tödlichen Verletzung im Halsbereich."
+    },
+    {
+      "id": "s9",
+      "text": "In diesem Fall geht die Staatsanwaltschaft von Mord aus, weil die junge Frau nach Einschätzung der Ermittler arglos war und keine Möglichkeit zur Gegenwehr gehabt haben dürfte."
+    },
+    {
+      "id": "s10",
+      "text": "Anschließend soll der Angeklagte auch seinen Vater und dessen Lebensgefährtin mit dem Messer angegriffen haben."
+    },
+    {
+      "id": "s11",
+      "text": "Dabei soll es zu einem Kampf gekommen sein."
+    },
+    {
+      "id": "s12",
+      "text": "Beide starben ebenfalls an Stichverletzungen im Halsbereich."
+    },
+    {
+      "id": "s13",
+      "text": "Was den Angriff auslöste und welches Motiv dahinterstehen könnte, ist weiter unklar."
+    },
+    {
+      "id": "s14",
+      "text": "In Lissabon festgenommen"
+    },
+    {
+      "id": "s15",
+      "text": "Noch während der Tat soll die Lebensgefährtin des Vaters mit ihrem Handy über Whatsapp eine Nachricht an eine Verwandte in Deutschland geschickt haben."
+    },
+    {
+      "id": "s16",
+      "text": "Die Verwandte alarmierte daraufhin die deutsche Polizei, die wiederum die Behörden auf den Kapverden informierte."
+    },
+    {
+      "id": "s17",
+      "text": "Nach der Tat soll der 19-Jährige mit einem Taxi zum Flughafen gefahren und noch am selben Tag nach Lissabon geflogen sein."
+    },
+    {
+      "id": "s18",
+      "text": "Dort wurde er am 25. Dezember von der portugiesischen Polizei festgenommen."
+    },
+    {
+      "id": "s19",
+      "text": "Am 14. Januar wurde er nach Deutschland ausgeliefert."
+    },
+    {
+      "id": "s20",
+      "text": "Seitdem sitzt er in Untersuchungshaft in der Jugendstrafanstalt Wittlich."
+    },
+    {
+      "id": "s21",
+      "text": "Zu den Vorwürfen hat er bislang geschwiegen."
+    },
+    {
+      "id": "s22",
+      "text": "Hinweise darauf, dass er zur Tatzeit unter Alkohol- oder Drogeneinfluss stand, gebe es nicht, sagte der Leitende Trierer Oberstaatsanwalt Peter Fritzen der Zeitung „Trierischer Volksfreund“."
+    },
+    {
+      "id": "s23",
+      "text": "Dass der Fall in Trier verhandelt wird, liegt am letzten Wohnort des Angeklagten."
+    },
+    {
+      "id": "s24",
+      "text": "Der 19-Jährige lebte zuletzt bei seiner leiblichen Mutter in der Vulkaneifel."
+    },
+    {
+      "id": "s25",
+      "text": "Nach deutschem Recht können auch Taten im Ausland in Deutschland verfolgt werden, wenn der mutmaßliche Täter oder die Opfer Deutsche sind."
+    },
+    {
+      "id": "s26",
+      "text": "Auf deutscher Seite übernahm deshalb die Staatsanwaltschaft Trier die Ermittlungen."
+    },
+    {
+      "id": "s27",
+      "text": "Weil der Angeklagte zur Tatzeit 19 Jahre alt war, gilt er nach deutschem Recht als Heranwachsender."
+    },
+    {
+      "id": "s28",
+      "text": "Deshalb wird vor der Jugendkammer des Landgerichts Trier verhandelt."
+    },
+    {
+      "id": "s29",
+      "text": "Im Prozess wird auch zu klären sein, ob bei einer Verurteilung Jugendstrafrecht oder Erwachsenenstrafrecht angewendet würde."
+    },
+    {
+      "id": "s30",
+      "text": "Bei Anwendung von Jugendstrafrecht liegt die Höchststrafe für Heranwachsende grundsätzlich bei zehn Jahren; bei Mord kann sie unter bestimmten Voraussetzungen auf bis zu 15 Jahre steigen."
+    },
+    {
+      "id": "s31",
+      "text": "Wird Erwachsenenstrafrecht angewendet, sieht das Gesetz bei Mord grundsätzlich lebenslange Freiheitsstrafe vor."
+    }
+  ],
+  "eintraege": [
+    {
+      "satz": "t1",
+      "text": "Der Prozess nach dem gewaltsamen Tod von drei Menschen aus Roetgen auf den Kapverden soll vor dem Landgericht Trier beginnen.",
+      "start": 0,
+      "end": 125,
+      "geprueft": false,
+      "notwendig": [
+        "s1",
+        "s2"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c1"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t2",
+      "text": "Das Gericht hat die Anklage der Staatsanwaltschaft Trier zugelassen und die Hauptverhandlung für Mittwoch, den 21. Oktober, angesetzt.",
+      "start": 126,
+      "end": 260,
+      "geprueft": false,
+      "notwendig": [
+        "s2"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c2"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t3",
+      "text": "Bis Anfang Dezember sind zunächst sieben Verhandlungstage geplant.",
+      "start": 261,
+      "end": 327,
+      "geprueft": false,
+      "notwendig": [
+        "s3"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c3"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t4",
+      "text": "Die Staatsanwaltschaft wirft einem jungen Mann aus der Vulkaneifel Mord und zwei Fälle von Totschlag vor.",
+      "start": 329,
+      "end": 434,
+      "geprueft": false,
+      "notwendig": [
+        "s4"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c4"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t5",
+      "text": "Er soll während eines Weihnachtsurlaubs auf der Insel São Vicente seinen Vater, dessen Lebensgefährtin und deren Tochter mit einem Messer getötet haben.",
+      "start": 435,
+      "end": 587,
+      "geprueft": false,
+      "notwendig": [
+        "s5"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c5"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t6",
+      "text": "Die Tat soll sich am 23. Dezember 2025 ereignet haben.",
+      "start": 588,
+      "end": 642,
+      "geprueft": false,
+      "notwendig": [
+        "s5"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c6"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t7",
+      "text": "Nach Angaben der Ermittler griff der damals 19-Jährige zunächst die Tochter der Lebensgefährtin in ihrem Schlafzimmer an.",
+      "start": 644,
+      "end": 765,
+      "geprueft": false,
+      "notwendig": [
+        "s7",
+        "s9"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c7"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t8",
+      "text": "Die junge Frau erlitt eine tödliche Verletzung am Hals.",
+      "start": 766,
+      "end": 821,
+      "geprueft": false,
+      "notwendig": [
+        "s8",
+        "s9"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c8"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t9",
+      "text": "Die Staatsanwaltschaft wertet diesen Fall als Mord, weil das Opfer arglos gewesen sei und sich vermutlich nicht habe wehren können.",
+      "start": 822,
+      "end": 953,
+      "geprueft": false,
+      "notwendig": [
+        "s9"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c9"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t10",
+      "text": "Danach soll der Beschuldigte seinen Vater und dessen Lebensgefährtin angegriffen haben.",
+      "start": 954,
+      "end": 1041,
+      "geprueft": false,
+      "notwendig": [
+        "s10"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c10"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t11",
+      "text": "Dabei sei es zu einem Kampf gekommen.",
+      "start": 1042,
+      "end": 1079,
+      "geprueft": false,
+      "notwendig": [
+        "s11"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c11"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t12",
+      "text": "Beide starben ebenfalls durch Stichverletzungen im Halsbereich.",
+      "start": 1080,
+      "end": 1143,
+      "geprueft": false,
+      "notwendig": [
+        "s12"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c12"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t13",
+      "text": "Das Motiv ist weiterhin unklar.",
+      "start": 1144,
+      "end": 1175,
+      "geprueft": false,
+      "notwendig": [
+        "s13"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c13"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t14",
+      "text": "Die Lebensgefährtin soll während der Tat per Whatsapp eine Verwandte in Deutschland alarmiert haben.",
+      "start": 1177,
+      "end": 1277,
+      "geprueft": false,
+      "notwendig": [
+        "s15",
+        "s16"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c14"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t15",
+      "text": "Über die deutsche Polizei wurden die Behörden auf den Kapverden informiert.",
+      "start": 1278,
+      "end": 1353,
+      "geprueft": false,
+      "notwendig": [
+        "s16"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c15"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t16",
+      "text": "Der Verdächtige floh laut Ermittlungen noch am selben Tag nach Lissabon, wo ihn die portugiesische Polizei am 25. Dezember festnahm.",
+      "start": 1354,
+      "end": 1486,
+      "geprueft": false,
+      "notwendig": [
+        "s17",
+        "s18"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c16"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t17",
+      "text": "Seit seiner Auslieferung nach Deutschland am 14. Januar sitzt er in der Jugendstrafanstalt Wittlich in Untersuchungshaft.",
+      "start": 1487,
+      "end": 1608,
+      "geprueft": false,
+      "notwendig": [
+        "s19",
+        "s20"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c17"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t18",
+      "text": "Der Leitende Trierer Oberstaatsanwalt Peter Fritzen sagte, Hinweise auf Alkohol- oder Drogeneinfluss gebe es nicht.",
+      "start": 1609,
+      "end": 1724,
+      "geprueft": false,
+      "notwendig": [
+        "s22"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c18"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t19",
+      "text": "Verhandelt wird in Trier, weil der Angeklagte zuletzt in der Vulkaneifel lebte.",
+      "start": 1726,
+      "end": 1805,
+      "geprueft": false,
+      "notwendig": [
+        "s23",
+        "s24"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c19"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t20",
+      "text": "Da er zur Tatzeit Heranwachsender war, entscheidet die Jugendkammer auch darüber, ob Jugend- oder Erwachsenenstrafrecht gilt.",
+      "start": 1806,
+      "end": 1931,
+      "geprueft": false,
+      "notwendig": [
+        "s27",
+        "s29"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [
+        "nli_widerspruch"
+      ],
+      "claims_im_lauf": [
+        "c20"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    }
+  ]
+}

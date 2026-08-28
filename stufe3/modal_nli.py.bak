@@ -1,0 +1,29 @@
+import modal
+
+image = (modal.Image.debian_slim(python_version="3.12")
+         .uv_pip_install("torch", "transformers", "sentencepiece",
+                         "protobuf", "fastapi[standard]")
+         .env({"HF_HUB_CACHE": "/cache", "ALIGNMENT_LAB_DEVICE": "cuda"})
+         .add_local_python_source("nli"))          # dein eigenes Modul
+
+cache = modal.Volume.from_name("hf-cache", create_if_missing=True)
+app = modal.App("articly-nli", image=image)
+
+@app.cls(gpu="L4", volumes={"/cache": cache},
+         scaledown_window=300,          # 5 min warm — deckt den Abstand
+         enable_memory_snapshot=True,   # zwischen zwei Paaren im Batchlauf
+         timeout=600)
+class Nli:
+    modell: str = modal.parameter(default="nli-mdeberta-2mil7")
+
+    @modal.enter(snap=True)
+    def laden(self):
+        import nli
+        nli.load_nli(self.modell)      # Labelreihenfolge wird hier geprobt
+
+    @modal.fastapi_endpoint(method="POST", requires_proxy_auth=True)
+    def classify(self, body: dict):
+        import nli
+        paare = [(p["premise"], p["hypothesis"]) for p in body["pairs"]]
+        return {"model": self.modell,
+                "results": nli.classify_lokal(paare, self.modell)}

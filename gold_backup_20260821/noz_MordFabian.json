@@ -1,0 +1,445 @@
+{
+  "paar": "noz_MordFabian",
+  "split": "dev",
+  "anleitung": [
+    "Arbeitsanweisung (diese Zeilen bleiben in der Datei stehen):",
+    "1. Jede Zeile mit \"geprueft\": false durchgehen und auf true setzen.",
+    "2. notwendig = Sätze, ohne die ein Teil der Aussage unbelegt bliebe.",
+    "   zulaessig = stützt ebenfalls, ist aber entbehrlich (Dubletten).",
+    "3. relation prüfen: direkt | aggregiert | bedeutung_verschoben |",
+    "   inferiert | keine_quelle.",
+    "4. flags_erwartet: nur Befunde, die WIRKLICH zutreffen sollten",
+    "   (zahlkonflikt, ort_konflikt, kuerzel_konflikt, wortlaut_abweichung,",
+    "   ident_unbelegt, zahl_unbelegt). Leere Liste heißt: kein Befund.",
+    "5. Zum Schluss EINMAL umgekehrt: den Artikel lesen und fragen, welcher",
+    "   Transkriptsatz diese Stelle nutzt. Das fängt die Quellen, die die",
+    "   Pipeline gar nicht erst vorgeschlagen hat — der Bias des Entwurfs.",
+    "6. Artikel- und Transkripttext danach NICHT mehr ändern, auch keine",
+    "   Tippfehler: Die Zeichen-Offsets sind Teil der Annotation."
+  ],
+  "artikel_hash": "8170f64e887b0606",
+  "transkript_hash": "1c74c5946d2fdd3b",
+  "artikel_saetze": [
+    {
+      "id": "s1",
+      "text": "\"„Zu 100 Prozent Fabian“: Mit diesen Aussagen belastet ein weiterer Zeuge die Angeklagte\nIm Fall Fabian war die Angeklagte zweimal am Fundort, bevor sie sich bei der Polizei meldete."
+    },
+    {
+      "id": "s2",
+      "text": "So schildern es Zeugen."
+    },
+    {
+      "id": "s3",
+      "text": "Der Polizei sagte sie, sie habe den Leichnam zufällig gefunden."
+    },
+    {
+      "id": "s4",
+      "text": "Nun belastet sie eine weitere Zeugenaussage."
+    },
+    {
+      "id": "s5",
+      "text": "Die wegen Mordes an dem achtjährigen Fabian angeklagte Frau ist auch nach der Schilderung eines zweiten Zeugen schon einen Tag vor dem offiziellen Fund der Kinderleiche am Fundort gewesen."
+    },
+    {
+      "id": "s6",
+      "text": "Sie habe ihn am 13. Oktober 2025 abends angerufen und ihn gebeten, mit ihr zum Tümpel bei Klein Upahl zu fahren."
+    },
+    {
+      "id": "s7",
+      "text": "Sie seien dann mit seinem Auto dorthin gefahren."
+    },
+    {
+      "id": "s8",
+      "text": "„Dann habe ich den Jungen da halt liegen sehen“, sagte der Zeuge am zwölften Verhandlungstag vor dem Landgericht Rostock."
+    },
+    {
+      "id": "s9",
+      "text": "Beide trafen gegen Mitternacht an dem Tümpel ein, den die Angeklagte laut Zeuge als „Schweinesuhle“ bezeichnete."
+    },
+    {
+      "id": "s10",
+      "text": "Sie habe ihn dann gebeten, er solle den Leichnam anleuchten und dann gemeint: „Das ist zu 100 Prozent Fabian.“"
+    },
+    {
+      "id": "s11",
+      "text": "Eine emotionale Reaktion habe sie nicht gezeigt, allerdings beim Tümpel noch gesagt, dass der Leichnam gebrannt habe oder angezündet worden sei."
+    },
+    {
+      "id": "s12",
+      "text": "Auf der Rückfahrt habe die Angeklagte gelacht, wobei sie ihm sagte, dass sie nicht mehr weinen könne und sich das dann oft bei ihr in Lachen umkehre."
+    },
+    {
+      "id": "s13",
+      "text": "Laut dem Zeugen waren er und die Angeklagte ungefähr eine Minute an dem Tümpel, bevor sie wieder zurück in das wenige Kilometer entfernte Dorf im Landkreis Rostock fuhren, in dem beide als Nachbarn wohnten."
+    },
+    {
+      "id": "s14",
+      "text": "Die Angeklagte habe noch gefragt, ob sie die Polizei informieren sollten."
+    },
+    {
+      "id": "s15",
+      "text": "„Was willst Du der Polizei denn erzählen?"
+    },
+    {
+      "id": "s16",
+      "text": "Das glaubt uns kein Schwein“, habe er daraufhin geantwortet."
+    },
+    {
+      "id": "s17",
+      "text": "Bereits vorige Woche hatte ein andere Zeuge vor der Schwurgerichtskammer ausgesagt, dass er am selben Abend nur wenige Stunden zuvor mit der Angeklagten an dem Tümpel war."
+    },
+    {
+      "id": "s18",
+      "text": "Die Angeklagte selbst informierte die Polizei erst am 14. Oktober und sagte, sie habe den Leichnam des Kindes zufällig beim Spaziergehen mit dem Hund entdeckt."
+    },
+    {
+      "id": "s19",
+      "text": "Laut Staatsanwaltschaft starb der Junge am 10. Oktober."
+    },
+    {
+      "id": "s20",
+      "text": "Die Anklage wirft der 30-jährigen Deutschen vor, ihn mit sechs Messerstichen getötet und dann angezündet zu haben."
+    },
+    {
+      "id": "s21",
+      "text": "Die Frau, die seit 7. November 2025 in Untersuchungshaft sitzt, schweigt bislang zu den Vorwürfen."
+    },
+    {
+      "id": "s22",
+      "text": "Für sie gilt die Unschuldsvermutung."
+    },
+    {
+      "id": "s23",
+      "text": "\""
+    }
+  ],
+  "eintraege": [
+    {
+      "satz": "t1",
+      "text": "Ein weiterer Zeuge belastet die Angeklagte im Mordfall Fabian schwer.",
+      "start": 0,
+      "end": 69,
+      "geprueft": true,
+      "notwendig": [
+        "s1"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c1"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t2",
+      "text": "Die dreißigjährige Deutsche steht vor dem Landgericht Rostock unter Verdacht, den achtjährigen Fabian getötet zu haben.",
+      "start": 70,
+      "end": 189,
+      "geprueft": true,
+      "notwendig": [
+        "s8",
+        "s20"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c2"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t3",
+      "text": "Der Zeuge schilderte am zwölften Verhandlungstag, die Angeklagte habe ihn am Abend des dreizehnten Oktober angerufen und gebeten, mit ihr zu einem Tümpel bei Klein Upahl zu fahren.",
+      "start": 191,
+      "end": 371,
+      "geprueft": true,
+      "notwendig": [
+        "s6",
+        "s8"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c3"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t4",
+      "text": "Gegen Mitternacht seien sie dort angekommen.",
+      "start": 372,
+      "end": 416,
+      "geprueft": true,
+      "notwendig": [
+        "s9"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c4"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t5",
+      "text": "Den Tümpel habe die Angeklagte als „Schweinesuhle\" bezeichnet.",
+      "start": 417,
+      "end": 479,
+      "geprueft": true,
+      "notwendig": [
+        "s9"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c5"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t6",
+      "text": "Sie habe ihn gebeten, den Leichnam anzuleuchten, und dann gesagt: „Das ist zu hundert Prozent Fabian.\"",
+      "start": 480,
+      "end": 582,
+      "geprueft": true,
+      "notwendig": [
+        "s10"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c6"
+      ],
+      "relationen_gemischt": false,
+      "notiz": "S11 war komplett unnötig als zusätzliche Quelle"
+    },
+    {
+      "satz": "t7",
+      "text": "Eine emotionale Reaktion habe sie nicht gezeigt.",
+      "start": 583,
+      "end": 631,
+      "geprueft": true,
+      "notwendig": [
+        "s11"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c7"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t8",
+      "text": "Am Tümpel habe sie außerdem gesagt, dass der Leichnam gebrannt habe oder angezündet worden sei.",
+      "start": 632,
+      "end": 727,
+      "geprueft": true,
+      "notwendig": [
+        "s11"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c8"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t9",
+      "text": "Auf der Rückfahrt habe sie gelacht und erklärt, sie könne nicht mehr weinen – das schlage bei ihr oft in Lachen um.",
+      "start": 728,
+      "end": 843,
+      "geprueft": true,
+      "notwendig": [
+        "s12"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c9"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t10",
+      "text": "Nur etwa eine Minute seien sie an dem Tümpel gewesen, dann seien sie zurück in das wenige Kilometer entfernte Dorf gefahren, in dem beide als Nachbarn wohnten.",
+      "start": 845,
+      "end": 1004,
+      "geprueft": true,
+      "notwendig": [
+        "s13"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c10"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t11",
+      "text": "Als die Angeklagte fragte, ob sie die Polizei informieren sollten, habe der Zeuge geantwortet: „Was willst Du der Polizei denn erzählen?",
+      "start": 1005,
+      "end": 1141,
+      "geprueft": true,
+      "notwendig": [
+        "s14",
+        "s15"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c11"
+      ],
+      "relationen_gemischt": false,
+      "notiz": "S15 belegt die komplette direkte Rede, was trägt S16 an neuen Infos bei?"
+    },
+    {
+      "satz": "t12",
+      "text": "Das glaubt uns kein Schwein.\"",
+      "start": 1142,
+      "end": 1171,
+      "geprueft": true,
+      "notwendig": [
+        "s16"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c12"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t13",
+      "text": "Bereits in der Vorwoche hatte ein anderer Zeuge ausgesagt, er sei am selben Abend, nur wenige Stunden früher, ebenfalls mit der Angeklagten an dem Tümpel gewesen.",
+      "start": 1173,
+      "end": 1335,
+      "geprueft": true,
+      "notwendig": [
+        "s17"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c13"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t14",
+      "text": "Der Polizei gegenüber gab die Angeklagte am vierzehnten Oktober an, sie habe den Leichnam zufällig beim Spaziergang mit dem Hund entdeckt.",
+      "start": 1336,
+      "end": 1474,
+      "geprueft": true,
+      "notwendig": [
+        "s18"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c14"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t15",
+      "text": "Die Staatsanwaltschaft geht davon aus, dass Fabian am zehnten Oktober starb.",
+      "start": 1476,
+      "end": 1552,
+      "geprueft": true,
+      "notwendig": [
+        "s19"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c15"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t16",
+      "text": "Die Anklage wirft der Frau vor, ihn mit sechs Messerstichen getötet und anschließend angezündet zu haben.",
+      "start": 1553,
+      "end": 1658,
+      "geprueft": true,
+      "notwendig": [
+        "s20"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c16"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t17",
+      "text": "Die Angeklagte sitzt seit November zweitausendfünfundzwanzig in Untersuchungshaft und schweigt bislang zu den Vorwürfen.",
+      "start": 1659,
+      "end": 1779,
+      "geprueft": true,
+      "notwendig": [
+        "s21"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c17"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t18",
+      "text": "Für sie gilt die Unschuldsvermutung.",
+      "start": 1780,
+      "end": 1816,
+      "geprueft": true,
+      "notwendig": [
+        "s22"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c18"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    }
+  ]
+}

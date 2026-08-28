@@ -1,0 +1,974 @@
+{
+  "meta": {
+    "titel": "Brüssel Deutschland darf nach einer Entscheidung der Europäischen Kommission vier Halbleiteranlagen mit insgesamt 659 Millionen Euro fördern.",
+    "quelle": "Eigenes Paar",
+    "modell": "stufe0-2 · multilingual-e5-large-instruct + nli-mdeberta-2mil7",
+    "statistik": {
+      "saetze": 16,
+      "claims": 16,
+      "embeddings": 32,
+      "nli_paare": 16,
+      "dauer_s": 6.7
+    },
+    "ratelimit": {
+      "model": "multilingual-e5-large-instruct",
+      "checked_at": 1787353981.2066967,
+      "x-ratelimit-limit-minute": "15",
+      "x-ratelimit-remaining-minute": "13",
+      "x-ratelimit-limit-hour": "900",
+      "x-ratelimit-remaining-hour": "887",
+      "x-ratelimit-limit-day": "2000",
+      "x-ratelimit-remaining-day": "1984",
+      "x-ratelimit-limit-second": "2",
+      "x-ratelimit-remaining-second": "1",
+      "ratelimit-reset": "1",
+      "ratelimit-limit": "2",
+      "ratelimit-remaining": "1"
+    }
+  },
+  "article": {
+    "text": "Brüssel Deutschland darf nach einer Entscheidung der Europäischen Kommission vier Halbleiteranlagen mit insgesamt 659 Millionen Euro fördern. „Durch die Förderung von Innovationen im Halbleiterbereich stärken wir unsere technologische Souveränität und die Wettbewerbsfähigkeit Europas“, teilte die zuständige EU-Kommissarin Teresa Ribera dazu mit.\n\nDeutschland darf damit folgende direkte Zuschüsse bereitstellen:\n\n353 Millionen Euro – und damit der größte Einzelposten der vier genehmigten Projekte – gehen an die SME Element 3-5 GmbH für eine Anlage in Baesweiler. Dort soll laut EU-Kommission eine „weltweit einzigartige Fabrik“ entstehen, in der besonders leistungsstarke Wafer hergestellt werden sollen. Wafer werden unter anderem für die Herstellung von Mikrochips und Sensoren verwendet und kommen so unter anderem in der Automobilindustrie zum Einsatz.\n\n214 Millionen Euro für die Vishay Siliconix Itzehoe GmbH („Vishay“) für eine Anlage in Itzehoe (Schleswig-Holstein). Dort sollen spezielle Halbleiterschalter (Power-MOSFETs) hergestellt werden.\n\n74,4 Millionen Euro für die KLA-Tencor MIE GmbH („KLA“) für eine Anlage in Weilburg (Hessen), unter anderem für hochmoderne Messgeräte. Sie werden demnach zur Qualitätskontrolle bei der Massenproduktion von Halbleiterbauelementen eingesetzt.\n\n17,9 Millionen Euro für die KETEK GmbH für eine Anlage in München (Bayern) zur Herstellung von zwei hoch spezialisierten Chips, die für industrielle Sortier- und Recyclingsysteme eingesetzt werden.\n\nDie Projekte werden laut EU-Kommission jeweils gemeinsam aus dem Bundeshaushalt und von Landesbehörden finanziert. Die Beteiligten haben sich dafür demnach unter anderem dazu verpflichtet, positive Auswirkungen auf die Halbleiter-Wertschöpfungskette in der EU sicherzustellen und besonders mit Hochschulen und Forschungseinrichtungen zusammenzuarbeiten. Die EU will ihren Anteil an der weltweiten Halbleiterfertigung bis 2030 auf 20 Prozent steigern. Derzeit liegt der Anteil laut EU-Kommission bei rund 10 Prozent. (dpa)",
+    "sentences": [
+      {
+        "id": "s1",
+        "start": 0,
+        "end": 141,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Brüssel Deutschland darf nach einer Entscheidung der Europäischen Kommission vier Halbleiteranlagen mit insgesamt 659 Millionen Euro fördern."
+      },
+      {
+        "id": "s2",
+        "start": 142,
+        "end": 347,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "„Durch die Förderung von Innovationen im Halbleiterbereich stärken wir unsere technologische Souveränität und die Wettbewerbsfähigkeit Europas“, teilte die zuständige EU-Kommissarin Teresa Ribera dazu mit."
+      },
+      {
+        "id": "s3",
+        "start": 349,
+        "end": 413,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Deutschland darf damit folgende direkte Zuschüsse bereitstellen:"
+      },
+      {
+        "id": "s4",
+        "start": 415,
+        "end": 566,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "353 Millionen Euro – und damit der größte Einzelposten der vier genehmigten Projekte – gehen an die SME Element 3-5 GmbH für eine Anlage in Baesweiler."
+      },
+      {
+        "id": "s5",
+        "start": 567,
+        "end": 708,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Dort soll laut EU-Kommission eine „weltweit einzigartige Fabrik“ entstehen, in der besonders leistungsstarke Wafer hergestellt werden sollen."
+      },
+      {
+        "id": "s6",
+        "start": 709,
+        "end": 860,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Wafer werden unter anderem für die Herstellung von Mikrochips und Sensoren verwendet und kommen so unter anderem in der Automobilindustrie zum Einsatz."
+      },
+      {
+        "id": "s7",
+        "start": 862,
+        "end": 978,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "214 Millionen Euro für die Vishay Siliconix Itzehoe GmbH („Vishay“) für eine Anlage in Itzehoe (Schleswig-Holstein)."
+      },
+      {
+        "id": "s8",
+        "start": 979,
+        "end": 1055,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "Dort sollen spezielle Halbleiterschalter (Power-MOSFETs) hergestellt werden."
+      },
+      {
+        "id": "s9",
+        "start": 1057,
+        "end": 1192,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "74,4 Millionen Euro für die KLA-Tencor MIE GmbH („KLA“) für eine Anlage in Weilburg (Hessen), unter anderem für hochmoderne Messgeräte."
+      },
+      {
+        "id": "s10",
+        "start": 1193,
+        "end": 1298,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Sie werden demnach zur Qualitätskontrolle bei der Massenproduktion von Halbleiterbauelementen eingesetzt."
+      },
+      {
+        "id": "s11",
+        "start": 1300,
+        "end": 1497,
+        "block": "body",
+        "level": 0,
+        "paragraph": 5,
+        "text": "17,9 Millionen Euro für die KETEK GmbH für eine Anlage in München (Bayern) zur Herstellung von zwei hoch spezialisierten Chips, die für industrielle Sortier- und Recyclingsysteme eingesetzt werden."
+      },
+      {
+        "id": "s12",
+        "start": 1499,
+        "end": 1613,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "Die Projekte werden laut EU-Kommission jeweils gemeinsam aus dem Bundeshaushalt und von Landesbehörden finanziert."
+      },
+      {
+        "id": "s13",
+        "start": 1614,
+        "end": 1852,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "Die Beteiligten haben sich dafür demnach unter anderem dazu verpflichtet, positive Auswirkungen auf die Halbleiter-Wertschöpfungskette in der EU sicherzustellen und besonders mit Hochschulen und Forschungseinrichtungen zusammenzuarbeiten."
+      },
+      {
+        "id": "s14",
+        "start": 1853,
+        "end": 1949,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "Die EU will ihren Anteil an der weltweiten Halbleiterfertigung bis 2030 auf 20 Prozent steigern."
+      },
+      {
+        "id": "s15",
+        "start": 1950,
+        "end": 2014,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "Derzeit liegt der Anteil laut EU-Kommission bei rund 10 Prozent."
+      },
+      {
+        "id": "s16",
+        "start": 2015,
+        "end": 2020,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "(dpa)"
+      }
+    ]
+  },
+  "transcript": {
+    "text": "Die Europäische Kommission hat Deutschland erlaubt, vier Halbleiterprojekte mit insgesamt 659 Millionen Euro zu fördern. Das größte Vorhaben entsteht in Baesweiler: Die SME Element 3-5 GmbH erhält 353 Millionen Euro für eine neue Fabrik. Dort sollen besonders leistungsstarke Wafer produziert werden, die unter anderem für Mikrochips und Sensoren benötigt werden.\n\nDie zuständige EU-Kommissarin Teresa Ribera erklärte, die Förderung von Innovationen im Halbleiterbereich stärke Europas technologische Souveränität und Wettbewerbsfähigkeit. Die Anlage in Baesweiler soll nach Angaben der Kommission weltweit einzigartig sein. Wafer kommen beispielsweise in der Automobilindustrie zum Einsatz.\n\nWeitere 214 Millionen Euro darf Deutschland an die Vishay Siliconix Itzehoe GmbH für ein Werk in Itzehoe in Schleswig-Holstein vergeben. Dort sollen spezielle Halbleiterschalter hergestellt werden, sogenannte Power-MOSFETs.\n\nFür eine Anlage der KLA-Tencor MIE GmbH in Weilburg in Hessen sind 74,4 Millionen Euro vorgesehen. Das Unternehmen will unter anderem hochmoderne Messgeräte produzieren. Diese Geräte dienen der Qualitätskontrolle bei der Massenfertigung von Halbleiterbauelementen.\n\nDie KETEK GmbH erhält 17,9 Millionen Euro für eine Produktionsanlage in München in Bayern. Dort sollen zwei hoch spezialisierte Chips entstehen, die in industriellen Sortier- und Recyclingsystemen verwendet werden.\n\nFinanziert werden die Projekte jeweils gemeinsam aus dem Bundeshaushalt und durch die zuständigen Landesbehörden. Die beteiligten Unternehmen haben sich verpflichtet, positive Auswirkungen auf die europäische Halbleiter-Wertschöpfungskette sicherzustellen und mit Hochschulen sowie Forschungseinrichtungen zusammenzuarbeiten. Die Europäische Union will ihren Anteil an der weltweiten Halbleiterfertigung bis 2030 von derzeit rund zehn auf 20 Prozent erhöhen.",
+    "claims": [
+      {
+        "id": "c1",
+        "start": 0,
+        "end": 120,
+        "text": "Die Europäische Kommission hat Deutschland erlaubt, vier Halbleiterprojekte mit insgesamt 659 Millionen Euro zu fördern.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s1",
+            "start": 8,
+            "end": 141,
+            "spans": [
+              [
+                8,
+                19
+              ],
+              [
+                53,
+                81
+              ],
+              [
+                114,
+                141
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.84,
+        "margin": 0.52,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "vier",
+            "norm": "4",
+            "status": "match"
+          },
+          {
+            "type": "geld",
+            "surface": "659 Millionen Euro",
+            "norm": "659000000 EUR",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Anker 659000000 EUR eindeutig in s1 · Fundstellen erklären 67 % des Claims.",
+        "scores": {
+          "top": 0.908,
+          "lex": 0.517,
+          "emb": 0.967,
+          "anchor": 0.3,
+          "nli": 0.998
+        }
+      },
+      {
+        "id": "c2",
+        "start": 121,
+        "end": 237,
+        "text": "Das größte Vorhaben entsteht in Baesweiler: Die SME Element 3-5 GmbH erhält 353 Millionen Euro für eine neue Fabrik.",
+        "relation": "bedeutung_verschoben",
+        "sources": [
+          {
+            "sentence": "s4",
+            "start": 415,
+            "end": 566,
+            "spans": [
+              [
+                415,
+                433
+              ],
+              [
+                450,
+                456
+              ],
+              [
+                519,
+                535
+              ],
+              [
+                555,
+                566
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s5",
+            "start": 624,
+            "end": 641,
+            "spans": [
+              [
+                624,
+                641
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.82,
+        "margin": 0.49,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "3",
+            "norm": "3",
+            "status": "match"
+          },
+          {
+            "type": "zahl",
+            "surface": "5",
+            "norm": "5",
+            "status": "match"
+          },
+          {
+            "type": "geld",
+            "surface": "353 Millionen Euro",
+            "norm": "353000000 EUR",
+            "status": "match"
+          }
+        ],
+        "flags": [
+          "bedeutung_verschoben"
+        ],
+        "wortlaut": null,
+        "note": "Anker 353000000 EUR eindeutig in s4 · Verdichtet aus s4 + s5 (s5 erklärt zusätzlich 14 %). · Fundstellen erklären 68 % des Claims. · Bedeutung verschoben — die Fundstelle widerspricht dem Claim nicht, stützt ihn aber auch nicht vollständig (entailment 0.46, neutral 0.52).",
+        "scores": {
+          "top": 0.829,
+          "lex": 0.457,
+          "emb": 0.925,
+          "anchor": 0.3,
+          "nli": 0.457
+        }
+      },
+      {
+        "id": "c3",
+        "start": 238,
+        "end": 363,
+        "text": "Dort sollen besonders leistungsstarke Wafer produziert werden, die unter anderem für Mikrochips und Sensoren benötigt werden.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s5",
+            "start": 650,
+            "end": 681,
+            "spans": [
+              [
+                650,
+                681
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s6",
+            "start": 709,
+            "end": 821,
+            "spans": [
+              [
+                709,
+                735
+              ],
+              [
+                760,
+                783
+              ],
+              [
+                814,
+                821
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.7,
+        "margin": 0.24,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s5 + s6 (s6 erklärt zusätzlich 28 %). · Fundstellen erklären 75 % des Claims.",
+        "scores": {
+          "top": 0.622,
+          "lex": 0.4,
+          "emb": 0.642,
+          "anchor": 0,
+          "nli": 0.998
+        }
+      },
+      {
+        "id": "c4",
+        "start": 365,
+        "end": 539,
+        "text": "Die zuständige EU-Kommissarin Teresa Ribera erklärte, die Förderung von Innovationen im Halbleiterbereich stärke Europas technologische Souveränität und Wettbewerbsfähigkeit.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s2",
+            "start": 142,
+            "end": 337,
+            "spans": [
+              [
+                142,
+                208
+              ],
+              [
+                220,
+                284
+              ],
+              [
+                298,
+                337
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.95,
+        "margin": 0.59,
+        "entities": [
+          {
+            "type": "person",
+            "surface": "Teresa Ribera",
+            "norm": "teresa ribera",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Name „Teresa Ribera“ eindeutig in s2 · Fundstellen erklären 90 % des Claims.",
+        "scores": {
+          "top": 0.961,
+          "lex": 0.835,
+          "emb": 1,
+          "anchor": 0.2,
+          "nli": 0.988
+        }
+      },
+      {
+        "id": "c5",
+        "start": 540,
+        "end": 624,
+        "text": "Die Anlage in Baesweiler soll nach Angaben der Kommission weltweit einzigartig sein.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s5",
+            "start": 585,
+            "end": 623,
+            "spans": [
+              [
+                585,
+                623
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s4",
+            "start": 545,
+            "end": 566,
+            "spans": [
+              [
+                545,
+                566
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.73,
+        "margin": 0.34,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s5 + s4 (s4 erklärt zusätzlich 26 %). · Fundstellen erklären 84 % des Claims.",
+        "scores": {
+          "top": 0.622,
+          "lex": 0.316,
+          "emb": 0.568,
+          "anchor": 0,
+          "nli": 0.997
+        }
+      },
+      {
+        "id": "c6",
+        "start": 625,
+        "end": 691,
+        "text": "Wafer kommen beispielsweise in der Automobilindustrie zum Einsatz.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s6",
+            "start": 709,
+            "end": 860,
+            "spans": [
+              [
+                709,
+                714
+              ],
+              [
+                798,
+                804
+              ],
+              [
+                829,
+                860
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.74,
+        "margin": 0.44,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 64 % des Claims.",
+        "scores": {
+          "top": 0.752,
+          "lex": 0.453,
+          "emb": 0.822,
+          "anchor": 0,
+          "nli": 0.998
+        }
+      },
+      {
+        "id": "c7",
+        "start": 693,
+        "end": 829,
+        "text": "Weitere 214 Millionen Euro darf Deutschland an die Vishay Siliconix Itzehoe GmbH für ein Werk in Itzehoe in Schleswig-Holstein vergeben.",
+        "relation": "bedeutung_verschoben",
+        "sources": [
+          {
+            "sentence": "s7",
+            "start": 862,
+            "end": 978,
+            "spans": [
+              [
+                862,
+                880
+              ],
+              [
+                889,
+                927
+              ],
+              [
+                949,
+                978
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.78,
+        "margin": 0.5,
+        "entities": [
+          {
+            "type": "geld",
+            "surface": "214 Millionen Euro",
+            "norm": "214000000 EUR",
+            "status": "match"
+          }
+        ],
+        "flags": [
+          "bedeutung_verschoben"
+        ],
+        "wortlaut": null,
+        "note": "Anker 214000000 EUR eindeutig in s7 · Fundstellen erklären 64 % des Claims. · Bedeutung verschoben — die Fundstelle widerspricht dem Claim nicht, stützt ihn aber auch nicht vollständig (entailment 0.10, neutral 0.47).",
+        "scores": {
+          "top": 0.914,
+          "lex": 0.739,
+          "emb": 0.883,
+          "anchor": 0.3,
+          "nli": 0.103
+        }
+      },
+      {
+        "id": "c8",
+        "start": 830,
+        "end": 916,
+        "text": "Dort sollen spezielle Halbleiterschalter hergestellt werden, sogenannte Power-MOSFETs.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s8",
+            "start": 979,
+            "end": 1055,
+            "spans": [
+              [
+                979,
+                1055
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.85,
+        "margin": 0.54,
+        "entities": [
+          {
+            "type": "person",
+            "surface": "Power-MOSFETs",
+            "norm": "power-mosfets",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 75 % des Claims.",
+        "scores": {
+          "top": 0.943,
+          "lex": 0.846,
+          "emb": 0.936,
+          "anchor": 0,
+          "nli": 0.995
+        }
+      },
+      {
+        "id": "c9",
+        "start": 918,
+        "end": 1016,
+        "text": "Für eine Anlage der KLA-Tencor MIE GmbH in Weilburg in Hessen sind 74,4 Millionen Euro vorgesehen.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s9",
+            "start": 1057,
+            "end": 1148,
+            "spans": [
+              [
+                1057,
+                1076
+              ],
+              [
+                1089,
+                1148
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.87,
+        "margin": 0.46,
+        "entities": [
+          {
+            "type": "geld",
+            "surface": "74,4 Millionen Euro",
+            "norm": "74400000 EUR",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Anker 74400000 EUR eindeutig in s9 · Fundstellen erklären 80 % des Claims.",
+        "scores": {
+          "top": 0.923,
+          "lex": 0.583,
+          "emb": 0.935,
+          "anchor": 0.3,
+          "nli": 0.997
+        }
+      },
+      {
+        "id": "c10",
+        "start": 1017,
+        "end": 1087,
+        "text": "Das Unternehmen will unter anderem hochmoderne Messgeräte produzieren.",
+        "relation": "bedeutung_verschoben",
+        "sources": [
+          {
+            "sentence": "s9",
+            "start": 1157,
+            "end": 1192,
+            "spans": [
+              [
+                1157,
+                1192
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.47,
+        "margin": 0.21,
+        "entities": [],
+        "flags": [
+          "bedeutung_verschoben"
+        ],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 54 % des Claims. · Unter der Direkt-Schwelle — zur Prüfung empfohlen. · Bedeutung verschoben — die Fundstelle widerspricht dem Claim nicht, stützt ihn aber auch nicht vollständig (entailment 0.24, neutral 0.75).",
+        "scores": {
+          "top": 0.535,
+          "lex": 0.392,
+          "emb": 0.358,
+          "anchor": 0,
+          "nli": 0.243
+        }
+      },
+      {
+        "id": "c11",
+        "start": 1088,
+        "end": 1182,
+        "text": "Diese Geräte dienen der Qualitätskontrolle bei der Massenfertigung von Halbleiterbauelementen.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s10",
+            "start": 1193,
+            "end": 1286,
+            "spans": [
+              [
+                1193,
+                1234
+              ],
+              [
+                1264,
+                1286
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.8,
+        "margin": 0.47,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 65 % des Claims.",
+        "scores": {
+          "top": 0.811,
+          "lex": 0.596,
+          "emb": 0.909,
+          "anchor": 0,
+          "nli": 0.997
+        }
+      },
+      {
+        "id": "c12",
+        "start": 1184,
+        "end": 1274,
+        "text": "Die KETEK GmbH erhält 17,9 Millionen Euro für eine Produktionsanlage in München in Bayern.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s11",
+            "start": 1300,
+            "end": 1373,
+            "spans": [
+              [
+                1300,
+                1319
+              ],
+              [
+                1328,
+                1373
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s10",
+            "start": 1193,
+            "end": 1298,
+            "spans": [
+              [
+                1193,
+                1298
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.81,
+        "margin": 0.42,
+        "entities": [
+          {
+            "type": "geld",
+            "surface": "17,9 Millionen Euro",
+            "norm": "17900000 EUR",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Anker 17900000 EUR eindeutig in s11 · Verdichtet aus s11 + s10 (s10 erklärt zusätzlich 13 %). · Fundstellen erklären 74 % des Claims.",
+        "scores": {
+          "top": 0.845,
+          "lex": 0.426,
+          "emb": 0.863,
+          "anchor": 0.3,
+          "nli": 0.994
+        }
+      },
+      {
+        "id": "c13",
+        "start": 1275,
+        "end": 1398,
+        "text": "Dort sollen zwei hoch spezialisierte Chips entstehen, die in industriellen Sortier- und Recyclingsystemen verwendet werden.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s11",
+            "start": 1395,
+            "end": 1478,
+            "spans": [
+              [
+                1395,
+                1478
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.66,
+        "margin": 0.4,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "zwei",
+            "norm": "2",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 68 % des Claims.",
+        "scores": {
+          "top": 0.734,
+          "lex": 0.526,
+          "emb": 0.623,
+          "anchor": 0,
+          "nli": 0.996
+        }
+      },
+      {
+        "id": "c14",
+        "start": 1400,
+        "end": 1513,
+        "text": "Finanziert werden die Projekte jeweils gemeinsam aus dem Bundeshaushalt und durch die zuständigen Landesbehörden.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s12",
+            "start": 1499,
+            "end": 1613,
+            "spans": [
+              [
+                1499,
+                1511
+              ],
+              [
+                1546,
+                1613
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.85,
+        "margin": 0.66,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 83 % des Claims.",
+        "scores": {
+          "top": 0.89,
+          "lex": 0.778,
+          "emb": 0.875,
+          "anchor": 0,
+          "nli": 0.971
+        }
+      },
+      {
+        "id": "c15",
+        "start": 1514,
+        "end": 1725,
+        "text": "Die beteiligten Unternehmen haben sich verpflichtet, positive Auswirkungen auf die europäische Halbleiter-Wertschöpfungskette sicherzustellen und mit Hochschulen sowie Forschungseinrichtungen zusammenzuarbeiten.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s13",
+            "start": 1614,
+            "end": 1852,
+            "spans": [
+              [
+                1614,
+                1629
+              ],
+              [
+                1674,
+                1774
+              ],
+              [
+                1793,
+                1852
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.88,
+        "margin": 0.64,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 82 % des Claims.",
+        "scores": {
+          "top": 0.917,
+          "lex": 0.807,
+          "emb": 0.928,
+          "anchor": 0,
+          "nli": 0.963
+        }
+      },
+      {
+        "id": "c16",
+        "start": 1726,
+        "end": 1858,
+        "text": "Die Europäische Union will ihren Anteil an der weltweiten Halbleiterfertigung bis 2030 von derzeit rund zehn auf 20 Prozent erhöhen.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s14",
+            "start": 1853,
+            "end": 1939,
+            "spans": [
+              [
+                1853,
+                1939
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s15",
+            "start": 1968,
+            "end": 2013,
+            "spans": [
+              [
+                1968,
+                1974
+              ],
+              [
+                2003,
+                2013
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.86,
+        "margin": 0.62,
+        "entities": [
+          {
+            "type": "datum",
+            "surface": "2030",
+            "norm": "2030",
+            "status": "match"
+          },
+          {
+            "type": "zahl",
+            "surface": "zehn",
+            "norm": "10",
+            "status": "match"
+          },
+          {
+            "type": "prozent",
+            "surface": "20 Prozent",
+            "norm": "20 %",
+            "status": "match"
+          },
+          {
+            "type": "ort",
+            "surface": "Union",
+            "norm": "union",
+            "status": "unbelegt"
+          }
+        ],
+        "flags": [
+          "ident_unbelegt"
+        ],
+        "wortlaut": null,
+        "note": "Anker 2030 eindeutig in s14 · Anker 10 eindeutig in s15 · Anker 20 % eindeutig in s14 · Verdichtet aus s14 + s15 (Zahlen-Anker in s15). · Fundstellen erklären 70 % des Claims. · „Union“ im Artikel nicht auffindbar.",
+        "scores": {
+          "top": 0.938,
+          "lex": 0.694,
+          "emb": 0.97,
+          "anchor": 0.38,
+          "nli": 0.972
+        }
+      }
+    ]
+  }
+}

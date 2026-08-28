@@ -1,0 +1,740 @@
+{
+  "paar": "noz_Helgoland",
+  "split": "test",
+  "anleitung": [
+    "Arbeitsanweisung (diese Zeilen bleiben in der Datei stehen):",
+    "1. Jede Zeile mit \"geprueft\": false durchgehen und auf true setzen.",
+    "2. notwendig = Sätze, ohne die ein Teil der Aussage unbelegt bliebe.",
+    "   zulaessig = stützt ebenfalls, ist aber entbehrlich (Dubletten).",
+    "3. relation prüfen: direkt | aggregiert | bedeutung_verschoben |",
+    "   inferiert | keine_quelle.",
+    "4. flags_erwartet: nur Befunde, die WIRKLICH zutreffen sollten",
+    "   (zahlkonflikt, ort_konflikt, kuerzel_konflikt, wortlaut_abweichung,",
+    "   ident_unbelegt, zahl_unbelegt). Leere Liste heißt: kein Befund.",
+    "5. Zum Schluss EINMAL umgekehrt: den Artikel lesen und fragen, welcher",
+    "   Transkriptsatz diese Stelle nutzt. Das fängt die Quellen, die die",
+    "   Pipeline gar nicht erst vorgeschlagen hat — der Bias des Entwurfs.",
+    "6. Artikel- und Transkripttext danach NICHT mehr ändern, auch keine",
+    "   Tippfehler: Die Zeichen-Offsets sind Teil der Annotation."
+  ],
+  "artikel_hash": "ac159dad1904e549",
+  "transkript_hash": "54ecc8f818cabc48",
+  "artikel_saetze": [
+    {
+      "id": "s1",
+      "text": "\"Helgoland als Sehnsuchtsort entstand aus einer Hungersnot"
+    },
+    {
+      "id": "s2",
+      "text": "Auf Helgoland, hieß es 1926 im Hamburger Echo, „ist ja schon jeder Atemzug ein Bad für Lungen und Hals!“"
+    },
+    {
+      "id": "s3",
+      "text": "Anlass der Schwärmerei war der 100. Geburtstag, den das Seebad damals feierte."
+    },
+    {
+      "id": "s4",
+      "text": "„Erst das Badewesen hat den Wohlstand der Inselbewohner begründet, und erst der Kurbetrieb hat Helgoland so beliebt gemacht“, stand im Berliner Tageblatt."
+    },
+    {
+      "id": "s5",
+      "text": "Ohne das Label des Seebads wäre Helgoland jedenfalls nicht das, was es heute ist."
+    },
+    {
+      "id": "s6",
+      "text": "Nun begeht die Insel am 6. Juni das Jubiläum „200 Jahre Seebad“."
+    },
+    {
+      "id": "s7",
+      "text": "Tatsächlich geriet das Seebad im Laufe der letzten 200 Jahre wie keine andere deutsche Insel zu einer Projektionsfläche."
+    },
+    {
+      "id": "s8",
+      "text": "„Seit Jahrhunderten hat die Insel fasziniert, man hätte sie notfalls auch erfunden, so dringend brauchte man eine Insel der Sehnsucht“, schreibt Eckhard Wallmann, der lange als Pastor auf der Insel lebte, in seinem wunderbaren Buch „Helgoland."
+    },
+    {
+      "id": "s9",
+      "text": "Eine deutsche Kulturgeschichte“."
+    },
+    {
+      "id": "s10",
+      "text": "Seebad Helgoland: 20 Aktionäre, die jeweils 100 Mark investierten"
+    },
+    {
+      "id": "s11",
+      "text": "Die Gründung des Seebades 1826 war eine Notgeburt."
+    },
+    {
+      "id": "s12",
+      "text": "Nachdem die Insel 1814 England zugeschlagen worden war (vorher war sie dänisch) und die wichtigsten Geschäftsfelder Schmuggel, Lotsendienste und Handel einbrachen, herrschte Hunger."
+    },
+    {
+      "id": "s13",
+      "text": "In dieser Zeit nahm der Schiffszimmermann Jacob Andresen-Siemens (1794-1849) die Ideen britischer Geschäftsleute auf und gründete – gegen enorme Widerstände auf der Insel – nach Norderney (1797), Wangerooge (1801), Wyk (1819) und Cuxhaven (1819) das fünfte deutsche Seebad in der deutschen Bucht."
+    },
+    {
+      "id": "s14",
+      "text": "Er gewann dafür 20 Aktionäre, die jeweils 100 Mark investierten."
+    },
+    {
+      "id": "s15",
+      "text": "In der ersten Saison machten sich 100 Kurgäste auf den beschwerlichen Segeltörn zur Insel."
+    },
+    {
+      "id": "s16",
+      "text": "Doch erst die Einführung der Dampfschifffahrt sorgte für einen Aufschwung, da sich nun Schauspielerinnen wie Sophie Schröder (1781-1868) und Dichter wie Heinrich Heine (1797-1856) auf Helgoland erholten und die Insel promoteten – heute würde man sie Influencer nennen."
+    },
+    {
+      "id": "s17",
+      "text": "Insbesondere Heine wurde mit seinen Aufenthalten 1829 und 1830 zu einem „Propheten der Insel“."
+    },
+    {
+      "id": "s18",
+      "text": "Mit seinen Helgoland-Kapiteln im Börne-Buch 1840 habe Heine die Insel gar „in die Weltliteratur gestellt“, urteilt Wallmann."
+    },
+    {
+      "id": "s19",
+      "text": "Die Nordsee sei von „Berlinern überschwemmt“, schrieb Heine 1829 an einen Freund."
+    },
+    {
+      "id": "s20",
+      "text": "„Ich aber pflog mit Niemandem Umgang, außer mit einer kleinen Engländerin, einigen Seemöwen, den Wolken und dem Tacitus.“"
+    },
+    {
+      "id": "s21",
+      "text": "Nicht der einzige Hinweis darauf, dass Seebäder auch erotisch besetzte Orte waren."
+    },
+    {
+      "id": "s22",
+      "text": "Davon erzählt auch das Gemälde „Heiratsantrag auf Helgoland“ von Rudolf Jordan aus 1834, das eine Helgoländerin – wie verwegen – mit nacktem Fuß zeigt."
+    },
+    {
+      "id": "s23",
+      "text": "Überhaupt galten die Insulanerinnen als wenig keusch, während die Männer als „halbe Riesen, hochblond, Nachkommen der alten Normannen“ (Schriftsteller Julius Weber) überhöht wurden."
+    },
+    {
+      "id": "s24",
+      "text": "Die Insel als Zufluchtsort für Revolutionäre"
+    },
+    {
+      "id": "s25",
+      "text": "Das Baden selbst erfolgte 1826 nicht auf der Hauptinsel, sondern auf der gegenüberliegenden Düne: Vier zweirädrige Badekarren, die, mit Leinen überspannt, wurden in die See geschoben."
+    },
+    {
+      "id": "s26",
+      "text": "Man badete vormittags und nach Geschlechtern getrennt."
+    },
+    {
+      "id": "s27",
+      "text": "„Zwei bis fünf Minuten dauerte ein Bad – es war ja Medizin“, schreibt Wallmann."
+    },
+    {
+      "id": "s28",
+      "text": "„Das Untertauchen war wichtig, nicht das Schwimmen, man hielt sich an einem Seil fest."
+    },
+    {
+      "id": "s29",
+      "text": "Die Kälte des Nordseewassers galt als gesund."
+    },
+    {
+      "id": "s30",
+      "text": "Nur wenige, Heinrich Heine gehörte dazu, konnten schwimmen."
+    },
+    {
+      "id": "s31",
+      "text": "Der Helgoländer Badearzt Dührssen riet vom Schwimmen ab, es sei zu anstrengend, und man würde dadurch zu lange im Wasser bleiben.“"
+    },
+    {
+      "id": "s32",
+      "text": "Am Nachmittag wurden Vögel oder Seehunde geschossen, abends ging es ins Conversationshaus oder, ab 1833, in die Spielbank."
+    },
+    {
+      "id": "s33",
+      "text": "1900 führte Helgoland ein Familienbad ein, in dem nun Eltern gemeinsam mit ihren Kindern baden konnten."
+    },
+    {
+      "id": "s34",
+      "text": "Mitte des 19. Jahrhunderts, als Königreiche wie Preußen rigide Pressezensur übten, nutzten Revolutionäre die Insel als Zufluchtsort."
+    },
+    {
+      "id": "s35",
+      "text": "„Helgoland ist ein Stapelplatz für alle Bücher, die in den verschiedenen deutschen Vaterländern verboten worden sind“, resümierte der Schauspieler Franz Wallner."
+    },
+    {
+      "id": "s36",
+      "text": "Auch dem Breslauer Germanisten Hoffmann von Fallersleben diente sie „Insel der Freiheit“, nachdem er 1840 mit seinen „Unpolitischen Liedern“ die Herrschenden herausgefordert hatte."
+    },
+    {
+      "id": "s37",
+      "text": "Am 26. August 1841 textete von Fallersleben dort die Strophen für die heutige deutsche Nationalhymne: „Wenn ich dann so wandelte einsam auf der Klippe, nichts als Meer und Himmel um mich sah, da ward mir so eigen zu Muthe, ich musste dichten und wenn ich es auch nicht gewollt hätte.“"
+    },
+    {
+      "id": "s38",
+      "text": "Gespielt wurde das Lied auf Helgoland erstmals am 9. August 1890, als das Deutsche Reich die Insel mit den Engländern gegen Sansibar eintauschte."
+    },
+    {
+      "id": "s39",
+      "text": "Heute erinnert eine Büste auf der Promenade an den Dichter."
+    },
+    {
+      "id": "s40",
+      "text": "Nach 1890 jedoch veränderten die Deutschen den Charakter Helgolands, als Kaiser Wilhelm II. die Insel zu einer maritimen Festungsanlage ausbauen ließ."
+    },
+    {
+      "id": "s41",
+      "text": "Ein „in seiner Art einziges Felseneiland ist in bedauerlicher Weise verschandelt worden“, schimpfte ein Berliner Gast 1910 über die Metamorphose des pittoresken Seebades in einen Militärstützpunkt."
+    },
+    {
+      "id": "s42",
+      "text": "Plan aus Versailles: eine menschenleere Insel für Vögel"
+    },
+    {
+      "id": "s43",
+      "text": "1920, nach dem Ersten Weltkrieg, ließen die Engländer die Festungsanlagen sämtlich sprengen."
+    },
+    {
+      "id": "s44",
+      "text": "In Versailles hatte es Pläne gegeben, Helgoland in eine menschenleere Vogelinsel zu verwandeln oder Australien zu überlassen, jedenfalls sollte es nie wieder deutsch sein."
+    },
+    {
+      "id": "s45",
+      "text": "Dazu kam es nicht."
+    },
+    {
+      "id": "s46",
+      "text": "Die gewaltigen Bombardierungen der Engländer nach dem Zweiten Weltkrieg überstand die Insel bekanntlich ebenfalls, wenn auch die Schäden enorm waren."
+    },
+    {
+      "id": "s47",
+      "text": "Ab 1952 wurde Helgoland wieder aufgebaut."
+    },
+    {
+      "id": "s48",
+      "text": "Nun entwickelte die Insel das böse Image des „Fuselfelsens“: Hunderttausende Tagesgäste überschwemmten das Eiland, um steuerfrei Alkohol und Tabakprodukte einzukaufen."
+    },
+    {
+      "id": "s49",
+      "text": "1971 reisten rund 831.000 Menschen nach Helgoland, ein Rekord."
+    },
+    {
+      "id": "s50",
+      "text": "Inzwischen kommen weniger als 300.000 im Jahr."
+    },
+    {
+      "id": "s51",
+      "text": "Der Ruf der Insel hat sich derweil wieder zum Positiven verändert."
+    },
+    {
+      "id": "s52",
+      "text": "Wer heute in das Nordseeheilbad reise, der suche Entschleunigung und wolle die raue Natur genießen und die Seele baumeln lassen, sagt Tourismusdirektorin Katharina Schlicht."
+    },
+    {
+      "id": "s53",
+      "text": "Auch wenn die Kuren heute nicht mehr die große Rolle spielen wie im mondänen Seebad des 19. Jahrhunderts: Dieser Ort ist bis heute einzigartig in der deutschen Landschaft."
+    },
+    {
+      "id": "s54",
+      "text": "\""
+    }
+  ],
+  "eintraege": [
+    {
+      "satz": "t1",
+      "text": "\"Vor zweihundert Jahren entstand auf Helgoland etwas, das die Insel für immer verändern sollte – ein Seebad, geboren aus der Not.",
+      "start": 0,
+      "end": 129,
+      "geprueft": true,
+      "notwendig": [
+        "s4",
+        "s6",
+        "s11"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c1"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t2",
+      "text": "Am sechsten Juni feiert Helgoland dieses Jubiläum: zweihundert Jahre Seebad.",
+      "start": 130,
+      "end": 206,
+      "geprueft": true,
+      "notwendig": [
+        "s6"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c2"
+      ],
+      "relationen_gemischt": false,
+      "notiz": "Die Insel = Helgoland hätte s9 als Quelle überflüssig gemacht.\n"
+    },
+    {
+      "satz": "t3",
+      "text": "Der Anstoß kam aus einer Hungersnot.",
+      "start": 208,
+      "end": 244,
+      "geprueft": true,
+      "notwendig": [
+        "s1"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c3"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t4",
+      "text": "Nachdem die Insel achtzehnhundertvierzehn an England gefallen war – zuvor war sie dänisch –, brachen die wichtigsten Geschäfte ein: Schmuggel, Lotsendienste und Handel.",
+      "start": 245,
+      "end": 413,
+      "geprueft": true,
+      "notwendig": [
+        "s12"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c4"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t5",
+      "text": "Der Schiffszimmermann Jacob Andresen-Siemens griff Ideen britischer Geschäftsleute auf und gründete achtzehnhundertsechsundzwanzig – gegen erhebliche Widerstände auf der Insel – das fünfte deutsche Seebad in der Deutschen Bucht.",
+      "start": 414,
+      "end": 642,
+      "geprueft": true,
+      "notwendig": [
+        "s11",
+        "s13"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c5"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t6",
+      "text": "Zwanzig Aktionäre investierten je hundert Mark.",
+      "start": 643,
+      "end": 690,
+      "geprueft": true,
+      "notwendig": [
+        "s14"
+      ],
+      "zulaessig": [
+        "s10"
+      ],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c6"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t7",
+      "text": "In der ersten Saison machten sich gerade einmal hundert Kurgäste auf den beschwerlichen Segeltörn zur Insel.",
+      "start": 691,
+      "end": 799,
+      "geprueft": true,
+      "notwendig": [
+        "s15"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c7"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t8",
+      "text": "Den echten Aufschwung brachte die Dampfschifffahrt.",
+      "start": 801,
+      "end": 852,
+      "geprueft": true,
+      "notwendig": [
+        "s16"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c8"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t9",
+      "text": "Nun erholten sich Prominente auf der Insel – Dichter wie Heinrich Heine und Schauspielerinnen wie Sophie Schröder.",
+      "start": 853,
+      "end": 967,
+      "geprueft": true,
+      "notwendig": [
+        "s16"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c9"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t10",
+      "text": "Sie machten Helgoland bekannt; als Influencer würde man sie heute nennen.",
+      "start": 968,
+      "end": 1041,
+      "geprueft": true,
+      "notwendig": [
+        "s16"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [
+        "wortlaut_abweichung"
+      ],
+      "claims_im_lauf": [
+        "c10"
+      ],
+      "relationen_gemischt": false,
+      "notiz": "Grammatik flaw sollte erkennbar werden"
+    },
+    {
+      "satz": "t11",
+      "text": "Heine verbrachte achtzehnhundertneunundzwanzig und achtzehnhundertdreißig Zeit auf der Insel.",
+      "start": 1042,
+      "end": 1135,
+      "geprueft": true,
+      "notwendig": [
+        "s17"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c11"
+      ],
+      "relationen_gemischt": false,
+      "notiz": "Warum kommt hier ein Zahlkonflikt zustande?"
+    },
+    {
+      "satz": "t12",
+      "text": "Mit seinen Helgoland-Texten habe Heine die Insel sogar in die Weltliteratur gestellt, urteilt Eckhard Wallmann, der lange als Pastor auf der Insel lebte.",
+      "start": 1136,
+      "end": 1289,
+      "geprueft": true,
+      "notwendig": [
+        "s8",
+        "s18"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c12"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t13",
+      "text": "Auch politisch spielte Helgoland eine besondere Rolle.",
+      "start": 1291,
+      "end": 1345,
+      "geprueft": true,
+      "notwendig": [
+        "s34",
+        "s36"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c13"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t14",
+      "text": "Mitte des neunzehnten Jahrhunderts, als Königreiche wie Preußen eine strenge Pressezensur übten, nutzten Revolutionäre die Insel als Zufluchtsort.",
+      "start": 1346,
+      "end": 1492,
+      "geprueft": true,
+      "notwendig": [
+        "s34"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c14"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t15",
+      "text": "Der Germanist Hoffmann von Fallersleben textete dort am sechsundzwanzigsten August achtzehnhunderteinundvierzig die Strophen für die heutige deutsche Nationalhymne.",
+      "start": 1493,
+      "end": 1657,
+      "geprueft": true,
+      "notwendig": [
+        "s36",
+        "s37"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c15"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t16",
+      "text": "Gespielt wurde das Lied auf Helgoland erstmals achtzehnhundertneunzig, als das Deutsche Reich die Insel mit den Engländern gegen Sansibar eintauschte.",
+      "start": 1658,
+      "end": 1808,
+      "geprueft": true,
+      "notwendig": [
+        "s38"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c16"
+      ],
+      "relationen_gemischt": false,
+      "notiz": "Warum um alles in der Welt ist hier entailment nicht bei 100%?"
+    },
+    {
+      "satz": "t17",
+      "text": "Danach veränderten die Deutschen den Charakter der Insel: Kaiser Wilhelm der Zweite ließ Helgoland zu einer maritimen Festung ausbauen.",
+      "start": 1810,
+      "end": 1945,
+      "geprueft": true,
+      "notwendig": [
+        "s40"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c17"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t18",
+      "text": "Nach dem Ersten Weltkrieg sprengten die Engländer sämtliche Anlagen.",
+      "start": 1946,
+      "end": 2014,
+      "geprueft": true,
+      "notwendig": [
+        "s43"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c18"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t19",
+      "text": "In Versailles hatte es sogar Pläne gegeben, Helgoland in eine menschenleere Vogelinsel zu verwandeln oder Australien zu überlassen – die Insel sollte nie wieder deutsch sein.",
+      "start": 2015,
+      "end": 2189,
+      "geprueft": true,
+      "notwendig": [
+        "s44"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c19"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t20",
+      "text": "Dazu kam es nicht.",
+      "start": 2190,
+      "end": 2208,
+      "geprueft": true,
+      "notwendig": [
+        "s45"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c20"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t21",
+      "text": "Auch die schweren Bombardierungen nach dem Zweiten Weltkrieg überstand Helgoland, wenn auch mit enormen Schäden.",
+      "start": 2209,
+      "end": 2321,
+      "geprueft": true,
+      "notwendig": [
+        "s46"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c21"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t22",
+      "text": "Ab neunzehnhundertzweiundfünfzig wurde Helgoland wieder aufgebaut – und entwickelte bald den Ruf als „Fuselfelsen\"\": Hunderttausende Tagesgäste kamen, um steuerfrei Alkohol und Tabak zu kaufen.",
+      "start": 2323,
+      "end": 2516,
+      "geprueft": true,
+      "notwendig": [
+        "s47",
+        "s48"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c22",
+        "c23"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t23",
+      "text": "Neunzehnhunderteinundsiebzig reisten rund achthunderteinunddreißigtausend Menschen auf die Insel, ein Rekord.",
+      "start": 2517,
+      "end": 2626,
+      "geprueft": true,
+      "notwendig": [
+        "s49"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c24"
+      ],
+      "relationen_gemischt": false,
+      "notiz": "Sätze wurden fälschlicherweise am Punkt für die 831.000 getrennt\n"
+    },
+    {
+      "satz": "t24",
+      "text": "Heute sind es weniger als dreihunderttausend im Jahr.",
+      "start": 2627,
+      "end": 2680,
+      "geprueft": true,
+      "notwendig": [
+        "s50"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c25"
+      ],
+      "relationen_gemischt": false,
+      "notiz": "Wieder falsch am tausenderpunkt getrennt."
+    },
+    {
+      "satz": "t25",
+      "text": "Der Ruf der Insel hat sich inzwischen wieder zum Positiven gewandelt.",
+      "start": 2682,
+      "end": 2751,
+      "geprueft": true,
+      "notwendig": [
+        "s51"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c26"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t26",
+      "text": "Wer heute nach Helgoland reise, suche Entschleunigung, wolle die raue Natur genießen und die Seele baumeln lassen, sagt Tourismusdirektorin Katharina Schlicht.",
+      "start": 2752,
+      "end": 2911,
+      "geprueft": true,
+      "notwendig": [
+        "s52"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c27"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t27",
+      "text": "Auch wenn die Kuren heute nicht mehr die große Rolle spielen wie im mondänen Seebad des neunzehnten Jahrhunderts – dieser Ort ist bis heute einzigartig.\"",
+      "start": 2912,
+      "end": 3065,
+      "geprueft": true,
+      "notwendig": [
+        "s53"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c28"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    }
+  ]
+}

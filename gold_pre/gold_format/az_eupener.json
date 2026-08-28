@@ -1,0 +1,167 @@
+{
+  "paar": "az_eupener",
+  "split": "dev",
+  "anleitung": [
+    "Arbeitsanweisung (diese Zeilen bleiben in der Datei stehen):",
+    "1. Jede Zeile mit \"geprueft\": false durchgehen und auf true setzen.",
+    "2. notwendig = Sätze, ohne die ein Teil der Aussage unbelegt bliebe.",
+    "   zulaessig = stützt ebenfalls, ist aber entbehrlich (Dubletten).",
+    "3. relation prüfen: direkt | aggregiert | bedeutung_verschoben |",
+    "   inferiert | keine_quelle.",
+    "4. flags_erwartet: nur Befunde, die WIRKLICH zutreffen sollten",
+    "   (zahlkonflikt, ort_konflikt, kuerzel_konflikt, wortlaut_abweichung,",
+    "   ident_unbelegt, zahl_unbelegt). Leere Liste heißt: kein Befund.",
+    "5. Zum Schluss EINMAL umgekehrt: den Artikel lesen und fragen, welcher",
+    "   Transkriptsatz diese Stelle nutzt. Das fängt die Quellen, die die",
+    "   Pipeline gar nicht erst vorgeschlagen hat — der Bias des Entwurfs.",
+    "6. Artikel- und Transkripttext danach NICHT mehr ändern, auch keine",
+    "   Tippfehler: Die Zeichen-Offsets sind Teil der Annotation."
+  ],
+  "artikel_hash": "19077aba22db0143",
+  "transkript_hash": "6c3a366b0aea0053",
+  "artikel_saetze": [
+    {
+      "id": "s1",
+      "text": "Aachen Die Eupener Straße in Aachen ist wieder frei."
+    },
+    {
+      "id": "s2",
+      "text": "Die Ende Juni begonnene Sanierung der Bundesstraße B57 zwischen der deutsch-belgischen Staatsgrenze und dem Ortseingang zur Stadt Aachen konnte planmäßig abgeschlossen werden, wie der Landesbetrieb Straßenbau mitteilt."
+    },
+    {
+      "id": "s3",
+      "text": "Nachdem am Mittwoch die letzten Restarbeiten (Beschilderung und Markierung) vorgenommen wurden, kann die Eupener Straße seit Donnerstagmorgen wieder befahren werden."
+    },
+    {
+      "id": "s4",
+      "text": "In den kommenden Wochen kommt es nach Angaben von Straßen.NRW durch den Bau eines Geh- und Radweges sowie einer Querungshilfe an der B57 aber noch zu Verkehrseinschränkungen.(red)"
+    }
+  ],
+  "eintraege": [
+    {
+      "satz": "t1",
+      "text": "Die Eupener Straße in Aachen ist wieder frei befahrbar.",
+      "start": 0,
+      "end": 55,
+      "geprueft": false,
+      "notwendig": [
+        "s1",
+        "s3"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c1"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t2",
+      "text": "Die Sanierung der Bundesstraße 57 zwischen der deutsch-belgischen Staatsgrenze und dem Ortseingang von Aachen ist planmäßig abgeschlossen, teilt der Landesbetrieb Straßenbau mit.",
+      "start": 56,
+      "end": 234,
+      "geprueft": false,
+      "notwendig": [
+        "s2"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [
+        "zahl_unbelegt"
+      ],
+      "claims_im_lauf": [
+        "c2"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t3",
+      "text": "Die Arbeiten hatten Ende Juni begonnen.",
+      "start": 236,
+      "end": 275,
+      "geprueft": false,
+      "notwendig": [],
+      "zulaessig": [],
+      "relation": "keine_quelle",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c3"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t4",
+      "text": "Am Mittwoch wurden noch die letzten Restarbeiten erledigt: Beschilderung und Markierung.",
+      "start": 276,
+      "end": 364,
+      "geprueft": false,
+      "notwendig": [
+        "s3"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c4"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t5",
+      "text": "Seit Donnerstagmorgen kann die Eupener Straße wieder befahren werden.",
+      "start": 365,
+      "end": 434,
+      "geprueft": false,
+      "notwendig": [
+        "s3"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c5"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t6",
+      "text": "Ganz ohne Einschränkungen bleibt es aber nicht.",
+      "start": 436,
+      "end": 483,
+      "geprueft": false,
+      "notwendig": [],
+      "zulaessig": [],
+      "relation": "keine_quelle",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c6"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t7",
+      "text": "Nach Angaben von Straßen.NRW kommt es in den kommenden Wochen erneut zu Verkehrseinschränkungen auf der B57. Grund sind der Bau eines Geh- und Radwegs sowie einer Querungshilfe.",
+      "start": 484,
+      "end": 661,
+      "geprueft": false,
+      "notwendig": [
+        "s4"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c7"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    }
+  ]
+}

@@ -1,0 +1,645 @@
+{
+  "paar": "noz_Blockprozess",
+  "split": "test",
+  "anleitung": [
+    "Arbeitsanweisung (diese Zeilen bleiben in der Datei stehen):",
+    "1. Jede Zeile mit \"geprueft\": false durchgehen und auf true setzen.",
+    "2. notwendig = Sätze, ohne die ein Teil der Aussage unbelegt bliebe.",
+    "   zulaessig = stützt ebenfalls, ist aber entbehrlich (Dubletten).",
+    "3. relation prüfen: direkt | aggregiert | bedeutung_verschoben |",
+    "   inferiert | keine_quelle.",
+    "4. flags_erwartet: nur Befunde, die WIRKLICH zutreffen sollten",
+    "   (zahlkonflikt, ort_konflikt, kuerzel_konflikt, wortlaut_abweichung,",
+    "   ident_unbelegt, zahl_unbelegt). Leere Liste heißt: kein Befund.",
+    "5. Zum Schluss EINMAL umgekehrt: den Artikel lesen und fragen, welcher",
+    "   Transkriptsatz diese Stelle nutzt. Das fängt die Quellen, die die",
+    "   Pipeline gar nicht erst vorgeschlagen hat — der Bias des Entwurfs.",
+    "6. Artikel- und Transkripttext danach NICHT mehr ändern, auch keine",
+    "   Tippfehler: Die Zeichen-Offsets sind Teil der Annotation."
+  ],
+  "artikel_hash": "12b2bac2edfeb2eb",
+  "transkript_hash": "0395e10a29de70c6",
+  "artikel_saetze": [
+    {
+      "id": "s1",
+      "text": "\"„Die Kinder haben geweint“: Kronzeuge schildert Entführungsnacht im Block-Prozess\nDer Entführungsprozess um die Block-Kinder erreicht den 56. Verhandlungstag."
+    },
+    {
+      "id": "s2",
+      "text": "Während die Angeklagte als „sehr angeschlagen“ gilt, enthüllt der mutmaßliche Chef der Sicherheitsfirma nun die Expansionspläne seiner Firma – und geht auch auf den Umgang mit den Kindern in der Entführungsnacht ein."
+    },
+    {
+      "id": "s3",
+      "text": "Im Prozess um die Entführung der Block-Kinder hat der mutmaßliche Anführer der Kidnapper die Reaktionen des Jungen und des Mädchens geschildert."
+    },
+    {
+      "id": "s4",
+      "text": "„Die Kinder haben geweint, sie waren geschockt und sehr unglücklich“, sagte der Zeuge aus Israel, David Barkay, bei der Fortsetzung seiner Befragung vor dem Landgericht Hamburg."
+    },
+    {
+      "id": "s5",
+      "text": "„Es tat mir sehr leid für sie.“"
+    },
+    {
+      "id": "s6",
+      "text": "Seine Sicherheitsfirma Cyber Cupula soll laut Anklage für die Entführung der Kinder verantwortlich sein."
+    },
+    {
+      "id": "s7",
+      "text": "Der damals zehnjährige Junge und das 13-jährige Mädchen waren in der Silvesternacht 2023/24 in Dänemark in ein Auto gezerrt worden."
+    },
+    {
+      "id": "s8",
+      "text": "Er habe seinem Team vor der Tat die Anweisung gegeben, „jegliche Gewalt zu minimieren“, es so „menschlich“ wie möglich auszuführen, betonte Barkay laut Übersetzung aus dem Englischen."
+    },
+    {
+      "id": "s9",
+      "text": "Auf die Frage der Nebenklage, ob die Männer Waffen getragen hätten, antwortete der Zeuge: „Niemals.“"
+    },
+    {
+      "id": "s10",
+      "text": "Gewalt gegen den Vater Stephan Hensel, der im Prozess Nebenkläger ist, sei nicht geplant gewesen."
+    },
+    {
+      "id": "s11",
+      "text": "„Herr Hensel, ich entschuldige mich dafür“, sagte Barkay in Richtung des 52-Jährigen."
+    },
+    {
+      "id": "s12",
+      "text": "Er habe extra zwei Kampfsport-Experten mitgenommen, die den Vater nur kurz hätten festhalten sollen, ohne Gewalt."
+    },
+    {
+      "id": "s13",
+      "text": "Ihm sei berichtet worden, dass ein anderes Teammitglied zugeschlagen habe - er selbst habe das aber nicht gesehen."
+    },
+    {
+      "id": "s14",
+      "text": "„Mir wurde erzählt, dass sein Eingreifen ein Chaos verursacht hat.“"
+    },
+    {
+      "id": "s15",
+      "text": "Der 68-Jährige hatte für seine Aussage in Deutschland sicheres Geleit bekommen."
+    },
+    {
+      "id": "s16",
+      "text": "Er muss zu einem späteren Zeitpunkt ebenfalls mit einer Anklage und einem Prozess rechnen."
+    },
+    {
+      "id": "s17",
+      "text": "Nach Aussage eines anderen Zeugen soll der Mann Berufssoldat bei den israelischen Spezialkräften und Abteilungsleiter beim Geheimdienst Mossad gewesen sein."
+    },
+    {
+      "id": "s18",
+      "text": "Der angeklagten Unternehmerin Christina Block wird vorgeworfen, der israelischen Sicherheitsfirma den Auftrag zur Entführung ihrer beiden jüngsten Kinder vom Wohnort des Vaters in Dänemark erteilt zu haben."
+    },
+    {
+      "id": "s19",
+      "text": "Die 53-Jährige bestreitet das."
+    },
+    {
+      "id": "s20",
+      "text": "Es gibt sechs weitere Angeklagte, darunter der Lebensgefährte von Christina Block, der Ex-Sportmoderator Gerhard Delling."
+    },
+    {
+      "id": "s21",
+      "text": "Der 67-Jährige betont, nichts Unrechtes getan zu haben."
+    },
+    {
+      "id": "s22",
+      "text": "Für alle Beschuldigten gilt die Unschuldsvermutung."
+    },
+    {
+      "id": "s23",
+      "text": "Christina Block und ihr Ex-Mann Stephan Hensel haben vier gemeinsame Kinder."
+    },
+    {
+      "id": "s24",
+      "text": "Die älteste Tochter (heute 20) war nach einem Streit im Sommer 2021 mit Zustimmung der Mutter zu ihrem Vater nach Dänemark gezogen."
+    },
+    {
+      "id": "s25",
+      "text": "Blocks Ex-Mann hatte die beiden jüngsten Kinder nach einem Wochenendbesuch im August 2021 nicht zurück nach Hamburg gebracht."
+    },
+    {
+      "id": "s26",
+      "text": "Er erhob Gewaltvorwürfe gegen die Mutter, die diese zurückweist."
+    },
+    {
+      "id": "s27",
+      "text": "Zu den drei Kindern, die beim Vater in Dänemark leben, hat die Mutter keinen Kontakt."
+    },
+    {
+      "id": "s28",
+      "text": "Blocks Anwalt Ingo Bott merkte zu Beginn des 56. Prozesstages an: „Meine Mandantin ist sehr angeschlagen heute.“"
+    },
+    {
+      "id": "s29",
+      "text": "Sie habe am Wochenende erfahren, dass ihre inzwischen 15-jährige Tochter in Hamburg sei und mit einer Tante Kontakt hatte."
+    },
+    {
+      "id": "s30",
+      "text": "Das habe sie sehr mitgenommen."
+    },
+    {
+      "id": "s31",
+      "text": "Es war bereits der achte Prozesstag, an dem Barkay Fragen beantwortete."
+    },
+    {
+      "id": "s32",
+      "text": "Wie auch an den früheren Verhandlungstagen ging es nur sehr langsam voran, weil der Zeuge angab, Fragen nicht verstanden zu haben."
+    },
+    {
+      "id": "s33",
+      "text": "Immer wieder berief er sich zudem auf Erinnerungslücken."
+    },
+    {
+      "id": "s34",
+      "text": "Barkay hatte vor einigen Monaten ausgesagt, die angeklagte Mutter und der ebenfalls angeklagte Anwalt der Familie, Andreas Costard, hätten von der geplanten Rückholaktion gewusst."
+    },
+    {
+      "id": "s35",
+      "text": "Aber: „Ich wollte die Einzelheiten nicht teilen, weil ich kein Vertrauen hatte“, sagte der 68-Jährige nun über sein damaliges Verhalten."
+    },
+    {
+      "id": "s36",
+      "text": "Sein gesamtes Team sei aus Israel nach Hamburg gereist und habe sich am 28. Dezember 2023 im Hotel Grand Elysée mit Christina Block getroffen."
+    },
+    {
+      "id": "s37",
+      "text": "Die Männer seien maskiert gewesen."
+    },
+    {
+      "id": "s38",
+      "text": "Die Verteidigung von Block bestreitet, dass es so ein Treffen gab und hatte moniert, dass die mutmaßlichen Entführer alle unterschiedliche Zeitpunkte für ein angebliches Treffen genannt hätten."
+    },
+    {
+      "id": "s39",
+      "text": "Er verstehe nicht, warum der Zeitpunkt so wichtig sei, sagte Barkay."
+    },
+    {
+      "id": "s40",
+      "text": "„Es ändert nichts daran, dass sich das Meeting so abgespielt hat.“"
+    },
+    {
+      "id": "s41",
+      "text": "Er habe Christina Block gebeten, dorthin zu kommen, und das habe sie getan."
+    },
+    {
+      "id": "s42",
+      "text": "Ob Christina Block zum Zeitpunkt der Rückholaktion das alleinige Aufenthaltsbestimmungsrecht für ihre Kinder hatte, ist zwischen den Parteien strittig."
+    },
+    {
+      "id": "s43",
+      "text": "Der Verteidiger von Familienanwalt Costard hatte dazu einen langen Beweisantrag gestellt, dessen Argumentation die Nebenklage widersprach."
+    },
+    {
+      "id": "s44",
+      "text": "Die Verteidiger forderten das Gericht auf, möglichst bald seine eigene Ansicht zu dieser Frage zu äußern."
+    },
+    {
+      "id": "s45",
+      "text": "Die beiden Kinder waren nach der Entführung aus Dänemark zunächst nach Süddeutschland gebracht worden und wohnten anschließend bis zum 5. Januar 2024 bei ihrer Mutter in Hamburg."
+    },
+    {
+      "id": "s46",
+      "text": "An jenem Tag hatte das Hanseatische Oberlandesgericht entschieden, dass sie zu ihrem Vater nach Dänemark zurückkehren sollen."
+    },
+    {
+      "id": "s47",
+      "text": "Die Verteidiger der deutschen Angeklagten argumentieren, dass keine Entziehung Minderjähriger vorliegen könne, weil die Mutter zu jenem Zeitpunkt das alleinige Aufenthaltsbestimmungsrecht hatte."
+    },
+    {
+      "id": "s48",
+      "text": "Cyber Cupola wollte nach Europa expandieren\nDer Verteidiger von Delling, David Rieks, fragte Barkay nach möglichen Absprachen mit der Staatsanwaltschaft vor seinen Aussagen in Deutschland."
+    },
+    {
+      "id": "s49",
+      "text": "Dabei las er den Aktenvermerk einer Oberstaatsanwältin vor."
+    },
+    {
+      "id": "s50",
+      "text": "Darin hatte sie erklärt, dass eine Bewährungsstrafe für Barkay nicht wahrscheinlich, aber auch nicht völlig ausgeschlossen sei."
+    },
+    {
+      "id": "s51",
+      "text": "Dazu sagte der mutmaßliche Chef der Kidnapper: „Mir wurde nichts versprochen, von niemandem.“"
+    },
+    {
+      "id": "s52",
+      "text": "Die Zeugenaussage von Barkay soll am Mittwoch fortgesetzt werden."
+    },
+    {
+      "id": "s53",
+      "text": "\""
+    }
+  ],
+  "eintraege": [
+    {
+      "satz": "t1",
+      "text": "Die Entführung der Block-Kinder beschäftigt das Landgericht Hamburg – heute zum sechsundfünfzigsten Mal.",
+      "start": 0,
+      "end": 104,
+      "geprueft": true,
+      "notwendig": [
+        "s1",
+        "s4"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c1"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t2",
+      "text": "Im Mittelpunkt stand erneut David Barkay, der mutmaßliche Chef der israelischen Sicherheitsfirma Cyber Cupula, die laut Anklage für die Entführung verantwortlich sein soll.",
+      "start": 105,
+      "end": 277,
+      "geprueft": true,
+      "notwendig": [
+        "s2",
+        "s4",
+        "s6"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c2"
+      ],
+      "relationen_gemischt": false,
+      "notiz": "Warum war hier ein NLI Widerspruch?\n"
+    },
+    {
+      "satz": "t3",
+      "text": "Barkay schilderte, wie die Kinder in der Tatnacht reagiert hätten.",
+      "start": 279,
+      "end": 345,
+      "geprueft": true,
+      "notwendig": [
+        "s3"
+      ],
+      "zulaessig": [
+        "s4"
+      ],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c3"
+      ],
+      "relationen_gemischt": false,
+      "notiz": "S4 war auch markiert, aber \"David Barkay\" ist bereits gemeint mit \"der mutmaßliche Anführer\". S4 zulässig, aber nicht nötig"
+    },
+    {
+      "satz": "t4",
+      "text": "„Die Kinder haben geweint, sie waren geschockt und sehr unglücklich\", sagte er.",
+      "start": 346,
+      "end": 425,
+      "geprueft": true,
+      "notwendig": [
+        "s4"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c4"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t5",
+      "text": "„Es tat mir sehr leid für sie.\"",
+      "start": 426,
+      "end": 457,
+      "geprueft": true,
+      "notwendig": [
+        "s5"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c5"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t6",
+      "text": "Er habe seinem Team angewiesen, jegliche Gewalt zu minimieren und die Aktion so menschlich wie möglich durchzuführen.",
+      "start": 458,
+      "end": 575,
+      "geprueft": true,
+      "notwendig": [
+        "s8"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c6"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t7",
+      "text": "Waffen hätten seine Männer keine getragen.",
+      "start": 576,
+      "end": 618,
+      "geprueft": true,
+      "notwendig": [
+        "s9"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c7"
+      ],
+      "relationen_gemischt": false,
+      "notiz": "Bedeutung nicht verschoben, produziert NLI mehr falsche Hinweise als es bringt?"
+    },
+    {
+      "satz": "t8",
+      "text": "Der damals zehnjährige Junge und das dreizehnjährige Mädchen waren in der Silvesternacht zweitausenddreiundzwanzig auf zweitausendvierundzwanzig in Dänemark in ein Auto gezerrt worden.",
+      "start": 620,
+      "end": 804,
+      "geprueft": true,
+      "notwendig": [
+        "s7",
+        "s45"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c8"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t9",
+      "text": "Auch gegenüber dem Vater der Kinder, Stephan Hensel, sei keine Gewalt geplant gewesen.",
+      "start": 805,
+      "end": 891,
+      "geprueft": true,
+      "notwendig": [
+        "s10"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c9"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t10",
+      "text": "Barkay entschuldigte sich direkt bei dem zweiundfünfzig-Jährigen.",
+      "start": 892,
+      "end": 957,
+      "geprueft": true,
+      "notwendig": [
+        "s11"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c10"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t11",
+      "text": "Zwei Kampfsport-Experten hätten Hensel nur kurz festhalten sollen.",
+      "start": 958,
+      "end": 1024,
+      "geprueft": true,
+      "notwendig": [
+        "s12"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c11"
+      ],
+      "relationen_gemischt": false,
+      "notiz": "S10 war auch enthalten, war aber sehr unnötig, weil S12 alles bestens erklärt\n"
+    },
+    {
+      "satz": "t12",
+      "text": "Ihm sei aber berichtet worden, dass ein anderes Teammitglied zugeschlagen und damit ein Chaos verursacht habe – gesehen habe er das selbst nicht.",
+      "start": 1025,
+      "end": 1170,
+      "geprueft": true,
+      "notwendig": [
+        "s13",
+        "s14"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c12"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t13",
+      "text": "Angeklagt ist die Unternehmerin Christina Block.",
+      "start": 1172,
+      "end": 1220,
+      "geprueft": true,
+      "notwendig": [
+        "s18"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c13"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t14",
+      "text": "Sie soll der Firma den Auftrag erteilt haben, ihre beiden jüngsten Kinder vom Wohnort des Vaters in Dänemark zurückzuholen.",
+      "start": 1221,
+      "end": 1344,
+      "geprueft": true,
+      "notwendig": [
+        "s18"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c14"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t15",
+      "text": "Die dreiundfünfzig-Jährige bestreitet das.",
+      "start": 1345,
+      "end": 1387,
+      "geprueft": true,
+      "notwendig": [
+        "s19"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c15"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t16",
+      "text": "Zu den weiteren Angeklagten zählt auch ihr Lebensgefährte, der frühere Sportmoderator Gerhard Delling.",
+      "start": 1388,
+      "end": 1490,
+      "geprueft": true,
+      "notwendig": [
+        "s20"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c16"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t17",
+      "text": "Für alle Beschuldigten gilt die Unschuldsvermutung.",
+      "start": 1491,
+      "end": 1542,
+      "geprueft": true,
+      "notwendig": [
+        "s22"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c17"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t18",
+      "text": "Barkay sagte außerdem, sein gesamtes Team sei am achtundzwanzigsten Dezember zweitausenddreiundzwanzig im Hamburger Hotel Grand Elysée maskiert mit Christina Block zusammengetroffen.",
+      "start": 1544,
+      "end": 1726,
+      "geprueft": true,
+      "notwendig": [
+        "s36"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c18"
+      ],
+      "relationen_gemischt": false,
+      "notiz": "\"Sein\" hätte vielleicht durch Barkay ergänzt werden müssen, aber NLI scheint die Schwachstelle zu sein\n"
+    },
+    {
+      "satz": "t19",
+      "text": "Blocks Verteidigung bestreitet dieses Treffen.",
+      "start": 1727,
+      "end": 1773,
+      "geprueft": true,
+      "notwendig": [
+        "s38"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c19"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t20",
+      "text": "Auf Fragen berief sich der achtundsechzig-Jährige wiederholt auf Erinnerungslücken.",
+      "start": 1774,
+      "end": 1857,
+      "geprueft": true,
+      "notwendig": [
+        "s33",
+        "s35"
+      ],
+      "zulaessig": [
+        "s31"
+      ],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c20"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t21",
+      "text": "Er hatte für seine Aussage in Deutschland sicheres Geleit erhalten, muss aber selbst mit einer späteren Anklage rechnen.",
+      "start": 1858,
+      "end": 1978,
+      "geprueft": true,
+      "notwendig": [
+        "s15",
+        "s16"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c21"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t22",
+      "text": "Seine Befragung wird am Mittwoch fortgesetzt.",
+      "start": 1979,
+      "end": 2024,
+      "geprueft": true,
+      "notwendig": [
+        "s52"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c22"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    }
+  ]
+}

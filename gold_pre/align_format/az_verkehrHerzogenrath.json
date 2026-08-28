@@ -1,0 +1,1033 @@
+{
+  "meta": {
+    "titel": "Herzogenrath Auf Autofahrer kommen in Merkstein Verkehrsbehinderungen zu.",
+    "quelle": "Eigenes Paar",
+    "modell": "stufe0-2 · multilingual-e5-large-instruct + nli-mdeberta-2mil7",
+    "statistik": {
+      "saetze": 15,
+      "claims": 19,
+      "embeddings": 34,
+      "nli_paare": 19,
+      "dauer_s": 6.9
+    },
+    "ratelimit": {
+      "model": "multilingual-e5-large-instruct",
+      "checked_at": 1787355604.332506,
+      "x-ratelimit-limit-minute": "15",
+      "x-ratelimit-remaining-minute": "13",
+      "x-ratelimit-limit-hour": "900",
+      "x-ratelimit-remaining-hour": "871",
+      "x-ratelimit-limit-day": "2000",
+      "x-ratelimit-remaining-day": "1968",
+      "x-ratelimit-limit-second": "2",
+      "x-ratelimit-remaining-second": "1",
+      "ratelimit-reset": "1",
+      "ratelimit-limit": "2",
+      "ratelimit-remaining": "1"
+    }
+  },
+  "article": {
+    "text": "Herzogenrath Auf Autofahrer kommen in Merkstein Verkehrsbehinderungen zu. Straßen.NRW startet am 20. Juli mit der Sanierung der L232/Geilenkirchener Straße. Die Arbeiten erstrecken sich über rund 1,7 Kilometern vom August-Schmidt-Platz bis zum Kreisverkehr an der Stadtgrenze zu Übach-Palenberg.\n\nZunächst wird bis Ende der Sommerferien der Abschnitt zwischen August-Schmidt-Platz und Adolfstraße in mehreren Teilstücken erneuert. Die Arbeiten erfolgen unter Vollsperrung der betroffenen Abschnitte, heißt es.\n\nNach den Ferien folgen Bauabschnitte bis zur Comeniusstraße, zur Straße Am Boscheler Berg sowie bis zum Kreisverkehr an der Stadtgrenze. Die Maßnahme soll laut Straßen.NRW voraussichtlich bis Dezember 2026 dauern; Kosten: 1,8 Millionen Euro. Der Kreisverkehr selbst soll entweder in den Herbstferien oder zum Abschluss der Arbeiten an einem Wochenende ebenfalls unter Vollsperrung saniert werden.\n\nFür Fußgänger und Radfahrer bleiben die Geh- und Radwege grundsätzlich nutzbar. Je nach Baufortschritt kann es jedoch zu Einschränkungen kommen. Im ÖPNV entfallen die Haltestellen Goethestraße und Stadion vorübergehend für die Buslinien 21, 54, 430 und HZ 3. Über Änderungen informiert die Aseag.\n\nDer Verkehr zwischen Herzogenrath und Übach-Palenberg wird über die B57, die L47 sowie die K5 umgeleitet. Innerhalb Merksteins wird der Verkehr über Nebenstraßen geführt. Die Zufahrt zu den Grundstücken soll weitgehend möglich bleiben. Auch das Gewerbegebiet Boscheler Berg bleibt erreichbar, allerdings jeweils nur aus einer Fahrtrichtung.(red)",
+    "sentences": [
+      {
+        "id": "s1",
+        "start": 0,
+        "end": 73,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Herzogenrath Auf Autofahrer kommen in Merkstein Verkehrsbehinderungen zu."
+      },
+      {
+        "id": "s2",
+        "start": 74,
+        "end": 156,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Straßen.NRW startet am 20. Juli mit der Sanierung der L232/Geilenkirchener Straße."
+      },
+      {
+        "id": "s3",
+        "start": 157,
+        "end": 295,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Die Arbeiten erstrecken sich über rund 1,7 Kilometern vom August-Schmidt-Platz bis zum Kreisverkehr an der Stadtgrenze zu Übach-Palenberg."
+      },
+      {
+        "id": "s4",
+        "start": 297,
+        "end": 430,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Zunächst wird bis Ende der Sommerferien der Abschnitt zwischen August-Schmidt-Platz und Adolfstraße in mehreren Teilstücken erneuert."
+      },
+      {
+        "id": "s5",
+        "start": 431,
+        "end": 509,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Die Arbeiten erfolgen unter Vollsperrung der betroffenen Abschnitte, heißt es."
+      },
+      {
+        "id": "s6",
+        "start": 511,
+        "end": 647,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Nach den Ferien folgen Bauabschnitte bis zur Comeniusstraße, zur Straße Am Boscheler Berg sowie bis zum Kreisverkehr an der Stadtgrenze."
+      },
+      {
+        "id": "s7",
+        "start": 648,
+        "end": 752,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Die Maßnahme soll laut Straßen.NRW voraussichtlich bis Dezember 2026 dauern; Kosten: 1,8 Millionen Euro."
+      },
+      {
+        "id": "s8",
+        "start": 753,
+        "end": 907,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Der Kreisverkehr selbst soll entweder in den Herbstferien oder zum Abschluss der Arbeiten an einem Wochenende ebenfalls unter Vollsperrung saniert werden."
+      },
+      {
+        "id": "s9",
+        "start": 909,
+        "end": 988,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "Für Fußgänger und Radfahrer bleiben die Geh- und Radwege grundsätzlich nutzbar."
+      },
+      {
+        "id": "s10",
+        "start": 989,
+        "end": 1053,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "Je nach Baufortschritt kann es jedoch zu Einschränkungen kommen."
+      },
+      {
+        "id": "s11",
+        "start": 1054,
+        "end": 1205,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "Im ÖPNV entfallen die Haltestellen Goethestraße und Stadion vorübergehend für die Buslinien 21, 54, 430 und HZ 3. Über Änderungen informiert die Aseag."
+      },
+      {
+        "id": "s12",
+        "start": 1207,
+        "end": 1312,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Der Verkehr zwischen Herzogenrath und Übach-Palenberg wird über die B57, die L47 sowie die K5 umgeleitet."
+      },
+      {
+        "id": "s13",
+        "start": 1313,
+        "end": 1377,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Innerhalb Merksteins wird der Verkehr über Nebenstraßen geführt."
+      },
+      {
+        "id": "s14",
+        "start": 1378,
+        "end": 1442,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Die Zufahrt zu den Grundstücken soll weitgehend möglich bleiben."
+      },
+      {
+        "id": "s15",
+        "start": 1443,
+        "end": 1552,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Auch das Gewerbegebiet Boscheler Berg bleibt erreichbar, allerdings jeweils nur aus einer Fahrtrichtung.(red)"
+      }
+    ]
+  },
+  "transcript": {
+    "text": "In Merkstein müssen sich Autofahrer auf längere Verkehrsbehinderungen einstellen. Straßen.NRW beginnt am 20. Juli in Herzogenrath mit der Sanierung der Landesstraße 232, der Geilenkirchener Straße. Betroffen ist eine rund 1,7 Kilometer lange Strecke vom August-Schmidt-Platz bis zum Kreisverkehr an der Stadtgrenze zu Übach-Palenberg.\n\nZunächst wird der Abschnitt zwischen dem August-Schmidt-Platz und der Adolfstraße erneuert. Diese Arbeiten sollen bis zum Ende der Sommerferien dauern. Gebaut wird in mehreren Teilabschnitten, die jeweils vollständig gesperrt werden.\n\nAnschließend folgen weitere Bauabschnitte bis zur Comeniusstraße, zur Straße Am Boscheler Berg und schließlich bis zum Kreisverkehr an der Stadtgrenze. Die gesamte Maßnahme soll voraussichtlich bis Dezember 2026 abgeschlossen sein. Straßen.NRW rechnet mit Kosten von rund 1,8 Millionen Euro.\n\nAuch der Kreisverkehr selbst wird saniert. Dafür ist entweder eine Vollsperrung während der Herbstferien oder ein gesperrtes Wochenende zum Abschluss der Arbeiten vorgesehen.\n\nGeh- und Radwege bleiben grundsätzlich nutzbar. Je nach Fortschritt der Arbeiten kann es aber Einschränkungen geben. Im öffentlichen Personennahverkehr entfallen vorübergehend die Haltestellen Goethestraße und Stadion. Das betrifft die Buslinien 21, 54, 430 und HZ 3. Über Änderungen informiert die Aseag.\n\nDer Verkehr zwischen Herzogenrath und Übach-Palenberg wird über die Bundesstraße 57, die Landesstraße 47 und die Kreisstraße 5 umgeleitet. Innerhalb Merksteins führen Umleitungen über Nebenstraßen. Grundstücke sollen überwiegend erreichbar bleiben. Das Gewerbegebiet Boscheler Berg ist ebenfalls erreichbar, allerdings jeweils nur aus einer Fahrtrichtung.",
+    "claims": [
+      {
+        "id": "c1",
+        "start": 0,
+        "end": 81,
+        "text": "In Merkstein müssen sich Autofahrer auf längere Verkehrsbehinderungen einstellen.",
+        "relation": "bedeutung_verschoben",
+        "sources": [
+          {
+            "sentence": "s1",
+            "start": 17,
+            "end": 73,
+            "spans": [
+              [
+                17,
+                27
+              ],
+              [
+                38,
+                73
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.78,
+        "margin": 0.49,
+        "entities": [],
+        "flags": [
+          "bedeutung_verschoben"
+        ],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 67 % des Claims. · Bedeutung verschoben — die Fundstelle widerspricht dem Claim nicht, stützt ihn aber auch nicht vollständig (entailment 0.42, neutral 0.58).",
+        "scores": {
+          "top": 0.818,
+          "lex": 0.56,
+          "emb": 0.874,
+          "anchor": 0,
+          "nli": 0.417
+        }
+      },
+      {
+        "id": "c2",
+        "start": 82,
+        "end": 197,
+        "text": "Straßen.NRW beginnt am 20. Juli in Herzogenrath mit der Sanierung der Landesstraße 232, der Geilenkirchener Straße.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s2",
+            "start": 74,
+            "end": 156,
+            "spans": [
+              [
+                74,
+                81
+              ],
+              [
+                97,
+                123
+              ],
+              [
+                133,
+                156
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s1",
+            "start": 0,
+            "end": 12,
+            "spans": [
+              [
+                0,
+                12
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.88,
+        "margin": 0.56,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "20",
+            "norm": "20",
+            "status": "match"
+          },
+          {
+            "type": "zahl",
+            "surface": "232",
+            "norm": "232",
+            "status": "konflikt",
+            "quelle_surface": "20",
+            "quelle_norm": "20"
+          }
+        ],
+        "flags": [
+          "zahlkonflikt"
+        ],
+        "wortlaut": null,
+        "note": "Anker 20 eindeutig in s2 · Verdichtet aus s2 + s1 (s1 erklärt zusätzlich 15 %). · Fundstellen erklären 74 % des Claims. · 232 weicht ab — Artikel nennt 20 (s2).",
+        "scores": {
+          "top": 0.925,
+          "lex": 0.65,
+          "emb": 0.985,
+          "anchor": 0.3,
+          "nli": 0.21
+        }
+      },
+      {
+        "id": "c3",
+        "start": 198,
+        "end": 334,
+        "text": "Betroffen ist eine rund 1,7 Kilometer lange Strecke vom August-Schmidt-Platz bis zum Kreisverkehr an der Stadtgrenze zu Übach-Palenberg.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s3",
+            "start": 196,
+            "end": 295,
+            "spans": [
+              [
+                196,
+                295
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.9,
+        "margin": 0.47,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "1,7",
+            "norm": "1.7",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 79 % des Claims.",
+        "scores": {
+          "top": 0.943,
+          "lex": 0.742,
+          "emb": 0.997,
+          "anchor": 0,
+          "nli": 0.997
+        }
+      },
+      {
+        "id": "c4",
+        "start": 336,
+        "end": 427,
+        "text": "Zunächst wird der Abschnitt zwischen dem August-Schmidt-Platz und der Adolfstraße erneuert.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s4",
+            "start": 341,
+            "end": 430,
+            "spans": [
+              [
+                341,
+                396
+              ],
+              [
+                421,
+                430
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.95,
+        "margin": 0.37,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 96 % des Claims.",
+        "scores": {
+          "top": 0.903,
+          "lex": 0.691,
+          "emb": 0.926,
+          "anchor": 0,
+          "nli": 0.998
+        }
+      },
+      {
+        "id": "c5",
+        "start": 428,
+        "end": 487,
+        "text": "Diese Arbeiten sollen bis zum Ende der Sommerferien dauern.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s4",
+            "start": 297,
+            "end": 336,
+            "spans": [
+              [
+                297,
+                336
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s3",
+            "start": 157,
+            "end": 169,
+            "spans": [
+              [
+                157,
+                169
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.69,
+        "margin": 0.21,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s4 + s3 (s3 erklärt zusätzlich 21 %). · Fundstellen erklären 78 % des Claims.",
+        "scores": {
+          "top": 0.604,
+          "lex": 0.274,
+          "emb": 0.586,
+          "anchor": 0,
+          "nli": 0.931
+        }
+      },
+      {
+        "id": "c6",
+        "start": 488,
+        "end": 569,
+        "text": "Gebaut wird in mehreren Teilabschnitten, die jeweils vollständig gesperrt werden.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s5",
+            "start": 488,
+            "end": 498,
+            "spans": [
+              [
+                488,
+                498
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s4",
+            "start": 341,
+            "end": 408,
+            "spans": [
+              [
+                341,
+                350
+              ],
+              [
+                400,
+                408
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.66,
+        "margin": 0.2,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s5 + s4 (s4 erklärt zusätzlich 25 %). · Fundstellen erklären 50 % des Claims. · Unter der Direkt-Schwelle — zur Prüfung empfohlen.",
+        "scores": {
+          "top": 0.526,
+          "lex": 0.156,
+          "emb": 0.769,
+          "anchor": 0,
+          "nli": 0.958
+        }
+      },
+      {
+        "id": "c7",
+        "start": 571,
+        "end": 722,
+        "text": "Anschließend folgen weitere Bauabschnitte bis zur Comeniusstraße, zur Straße Am Boscheler Berg und schließlich bis zum Kreisverkehr an der Stadtgrenze.",
+        "relation": "bedeutung_verschoben",
+        "sources": [
+          {
+            "sentence": "s6",
+            "start": 527,
+            "end": 647,
+            "spans": [
+              [
+                527,
+                600
+              ],
+              [
+                615,
+                647
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.87,
+        "margin": 0.44,
+        "entities": [],
+        "flags": [
+          "bedeutung_verschoben"
+        ],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 71 % des Claims. · Bedeutung verschoben — die Fundstelle widerspricht dem Claim nicht, stützt ihn aber auch nicht vollständig (entailment 0.22, neutral 0.77).",
+        "scores": {
+          "top": 0.928,
+          "lex": 0.713,
+          "emb": 0.981,
+          "anchor": 0,
+          "nli": 0.217
+        }
+      },
+      {
+        "id": "c8",
+        "start": 723,
+        "end": 802,
+        "text": "Die gesamte Maßnahme soll voraussichtlich bis Dezember 2026 abgeschlossen sein.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s7",
+            "start": 648,
+            "end": 716,
+            "spans": [
+              [
+                648,
+                660
+              ],
+              [
+                703,
+                716
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.54,
+        "margin": 0.52,
+        "entities": [
+          {
+            "type": "datum",
+            "surface": "2026",
+            "norm": "2026",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Anker 2026 eindeutig in s7 · Fundstellen erklären 50 % des Claims.",
+        "scores": {
+          "top": 0.76,
+          "lex": 0.519,
+          "emb": 0.579,
+          "anchor": 0.3,
+          "nli": 0.972
+        }
+      },
+      {
+        "id": "c9",
+        "start": 803,
+        "end": 862,
+        "text": "Straßen.NRW rechnet mit Kosten von rund 1,8 Millionen Euro.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s7",
+            "start": 671,
+            "end": 751,
+            "spans": [
+              [
+                671,
+                678
+              ],
+              [
+                725,
+                731
+              ],
+              [
+                733,
+                751
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.74,
+        "margin": 0.49,
+        "entities": [
+          {
+            "type": "geld",
+            "surface": "1,8 Millionen Euro",
+            "norm": "1800000 EUR",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Anker 1800000 EUR eindeutig in s7 · Fundstellen erklären 70 % des Claims.",
+        "scores": {
+          "top": 0.843,
+          "lex": 0.358,
+          "emb": 0.789,
+          "anchor": 0.3,
+          "nli": 0.989
+        }
+      },
+      {
+        "id": "c10",
+        "start": 864,
+        "end": 906,
+        "text": "Auch der Kreisverkehr selbst wird saniert.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s8",
+            "start": 753,
+            "end": 907,
+            "spans": [
+              [
+                753,
+                769
+              ],
+              [
+                892,
+                907
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.8,
+        "margin": 0.27,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 94 % des Claims.",
+        "scores": {
+          "top": 0.663,
+          "lex": 0.344,
+          "emb": 0.579,
+          "anchor": 0,
+          "nli": 0.986
+        }
+      },
+      {
+        "id": "c11",
+        "start": 907,
+        "end": 1038,
+        "text": "Dafür ist entweder eine Vollsperrung während der Herbstferien oder ein gesperrtes Wochenende zum Abschluss der Arbeiten vorgesehen.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s8",
+            "start": 782,
+            "end": 891,
+            "spans": [
+              [
+                782,
+                891
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.77,
+        "margin": 0.36,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 62 % des Claims.",
+        "scores": {
+          "top": 0.802,
+          "lex": 0.499,
+          "emb": 0.87,
+          "anchor": 0,
+          "nli": 0.979
+        }
+      },
+      {
+        "id": "c12",
+        "start": 1040,
+        "end": 1087,
+        "text": "Geh- und Radwege bleiben grundsätzlich nutzbar.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s9",
+            "start": 937,
+            "end": 988,
+            "spans": [
+              [
+                937,
+                988
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.97,
+        "margin": 0.48,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 94 % des Claims.",
+        "scores": {
+          "top": 0.94,
+          "lex": 0.726,
+          "emb": 0.999,
+          "anchor": 0,
+          "nli": 0.997
+        }
+      },
+      {
+        "id": "c13",
+        "start": 1088,
+        "end": 1156,
+        "text": "Je nach Fortschritt der Arbeiten kann es aber Einschränkungen geben.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s10",
+            "start": 989,
+            "end": 1045,
+            "spans": [
+              [
+                989,
+                1011
+              ],
+              [
+                1030,
+                1045
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s8",
+            "start": 834,
+            "end": 842,
+            "spans": [
+              [
+                834,
+                842
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.87,
+        "margin": 0.49,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s10 + s8 (s8 erklärt zusätzlich 17 %). · Fundstellen erklären 75 % des Claims.",
+        "scores": {
+          "top": 0.818,
+          "lex": 0.601,
+          "emb": 0.96,
+          "anchor": 0,
+          "nli": 0.895
+        }
+      },
+      {
+        "id": "c14",
+        "start": 1157,
+        "end": 1258,
+        "text": "Im öffentlichen Personennahverkehr entfallen vorübergehend die Haltestellen Goethestraße und Stadion.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s11",
+            "start": 1062,
+            "end": 1127,
+            "spans": [
+              [
+                1062,
+                1127
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.77,
+        "margin": 0.59,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 60 % des Claims.",
+        "scores": {
+          "top": 0.833,
+          "lex": 0.525,
+          "emb": 0.888,
+          "anchor": 0,
+          "nli": 0.989
+        }
+      },
+      {
+        "id": "c15",
+        "start": 1259,
+        "end": 1345,
+        "text": "Das betrifft die Buslinien 21, 54, 430 und HZ 3. Über Änderungen informiert die Aseag.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s11",
+            "start": 1136,
+            "end": 1205,
+            "spans": [
+              [
+                1136,
+                1205
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.81,
+        "margin": 0.67,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "21",
+            "norm": "21",
+            "status": "match"
+          },
+          {
+            "type": "zahl",
+            "surface": "54",
+            "norm": "54",
+            "status": "match"
+          },
+          {
+            "type": "zahl",
+            "surface": "430",
+            "norm": "430",
+            "status": "match"
+          },
+          {
+            "type": "zahl",
+            "surface": "3",
+            "norm": "3",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Anker 21 eindeutig in s11 · Anker 54 eindeutig in s11 · Anker 430 eindeutig in s11 · Fundstellen erklären 84 % des Claims.",
+        "scores": {
+          "top": 0.894,
+          "lex": 0.624,
+          "emb": 0.779,
+          "anchor": 0.38,
+          "nli": 0.974
+        }
+      },
+      {
+        "id": "c16",
+        "start": 1347,
+        "end": 1485,
+        "text": "Der Verkehr zwischen Herzogenrath und Übach-Palenberg wird über die Bundesstraße 57, die Landesstraße 47 und die Kreisstraße 5 umgeleitet.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s12",
+            "start": 1207,
+            "end": 1312,
+            "spans": [
+              [
+                1207,
+                1260
+              ],
+              [
+                1301,
+                1312
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.84,
+        "margin": 0.52,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "57",
+            "norm": "57",
+            "status": "konflikt",
+            "quelle_surface": "54",
+            "quelle_norm": "54"
+          },
+          {
+            "type": "zahl",
+            "surface": "47",
+            "norm": "47",
+            "status": "konflikt",
+            "quelle_surface": "54",
+            "quelle_norm": "54"
+          },
+          {
+            "type": "zahl",
+            "surface": "5",
+            "norm": "5",
+            "status": "konflikt",
+            "quelle_surface": "3",
+            "quelle_norm": "3"
+          },
+          {
+            "type": "ort",
+            "surface": "Bundesstraße",
+            "norm": "bundesstraße",
+            "status": "unbelegt"
+          }
+        ],
+        "flags": [
+          "zahlkonflikt",
+          "ident_unbelegt"
+        ],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 58 % des Claims. · 57 weicht ab — Artikel nennt 54 (s11). · 47 weicht ab — Artikel nennt 54 (s11). · 5 weicht ab — Artikel nennt 3 (s11). · „Bundesstraße“ im Artikel nicht auffindbar.",
+        "scores": {
+          "top": 0.894,
+          "lex": 0.669,
+          "emb": 1,
+          "anchor": 0,
+          "nli": 0.826
+        }
+      },
+      {
+        "id": "c17",
+        "start": 1486,
+        "end": 1544,
+        "text": "Innerhalb Merksteins führen Umleitungen über Nebenstraßen.",
+        "relation": "bedeutung_verschoben",
+        "sources": [
+          {
+            "sentence": "s13",
+            "start": 1313,
+            "end": 1368,
+            "spans": [
+              [
+                1313,
+                1333
+              ],
+              [
+                1356,
+                1368
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.82,
+        "margin": 0.52,
+        "entities": [],
+        "flags": [
+          "bedeutung_verschoben"
+        ],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 64 % des Claims. · Bedeutung verschoben — die Fundstelle widerspricht dem Claim nicht, stützt ihn aber auch nicht vollständig (entailment 0.25, neutral 0.72).",
+        "scores": {
+          "top": 0.851,
+          "lex": 0.623,
+          "emb": 0.949,
+          "anchor": 0,
+          "nli": 0.25
+        }
+      },
+      {
+        "id": "c18",
+        "start": 1545,
+        "end": 1595,
+        "text": "Grundstücke sollen überwiegend erreichbar bleiben.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s14",
+            "start": 1397,
+            "end": 1442,
+            "spans": [
+              [
+                1397,
+                1409
+              ],
+              [
+                1434,
+                1442
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.75,
+        "margin": 0.23,
+        "entities": [],
+        "flags": [
+          "signale_uneinig"
+        ],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 42 % des Claims. · Signale uneinig — nur die Bedeutung stützt die Zuordnung.",
+        "scores": {
+          "top": 0.698,
+          "lex": 0.31,
+          "emb": 0.919,
+          "anchor": 0,
+          "nli": 0.998
+        }
+      },
+      {
+        "id": "c19",
+        "start": 1596,
+        "end": 1702,
+        "text": "Das Gewerbegebiet Boscheler Berg ist ebenfalls erreichbar, allerdings jeweils nur aus einer Fahrtrichtung.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s15",
+            "start": 1443,
+            "end": 1552,
+            "spans": [
+              [
+                1443,
+                1480
+              ],
+              [
+                1488,
+                1552
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.97,
+        "margin": 0.61,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 100 % des Claims.",
+        "scores": {
+          "top": 0.937,
+          "lex": 0.826,
+          "emb": 0.929,
+          "anchor": 0,
+          "nli": 0.993
+        }
+      }
+    ]
+  }
+}

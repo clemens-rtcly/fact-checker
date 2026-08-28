@@ -1,0 +1,669 @@
+{
+  "paar": "az_aufzugBruessel",
+  "split": "dev",
+  "anleitung": [
+    "Arbeitsanweisung (diese Zeilen bleiben in der Datei stehen):",
+    "1. Jede Zeile mit \"geprueft\": false durchgehen und auf true setzen.",
+    "2. notwendig = Sätze, ohne die ein Teil der Aussage unbelegt bliebe.",
+    "   zulaessig = stützt ebenfalls, ist aber entbehrlich (Dubletten).",
+    "3. relation prüfen: direkt | aggregiert | bedeutung_verschoben |",
+    "   inferiert | keine_quelle.",
+    "4. flags_erwartet: nur Befunde, die WIRKLICH zutreffen sollten",
+    "   (zahlkonflikt, ort_konflikt, kuerzel_konflikt, wortlaut_abweichung,",
+    "   ident_unbelegt, zahl_unbelegt). Leere Liste heißt: kein Befund.",
+    "5. Zum Schluss EINMAL umgekehrt: den Artikel lesen und fragen, welcher",
+    "   Transkriptsatz diese Stelle nutzt. Das fängt die Quellen, die die",
+    "   Pipeline gar nicht erst vorgeschlagen hat — der Bias des Entwurfs.",
+    "6. Artikel- und Transkripttext danach NICHT mehr ändern, auch keine",
+    "   Tippfehler: Die Zeichen-Offsets sind Teil der Annotation."
+  ],
+  "artikel_hash": "659a22b316d1be3d",
+  "transkript_hash": "be79b826491f2e30",
+  "artikel_saetze": [
+    {
+      "id": "s1",
+      "text": "Brüssel Es ist ein Horrorfund, den Brüsseler Feuerwehrleute am Dienstagmittag machen: Mehrere Menschen liegen leblos in einem abgestürzten Aufzug."
+    },
+    {
+      "id": "s2",
+      "text": "Das Gebäude mitten in der Innenstadt der belgischen Hauptstadt wird gerade umgebaut."
+    },
+    {
+      "id": "s3",
+      "text": "Stundenlang können die Einsatzkräfte nicht zu ihnen vordringen."
+    },
+    {
+      "id": "s4",
+      "text": "Am Abend dann ist klar: Sechs Menschen sind gestorben."
+    },
+    {
+      "id": "s5",
+      "text": "Bei ihnen handelt es sich nach Angaben der Staatsanwaltschaft um belgische oder rumänische Staatsangehörige"
+    },
+    {
+      "id": "s6",
+      "text": "Zunächst nur kleines Feuer"
+    },
+    {
+      "id": "s7",
+      "text": "Wie genau es dazu kam, ist unklar, wie eine Mitarbeiterin der Staatsanwaltschaft vor Ort sagt."
+    },
+    {
+      "id": "s8",
+      "text": "Es habe ein Feuer gegeben, und zwei Aufzüge seien mehrere Stockwerke nach unten gestürzt."
+    },
+    {
+      "id": "s9",
+      "text": "Dazu werde nun ermittelt."
+    },
+    {
+      "id": "s10",
+      "text": "Zudem müssten die Toten identifiziert werden."
+    },
+    {
+      "id": "s11",
+      "text": "Eine Obduktion soll Hinweise geben, wie genau sie ums Leben kam."
+    },
+    {
+      "id": "s12",
+      "text": "Erst nach Stunden können Einsatzkräfte den zweiten Aufzug öffnen und Gewissheit bekommen: Es gibt keine weiteren Opfer."
+    },
+    {
+      "id": "s13",
+      "text": "Der Einsatz hatte harmlos begonnen."
+    },
+    {
+      "id": "s14",
+      "text": "Die Feuerwehr wird am Morgen zu einem vermeintlich kleinen Feuer auf der zweiten Etage des Komplexes gerufen."
+    },
+    {
+      "id": "s15",
+      "text": "Sie rückt aus, löscht das Feuer – und macht im Anschluss einen Kontrollrundgang durch die riesige Baustelle, erzählt ein Staatsanwalt."
+    },
+    {
+      "id": "s16",
+      "text": "„Viele Orte waren extrem schwer zugänglich“, berichtet er weiter."
+    },
+    {
+      "id": "s17",
+      "text": "Zeitgleich wird bekannt, dass sechs der rund 250 Arbeiter auf der Baustelle vermisst werden."
+    },
+    {
+      "id": "s18",
+      "text": "Schließlich können sich die Einsatzkräfte zu einem Fahrstuhl vorkämpfen – und entdecken in der Kabine mehrere Leichen."
+    },
+    {
+      "id": "s19",
+      "text": "Zwei Arbeiter kommen zudem ins Krankenhaus, ebenso ein Feuerwehrmann, der im Einsatz einen Hitzschlag erleidet, wie ein Feuerwehrsprecher berichtet."
+    },
+    {
+      "id": "s20",
+      "text": "Am Nachmittag sind vor dem Gebäudekomplex abgekämpfte Feuerwehrkräfte zu beobachten, die verschwitzt zur Wasserflasche greifen."
+    },
+    {
+      "id": "s21",
+      "text": "Mehr als 200 Arbeiter verschiedener Unternehmen seien von der Baustelle evakuiert worden, sagt eine Mitarbeiterin der Staatsanwaltschaft."
+    },
+    {
+      "id": "s22",
+      "text": "Während mit der Bergung der ersten Leichen begonnen wird, trifft neben Belgiens König Philippe auch Regierungschef Bart De Wever vor dem großflächig abgesperrten Gebäude ein."
+    },
+    {
+      "id": "s23",
+      "text": "Sie danken Rettungskräften."
+    },
+    {
+      "id": "s24",
+      "text": "Öffentlich äußern sie sich nicht."
+    },
+    {
+      "id": "s25",
+      "text": "Auch einige Schaulustige sind vor Ort."
+    },
+    {
+      "id": "s26",
+      "text": "Brüssels Bürgermeister Philippe Close spricht von einem Drama, das tief berühre."
+    },
+    {
+      "id": "s27",
+      "text": "Sechs Menschen seien zur Arbeit gekommen und gestorben."
+    },
+    {
+      "id": "s28",
+      "text": "Er verspricht Unterstützung für alle Betroffenen und dankt den Rettungskräften für ihren Einsatz."
+    },
+    {
+      "id": "s29",
+      "text": "Sie seien sehr schnell vor Ort gewesen und hätten das Feuer schnell unter Kontrolle gebracht."
+    },
+    {
+      "id": "s30",
+      "text": "Man habe mit den Angehörigen sprechen können, sagt er am Abend."
+    },
+    {
+      "id": "s31",
+      "text": "„Es ist eine äußerst schwierige Situation, denn sie sind hier und haben keine Nachrichten zu ihren Angehörigen.“"
+    },
+    {
+      "id": "s32",
+      "text": "Mithilfe eines Opferhilfe-Teams seien nun DNA-Proben entnommen werden, um Gewissheit zu erlangen."
+    },
+    {
+      "id": "s33",
+      "text": "Noch sei die nicht da."
+    },
+    {
+      "id": "s34",
+      "text": "Belgiens Innenminister Bernard Quintin äußert sich auf X geschockt."
+    },
+    {
+      "id": "s35",
+      "text": "Deutschlands Botschafter in Belgien, Martin Kotthaus, spricht auf der Plattform ebenfalls sein Mitgefühl aus."
+    },
+    {
+      "id": "s36",
+      "text": "Das Oxy-Gebäude in einer Fußgängerzone inmitten der Brüsseler Innenstadt wird derzeit umgebaut."
+    },
+    {
+      "id": "s37",
+      "text": "Früher diente es als ein Sitz der Verwaltung der belgischen Hauptstadt, jetzt soll es in ein multifunktionales Gebäude mit Büros, Restaurants, Hotelzimmern und Wohnungen umgewandelt werden."
+    },
+    {
+      "id": "s38",
+      "text": "Das Projekt soll nach früheren Umgaben bis Ende 2026 abgeschlossen werden."
+    },
+    {
+      "id": "s39",
+      "text": "Hinter dem Projekt stehen die Firmen Whitewood und Immobel."
+    },
+    {
+      "id": "s40",
+      "text": "Immobel teilt mit, man habe mit tiefer Bestürzung von den Opfern des Feuers auf der Baustelle erfahren."
+    },
+    {
+      "id": "s41",
+      "text": "„Unsere Gedanken sind zuallererst bei den Betroffenen, ihren Familien und ihren Kollegen."
+    },
+    {
+      "id": "s42",
+      "text": "Für uns alle ist dies vor allem eine menschliche Tragödie.“"
+    },
+    {
+      "id": "s43",
+      "text": "Immobel unterstütze die Rettungs- und Sicherheitskräfte sowie die Behörden und stehe in engem Austausch mit allen Beteiligten."
+    }
+  ],
+  "eintraege": [
+    {
+      "satz": "t1",
+      "text": "Bei einem Feuer in einem im Umbau befindlichen Gebäude in Brüssel sind sechs Menschen ums Leben gekommen.",
+      "start": 0,
+      "end": 105,
+      "geprueft": false,
+      "notwendig": [
+        "s1",
+        "s2"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c1"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t2",
+      "text": "Die Opfer wurden in einem abgestürzten Aufzug des Oxy-Gebäudes in der Innenstadt der belgischen Hauptstadt gefunden.",
+      "start": 106,
+      "end": 222,
+      "geprueft": false,
+      "notwendig": [
+        "s1",
+        "s2"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c2"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t3",
+      "text": "Nach Angaben der Staatsanwaltschaft handelt es sich um belgische oder rumänische Staatsangehörige.",
+      "start": 223,
+      "end": 321,
+      "geprueft": false,
+      "notwendig": [
+        "s5"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c3"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t4",
+      "text": "Die Feuerwehr war zunächst wegen eines vermeintlich kleinen Brandes im zweiten Stockwerk alarmiert worden.",
+      "start": 323,
+      "end": 429,
+      "geprueft": false,
+      "notwendig": [
+        "s14"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [
+        "nli_widerspruch"
+      ],
+      "claims_im_lauf": [
+        "c4"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t5",
+      "text": "Die Einsatzkräfte löschten das Feuer und kontrollierten anschließend die weitläufige Baustelle.",
+      "start": 430,
+      "end": 525,
+      "geprueft": false,
+      "notwendig": [
+        "s15"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c5"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t6",
+      "text": "Viele Bereiche seien dabei nur schwer zugänglich gewesen, berichtete ein Staatsanwalt.",
+      "start": 526,
+      "end": 612,
+      "geprueft": false,
+      "notwendig": [
+        "s15",
+        "s16"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c6"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t7",
+      "text": "Zur gleichen Zeit wurde bekannt, dass sechs der rund 250 Arbeiter auf der Baustelle vermisst wurden.",
+      "start": 613,
+      "end": 713,
+      "geprueft": false,
+      "notwendig": [
+        "s17"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c7"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t8",
+      "text": "Bei der Suche kämpften sich die Rettungskräfte zu einem Fahrstuhl vor und fanden dort mehrere Leichen.",
+      "start": 715,
+      "end": 817,
+      "geprueft": false,
+      "notwendig": [
+        "s18"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c8"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t9",
+      "text": "Nach bisherigen Erkenntnissen hatte es ein Feuer gegeben, danach stürzten zwei Aufzüge mehrere Stockwerke in die Tiefe.",
+      "start": 818,
+      "end": 937,
+      "geprueft": false,
+      "notwendig": [
+        "s8"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c9"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t10",
+      "text": "Wie genau es dazu kam, wird nun ermittelt.",
+      "start": 938,
+      "end": 980,
+      "geprueft": false,
+      "notwendig": [
+        "s9"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c10"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t11",
+      "text": "Erst nach Stunden konnten die Einsatzkräfte auch den zweiten Aufzug öffnen.",
+      "start": 981,
+      "end": 1056,
+      "geprueft": false,
+      "notwendig": [
+        "s12"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c11"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t12",
+      "text": "Dort fanden sie keine weiteren Opfer.",
+      "start": 1057,
+      "end": 1094,
+      "geprueft": false,
+      "notwendig": [
+        "s12"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c12"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t13",
+      "text": "Zwei Arbeiter kamen ins Krankenhaus, ebenso ein Feuerwehrmann, der bei dem Einsatz einen Hitzschlag erlitt.",
+      "start": 1096,
+      "end": 1203,
+      "geprueft": false,
+      "notwendig": [
+        "s19"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c13"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t14",
+      "text": "Mehr als 200 Arbeiter verschiedener Unternehmen wurden von der Baustelle evakuiert.",
+      "start": 1204,
+      "end": 1287,
+      "geprueft": false,
+      "notwendig": [
+        "s21"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c14"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t15",
+      "text": "Brüssels Bürgermeister Philippe Close sprach von einem Drama, das tief berühre.",
+      "start": 1289,
+      "end": 1368,
+      "geprueft": false,
+      "notwendig": [
+        "s26"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [
+        "wortlaut_abweichung"
+      ],
+      "claims_im_lauf": [
+        "c15"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t16",
+      "text": "Sechs Menschen seien zur Arbeit gekommen und gestorben, sagte er und dankte den Rettungskräften für ihren schnellen Einsatz.",
+      "start": 1369,
+      "end": 1493,
+      "geprueft": false,
+      "notwendig": [
+        "s27",
+        "s28"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c16"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t17",
+      "text": "Am Abend sagte Close, man habe mit den Angehörigen sprechen können.",
+      "start": 1494,
+      "end": 1561,
+      "geprueft": false,
+      "notwendig": [
+        "s30"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c17"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t18",
+      "text": "Diese warteten noch auf Gewissheit über das Schicksal ihrer Familienmitglieder.",
+      "start": 1562,
+      "end": 1641,
+      "geprueft": false,
+      "notwendig": [],
+      "zulaessig": [],
+      "relation": "keine_quelle",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c18"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t19",
+      "text": "Ein Opferhilfe-Team nahm DNA-Proben, um die Toten zu identifizieren.",
+      "start": 1642,
+      "end": 1710,
+      "geprueft": false,
+      "notwendig": [
+        "s10",
+        "s32"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c19"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t20",
+      "text": "Obduktionen sollen zudem klären, woran die Menschen genau starben.",
+      "start": 1711,
+      "end": 1777,
+      "geprueft": false,
+      "notwendig": [
+        "s11"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c20"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t21",
+      "text": "Belgiens König Philippe und Regierungschef Bart De Wever trafen vor dem abgesperrten Gebäude ein und dankten den Rettungskräften.",
+      "start": 1779,
+      "end": 1908,
+      "geprueft": false,
+      "notwendig": [
+        "s22",
+        "s23"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c21"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t22",
+      "text": "Öffentlich äußerten sie sich nicht.",
+      "start": 1909,
+      "end": 1944,
+      "geprueft": false,
+      "notwendig": [
+        "s24"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [
+        "wortlaut_abweichung"
+      ],
+      "claims_im_lauf": [
+        "c22"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t23",
+      "text": "Das Oxy-Gebäude diente früher als Verwaltungssitz der Stadt Brüssel.",
+      "start": 1946,
+      "end": 2014,
+      "geprueft": false,
+      "notwendig": [
+        "s36",
+        "s37"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c23"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t24",
+      "text": "Es wird derzeit umgebaut und soll künftig Büros, Restaurants, Hotelzimmer und Wohnungen beherbergen.",
+      "start": 2015,
+      "end": 2115,
+      "geprueft": false,
+      "notwendig": [
+        "s37"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c24"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t25",
+      "text": "Nach bisherigen Angaben soll das Projekt bis Ende 2026 abgeschlossen werden.",
+      "start": 2116,
+      "end": 2192,
+      "geprueft": false,
+      "notwendig": [
+        "s38"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c25"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    }
+  ]
+}

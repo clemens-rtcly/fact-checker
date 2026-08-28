@@ -1,0 +1,227 @@
+{
+  "paar": "ee_Himbeer",
+  "split": "test",
+  "anleitung": [
+    "Arbeitsanweisung (diese Zeilen bleiben in der Datei stehen):",
+    "1. Jede Zeile mit \"geprueft\": false durchgehen und auf true setzen.",
+    "2. notwendig = Sätze, ohne die ein Teil der Aussage unbelegt bliebe.",
+    "   zulaessig = stützt ebenfalls, ist aber entbehrlich (Dubletten).",
+    "3. relation prüfen: direkt | aggregiert | bedeutung_verschoben |",
+    "   inferiert | keine_quelle.",
+    "4. flags_erwartet: nur Befunde, die WIRKLICH zutreffen sollten",
+    "   (zahlkonflikt, ort_konflikt, kuerzel_konflikt, wortlaut_abweichung,",
+    "   ident_unbelegt, zahl_unbelegt). Leere Liste heißt: kein Befund.",
+    "5. Zum Schluss EINMAL umgekehrt: den Artikel lesen und fragen, welcher",
+    "   Transkriptsatz diese Stelle nutzt. Das fängt die Quellen, die die",
+    "   Pipeline gar nicht erst vorgeschlagen hat — der Bias des Entwurfs.",
+    "6. Artikel- und Transkripttext danach NICHT mehr ändern, auch keine",
+    "   Tippfehler: Die Zeichen-Offsets sind Teil der Annotation."
+  ],
+  "artikel_hash": "815512ea1b48010b",
+  "transkript_hash": "e9cabcc2e4140903",
+  "artikel_saetze": [
+    {
+      "id": "s1",
+      "text": "Landwirt Philipp Hoberg im westfälischen Wadersloh kann in Zukunft die Vorteile seiner neuen Agri-PV-Anlage nutzen."
+    },
+    {
+      "id": "s2",
+      "text": "Denn die 40.000 semitransparenten Module, die seine 17 Hektar große Himbeerplantage überdachen, schützen einerseits die empfindlichen Pflanzen vor Starkregen, Frost oder extremer Hitze."
+    },
+    {
+      "id": "s3",
+      "text": "Andererseits liefert sie gleichzeitig planbare Zusatzeinnahmen durch den Verkauf des Stroms."
+    },
+    {
+      "id": "s4",
+      "text": "Dieser wird außerhalb der EEG-Regularien flexibel an der Strombörse vermarktet und trägt so zur allgemeinen Versorgung mit erneuerbarer Energie bei."
+    },
+    {
+      "id": "s5",
+      "text": "Wertvolle Äcker doppelt nutzen\nMit einer Leistung von 23 Megawatt ist die neue Anlage nach Angaben des Wirtschaftsministeriums in Düsseldorf die bisher größte Agri-PV-Anlage in Nordrhein-Westfalen."
+    },
+    {
+      "id": "s6",
+      "text": "Sie wurde im Rahmen des Programms Progress.NRW – Klimaschutztechnik vom Land gefördert."
+    },
+    {
+      "id": "s7",
+      "text": "„Sonnenernte auf 17 Hektar – mit Agriphotovoltaik wie hier in Wadersloh, nutzen wir unsere wertvollen Äcker auch für klimafreundliche Energie“, betont Landeswirtschaftsministerin Mona Neubaur (B90/Grüne)."
+    },
+    {
+      "id": "s8",
+      "text": "„Davon profitieren Landwirtinnen, Landwirte und wir alle: Jede Kilowattstunde aus Erneuerbaren macht uns wirtschaftlich stärker und unabhängiger von Importen aus Krisenregionen.“"
+    },
+    {
+      "id": "s9",
+      "text": "Profitable Lösung in doppelter Hinsicht\nNRW.Energy4Climate hat die Entwicklung und den Bau des Projekts mit fachlicher Expertise begleitet."
+    },
+    {
+      "id": "s10",
+      "text": "„Landwirtschaft und erneuerbare Energien sind keine Konkurrenten, sondern Verbündete."
+    },
+    {
+      "id": "s11",
+      "text": "Nicht nur wir Menschen leiden unter dem fortschreitenden Klimawandel."
+    },
+    {
+      "id": "s12",
+      "text": "Extremwetterereignisse machen auch unseren Landwirten zu schaffen, und treiben Kosten und Verbraucherpreise in die Höhe“, erklärt Katharina Schubert, Geschäftsführerin von NRW.Energy4Climate."
+    },
+    {
+      "id": "s13",
+      "text": "„Der Heidelbeer-Bauer Philipp Hoberg stellt mit seiner Agri-PV-Anlage in Wadersloh, welche die Pflanzen schützt, unter Beweis, wie eine gleich in doppelter Hinsicht profitable Lösung aussehen kann."
+    },
+    {
+      "id": "s14",
+      "text": "Das macht deutlich: Die Energiewende ist ein Gewinn für alle und leistet nicht nur einen wesentlichen Beitrag zum Klimaschutz, sondern auch zur Klimaanpassung.“"
+    },
+    {
+      "id": "s15",
+      "text": "An die Landwirtschaft angepasst\nDie Anlage fügt sich in die bestehenden Heidelbeerkulturen rund um den Betrieb ein."
+    },
+    {
+      "id": "s16",
+      "text": "So sind die Modulreihen teils in Ost-West- und teils in einseitiger Ausrichtung nach Südosten gebaut – je nach landwirtschaftlicher Bewirtschaftungsrichtung."
+    },
+    {
+      "id": "s17",
+      "text": "So verbinde die Anlage den bestmöglichen Schutz der Kulturen mit einer leistungsfähigen Stromerzeugung, teilen die Projektpartner mit."
+    }
+  ],
+  "eintraege": [
+    {
+      "satz": "t1",
+      "text": "Im westfälischen Wadersloh erweitert Landwirt Philipp Hoberg seine Himbeerplantage um eine Agri-PV-Anlage.",
+      "start": 0,
+      "end": 106,
+      "geprueft": true,
+      "notwendig": [
+        "s1",
+        "s2"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c1"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t2",
+      "text": "Mit insgesamt vierzigtausend semitransparenten Modulen über siebzehn Hektar schützt sie die empfindlichen Pflanzen vor Wetterextremen und generiert gleichzeitig Strom.",
+      "start": 107,
+      "end": 274,
+      "geprueft": true,
+      "notwendig": [
+        "s2",
+        "s3"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c2"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t3",
+      "text": "Dieser wird flexibel an der Strombörse gehandelt, was zusätzliche Einkünfte möglich macht.",
+      "start": 275,
+      "end": 365,
+      "geprueft": true,
+      "notwendig": [
+        "s3",
+        "s4"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c3"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t4",
+      "text": "Mit einer Leistung von dreiundzwanzig Megawatt ist sie die größte dieser Art in Nordrhein-Westfalen, gefördert durch das Landesprogramm Progress.NRW.",
+      "start": 366,
+      "end": 515,
+      "geprueft": true,
+      "notwendig": [
+        "s5",
+        "s6"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c4"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t5",
+      "text": "Landeswirtschaftsministerin Mona Neubaur lobt diese doppelte Nutzung der Flächen als Gewinn für Landwirte und die Wirtschaft.",
+      "start": 516,
+      "end": 641,
+      "geprueft": true,
+      "notwendig": [
+        "s7",
+        "s8"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c5"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t6",
+      "text": "Auch Katharina Schubert von NRW.Energy4Climate erkennt im Projekt eine wichtige Antwort auf den Klimawandel: Schutz für die Landwirtschaft und Stärkung der erneuerbaren Energie zugleich.",
+      "start": 642,
+      "end": 828,
+      "geprueft": true,
+      "notwendig": [
+        "s10",
+        "s12"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c6"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t7",
+      "text": "Die Anlage ist so ausgerichtet, dass sie optimal mit den Heidelbeerkulturen harmoniert und effektive Stromerzeugung mit Pflanzenschutz vereint.",
+      "start": 829,
+      "end": 972,
+      "geprueft": true,
+      "notwendig": [
+        "s15",
+        "s17"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c7"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    }
+  ]
+}

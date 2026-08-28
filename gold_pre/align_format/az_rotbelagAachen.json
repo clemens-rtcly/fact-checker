@@ -1,0 +1,1341 @@
+{
+  "meta": {
+    "titel": "Aachen Muss man einen breiten Radweg, der zudem von Hunderten Pollern von der Autofahrbahn getrennt wird, rot anstreichen?",
+    "quelle": "Eigenes Paar",
+    "modell": "stufe0-2 · multilingual-e5-large-instruct + nli-mdeberta-2mil7",
+    "statistik": {
+      "saetze": 38,
+      "claims": 18,
+      "embeddings": 56,
+      "nli_paare": 18,
+      "dauer_s": 11.6
+    },
+    "ratelimit": {
+      "model": "multilingual-e5-large-instruct",
+      "checked_at": 1787357251.7762923,
+      "x-ratelimit-limit-minute": "15",
+      "x-ratelimit-remaining-minute": "13",
+      "x-ratelimit-limit-hour": "900",
+      "x-ratelimit-remaining-hour": "893",
+      "x-ratelimit-limit-day": "2000",
+      "x-ratelimit-remaining-day": "1993",
+      "x-ratelimit-limit-second": "2",
+      "x-ratelimit-remaining-second": "1",
+      "ratelimit-reset": "1",
+      "ratelimit-limit": "2",
+      "ratelimit-remaining": "1"
+    }
+  },
+  "article": {
+    "text": "Aachen Muss man einen breiten Radweg, der zudem von Hunderten Pollern von der Autofahrbahn getrennt wird, rot anstreichen? Diese Frage beantwortet die neue Mehrheitskoalition im Aachener Stadtrat – CDU, SPD, FDP, Volt – jetzt mit Nein. Nicht nur anhand des Beispiels Breslauer Straße lässt sich leicht aufschlüsseln, wie viel Geld man sparen kann, wenn man ohne Sicherheitsverlust auf rote Farbe verzichtet und Poller durch preiswerte Klemmfix-Systeme ersetzt. Der Verzicht auf die „Durcheinfärbung“ von Radinfrastruktur widerspricht einer Maßgabe des Radentscheids. Das kritisiert die Radlobby.\n\nFür die Rotbeschichtung der Breslauer Straße auf beiden Straßenseiten hat die Stadt Aachen nach Auskunft des Presseamts 139.700 Euro ausgegeben. Jeder einzelne Poller kostete dort 459,87 Euro. Verbaut wurden auf 500 Metern stadtauswärts und 700 Metern Richtung City exakt 254 Plastikpoller; Gesamtpreis: 116.806,98 Euro. Man hätte hier über 200.000 Euro sparen können, ohne die rote Farbe und die teure Pollervariante; und nach Einschätzung der Koalition auch ohne Sicherheitsverlust. Kostenfragen treten in Zeiten einer Haushaltssperre immer mehr in den Vordergrund.\n\nNur noch an Gefahrenstellen\n\nDarum soll die Roteinfärbung künftig auf Gefahrenstellen beschränkt werden, beispielsweise Kreuzungsbereiche. Bei unserem Beispiel ist dies die Kreuzung Breslauer Straße/Stolberger Straße/Sedanstraße/Joseph-von-Görres-Straße. Sie ist bereits entsprechend markiert.\n\nEtliche Radverkehrsanlagen sind längst rot eingefärbt; sie sollen es auch bleiben. Ein Abfräsen würde nach Einschätzung von Bauexperten den Asphalt zu sehr schädigen; ganz abgesehen von den Extrakosten. Inzwischen sind in Aachen – Stand Juli 2026 – Fahrradstraßen in einer Gesamtlänge von 4,3 Kilometern rot eingefärbt. Das gilt zum Beispiel für den Grabenring auf dem Driescher Gässchen, Templergraben und Karlsgraben oder ganz aktuell für die Bismarckstraße.\n\nDie Roteinfärbung von Protected Bike Lanes, also mindestens 2,30 Meter breit und meist mit Pollern abgetrennt, beläuft sich auf 2,3 Kilometer. Eine weitere Variante sind in Rot eingefärbte Radfahrstreifen, also mit „Dickstrich“ abgetrennte Radspuren: Davon hat Aachen 3,2 Kilometer. Am häufigsten taucht der rote Belag aber auf Radfahrschutzstreifen auf (weiß gestrichelte Blockmarkierung, Teil der normalen Fahrbahn): rund 6,9 Kilometer.\n\nDie Kosten für die Roteinfärbung von Radverkehrsanlagen variieren pro Quadratmeter von rund 35 bis rund 110 Euro je nach Größe und Beschaffenheit. „Im Durchschnitt sind das etwa 50 Euro pro Quadratmeter“, rechnet Harald Beckers vom Presseamt vor. Beispiele: Der rote Asphalt rund um den Europaplatz kostete 72.300 Euro, das eher kurze Driescher Gässchen 123.900 Euro, die Protected Bike Lane auf der Monheimsallee 62.130 Euro, die Rotbeschichtung in Epoxidharz an Knotenpunkt Karlsgraben brutto 104.741 Euro.\n\nZur Rotbeschichtung sind zwei Techniken gebräuchlich: rotes Kaltreibeplastik (gleiches Material wie weiße Fahrbahnmarkierungen) oder rote Epoxidharzbeschichtung. „Die Haltbarkeit ist von verschiedenen Faktoren abhängig, insbesondere vom Zustand der Fahrbahnoberfläche“, erklärt Beckers. „Je neuer und intakter die Unterlage ist, desto länger ist die Haltbarkeit. Zum anderen spielt die Verkehrsbelastung eine entscheidende Rolle“, erläutert er.\n\nDie Farbe verblasst\n\nVielerorts verblasst die rote Farbe allerdings schnell, oder sie platzt ab. „Grundsätzlich zeigen die bisherigen Erfahrungen sowie Laboruntersuchungen an der RWTH, dass Epoxidharzbeschichtungen eine längere Haltbarkeit aufweisen“, stellt Beckers fest. Sie sind wegen zusätzlicher Arbeitsschritte und höherem Materialeinsatz 20 bis 30 Euro pro Quadratmeter teurer.\n\nWie geht es nun weiter? Die Lothringerstraße zwischen Oppenhoffallee/Zollernstraße und Wilhelmstraße wird vorerst nicht rot eingefärbt. Die Regionetz wird in dieser Straße noch Versorgungsleitungen erneuern. Für die Krakaustraße gibt es indes „einen relativ aktuellen Ausführungsbeschluss, der noch eine Roteinfärbung der Fahrbahn vorsieht“, wie Beckers ausführt. Eine Bürgerinitiative vor Ort ist dagegen. Sie befürwortet die Fahrradstraße, lehnt das Rot aber wie die neue Koalition ab.",
+    "sentences": [
+      {
+        "id": "s1",
+        "start": 0,
+        "end": 122,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Aachen Muss man einen breiten Radweg, der zudem von Hunderten Pollern von der Autofahrbahn getrennt wird, rot anstreichen?"
+      },
+      {
+        "id": "s2",
+        "start": 123,
+        "end": 235,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Diese Frage beantwortet die neue Mehrheitskoalition im Aachener Stadtrat – CDU, SPD, FDP, Volt – jetzt mit Nein."
+      },
+      {
+        "id": "s3",
+        "start": 236,
+        "end": 460,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Nicht nur anhand des Beispiels Breslauer Straße lässt sich leicht aufschlüsseln, wie viel Geld man sparen kann, wenn man ohne Sicherheitsverlust auf rote Farbe verzichtet und Poller durch preiswerte Klemmfix-Systeme ersetzt."
+      },
+      {
+        "id": "s4",
+        "start": 461,
+        "end": 566,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Der Verzicht auf die „Durcheinfärbung“ von Radinfrastruktur widerspricht einer Maßgabe des Radentscheids."
+      },
+      {
+        "id": "s5",
+        "start": 567,
+        "end": 595,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Das kritisiert die Radlobby."
+      },
+      {
+        "id": "s6",
+        "start": 597,
+        "end": 741,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Für die Rotbeschichtung der Breslauer Straße auf beiden Straßenseiten hat die Stadt Aachen nach Auskunft des Presseamts 139.700 Euro ausgegeben."
+      },
+      {
+        "id": "s7",
+        "start": 742,
+        "end": 789,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Jeder einzelne Poller kostete dort 459,87 Euro."
+      },
+      {
+        "id": "s8",
+        "start": 790,
+        "end": 917,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Verbaut wurden auf 500 Metern stadtauswärts und 700 Metern Richtung City exakt 254 Plastikpoller; Gesamtpreis: 116.806,98 Euro."
+      },
+      {
+        "id": "s9",
+        "start": 918,
+        "end": 1081,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Man hätte hier über 200.000 Euro sparen können, ohne die rote Farbe und die teure Pollervariante; und nach Einschätzung der Koalition auch ohne Sicherheitsverlust."
+      },
+      {
+        "id": "s10",
+        "start": 1082,
+        "end": 1164,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Kostenfragen treten in Zeiten einer Haushaltssperre immer mehr in den Vordergrund."
+      },
+      {
+        "id": "s11",
+        "start": 1166,
+        "end": 1193,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Nur noch an Gefahrenstellen"
+      },
+      {
+        "id": "s12",
+        "start": 1195,
+        "end": 1304,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "Darum soll die Roteinfärbung künftig auf Gefahrenstellen beschränkt werden, beispielsweise Kreuzungsbereiche."
+      },
+      {
+        "id": "s13",
+        "start": 1305,
+        "end": 1420,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "Bei unserem Beispiel ist dies die Kreuzung Breslauer Straße/Stolberger Straße/Sedanstraße/Joseph-von-Görres-Straße."
+      },
+      {
+        "id": "s14",
+        "start": 1421,
+        "end": 1459,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "Sie ist bereits entsprechend markiert."
+      },
+      {
+        "id": "s15",
+        "start": 1461,
+        "end": 1543,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Etliche Radverkehrsanlagen sind längst rot eingefärbt; sie sollen es auch bleiben."
+      },
+      {
+        "id": "s16",
+        "start": 1544,
+        "end": 1663,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Ein Abfräsen würde nach Einschätzung von Bauexperten den Asphalt zu sehr schädigen; ganz abgesehen von den Extrakosten."
+      },
+      {
+        "id": "s17",
+        "start": 1664,
+        "end": 1780,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Inzwischen sind in Aachen – Stand Juli 2026 – Fahrradstraßen in einer Gesamtlänge von 4,3 Kilometern rot eingefärbt."
+      },
+      {
+        "id": "s18",
+        "start": 1781,
+        "end": 1921,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Das gilt zum Beispiel für den Grabenring auf dem Driescher Gässchen, Templergraben und Karlsgraben oder ganz aktuell für die Bismarckstraße."
+      },
+      {
+        "id": "s19",
+        "start": 1923,
+        "end": 2065,
+        "block": "body",
+        "level": 0,
+        "paragraph": 5,
+        "text": "Die Roteinfärbung von Protected Bike Lanes, also mindestens 2,30 Meter breit und meist mit Pollern abgetrennt, beläuft sich auf 2,3 Kilometer."
+      },
+      {
+        "id": "s20",
+        "start": 2066,
+        "end": 2205,
+        "block": "body",
+        "level": 0,
+        "paragraph": 5,
+        "text": "Eine weitere Variante sind in Rot eingefärbte Radfahrstreifen, also mit „Dickstrich“ abgetrennte Radspuren: Davon hat Aachen 3,2 Kilometer."
+      },
+      {
+        "id": "s21",
+        "start": 2206,
+        "end": 2361,
+        "block": "body",
+        "level": 0,
+        "paragraph": 5,
+        "text": "Am häufigsten taucht der rote Belag aber auf Radfahrschutzstreifen auf (weiß gestrichelte Blockmarkierung, Teil der normalen Fahrbahn): rund 6,9 Kilometer."
+      },
+      {
+        "id": "s22",
+        "start": 2363,
+        "end": 2509,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "Die Kosten für die Roteinfärbung von Radverkehrsanlagen variieren pro Quadratmeter von rund 35 bis rund 110 Euro je nach Größe und Beschaffenheit."
+      },
+      {
+        "id": "s23",
+        "start": 2510,
+        "end": 2609,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "„Im Durchschnitt sind das etwa 50 Euro pro Quadratmeter“, rechnet Harald Beckers vom Presseamt vor."
+      },
+      {
+        "id": "s24",
+        "start": 2610,
+        "end": 2871,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "Beispiele: Der rote Asphalt rund um den Europaplatz kostete 72.300 Euro, das eher kurze Driescher Gässchen 123.900 Euro, die Protected Bike Lane auf der Monheimsallee 62.130 Euro, die Rotbeschichtung in Epoxidharz an Knotenpunkt Karlsgraben brutto 104.741 Euro."
+      },
+      {
+        "id": "s25",
+        "start": 2873,
+        "end": 3034,
+        "block": "body",
+        "level": 0,
+        "paragraph": 7,
+        "text": "Zur Rotbeschichtung sind zwei Techniken gebräuchlich: rotes Kaltreibeplastik (gleiches Material wie weiße Fahrbahnmarkierungen) oder rote Epoxidharzbeschichtung."
+      },
+      {
+        "id": "s26",
+        "start": 3035,
+        "end": 3159,
+        "block": "body",
+        "level": 0,
+        "paragraph": 7,
+        "text": "„Die Haltbarkeit ist von verschiedenen Faktoren abhängig, insbesondere vom Zustand der Fahrbahnoberfläche“, erklärt Beckers."
+      },
+      {
+        "id": "s27",
+        "start": 3160,
+        "end": 3235,
+        "block": "body",
+        "level": 0,
+        "paragraph": 7,
+        "text": "„Je neuer und intakter die Unterlage ist, desto länger ist die Haltbarkeit."
+      },
+      {
+        "id": "s28",
+        "start": 3236,
+        "end": 3317,
+        "block": "body",
+        "level": 0,
+        "paragraph": 7,
+        "text": "Zum anderen spielt die Verkehrsbelastung eine entscheidende Rolle“, erläutert er."
+      },
+      {
+        "id": "s29",
+        "start": 3319,
+        "end": 3338,
+        "block": "body",
+        "level": 0,
+        "paragraph": 8,
+        "text": "Die Farbe verblasst"
+      },
+      {
+        "id": "s30",
+        "start": 3340,
+        "end": 3415,
+        "block": "body",
+        "level": 0,
+        "paragraph": 9,
+        "text": "Vielerorts verblasst die rote Farbe allerdings schnell, oder sie platzt ab."
+      },
+      {
+        "id": "s31",
+        "start": 3416,
+        "end": 3591,
+        "block": "body",
+        "level": 0,
+        "paragraph": 9,
+        "text": "„Grundsätzlich zeigen die bisherigen Erfahrungen sowie Laboruntersuchungen an der RWTH, dass Epoxidharzbeschichtungen eine längere Haltbarkeit aufweisen“, stellt Beckers fest."
+      },
+      {
+        "id": "s32",
+        "start": 3592,
+        "end": 3703,
+        "block": "body",
+        "level": 0,
+        "paragraph": 9,
+        "text": "Sie sind wegen zusätzlicher Arbeitsschritte und höherem Materialeinsatz 20 bis 30 Euro pro Quadratmeter teurer."
+      },
+      {
+        "id": "s33",
+        "start": 3705,
+        "end": 3728,
+        "block": "body",
+        "level": 0,
+        "paragraph": 10,
+        "text": "Wie geht es nun weiter?"
+      },
+      {
+        "id": "s34",
+        "start": 3729,
+        "end": 3840,
+        "block": "body",
+        "level": 0,
+        "paragraph": 10,
+        "text": "Die Lothringerstraße zwischen Oppenhoffallee/Zollernstraße und Wilhelmstraße wird vorerst nicht rot eingefärbt."
+      },
+      {
+        "id": "s35",
+        "start": 3841,
+        "end": 3912,
+        "block": "body",
+        "level": 0,
+        "paragraph": 10,
+        "text": "Die Regionetz wird in dieser Straße noch Versorgungsleitungen erneuern."
+      },
+      {
+        "id": "s36",
+        "start": 3913,
+        "end": 4068,
+        "block": "body",
+        "level": 0,
+        "paragraph": 10,
+        "text": "Für die Krakaustraße gibt es indes „einen relativ aktuellen Ausführungsbeschluss, der noch eine Roteinfärbung der Fahrbahn vorsieht“, wie Beckers ausführt."
+      },
+      {
+        "id": "s37",
+        "start": 4069,
+        "end": 4111,
+        "block": "body",
+        "level": 0,
+        "paragraph": 10,
+        "text": "Eine Bürgerinitiative vor Ort ist dagegen."
+      },
+      {
+        "id": "s38",
+        "start": 4112,
+        "end": 4192,
+        "block": "body",
+        "level": 0,
+        "paragraph": 10,
+        "text": "Sie befürwortet die Fahrradstraße, lehnt das Rot aber wie die neue Koalition ab."
+      }
+    ]
+  },
+  "transcript": {
+    "text": "Die neue Mehrheitskoalition im Aachener Stadtrat will breite, durch Poller geschützte Radwege künftig nicht mehr grundsätzlich rot einfärben. In Aachen soll die rote Beschichtung nach dem Willen von CDU, SPD, FDP und Volt auf Gefahrenstellen begrenzt werden, etwa an Kreuzungen. Die Radlobby kritisiert dies, weil der Verzicht der Vorgabe des Radentscheids widerspreche.\n\nAls Beispiel nennt die Koalition die Breslauer Straße. Dort gab die Stadt nach Angaben des Presseamts 139.700 Euro für die rote Beschichtung beider Seiten aus. Für 254 Plastikpoller auf insgesamt 1,2 Kilometern fielen weitere rund 116.800 Euro an. Jeder Poller kostete knapp 460 Euro. Die Koalition ist der Ansicht, dass sich mit günstigeren Klemmfix-Systemen und ohne durchgehende rote Farbe mehr als 200.000 Euro hätten sparen lassen, ohne die Sicherheit zu verringern. Angesichts der Haushaltssperre gewännen solche Kostenfragen an Bedeutung.\n\nBereits rot markierte Radverkehrsanlagen sollen jedoch bleiben. Ein Abfräsen der Beschichtung könnte den Asphalt beschädigen und zusätzliche Kosten verursachen. In Aachen sind Fahrradstraßen auf 4,3 Kilometern rot eingefärbt, hinzu kommen Protected Bike Lanes, Radfahrstreifen und Schutzstreifen.\n\nDie Beschichtung kostet je nach Untergrund und Fläche zwischen 35 und 110 Euro pro Quadratmeter. Harald Beckers vom Presseamt erklärt, im Durchschnitt seien es etwa 50 Euro. Rotes Epoxidharz halte nach bisherigen Erfahrungen und Untersuchungen der RWTH länger, sei aber teurer.\n\nDie Lothringerstraße wird vorerst nicht rot markiert. Für die Krakaustraße gilt dagegen noch ein Beschluss mit Roteinfärbung, gegen den sich eine Bürgerinitiative ausspricht.",
+    "claims": [
+      {
+        "id": "c1",
+        "start": 0,
+        "end": 141,
+        "text": "Die neue Mehrheitskoalition im Aachener Stadtrat will breite, durch Poller geschützte Radwege künftig nicht mehr grundsätzlich rot einfärben.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s2",
+            "start": 151,
+            "end": 195,
+            "spans": [
+              [
+                151,
+                195
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s3",
+            "start": 236,
+            "end": 417,
+            "spans": [
+              [
+                236,
+                241
+              ],
+              [
+                411,
+                417
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.6,
+        "margin": 0.22,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s2 + s3 (s3 erklärt zusätzlich 11 %). · Fundstellen erklären 46 % des Claims.",
+        "scores": {
+          "top": 0.636,
+          "lex": 0.377,
+          "emb": 0.693,
+          "anchor": 0,
+          "nli": 0.938
+        }
+      },
+      {
+        "id": "c2",
+        "start": 142,
+        "end": 278,
+        "text": "In Aachen soll die rote Beschichtung nach dem Willen von CDU, SPD, FDP und Volt auf Gefahrenstellen begrenzt werden, etwa an Kreuzungen.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s2",
+            "start": 178,
+            "end": 217,
+            "spans": [
+              [
+                178,
+                186
+              ],
+              [
+                213,
+                217
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s12",
+            "start": 1236,
+            "end": 1251,
+            "spans": [
+              [
+                1236,
+                1251
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.72,
+        "margin": 0.18,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s2 + s12 (s12 erklärt zusätzlich 40 %). · Fundstellen erklären 70 % des Claims.",
+        "scores": {
+          "top": 0.588,
+          "lex": 0.197,
+          "emb": 0.662,
+          "anchor": 0,
+          "nli": 0.995
+        }
+      },
+      {
+        "id": "c3",
+        "start": 279,
+        "end": 307,
+        "text": "Die Radlobby kritisiert dies",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s5",
+            "start": 567,
+            "end": 595,
+            "spans": [
+              [
+                567,
+                595
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.89,
+        "margin": 0.6,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 74 % des Claims.",
+        "scores": {
+          "top": 0.926,
+          "lex": 0.834,
+          "emb": 1,
+          "anchor": 0,
+          "nli": 0.998
+        }
+      },
+      {
+        "id": "c4",
+        "start": 309,
+        "end": 370,
+        "text": "weil der Verzicht der Vorgabe des Radentscheids widerspreche.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s4",
+            "start": 461,
+            "end": 566,
+            "spans": [
+              [
+                461,
+                473
+              ],
+              [
+                521,
+                533
+              ],
+              [
+                552,
+                566
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.76,
+        "margin": 0.39,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 66 % des Claims.",
+        "scores": {
+          "top": 0.73,
+          "lex": 0.512,
+          "emb": 0.835,
+          "anchor": 0,
+          "nli": 0.863
+        }
+      },
+      {
+        "id": "c5",
+        "start": 372,
+        "end": 426,
+        "text": "Als Beispiel nennt die Koalition die Breslauer Straße.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s13",
+            "start": 1317,
+            "end": 1420,
+            "spans": [
+              [
+                1317,
+                1325
+              ],
+              [
+                1348,
+                1364
+              ],
+              [
+                1376,
+                1382
+              ],
+              [
+                1413,
+                1420
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.66,
+        "margin": 0.24,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 58 % des Claims.",
+        "scores": {
+          "top": 0.708,
+          "lex": 0.35,
+          "emb": 0.727,
+          "anchor": 0,
+          "nli": 0.465
+        }
+      },
+      {
+        "id": "c6",
+        "start": 427,
+        "end": 531,
+        "text": "Dort gab die Stadt nach Angaben des Presseamts 139.700 Euro für die rote Beschichtung beider Seiten aus.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s6",
+            "start": 597,
+            "end": 729,
+            "spans": [
+              [
+                597,
+                620
+              ],
+              [
+                646,
+                652
+              ],
+              [
+                675,
+                680
+              ],
+              [
+                706,
+                729
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.84,
+        "margin": 0.41,
+        "entities": [
+          {
+            "type": "geld",
+            "surface": "139.700 Euro",
+            "norm": "139700 EUR",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Anker 139700 EUR eindeutig in s6 · Fundstellen erklären 76 % des Claims.",
+        "scores": {
+          "top": 0.877,
+          "lex": 0.519,
+          "emb": 0.904,
+          "anchor": 0.3,
+          "nli": 0.992
+        }
+      },
+      {
+        "id": "c7",
+        "start": 532,
+        "end": 619,
+        "text": "Für 254 Plastikpoller auf insgesamt 1,2 Kilometern fielen weitere rund 116.800 Euro an.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s8",
+            "start": 813,
+            "end": 904,
+            "spans": [
+              [
+                813,
+                819
+              ],
+              [
+                842,
+                848
+              ],
+              [
+                869,
+                886
+              ],
+              [
+                901,
+                904
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s20",
+            "start": 2066,
+            "end": 2205,
+            "spans": [
+              [
+                2066,
+                2078
+              ],
+              [
+                2193,
+                2205
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.86,
+        "margin": 0.41,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "254",
+            "norm": "254",
+            "status": "match"
+          },
+          {
+            "type": "zahl",
+            "surface": "1,2",
+            "norm": "1.2",
+            "status": "konflikt",
+            "quelle_surface": "2,30",
+            "quelle_norm": "2.3"
+          },
+          {
+            "type": "geld",
+            "surface": "116.800 Euro",
+            "norm": "116800 EUR",
+            "status": "konflikt",
+            "quelle_surface": "116.806,98 Euro",
+            "quelle_norm": "116807 EUR"
+          }
+        ],
+        "flags": [
+          "zahlkonflikt"
+        ],
+        "wortlaut": null,
+        "note": "Anker 254 eindeutig in s8 · Verdichtet aus s8 + s20 (s20 erklärt zusätzlich 23 %). · Fundstellen erklären 73 % des Claims. · 1.2 weicht ab — Artikel nennt 2.3 (s19). · 116800 EUR weicht ab — Artikel nennt 116807 EUR (s8).",
+        "scores": {
+          "top": 0.821,
+          "lex": 0.308,
+          "emb": 0.963,
+          "anchor": 0.3,
+          "nli": 0.618
+        }
+      },
+      {
+        "id": "c8",
+        "start": 620,
+        "end": 656,
+        "text": "Jeder Poller kostete knapp 460 Euro.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s7",
+            "start": 742,
+            "end": 771,
+            "spans": [
+              [
+                742,
+                747
+              ],
+              [
+                757,
+                771
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.87,
+        "margin": 0.37,
+        "entities": [
+          {
+            "type": "geld",
+            "surface": "460 Euro",
+            "norm": "460 EUR",
+            "status": "konflikt",
+            "quelle_surface": "459,87 Euro",
+            "quelle_norm": "459.87 EUR"
+          }
+        ],
+        "flags": [
+          "zahlkonflikt"
+        ],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 72 % des Claims. · 460 EUR weicht ab — Artikel nennt 459.87 EUR (s7).",
+        "scores": {
+          "top": 0.825,
+          "lex": 0.359,
+          "emb": 0.984,
+          "anchor": 0,
+          "nli": 0.996
+        }
+      },
+      {
+        "id": "c9",
+        "start": 657,
+        "end": 843,
+        "text": "Die Koalition ist der Ansicht, dass sich mit günstigeren Klemmfix-Systemen und ohne durchgehende rote Farbe mehr als 200.000 Euro hätten sparen lassen, ohne die Sicherheit zu verringern.",
+        "relation": "bedeutung_verschoben",
+        "sources": [
+          {
+            "sentence": "s9",
+            "start": 918,
+            "end": 1061,
+            "spans": [
+              [
+                918,
+                950
+              ],
+              [
+                951,
+                985
+              ],
+              [
+                1042,
+                1061
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.78,
+        "margin": 0.16,
+        "entities": [
+          {
+            "type": "geld",
+            "surface": "200.000 Euro",
+            "norm": "200000 EUR",
+            "status": "match"
+          }
+        ],
+        "flags": [
+          "signale_uneinig",
+          "bedeutung_verschoben"
+        ],
+        "wortlaut": null,
+        "note": "Anker 200000 EUR eindeutig in s9 · Fundstellen erklären 39 % des Claims. · Signale uneinig — nur die Bedeutung stützt die Zuordnung. · Bedeutung verschoben — die Fundstelle widerspricht dem Claim nicht, stützt ihn aber auch nicht vollständig (entailment 0.05, neutral 0.95).",
+        "scores": {
+          "top": 0.804,
+          "lex": 0.367,
+          "emb": 0.967,
+          "anchor": 0.3,
+          "nli": 0.052
+        }
+      },
+      {
+        "id": "c10",
+        "start": 844,
+        "end": 917,
+        "text": "Angesichts der Haushaltssperre gewännen solche Kostenfragen an Bedeutung.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s10",
+            "start": 1082,
+            "end": 1133,
+            "spans": [
+              [
+                1082,
+                1094
+              ],
+              [
+                1118,
+                1133
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.81,
+        "margin": 0.47,
+        "entities": [],
+        "flags": [
+          "signale_uneinig"
+        ],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 47 % des Claims. · Signale uneinig — nur die Bedeutung stützt die Zuordnung.",
+        "scores": {
+          "top": 0.72,
+          "lex": 0.37,
+          "emb": 0.989,
+          "anchor": 0,
+          "nli": 0.997
+        }
+      },
+      {
+        "id": "c11",
+        "start": 919,
+        "end": 982,
+        "text": "Bereits rot markierte Radverkehrsanlagen sollen jedoch bleiben.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s15",
+            "start": 1469,
+            "end": 1543,
+            "spans": [
+              [
+                1469,
+                1487
+              ],
+              [
+                1535,
+                1543
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s14",
+            "start": 1450,
+            "end": 1459,
+            "spans": [
+              [
+                1450,
+                1459
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.84,
+        "margin": 0.33,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s15 + s14 (s14 erklärt zusätzlich 13 %). · Fundstellen erklären 70 % des Claims.",
+        "scores": {
+          "top": 0.764,
+          "lex": 0.479,
+          "emb": 0.953,
+          "anchor": 0,
+          "nli": 0.998
+        }
+      },
+      {
+        "id": "c12",
+        "start": 983,
+        "end": 1079,
+        "text": "Ein Abfräsen der Beschichtung könnte den Asphalt beschädigen und zusätzliche Kosten verursachen.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s16",
+            "start": 1544,
+            "end": 1626,
+            "spans": [
+              [
+                1544,
+                1556
+              ],
+              [
+                1601,
+                1626
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s31",
+            "start": 3416,
+            "end": 3591,
+            "spans": [
+              [
+                3416,
+                3591
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.77,
+        "margin": 0.29,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s16 + s31 (s31 erklärt zusätzlich 23 %). · Fundstellen erklären 69 % des Claims.",
+        "scores": {
+          "top": 0.658,
+          "lex": 0.369,
+          "emb": 0.829,
+          "anchor": 0,
+          "nli": 0.997
+        }
+      },
+      {
+        "id": "c13",
+        "start": 1080,
+        "end": 1215,
+        "text": "In Aachen sind Fahrradstraßen auf 4,3 Kilometern rot eingefärbt, hinzu kommen Protected Bike Lanes, Radfahrstreifen und Schutzstreifen.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s17",
+            "start": 1683,
+            "end": 1780,
+            "spans": [
+              [
+                1683,
+                1689
+              ],
+              [
+                1710,
+                1724
+              ],
+              [
+                1750,
+                1780
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s19",
+            "start": 1945,
+            "end": 2065,
+            "spans": [
+              [
+                1945,
+                1965
+              ],
+              [
+                2053,
+                2065
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s21",
+            "start": 2231,
+            "end": 2361,
+            "spans": [
+              [
+                2231,
+                2235
+              ],
+              [
+                2251,
+                2272
+              ],
+              [
+                2351,
+                2361
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.89,
+        "margin": 0.13,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "4,3",
+            "norm": "4.3",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s17 + s19 + s21 (s19 erklärt zusätzlich 20 %, s21 erklärt zusätzlich 18 %). · Fundstellen erklären 80 % des Claims.",
+        "scores": {
+          "top": 0.743,
+          "lex": 0.397,
+          "emb": 0.997,
+          "anchor": 0,
+          "nli": 0.802
+        }
+      },
+      {
+        "id": "c14",
+        "start": 1217,
+        "end": 1313,
+        "text": "Die Beschichtung kostet je nach Untergrund und Fläche zwischen 35 und 110 Euro pro Quadratmeter.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s22",
+            "start": 2363,
+            "end": 2475,
+            "spans": [
+              [
+                2363,
+                2373
+              ],
+              [
+                2433,
+                2475
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s24",
+            "start": 2662,
+            "end": 2809,
+            "spans": [
+              [
+                2662,
+                2669
+              ],
+              [
+                2794,
+                2809
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s26",
+            "start": 3035,
+            "end": 3159,
+            "spans": [
+              [
+                3035,
+                3159
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.7,
+        "margin": 0.21,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "35",
+            "norm": "35",
+            "status": "match"
+          },
+          {
+            "type": "geld",
+            "surface": "110 Euro",
+            "norm": "110 EUR",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Anker 35 eindeutig in s22 · Anker 110 EUR eindeutig in s22 · Verdichtet aus s22 + s24 + s26 (s24 erklärt zusätzlich 14 %, s26 erklärt zusätzlich 10 %). · Fundstellen erklären 68 % des Claims.",
+        "scores": {
+          "top": 0.783,
+          "lex": 0.355,
+          "emb": 0.713,
+          "anchor": 0.38,
+          "nli": 0.987
+        }
+      },
+      {
+        "id": "c15",
+        "start": 1314,
+        "end": 1390,
+        "text": "Harald Beckers vom Presseamt erklärt, im Durchschnitt seien es etwa 50 Euro.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s23",
+            "start": 2510,
+            "end": 2609,
+            "spans": [
+              [
+                2510,
+                2548
+              ],
+              [
+                2576,
+                2609
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.91,
+        "margin": 0.58,
+        "entities": [
+          {
+            "type": "geld",
+            "surface": "50 Euro",
+            "norm": "50 EUR",
+            "status": "match"
+          },
+          {
+            "type": "person",
+            "surface": "Harald Beckers",
+            "norm": "harald beckers",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Anker 50 EUR eindeutig in s23 · Fundstellen erklären 82 % des Claims.",
+        "scores": {
+          "top": 0.929,
+          "lex": 0.661,
+          "emb": 0.983,
+          "anchor": 0.3,
+          "nli": 0.996
+        }
+      },
+      {
+        "id": "c16",
+        "start": 1391,
+        "end": 1494,
+        "text": "Rotes Epoxidharz halte nach bisherigen Erfahrungen und Untersuchungen der RWTH länger, sei aber teurer.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s31",
+            "start": 3442,
+            "end": 3546,
+            "spans": [
+              [
+                3442,
+                3464
+              ],
+              [
+                3471,
+                3502
+              ],
+              [
+                3539,
+                3546
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s32",
+            "start": 3696,
+            "end": 3703,
+            "spans": [
+              [
+                3696,
+                3703
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.81,
+        "margin": 0.39,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s31 + s32 (s32 erklärt zusätzlich 10 %). · Fundstellen erklären 76 % des Claims.",
+        "scores": {
+          "top": 0.801,
+          "lex": 0.47,
+          "emb": 0.858,
+          "anchor": 0,
+          "nli": 0.997
+        }
+      },
+      {
+        "id": "c17",
+        "start": 1496,
+        "end": 1549,
+        "text": "Die Lothringerstraße wird vorerst nicht rot markiert.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s34",
+            "start": 3729,
+            "end": 3824,
+            "spans": [
+              [
+                3729,
+                3749
+              ],
+              [
+                3819,
+                3824
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.86,
+        "margin": 0.44,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 72 % des Claims.",
+        "scores": {
+          "top": 0.85,
+          "lex": 0.574,
+          "emb": 0.962,
+          "anchor": 0,
+          "nli": 0.995
+        }
+      },
+      {
+        "id": "c18",
+        "start": 1550,
+        "end": 1670,
+        "text": "Für die Krakaustraße gilt dagegen noch ein Beschluss mit Roteinfärbung, gegen den sich eine Bürgerinitiative ausspricht.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s36",
+            "start": 3913,
+            "end": 4022,
+            "spans": [
+              [
+                3913,
+                3933
+              ],
+              [
+                4009,
+                4022
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s37",
+            "start": 4069,
+            "end": 4111,
+            "spans": [
+              [
+                4069,
+                4111
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.81,
+        "margin": 0.28,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s36 + s37 (s37 erklärt zusätzlich 33 %). · Fundstellen erklären 81 % des Claims.",
+        "scores": {
+          "top": 0.639,
+          "lex": 0.359,
+          "emb": 0.805,
+          "anchor": 0,
+          "nli": 0.988
+        }
+      }
+    ]
+  }
+}

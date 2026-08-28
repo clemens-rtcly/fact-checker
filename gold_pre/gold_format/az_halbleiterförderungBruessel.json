@@ -1,0 +1,391 @@
+{
+  "paar": "az_halbleiterförderungBruessel",
+  "split": "dev",
+  "anleitung": [
+    "Arbeitsanweisung (diese Zeilen bleiben in der Datei stehen):",
+    "1. Jede Zeile mit \"geprueft\": false durchgehen und auf true setzen.",
+    "2. notwendig = Sätze, ohne die ein Teil der Aussage unbelegt bliebe.",
+    "   zulaessig = stützt ebenfalls, ist aber entbehrlich (Dubletten).",
+    "3. relation prüfen: direkt | aggregiert | bedeutung_verschoben |",
+    "   inferiert | keine_quelle.",
+    "4. flags_erwartet: nur Befunde, die WIRKLICH zutreffen sollten",
+    "   (zahlkonflikt, ort_konflikt, kuerzel_konflikt, wortlaut_abweichung,",
+    "   ident_unbelegt, zahl_unbelegt). Leere Liste heißt: kein Befund.",
+    "5. Zum Schluss EINMAL umgekehrt: den Artikel lesen und fragen, welcher",
+    "   Transkriptsatz diese Stelle nutzt. Das fängt die Quellen, die die",
+    "   Pipeline gar nicht erst vorgeschlagen hat — der Bias des Entwurfs.",
+    "6. Artikel- und Transkripttext danach NICHT mehr ändern, auch keine",
+    "   Tippfehler: Die Zeichen-Offsets sind Teil der Annotation."
+  ],
+  "artikel_hash": "3dd94b3b36a2e26f",
+  "transkript_hash": "f5b40e0793292957",
+  "artikel_saetze": [
+    {
+      "id": "s1",
+      "text": "Brüssel Deutschland darf nach einer Entscheidung der Europäischen Kommission vier Halbleiteranlagen mit insgesamt 659 Millionen Euro fördern."
+    },
+    {
+      "id": "s2",
+      "text": "„Durch die Förderung von Innovationen im Halbleiterbereich stärken wir unsere technologische Souveränität und die Wettbewerbsfähigkeit Europas“, teilte die zuständige EU-Kommissarin Teresa Ribera dazu mit."
+    },
+    {
+      "id": "s3",
+      "text": "Deutschland darf damit folgende direkte Zuschüsse bereitstellen:"
+    },
+    {
+      "id": "s4",
+      "text": "353 Millionen Euro – und damit der größte Einzelposten der vier genehmigten Projekte – gehen an die SME Element 3-5 GmbH für eine Anlage in Baesweiler."
+    },
+    {
+      "id": "s5",
+      "text": "Dort soll laut EU-Kommission eine „weltweit einzigartige Fabrik“ entstehen, in der besonders leistungsstarke Wafer hergestellt werden sollen."
+    },
+    {
+      "id": "s6",
+      "text": "Wafer werden unter anderem für die Herstellung von Mikrochips und Sensoren verwendet und kommen so unter anderem in der Automobilindustrie zum Einsatz."
+    },
+    {
+      "id": "s7",
+      "text": "214 Millionen Euro für die Vishay Siliconix Itzehoe GmbH („Vishay“) für eine Anlage in Itzehoe (Schleswig-Holstein)."
+    },
+    {
+      "id": "s8",
+      "text": "Dort sollen spezielle Halbleiterschalter (Power-MOSFETs) hergestellt werden."
+    },
+    {
+      "id": "s9",
+      "text": "74,4 Millionen Euro für die KLA-Tencor MIE GmbH („KLA“) für eine Anlage in Weilburg (Hessen), unter anderem für hochmoderne Messgeräte."
+    },
+    {
+      "id": "s10",
+      "text": "Sie werden demnach zur Qualitätskontrolle bei der Massenproduktion von Halbleiterbauelementen eingesetzt."
+    },
+    {
+      "id": "s11",
+      "text": "17,9 Millionen Euro für die KETEK GmbH für eine Anlage in München (Bayern) zur Herstellung von zwei hoch spezialisierten Chips, die für industrielle Sortier- und Recyclingsysteme eingesetzt werden."
+    },
+    {
+      "id": "s12",
+      "text": "Die Projekte werden laut EU-Kommission jeweils gemeinsam aus dem Bundeshaushalt und von Landesbehörden finanziert."
+    },
+    {
+      "id": "s13",
+      "text": "Die Beteiligten haben sich dafür demnach unter anderem dazu verpflichtet, positive Auswirkungen auf die Halbleiter-Wertschöpfungskette in der EU sicherzustellen und besonders mit Hochschulen und Forschungseinrichtungen zusammenzuarbeiten."
+    },
+    {
+      "id": "s14",
+      "text": "Die EU will ihren Anteil an der weltweiten Halbleiterfertigung bis 2030 auf 20 Prozent steigern."
+    },
+    {
+      "id": "s15",
+      "text": "Derzeit liegt der Anteil laut EU-Kommission bei rund 10 Prozent."
+    },
+    {
+      "id": "s16",
+      "text": "(dpa)"
+    }
+  ],
+  "eintraege": [
+    {
+      "satz": "t1",
+      "text": "Die Europäische Kommission hat Deutschland erlaubt, vier Halbleiterprojekte mit insgesamt 659 Millionen Euro zu fördern.",
+      "start": 0,
+      "end": 120,
+      "geprueft": false,
+      "notwendig": [
+        "s1"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c1"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t2",
+      "text": "Das größte Vorhaben entsteht in Baesweiler: Die SME Element 3-5 GmbH erhält 353 Millionen Euro für eine neue Fabrik.",
+      "start": 121,
+      "end": 237,
+      "geprueft": false,
+      "notwendig": [
+        "s4",
+        "s5"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c2"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t3",
+      "text": "Dort sollen besonders leistungsstarke Wafer produziert werden, die unter anderem für Mikrochips und Sensoren benötigt werden.",
+      "start": 238,
+      "end": 363,
+      "geprueft": false,
+      "notwendig": [
+        "s5",
+        "s6"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c3"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t4",
+      "text": "Die zuständige EU-Kommissarin Teresa Ribera erklärte, die Förderung von Innovationen im Halbleiterbereich stärke Europas technologische Souveränität und Wettbewerbsfähigkeit.",
+      "start": 365,
+      "end": 539,
+      "geprueft": false,
+      "notwendig": [
+        "s2"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c4"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t5",
+      "text": "Die Anlage in Baesweiler soll nach Angaben der Kommission weltweit einzigartig sein.",
+      "start": 540,
+      "end": 624,
+      "geprueft": false,
+      "notwendig": [
+        "s4",
+        "s5"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c5"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t6",
+      "text": "Wafer kommen beispielsweise in der Automobilindustrie zum Einsatz.",
+      "start": 625,
+      "end": 691,
+      "geprueft": false,
+      "notwendig": [
+        "s6"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c6"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t7",
+      "text": "Weitere 214 Millionen Euro darf Deutschland an die Vishay Siliconix Itzehoe GmbH für ein Werk in Itzehoe in Schleswig-Holstein vergeben.",
+      "start": 693,
+      "end": 829,
+      "geprueft": false,
+      "notwendig": [
+        "s7"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c7"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t8",
+      "text": "Dort sollen spezielle Halbleiterschalter hergestellt werden, sogenannte Power-MOSFETs.",
+      "start": 830,
+      "end": 916,
+      "geprueft": false,
+      "notwendig": [
+        "s8"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c8"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t9",
+      "text": "Für eine Anlage der KLA-Tencor MIE GmbH in Weilburg in Hessen sind 74,4 Millionen Euro vorgesehen.",
+      "start": 918,
+      "end": 1016,
+      "geprueft": false,
+      "notwendig": [
+        "s9"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c9"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t10",
+      "text": "Das Unternehmen will unter anderem hochmoderne Messgeräte produzieren.",
+      "start": 1017,
+      "end": 1087,
+      "geprueft": false,
+      "notwendig": [
+        "s9"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c10"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t11",
+      "text": "Diese Geräte dienen der Qualitätskontrolle bei der Massenfertigung von Halbleiterbauelementen.",
+      "start": 1088,
+      "end": 1182,
+      "geprueft": false,
+      "notwendig": [
+        "s10"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c11"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t12",
+      "text": "Die KETEK GmbH erhält 17,9 Millionen Euro für eine Produktionsanlage in München in Bayern.",
+      "start": 1184,
+      "end": 1274,
+      "geprueft": false,
+      "notwendig": [
+        "s10",
+        "s11"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c12"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t13",
+      "text": "Dort sollen zwei hoch spezialisierte Chips entstehen, die in industriellen Sortier- und Recyclingsystemen verwendet werden.",
+      "start": 1275,
+      "end": 1398,
+      "geprueft": false,
+      "notwendig": [
+        "s11"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c13"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t14",
+      "text": "Finanziert werden die Projekte jeweils gemeinsam aus dem Bundeshaushalt und durch die zuständigen Landesbehörden.",
+      "start": 1400,
+      "end": 1513,
+      "geprueft": false,
+      "notwendig": [
+        "s12"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c14"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t15",
+      "text": "Die beteiligten Unternehmen haben sich verpflichtet, positive Auswirkungen auf die europäische Halbleiter-Wertschöpfungskette sicherzustellen und mit Hochschulen sowie Forschungseinrichtungen zusammenzuarbeiten.",
+      "start": 1514,
+      "end": 1725,
+      "geprueft": false,
+      "notwendig": [
+        "s13"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c15"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t16",
+      "text": "Die Europäische Union will ihren Anteil an der weltweiten Halbleiterfertigung bis 2030 von derzeit rund zehn auf 20 Prozent erhöhen.",
+      "start": 1726,
+      "end": 1858,
+      "geprueft": false,
+      "notwendig": [
+        "s14",
+        "s15"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [
+        "ident_unbelegt"
+      ],
+      "claims_im_lauf": [
+        "c16"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    }
+  ]
+}

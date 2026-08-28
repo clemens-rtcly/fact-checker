@@ -1,0 +1,466 @@
+{
+  "paar": "az_freibadSicherheit",
+  "split": "dev",
+  "anleitung": [
+    "Arbeitsanweisung (diese Zeilen bleiben in der Datei stehen):",
+    "1. Jede Zeile mit \"geprueft\": false durchgehen und auf true setzen.",
+    "2. notwendig = Sätze, ohne die ein Teil der Aussage unbelegt bliebe.",
+    "   zulaessig = stützt ebenfalls, ist aber entbehrlich (Dubletten).",
+    "3. relation prüfen: direkt | aggregiert | bedeutung_verschoben |",
+    "   inferiert | keine_quelle.",
+    "4. flags_erwartet: nur Befunde, die WIRKLICH zutreffen sollten",
+    "   (zahlkonflikt, ort_konflikt, kuerzel_konflikt, wortlaut_abweichung,",
+    "   ident_unbelegt, zahl_unbelegt). Leere Liste heißt: kein Befund.",
+    "5. Zum Schluss EINMAL umgekehrt: den Artikel lesen und fragen, welcher",
+    "   Transkriptsatz diese Stelle nutzt. Das fängt die Quellen, die die",
+    "   Pipeline gar nicht erst vorgeschlagen hat — der Bias des Entwurfs.",
+    "6. Artikel- und Transkripttext danach NICHT mehr ändern, auch keine",
+    "   Tippfehler: Die Zeichen-Offsets sind Teil der Annotation."
+  ],
+  "artikel_hash": "132f92d27646da6c",
+  "transkript_hash": "52430e9e6af895d9",
+  "artikel_saetze": [
+    {
+      "id": "s1",
+      "text": "Aachen Am vergangenen Wochenende hat die Stadt Aachen erstmals einen externen Sicherheitsdienst am Freibad Hangeweiher eingesetzt."
+    },
+    {
+      "id": "s2",
+      "text": "Grund für die Maßnahme waren nach Angaben des zuständigen Fachbereichs die Ereignisse rund um die massive Hitzewelle Ende Juni, die auch situative Schließungen nötig machten."
+    },
+    {
+      "id": "s3",
+      "text": "Dabei seien vielfach die Anweisungen des Personals missachtet und diverse Regeln nicht eingehalten worden."
+    },
+    {
+      "id": "s4",
+      "text": "Oberbürgermeister Michael Ziemons spricht in seinem Montagsupdate auf Instagram von bis zu 1000 Menschen, die an den Wochenenden zuvor über den Zaun geklettert seien und sogar Kinderwagen darüber gehoben hätten."
+    },
+    {
+      "id": "s5",
+      "text": "Situationen wie diese gelte es zum Schutz der Mitarbeiter und der Badegäste zu verhindern."
+    },
+    {
+      "id": "s6",
+      "text": "Gelingt es?"
+    },
+    {
+      "id": "s7",
+      "text": "„Das Fazit und die Resonanz sowohl bei Besucherinnen und Besuchern als auch bei den Beschäftigten nach dem ersten Wochenende mit Sicherheitsdienst sind positiv“, lautet eine erste Einschätzung der Verantwortlichen."
+    },
+    {
+      "id": "s8",
+      "text": "Die Zusammenarbeit mit dem Sicherheitsdienst habe sich ebenfalls als positiv erwiesen."
+    },
+    {
+      "id": "s9",
+      "text": "Allerdings habe es am vergangenen Wochenende mit etwa 2600 und 3000 Gästen am Tag auch ein deutlich geringeres Besucheraufkommen als an anderen heißen Tagen gegeben."
+    },
+    {
+      "id": "s10",
+      "text": "Situative Schließungen waren demnach zuletzt nicht nötig."
+    },
+    {
+      "id": "s11",
+      "text": "Die Mitarbeitenden des Sicherheitsdienstes sollen in erster Linie am Einlass und bei Bedarf an den Einfriedungen unterstützen."
+    },
+    {
+      "id": "s12",
+      "text": "Bei eskalierenden Situationen können sie zur Entlastung hinzugezogen werden."
+    },
+    {
+      "id": "s13",
+      "text": "Durch diese Unterstützung sollen sich die Beschäftigten im Freibad mehr auf die Kernbereiche am Becken, auf der Wiese und in den Sanitärbereichen konzentrieren können."
+    },
+    {
+      "id": "s14",
+      "text": "Inwiefern sich der Einsatz des externen Dienstleisters auf die künftigen Eintrittspreise im Freibad Hangeweiher auswirken wird, lässt sich noch nicht sagen."
+    },
+    {
+      "id": "s15",
+      "text": "Aktuell führt es erstmal nicht zu einem Preisanstieg."
+    },
+    {
+      "id": "s16",
+      "text": "Auf Nachfrage erklärt der zuständige Fachbereich, dass die Höhe der Eintrittspreise von verschiedenen Faktoren abhängt und in jedem Jahr überprüft und bei Bedarf neu festgesetzt wird."
+    },
+    {
+      "id": "s17",
+      "text": "Mit Blick auf die Ferien und weitere freibadtaugliche Tage teilt die Stadt abschließend mit, dass die Option für den Einsatz des Sicherheitsdienstes für die gesamte Freiwassersaison besteht."
+    },
+    {
+      "id": "s18",
+      "text": "Möglicherweise könne nach Auswertung der Wetterprognosen im Einzelfall an Tagen ganz oder teilweise darauf verzichtet werden.(hei)"
+    }
+  ],
+  "eintraege": [
+    {
+      "satz": "t1",
+      "text": "Die Stadt Aachen hat am Freibad Hangeweiher erstmals einen externen Sicherheitsdienst eingesetzt.",
+      "start": 0,
+      "end": 97,
+      "geprueft": false,
+      "notwendig": [
+        "s1"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c1"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t2",
+      "text": "Die Maßnahme soll Beschäftigte und Badegäste besser schützen.",
+      "start": 98,
+      "end": 159,
+      "geprueft": false,
+      "notwendig": [
+        "s5",
+        "s13"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c2"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t3",
+      "text": "Anlass waren Probleme während der massiven Hitzewelle Ende Juni.",
+      "start": 160,
+      "end": 224,
+      "geprueft": false,
+      "notwendig": [
+        "s2"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c3"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t4",
+      "text": "Nach Angaben des zuständigen Fachbereichs mussten Teile des Freibads damals situativ geschlossen werden.",
+      "start": 226,
+      "end": 330,
+      "geprueft": false,
+      "notwendig": [
+        "s2"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c4"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t5",
+      "text": "Dabei hätten viele Besucherinnen und Besucher Anweisungen des Personals missachtet und Regeln nicht eingehalten.",
+      "start": 331,
+      "end": 443,
+      "geprueft": false,
+      "notwendig": [
+        "s3"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c5"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t6",
+      "text": "Oberbürgermeister Michael Ziemons berichtet in einem Beitrag auf Instagram, an den vorherigen Wochenenden seien bis zu 1000 Menschen über den Zaun geklettert.",
+      "start": 444,
+      "end": 602,
+      "geprueft": false,
+      "notwendig": [
+        "s4"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c6"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t7",
+      "text": "Sogar Kinderwagen seien darüber gehoben worden.",
+      "start": 603,
+      "end": 650,
+      "geprueft": false,
+      "notwendig": [
+        "s4"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c7"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t8",
+      "text": "Die Mitarbeitenden des Sicherheitsdienstes unterstützen vor allem am Eingang und bei Bedarf an den Umzäunungen des Freibads.",
+      "start": 652,
+      "end": 776,
+      "geprueft": false,
+      "notwendig": [
+        "s11"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c8"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t9",
+      "text": "Eskaliert eine Situation, können sie zur Entlastung hinzugezogen werden.",
+      "start": 777,
+      "end": 849,
+      "geprueft": false,
+      "notwendig": [
+        "s12"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [
+        "wortlaut_abweichung"
+      ],
+      "claims_im_lauf": [
+        "c9"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t10",
+      "text": "Die Beschäftigten des Freibads sollen sich dadurch stärker auf die Becken, die Liegewiesen und die Sanitärbereiche konzentrieren können.",
+      "start": 850,
+      "end": 986,
+      "geprueft": false,
+      "notwendig": [
+        "s13"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c10"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t11",
+      "text": "Die Stadt zieht nach dem ersten Wochenende eine positive Bilanz.",
+      "start": 988,
+      "end": 1052,
+      "geprueft": false,
+      "notwendig": [
+        "s7"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c11"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t12",
+      "text": "Sowohl Besucherinnen und Besucher als auch die Beschäftigten hätten den Einsatz gut aufgenommen.",
+      "start": 1053,
+      "end": 1149,
+      "geprueft": false,
+      "notwendig": [
+        "s7"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c12"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t13",
+      "text": "Auch die Zusammenarbeit mit dem Sicherheitsdienst sei positiv verlaufen.",
+      "start": 1150,
+      "end": 1222,
+      "geprueft": false,
+      "notwendig": [
+        "s8"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c13"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t14",
+      "text": "Allerdings kamen mit etwa 2600 und 3000 Gästen pro Tag deutlich weniger Menschen als an anderen heißen Tagen.",
+      "start": 1224,
+      "end": 1333,
+      "geprueft": false,
+      "notwendig": [
+        "s9"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c14"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t15",
+      "text": "Schließungen waren deshalb zuletzt nicht nötig.",
+      "start": 1334,
+      "end": 1381,
+      "geprueft": false,
+      "notwendig": [
+        "s10"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c15"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t16",
+      "text": "Ob der Sicherheitsdienst künftig Auswirkungen auf die Eintrittspreise hat, ist noch offen.",
+      "start": 1383,
+      "end": 1473,
+      "geprueft": false,
+      "notwendig": [
+        "s14"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c16"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t17",
+      "text": "Zunächst steigen die Preise nicht.",
+      "start": 1474,
+      "end": 1508,
+      "geprueft": false,
+      "notwendig": [
+        "s15"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c17"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t18",
+      "text": "Die Stadt überprüft die Tarife nach eigenen Angaben jedes Jahr und passt sie bei Bedarf an.",
+      "start": 1509,
+      "end": 1600,
+      "geprueft": false,
+      "notwendig": [
+        "s16"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c18"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t19",
+      "text": "Für die gesamte Freiwassersaison bleibt der Sicherheitsdienst verfügbar.",
+      "start": 1601,
+      "end": 1673,
+      "geprueft": false,
+      "notwendig": [
+        "s17"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c19"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t20",
+      "text": "Je nach Wetterprognose könnte die Stadt an einzelnen Tagen ganz oder teilweise auf den Einsatz verzichten.",
+      "start": 1674,
+      "end": 1780,
+      "geprueft": false,
+      "notwendig": [
+        "s17",
+        "s18"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c20"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    }
+  ]
+}

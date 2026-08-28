@@ -1,0 +1,258 @@
+{
+  "paar": "pz_Hitzetote",
+  "split": "dev",
+  "anleitung": [
+    "Arbeitsanweisung (diese Zeilen bleiben in der Datei stehen):",
+    "1. Jede Zeile mit \"geprueft\": false durchgehen und auf true setzen.",
+    "2. notwendig = Sätze, ohne die ein Teil der Aussage unbelegt bliebe.",
+    "   zulaessig = stützt ebenfalls, ist aber entbehrlich (Dubletten).",
+    "3. relation prüfen: direkt | aggregiert | bedeutung_verschoben |",
+    "   inferiert | keine_quelle.",
+    "4. flags_erwartet: nur Befunde, die WIRKLICH zutreffen sollten",
+    "   (zahlkonflikt, ort_konflikt, kuerzel_konflikt, wortlaut_abweichung,",
+    "   ident_unbelegt, zahl_unbelegt). Leere Liste heißt: kein Befund.",
+    "5. Zum Schluss EINMAL umgekehrt: den Artikel lesen und fragen, welcher",
+    "   Transkriptsatz diese Stelle nutzt. Das fängt die Quellen, die die",
+    "   Pipeline gar nicht erst vorgeschlagen hat — der Bias des Entwurfs.",
+    "6. Artikel- und Transkripttext danach NICHT mehr ändern, auch keine",
+    "   Tippfehler: Die Zeichen-Offsets sind Teil der Annotation."
+  ],
+  "artikel_hash": "43b8597322f9f773",
+  "transkript_hash": "e22626caace2133d",
+  "artikel_saetze": [
+    {
+      "id": "s1",
+      "text": "Pforzheim."
+    },
+    {
+      "id": "s2",
+      "text": "12.500 Menschen sind in diesem Jahr bereits an der Hitze gestorben, 9600 davon binnen nur einer Woche: Das ist einer der traurigsten Rekorde, der je in Deutschland aufgestellt wurde."
+    },
+    {
+      "id": "s3",
+      "text": "Diese Zahl stammt vom Robert Koch-Institut und bezieht sich auf die extreme Hitzewoche vom 22. bis 28. Juni."
+    },
+    {
+      "id": "s4",
+      "text": "Runtergerechnet bedeutet das: Jeden Tag mussten 1371 Menschen ihr Leben lassen."
+    },
+    {
+      "id": "s5",
+      "text": "Und das Allertraurigste daran ist: Sie hätten nicht alle sterben müssen, würde es in Deutschland einen funktionierenden Hitzeschutz geben."
+    },
+    {
+      "id": "s6",
+      "text": "Das zumindest sagt Nicola Buhlinger-Göpfarth."
+    },
+    {
+      "id": "s7",
+      "text": "Die Pforzheimer Hausärztin kann das beurteilen, denn sie praktiziert zum einen seit vielen Jahren, zum anderen ist sie sowohl Bundes- als auch Landesvorsitzende des Hausärztinnen- und Hausärzteverbands – Buhlinger-Göpfarth vereint also Praxis-Erfahrung mit tiefen Einblicken in gesundheitspolitische Strukturen."
+    },
+    {
+      "id": "s8",
+      "text": "Kanzler bleibt vage\n„Als Hausärztin erlebe ich jeden Sommer, was Hitze mit meinen Patientinnen und Patienten macht."
+    },
+    {
+      "id": "s9",
+      "text": "Dass wir diese Zahlen trotzdem Jahr für Jahr hinnehmen, zeigt: Wir haben ein massives Umsetzungsproblem beim Hitzeschutz in diesem Land“, sagt sie."
+    },
+    {
+      "id": "s10",
+      "text": "„Das erfüllt mich mit tiefer Sorge, da bin ich ganz offen.“"
+    },
+    {
+      "id": "s11",
+      "text": "Nicola Buhlinger-Göpfarth"
+    },
+    {
+      "id": "s12",
+      "text": "Und wenn dann Bundeskanzler Friedrich Merz auf einer Pressekonferenz einem Journalisten auf seine Frage zu anhaltenden Hitzewellen, Folgen der Klimakrise und der politischen Debatte um Klimaschutzziele folgende Antwort gibt, macht das wenig Hoffnung auf Verbesserung: „Ich werde selbstverständlich auch in den nächsten Tagen und Wochen, wenn sich diese Wetterentwicklungen fortsetzen, die Lage weiter beobachten und dazu gegebenenfalls auch öffentlich etwas sagen.“"
+    },
+    {
+      "id": "s13",
+      "text": "Buhlinger-Göpfarth hat dazu eine klare Meinung: „Es ist gut, etwas zu sagen – besser wäre, etwas zu tun."
+    },
+    {
+      "id": "s14",
+      "text": "Beobachten reicht nicht, wenn längst klar ist, was getan werden müsste."
+    },
+    {
+      "id": "s15",
+      "text": "Solange der Hitzeschutz nicht mit konkreten, verbindlichen Maßnahmen unterlegt wird, bleibt er ein frommer Wunsch.“"
+    },
+    {
+      "id": "s16",
+      "text": "Und sie erinnert daran: „Schon vor Jahren hat die damalige Bundesregierung angekündigt, die Hitzeberatung strukturell in der Versorgung abzubilden."
+    },
+    {
+      "id": "s17",
+      "text": "Passiert ist bis heute nichts.“"
+    },
+    {
+      "id": "s18",
+      "text": "Was also muss ihrer Meinung nach politisch sofort getan werden?"
+    },
+    {
+      "id": "s19",
+      "text": "Medikation anpassen\nDie klimaresiliente Versorgung müsse bundesweit als eigenständige Leistung fest verankert und finanziert werden – so wie das in der Hausarztzentrierten Versorgung (HZV) in Baden-Württemberg bereits der Fall sei."
+    },
+    {
+      "id": "s20",
+      "text": "Hierunter versteht man den Schutz von Patientinnen und Patienten vor Hitze und Extremwetter mittels eingehender Aufklärung und, wenn erforderlich, konkreter Maßnahmen bezüglich der Medikation."
+    },
+    {
+      "id": "s21",
+      "text": "„Nur so werden die Praxen in die Lage versetzt, ihren Patientinnen und Patienten eine strukturierte Hitzeberatung anzubieten.“"
+    },
+    {
+      "id": "s22",
+      "text": "Außerdem müssten die Pflegeheime „endlich befähigt werden, ihre Bewohnerinnen und Bewohner wirksam zu schützen – baulich wie personell“, fordert die Ärztin."
+    },
+    {
+      "id": "s23",
+      "text": "Struktur fehlt\nHitzeberatung hört sich banal an, kann aber Leben retten."
+    },
+    {
+      "id": "s24",
+      "text": "„Wir kennen über 25 Stoffklassen von Medikamenten, die bei großer Hitze potenziell anders wirken oder im Falle einer falschen Lagerung gar nicht wirken, oder in der Dosierung angepasst werden müssen“, erklärt Buhlinger-Göpfarth."
+    },
+    {
+      "id": "s25",
+      "text": "Viele Betroffene merkten selbst nicht, wie kritisch ihre Lage sei."
+    },
+    {
+      "id": "s26",
+      "text": "„Genau deshalb ist die Hausarztpraxis der entscheidende Ort – wir kennen unsere Patientinnen und Patienten, wir wissen, wer gefährdet ist.“"
+    },
+    {
+      "id": "s27",
+      "text": "Betroffen davon sei keine Randgruppe, so die Ärztin, sondern Millionen Menschen."
+    },
+    {
+      "id": "s28",
+      "text": "„Obwohl diese Gefährdung fachlich völlig unbestritten ist, fehlt uns außerhalb der HZV eine verlässlich finanzierte Struktur, um diese Menschen systematisch zu erreichen.“"
+    },
+    {
+      "id": "s29",
+      "text": "Unklare Zuständigkeiten\nBuhlinger-Göpfarths Fazit fällt ernüchternd aus:"
+    },
+    {
+      "id": "s30",
+      "text": "„Es ist jedes Jahr das Gleiche: Im Sommer, wenn die Todeszahlen steigen, ist das Thema kurz sichtbar."
+    },
+    {
+      "id": "s31",
+      "text": "Spätestens im Herbst (...) verschwindet es wieder von der Tagesordnung – bis zum nächsten Sommer.“"
+    },
+    {
+      "id": "s32",
+      "text": "Nicola Buhlinger-Göparth"
+    },
+    {
+      "id": "s33",
+      "text": "Hinzu komme: Hitzeschutz kostet Geld, und die Zuständigkeiten zwischen Bund, Ländern und Kommunen seien so zersplittert, dass sich am Ende niemand verantwortlich fühle."
+    },
+    {
+      "id": "s34",
+      "text": "„Das ist politisch bequem – für die Betroffenen ist es tödlich.“"
+    }
+  ],
+  "eintraege": [
+    {
+      "satz": "t1",
+      "text": "In diesem Jahr starben 12.500 Menschen in Deutschland aufgrund der Hitze, allein 9.600 davon in einer Woche im Juni.",
+      "start": 0,
+      "end": 116,
+      "geprueft": true,
+      "notwendig": [
+        "s2",
+        "s3"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c1"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t2",
+      "text": "Diese Zahlen stammen vom Robert Koch-Institut und veranlassen die Pforzheimer Hausärztin Nicola Buhlinger-Göpfarth, auf die Dringlichkeit eines wirksamen Hitzeschutzes hinzuweisen.",
+      "start": 117,
+      "end": 297,
+      "geprueft": true,
+      "notwendig": [
+        "s3",
+        "s5",
+        "s7"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c2"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t3",
+      "text": "Sie kritisiert die Bundesregierung und betont, dass klimaresiliente Versorgungsstrukturen dringend notwendig seien, wie sie in Baden-Württemberg bereits bestehen.",
+      "start": 298,
+      "end": 460,
+      "geprueft": true,
+      "notwendig": [
+        "s19"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c3"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t4",
+      "text": "Buhlinger-Göpfarth fordert mehr Unterstützung für Hausarztpraxen und Pflegeheime, damit diese effektiv auf Hitzewellen reagieren können.",
+      "start": 461,
+      "end": 597,
+      "geprueft": true,
+      "notwendig": [
+        "s21",
+        "s22"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c4"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t5",
+      "text": "Trotz der bekannten Probleme bleibt der politische Fortschritt aus, während die Verantwortung zwischen Bund und Ländern zersplittert ist.",
+      "start": 598,
+      "end": 735,
+      "geprueft": true,
+      "notwendig": [
+        "s28",
+        "s33"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c5",
+        "c6"
+      ],
+      "relationen_gemischt": true,
+      "notiz": ""
+    }
+  ]
+}

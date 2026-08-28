@@ -1,0 +1,701 @@
+{
+  "paar": "az_erntesorgeNRW",
+  "split": "dev",
+  "anleitung": [
+    "Arbeitsanweisung (diese Zeilen bleiben in der Datei stehen):",
+    "1. Jede Zeile mit \"geprueft\": false durchgehen und auf true setzen.",
+    "2. notwendig = Sätze, ohne die ein Teil der Aussage unbelegt bliebe.",
+    "   zulaessig = stützt ebenfalls, ist aber entbehrlich (Dubletten).",
+    "3. relation prüfen: direkt | aggregiert | bedeutung_verschoben |",
+    "   inferiert | keine_quelle.",
+    "4. flags_erwartet: nur Befunde, die WIRKLICH zutreffen sollten",
+    "   (zahlkonflikt, ort_konflikt, kuerzel_konflikt, wortlaut_abweichung,",
+    "   ident_unbelegt, zahl_unbelegt). Leere Liste heißt: kein Befund.",
+    "5. Zum Schluss EINMAL umgekehrt: den Artikel lesen und fragen, welcher",
+    "   Transkriptsatz diese Stelle nutzt. Das fängt die Quellen, die die",
+    "   Pipeline gar nicht erst vorgeschlagen hat — der Bias des Entwurfs.",
+    "6. Artikel- und Transkripttext danach NICHT mehr ändern, auch keine",
+    "   Tippfehler: Die Zeichen-Offsets sind Teil der Annotation."
+  ],
+  "artikel_hash": "c5cba806afa5513b",
+  "transkript_hash": "3119fab1995e0729",
+  "artikel_saetze": [
+    {
+      "id": "s1",
+      "text": "Düsseldorf Die Landwirte in NRW blicken angesichts der Hitzewelle Ende Juni und der anhaltenden Trockenheit mit Sorge auf die Ernte."
+    },
+    {
+      "id": "s2",
+      "text": "„Die aktuelle Situation auf den Feldern in NRW ist durchaus angespannt“, erklärte die Landwirtschaftskammer NRW mit."
+    },
+    {
+      "id": "s3",
+      "text": "„Regen wird aktuell dringend benötigt."
+    },
+    {
+      "id": "s4",
+      "text": "Die Verdunstung mit den Hitzerekorden und zusätzlich viel Wind hat die Böden enorm austrocknen lassen“, sagte ein Sprecher."
+    },
+    {
+      "id": "s5",
+      "text": "„Die bislang insgesamt guten Prognosen müssen für die anstehende Weizen- und Rapsernte infrage gestellt werden.“"
+    },
+    {
+      "id": "s6",
+      "text": "An sandigeren Standorten mit geringerem Wasservorrat seien bereits Ertragseinbußen abzusehen."
+    },
+    {
+      "id": "s7",
+      "text": "Da es im Mai viel geregnet habe, sei von einer „landesweit akuten Dürresituation in der Landwirtschaft“ derzeit nicht auszugehen, teilte das Landwirtschaftsministerium NRW mit."
+    },
+    {
+      "id": "s8",
+      "text": "Dennoch beobachte man die Situation aufmerksam."
+    },
+    {
+      "id": "s9",
+      "text": "Der vergangene Monat war Meteorologen zufolge der heißeste Juni in Westeuropa seit Beginn der Wetteraufzeichnungen."
+    },
+    {
+      "id": "s10",
+      "text": "In der zweiten Monatshälfte legte sich eine mehrtägige Hitzewelle über Deutschland, in der Spitze wurden in Sachsen-Anhalt 41,8 Grad gemessen – ein neuer Rekordwert bundesweit."
+    },
+    {
+      "id": "s11",
+      "text": "Auch in NRW kletterten die Temperaturen auf mehr als 40 Grad."
+    },
+    {
+      "id": "s12",
+      "text": "Die Hitze ging an den Feldern der Landwirte nicht spurlos vorbei."
+    },
+    {
+      "id": "s13",
+      "text": "Die Situation sei je nach Region und Kultur unterschiedlich, berichtete der Rheinische Landwirtschafts-Verband (RLV)."
+    },
+    {
+      "id": "s14",
+      "text": "Aufgrund der hohen Temperaturen sei die Getreideernte in diesem Jahr bereits ungewöhnlich früh angelaufen und die Wintergerstenernte bereits vollständig eingefahren worden."
+    },
+    {
+      "id": "s15",
+      "text": "Derzeit liefe die Weizenernte auf Hochtouren."
+    },
+    {
+      "id": "s16",
+      "text": "„Im Getreide hat die extreme Hitze zeitweise zu einer beschleunigten Abreife beziehungsweise Notreife der Bestände geführt“, erklärte der Verband."
+    },
+    {
+      "id": "s17",
+      "text": "Notreife bedeutet, dass die Körner kleiner bleiben als unter normalen Bedingungen, was zu Qualitätseinbußen führen kann."
+    },
+    {
+      "id": "s18",
+      "text": "Für die Erntearbeiten seien die trockenen Bedingungen zwar günstig."
+    },
+    {
+      "id": "s19",
+      "text": "„Gleichzeitig fehlen jedoch vielerorts dringend benötigte Niederschläge für Kulturen wie Kartoffeln, Mais und Zuckerrübe“, so der RLV."
+    },
+    {
+      "id": "s20",
+      "text": "Insbesondere Kartoffeln reagieren empfindlich auf längere Hitzephasen und Trockenheit."
+    },
+    {
+      "id": "s21",
+      "text": "Unter Wassermangel stellen die Pflanzen ihr Wachstum teilweise ein, die Blätter welken oder vertrocknen."
+    },
+    {
+      "id": "s22",
+      "text": "„Dadurch werden die Knollen nicht mehr ausreichend versorgt, was zu geringeren Erträgen und Qualitätseinbußen führen kann.“"
+    },
+    {
+      "id": "s23",
+      "text": "Die genauen Auswirkungen ließen sich aber noch nicht abschließend beurteilen."
+    },
+    {
+      "id": "s24",
+      "text": "„Entscheidend wird sein, ob in den kommenden Wochen ausreichend Niederschlag fällt“, so der RLV."
+    },
+    {
+      "id": "s25",
+      "text": "Auch der Obstanbau hat unter den hohen Temperaturen gelitten."
+    },
+    {
+      "id": "s26",
+      "text": "„Die Hitze im Juni hat in den Obstkulturen zu Sonnenbrandschäden geführt, wenn die Pflanzen nicht durch Hagelnetze oder Überdachungen vor direkter Sonneneinstrahlung geschützt sind“, teilte der Provinzialverband Rheinischer Obst- und Gemüsebauer mit."
+    },
+    {
+      "id": "s27",
+      "text": "Derzeit ließen sich aber zu den erwartenden Erträgen noch keine Schätzungen abgeben."
+    },
+    {
+      "id": "s28",
+      "text": "Außergewöhnlich schwer betroffene Kulturen seien zugleich nicht auszumachen; vielmehr treffe es alle Kulturen sowie Regionen gleichermaßen."
+    },
+    {
+      "id": "s29",
+      "text": "Obst und Gemüse teurer"
+    },
+    {
+      "id": "s30",
+      "text": "Die geringeren Erträge machen sich auch beim Verkauf bemerkbar: „Die heißen Temperaturen und die Trockenheit der vergangenen Wochen führen dazu, dass es bei Obst und Gemüse mitunter zu Qualitätseinbußen kam und Erntemengen zurückgingen, was mitunter die Preise steigen ließ“, erklärte Claudio Gläßer, Marktanalyst bei der Agrarmarkt Informations-Gesellschaft (AMI)."
+    },
+    {
+      "id": "s31",
+      "text": "„Den Preissteigerungen stehen allerdings deutlich gestiegene Kosten entgegen“, so Gläßer."
+    },
+    {
+      "id": "s32",
+      "text": "„Aufgrund der Trockenheit haben Landwirte zum Beispiel viel höhere Kosten durch Bewässerungen."
+    },
+    {
+      "id": "s33",
+      "text": "Hinzu kommen mitunter geringere Erntemengen.“"
+    },
+    {
+      "id": "s34",
+      "text": "Einbußen nach den heißen Wochen seien beispielsweise bei Strauchbeeren wie Himbeeren oder Brombeeren zu verzeichnen, so die Landwirtschaftskammer."
+    },
+    {
+      "id": "s35",
+      "text": "Auf Gemüse- und Obstarten, die länger eingelagert werden, etwa Zwiebeln, wirke sich die Witterung kurzfristig hingegen nicht stark aus. > Wirtschaft"
+    }
+  ],
+  "eintraege": [
+    {
+      "satz": "t1",
+      "text": "Die Landwirte in Nordrhein-Westfalen blicken wegen der Hitzewelle und der anhaltenden Trockenheit besorgt auf die Ernte.",
+      "start": 0,
+      "end": 120,
+      "geprueft": false,
+      "notwendig": [
+        "s1"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [
+        "ident_unbelegt"
+      ],
+      "claims_im_lauf": [
+        "c1"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t2",
+      "text": "Der vergangene Juni war laut Meteorologen der heißeste in Westeuropa seit Beginn der Wetteraufzeichnungen.",
+      "start": 121,
+      "end": 227,
+      "geprueft": false,
+      "notwendig": [
+        "s9"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c2"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t3",
+      "text": "In Sachsen-Anhalt wurden dabei 41,8 Grad gemessen – ein neuer bundesweiter Rekord.",
+      "start": 228,
+      "end": 310,
+      "geprueft": false,
+      "notwendig": [
+        "s10"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c3"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t4",
+      "text": "Auch in Nordrhein-Westfalen stiegen die Temperaturen auf über 40 Grad.",
+      "start": 311,
+      "end": 381,
+      "geprueft": false,
+      "notwendig": [
+        "s11"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [
+        "ident_unbelegt"
+      ],
+      "claims_im_lauf": [
+        "c4"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t5",
+      "text": "Die Landwirtschaftskammer Nordrhein-Westfalen in Düsseldorf teilte mit, die Lage auf den Feldern sei angespannt.",
+      "start": 383,
+      "end": 495,
+      "geprueft": false,
+      "notwendig": [
+        "s1",
+        "s2"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben",
+        "ident_unbelegt"
+      ],
+      "claims_im_lauf": [
+        "c5"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t6",
+      "text": "Regen werde dringend benötigt.",
+      "start": 496,
+      "end": 526,
+      "geprueft": false,
+      "notwendig": [
+        "s3"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c6"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t7",
+      "text": "Hitze und starker Wind hätten die Böden stark ausgetrocknet.",
+      "start": 527,
+      "end": 587,
+      "geprueft": false,
+      "notwendig": [
+        "s4"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c7"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t8",
+      "text": "Die bislang guten Prognosen für die Weizen- und Rapsernte seien deshalb infrage gestellt.",
+      "start": 588,
+      "end": 677,
+      "geprueft": false,
+      "notwendig": [
+        "s5"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c8"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t9",
+      "text": "Besonders auf sandigen Böden mit wenig Wasservorrat zeichneten sich bereits Ertragseinbußen ab.",
+      "start": 678,
+      "end": 773,
+      "geprueft": false,
+      "notwendig": [
+        "s6"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c9"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t10",
+      "text": "Das Landwirtschaftsministerium Nordrhein-Westfalen sieht wegen der regenreichen Wochen im Mai derzeit keine landesweit akute Dürresituation.",
+      "start": 775,
+      "end": 915,
+      "geprueft": false,
+      "notwendig": [
+        "s7"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [
+        "ident_unbelegt"
+      ],
+      "claims_im_lauf": [
+        "c10"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t11",
+      "text": "Die Entwicklung werde aber aufmerksam beobachtet.",
+      "start": 916,
+      "end": 965,
+      "geprueft": false,
+      "notwendig": [
+        "s8"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c11"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t12",
+      "text": "Wegen der hohen Temperaturen hat die Getreideernte in diesem Jahr ungewöhnlich früh begonnen.",
+      "start": 967,
+      "end": 1060,
+      "geprueft": false,
+      "notwendig": [
+        "s14"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c12"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t13",
+      "text": "Nach Angaben des Rheinischen Landwirtschafts-Verbands, kurz RLV, ist die Wintergerste bereits vollständig eingefahren, die Weizenernte laufe derzeit auf Hochtouren.",
+      "start": 1061,
+      "end": 1225,
+      "geprueft": false,
+      "notwendig": [
+        "s13",
+        "s14",
+        "s15"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c13"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t14",
+      "text": "Die extreme Hitze habe das Getreide teilweise zu einer sogenannten Notreife gezwungen.",
+      "start": 1226,
+      "end": 1312,
+      "geprueft": false,
+      "notwendig": [
+        "s16"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c14"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t15",
+      "text": "Dabei bleiben die Körner kleiner, was die Qualität mindern kann.",
+      "start": 1313,
+      "end": 1377,
+      "geprueft": false,
+      "notwendig": [
+        "s17"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c15"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t16",
+      "text": "Für die Erntearbeiten seien trockene Felder zwar von Vorteil.",
+      "start": 1378,
+      "end": 1439,
+      "geprueft": false,
+      "notwendig": [
+        "s18"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [
+        "nli_widerspruch"
+      ],
+      "claims_im_lauf": [
+        "c16"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t17",
+      "text": "Kulturen wie Kartoffeln, Mais und Zuckerrüben benötigten jedoch dringend Niederschlag.",
+      "start": 1440,
+      "end": 1526,
+      "geprueft": false,
+      "notwendig": [
+        "s19"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c17"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t18",
+      "text": "Kartoffeln reagieren besonders empfindlich auf Hitze und Wassermangel.",
+      "start": 1528,
+      "end": 1598,
+      "geprueft": false,
+      "notwendig": [
+        "s20",
+        "s21"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c18"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t19",
+      "text": "Stellen die Pflanzen ihr Wachstum ein und welken die Blätter, werden die Knollen schlechter versorgt.",
+      "start": 1599,
+      "end": 1700,
+      "geprueft": false,
+      "notwendig": [
+        "s21",
+        "s22"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c19"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t20",
+      "text": "Das kann Ertrag und Qualität verringern.",
+      "start": 1701,
+      "end": 1741,
+      "geprueft": false,
+      "notwendig": [
+        "s22"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c20"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t21",
+      "text": "Wie stark sich das auf die Ernte auswirkt, ist laut RLV noch offen.",
+      "start": 1742,
+      "end": 1809,
+      "geprueft": false,
+      "notwendig": [],
+      "zulaessig": [],
+      "relation": "keine_quelle",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c21"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t22",
+      "text": "Entscheidend sei, ob in den kommenden Wochen genug Regen fällt.",
+      "start": 1810,
+      "end": 1873,
+      "geprueft": false,
+      "notwendig": [
+        "s24"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c22"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t23",
+      "text": "Auch der Obstanbau hat gelitten.",
+      "start": 1875,
+      "end": 1907,
+      "geprueft": false,
+      "notwendig": [
+        "s25"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c23"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t24",
+      "text": "Der Provinzialverband Rheinischer Obst- und Gemüsebauer erklärte, die Junihitze habe bei ungeschützten Pflanzen zu Sonnenbrandschäden geführt, etwa wenn Hagelnetze oder Überdachungen fehlten.",
+      "start": 1908,
+      "end": 2099,
+      "geprueft": false,
+      "notwendig": [
+        "s26"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [
+        "ident_unbelegt"
+      ],
+      "claims_im_lauf": [
+        "c24"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t25",
+      "text": "Die Folgen sind teilweise bereits beim Verkauf spürbar.",
+      "start": 2101,
+      "end": 2156,
+      "geprueft": false,
+      "notwendig": [],
+      "zulaessig": [],
+      "relation": "keine_quelle",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c25"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t26",
+      "text": "Claudio Gläßer, Marktanalyst bei der Agrarmarkt Informations-Gesellschaft, kurz AMI, berichtete von geringeren Erntemengen und Qualitätseinbußen bei Obst und Gemüse.",
+      "start": 2157,
+      "end": 2322,
+      "geprueft": false,
+      "notwendig": [
+        "s30"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c26"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t27",
+      "text": "Das habe die Preise mancherorts steigen lassen.",
+      "start": 2323,
+      "end": 2370,
+      "geprueft": false,
+      "notwendig": [],
+      "zulaessig": [],
+      "relation": "keine_quelle",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c27"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t28",
+      "text": "Zugleich belasteten deutlich höhere Kosten für die Bewässerung die Landwirte.",
+      "start": 2371,
+      "end": 2448,
+      "geprueft": false,
+      "notwendig": [
+        "s31",
+        "s32"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c28"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t29",
+      "text": "Besonders betroffen seien laut Landwirtschaftskammer unter anderem Himbeeren und Brombeeren.",
+      "start": 2449,
+      "end": 2541,
+      "geprueft": false,
+      "notwendig": [
+        "s34"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c29"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    }
+  ]
+}

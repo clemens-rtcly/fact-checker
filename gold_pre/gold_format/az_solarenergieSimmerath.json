@@ -1,0 +1,483 @@
+{
+  "paar": "az_solarenergieSimmerath",
+  "split": "dev",
+  "anleitung": [
+    "Arbeitsanweisung (diese Zeilen bleiben in der Datei stehen):",
+    "1. Jede Zeile mit \"geprueft\": false durchgehen und auf true setzen.",
+    "2. notwendig = Sätze, ohne die ein Teil der Aussage unbelegt bliebe.",
+    "   zulaessig = stützt ebenfalls, ist aber entbehrlich (Dubletten).",
+    "3. relation prüfen: direkt | aggregiert | bedeutung_verschoben |",
+    "   inferiert | keine_quelle.",
+    "4. flags_erwartet: nur Befunde, die WIRKLICH zutreffen sollten",
+    "   (zahlkonflikt, ort_konflikt, kuerzel_konflikt, wortlaut_abweichung,",
+    "   ident_unbelegt, zahl_unbelegt). Leere Liste heißt: kein Befund.",
+    "5. Zum Schluss EINMAL umgekehrt: den Artikel lesen und fragen, welcher",
+    "   Transkriptsatz diese Stelle nutzt. Das fängt die Quellen, die die",
+    "   Pipeline gar nicht erst vorgeschlagen hat — der Bias des Entwurfs.",
+    "6. Artikel- und Transkripttext danach NICHT mehr ändern, auch keine",
+    "   Tippfehler: Die Zeichen-Offsets sind Teil der Annotation."
+  ],
+  "artikel_hash": "5d6242bbe213ce70",
+  "transkript_hash": "28ea97253dcda98f",
+  "artikel_saetze": [
+    {
+      "id": "s1",
+      "text": "Simmerath Während die Windkraft seit Jahren das Aushängeschild der Energiewende in der Nordeifel ist, setzt die Gemeinde Simmerath nun verstärkt auch auf Sonnenenergie."
+    },
+    {
+      "id": "s2",
+      "text": "Auf vier gemeindeeigenen Gebäuden sollen in den kommenden Monaten Photovoltaikanlagen mit Batteriespeichern installiert werden."
+    },
+    {
+      "id": "s3",
+      "text": "Die Maßnahmen werden über den Gigawattpakt des Rheinischen Reviers gefördert."
+    },
+    {
+      "id": "s4",
+      "text": "Geplant sind Anlagen auf dem Feuerwehrgerätehaus in Lammersdorf, der Grundschule Steckenborn, einer Flüchtlingsunterkunft sowie der Sekundarschule am Standort Simmerath."
+    },
+    {
+      "id": "s5",
+      "text": "Die beiden Schulstandorte erhalten dabei die leistungsstärksten Anlagen mit jeweils 15,48 Kilowattpeak (kWp)."
+    },
+    {
+      "id": "s6",
+      "text": "Ergänzt werden sie durch Batteriespeicher mit Kapazitäten von 24,5 beziehungsweise 28 Kilowattstunden."
+    },
+    {
+      "id": "s7",
+      "text": "Auf dem Feuerwehrgerätehaus und der Flüchtlingsunterkunft sind jeweils Anlagen mit 5,59 Kilowattpeak und Batteriespeichern von sieben Kilowattstunden vorgesehen."
+    },
+    {
+      "id": "s8",
+      "text": "In einem Jahr betriebsbereit"
+    },
+    {
+      "id": "s9",
+      "text": "Die Gemeinde hat jetzt ein Interessenbekundungsverfahren gestartet, um geeignete Fachfirmen für Planung, Lieferung und Montage der Anlagen zu finden."
+    },
+    {
+      "id": "s10",
+      "text": "Aufgrund der Förderbedingungen müssen sämtliche Anlagen spätestens bis zum 30. Juni 2027 betriebsbereit sein."
+    },
+    {
+      "id": "s11",
+      "text": "Mit dem Ausbau der Photovoltaik setzt Simmerath seinen Weg als eine der energiestärksten Kommunen Nordrhein-Westfalens konsequent fort."
+    },
+    {
+      "id": "s12",
+      "text": "Bereits heute produziert die Gemeinde mehr Strom aus erneuerbaren Energien, als sie selbst verbraucht."
+    },
+    {
+      "id": "s13",
+      "text": "Nach Angaben der Gemeinde wurden schon 2022 rund 187 Prozent des eigenen Strombedarfs regenerativ erzeugt."
+    },
+    {
+      "id": "s14",
+      "text": "Simmerath war damit schon damals Stromexporteur."
+    },
+    {
+      "id": "s15",
+      "text": "Besondere Stellung"
+    },
+    {
+      "id": "s16",
+      "text": "Auch die Zahlen für 2023 belegen die besondere Stellung der Gemeinde; es wurden auf Simmerather Gemeindegebiet rund 131 Gigawattstunden Strom aus erneuerbaren Energien erzeugt."
+    },
+    {
+      "id": "s17",
+      "text": "Davon entfielen 111 Gigawattstunden auf Windkraft, 13 Gigawattstunden auf Photovoltaik, sechs Gigawattstunden auf Biomasse und eine Gigawattstunde auf Wasserkraft."
+    },
+    {
+      "id": "s18",
+      "text": "Dem stand ein örtlicher Stromverbrauch von lediglich 115 Gigawattstunden gegenüber."
+    },
+    {
+      "id": "s19",
+      "text": "Der Löwenanteil stammt weiterhin aus den Windparks rund um Lammersdorf."
+    },
+    {
+      "id": "s20",
+      "text": "Durch die Erweiterung des Windparks Simmerath im Jahr 2024 dürfte die regenerative Stromerzeugung inzwischen sogar noch höher liegen."
+    },
+    {
+      "id": "s21",
+      "text": "Offizielle Gesamtzahlen für 2024 und 2025 liegen bislang zwar noch nicht vor, doch Simmerath gehört schon heute zu den wenigen Kommunen in Nordrhein-Westfalen, die ihren Strombedarf rechnerisch vollständig aus erneuerbaren Energien decken können."
+    },
+    {
+      "id": "s22",
+      "text": "Mit den geplanten Solaranlagen auf kommunalen Gebäuden wird die Energiewende nun auch auf den Dächern von Schulen, Feuerwehr und öffentlichen Einrichtungen sichtbar."
+    },
+    {
+      "id": "s23",
+      "text": "Für die Gemeinde bedeutet dies nicht nur einen Beitrag zum Klimaschutz, sondern langfristig auch geringere Energiekosten und eine größere Unabhängigkeit von steigenden Strompreisen.(hes)"
+    }
+  ],
+  "eintraege": [
+    {
+      "satz": "t1",
+      "text": "Die Gemeinde Simmerath ist seit Jahren vor allem für ihre Windkraft bekannt.",
+      "start": 0,
+      "end": 76,
+      "geprueft": false,
+      "notwendig": [
+        "s1"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [
+        "nli_widerspruch"
+      ],
+      "claims_im_lauf": [
+        "c1"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t2",
+      "text": "Jetzt setzt sie verstärkt auch auf Sonnenenergie und plant Photovoltaikanlagen auf vier eigenen Gebäuden.",
+      "start": 77,
+      "end": 182,
+      "geprueft": false,
+      "notwendig": [
+        "s1",
+        "s2"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c2"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t3",
+      "text": "In den kommenden Monaten sollen auf dem Feuerwehrgerätehaus in Lammersdorf, der Grundschule Steckenborn, einer Flüchtlingsunterkunft und der Sekundarschule am Standort Simmerath Solaranlagen mit Batteriespeichern installiert werden.",
+      "start": 183,
+      "end": 415,
+      "geprueft": false,
+      "notwendig": [
+        "s2",
+        "s4"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c3"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t4",
+      "text": "Gefördert wird das Vorhaben über den Gigawattpakt des Rheinischen Reviers.",
+      "start": 416,
+      "end": 490,
+      "geprueft": false,
+      "notwendig": [
+        "s3"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c4"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t5",
+      "text": "Die leistungsstärksten Anlagen sind für die beiden Schulen vorgesehen.",
+      "start": 492,
+      "end": 562,
+      "geprueft": false,
+      "notwendig": [
+        "s5",
+        "s7"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c5"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t6",
+      "text": "Sie sollen jeweils 15,48 Kilowattpeak leisten und Batteriespeicher mit 24,5 beziehungsweise 28 Kilowattstunden erhalten.",
+      "start": 563,
+      "end": 683,
+      "geprueft": false,
+      "notwendig": [
+        "s5",
+        "s6"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c6"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t7",
+      "text": "Auf dem Feuerwehrgerätehaus und der Flüchtlingsunterkunft sind jeweils Anlagen mit 5,59 Kilowattpeak und Speicher mit sieben Kilowattstunden geplant.",
+      "start": 684,
+      "end": 833,
+      "geprueft": false,
+      "notwendig": [
+        "s7"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c7"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t8",
+      "text": "Um Fachfirmen für Planung, Lieferung und Montage zu finden, hat die Gemeinde ein Interessenbekundungsverfahren gestartet.",
+      "start": 835,
+      "end": 956,
+      "geprueft": false,
+      "notwendig": [
+        "s9"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c8"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t9",
+      "text": "Wegen der Förderbedingungen müssen alle Anlagen spätestens bis zum 30. Juni 2027 betriebsbereit sein.",
+      "start": 957,
+      "end": 1058,
+      "geprueft": false,
+      "notwendig": [
+        "s10"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c9"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t10",
+      "text": "Simmerath zählt bereits zu den energiestärksten Kommunen in Nordrhein-Westfalen.",
+      "start": 1060,
+      "end": 1140,
+      "geprueft": false,
+      "notwendig": [
+        "s11"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c10"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t11",
+      "text": "Schon 2022 erzeugte die Gemeinde nach eigenen Angaben rund 187 Prozent ihres Strombedarfs aus erneuerbaren Quellen und war damit Stromexporteur.",
+      "start": 1141,
+      "end": 1285,
+      "geprueft": false,
+      "notwendig": [
+        "s13",
+        "s14",
+        "s16"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c11"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t12",
+      "text": "Im Jahr 2023 entstanden auf dem Gemeindegebiet rund 131 Gigawattstunden Ökostrom.",
+      "start": 1286,
+      "end": 1367,
+      "geprueft": false,
+      "notwendig": [
+        "s16"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [
+        "ident_unbelegt"
+      ],
+      "claims_im_lauf": [
+        "c12"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t13",
+      "text": "Der größte Anteil, 111 Gigawattstunden, kam aus Windkraft.",
+      "start": 1368,
+      "end": 1426,
+      "geprueft": false,
+      "notwendig": [
+        "s17",
+        "s19"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c13"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t14",
+      "text": "Photovoltaik lieferte 13 Gigawattstunden, Biomasse sechs und Wasserkraft eine Gigawattstunde.",
+      "start": 1427,
+      "end": 1520,
+      "geprueft": false,
+      "notwendig": [
+        "s17"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c14"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t15",
+      "text": "Dem stand ein örtlicher Verbrauch von 115 Gigawattstunden gegenüber.",
+      "start": 1521,
+      "end": 1589,
+      "geprueft": false,
+      "notwendig": [
+        "s18"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c15"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t16",
+      "text": "Der Löwenanteil des Ökostroms stammt weiterhin aus den Windparks rund um Lammersdorf.",
+      "start": 1591,
+      "end": 1676,
+      "geprueft": false,
+      "notwendig": [
+        "s19"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c16"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t17",
+      "text": "Durch die Erweiterung des Windparks Simmerath im Jahr 2024 dürfte die Stromerzeugung inzwischen sogar noch höher liegen.",
+      "start": 1677,
+      "end": 1797,
+      "geprueft": false,
+      "notwendig": [
+        "s20"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c17"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t18",
+      "text": "Offizielle Gesamtzahlen für 2024 und 2025 gibt es zwar noch nicht, doch Simmerath gehört schon heute zu den wenigen Kommunen in Nordrhein-Westfalen, die ihren Strombedarf rechnerisch vollständig aus erneuerbaren Energien decken können.",
+      "start": 1798,
+      "end": 2033,
+      "geprueft": false,
+      "notwendig": [
+        "s21"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c18"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t19",
+      "text": "Mit den neuen Solaranlagen will die Gemeinde Klimaschutz, niedrigere Energiekosten und mehr Unabhängigkeit von steigenden Strompreisen verbinden.",
+      "start": 2034,
+      "end": 2179,
+      "geprueft": false,
+      "notwendig": [
+        "s23"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c19"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    }
+  ]
+}

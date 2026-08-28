@@ -1,0 +1,1020 @@
+{
+  "meta": {
+    "titel": "Würselen Der Stadtgarten hat in der Innenstadt die größten öffentlich nutzbaren Rasenflächen – vielleicht sogar zu viele?",
+    "quelle": "Eigenes Paar",
+    "modell": "stufe0-2 · multilingual-e5-large-instruct + nli-mdeberta-2mil7",
+    "statistik": {
+      "saetze": 34,
+      "claims": 18,
+      "embeddings": 52,
+      "nli_paare": 13,
+      "dauer_s": 7.1
+    },
+    "ratelimit": {
+      "model": "multilingual-e5-large-instruct",
+      "checked_at": 1787357737.2775064,
+      "x-ratelimit-limit-minute": "15",
+      "x-ratelimit-remaining-minute": "13",
+      "x-ratelimit-limit-hour": "900",
+      "x-ratelimit-remaining-hour": "884",
+      "x-ratelimit-limit-day": "2000",
+      "x-ratelimit-remaining-day": "1984",
+      "x-ratelimit-limit-second": "2",
+      "x-ratelimit-remaining-second": "1",
+      "ratelimit-reset": "1",
+      "ratelimit-limit": "2",
+      "ratelimit-remaining": "1"
+    }
+  },
+  "article": {
+    "text": "Würselen Der Stadtgarten hat in der Innenstadt die größten öffentlich nutzbaren Rasenflächen – vielleicht sogar zu viele? Wäre es nicht sinnvoll, einige Quadratmeter in wilde Blühwiesen zu verwandeln, damit die Stadt weniger Pflegeaufwand betreiben muss? Diese Frage ist theoretischer Natur, aber es ist nicht ausgeschlossen, dass sich Verwaltung und Politik bald mit ihr beschäftigen. Denn vor Kurzem ist ein Auto mit Osnabrücker Kennzeichen eine Woche lang das komplette Würselener Stadtgebiet abgefahren, der Mann am Steuer hat sämtliche städtischen Grünflächen fotografiert und sich Notizen gemacht.\n\nDer dunkle, kleine Geländewagen mit der Aufschrift „Einsatzfahrzeug“ gehört der Firma Ge-Komm, der privaten Gesellschaft für kommunale Infrastruktur aus Melle. Mehr als 20 Angestellte analysieren im Auftrag von Städten und Gemeinden deren Infrastruktur (Straßen, Rad- und Wirtschaftswege, Kanäle, Grünflächen etc.), um sie zu optimieren. Im konkreten Fall von Würselen: die Grünstruktur und deren Pflege ökologisch zu optimieren. „Die Stadt hat ein Konzept, und das ist gut. Es geht nicht darum, am Personal zu sparen“, betont Prokurist Eduard Schwarz.\n\nDie jüngst erhobenen Daten und Fotos werden derzeit in eine Datenbank übertragen, dem Geoinformationssystem für Grünflächen. Das dauere ein paar Wochen, weil es sich um sehr viele Datensätze handelt. Anschließend werden sie analysiert, und aus den Ergebnissen leiten die Experten Handlungsempfehlungen für Würselens Verwaltung ab, die diese wiederum mit der Politik besprechen muss. Anfang 2027 soll es spätestens so weit sein.\n\nDer Prozess sieht so aus: Die Arbeit der Ge-Komm orientiert sich an dem KfW-Förderprogramm 444 „Natürlicher Klimaschutz in Kommunen“, das die Stadt Würselen in Anspruch genommen hat. Den Richtlinien entsprechend wird die Untersuchung der Grünflächen analysiert. Beispielsweise: Welche Vegetationstypen (Rasen, Hecken etc.) liegen vor, welche Elemente (Beete, Blumenkübel, Baumscheiben etc.), wie groß ist die Fläche?\n\nIm nächsten Schritt werde laut Eduard Schwarz der Pflegeaufwand ermittelt. Die Richtlinien legen Durchschnittswerte fest, wie viele Minuten die Pflege einer bestimmten Fläche und eines Elementes in Anspruch nimmt. Aus den Minuten ergeben sich Stunden und aus den Stunden der Personalbedarf. Diese errechneten Daten gleicht die Ge-Komm mit den tatsächlich geleisteten und dokumentierten Arbeiten der städtischen Mitarbeiter ab. Auch werden diese Arbeiten in zwei Kategorien unterteilt: Flächen an hochfrequentierten Plätzen und Straßen sind höher einzustufen als solche in Randbereichen oder in Gewerbegebieten.\n\nKauf von Geräten gefördert\n\n„Über allem steht das Ziel, den ökologischen Wert der Flächen zu erhöhen und eine klimaresistente Anpassung vorzunehmen“, sagt Eduard Schwarz. „Die Handlungsempfehlungen folgen dem Dreiklang Optik, Pflegeaufwand und ökologischer Mehrwert.“ Unter diesem Aspekt ist die eingangs erwähnte, theoretische Teilumgestaltung des Stadtgartens zu verstehen. Ein Blühwiese sieht schön aus, ist nicht so pflegeintensiv wie eine zu mähende Rasenfläche, und sie hat einen deutlich höheren ökologischen Wert. Eduard Schwarz betont mit Blick auf mögliche auffällige Maßnahmen: Pilotflächen auswählen, Bürgerschaft einbeziehen und informieren, Akzeptanz schaffen – „nicht alles auf einmal ummodeln“.\n\nEin anderes Beispiel sind Blumenampeln. Sie sind bunte Blickfänge, aber ihre Pflege nimmt gemessen an der Fläche relativ viel Zeit in Anspruch. Und es passiert häufig, dass beim Gießvorgang das Nährstoffsubstrat auf den Boden läuft, wo dann wiederum Unkraut sprießt. „Nachfolgearbeiten“, sagt Eduard Schwarz – vermeidbarer Aufwand.\n\nDas KfW-Förderprogramm hat für Kommunen mehrere Vorteile: Die Konzepterstellung wird finanziell unterstützt, ebenfalls die Umsetzung bestimmter Maßnahmen und die Anschaffung von Geräten für die Pflege. „Es wird immer mehr auf die Insekten-schonende Bearbeitung von Grünflächen geachtet“, betont Eduard Schwarz. Zum Beispiel sind neuere Schneide- und Mähgeräte mit einer Art Ventilator ausgestattet, die die Insekten wegblasen – und so schützen.",
+    "sentences": [
+      {
+        "id": "s1",
+        "start": 0,
+        "end": 121,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Würselen Der Stadtgarten hat in der Innenstadt die größten öffentlich nutzbaren Rasenflächen – vielleicht sogar zu viele?"
+      },
+      {
+        "id": "s2",
+        "start": 122,
+        "end": 254,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Wäre es nicht sinnvoll, einige Quadratmeter in wilde Blühwiesen zu verwandeln, damit die Stadt weniger Pflegeaufwand betreiben muss?"
+      },
+      {
+        "id": "s3",
+        "start": 255,
+        "end": 385,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Diese Frage ist theoretischer Natur, aber es ist nicht ausgeschlossen, dass sich Verwaltung und Politik bald mit ihr beschäftigen."
+      },
+      {
+        "id": "s4",
+        "start": 386,
+        "end": 603,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Denn vor Kurzem ist ein Auto mit Osnabrücker Kennzeichen eine Woche lang das komplette Würselener Stadtgebiet abgefahren, der Mann am Steuer hat sämtliche städtischen Grünflächen fotografiert und sich Notizen gemacht."
+      },
+      {
+        "id": "s5",
+        "start": 605,
+        "end": 764,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Der dunkle, kleine Geländewagen mit der Aufschrift „Einsatzfahrzeug“ gehört der Firma Ge-Komm, der privaten Gesellschaft für kommunale Infrastruktur aus Melle."
+      },
+      {
+        "id": "s6",
+        "start": 765,
+        "end": 942,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Mehr als 20 Angestellte analysieren im Auftrag von Städten und Gemeinden deren Infrastruktur (Straßen, Rad- und Wirtschaftswege, Kanäle, Grünflächen etc.), um sie zu optimieren."
+      },
+      {
+        "id": "s7",
+        "start": 943,
+        "end": 1034,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Im konkreten Fall von Würselen: die Grünstruktur und deren Pflege ökologisch zu optimieren."
+      },
+      {
+        "id": "s8",
+        "start": 1035,
+        "end": 1079,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "„Die Stadt hat ein Konzept, und das ist gut."
+      },
+      {
+        "id": "s9",
+        "start": 1080,
+        "end": 1157,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Es geht nicht darum, am Personal zu sparen“, betont Prokurist Eduard Schwarz."
+      },
+      {
+        "id": "s10",
+        "start": 1159,
+        "end": 1283,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Die jüngst erhobenen Daten und Fotos werden derzeit in eine Datenbank übertragen, dem Geoinformationssystem für Grünflächen."
+      },
+      {
+        "id": "s11",
+        "start": 1284,
+        "end": 1358,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Das dauere ein paar Wochen, weil es sich um sehr viele Datensätze handelt."
+      },
+      {
+        "id": "s12",
+        "start": 1359,
+        "end": 1541,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Anschließend werden sie analysiert, und aus den Ergebnissen leiten die Experten Handlungsempfehlungen für Würselens Verwaltung ab, die diese wiederum mit der Politik besprechen muss."
+      },
+      {
+        "id": "s13",
+        "start": 1542,
+        "end": 1586,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Anfang 2027 soll es spätestens so weit sein."
+      },
+      {
+        "id": "s14",
+        "start": 1588,
+        "end": 1770,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "Der Prozess sieht so aus: Die Arbeit der Ge-Komm orientiert sich an dem KfW-Förderprogramm 444 „Natürlicher Klimaschutz in Kommunen“, das die Stadt Würselen in Anspruch genommen hat."
+      },
+      {
+        "id": "s15",
+        "start": 1771,
+        "end": 1849,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "Den Richtlinien entsprechend wird die Untersuchung der Grünflächen analysiert."
+      },
+      {
+        "id": "s16",
+        "start": 1850,
+        "end": 2004,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "Beispielsweise: Welche Vegetationstypen (Rasen, Hecken etc.) liegen vor, welche Elemente (Beete, Blumenkübel, Baumscheiben etc.), wie groß ist die Fläche?"
+      },
+      {
+        "id": "s17",
+        "start": 2006,
+        "end": 2080,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Im nächsten Schritt werde laut Eduard Schwarz der Pflegeaufwand ermittelt."
+      },
+      {
+        "id": "s18",
+        "start": 2081,
+        "end": 2219,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Die Richtlinien legen Durchschnittswerte fest, wie viele Minuten die Pflege einer bestimmten Fläche und eines Elementes in Anspruch nimmt."
+      },
+      {
+        "id": "s19",
+        "start": 2220,
+        "end": 2296,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Aus den Minuten ergeben sich Stunden und aus den Stunden der Personalbedarf."
+      },
+      {
+        "id": "s20",
+        "start": 2297,
+        "end": 2432,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Diese errechneten Daten gleicht die Ge-Komm mit den tatsächlich geleisteten und dokumentierten Arbeiten der städtischen Mitarbeiter ab."
+      },
+      {
+        "id": "s21",
+        "start": 2433,
+        "end": 2616,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Auch werden diese Arbeiten in zwei Kategorien unterteilt: Flächen an hochfrequentierten Plätzen und Straßen sind höher einzustufen als solche in Randbereichen oder in Gewerbegebieten."
+      },
+      {
+        "id": "s22",
+        "start": 2618,
+        "end": 2644,
+        "block": "body",
+        "level": 0,
+        "paragraph": 5,
+        "text": "Kauf von Geräten gefördert"
+      },
+      {
+        "id": "s23",
+        "start": 2646,
+        "end": 2788,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "„Über allem steht das Ziel, den ökologischen Wert der Flächen zu erhöhen und eine klimaresistente Anpassung vorzunehmen“, sagt Eduard Schwarz."
+      },
+      {
+        "id": "s24",
+        "start": 2789,
+        "end": 2885,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "„Die Handlungsempfehlungen folgen dem Dreiklang Optik, Pflegeaufwand und ökologischer Mehrwert.“"
+      },
+      {
+        "id": "s25",
+        "start": 2886,
+        "end": 2993,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "Unter diesem Aspekt ist die eingangs erwähnte, theoretische Teilumgestaltung des Stadtgartens zu verstehen."
+      },
+      {
+        "id": "s26",
+        "start": 2994,
+        "end": 3139,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "Ein Blühwiese sieht schön aus, ist nicht so pflegeintensiv wie eine zu mähende Rasenfläche, und sie hat einen deutlich höheren ökologischen Wert."
+      },
+      {
+        "id": "s27",
+        "start": 3140,
+        "end": 3328,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "Eduard Schwarz betont mit Blick auf mögliche auffällige Maßnahmen: Pilotflächen auswählen, Bürgerschaft einbeziehen und informieren, Akzeptanz schaffen – „nicht alles auf einmal ummodeln“."
+      },
+      {
+        "id": "s28",
+        "start": 3330,
+        "end": 3369,
+        "block": "body",
+        "level": 0,
+        "paragraph": 7,
+        "text": "Ein anderes Beispiel sind Blumenampeln."
+      },
+      {
+        "id": "s29",
+        "start": 3370,
+        "end": 3473,
+        "block": "body",
+        "level": 0,
+        "paragraph": 7,
+        "text": "Sie sind bunte Blickfänge, aber ihre Pflege nimmt gemessen an der Fläche relativ viel Zeit in Anspruch."
+      },
+      {
+        "id": "s30",
+        "start": 3474,
+        "end": 3596,
+        "block": "body",
+        "level": 0,
+        "paragraph": 7,
+        "text": "Und es passiert häufig, dass beim Gießvorgang das Nährstoffsubstrat auf den Boden läuft, wo dann wiederum Unkraut sprießt."
+      },
+      {
+        "id": "s31",
+        "start": 3597,
+        "end": 3661,
+        "block": "body",
+        "level": 0,
+        "paragraph": 7,
+        "text": "„Nachfolgearbeiten“, sagt Eduard Schwarz – vermeidbarer Aufwand."
+      },
+      {
+        "id": "s32",
+        "start": 3663,
+        "end": 3864,
+        "block": "body",
+        "level": 0,
+        "paragraph": 8,
+        "text": "Das KfW-Förderprogramm hat für Kommunen mehrere Vorteile: Die Konzepterstellung wird finanziell unterstützt, ebenfalls die Umsetzung bestimmter Maßnahmen und die Anschaffung von Geräten für die Pflege."
+      },
+      {
+        "id": "s33",
+        "start": 3865,
+        "end": 3973,
+        "block": "body",
+        "level": 0,
+        "paragraph": 8,
+        "text": "„Es wird immer mehr auf die Insekten-schonende Bearbeitung von Grünflächen geachtet“, betont Eduard Schwarz."
+      },
+      {
+        "id": "s34",
+        "start": 3974,
+        "end": 4107,
+        "block": "body",
+        "level": 0,
+        "paragraph": 8,
+        "text": "Zum Beispiel sind neuere Schneide- und Mähgeräte mit einer Art Ventilator ausgestattet, die die Insekten wegblasen – und so schützen."
+      }
+    ]
+  },
+  "transcript": {
+    "text": "Würselen lässt seine städtischen Grünflächen umfassend untersuchen. Die Stadt will herausfinden, wie sich Parks, Rasenflächen, Hecken und Beete ökologisch verbessern und zugleich sinnvoll pflegen lassen. Auch der Stadtgarten in der Würselener Innenstadt könnte dabei in den Blick geraten. Dort gibt es große öffentlich nutzbare Rasenflächen. Denkbar wäre, einzelne Bereiche künftig als Blühwiesen anzulegen.\n\nFür die Analyse hat die Stadt die Gesellschaft für kommunale Infrastruktur Ge-Komm aus Melle beauftragt. Ein Mitarbeiter des Unternehmens hat eine Woche lang das gesamte Stadtgebiet abgefahren, Grünflächen fotografiert und Daten erfasst. Diese Informationen werden nun in ein Geoinformationssystem für Grünflächen übertragen. Danach sollen Fachleute daraus Empfehlungen für Verwaltung und Politik entwickeln. Spätestens Anfang 2027 soll darüber beraten werden.\n\nEduard Schwarz, Prokurist der Ge-Komm, betont, es gehe nicht darum, Personal einzusparen. Ziel sei es vielmehr, den ökologischen Wert der Flächen zu erhöhen und sie widerstandsfähiger gegen den Klimawandel zu machen. Untersucht wird unter anderem, welche Vegetation vorhanden ist, wie groß einzelne Flächen sind und wie viel Pflege sie benötigen.\n\nDabei werden berechnete Pflegezeiten mit der tatsächlichen Arbeit der städtischen Beschäftigten verglichen. Besonders stark genutzte Flächen in der Innenstadt oder an wichtigen Straßen werden anders bewertet als Grünflächen in Rand- oder Gewerbegebieten.\n\nBlühwiesen könnten eine Möglichkeit sein: Sie seien attraktiv, benötigten weniger Pflege als regelmäßig gemähter Rasen und böten Insekten mehr Lebensraum. Schwarz rät jedoch zu Pilotflächen sowie zu Information und Beteiligung der Bürgerschaft. Das Förderprogramm „Natürlicher Klimaschutz in Kommunen“ der Kreditanstalt für Wiederaufbau, kurz KfW, unterstützt neben dem Konzept auch Maßnahmen und neue, insektenschonende Pflegegeräte.",
+    "claims": [
+      {
+        "id": "c1",
+        "start": 0,
+        "end": 67,
+        "text": "Würselen lässt seine städtischen Grünflächen umfassend untersuchen.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s4",
+            "start": 473,
+            "end": 564,
+            "spans": [
+              [
+                473,
+                483
+              ],
+              [
+                541,
+                564
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.45,
+        "margin": 0.03,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 42 % des Claims. · Unter der Direkt-Schwelle — zur Prüfung empfohlen.",
+        "scores": {
+          "top": 0.499,
+          "lex": 0.201,
+          "emb": 0.569,
+          "anchor": 0,
+          "nli": 0.97
+        }
+      },
+      {
+        "id": "c2",
+        "start": 68,
+        "end": 203,
+        "text": "Die Stadt will herausfinden, wie sich Parks, Rasenflächen, Hecken und Beete ökologisch verbessern und zugleich sinnvoll pflegen lassen.",
+        "relation": "keine_quelle",
+        "sources": [],
+        "confidence": 0.58,
+        "margin": 0.1,
+        "entities": [
+          {
+            "type": "person",
+            "surface": "Parks",
+            "norm": "parks",
+            "status": "unbelegt"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Keine ausreichend ähnliche Stelle im Artikel — nächster Kandidat s7 mit 0,43 (Schwelle 0,44). · Name „Parks“ nicht im Artikel belegt.",
+        "scores": {
+          "top": 0.428,
+          "lex": 0.143,
+          "emb": 0.557,
+          "anchor": 0,
+          "nli": null
+        }
+      },
+      {
+        "id": "c3",
+        "start": 204,
+        "end": 288,
+        "text": "Auch der Stadtgarten in der Würselener Innenstadt könnte dabei in den Blick geraten.",
+        "relation": "keine_quelle",
+        "sources": [],
+        "confidence": 0.62,
+        "margin": 0.03,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Keine ausreichend ähnliche Stelle im Artikel — nächster Kandidat s4 mit 0,41 (Schwelle 0,44).",
+        "scores": {
+          "top": 0.406,
+          "lex": 0.136,
+          "emb": 0.441,
+          "anchor": 0,
+          "nli": null
+        }
+      },
+      {
+        "id": "c4",
+        "start": 289,
+        "end": 341,
+        "text": "Dort gibt es große öffentlich nutzbare Rasenflächen.",
+        "relation": "keine_quelle",
+        "sources": [],
+        "confidence": 0.74,
+        "margin": 0.08,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Keine ausreichend ähnliche Stelle im Artikel — nächster Kandidat s1 mit 0,35 (Schwelle 0,44).",
+        "scores": {
+          "top": 0.353,
+          "lex": 0.338,
+          "emb": 0.599,
+          "anchor": 0,
+          "nli": null
+        }
+      },
+      {
+        "id": "c5",
+        "start": 342,
+        "end": 407,
+        "text": "Denkbar wäre, einzelne Bereiche künftig als Blühwiesen anzulegen.",
+        "relation": "keine_quelle",
+        "sources": [],
+        "confidence": 0.81,
+        "margin": 0.03,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Keine ausreichend ähnliche Stelle im Artikel — nächster Kandidat s26 mit 0,32 (Schwelle 0,44).",
+        "scores": {
+          "top": 0.321,
+          "lex": 0.127,
+          "emb": 0.464,
+          "anchor": 0,
+          "nli": null
+        }
+      },
+      {
+        "id": "c6",
+        "start": 409,
+        "end": 513,
+        "text": "Für die Analyse hat die Stadt die Gesellschaft für kommunale Infrastruktur Ge-Komm aus Melle beauftragt.",
+        "relation": "bedeutung_verschoben",
+        "sources": [
+          {
+            "sentence": "s5",
+            "start": 694,
+            "end": 764,
+            "spans": [
+              [
+                694,
+                698
+              ],
+              [
+                713,
+                764
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s6",
+            "start": 804,
+            "end": 857,
+            "spans": [
+              [
+                804,
+                811
+              ],
+              [
+                844,
+                857
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.7,
+        "margin": 0.33,
+        "entities": [],
+        "flags": [
+          "bedeutung_verschoben"
+        ],
+        "wortlaut": null,
+        "note": "Verdichtet aus s5 + s6 (s6 erklärt zusätzlich 13 %). · Fundstellen erklären 78 % des Claims. · Bedeutung verschoben — die Fundstelle widerspricht dem Claim nicht, stützt ihn aber auch nicht vollständig (entailment 0.31, neutral 0.68).",
+        "scores": {
+          "top": 0.699,
+          "lex": 0.451,
+          "emb": 0.612,
+          "anchor": 0,
+          "nli": 0.31
+        }
+      },
+      {
+        "id": "c7",
+        "start": 514,
+        "end": 646,
+        "text": "Ein Mitarbeiter des Unternehmens hat eine Woche lang das gesamte Stadtgebiet abgefahren, Grünflächen fotografiert und Daten erfasst.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s4",
+            "start": 448,
+            "end": 577,
+            "spans": [
+              [
+                448,
+                458
+              ],
+              [
+                484,
+                506
+              ],
+              [
+                553,
+                577
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.66,
+        "margin": 0.26,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "eine Woche",
+            "norm": "1 Wochen",
+            "status": "match"
+          }
+        ],
+        "flags": [
+          "nli_widerspruch"
+        ],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 58 % des Claims. · NLI: Fundstelle widerspricht dem Claim (contradiction 0.65).",
+        "scores": {
+          "top": 0.665,
+          "lex": 0.395,
+          "emb": 0.72,
+          "anchor": 0,
+          "nli": 0.189
+        }
+      },
+      {
+        "id": "c8",
+        "start": 647,
+        "end": 734,
+        "text": "Diese Informationen werden nun in ein Geoinformationssystem für Grünflächen übertragen.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s10",
+            "start": 1229,
+            "end": 1283,
+            "spans": [
+              [
+                1229,
+                1283
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.83,
+        "margin": 0.46,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 82 % des Claims.",
+        "scores": {
+          "top": 0.83,
+          "lex": 0.549,
+          "emb": 0.841,
+          "anchor": 0,
+          "nli": 0.999
+        }
+      },
+      {
+        "id": "c9",
+        "start": 735,
+        "end": 817,
+        "text": "Danach sollen Fachleute daraus Empfehlungen für Verwaltung und Politik entwickeln.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s12",
+            "start": 1475,
+            "end": 1524,
+            "spans": [
+              [
+                1475,
+                1524
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.57,
+        "margin": 0.16,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 42 % des Claims. · Unter der Direkt-Schwelle — zur Prüfung empfohlen.",
+        "scores": {
+          "top": 0.573,
+          "lex": 0.275,
+          "emb": 0.667,
+          "anchor": 0,
+          "nli": 0.998
+        }
+      },
+      {
+        "id": "c10",
+        "start": 818,
+        "end": 869,
+        "text": "Spätestens Anfang 2027 soll darüber beraten werden.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s13",
+            "start": 1542,
+            "end": 1572,
+            "spans": [
+              [
+                1542,
+                1572
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.78,
+        "margin": 0.6,
+        "entities": [
+          {
+            "type": "datum",
+            "surface": "2027",
+            "norm": "2027",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Anker 2027 eindeutig in s13 · Fundstellen erklären 58 % des Claims.",
+        "scores": {
+          "top": 0.856,
+          "lex": 0.583,
+          "emb": 0.914,
+          "anchor": 0.3,
+          "nli": 0.989
+        }
+      },
+      {
+        "id": "c11",
+        "start": 871,
+        "end": 960,
+        "text": "Eduard Schwarz, Prokurist der Ge-Komm, betont, es gehe nicht darum, Personal einzusparen.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s9",
+            "start": 1088,
+            "end": 1157,
+            "spans": [
+              [
+                1088,
+                1157
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.89,
+        "margin": 0.46,
+        "entities": [
+          {
+            "type": "person",
+            "surface": "Eduard Schwarz",
+            "norm": "eduard schwarz",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 73 % des Claims.",
+        "scores": {
+          "top": 0.894,
+          "lex": 0.678,
+          "emb": 1,
+          "anchor": 0,
+          "nli": 0.97
+        }
+      },
+      {
+        "id": "c12",
+        "start": 961,
+        "end": 1087,
+        "text": "Ziel sei es vielmehr, den ökologischen Wert der Flächen zu erhöhen und sie widerstandsfähiger gegen den Klimawandel zu machen.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s23",
+            "start": 2668,
+            "end": 2718,
+            "spans": [
+              [
+                2668,
+                2718
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.74,
+        "margin": 0.37,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 50 % des Claims.",
+        "scores": {
+          "top": 0.763,
+          "lex": 0.342,
+          "emb": 0.886,
+          "anchor": 0,
+          "nli": 0.992
+        }
+      },
+      {
+        "id": "c13",
+        "start": 1088,
+        "end": 1217,
+        "text": "Untersucht wird unter anderem, welche Vegetation vorhanden ist, wie groß einzelne Flächen sind und wie viel Pflege sie benötigen.",
+        "relation": "keine_quelle",
+        "sources": [],
+        "confidence": 0.66,
+        "margin": 0,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Keine ausreichend ähnliche Stelle im Artikel — nächster Kandidat s18 mit 0,39 (Schwelle 0,44).",
+        "scores": {
+          "top": 0.39,
+          "lex": 0.154,
+          "emb": 0.471,
+          "anchor": 0,
+          "nli": null
+        }
+      },
+      {
+        "id": "c14",
+        "start": 1219,
+        "end": 1326,
+        "text": "Dabei werden berechnete Pflegezeiten mit der tatsächlichen Arbeit der städtischen Beschäftigten verglichen.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s20",
+            "start": 2297,
+            "end": 2432,
+            "spans": [
+              [
+                2297,
+                2314
+              ],
+              [
+                2349,
+                2360
+              ],
+              [
+                2392,
+                2432
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.68,
+        "margin": 0.38,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 49 % des Claims.",
+        "scores": {
+          "top": 0.687,
+          "lex": 0.411,
+          "emb": 0.8,
+          "anchor": 0,
+          "nli": 0.991
+        }
+      },
+      {
+        "id": "c15",
+        "start": 1327,
+        "end": 1473,
+        "text": "Besonders stark genutzte Flächen in der Innenstadt oder an wichtigen Straßen werden anders bewertet als Grünflächen in Rand- oder Gewerbegebieten.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s21",
+            "start": 2491,
+            "end": 2616,
+            "spans": [
+              [
+                2491,
+                2498
+              ],
+              [
+                2533,
+                2540
+              ],
+              [
+                2600,
+                2616
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.62,
+        "margin": 0.33,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 36 % des Claims.",
+        "scores": {
+          "top": 0.614,
+          "lex": 0.335,
+          "emb": 0.76,
+          "anchor": 0,
+          "nli": 0.989
+        }
+      },
+      {
+        "id": "c16",
+        "start": 1475,
+        "end": 1629,
+        "text": "Blühwiesen könnten eine Möglichkeit sein: Sie seien attraktiv, benötigten weniger Pflege als regelmäßig gemähter Rasen und böten Insekten mehr Lebensraum.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s26",
+            "start": 2994,
+            "end": 3007,
+            "spans": [
+              [
+                2994,
+                3007
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.63,
+        "margin": 0.16,
+        "entities": [
+          {
+            "type": "person",
+            "surface": "Blühwiesen",
+            "norm": "blühwiesen",
+            "status": "match"
+          }
+        ],
+        "flags": [
+          "signale_uneinig"
+        ],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 17 % des Claims. · Unter der Direkt-Schwelle — zur Prüfung empfohlen. · Signale uneinig — nur die Bedeutung stützt die Zuordnung.",
+        "scores": {
+          "top": 0.499,
+          "lex": 0.167,
+          "emb": 0.786,
+          "anchor": 0,
+          "nli": 0.942
+        }
+      },
+      {
+        "id": "c17",
+        "start": 1630,
+        "end": 1719,
+        "text": "Schwarz rät jedoch zu Pilotflächen sowie zu Information und Beteiligung der Bürgerschaft.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s27",
+            "start": 3147,
+            "end": 3243,
+            "spans": [
+              [
+                3147,
+                3154
+              ],
+              [
+                3207,
+                3219
+              ],
+              [
+                3231,
+                3243
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.63,
+        "margin": 0.28,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 48 % des Claims.",
+        "scores": {
+          "top": 0.622,
+          "lex": 0.259,
+          "emb": 0.729,
+          "anchor": 0,
+          "nli": 0.996
+        }
+      },
+      {
+        "id": "c18",
+        "start": 1720,
+        "end": 1909,
+        "text": "Das Förderprogramm „Natürlicher Klimaschutz in Kommunen“ der Kreditanstalt für Wiederaufbau, kurz KfW, unterstützt neben dem Konzept auch Maßnahmen und neue, insektenschonende Pflegegeräte.",
+        "relation": "bedeutung_verschoben",
+        "sources": [
+          {
+            "sentence": "s32",
+            "start": 3663,
+            "end": 3864,
+            "spans": [
+              [
+                3663,
+                3702
+              ],
+              [
+                3759,
+                3770
+              ],
+              [
+                3807,
+                3816
+              ],
+              [
+                3841,
+                3864
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.55,
+        "margin": 0.08,
+        "entities": [
+          {
+            "type": "ort",
+            "surface": "Kreditanstalt",
+            "norm": "kreditanstalt",
+            "status": "unbelegt"
+          },
+          {
+            "type": "ort",
+            "surface": "Wiederaufbau",
+            "norm": "wiederaufbau",
+            "status": "konflikt",
+            "quelle_surface": "wiederum",
+            "quelle_norm": "wiederum"
+          }
+        ],
+        "flags": [
+          "ident_unbelegt",
+          "ort_konflikt",
+          "bedeutung_verschoben"
+        ],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 38 % des Claims. · „Kreditanstalt“ im Artikel nicht auffindbar. · „Wiederaufbau“ steht so nicht im Artikel — dort „wiederum“. · Bedeutung verschoben — die Fundstelle widerspricht dem Claim nicht, stützt ihn aber auch nicht vollständig (entailment 0.01, neutral 0.99).",
+        "scores": {
+          "top": 0.63,
+          "lex": 0.333,
+          "emb": 0.713,
+          "anchor": 0,
+          "nli": 0.011
+        }
+      }
+    ]
+  }
+}

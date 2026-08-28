@@ -1,0 +1,1578 @@
+{
+  "meta": {
+    "titel": "Alsdorf In Alsdorf gibt es 42 Spielplätze.",
+    "quelle": "Eigenes Paar",
+    "modell": "stufe0-2 · multilingual-e5-large-instruct + nli-mdeberta-2mil7",
+    "statistik": {
+      "saetze": 70,
+      "claims": 20,
+      "embeddings": 90,
+      "nli_paare": 15,
+      "dauer_s": 11.6
+    },
+    "ratelimit": {
+      "model": "multilingual-e5-large-instruct",
+      "checked_at": 1787356929.298801,
+      "x-ratelimit-limit-minute": "15",
+      "x-ratelimit-remaining-minute": "12",
+      "x-ratelimit-limit-hour": "900",
+      "x-ratelimit-remaining-hour": "896",
+      "x-ratelimit-limit-day": "2000",
+      "x-ratelimit-remaining-day": "1996",
+      "x-ratelimit-limit-second": "2",
+      "x-ratelimit-remaining-second": "1",
+      "ratelimit-reset": "1",
+      "ratelimit-limit": "2",
+      "ratelimit-remaining": "1"
+    }
+  },
+  "article": {
+    "text": "Alsdorf In Alsdorf gibt es 42 Spielplätze. Dass Kinder dort einen sicheren und sauberen Ort finden, um zu toben und zu spielen, lässt die Stadt sich etwas kosten. Es ist nicht selbstverständlich, dass Mitarbeiter der Stadtentwicklung Alsdorf (SEA) jeden Spielplatz mindestens einmal in der Woche anfahren, ihn pflegen, reinigen und auf Sicherheitsmängel inspizieren. Man sollte meinen, dass die Bevölkerung diesen Einsatz wertschätzt. In den meisten Fällen tut sie das wahrscheinlich auch, stillschweigend. Doch gar nicht so selten müssen die Männer der SEA sich beschimpfen, auslachen oder sogar bewerfen lassen.\n\nVor zwei Wochen hat das Spielplatzteam rund um eine Rutsche rasiermesserscharfe Scherben aufgesammelt. Sie lagen dort so verteilt, „als ob jemand wollte, dass da Kinder reinfallen und sich verletzten“, erzählt Julian Ohnesorg. Der 35-Jährige ist seit fünf Jahren bei der SEA. „Nägel haben wir auch schon gehabt“, fügt Sven Klaber (37), stellvertretender Vorarbeiter, hinzu. Das Team filtert alles aus dem Sand, was für Kinder gefährlich werden kann. Pro Woche holen die Männer darüber hinaus fast 200 Müllsäcke voller Abfall von den Plätzen. Die drei Müllcontainer auf dem Betriebshof müssen in kurzen Abständen geleert werden. „Das kostet alles richtig Geld“, sagt Vorarbeiter Sascha Koch (49). Seit zehn Jahren arbeitet er für die Stadtentwicklung. Daniel Mannheims (35) vervollständigt das Spielplatzteam. Insgesamt arbeiten in der Halle der SEA an der Carl-Zeiss-Straße 15 Mitarbeiter.\n\nWas besonders viel Spaß macht am Job? „Etwas für die Allgemeinheit zu tun“, sagt Mannheims, „für das gesamte Stadtbild.“ Die Arbeit sei abwechslungsreich, man sei viel an der frischen Luft.\n\nDer Großteil ist ordentlich\n\nDer Einsatz der vier Männer, ihrer Kollegen, von Mitteln und Material ist deutlich zu sehen. Egal welcher Spielplatz an diesem Freitag angefahren wird: Nirgends wuchert Rasen, der Großteil sieht ordentlich aus. Doch obwohl etliche der Flächen am Tag zuvor gereinigt und gepflegt wurden, sind wenig sorgsame Mitmenschen schon wieder am Werk gewesen. Einen Tag später steht unter dem Abfalleimer auf einem Spielplatz nahe des Oidtweilerwegs bereits eine große Tüte, randvoll mit Abfall. Von irgendjemanden dort abgestellt, weil ja die Männer von der SEA kommen und nichts einfach stehenlassen. Das ist bekannt. Unweit der Tüte stinkt ein großer Hundehaufen mitten auf der Spielwiese vor sich hin.\n\nIn den vergangenen Jahren sei der sorglose Umgang mit öffentlichem Eigentum schlimmer geworden, sagt Klaber. Die Spielplätze in Mitte seien vom Zustand, was Vermüllung und Beschädigungen angeht, besonders auffällig. Hoengen und Mariadorf folgten knapp dahinter. Und es gibt die Spielplätze in weniger frequentierten Randlagen und mit anderem Publikum. „In Zopp zum Beispiel ist nie was“, sagt Klaber. „In der Begau der Spielplatz ist auch immer in Ordnung, weil da die Siedlergemeinschaft ein Auge drauf hat und sich kümmert.“ Koch ergänzt: „Bettendorf kannst du auch ausgrenzen.“ Dort finden sich kaum Vandalismusschäden, wenig Hundekot, fast kein Müll. Auf dem Spielplatz im Annapark hingegen könne man dann und wann auch mal über einen ausgemusterten Kühlschrank stolpern, Lachgasflaschen, Messer oder abgelegte Tierkadaver.\n\nApropos Hundekot, ein nicht zu unterschätzendes Problem für die Arbeit der Männer: Viele Halter entsorgen das, was ihre Tiere ausscheiden, offenbar lieber in öffentlichen Anlagen statt im privaten Abfalleimer. Montags, mittwochs und freitags wird eine Müllrunde im Burgpark gedreht, mehr als 20 Mülleimer geleert. „Die sind randvoll mit Hundescheiße“, sagt Klaber. „Da kommen Leute extra auf den Spielplatz, um ihre Hundekacke zu entsorgen.“ Koch ergänzt: „Und dann bist du mit der Runde gerade fertig, drehst dich um: Steht plötzlich eine Couch da.“ Jemand hat also die Männer bei ihrer Arbeit beobachtet, gedacht, da bekommt er seinen Sperrmüll bequem los und sich sogleich ans Werk gemacht.\n\nWährend die Männer Hecken schneiden, Müll aufsammeln und Geräte kontrollieren, berichten sie aus einem scheinbar unerschöpflichen Erfahrungsschatz an Unverschämtem, Ekelhaftem und Illegalem. Verständnis für ihre Arbeit bringen Anwohner manchmal nur auf, solange sie in ihrer Bequemlichkeit nicht gestört werden. „Mit Elektrogeräten kannst du so viele Flächen nicht pflegen“, sagt Klaber. Das muss schon starkes, oft benzinbetriebenes Gerät sein. Das ist gut zu hören. Gepflegte Anlagen haben Anwohner gerne, aber bitte ohne den Schlaf wegen eines Aufsitzmähers um 7 Uhr morgens unterbrechen zu müssen. Oft fliegen den Männern dann mindestens böse Worte um die Ohren, wenn nicht sogar Essensreste – auch schon vorgekommen.\n\n„Am Oidtweilerweg fährst du mit dem Rasermäher und denkst: Oh, was fliegt denn da? Da wollte mir tatsächlich jemand einen Hähnchenschenkel auf den Kopf schmeißen“, erzählt Klaber. Auch Fernseher seien dort schon aus dem Fenster auf den Spielplatz geflogen. „Da musst du eigentlich mit Kettenhemd drauf“, sagt Vorarbeiter Sascha Koch über den Platz zwischen Wichernstraße und Im Brühl, und man weiß nicht, ob er eher resigniert ist oder einen Scherz macht. Es ist ein Hinweis auf einen Vorfall, der sich an diesem Ort vor drei Jahren ereignet hatte. Der Bewohner eines Mehrfamilienhauses hatte seinerzeit mit einer Armbrust aus seiner Wohnung auf eine Gruppe junger Menschen geschossen, die sich zuvor auf dem Spielplatz aufgehalten hatte und dem Mann zu laut war. Dabei hatte er eine junge Frau in den Rücken getroffen und schwer verletzt. Der Schütze war im Prozess zu einer Freiheitsstrafe von viereinhalb Jahren verurteilt worden.\n\nViel zu verdauen\n\nDas alles ist viel zu verdauen. Ohne die Kameradschaft im Team könnte es manchmal schwer zu ertragen sein und nachhaltig für Frust sorgen. Dazu aber lassen es die Kollegen untereinander erst gar nicht kommen. Der Zusammenhalt und die Stimmung im Team der SEA seien etwas Besonderes, unter den Mitarbeitern stimme es einfach, sagt Koch. Selbst, wenn einer von ihnen im Urlaub ist oder krank, „dann kommt der uns hier in der Halle besuchen – einfach, um während der Pause ein bisschen Spaß zu haben und die Kollegen zu sehen. So gerne sind wir hier“.\n\nUnd bevor nun ein falscher Eindruck von den Alsdorferinnen und Alsdorfern entsteht: Es gibt auch die schönen Momente: „Es gibt auch Menschen, die sich bedanken“, sagt Klaber. „An der Straßburger Straße wohnt einer, wenn der Müll auf dem Spielplatz dort sieht, geht er hin und hebt ihn auf – und bedankt sich trotzdem bei uns.“ Koch: „Wenn Muttis und Väter kommen und sich bedanken, weil alles top gepflegt ist, dann hast du auch ein Grinsen im Gesicht und vielleicht mal feuchte Augen.“\n\nKoch, Klaber, Ohnesorg und Mannheims sind alle selbst Väter. Wenn man die Kinder sehe, wie sie begeistert spielen, und man wisse, dass sie das ohne Sorge tun können – „dann fährst du mit einem ruhigen Gewissen nach Hause“.",
+    "sentences": [
+      {
+        "id": "s1",
+        "start": 0,
+        "end": 42,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Alsdorf In Alsdorf gibt es 42 Spielplätze."
+      },
+      {
+        "id": "s2",
+        "start": 43,
+        "end": 162,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Dass Kinder dort einen sicheren und sauberen Ort finden, um zu toben und zu spielen, lässt die Stadt sich etwas kosten."
+      },
+      {
+        "id": "s3",
+        "start": 163,
+        "end": 366,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Es ist nicht selbstverständlich, dass Mitarbeiter der Stadtentwicklung Alsdorf (SEA) jeden Spielplatz mindestens einmal in der Woche anfahren, ihn pflegen, reinigen und auf Sicherheitsmängel inspizieren."
+      },
+      {
+        "id": "s4",
+        "start": 367,
+        "end": 434,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Man sollte meinen, dass die Bevölkerung diesen Einsatz wertschätzt."
+      },
+      {
+        "id": "s5",
+        "start": 435,
+        "end": 506,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "In den meisten Fällen tut sie das wahrscheinlich auch, stillschweigend."
+      },
+      {
+        "id": "s6",
+        "start": 507,
+        "end": 613,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Doch gar nicht so selten müssen die Männer der SEA sich beschimpfen, auslachen oder sogar bewerfen lassen."
+      },
+      {
+        "id": "s7",
+        "start": 615,
+        "end": 717,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Vor zwei Wochen hat das Spielplatzteam rund um eine Rutsche rasiermesserscharfe Scherben aufgesammelt."
+      },
+      {
+        "id": "s8",
+        "start": 718,
+        "end": 841,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Sie lagen dort so verteilt, „als ob jemand wollte, dass da Kinder reinfallen und sich verletzten“, erzählt Julian Ohnesorg."
+      },
+      {
+        "id": "s9",
+        "start": 842,
+        "end": 890,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Der 35-Jährige ist seit fünf Jahren bei der SEA."
+      },
+      {
+        "id": "s10",
+        "start": 891,
+        "end": 988,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "„Nägel haben wir auch schon gehabt“, fügt Sven Klaber (37), stellvertretender Vorarbeiter, hinzu."
+      },
+      {
+        "id": "s11",
+        "start": 989,
+        "end": 1064,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Das Team filtert alles aus dem Sand, was für Kinder gefährlich werden kann."
+      },
+      {
+        "id": "s12",
+        "start": 1065,
+        "end": 1156,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Pro Woche holen die Männer darüber hinaus fast 200 Müllsäcke voller Abfall von den Plätzen."
+      },
+      {
+        "id": "s13",
+        "start": 1157,
+        "end": 1242,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Die drei Müllcontainer auf dem Betriebshof müssen in kurzen Abständen geleert werden."
+      },
+      {
+        "id": "s14",
+        "start": 1243,
+        "end": 1310,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "„Das kostet alles richtig Geld“, sagt Vorarbeiter Sascha Koch (49)."
+      },
+      {
+        "id": "s15",
+        "start": 1311,
+        "end": 1365,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Seit zehn Jahren arbeitet er für die Stadtentwicklung."
+      },
+      {
+        "id": "s16",
+        "start": 1366,
+        "end": 1423,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Daniel Mannheims (35) vervollständigt das Spielplatzteam."
+      },
+      {
+        "id": "s17",
+        "start": 1424,
+        "end": 1504,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Insgesamt arbeiten in der Halle der SEA an der Carl-Zeiss-Straße 15 Mitarbeiter."
+      },
+      {
+        "id": "s18",
+        "start": 1506,
+        "end": 1543,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Was besonders viel Spaß macht am Job?"
+      },
+      {
+        "id": "s19",
+        "start": 1544,
+        "end": 1626,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "„Etwas für die Allgemeinheit zu tun“, sagt Mannheims, „für das gesamte Stadtbild.“"
+      },
+      {
+        "id": "s20",
+        "start": 1627,
+        "end": 1695,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Die Arbeit sei abwechslungsreich, man sei viel an der frischen Luft."
+      },
+      {
+        "id": "s21",
+        "start": 1697,
+        "end": 1724,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "Der Großteil ist ordentlich"
+      },
+      {
+        "id": "s22",
+        "start": 1726,
+        "end": 1818,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Der Einsatz der vier Männer, ihrer Kollegen, von Mitteln und Material ist deutlich zu sehen."
+      },
+      {
+        "id": "s23",
+        "start": 1819,
+        "end": 1936,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Egal welcher Spielplatz an diesem Freitag angefahren wird: Nirgends wuchert Rasen, der Großteil sieht ordentlich aus."
+      },
+      {
+        "id": "s24",
+        "start": 1937,
+        "end": 2074,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Doch obwohl etliche der Flächen am Tag zuvor gereinigt und gepflegt wurden, sind wenig sorgsame Mitmenschen schon wieder am Werk gewesen."
+      },
+      {
+        "id": "s25",
+        "start": 2075,
+        "end": 2210,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Einen Tag später steht unter dem Abfalleimer auf einem Spielplatz nahe des Oidtweilerwegs bereits eine große Tüte, randvoll mit Abfall."
+      },
+      {
+        "id": "s26",
+        "start": 2211,
+        "end": 2317,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Von irgendjemanden dort abgestellt, weil ja die Männer von der SEA kommen und nichts einfach stehenlassen."
+      },
+      {
+        "id": "s27",
+        "start": 2318,
+        "end": 2334,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Das ist bekannt."
+      },
+      {
+        "id": "s28",
+        "start": 2335,
+        "end": 2420,
+        "block": "body",
+        "level": 0,
+        "paragraph": 4,
+        "text": "Unweit der Tüte stinkt ein großer Hundehaufen mitten auf der Spielwiese vor sich hin."
+      },
+      {
+        "id": "s29",
+        "start": 2422,
+        "end": 2530,
+        "block": "body",
+        "level": 0,
+        "paragraph": 5,
+        "text": "In den vergangenen Jahren sei der sorglose Umgang mit öffentlichem Eigentum schlimmer geworden, sagt Klaber."
+      },
+      {
+        "id": "s30",
+        "start": 2531,
+        "end": 2637,
+        "block": "body",
+        "level": 0,
+        "paragraph": 5,
+        "text": "Die Spielplätze in Mitte seien vom Zustand, was Vermüllung und Beschädigungen angeht, besonders auffällig."
+      },
+      {
+        "id": "s31",
+        "start": 2638,
+        "end": 2683,
+        "block": "body",
+        "level": 0,
+        "paragraph": 5,
+        "text": "Hoengen und Mariadorf folgten knapp dahinter."
+      },
+      {
+        "id": "s32",
+        "start": 2684,
+        "end": 2773,
+        "block": "body",
+        "level": 0,
+        "paragraph": 5,
+        "text": "Und es gibt die Spielplätze in weniger frequentierten Randlagen und mit anderem Publikum."
+      },
+      {
+        "id": "s33",
+        "start": 2774,
+        "end": 2822,
+        "block": "body",
+        "level": 0,
+        "paragraph": 5,
+        "text": "„In Zopp zum Beispiel ist nie was“, sagt Klaber."
+      },
+      {
+        "id": "s34",
+        "start": 2823,
+        "end": 2948,
+        "block": "body",
+        "level": 0,
+        "paragraph": 5,
+        "text": "„In der Begau der Spielplatz ist auch immer in Ordnung, weil da die Siedlergemeinschaft ein Auge drauf hat und sich kümmert.“"
+      },
+      {
+        "id": "s35",
+        "start": 2949,
+        "end": 3002,
+        "block": "body",
+        "level": 0,
+        "paragraph": 5,
+        "text": "Koch ergänzt: „Bettendorf kannst du auch ausgrenzen.“"
+      },
+      {
+        "id": "s36",
+        "start": 3003,
+        "end": 3076,
+        "block": "body",
+        "level": 0,
+        "paragraph": 5,
+        "text": "Dort finden sich kaum Vandalismusschäden, wenig Hundekot, fast kein Müll."
+      },
+      {
+        "id": "s37",
+        "start": 3077,
+        "end": 3249,
+        "block": "body",
+        "level": 0,
+        "paragraph": 5,
+        "text": "Auf dem Spielplatz im Annapark hingegen könne man dann und wann auch mal über einen ausgemusterten Kühlschrank stolpern, Lachgasflaschen, Messer oder abgelegte Tierkadaver."
+      },
+      {
+        "id": "s38",
+        "start": 3251,
+        "end": 3460,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "Apropos Hundekot, ein nicht zu unterschätzendes Problem für die Arbeit der Männer: Viele Halter entsorgen das, was ihre Tiere ausscheiden, offenbar lieber in öffentlichen Anlagen statt im privaten Abfalleimer."
+      },
+      {
+        "id": "s39",
+        "start": 3461,
+        "end": 3564,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "Montags, mittwochs und freitags wird eine Müllrunde im Burgpark gedreht, mehr als 20 Mülleimer geleert."
+      },
+      {
+        "id": "s40",
+        "start": 3565,
+        "end": 3615,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "„Die sind randvoll mit Hundescheiße“, sagt Klaber."
+      },
+      {
+        "id": "s41",
+        "start": 3616,
+        "end": 3692,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "„Da kommen Leute extra auf den Spielplatz, um ihre Hundekacke zu entsorgen.“"
+      },
+      {
+        "id": "s42",
+        "start": 3693,
+        "end": 3801,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "Koch ergänzt: „Und dann bist du mit der Runde gerade fertig, drehst dich um: Steht plötzlich eine Couch da.“"
+      },
+      {
+        "id": "s43",
+        "start": 3802,
+        "end": 3944,
+        "block": "body",
+        "level": 0,
+        "paragraph": 6,
+        "text": "Jemand hat also die Männer bei ihrer Arbeit beobachtet, gedacht, da bekommt er seinen Sperrmüll bequem los und sich sogleich ans Werk gemacht."
+      },
+      {
+        "id": "s44",
+        "start": 3946,
+        "end": 4136,
+        "block": "body",
+        "level": 0,
+        "paragraph": 7,
+        "text": "Während die Männer Hecken schneiden, Müll aufsammeln und Geräte kontrollieren, berichten sie aus einem scheinbar unerschöpflichen Erfahrungsschatz an Unverschämtem, Ekelhaftem und Illegalem."
+      },
+      {
+        "id": "s45",
+        "start": 4137,
+        "end": 4257,
+        "block": "body",
+        "level": 0,
+        "paragraph": 7,
+        "text": "Verständnis für ihre Arbeit bringen Anwohner manchmal nur auf, solange sie in ihrer Bequemlichkeit nicht gestört werden."
+      },
+      {
+        "id": "s46",
+        "start": 4258,
+        "end": 4333,
+        "block": "body",
+        "level": 0,
+        "paragraph": 7,
+        "text": "„Mit Elektrogeräten kannst du so viele Flächen nicht pflegen“, sagt Klaber."
+      },
+      {
+        "id": "s47",
+        "start": 4334,
+        "end": 4391,
+        "block": "body",
+        "level": 0,
+        "paragraph": 7,
+        "text": "Das muss schon starkes, oft benzinbetriebenes Gerät sein."
+      },
+      {
+        "id": "s48",
+        "start": 4392,
+        "end": 4413,
+        "block": "body",
+        "level": 0,
+        "paragraph": 7,
+        "text": "Das ist gut zu hören."
+      },
+      {
+        "id": "s49",
+        "start": 4414,
+        "end": 4547,
+        "block": "body",
+        "level": 0,
+        "paragraph": 7,
+        "text": "Gepflegte Anlagen haben Anwohner gerne, aber bitte ohne den Schlaf wegen eines Aufsitzmähers um 7 Uhr morgens unterbrechen zu müssen."
+      },
+      {
+        "id": "s50",
+        "start": 4548,
+        "end": 4667,
+        "block": "body",
+        "level": 0,
+        "paragraph": 7,
+        "text": "Oft fliegen den Männern dann mindestens böse Worte um die Ohren, wenn nicht sogar Essensreste – auch schon vorgekommen."
+      },
+      {
+        "id": "s51",
+        "start": 4669,
+        "end": 4751,
+        "block": "body",
+        "level": 0,
+        "paragraph": 8,
+        "text": "„Am Oidtweilerweg fährst du mit dem Rasermäher und denkst: Oh, was fliegt denn da?"
+      },
+      {
+        "id": "s52",
+        "start": 4752,
+        "end": 4848,
+        "block": "body",
+        "level": 0,
+        "paragraph": 8,
+        "text": "Da wollte mir tatsächlich jemand einen Hähnchenschenkel auf den Kopf schmeißen“, erzählt Klaber."
+      },
+      {
+        "id": "s53",
+        "start": 4849,
+        "end": 4925,
+        "block": "body",
+        "level": 0,
+        "paragraph": 8,
+        "text": "Auch Fernseher seien dort schon aus dem Fenster auf den Spielplatz geflogen."
+      },
+      {
+        "id": "s54",
+        "start": 4926,
+        "end": 5124,
+        "block": "body",
+        "level": 0,
+        "paragraph": 8,
+        "text": "„Da musst du eigentlich mit Kettenhemd drauf“, sagt Vorarbeiter Sascha Koch über den Platz zwischen Wichernstraße und Im Brühl, und man weiß nicht, ob er eher resigniert ist oder einen Scherz macht."
+      },
+      {
+        "id": "s55",
+        "start": 5125,
+        "end": 5217,
+        "block": "body",
+        "level": 0,
+        "paragraph": 8,
+        "text": "Es ist ein Hinweis auf einen Vorfall, der sich an diesem Ort vor drei Jahren ereignet hatte."
+      },
+      {
+        "id": "s56",
+        "start": 5218,
+        "end": 5432,
+        "block": "body",
+        "level": 0,
+        "paragraph": 8,
+        "text": "Der Bewohner eines Mehrfamilienhauses hatte seinerzeit mit einer Armbrust aus seiner Wohnung auf eine Gruppe junger Menschen geschossen, die sich zuvor auf dem Spielplatz aufgehalten hatte und dem Mann zu laut war."
+      },
+      {
+        "id": "s57",
+        "start": 5433,
+        "end": 5508,
+        "block": "body",
+        "level": 0,
+        "paragraph": 8,
+        "text": "Dabei hatte er eine junge Frau in den Rücken getroffen und schwer verletzt."
+      },
+      {
+        "id": "s58",
+        "start": 5509,
+        "end": 5602,
+        "block": "body",
+        "level": 0,
+        "paragraph": 8,
+        "text": "Der Schütze war im Prozess zu einer Freiheitsstrafe von viereinhalb Jahren verurteilt worden."
+      },
+      {
+        "id": "s59",
+        "start": 5604,
+        "end": 5620,
+        "block": "body",
+        "level": 0,
+        "paragraph": 9,
+        "text": "Viel zu verdauen"
+      },
+      {
+        "id": "s60",
+        "start": 5622,
+        "end": 5653,
+        "block": "body",
+        "level": 0,
+        "paragraph": 10,
+        "text": "Das alles ist viel zu verdauen."
+      },
+      {
+        "id": "s61",
+        "start": 5654,
+        "end": 5760,
+        "block": "body",
+        "level": 0,
+        "paragraph": 10,
+        "text": "Ohne die Kameradschaft im Team könnte es manchmal schwer zu ertragen sein und nachhaltig für Frust sorgen."
+      },
+      {
+        "id": "s62",
+        "start": 5761,
+        "end": 5830,
+        "block": "body",
+        "level": 0,
+        "paragraph": 10,
+        "text": "Dazu aber lassen es die Kollegen untereinander erst gar nicht kommen."
+      },
+      {
+        "id": "s63",
+        "start": 5831,
+        "end": 5957,
+        "block": "body",
+        "level": 0,
+        "paragraph": 10,
+        "text": "Der Zusammenhalt und die Stimmung im Team der SEA seien etwas Besonderes, unter den Mitarbeitern stimme es einfach, sagt Koch."
+      },
+      {
+        "id": "s64",
+        "start": 5958,
+        "end": 6145,
+        "block": "body",
+        "level": 0,
+        "paragraph": 10,
+        "text": "Selbst, wenn einer von ihnen im Urlaub ist oder krank, „dann kommt der uns hier in der Halle besuchen – einfach, um während der Pause ein bisschen Spaß zu haben und die Kollegen zu sehen."
+      },
+      {
+        "id": "s65",
+        "start": 6146,
+        "end": 6170,
+        "block": "body",
+        "level": 0,
+        "paragraph": 10,
+        "text": "So gerne sind wir hier“."
+      },
+      {
+        "id": "s66",
+        "start": 6172,
+        "end": 6346,
+        "block": "body",
+        "level": 0,
+        "paragraph": 11,
+        "text": "Und bevor nun ein falscher Eindruck von den Alsdorferinnen und Alsdorfern entsteht: Es gibt auch die schönen Momente: „Es gibt auch Menschen, die sich bedanken“, sagt Klaber."
+      },
+      {
+        "id": "s67",
+        "start": 6347,
+        "end": 6498,
+        "block": "body",
+        "level": 0,
+        "paragraph": 11,
+        "text": "„An der Straßburger Straße wohnt einer, wenn der Müll auf dem Spielplatz dort sieht, geht er hin und hebt ihn auf – und bedankt sich trotzdem bei uns.“"
+      },
+      {
+        "id": "s68",
+        "start": 6499,
+        "end": 6658,
+        "block": "body",
+        "level": 0,
+        "paragraph": 11,
+        "text": "Koch: „Wenn Muttis und Väter kommen und sich bedanken, weil alles top gepflegt ist, dann hast du auch ein Grinsen im Gesicht und vielleicht mal feuchte Augen.“"
+      },
+      {
+        "id": "s69",
+        "start": 6660,
+        "end": 6720,
+        "block": "body",
+        "level": 0,
+        "paragraph": 12,
+        "text": "Koch, Klaber, Ohnesorg und Mannheims sind alle selbst Väter."
+      },
+      {
+        "id": "s70",
+        "start": 6721,
+        "end": 6882,
+        "block": "body",
+        "level": 0,
+        "paragraph": 12,
+        "text": "Wenn man die Kinder sehe, wie sie begeistert spielen, und man wisse, dass sie das ohne Sorge tun können – „dann fährst du mit einem ruhigen Gewissen nach Hause“."
+      }
+    ]
+  },
+  "transcript": {
+    "text": "In Alsdorf sorgen vier Mitarbeiter der Stadtentwicklung Alsdorf, kurz SEA, dafür, dass Kinder auf 42 Spielplätzen sicher spielen können. Sie reinigen und kontrollieren jede Anlage mindestens einmal pro Woche. Doch ihre Arbeit wird nicht immer respektiert.\n\nVor zwei Wochen fand das Team rasiermesserscharfe Scherben rund um eine Rutsche. Julian Ohnesorg, Mitarbeiter der SEA, berichtet, die Scherben seien so verteilt gewesen, als solle sich jemand daran verletzen. Auch Nägel habe das Team schon aus dem Sand gefiltert, sagt Sven Klaber, stellvertretender Vorarbeiter. Jede Woche sammeln die Männer fast 200 Müllsäcke ein. Vorarbeiter Sascha Koch erklärt, dass Entsorgung, Pflege und Material viel Geld kosteten.\n\nBesonders betroffen von Müll und Schäden seien Spielplätze in Alsdorf-Mitte, Hoengen und Mariadorf. In Zopp, Begau und Bettendorf seien die Anlagen dagegen meist sauberer. Im Annapark finde das Team immer wieder Sperrmüll, Lachgasflaschen, Messer oder sogar Tierkadaver.\n\nAuch Hundekot ist ein großes Problem. Im Burgpark leeren die Mitarbeiter regelmäßig mehr als 20 Mülleimer, die laut Klaber oft voller Hundekot seien. Manche Menschen stellten zudem Sperrmüll ab, kurz nachdem die Reinigungskräfte ihre Runde beendet hätten.\n\nDie Mitarbeiter erleben aber auch Beschimpfungen und Übergriffe. Klaber berichtet von einem Hähnchenschenkel, der nach ihm geworfen worden sei. An einem Spielplatz zwischen Wichernstraße und Im Brühl hatte ein Bewohner vor drei Jahren mit einer Armbrust auf junge Menschen geschossen und eine Frau schwer verletzt.\n\nTrotzdem schätzt das Team seine Arbeit und den Zusammenhalt. Daniel Mannheims, Mitarbeiter der SEA, sagt, es mache Freude, etwas für die Allgemeinheit und das Stadtbild zu tun. Besonders motivierend seien Eltern und Anwohner, die sich für gepflegte Spielplätze bedanken.",
+    "claims": [
+      {
+        "id": "c1",
+        "start": 0,
+        "end": 136,
+        "text": "In Alsdorf sorgen vier Mitarbeiter der Stadtentwicklung Alsdorf, kurz SEA, dafür, dass Kinder auf 42 Spielplätzen sicher spielen können.",
+        "relation": "bedeutung_verschoben",
+        "sources": [
+          {
+            "sentence": "s1",
+            "start": 0,
+            "end": 42,
+            "spans": [
+              [
+                0,
+                18
+              ],
+              [
+                27,
+                42
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s2",
+            "start": 43,
+            "end": 143,
+            "spans": [
+              [
+                43,
+                74
+              ],
+              [
+                119,
+                126
+              ],
+              [
+                138,
+                143
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s3",
+            "start": 201,
+            "end": 241,
+            "spans": [
+              [
+                201,
+                241
+              ]
+            ],
+            "role": "redundant"
+          }
+        ],
+        "confidence": 0.75,
+        "margin": 0.41,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "vier",
+            "norm": "4",
+            "status": "match"
+          },
+          {
+            "type": "zahl",
+            "surface": "42",
+            "norm": "42",
+            "status": "match"
+          }
+        ],
+        "flags": [
+          "bedeutung_verschoben"
+        ],
+        "wortlaut": null,
+        "note": "Anker 42 eindeutig in s1 · Verdichtet aus s1 + s2 (s2 erklärt zusätzlich 18 %). · Fundstellen erklären 71 % des Claims. · Bedeutung verschoben — die Fundstelle widerspricht dem Claim nicht, stützt ihn aber auch nicht vollständig (entailment 0.00, neutral 1.00).",
+        "scores": {
+          "top": 0.747,
+          "lex": 0.404,
+          "emb": 0.751,
+          "anchor": 0.3,
+          "nli": 0
+        }
+      },
+      {
+        "id": "c2",
+        "start": 137,
+        "end": 208,
+        "text": "Sie reinigen und kontrollieren jede Anlage mindestens einmal pro Woche.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s3",
+            "start": 248,
+            "end": 327,
+            "spans": [
+              [
+                248,
+                253
+              ],
+              [
+                265,
+                295
+              ],
+              [
+                319,
+                327
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.6,
+        "margin": 0.31,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 55 % des Claims.",
+        "scores": {
+          "top": 0.646,
+          "lex": 0.3,
+          "emb": 0.643,
+          "anchor": 0,
+          "nli": 0.986
+        }
+      },
+      {
+        "id": "c3",
+        "start": 209,
+        "end": 255,
+        "text": "Doch ihre Arbeit wird nicht immer respektiert.",
+        "relation": "keine_quelle",
+        "sources": [],
+        "confidence": 0.56,
+        "margin": 0.05,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Keine ausreichend ähnliche Stelle im Artikel — nächster Kandidat s45 mit 0,43 (Schwelle 0,44).",
+        "scores": {
+          "top": 0.433,
+          "lex": 0.163,
+          "emb": 0.565,
+          "anchor": 0,
+          "nli": null
+        }
+      },
+      {
+        "id": "c4",
+        "start": 257,
+        "end": 337,
+        "text": "Vor zwei Wochen fand das Team rasiermesserscharfe Scherben rund um eine Rutsche.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s7",
+            "start": 615,
+            "end": 703,
+            "spans": [
+              [
+                615,
+                630
+              ],
+              [
+                667,
+                703
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.92,
+        "margin": 0.64,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "zwei",
+            "norm": "2",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 83 % des Claims.",
+        "scores": {
+          "top": 0.938,
+          "lex": 0.743,
+          "emb": 0.994,
+          "anchor": 0,
+          "nli": 0.988
+        }
+      },
+      {
+        "id": "c5",
+        "start": 338,
+        "end": 465,
+        "text": "Julian Ohnesorg, Mitarbeiter der SEA, berichtet, die Scherben seien so verteilt gewesen, als solle sich jemand daran verletzen.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s8",
+            "start": 736,
+            "end": 841,
+            "spans": [
+              [
+                736,
+                760
+              ],
+              [
+                804,
+                814
+              ],
+              [
+                825,
+                841
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.67,
+        "margin": 0.37,
+        "entities": [
+          {
+            "type": "person",
+            "surface": "Julian Ohnesorg",
+            "norm": "julian ohnesorg",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Name „Julian Ohnesorg“ eindeutig in s8 · Fundstellen erklären 41 % des Claims.",
+        "scores": {
+          "top": 0.751,
+          "lex": 0.39,
+          "emb": 0.815,
+          "anchor": 0.2,
+          "nli": 0.883
+        }
+      },
+      {
+        "id": "c6",
+        "start": 466,
+        "end": 569,
+        "text": "Auch Nägel habe das Team schon aus dem Sand gefiltert, sagt Sven Klaber, stellvertretender Vorarbeiter.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s10",
+            "start": 891,
+            "end": 980,
+            "spans": [
+              [
+                891,
+                897
+              ],
+              [
+                933,
+                944
+              ],
+              [
+                951,
+                980
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s11",
+            "start": 989,
+            "end": 1024,
+            "spans": [
+              [
+                989,
+                1005
+              ],
+              [
+                1020,
+                1024
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.87,
+        "margin": 0.46,
+        "entities": [
+          {
+            "type": "person",
+            "surface": "Sven Klaber",
+            "norm": "sven klaber",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s10 + s11 (s11 erklärt zusätzlich 19 %). · Fundstellen erklären 85 % des Claims.",
+        "scores": {
+          "top": 0.855,
+          "lex": 0.569,
+          "emb": 0.883,
+          "anchor": 0.1,
+          "nli": 0.992
+        }
+      },
+      {
+        "id": "c7",
+        "start": 570,
+        "end": 623,
+        "text": "Jede Woche sammeln die Männer fast 200 Müllsäcke ein.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s12",
+            "start": 1065,
+            "end": 1125,
+            "spans": [
+              [
+                1065,
+                1074
+              ],
+              [
+                1085,
+                1091
+              ],
+              [
+                1107,
+                1125
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.86,
+        "margin": 0.5,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "200",
+            "norm": "200",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Anker 200 eindeutig in s12 · Fundstellen erklären 64 % des Claims.",
+        "scores": {
+          "top": 0.897,
+          "lex": 0.445,
+          "emb": 1,
+          "anchor": 0.3,
+          "nli": 0.996
+        }
+      },
+      {
+        "id": "c8",
+        "start": 624,
+        "end": 713,
+        "text": "Vorarbeiter Sascha Koch erklärt, dass Entsorgung, Pflege und Material viel Geld kosteten.",
+        "relation": "bedeutung_verschoben",
+        "sources": [
+          {
+            "sentence": "s14",
+            "start": 1243,
+            "end": 1304,
+            "spans": [
+              [
+                1243,
+                1254
+              ],
+              [
+                1269,
+                1273
+              ],
+              [
+                1281,
+                1304
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.65,
+        "margin": 0.25,
+        "entities": [
+          {
+            "type": "person",
+            "surface": "Sascha Koch",
+            "norm": "sascha koch",
+            "status": "match"
+          }
+        ],
+        "flags": [
+          "bedeutung_verschoben"
+        ],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 40 % des Claims. · Bedeutung verschoben — die Fundstelle widerspricht dem Claim nicht, stützt ihn aber auch nicht vollständig (entailment 0.01, neutral 0.99).",
+        "scores": {
+          "top": 0.716,
+          "lex": 0.368,
+          "emb": 0.79,
+          "anchor": 0.1,
+          "nli": 0.01
+        }
+      },
+      {
+        "id": "c9",
+        "start": 715,
+        "end": 814,
+        "text": "Besonders betroffen von Müll und Schäden seien Spielplätze in Alsdorf-Mitte, Hoengen und Mariadorf.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s30",
+            "start": 2531,
+            "end": 2626,
+            "spans": [
+              [
+                2531,
+                2555
+              ],
+              [
+                2617,
+                2626
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s31",
+            "start": 2638,
+            "end": 2659,
+            "spans": [
+              [
+                2638,
+                2659
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.67,
+        "margin": 0.14,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s30 + s31 (s31 erklärt zusätzlich 24 %). · Fundstellen erklären 63 % des Claims.",
+        "scores": {
+          "top": 0.607,
+          "lex": 0.333,
+          "emb": 0.72,
+          "anchor": 0,
+          "nli": 0.997
+        }
+      },
+      {
+        "id": "c10",
+        "start": 815,
+        "end": 886,
+        "text": "In Zopp, Begau und Bettendorf seien die Anlagen dagegen meist sauberer.",
+        "relation": "keine_quelle",
+        "sources": [],
+        "confidence": 0.67,
+        "margin": 0.01,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Keine ausreichend ähnliche Stelle im Artikel — nächster Kandidat s35 mit 0,39 (Schwelle 0,44).",
+        "scores": {
+          "top": 0.387,
+          "lex": 0.164,
+          "emb": 0.452,
+          "anchor": 0,
+          "nli": null
+        }
+      },
+      {
+        "id": "c11",
+        "start": 887,
+        "end": 985,
+        "text": "Im Annapark finde das Team immer wieder Sperrmüll, Lachgasflaschen, Messer oder sogar Tierkadaver.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s37",
+            "start": 3099,
+            "end": 3249,
+            "spans": [
+              [
+                3099,
+                3107
+              ],
+              [
+                3198,
+                3221
+              ],
+              [
+                3237,
+                3249
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.78,
+        "margin": 0.43,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 55 % des Claims.",
+        "scores": {
+          "top": 0.761,
+          "lex": 0.403,
+          "emb": 0.919,
+          "anchor": 0,
+          "nli": 0.675
+        }
+      },
+      {
+        "id": "c12",
+        "start": 987,
+        "end": 1024,
+        "text": "Auch Hundekot ist ein großes Problem.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s38",
+            "start": 3259,
+            "end": 3306,
+            "spans": [
+              [
+                3259,
+                3267
+              ],
+              [
+                3299,
+                3306
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.69,
+        "margin": 0.24,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 74 % des Claims.",
+        "scores": {
+          "top": 0.626,
+          "lex": 0.241,
+          "emb": 0.63,
+          "anchor": 0,
+          "nli": 0.827
+        }
+      },
+      {
+        "id": "c13",
+        "start": 1025,
+        "end": 1136,
+        "text": "Im Burgpark leeren die Mitarbeiter regelmäßig mehr als 20 Mülleimer, die laut Klaber oft voller Hundekot seien.",
+        "relation": "bedeutung_verschoben",
+        "sources": [
+          {
+            "sentence": "s39",
+            "start": 3516,
+            "end": 3555,
+            "spans": [
+              [
+                3516,
+                3524
+              ],
+              [
+                3543,
+                3555
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s38",
+            "start": 3259,
+            "end": 3321,
+            "spans": [
+              [
+                3259,
+                3267
+              ],
+              [
+                3315,
+                3321
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.65,
+        "margin": 0.32,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "20",
+            "norm": "20",
+            "status": "match"
+          },
+          {
+            "type": "person",
+            "surface": "Klaber",
+            "norm": "klaber",
+            "status": "match"
+          }
+        ],
+        "flags": [
+          "bedeutung_verschoben"
+        ],
+        "wortlaut": null,
+        "note": "Anker 20 eindeutig in s39 · Verdichtet aus s39 + s38 (s38 erklärt zusätzlich 13 %). · Fundstellen erklären 45 % des Claims. · Bedeutung verschoben — die Fundstelle widerspricht dem Claim nicht, stützt ihn aber auch nicht vollständig (entailment 0.35, neutral 0.65).",
+        "scores": {
+          "top": 0.739,
+          "lex": 0.351,
+          "emb": 0.764,
+          "anchor": 0.3,
+          "nli": 0.347
+        }
+      },
+      {
+        "id": "c14",
+        "start": 1137,
+        "end": 1242,
+        "text": "Manche Menschen stellten zudem Sperrmüll ab, kurz nachdem die Reinigungskräfte ihre Runde beendet hätten.",
+        "relation": "keine_quelle",
+        "sources": [],
+        "confidence": 0.57,
+        "margin": 0.09,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Keine ausreichend ähnliche Stelle im Artikel — nächster Kandidat s43 mit 0,43 (Schwelle 0,44).",
+        "scores": {
+          "top": 0.429,
+          "lex": 0.112,
+          "emb": 0.64,
+          "anchor": 0,
+          "nli": null
+        }
+      },
+      {
+        "id": "c15",
+        "start": 1244,
+        "end": 1308,
+        "text": "Die Mitarbeiter erleben aber auch Beschimpfungen und Übergriffe.",
+        "relation": "keine_quelle",
+        "sources": [],
+        "confidence": 0.69,
+        "margin": 0.02,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Keine ausreichend ähnliche Stelle im Artikel — nächster Kandidat s50 mit 0,38 (Schwelle 0,44).",
+        "scores": {
+          "top": 0.379,
+          "lex": 0.047,
+          "emb": 0.616,
+          "anchor": 0,
+          "nli": null
+        }
+      },
+      {
+        "id": "c16",
+        "start": 1309,
+        "end": 1387,
+        "text": "Klaber berichtet von einem Hähnchenschenkel, der nach ihm geworfen worden sei.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s52",
+            "start": 4791,
+            "end": 4848,
+            "spans": [
+              [
+                4791,
+                4807
+              ],
+              [
+                4841,
+                4848
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.76,
+        "margin": 0.32,
+        "entities": [
+          {
+            "type": "person",
+            "surface": "Klaber",
+            "norm": "klaber",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 48 % des Claims.",
+        "scores": {
+          "top": 0.695,
+          "lex": 0.261,
+          "emb": 0.908,
+          "anchor": 0,
+          "nli": 0.775
+        }
+      },
+      {
+        "id": "c17",
+        "start": 1388,
+        "end": 1558,
+        "text": "An einem Spielplatz zwischen Wichernstraße und Im Brühl hatte ein Bewohner vor drei Jahren mit einer Armbrust auf junge Menschen geschossen und eine Frau schwer verletzt.",
+        "relation": "bedeutung_verschoben",
+        "sources": [
+          {
+            "sentence": "s56",
+            "start": 5218,
+            "end": 5388,
+            "spans": [
+              [
+                5218,
+                5230
+              ],
+              [
+                5283,
+                5302
+              ],
+              [
+                5327,
+                5353
+              ],
+              [
+                5378,
+                5388
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s54",
+            "start": 5011,
+            "end": 5117,
+            "spans": [
+              [
+                5011,
+                5052
+              ],
+              [
+                5111,
+                5117
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s57",
+            "start": 5433,
+            "end": 5508,
+            "spans": [
+              [
+                5433,
+                5463
+              ],
+              [
+                5492,
+                5508
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.85,
+        "margin": 0.34,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "drei Jahren",
+            "norm": "3 Jahre",
+            "status": "match"
+          }
+        ],
+        "flags": [
+          "bedeutung_verschoben"
+        ],
+        "wortlaut": null,
+        "note": "Verdichtet aus s56 + s54 + s57 (s54 erklärt zusätzlich 27 %, s57 erklärt zusätzlich 18 %). · Fundstellen erklären 89 % des Claims. · Bedeutung verschoben — die Fundstelle widerspricht dem Claim nicht, stützt ihn aber auch nicht vollständig (entailment 0.12, neutral 0.85).",
+        "scores": {
+          "top": 0.692,
+          "lex": 0.383,
+          "emb": 0.805,
+          "anchor": 0,
+          "nli": 0.115
+        }
+      },
+      {
+        "id": "c18",
+        "start": 1560,
+        "end": 1620,
+        "text": "Trotzdem schätzt das Team seine Arbeit und den Zusammenhalt.",
+        "relation": "bedeutung_verschoben",
+        "sources": [
+          {
+            "sentence": "s63",
+            "start": 5831,
+            "end": 5872,
+            "spans": [
+              [
+                5831,
+                5847
+              ],
+              [
+                5868,
+                5872
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.56,
+        "margin": 0.23,
+        "entities": [],
+        "flags": [
+          "bedeutung_verschoben"
+        ],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 48 % des Claims. · Unter der Direkt-Schwelle — zur Prüfung empfohlen. · Bedeutung verschoben — die Fundstelle widerspricht dem Claim nicht, stützt ihn aber auch nicht vollständig (entailment 0.06, neutral 0.94).",
+        "scores": {
+          "top": 0.589,
+          "lex": 0.28,
+          "emb": 0.624,
+          "anchor": 0,
+          "nli": 0.06
+        }
+      },
+      {
+        "id": "c19",
+        "start": 1621,
+        "end": 1736,
+        "text": "Daniel Mannheims, Mitarbeiter der SEA, sagt, es mache Freude, etwas für die Allgemeinheit und das Stadtbild zu tun.",
+        "relation": "bedeutung_verschoben",
+        "sources": [
+          {
+            "sentence": "s19",
+            "start": 1544,
+            "end": 1626,
+            "spans": [
+              [
+                1544,
+                1596
+              ],
+              [
+                1615,
+                1626
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.67,
+        "margin": 0.19,
+        "entities": [
+          {
+            "type": "person",
+            "surface": "Daniel Mannheims",
+            "norm": "daniel mannheims",
+            "status": "match"
+          }
+        ],
+        "flags": [
+          "bedeutung_verschoben"
+        ],
+        "wortlaut": null,
+        "note": "Name „Daniel Mannheims“ eindeutig in s16 · Fundstellen erklären 53 % des Claims. · Bedeutung verschoben — die Fundstelle widerspricht dem Claim nicht, stützt ihn aber auch nicht vollständig (entailment 0.36, neutral 0.64).",
+        "scores": {
+          "top": 0.705,
+          "lex": 0.626,
+          "emb": 0.774,
+          "anchor": 0,
+          "nli": 0.361
+        }
+      },
+      {
+        "id": "c20",
+        "start": 1737,
+        "end": 1830,
+        "text": "Besonders motivierend seien Eltern und Anwohner, die sich für gepflegte Spielplätze bedanken.",
+        "relation": "keine_quelle",
+        "sources": [],
+        "confidence": 0.56,
+        "margin": 0.06,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Keine ausreichend ähnliche Stelle im Artikel — nächster Kandidat s68 mit 0,44 (Schwelle 0,44).",
+        "scores": {
+          "top": 0.435,
+          "lex": 0.175,
+          "emb": 0.471,
+          "anchor": 0,
+          "nli": null
+        }
+      }
+    ]
+  }
+}

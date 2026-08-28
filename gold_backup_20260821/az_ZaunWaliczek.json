@@ -1,0 +1,493 @@
+{
+  "paar": "az_ZaunWaliczek",
+  "split": "dev",
+  "anleitung": [
+    "Arbeitsanweisung (diese Zeilen bleiben in der Datei stehen):",
+    "1. Jede Zeile mit \"geprueft\": false durchgehen und auf true setzen.",
+    "2. notwendig = Sätze, ohne die ein Teil der Aussage unbelegt bliebe.",
+    "   zulaessig = stützt ebenfalls, ist aber entbehrlich (Dubletten).",
+    "3. relation prüfen: direkt | aggregiert | bedeutung_verschoben |",
+    "   inferiert | keine_quelle.",
+    "4. flags_erwartet: nur Befunde, die WIRKLICH zutreffen sollten",
+    "   (zahlkonflikt, ort_konflikt, kuerzel_konflikt, wortlaut_abweichung,",
+    "   ident_unbelegt, zahl_unbelegt). Leere Liste heißt: kein Befund.",
+    "5. Zum Schluss EINMAL umgekehrt: den Artikel lesen und fragen, welcher",
+    "   Transkriptsatz diese Stelle nutzt. Das fängt die Quellen, die die",
+    "   Pipeline gar nicht erst vorgeschlagen hat — der Bias des Entwurfs.",
+    "6. Artikel- und Transkripttext danach NICHT mehr ändern, auch keine",
+    "   Tippfehler: Die Zeichen-Offsets sind Teil der Annotation."
+  ],
+  "artikel_hash": "63ac01cbaa2779f5",
+  "transkript_hash": "20bc8efc6119b513",
+  "artikel_saetze": [
+    {
+      "id": "s1",
+      "text": "Übach-Palenberg/Herzogenrath Vermutlich hat sich Ihr Auge längst an die Farben mit den RAL-Kennungen 6005 und 7016 gewöhnt."
+    },
+    {
+      "id": "s2",
+      "text": "Sie sind in der Region weit verbreitet: in Wohnstraßen, Industriegebieten, am Straßenrand – überall dort, wo etwas abgegrenzt und geschützt werden soll."
+    },
+    {
+      "id": "s3",
+      "text": "Es geht um Gitterzäune und Tore."
+    },
+    {
+      "id": "s4",
+      "text": "Genauer: um die Produkte eines bekannten Familienunternehmens, das vor allem in Moosgrün (6005) und Anthrazit (7016) ausliefert."
+    },
+    {
+      "id": "s5",
+      "text": "„Wir gehören schon zu denen, die die meisten Tore verbauen."
+    },
+    {
+      "id": "s6",
+      "text": "Das ist nicht so einfach, wie man sich vielleicht vorstellt, dafür benötigt man Know-how“, sagt Roman Contzen."
+    },
+    {
+      "id": "s7",
+      "text": "Der 57-Jährige ist der zweite Geschäftsführer in der Geschichte der Firma Zaun Waliczek & Contzen – und seine Söhne gehören bereits zur Geschäftsführung oder werden behutsam darauf vorbereitet."
+    },
+    {
+      "id": "s8",
+      "text": "Firmengründer ist Peter Waliczek."
+    },
+    {
+      "id": "s9",
+      "text": "Vor fast genau 50 Jahren begann der heute 75-Jährige in Kohlscheid mit einem Container auf dem heutigen TPH-Gelände."
+    },
+    {
+      "id": "s10",
+      "text": "Später verlagerte er den Betrieb nach Merkstein und führte ihn bis zum Jahr 2000 gemeinsam mit seiner Ehefrau Marianne."
+    },
+    {
+      "id": "s11",
+      "text": "Seitdem leitet Schwiegersohn Roman Contzen die Geschäfte, der erst zwei Jahre zuvor als Angestellter in das Unternehmen gekommen war."
+    },
+    {
+      "id": "s12",
+      "text": "2020 folgte der Umzug in einen Neubau an der Talstraße in Übach-Palenberg."
+    },
+    {
+      "id": "s13",
+      "text": "„Damals haben die Mitarbeiter nach Feierabend hier noch mitangepackt“, merkt Roman Contzen bei einem Rundgang an."
+    },
+    {
+      "id": "s14",
+      "text": "Contzen, dessen Frau Kirsten, 56, ebenfalls in der Firma arbeitet, sagt über sich selbst, handwerklich völlig unbegabt zu sein."
+    },
+    {
+      "id": "s15",
+      "text": "Seinen beruflichen Werdegang hatte er sich ursprünglich anders vorgestellt – bis ihm der in Herzogenrath bekannte Schwiegervater, damals 50 Jahre alt, vorschlug, seine Nachfolge anzutreten."
+    },
+    {
+      "id": "s16",
+      "text": "Roman Contzen ist Diplom-Kaufmann, war bis dahin Wirtschaftsprüfer und lernte den Betrieb erstmals in den Semesterferien kennen, als er in der Buchhaltung aushalf."
+    },
+    {
+      "id": "s17",
+      "text": "Mittlerweile ist er täglich bei bis zu acht Kundenterminen in der Region unterwegs – von der Eifel über die Städteregion bis in die Kreise Düren und Heinsberg sowie in den Raum Köln und Mönchengladbach."
+    },
+    {
+      "id": "s18",
+      "text": "Akquise, wie sie im Buche steht."
+    },
+    {
+      "id": "s19",
+      "text": "„Ich stand quasi bei jedem im Garten“, sagt Roman Contzen."
+    },
+    {
+      "id": "s20",
+      "text": "Diese Vor-Ort-Termine seien ein Schlüssel für den wirtschaftlichen Erfolg des 25-Mann-Betriebs, der neben dem klassischen Zaunbau Türen und Tore selbst baut und zugleich als Händler auftritt."
+    },
+    {
+      "id": "s21",
+      "text": "Bezogen auf Mitarbeiterzahl – im Team herrsche eine geringe Fluktuation – und Umsatz zähle man zu den größten Anbietern in NRW."
+    },
+    {
+      "id": "s22",
+      "text": "„Unsere Aufträge umfassen Kleinstbaustellen wie die Reparatur von einem Meter Zaun ebenso wie Großaufträge für einen fünf Kilometer langen Neubau“, sagt Sohn Viktor Contzen."
+    },
+    {
+      "id": "s23",
+      "text": "Der heute 27-Jährige trat 2018 als junger Erwachsener ins Unternehmen ein, gehört seit einem Jahr zur Geschäftsführung und betreut den kaufmännischen Bereich."
+    },
+    {
+      "id": "s24",
+      "text": "Er ist gelernter Garten- und Landschaftsbauer, arbeitet inzwischen aber nur noch sehr vereinzelt selbst auf Baustellen."
+    },
+    {
+      "id": "s25",
+      "text": "„Eigentlich bin ich sehr gerne draußen, aber mit der Schaufel in der Hand lässt sich schlecht telefonieren.“"
+    },
+    {
+      "id": "s26",
+      "text": "Blickdichte Varianten"
+    },
+    {
+      "id": "s27",
+      "text": "Eine der jüngsten Baustellen lag dort, wo ab dieser Woche täglich Tausende Menschen unterwegs sein werden: in der Aachener Soers."
+    },
+    {
+      "id": "s28",
+      "text": "Die allermeisten Zäune und Tore auf dem CHIO-Gelände hat das Familienunternehmen installiert."
+    },
+    {
+      "id": "s29",
+      "text": "Ein weiteres fortlaufendes Projekt in der Unternehmensgeschichte war der Ausbau des Geländes der Schwarz-Gruppe in Übach-Palenberg."
+    },
+    {
+      "id": "s30",
+      "text": "Namen wie Continental oder Lindt gehören ebenfalls zu den Referenzen."
+    },
+    {
+      "id": "s31",
+      "text": "Waliczek & Contzen beliefert Privat- und Gewerbekunden sowie die öffentliche Hand zu etwa gleichen Teilen."
+    },
+    {
+      "id": "s32",
+      "text": "„Es gibt kaum einen Neubau ohne Zaun, für uns ist das ein großes Wachstumspotenzial“, betont Viktor Contzen."
+    },
+    {
+      "id": "s33",
+      "text": "Sicherheit habe einen immer größeren Stellenwert."
+    },
+    {
+      "id": "s34",
+      "text": "Früher war es der Maschendrahtzaun, der heute noch als Ballfangzaun verbaut wird und dessen moosgrüne Farbe sich auf die deutlich stabileren Gitterzäune aus Stahl übertragen hat."
+    },
+    {
+      "id": "s35",
+      "text": "Mittlerweile habe sich allerdings das modernere Anthrazit durchgesetzt – insbesondere bei Neubauten."
+    },
+    {
+      "id": "s36",
+      "text": "Zum klassischen Gitterzaun hat sich seit geraumer Zeit eine weitere Variante gesellt: die blickdichte Ausführung mit Lamellen aus einem Holz-Kunststoff-Verbundwerkstoff."
+    },
+    {
+      "id": "s37",
+      "text": "Den Sichtschutz gibt es in mehr Farbausführungen als die Zäune."
+    },
+    {
+      "id": "s38",
+      "text": "Eine weitere Expansion seit dem Umzug an die Talstraße ist nicht geplant, sagt Roman Contzen."
+    },
+    {
+      "id": "s39",
+      "text": "Mit dem 9000 Quadratmeter großen Firmengrundstück sei man gut aufgestellt."
+    },
+    {
+      "id": "s40",
+      "text": "Auf dem Areal gibt es auch eine Freiluft-Ausstellung mit verschiedenen Zaunvarianten; insgesamt bietet das Unternehmen rund 20 Modelle an."
+    },
+    {
+      "id": "s41",
+      "text": "Einen großflächigen Maschendrahtzaun aufzubauen, könne heute übrigens kaum noch jemand, sagt Roman Contzen."
+    },
+    {
+      "id": "s42",
+      "text": "Auch sein zweiter Sohn Lennard arbeitet seit zwei Jahren im Familienbetrieb."
+    },
+    {
+      "id": "s43",
+      "text": "Der 21-Jährige studiert BWL an der FH Aachen und soll perspektivisch in die kaufmännische Geschäftsführung hineinwachsen."
+    },
+    {
+      "id": "s44",
+      "text": "„Wir haben beide Jungs nicht dazu angehalten, sie machen es aus eigenem Antrieb“, sagt der Vater."
+    },
+    {
+      "id": "s45",
+      "text": "Die dritte Generation scheint also doppelt gesichert."
+    },
+    {
+      "id": "s46",
+      "text": "Die Farbe des traditionsreichen Namensschriftzugs im Firmenlogo ist übrigens RAL 5021: Wasserblau."
+    }
+  ],
+  "eintraege": [
+    {
+      "satz": "t1",
+      "text": "Gitterzäune in Moosgrün oder Anthrazit prägen das Straßenbild in der Region – viele davon stammen vom Familienunternehmen Zaun Waliczek & Contzen aus Übach-Palenberg.",
+      "start": 0,
+      "end": 166,
+      "geprueft": true,
+      "notwendig": [
+        "s2",
+        "s3",
+        "s4",
+        "s7",
+        "s12"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c1",
+        "c2"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t2",
+      "text": "Firmengründer Peter Waliczek startete vor fast 50 Jahren in Kohlscheid, zunächst mit einem Container auf dem heutigen TPH-Gelände.",
+      "start": 167,
+      "end": 297,
+      "geprueft": true,
+      "notwendig": [
+        "s8",
+        "s9"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c3"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t3",
+      "text": "Später zog der Betrieb nach Merkstein, wo Waliczek ihn bis zum Jahr 2000 gemeinsam mit seiner Frau Marianne führte.",
+      "start": 298,
+      "end": 413,
+      "geprueft": true,
+      "notwendig": [
+        "s10"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c4"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t4",
+      "text": "Seitdem leitet sein Schwiegersohn Roman Contzen die Geschäfte.",
+      "start": 414,
+      "end": 476,
+      "geprueft": true,
+      "notwendig": [
+        "s11"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c5"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t5",
+      "text": "2020 folgte der Umzug in einen Neubau an der Talstraße in Übach-Palenberg.",
+      "start": 477,
+      "end": 551,
+      "geprueft": true,
+      "notwendig": [
+        "s12"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c6"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t6",
+      "text": "Roman Contzen ist Diplom-Kaufmann und war zuvor Wirtschaftsprüfer.",
+      "start": 553,
+      "end": 619,
+      "geprueft": true,
+      "notwendig": [
+        "s16"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c7"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t7",
+      "text": "Handwerklich bezeichnet er sich selbst als unbegabt.",
+      "start": 620,
+      "end": 672,
+      "geprueft": true,
+      "notwendig": [
+        "s14"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c8"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t8",
+      "text": "Seinen beruflichen Werdegang hatte er sich ursprünglich anders vorgestellt, bis sein Schwiegervater Peter Waliczek ihm vorschlug, die Nachfolge anzutreten.",
+      "start": 673,
+      "end": 828,
+      "geprueft": true,
+      "notwendig": [
+        "s15"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c9"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t9",
+      "text": "Heute ist Contzen für Kundentermine in einem großen Gebiet unterwegs, das von der Eifel über die Städteregion Aachen und die Kreise Düren und Heinsberg bis nach Köln und Mönchengladbach reicht.",
+      "start": 829,
+      "end": 1022,
+      "geprueft": true,
+      "notwendig": [
+        "s17"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c10"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t10",
+      "text": "Der Betrieb beschäftigt 25 Mitarbeiter und zählt nach eigenen Angaben bei Mitarbeiterzahl und Umsatz zu den größten Zaunanbietern in NRW.",
+      "start": 1024,
+      "end": 1161,
+      "geprueft": true,
+      "notwendig": [
+        "s20",
+        "s21"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c11"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t11",
+      "text": "Das Unternehmen baut Zäune, Türen und Tore selbst und tritt zugleich als Händler auf.",
+      "start": 1162,
+      "end": 1247,
+      "geprueft": true,
+      "notwendig": [
+        "s20"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c12"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t12",
+      "text": "Die Aufträge reichen von kleinen Reparaturen bis zu kilometerlangen Neubauten.",
+      "start": 1248,
+      "end": 1326,
+      "geprueft": true,
+      "notwendig": [
+        "s22"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c13"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t13",
+      "text": "Eine der jüngsten Baustellen war das CHIO-Gelände in der Aachener Söhrs, wo ab dieser Woche täglich Tausende Besucher erwartet werden.",
+      "start": 1327,
+      "end": 1461,
+      "geprueft": true,
+      "notwendig": [
+        "s27",
+        "s28"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [
+        "ident_unbelegt"
+      ],
+      "claims_im_lauf": [
+        "c14"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t14",
+      "text": "Auch die dritte Generation ist bereits eingebunden: Viktor Contzen gehört zur Geschäftsführung.",
+      "start": 1463,
+      "end": 1558,
+      "geprueft": true,
+      "notwendig": [
+        "s7",
+        "s32",
+        "s45"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c15"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t15",
+      "text": "Sein Bruder Lennard Contzen arbeitet seit zwei Jahren im Betrieb und soll perspektivisch ebenfalls in die kaufmännische Geschäftsführung hineinwachsen.",
+      "start": 1559,
+      "end": 1710,
+      "geprueft": true,
+      "notwendig": [
+        "s42",
+        "s43"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c16"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    }
+  ]
+}

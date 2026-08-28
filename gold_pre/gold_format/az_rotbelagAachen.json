@@ -1,0 +1,503 @@
+{
+  "paar": "az_rotbelagAachen",
+  "split": "dev",
+  "anleitung": [
+    "Arbeitsanweisung (diese Zeilen bleiben in der Datei stehen):",
+    "1. Jede Zeile mit \"geprueft\": false durchgehen und auf true setzen.",
+    "2. notwendig = Sätze, ohne die ein Teil der Aussage unbelegt bliebe.",
+    "   zulaessig = stützt ebenfalls, ist aber entbehrlich (Dubletten).",
+    "3. relation prüfen: direkt | aggregiert | bedeutung_verschoben |",
+    "   inferiert | keine_quelle.",
+    "4. flags_erwartet: nur Befunde, die WIRKLICH zutreffen sollten",
+    "   (zahlkonflikt, ort_konflikt, kuerzel_konflikt, wortlaut_abweichung,",
+    "   ident_unbelegt, zahl_unbelegt). Leere Liste heißt: kein Befund.",
+    "5. Zum Schluss EINMAL umgekehrt: den Artikel lesen und fragen, welcher",
+    "   Transkriptsatz diese Stelle nutzt. Das fängt die Quellen, die die",
+    "   Pipeline gar nicht erst vorgeschlagen hat — der Bias des Entwurfs.",
+    "6. Artikel- und Transkripttext danach NICHT mehr ändern, auch keine",
+    "   Tippfehler: Die Zeichen-Offsets sind Teil der Annotation."
+  ],
+  "artikel_hash": "5184dd4a358f487a",
+  "transkript_hash": "b433aaa3a6fc4c84",
+  "artikel_saetze": [
+    {
+      "id": "s1",
+      "text": "Aachen Muss man einen breiten Radweg, der zudem von Hunderten Pollern von der Autofahrbahn getrennt wird, rot anstreichen?"
+    },
+    {
+      "id": "s2",
+      "text": "Diese Frage beantwortet die neue Mehrheitskoalition im Aachener Stadtrat – CDU, SPD, FDP, Volt – jetzt mit Nein."
+    },
+    {
+      "id": "s3",
+      "text": "Nicht nur anhand des Beispiels Breslauer Straße lässt sich leicht aufschlüsseln, wie viel Geld man sparen kann, wenn man ohne Sicherheitsverlust auf rote Farbe verzichtet und Poller durch preiswerte Klemmfix-Systeme ersetzt."
+    },
+    {
+      "id": "s4",
+      "text": "Der Verzicht auf die „Durcheinfärbung“ von Radinfrastruktur widerspricht einer Maßgabe des Radentscheids."
+    },
+    {
+      "id": "s5",
+      "text": "Das kritisiert die Radlobby."
+    },
+    {
+      "id": "s6",
+      "text": "Für die Rotbeschichtung der Breslauer Straße auf beiden Straßenseiten hat die Stadt Aachen nach Auskunft des Presseamts 139.700 Euro ausgegeben."
+    },
+    {
+      "id": "s7",
+      "text": "Jeder einzelne Poller kostete dort 459,87 Euro."
+    },
+    {
+      "id": "s8",
+      "text": "Verbaut wurden auf 500 Metern stadtauswärts und 700 Metern Richtung City exakt 254 Plastikpoller; Gesamtpreis: 116.806,98 Euro."
+    },
+    {
+      "id": "s9",
+      "text": "Man hätte hier über 200.000 Euro sparen können, ohne die rote Farbe und die teure Pollervariante; und nach Einschätzung der Koalition auch ohne Sicherheitsverlust."
+    },
+    {
+      "id": "s10",
+      "text": "Kostenfragen treten in Zeiten einer Haushaltssperre immer mehr in den Vordergrund."
+    },
+    {
+      "id": "s11",
+      "text": "Nur noch an Gefahrenstellen"
+    },
+    {
+      "id": "s12",
+      "text": "Darum soll die Roteinfärbung künftig auf Gefahrenstellen beschränkt werden, beispielsweise Kreuzungsbereiche."
+    },
+    {
+      "id": "s13",
+      "text": "Bei unserem Beispiel ist dies die Kreuzung Breslauer Straße/Stolberger Straße/Sedanstraße/Joseph-von-Görres-Straße."
+    },
+    {
+      "id": "s14",
+      "text": "Sie ist bereits entsprechend markiert."
+    },
+    {
+      "id": "s15",
+      "text": "Etliche Radverkehrsanlagen sind längst rot eingefärbt; sie sollen es auch bleiben."
+    },
+    {
+      "id": "s16",
+      "text": "Ein Abfräsen würde nach Einschätzung von Bauexperten den Asphalt zu sehr schädigen; ganz abgesehen von den Extrakosten."
+    },
+    {
+      "id": "s17",
+      "text": "Inzwischen sind in Aachen – Stand Juli 2026 – Fahrradstraßen in einer Gesamtlänge von 4,3 Kilometern rot eingefärbt."
+    },
+    {
+      "id": "s18",
+      "text": "Das gilt zum Beispiel für den Grabenring auf dem Driescher Gässchen, Templergraben und Karlsgraben oder ganz aktuell für die Bismarckstraße."
+    },
+    {
+      "id": "s19",
+      "text": "Die Roteinfärbung von Protected Bike Lanes, also mindestens 2,30 Meter breit und meist mit Pollern abgetrennt, beläuft sich auf 2,3 Kilometer."
+    },
+    {
+      "id": "s20",
+      "text": "Eine weitere Variante sind in Rot eingefärbte Radfahrstreifen, also mit „Dickstrich“ abgetrennte Radspuren: Davon hat Aachen 3,2 Kilometer."
+    },
+    {
+      "id": "s21",
+      "text": "Am häufigsten taucht der rote Belag aber auf Radfahrschutzstreifen auf (weiß gestrichelte Blockmarkierung, Teil der normalen Fahrbahn): rund 6,9 Kilometer."
+    },
+    {
+      "id": "s22",
+      "text": "Die Kosten für die Roteinfärbung von Radverkehrsanlagen variieren pro Quadratmeter von rund 35 bis rund 110 Euro je nach Größe und Beschaffenheit."
+    },
+    {
+      "id": "s23",
+      "text": "„Im Durchschnitt sind das etwa 50 Euro pro Quadratmeter“, rechnet Harald Beckers vom Presseamt vor."
+    },
+    {
+      "id": "s24",
+      "text": "Beispiele: Der rote Asphalt rund um den Europaplatz kostete 72.300 Euro, das eher kurze Driescher Gässchen 123.900 Euro, die Protected Bike Lane auf der Monheimsallee 62.130 Euro, die Rotbeschichtung in Epoxidharz an Knotenpunkt Karlsgraben brutto 104.741 Euro."
+    },
+    {
+      "id": "s25",
+      "text": "Zur Rotbeschichtung sind zwei Techniken gebräuchlich: rotes Kaltreibeplastik (gleiches Material wie weiße Fahrbahnmarkierungen) oder rote Epoxidharzbeschichtung."
+    },
+    {
+      "id": "s26",
+      "text": "„Die Haltbarkeit ist von verschiedenen Faktoren abhängig, insbesondere vom Zustand der Fahrbahnoberfläche“, erklärt Beckers."
+    },
+    {
+      "id": "s27",
+      "text": "„Je neuer und intakter die Unterlage ist, desto länger ist die Haltbarkeit."
+    },
+    {
+      "id": "s28",
+      "text": "Zum anderen spielt die Verkehrsbelastung eine entscheidende Rolle“, erläutert er."
+    },
+    {
+      "id": "s29",
+      "text": "Die Farbe verblasst"
+    },
+    {
+      "id": "s30",
+      "text": "Vielerorts verblasst die rote Farbe allerdings schnell, oder sie platzt ab."
+    },
+    {
+      "id": "s31",
+      "text": "„Grundsätzlich zeigen die bisherigen Erfahrungen sowie Laboruntersuchungen an der RWTH, dass Epoxidharzbeschichtungen eine längere Haltbarkeit aufweisen“, stellt Beckers fest."
+    },
+    {
+      "id": "s32",
+      "text": "Sie sind wegen zusätzlicher Arbeitsschritte und höherem Materialeinsatz 20 bis 30 Euro pro Quadratmeter teurer."
+    },
+    {
+      "id": "s33",
+      "text": "Wie geht es nun weiter?"
+    },
+    {
+      "id": "s34",
+      "text": "Die Lothringerstraße zwischen Oppenhoffallee/Zollernstraße und Wilhelmstraße wird vorerst nicht rot eingefärbt."
+    },
+    {
+      "id": "s35",
+      "text": "Die Regionetz wird in dieser Straße noch Versorgungsleitungen erneuern."
+    },
+    {
+      "id": "s36",
+      "text": "Für die Krakaustraße gibt es indes „einen relativ aktuellen Ausführungsbeschluss, der noch eine Roteinfärbung der Fahrbahn vorsieht“, wie Beckers ausführt."
+    },
+    {
+      "id": "s37",
+      "text": "Eine Bürgerinitiative vor Ort ist dagegen."
+    },
+    {
+      "id": "s38",
+      "text": "Sie befürwortet die Fahrradstraße, lehnt das Rot aber wie die neue Koalition ab."
+    }
+  ],
+  "eintraege": [
+    {
+      "satz": "t1",
+      "text": "Die neue Mehrheitskoalition im Aachener Stadtrat will breite, durch Poller geschützte Radwege künftig nicht mehr grundsätzlich rot einfärben.",
+      "start": 0,
+      "end": 141,
+      "geprueft": false,
+      "notwendig": [
+        "s2",
+        "s3"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c1"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t2",
+      "text": "In Aachen soll die rote Beschichtung nach dem Willen von CDU, SPD, FDP und Volt auf Gefahrenstellen begrenzt werden, etwa an Kreuzungen.",
+      "start": 142,
+      "end": 278,
+      "geprueft": false,
+      "notwendig": [
+        "s2",
+        "s12"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c2"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t3",
+      "text": "Die Radlobby kritisiert dies, weil der Verzicht der Vorgabe des Radentscheids widerspreche.",
+      "start": 279,
+      "end": 370,
+      "geprueft": false,
+      "notwendig": [
+        "s4",
+        "s5"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c3",
+        "c4"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t4",
+      "text": "Als Beispiel nennt die Koalition die Breslauer Straße.",
+      "start": 372,
+      "end": 426,
+      "geprueft": false,
+      "notwendig": [
+        "s13"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c5"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t5",
+      "text": "Dort gab die Stadt nach Angaben des Presseamts 139.700 Euro für die rote Beschichtung beider Seiten aus.",
+      "start": 427,
+      "end": 531,
+      "geprueft": false,
+      "notwendig": [
+        "s6"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c6"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t6",
+      "text": "Für 254 Plastikpoller auf insgesamt 1,2 Kilometern fielen weitere rund 116.800 Euro an.",
+      "start": 532,
+      "end": 619,
+      "geprueft": false,
+      "notwendig": [
+        "s8",
+        "s20"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [
+        "zahlkonflikt"
+      ],
+      "claims_im_lauf": [
+        "c7"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t7",
+      "text": "Jeder Poller kostete knapp 460 Euro.",
+      "start": 620,
+      "end": 656,
+      "geprueft": false,
+      "notwendig": [
+        "s7"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [
+        "zahlkonflikt"
+      ],
+      "claims_im_lauf": [
+        "c8"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t8",
+      "text": "Die Koalition ist der Ansicht, dass sich mit günstigeren Klemmfix-Systemen und ohne durchgehende rote Farbe mehr als 200.000 Euro hätten sparen lassen, ohne die Sicherheit zu verringern.",
+      "start": 657,
+      "end": 843,
+      "geprueft": false,
+      "notwendig": [
+        "s9"
+      ],
+      "zulaessig": [],
+      "relation": "bedeutung_verschoben",
+      "flags_erwartet": [
+        "bedeutung_verschoben"
+      ],
+      "claims_im_lauf": [
+        "c9"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t9",
+      "text": "Angesichts der Haushaltssperre gewännen solche Kostenfragen an Bedeutung.",
+      "start": 844,
+      "end": 917,
+      "geprueft": false,
+      "notwendig": [
+        "s10"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c10"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t10",
+      "text": "Bereits rot markierte Radverkehrsanlagen sollen jedoch bleiben.",
+      "start": 919,
+      "end": 982,
+      "geprueft": false,
+      "notwendig": [
+        "s14",
+        "s15"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c11"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t11",
+      "text": "Ein Abfräsen der Beschichtung könnte den Asphalt beschädigen und zusätzliche Kosten verursachen.",
+      "start": 983,
+      "end": 1079,
+      "geprueft": false,
+      "notwendig": [
+        "s16",
+        "s31"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c12"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t12",
+      "text": "In Aachen sind Fahrradstraßen auf 4,3 Kilometern rot eingefärbt, hinzu kommen Protected Bike Lanes, Radfahrstreifen und Schutzstreifen.",
+      "start": 1080,
+      "end": 1215,
+      "geprueft": false,
+      "notwendig": [
+        "s17",
+        "s19",
+        "s21"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c13"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t13",
+      "text": "Die Beschichtung kostet je nach Untergrund und Fläche zwischen 35 und 110 Euro pro Quadratmeter.",
+      "start": 1217,
+      "end": 1313,
+      "geprueft": false,
+      "notwendig": [
+        "s22",
+        "s24",
+        "s26"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c14"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t14",
+      "text": "Harald Beckers vom Presseamt erklärt, im Durchschnitt seien es etwa 50 Euro.",
+      "start": 1314,
+      "end": 1390,
+      "geprueft": false,
+      "notwendig": [
+        "s23"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c15"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t15",
+      "text": "Rotes Epoxidharz halte nach bisherigen Erfahrungen und Untersuchungen der RWTH länger, sei aber teurer.",
+      "start": 1391,
+      "end": 1494,
+      "geprueft": false,
+      "notwendig": [
+        "s31",
+        "s32"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c16"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t16",
+      "text": "Die Lothringerstraße wird vorerst nicht rot markiert.",
+      "start": 1496,
+      "end": 1549,
+      "geprueft": false,
+      "notwendig": [
+        "s34"
+      ],
+      "zulaessig": [],
+      "relation": "direkt",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c17"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    },
+    {
+      "satz": "t17",
+      "text": "Für die Krakaustraße gilt dagegen noch ein Beschluss mit Roteinfärbung, gegen den sich eine Bürgerinitiative ausspricht.",
+      "start": 1550,
+      "end": 1670,
+      "geprueft": false,
+      "notwendig": [
+        "s36",
+        "s37"
+      ],
+      "zulaessig": [],
+      "relation": "aggregiert",
+      "flags_erwartet": [],
+      "claims_im_lauf": [
+        "c18"
+      ],
+      "relationen_gemischt": false,
+      "notiz": ""
+    }
+  ]
+}

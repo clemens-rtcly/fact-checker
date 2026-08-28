@@ -1,0 +1,1015 @@
+{
+  "meta": {
+    "titel": "Aachen Am vergangenen Wochenende hat die Stadt Aachen erstmals einen externen Sicherheitsdienst am Freibad Hangeweiher eingesetzt.",
+    "quelle": "Eigenes Paar",
+    "modell": "stufe0-2 · multilingual-e5-large-instruct + nli-mdeberta-2mil7",
+    "statistik": {
+      "saetze": 18,
+      "claims": 20,
+      "embeddings": 38,
+      "nli_paare": 20,
+      "dauer_s": 7.7
+    },
+    "ratelimit": {
+      "model": "multilingual-e5-large-instruct",
+      "checked_at": 1787353802.8530705,
+      "x-ratelimit-limit-minute": "15",
+      "x-ratelimit-remaining-minute": "13",
+      "x-ratelimit-limit-hour": "900",
+      "x-ratelimit-remaining-hour": "890",
+      "x-ratelimit-limit-day": "2000",
+      "x-ratelimit-remaining-day": "1987",
+      "x-ratelimit-limit-second": "2",
+      "x-ratelimit-remaining-second": "0",
+      "ratelimit-reset": "1",
+      "ratelimit-limit": "2",
+      "ratelimit-remaining": "0"
+    }
+  },
+  "article": {
+    "text": "Aachen Am vergangenen Wochenende hat die Stadt Aachen erstmals einen externen Sicherheitsdienst am Freibad Hangeweiher eingesetzt. Grund für die Maßnahme waren nach Angaben des zuständigen Fachbereichs die Ereignisse rund um die massive Hitzewelle Ende Juni, die auch situative Schließungen nötig machten. Dabei seien vielfach die Anweisungen des Personals missachtet und diverse Regeln nicht eingehalten worden. Oberbürgermeister Michael Ziemons spricht in seinem Montagsupdate auf Instagram von bis zu 1000 Menschen, die an den Wochenenden zuvor über den Zaun geklettert seien und sogar Kinderwagen darüber gehoben hätten. Situationen wie diese gelte es zum Schutz der Mitarbeiter und der Badegäste zu verhindern.\n\nGelingt es? „Das Fazit und die Resonanz sowohl bei Besucherinnen und Besuchern als auch bei den Beschäftigten nach dem ersten Wochenende mit Sicherheitsdienst sind positiv“, lautet eine erste Einschätzung der Verantwortlichen. Die Zusammenarbeit mit dem Sicherheitsdienst habe sich ebenfalls als positiv erwiesen. Allerdings habe es am vergangenen Wochenende mit etwa 2600 und 3000 Gästen am Tag auch ein deutlich geringeres Besucheraufkommen als an anderen heißen Tagen gegeben. Situative Schließungen waren demnach zuletzt nicht nötig.\n\nDie Mitarbeitenden des Sicherheitsdienstes sollen in erster Linie am Einlass und bei Bedarf an den Einfriedungen unterstützen. Bei eskalierenden Situationen können sie zur Entlastung hinzugezogen werden. Durch diese Unterstützung sollen sich die Beschäftigten im Freibad mehr auf die Kernbereiche am Becken, auf der Wiese und in den Sanitärbereichen konzentrieren können.\n\nInwiefern sich der Einsatz des externen Dienstleisters auf die künftigen Eintrittspreise im Freibad Hangeweiher auswirken wird, lässt sich noch nicht sagen. Aktuell führt es erstmal nicht zu einem Preisanstieg. Auf Nachfrage erklärt der zuständige Fachbereich, dass die Höhe der Eintrittspreise von verschiedenen Faktoren abhängt und in jedem Jahr überprüft und bei Bedarf neu festgesetzt wird. Mit Blick auf die Ferien und weitere freibadtaugliche Tage teilt die Stadt abschließend mit, dass die Option für den Einsatz des Sicherheitsdienstes für die gesamte Freiwassersaison besteht. Möglicherweise könne nach Auswertung der Wetterprognosen im Einzelfall an Tagen ganz oder teilweise darauf verzichtet werden.(hei)",
+    "sentences": [
+      {
+        "id": "s1",
+        "start": 0,
+        "end": 130,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Aachen Am vergangenen Wochenende hat die Stadt Aachen erstmals einen externen Sicherheitsdienst am Freibad Hangeweiher eingesetzt."
+      },
+      {
+        "id": "s2",
+        "start": 131,
+        "end": 305,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Grund für die Maßnahme waren nach Angaben des zuständigen Fachbereichs die Ereignisse rund um die massive Hitzewelle Ende Juni, die auch situative Schließungen nötig machten."
+      },
+      {
+        "id": "s3",
+        "start": 306,
+        "end": 412,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Dabei seien vielfach die Anweisungen des Personals missachtet und diverse Regeln nicht eingehalten worden."
+      },
+      {
+        "id": "s4",
+        "start": 413,
+        "end": 624,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Oberbürgermeister Michael Ziemons spricht in seinem Montagsupdate auf Instagram von bis zu 1000 Menschen, die an den Wochenenden zuvor über den Zaun geklettert seien und sogar Kinderwagen darüber gehoben hätten."
+      },
+      {
+        "id": "s5",
+        "start": 625,
+        "end": 715,
+        "block": "body",
+        "level": 0,
+        "paragraph": 0,
+        "text": "Situationen wie diese gelte es zum Schutz der Mitarbeiter und der Badegäste zu verhindern."
+      },
+      {
+        "id": "s6",
+        "start": 717,
+        "end": 728,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Gelingt es?"
+      },
+      {
+        "id": "s7",
+        "start": 729,
+        "end": 943,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "„Das Fazit und die Resonanz sowohl bei Besucherinnen und Besuchern als auch bei den Beschäftigten nach dem ersten Wochenende mit Sicherheitsdienst sind positiv“, lautet eine erste Einschätzung der Verantwortlichen."
+      },
+      {
+        "id": "s8",
+        "start": 944,
+        "end": 1030,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Die Zusammenarbeit mit dem Sicherheitsdienst habe sich ebenfalls als positiv erwiesen."
+      },
+      {
+        "id": "s9",
+        "start": 1031,
+        "end": 1196,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Allerdings habe es am vergangenen Wochenende mit etwa 2600 und 3000 Gästen am Tag auch ein deutlich geringeres Besucheraufkommen als an anderen heißen Tagen gegeben."
+      },
+      {
+        "id": "s10",
+        "start": 1197,
+        "end": 1254,
+        "block": "body",
+        "level": 0,
+        "paragraph": 1,
+        "text": "Situative Schließungen waren demnach zuletzt nicht nötig."
+      },
+      {
+        "id": "s11",
+        "start": 1256,
+        "end": 1382,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Die Mitarbeitenden des Sicherheitsdienstes sollen in erster Linie am Einlass und bei Bedarf an den Einfriedungen unterstützen."
+      },
+      {
+        "id": "s12",
+        "start": 1383,
+        "end": 1459,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Bei eskalierenden Situationen können sie zur Entlastung hinzugezogen werden."
+      },
+      {
+        "id": "s13",
+        "start": 1460,
+        "end": 1627,
+        "block": "body",
+        "level": 0,
+        "paragraph": 2,
+        "text": "Durch diese Unterstützung sollen sich die Beschäftigten im Freibad mehr auf die Kernbereiche am Becken, auf der Wiese und in den Sanitärbereichen konzentrieren können."
+      },
+      {
+        "id": "s14",
+        "start": 1629,
+        "end": 1785,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "Inwiefern sich der Einsatz des externen Dienstleisters auf die künftigen Eintrittspreise im Freibad Hangeweiher auswirken wird, lässt sich noch nicht sagen."
+      },
+      {
+        "id": "s15",
+        "start": 1786,
+        "end": 1839,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "Aktuell führt es erstmal nicht zu einem Preisanstieg."
+      },
+      {
+        "id": "s16",
+        "start": 1840,
+        "end": 2023,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "Auf Nachfrage erklärt der zuständige Fachbereich, dass die Höhe der Eintrittspreise von verschiedenen Faktoren abhängt und in jedem Jahr überprüft und bei Bedarf neu festgesetzt wird."
+      },
+      {
+        "id": "s17",
+        "start": 2024,
+        "end": 2214,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "Mit Blick auf die Ferien und weitere freibadtaugliche Tage teilt die Stadt abschließend mit, dass die Option für den Einsatz des Sicherheitsdienstes für die gesamte Freiwassersaison besteht."
+      },
+      {
+        "id": "s18",
+        "start": 2215,
+        "end": 2345,
+        "block": "body",
+        "level": 0,
+        "paragraph": 3,
+        "text": "Möglicherweise könne nach Auswertung der Wetterprognosen im Einzelfall an Tagen ganz oder teilweise darauf verzichtet werden.(hei)"
+      }
+    ]
+  },
+  "transcript": {
+    "text": "Die Stadt Aachen hat am Freibad Hangeweiher erstmals einen externen Sicherheitsdienst eingesetzt. Die Maßnahme soll Beschäftigte und Badegäste besser schützen. Anlass waren Probleme während der massiven Hitzewelle Ende Juni.\n\nNach Angaben des zuständigen Fachbereichs mussten Teile des Freibads damals situativ geschlossen werden. Dabei hätten viele Besucherinnen und Besucher Anweisungen des Personals missachtet und Regeln nicht eingehalten. Oberbürgermeister Michael Ziemons berichtet in einem Beitrag auf Instagram, an den vorherigen Wochenenden seien bis zu 1000 Menschen über den Zaun geklettert. Sogar Kinderwagen seien darüber gehoben worden.\n\nDie Mitarbeitenden des Sicherheitsdienstes unterstützen vor allem am Eingang und bei Bedarf an den Umzäunungen des Freibads. Eskaliert eine Situation, können sie zur Entlastung hinzugezogen werden. Die Beschäftigten des Freibads sollen sich dadurch stärker auf die Becken, die Liegewiesen und die Sanitärbereiche konzentrieren können.\n\nDie Stadt zieht nach dem ersten Wochenende eine positive Bilanz. Sowohl Besucherinnen und Besucher als auch die Beschäftigten hätten den Einsatz gut aufgenommen. Auch die Zusammenarbeit mit dem Sicherheitsdienst sei positiv verlaufen.\n\nAllerdings kamen mit etwa 2600 und 3000 Gästen pro Tag deutlich weniger Menschen als an anderen heißen Tagen. Schließungen waren deshalb zuletzt nicht nötig.\n\nOb der Sicherheitsdienst künftig Auswirkungen auf die Eintrittspreise hat, ist noch offen. Zunächst steigen die Preise nicht. Die Stadt überprüft die Tarife nach eigenen Angaben jedes Jahr und passt sie bei Bedarf an. Für die gesamte Freiwassersaison bleibt der Sicherheitsdienst verfügbar. Je nach Wetterprognose könnte die Stadt an einzelnen Tagen ganz oder teilweise auf den Einsatz verzichten.",
+    "claims": [
+      {
+        "id": "c1",
+        "start": 0,
+        "end": 97,
+        "text": "Die Stadt Aachen hat am Freibad Hangeweiher erstmals einen externen Sicherheitsdienst eingesetzt.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s1",
+            "start": 0,
+            "end": 130,
+            "spans": [
+              [
+                0,
+                6
+              ],
+              [
+                41,
+                130
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.98,
+        "margin": 0.54,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 97 % des Claims.",
+        "scores": {
+          "top": 0.969,
+          "lex": 0.846,
+          "emb": 1,
+          "anchor": 0,
+          "nli": 0.99
+        }
+      },
+      {
+        "id": "c2",
+        "start": 98,
+        "end": 159,
+        "text": "Die Maßnahme soll Beschäftigte und Badegäste besser schützen.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s5",
+            "start": 691,
+            "end": 700,
+            "spans": [
+              [
+                691,
+                700
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s13",
+            "start": 1502,
+            "end": 1515,
+            "spans": [
+              [
+                1502,
+                1515
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.64,
+        "margin": 0.15,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s5 + s13 (s13 erklärt zusätzlich 26 %). · Fundstellen erklären 52 % des Claims. · Unter der Direkt-Schwelle — zur Prüfung empfohlen.",
+        "scores": {
+          "top": 0.491,
+          "lex": 0.173,
+          "emb": 0.729,
+          "anchor": 0,
+          "nli": 0.998
+        }
+      },
+      {
+        "id": "c3",
+        "start": 160,
+        "end": 224,
+        "text": "Anlass waren Probleme während der massiven Hitzewelle Ende Juni.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s2",
+            "start": 229,
+            "end": 257,
+            "spans": [
+              [
+                229,
+                257
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.65,
+        "margin": 0.44,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 53 % des Claims.",
+        "scores": {
+          "top": 0.685,
+          "lex": 0.32,
+          "emb": 0.745,
+          "anchor": 0,
+          "nli": 0.999
+        }
+      },
+      {
+        "id": "c4",
+        "start": 226,
+        "end": 330,
+        "text": "Nach Angaben des zuständigen Fachbereichs mussten Teile des Freibads damals situativ geschlossen werden.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s2",
+            "start": 165,
+            "end": 277,
+            "spans": [
+              [
+                165,
+                201
+              ],
+              [
+                268,
+                277
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.52,
+        "margin": 0.26,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 48 % des Claims. · Unter der Direkt-Schwelle — zur Prüfung empfohlen.",
+        "scores": {
+          "top": 0.571,
+          "lex": 0.334,
+          "emb": 0.558,
+          "anchor": 0,
+          "nli": 0.999
+        }
+      },
+      {
+        "id": "c5",
+        "start": 331,
+        "end": 443,
+        "text": "Dabei hätten viele Besucherinnen und Besucher Anweisungen des Personals missachtet und Regeln nicht eingehalten.",
+        "relation": "bedeutung_verschoben",
+        "sources": [
+          {
+            "sentence": "s3",
+            "start": 331,
+            "end": 404,
+            "spans": [
+              [
+                331,
+                367
+              ],
+              [
+                380,
+                404
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.78,
+        "margin": 0.5,
+        "entities": [],
+        "flags": [
+          "bedeutung_verschoben"
+        ],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 68 % des Claims. · Bedeutung verschoben — die Fundstelle widerspricht dem Claim nicht, stützt ihn aber auch nicht vollständig (entailment 0.29, neutral 0.71).",
+        "scores": {
+          "top": 0.863,
+          "lex": 0.672,
+          "emb": 0.867,
+          "anchor": 0,
+          "nli": 0.293
+        }
+      },
+      {
+        "id": "c6",
+        "start": 444,
+        "end": 602,
+        "text": "Oberbürgermeister Michael Ziemons berichtet in einem Beitrag auf Instagram, an den vorherigen Wochenenden seien bis zu 1000 Menschen über den Zaun geklettert.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s4",
+            "start": 413,
+            "end": 572,
+            "spans": [
+              [
+                413,
+                446
+              ],
+              [
+                458,
+                464
+              ],
+              [
+                483,
+                541
+              ],
+              [
+                557,
+                572
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.89,
+        "margin": 0.67,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "1000",
+            "norm": "1000",
+            "status": "match"
+          },
+          {
+            "type": "person",
+            "surface": "Michael Ziemons",
+            "norm": "michael ziemons",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Anker 1000 eindeutig in s4 · Name „Michael Ziemons“ eindeutig in s4 · Fundstellen erklären 79 % des Claims.",
+        "scores": {
+          "top": 0.946,
+          "lex": 0.663,
+          "emb": 0.978,
+          "anchor": 0.38,
+          "nli": 0.974
+        }
+      },
+      {
+        "id": "c7",
+        "start": 603,
+        "end": 650,
+        "text": "Sogar Kinderwagen seien darüber gehoben worden.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s4",
+            "start": 589,
+            "end": 616,
+            "spans": [
+              [
+                589,
+                616
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.73,
+        "margin": 0.38,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 88 % des Claims.",
+        "scores": {
+          "top": 0.644,
+          "lex": 0.438,
+          "emb": 0.441,
+          "anchor": 0,
+          "nli": 0.997
+        }
+      },
+      {
+        "id": "c8",
+        "start": 652,
+        "end": 776,
+        "text": "Die Mitarbeitenden des Sicherheitsdienstes unterstützen vor allem am Eingang und bei Bedarf an den Umzäunungen des Freibads.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s11",
+            "start": 1256,
+            "end": 1382,
+            "spans": [
+              [
+                1256,
+                1298
+              ],
+              [
+                1341,
+                1347
+              ],
+              [
+                1369,
+                1382
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.69,
+        "margin": 0.33,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 62 % des Claims.",
+        "scores": {
+          "top": 0.709,
+          "lex": 0.583,
+          "emb": 0.749,
+          "anchor": 0,
+          "nli": 0.523
+        }
+      },
+      {
+        "id": "c9",
+        "start": 777,
+        "end": 849,
+        "text": "Eskaliert eine Situation, können sie zur Entlastung hinzugezogen werden.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s12",
+            "start": 1383,
+            "end": 1459,
+            "spans": [
+              [
+                1383,
+                1459
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.93,
+        "margin": 0.61,
+        "entities": [],
+        "flags": [
+          "wortlaut_abweichung"
+        ],
+        "wortlaut": {
+          "quelle": "s12",
+          "aenderungen": [
+            {
+              "claim": "Eskaliert eine Situation",
+              "quelle": "Bei eskalierenden Situationen",
+              "nah": true,
+              "aehnlichkeit": 0.79
+            }
+          ]
+        },
+        "note": "Fundstellen erklären 92 % des Claims. · Fast wörtlich übernommen, aber abweichend: „Bei eskalierenden Situationen“ → „Eskaliert eine Situation“.",
+        "scores": {
+          "top": 0.917,
+          "lex": 0.856,
+          "emb": 0.932,
+          "anchor": 0,
+          "nli": 0.998
+        }
+      },
+      {
+        "id": "c10",
+        "start": 850,
+        "end": 986,
+        "text": "Die Beschäftigten des Freibads sollen sich dadurch stärker auf die Becken, die Liegewiesen und die Sanitärbereiche konzentrieren können.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s13",
+            "start": 1502,
+            "end": 1627,
+            "spans": [
+              [
+                1502,
+                1562
+              ],
+              [
+                1589,
+                1627
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.79,
+        "margin": 0.54,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 63 % des Claims.",
+        "scores": {
+          "top": 0.832,
+          "lex": 0.599,
+          "emb": 0.897,
+          "anchor": 0,
+          "nli": 0.988
+        }
+      },
+      {
+        "id": "c11",
+        "start": 988,
+        "end": 1052,
+        "text": "Die Stadt zieht nach dem ersten Wochenende eine positive Bilanz.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s7",
+            "start": 836,
+            "end": 908,
+            "spans": [
+              [
+                836,
+                853
+              ],
+              [
+                881,
+                888
+              ],
+              [
+                903,
+                908
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.56,
+        "margin": 0.24,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 48 % des Claims. · Unter der Direkt-Schwelle — zur Prüfung empfohlen.",
+        "scores": {
+          "top": 0.595,
+          "lex": 0.286,
+          "emb": 0.622,
+          "anchor": 0,
+          "nli": 0.998
+        }
+      },
+      {
+        "id": "c12",
+        "start": 1053,
+        "end": 1149,
+        "text": "Sowohl Besucherinnen und Besucher als auch die Beschäftigten hätten den Einsatz gut aufgenommen.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s7",
+            "start": 757,
+            "end": 826,
+            "spans": [
+              [
+                757,
+                826
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.6,
+        "margin": 0.31,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 56 % des Claims.",
+        "scores": {
+          "top": 0.643,
+          "lex": 0.403,
+          "emb": 0.644,
+          "anchor": 0,
+          "nli": 0.98
+        }
+      },
+      {
+        "id": "c13",
+        "start": 1150,
+        "end": 1222,
+        "text": "Auch die Zusammenarbeit mit dem Sicherheitsdienst sei positiv verlaufen.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s8",
+            "start": 944,
+            "end": 1020,
+            "spans": [
+              [
+                944,
+                1020
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.87,
+        "margin": 0.35,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 74 % des Claims.",
+        "scores": {
+          "top": 0.854,
+          "lex": 0.563,
+          "emb": 0.972,
+          "anchor": 0,
+          "nli": 0.998
+        }
+      },
+      {
+        "id": "c14",
+        "start": 1224,
+        "end": 1333,
+        "text": "Allerdings kamen mit etwa 2600 und 3000 Gästen pro Tag deutlich weniger Menschen als an anderen heißen Tagen.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s9",
+            "start": 1085,
+            "end": 1187,
+            "spans": [
+              [
+                1085,
+                1130
+              ],
+              [
+                1167,
+                1187
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.79,
+        "margin": 0.62,
+        "entities": [
+          {
+            "type": "zahl",
+            "surface": "2600",
+            "norm": "2600",
+            "status": "match"
+          },
+          {
+            "type": "zahl",
+            "surface": "3000",
+            "norm": "3000",
+            "status": "match"
+          }
+        ],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Anker 2600 eindeutig in s9 · Anker 3000 eindeutig in s9 · Fundstellen erklären 65 % des Claims.",
+        "scores": {
+          "top": 0.889,
+          "lex": 0.579,
+          "emb": 0.893,
+          "anchor": 0.38,
+          "nli": 0.995
+        }
+      },
+      {
+        "id": "c15",
+        "start": 1334,
+        "end": 1381,
+        "text": "Schließungen waren deshalb zuletzt nicht nötig.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s10",
+            "start": 1207,
+            "end": 1254,
+            "spans": [
+              [
+                1207,
+                1254
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.82,
+        "margin": 0.51,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 73 % des Claims.",
+        "scores": {
+          "top": 0.864,
+          "lex": 0.697,
+          "emb": 0.895,
+          "anchor": 0,
+          "nli": 0.992
+        }
+      },
+      {
+        "id": "c16",
+        "start": 1383,
+        "end": 1473,
+        "text": "Ob der Sicherheitsdienst künftig Auswirkungen auf die Eintrittspreise hat, ist noch offen.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s14",
+            "start": 1692,
+            "end": 1750,
+            "spans": [
+              [
+                1692,
+                1717
+              ],
+              [
+                1741,
+                1750
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.6,
+        "margin": 0.31,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 58 % des Claims.",
+        "scores": {
+          "top": 0.647,
+          "lex": 0.361,
+          "emb": 0.615,
+          "anchor": 0,
+          "nli": 0.987
+        }
+      },
+      {
+        "id": "c17",
+        "start": 1474,
+        "end": 1508,
+        "text": "Zunächst steigen die Preise nicht.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s15",
+            "start": 1811,
+            "end": 1816,
+            "spans": [
+              [
+                1811,
+                1816
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.68,
+        "margin": 0.2,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 41 % des Claims. · Unter der Direkt-Schwelle — zur Prüfung empfohlen.",
+        "scores": {
+          "top": 0.578,
+          "lex": 0.13,
+          "emb": 0.818,
+          "anchor": 0,
+          "nli": 0.998
+        }
+      },
+      {
+        "id": "c18",
+        "start": 1509,
+        "end": 1600,
+        "text": "Die Stadt überprüft die Tarife nach eigenen Angaben jedes Jahr und passt sie bei Bedarf an.",
+        "relation": "direkt",
+        "sources": [
+          {
+            "sentence": "s16",
+            "start": 1972,
+            "end": 2001,
+            "spans": [
+              [
+                1972,
+                2001
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.51,
+        "margin": 0.29,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 43 % des Claims. · Unter der Direkt-Schwelle — zur Prüfung empfohlen.",
+        "scores": {
+          "top": 0.556,
+          "lex": 0.256,
+          "emb": 0.567,
+          "anchor": 0,
+          "nli": 0.841
+        }
+      },
+      {
+        "id": "c19",
+        "start": 1601,
+        "end": 1673,
+        "text": "Für die gesamte Freiwassersaison bleibt der Sicherheitsdienst verfügbar.",
+        "relation": "bedeutung_verschoben",
+        "sources": [
+          {
+            "sentence": "s17",
+            "start": 2153,
+            "end": 2205,
+            "spans": [
+              [
+                2153,
+                2205
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.66,
+        "margin": 0.41,
+        "entities": [],
+        "flags": [
+          "bedeutung_verschoben"
+        ],
+        "wortlaut": null,
+        "note": "Fundstellen erklären 66 % des Claims. · Bedeutung verschoben — die Fundstelle widerspricht dem Claim nicht, stützt ihn aber auch nicht vollständig (entailment 0.47, neutral 0.53).",
+        "scores": {
+          "top": 0.699,
+          "lex": 0.424,
+          "emb": 0.65,
+          "anchor": 0,
+          "nli": 0.466
+        }
+      },
+      {
+        "id": "c20",
+        "start": 1674,
+        "end": 1780,
+        "text": "Je nach Wetterprognose könnte die Stadt an einzelnen Tagen ganz oder teilweise auf den Einsatz verzichten.",
+        "relation": "aggregiert",
+        "sources": [
+          {
+            "sentence": "s18",
+            "start": 2256,
+            "end": 2345,
+            "spans": [
+              [
+                2256,
+                2271
+              ],
+              [
+                2289,
+                2314
+              ],
+              [
+                2322,
+                2345
+              ]
+            ],
+            "role": "primaer"
+          },
+          {
+            "sentence": "s17",
+            "start": 2078,
+            "end": 2148,
+            "spans": [
+              [
+                2078,
+                2082
+              ],
+              [
+                2093,
+                2098
+              ],
+              [
+                2141,
+                2148
+              ]
+            ],
+            "role": "primaer"
+          }
+        ],
+        "confidence": 0.83,
+        "margin": 0.59,
+        "entities": [],
+        "flags": [],
+        "wortlaut": null,
+        "note": "Verdichtet aus s18 + s17 (s17 erklärt zusätzlich 14 %). · Fundstellen erklären 84 % des Claims.",
+        "scores": {
+          "top": 0.836,
+          "lex": 0.539,
+          "emb": 0.822,
+          "anchor": 0,
+          "nli": 0.998
+        }
+      }
+    ]
+  }
+}
